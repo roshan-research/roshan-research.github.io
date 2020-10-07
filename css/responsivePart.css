@@ -9,6 +9,11 @@
 body{
     background-color: #e4e4e4;
 }
+
+.row {
+    margin-right: 0;
+    margin-left: 0;
+}
 @media screen and (max-width: 912px){
     .container {
         max-width: none;

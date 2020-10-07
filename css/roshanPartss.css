@@ -94,6 +94,7 @@
         font-weight: 300;
         font-size: 1.84vw;
         margin-right: 15.7vw;
+        max-width: 50%;
     }
 
     .roshan-introduce {
@@ -141,5 +142,8 @@
         grid-column: 1;
         grid-row:1;
         margin-top: 54.5px;
+    }
+    .width-roshan-text-bog{
+        max-width: 50%;
     }
 }

@@ -90,9 +90,12 @@
     padding-bottom: 7%;
 
 }
+.mobile-image-center{
+    text-align: center;
+}
 .alefba-mobile-image{
-    width: 100%;
     height: auto;
+    width: 84vw;
 }
 .alefba-web-image {
     display: none;
@@ -250,12 +253,12 @@
         margin: 0;
 
     }
-    .alefba-mobile-image{
-        display: none;
-    }
-    .alefba-web-image {
+
+    .alefba-mobile-image {
         display: block;
         margin: 11.133vw auto;
+        width: 27.34vw;
+        height: 26.47vw;
     }
 
 
