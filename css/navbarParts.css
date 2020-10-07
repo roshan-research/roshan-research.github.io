@@ -1,0 +1,142 @@
+body {
+    direction: rtl;
+}
+.navbar {
+    height: max-content;
+    padding: 0;
+}
+.nav-item {
+    margin-right: 5%;
+    text-align: right;
+}
+.my-navbar {
+    direction: rtl;
+    background-color: #4286f5;
+    color: white;
+    height: max-content;
+    padding: 0;
+}
+.navbar-toggler .line {
+    color: red;
+}
+
+.navbar-button  {
+    margin-left: 5%;
+    border: none;
+    position: absolute;
+    height: 100%;
+}
+.roshan-logo {
+    width: 100%;
+}
+.navbar-brand {
+    float: right;
+    padding: 0;
+}
+.navbar-logo {
+    direction: rtl;
+    text-align: right;
+    margin: auto;
+    display: block;
+    height: 21.798vw;
+    padding-top: 2.665vw;
+}
+.navbar-collapse {
+    direction: ltr;
+}
+.nav-items{
+    color: #ffffff;
+    font-size: 4.798vw;
+    width: max-content;
+    font-family: IRANYekanMobileFaNum;
+    font-weight: bold;
+}
+.nav-items:hover{
+    color: #cdfff5;
+}
+.nav-items:focus{
+    color: #cdfff5;
+}
+.navbar-toggler-icon{
+    height: 60%;
+    width: 4.5rem;
+    position: absolute;
+    top: 4.264vw;
+    right: 5.33vw;
+}
+.web-nav {
+    width: 100%;
+}
+
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {...}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {...}*/
+
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+@media only screen and (min-width: 912px) {
+    body {
+        direction: rtl;
+    }
+    .navbar {
+        height: max-content;
+        padding: 0;
+    }
+    .my-navbar {
+        direction: rtl;
+        background-color: #245779;
+        color: white;
+        height: max-content;
+        padding: 0;
+    }
+    .navbar-toggler .line {
+        color: red;
+    }
+    .roshan-logo {
+        width: 34%;
+        float: right;
+    }
+
+    .navbar-button  {
+        margin-left: 15.7vw;
+        border: none;
+    }
+
+    .navbar-brand {
+        float: right;
+        margin-right: 15.7vw;
+        padding: 0;
+    }
+    .navbar-logo {
+        direction: rtl;
+        text-align: right;
+        height: 70.22px;
+        padding-top: 0;
+        margin-right: 15.7vw;
+    }
+    .navbar-collapse {
+        margin-left: 15.9%;
+        direction: ltr;
+        direction: ltr;
+    }
+    .nav-items{
+        color: #ffffff;
+        font-family: IRANYekanMobileFaNum;
+        font-weight: bold;
+        font-size: 1.02vw;
+    }
+    .nav-items:hover{
+        color: #cdfff5;
+    }
+    .nav-items:focus{
+        color: #cdfff5;
+    }
+}
+
