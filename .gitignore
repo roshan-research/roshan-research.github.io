@@ -1,0 +1,30 @@
+.idea/
+build/
+node_modules
+
+# IntelliJ and vsc#
+######################
+*.iml
+.vscode/*
+
+# Logs and databases #
+######################
+*.log
+logs
+npm-debug.log*
+*.sql
+*.sqlite
+
+# OS generated files #
+######################
+.DS_Store
+.AppleDouble
+.LSOverride
+
+# Environment#
+#####################
+.env
+.venv
+env/
+venv/
+
