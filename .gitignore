@@ -1,30 +1,29 @@
-.idea/
-build/
-node_modules
+# dependencies#
+#######################
+/node_modules
 
-# IntelliJ and vsc#
+# testing #
+#######################
+/coverage
+
+# production#
 ######################
-*.iml
+/build
+
+# idea and vsc#
+######################
+.idea/*
 .vscode/*
+/.vscode.idea
 
 # Logs and databases #
 ######################
-*.log
-logs
 npm-debug.log*
-*.sql
-*.sqlite
+yarn-debug.log*
+yarn-error.log*
+npm-error.log*
 
 # OS generated files #
 ######################
 .DS_Store
-.AppleDouble
-.LSOverride
-
-# Environment#
-#####################
-.env
-.venv
-env/
-venv/
 
