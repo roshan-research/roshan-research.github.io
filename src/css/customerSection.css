@@ -1,12 +1,6 @@
 .our-customer {
     background-color: white;
     direction: ltr;
-    display: grid;
-    grid-template-columns: repeat(6, 1fr);
-    grid-gap: 10px;
-    grid-auto-rows: minmax(100px, auto);
-    width: 73%;
-    margin: 0 auto;
 }
 
 .our-customer .title{
@@ -16,6 +10,16 @@
     text-align: center;
     color: #000000;
     padding: 9px 0 18px 0;
+}
+
+.customer-container{
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 73%;
+    margin: 0 auto;
 }
 
 .web-customer {
@@ -56,13 +60,6 @@
     .our-customer {
         height: 52.1875rem;
         background-color: #e4e4e4;
-        direction: ltr;
-        display: grid;
-        grid-template-columns: repeat(6, 1fr);
-        grid-gap: 10px;
-        grid-auto-rows: minmax(100px, auto);
-        width: 73%;
-        margin: 0 auto;
     }
 
     .our-customer .title {
@@ -75,7 +72,13 @@
     }
 
     .customer-container{
-
+        direction: ltr;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        width: 73%;
+        margin: 0 auto;
     }
 
     .mobile-customer {
