@@ -1,12 +1,13 @@
 "use strict";
 
-const http = require("http");
-const fs = require("fs");
+var express = require('express');
+var app = express();
+var open = require('open');
+const port = process.env.PORT || 3000;
 
-const server = http.createServer((req, res) => {
-  res.writeHead(200, { 'content-type': 'text/html' });
-  fs.createReadStream('src/index.html').pipe(res);
-
+app.use(express.static('src'));
+app.get('/', function (req, res) {
+  res.sendFile( "src/index.htm" );
 });
 
-server.listen(process.env.PORT || 3000);
+app.listen(port, open('http://localhost:'+ port));
