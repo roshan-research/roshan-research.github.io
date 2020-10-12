@@ -5,9 +5,9 @@ var app = express();
 var open = require('open');
 const port = process.env.PORT || 3000;
 
-app.use(express.static('src'));
+app.use('/src/', express.static('src'));
 app.get('/', function (req, res) {
-  res.sendFile( "src/index.htm" );
+  res.sendFile( "index.html", { root: 'public' } );
 });
 
 app.listen(port, open('http://localhost:'+ port));
