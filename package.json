@@ -4,11 +4,13 @@
   "description": "",
   "author": "sobhe",
   "scripts": {
-    "start": "node scripts/start",
+    "start": "gulp",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "dependencies": {
-    "express": "^4.17.1",
-    "open": "^7.3.0"
+  "devDependencies": {
+    "browser-sync": "^2.26.12",
+    "gulp": "^4.0.2",
+    "gulp-imagemin": "^7.1.0",
+    "gulp-sass": "^4.1.0"
   }
 }

@@ -1,0 +1,167 @@
+.our-customer {
+    background-color: white;
+    direction: ltr;
+}
+
+.our-customer .title{
+    font-size: 30px;
+    font-family: IRANYekanMobileFaNum, serif;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding: 9px 0 18px 0;
+}
+
+.customer-container{
+    direction: ltr;
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-gap: 10px;
+    grid-auto-rows: minmax(100px, auto);
+    width: 73%;
+    margin: 0 auto;
+}
+
+.web-customer {
+    display: none;
+}
+
+.slider-two{
+    width: 90%;
+    margin: auto;
+    margin-bottom: 10%;
+}
+.logo-item {
+    width: 33%;
+}
+.item-row {
+    margin-bottom: 5.33vw;
+}
+.image-sixteen-customer {
+    height: 23.98vw;
+}
+
+
+
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {...}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {...}*/
+
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+@media screen and (min-width: 912px) {
+    .our-customer {
+        height: 52.1875rem;
+        background-color: #e4e4e4;
+    }
+
+    .our-customer .title {
+        font-family: IRANYekanMobileFaNum, serif;
+        font-size: 50px;
+        font-weight: bold;
+        text-align: center;
+        color: #000000;
+        padding: 20px 0 30px 0;
+    }
+
+    .customer-container{
+        direction: ltr;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-gap: 10px;
+        grid-auto-rows: minmax(100px, auto);
+        width: 73%;
+        margin: 0 auto;
+    }
+
+    .mobile-customer {
+        display: none;
+    }
+    .web-customer{
+        display: block;
+    }
+
+
+    .customer-one {
+        grid-column: 1;
+        grid-row: 2;
+    }
+    .customer-two{
+        grid-column: 2;
+        grid-row: 2;
+    }
+    .customer-three{
+        grid-column: 3/4;
+        grid-row: 2;
+    }
+    .customer-four{
+        grid-column: 4;
+        grid-row: 2;
+    }
+    .customer-five{
+        grid-column: 5;
+        grid-row: 2;
+    }
+    .customer-six{
+        grid-column: 1;
+        grid-row: 3;
+    }
+    .customer-seven{
+        grid-column: 2;
+        grid-row: 3;
+    }
+    .customer-eight{
+        grid-column: 3;
+        grid-row: 3;
+    }
+    .customer-nine{
+        grid-column: 4;
+        grid-row: 3;
+    }
+    .customer-ten{
+        grid-column: 5;
+        grid-row: 3;
+    }
+    .customer-eleven{
+        grid-column: 6;
+        grid-row: 3;
+    }
+    .customer-twelve{
+        grid-column: 1;
+        grid-row: 4;
+    }
+    .customer-thirteen{
+        grid-column: 2/4;
+        grid-row: 4;
+    }
+    .customer-fourteen{
+        grid-column: 4;
+        grid-row: 4;
+    }
+    .customer-fifteen{
+        grid-column: 5;
+        grid-row: 4;
+    }
+    .customer-sixteen{
+        grid-column: 6;
+        grid-row: 4;
+    }
+    .customer-image {
+        -webkit-filter: grayscale(100%);
+        filter: grayscale(100%);
+    }
+    .customer-image:hover{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }
+    .customer-image:focus{
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+    }}

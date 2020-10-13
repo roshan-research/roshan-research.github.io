@@ -1,0 +1,167 @@
+.footer  {
+    height: 70.6225vw;
+    width: 100%;
+    background-color: #4286f5;
+    color: white;
+    text-align: right;
+}
+.footer-border {
+    width: 90%;
+    margin: auto;
+}
+.footer-company {
+    float: right;
+    margin-bottom: 6.6625vw;
+}
+
+.footer-information {
+    width: 100%;
+    margin: auto;
+    margin-right: 2.594vw;
+    font-size: 4.264vw;
+    font-weight: bold;
+}
+.footer-company-address {
+    display: flex;
+}
+.footer-company-call-number{
+    display: flex;
+}
+.footer-company-email {
+    display: flex;
+}
+.footer-company-address-text p {
+    margin: 0;
+    text-align: right;
+}
+.footer-company-address-text{
+    margin: 1.2rem;
+    margin-top: 0;
+    font-size: 4.264vw;
+    margin-bottom: 1.3325vw;
+    font-weight: lighter;
+}
+.footer-company-address-text p{
+    margin-bottom: 0;
+}
+.footer-company-email-text {
+    margin: 1.2rem;
+    margin-top: 0;
+    font-size: 4.264vw;
+    padding-top: 1.066vw;
+    margin-bottom: 1.3325vw;
+    font-weight: lighter;
+}
+.footer-company-email-text p{
+    margin-bottom: 0;
+}
+.footer-company-call-number-text{
+    margin: 1.2rem;
+    margin-top: 0;
+    font-size: 4.264vw;
+    padding-top: 1.066vw;
+    margin-bottom: 1.3325vw;
+    font-weight: lighter;
+}
+.footer-company-call-number-text p {
+    margin-bottom: 0;
+}
+.footer-company-title {
+    margin: 1.2rem 0;
+    font-size: 4.264vw;
+}
+.footer-company-title-bold {
+    font-weight: bold;
+    font-size: 5.33vw;
+}
+.footer-information-about-our{
+    width: 38%;
+}
+.footer-information-contact-our {
+    width: 36%;
+}
+.footer-information-blog {
+    width: 26%;
+}
+.footer-company-address-image-icon {
+    width: 3.9975vw;
+    height: 6.396vw;
+}
+.footer-company-email-image-icon {
+    width: 4.794vw;
+    height: 3.7576vw;
+}
+.footer-company-call-number-image-icon{
+    width: 4.797vw;
+    height: 4.797vw;
+}
+
+/*!* Extra small devices (phones, 600px and down) *!*/
+/*@media only screen and (max-width: 600px) {...}*/
+
+/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
+/*@media only screen and (min-width: 600px) {...}*/
+
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+@media only screen and (min-width: 912px) {
+    .footer  {
+        height: 16.8043rem;
+        width: 100%;
+        background-color: #245779;
+        color: white;
+        text-align: right;
+    }
+    .footer-border {
+        width: 74%;
+        margin: auto;
+    }
+    .footer-company {
+        float: right;
+    }
+    .footer-information {
+        float: left;
+        margin-top: 4rem;
+        margin-left: 5rem;
+    }
+    .footer-company-address {
+        display: flex;
+    }
+    .footer-company-call-number{
+        display: flex;
+    }
+    .footer-company-email {
+        display: flex;
+    }
+    .footer-company-address-text p {
+        margin: 0;
+        text-align: right;
+    }
+    .footer-company-address-text{
+        margin: 1.2rem;
+        margin-top: 0;
+    }
+    .footer-company-email-text {
+        margin: 1.2rem;
+        margin-top: 0;
+    }
+    .footer-company-call-number-text{
+        margin: 1.2rem;
+        margin-top: 0;
+    }
+    .footer-company-title {
+        margin: 1.7rem 0;
+    }
+    .footer-information-about-our{
+        margin-top: 1.2rem;
+    }
+    .footer-information-contact-our {
+        margin-top: 1.2rem;
+    }
+    .footer-information-blog { margin-top: 1.2rem}
+}
