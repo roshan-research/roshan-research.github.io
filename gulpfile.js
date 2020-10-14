@@ -11,8 +11,8 @@ var config = {
   jsSrc: 'src/js',
   outputJsDir: 'public/dist/js',
   imgSrc: [
-    'src/images/*.{JPG,jpg,png,gif}',
-    'src/images/**/*.{JPG,jpg,png,gif}',
+    'src/images/*.{JPG,jpg,png,gif,svg}',
+    'src/images/**/*.{JPG,jpg,png,gif,svg}',
   ],
   outputImageDir: 'public/dist/images',
   port: process.env.PORT || 3000,

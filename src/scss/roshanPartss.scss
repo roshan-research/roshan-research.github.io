@@ -3,9 +3,14 @@
 /*طراحی موبایل*/
 .roshan{
     width: 100%;
-    background-image: url("../images/roshanBackground.png");
+    background-image: url("../images/roshanBackground.JPG");
     background-repeat: no-repeat;
     background-size: 100% 100%;
+}
+.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
+    width: 100%;
+    padding: 0;
+    margin: 0;
 }
 .roshan-web {
     display: none;
@@ -15,7 +20,7 @@
     /*filter: blur(0.5px);*/
 }
 .earth-image{
-    width: 150%;
+    width: 100%;
     mix-blend-mode: screen;
     height: 108.732vw;
     -webkit-filter: blur(0.5px);
