@@ -4,13 +4,18 @@
   "description": "",
   "author": "sobhe",
   "scripts": {
-    "start": "gulp",
+    "start": "npm run sass:compile && node scripts/server",
+    "sass:compile": "node-sass --include-path sass src/scss/index.scss public/dist/css/index.css",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "devDependencies": {
     "browser-sync": "^2.26.12",
+    "express": "^4.17.1",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
-    "gulp-sass": "^4.1.0"
-  }
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^4.14.1",
+    "open": "^7.3.0"
+  },
+  "dependencies": {}
 }
