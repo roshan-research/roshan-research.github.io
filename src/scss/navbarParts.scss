@@ -4,6 +4,7 @@ body {
 .navbar {
     height: max-content;
     padding: 0;
+
 }
 .nav-item {
     margin-right: 5%;
@@ -16,15 +17,20 @@ body {
     height: max-content;
     padding: 0;
 }
+.navbar-nav{
+    direction: rtl;
+}
 .navbar-toggler .line {
     color: red;
 }
 
 .navbar-button  {
-    margin-left: 5%;
     border: none;
     position: absolute;
-    height: 100%;
+    top: 5vw;
+    height: max-content;
+    width: max-content;
+
 }
 .roshan-logo {
     width: 100%;
@@ -58,11 +64,9 @@ body {
     color: #cdfff5;
 }
 .navbar-toggler-icon{
-    height: 60%;
-    width: 4.5rem;
-    position: absolute;
-    top: 4.264vw;
-    right: 5.33vw;
+    width: 10vw;
+    height: 10vw;
+
 }
 .web-nav {
     width: 100%;
@@ -107,6 +111,7 @@ body {
     .navbar-button  {
         margin-left: 15.7vw;
         border: none;
+
     }
 
     .navbar-brand {

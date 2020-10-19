@@ -20,14 +20,14 @@
     /*filter: blur(0.5px);*/
 }
 .earth-image{
-    width: 100%;
+    width: 150%;
     mix-blend-mode: screen;
     height: 108.732vw;
     -webkit-filter: blur(0.5px);
     filter: blur(0.5px);
     transform: translate(21.853vw);
-    opacity: 0.6;
-    margin-top: 58px;
+    opacity: 0.5;
+    margin-top: 16vw;
 }
 .roshan-mobile-text {
     position: absolute;
@@ -35,13 +35,14 @@
     margin-top: 50%;
     font-size: 5.33vw;
     color: white;
+    font-family: IRANYekanWeb;
 }
 .text-roshan {
     font-size: 7.995vw;
     font-weight: bold;
 }
 .product-image {
-    width: 11.9925vw;
+    width: 16.9925vw;
     display: block;
     text-align: center;
     margin: auto;
