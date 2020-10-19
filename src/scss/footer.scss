@@ -1,22 +1,21 @@
 .footer {
-  height: 8.28125rem;
   box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
   background-color: #4286f5;
   color: white;
-  padding: 0.46875rem 0.625rem 0.625rem 1.1875rem;
+  padding: 7.5px 10px 10px 19px;
   font-family: IRANYekanMobileFaNum, serif;
   text-align: right;
 
   .footer-title {
-      margin-bottom: 0.84375rem;
+      margin-bottom: 13.5px;
 
       span:first-child {
-        font-size: 0.635rem
+        font-size: 4.264vw;
       }
 
       span:last-child {
         font-weight: bold;
-        font-size: 0.625rem
+        font-size: 5.33vw;
       }
     }
 
@@ -24,7 +23,7 @@
       display: flex;
       flex-direction: column;
       justify-content: flex-start;
-      font-size: 0.5rem;
+      font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.55;
@@ -35,56 +34,55 @@
         .footer-company-address {
           display: flex;
           align-items: flex-start;
-          margin-bottom:  0.3rem;
+          margin-bottom:  4.8px;
           img.icon {
-            width: 0.475rem;
-            height: 0.7625rem;
-            margin-left: 0.3375rem;
+            width: 7.6px;
+            height: 12.2px;
+            margin-left: 5.4px;
           }
           .text {
+            font-size: 4.264vw;
             display: inline-block;
-            width: 9.09375rem;
-            height: 1.5875rem;
             text-align: right;
           }
         }
 
         .footer-company-email {
-          margin-bottom: 0.3125rem;
+          margin-bottom: 5px;
           img.icon {
-            width: 0.5625rem;
-            height: 0.45rem;
-            margin-left: 0.3375rem;
+            width: 9px;
+            height: 7.2px;
+            margin-left: 5.4px;
           }
 
           .text {
-            width: 3.1875rem;
-            height:  0.78125rem;
+            font-size: 4.264vw;
             text-align: right;
           }
         }
 
         .footer-company-call-number {
           img.icon {
-            width: 0.5625rem;
-            height: 0.5625rem;
-            margin-left: 0.3375rem;
+            width: 9px;
+            height: 9px;
+            margin-left: 5.4px;
           }
 
           .text {
-            width: 3.53125rem;
-            height: 0.78125rem;
+            font-size: 4.264vw;
             text-align: right;
           }
         }
       }
 
       .footer-information {
-        padding-right: 0.84375em;
+        margin-top: 13.5px;
+        padding-right: 13.5px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
         p {
+          font-size: 4.264vw;
           font-weight: bold;
           text-align: right;
         }
@@ -107,24 +105,24 @@
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
   .footer {
-    height: 10.0625rem;
+    height: max-content;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: #4286f5;
     color: #ffffff;
-    padding: 1.1875rem 9.5625rem 1.25rem 12.4375rem;
+    padding: 1.1875em 9.5625em 1.25em 12.4375em;
     font-family: IRANYekanMobileFaNum, serif;
     text-align: right;
 
     .footer-title {
-      margin-bottom: 0.98125rem;
+      margin-bottom: 0.98125em;
 
       span:first-child {
-        font-size: 0.625rem
+        font-size: 0.625em
       }
 
       span:last-child {
         font-weight: bold;
-        font-size: 0.9375rem
+        font-size: 0.9375em
       }
     }
 
@@ -132,7 +130,7 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      font-size: 0.625rem;
+      font-size: 0.625em;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.55;
@@ -143,46 +141,46 @@
         .footer-company-address {
           display: flex;
           align-items: flex-start;
-          margin-bottom:  0.23125rem;
+          margin-bottom:  0.23125em;
           img.icon {
-            width: 0.625rem;
-            height: 1.00625rem;
-            margin-left: 0.4375rem;
+            width: 0.625em;
+            height: 1.00625em;
+            margin-left: 0.4375em;
           }
 
           .text {
             display: inline-block;
-            width: 13rem;
-            height: 2.375rem;
+            width: 13em;
+            height: 2.375em;
             text-align: right;
           }
         }
 
         .footer-company-email {
-          margin-bottom: 0.625rem;
+          margin-bottom: 0.625em;
           img.icon {
-            width: 0.80625rem;
-            height: 0.64375rem;
-            margin-left: 0.4375rem;
+            width: 0.80625em;
+            height: 0.64375em;
+            margin-left: 0.4375em;
           }
 
           .text {
-            width: 3.96875rem;
-            height: 0.96875rem;
+            width: 3.96875em;
+            height: 0.96875em;
             text-align: right;
           }
         }
 
         .footer-company-call-number {
           img.icon {
-            width: 0.8rem;
-            height: 0.8rem;
-            margin-left: 0.4375rem;
+            width: 0.8em;
+            height: 0.8em;
+            margin-left: 0.4375em;
           }
 
           .text {
-            width: 6rem;
-            height: 0.96875rem;
+            width: 6em;
+            height: 0.96875em;
             text-align: right;
           }
         }
@@ -190,8 +188,8 @@
 
       .footer-information {
         display: inline-block;
-        height: 5.46875rem;
-        width: 3.375rem;
+        height: 5.46875em;
+        width: 3.375em;
         p {
           font-weight: bold;
           text-align: right;
