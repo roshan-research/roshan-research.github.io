@@ -1,227 +1,227 @@
-.alefba {
-  width: 100%;
-  background-image: url("../images/alefba-mobile-background.png");
-  background-repeat: no-repeat;
-  background-size: 100% 100%; }
+.our-customer {
+  background-color: white;
+  direction: ltr;
+  height: 87vw;
+}
 
-.alefba-image {
-  float: right;
-  height: inherit;
-  position: relative;
-  width: 50%; }
-
-.alefba-web-button {
-  display: none; }
-
-.alefba-imageWeb {
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%); }
-
-.alefba-introduce {
-  position: relative;
-  width: 50%;
-  float: left;
-  height: inherit; }
-
-.alefba-title {
-  direction: rtl;
+.our-customer .title{
   font-size: 10.66vw;
+  font-family: IRANYekanMobileFaNum, serif;
   font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.54;
-  letter-spacing: normal;
-  text-align: right;
-  color: #000000;
-  margin: 0; }
-
-.alefba-head {
-  font-size: 7.995vw;
-  font-weight: normal;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.56;
-  letter-spacing: normal;
-  text-align: right;
-  color: #000000; }
-
-.alefba-describe {
-  font-size: 4.798vw;
-  font-weight: 300;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.55;
-  letter-spacing: normal;
-  text-align: right;
-  color: #000000;
-  margin: 0 auto; }
-
-.alefba-button {
-  color: #ffffff;
-  height: 12.792vw;
-  font-size: 3.198vw;
-  border-radius: 0.666vw;
-  box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
-  background-color: #245779;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.57;
-  letter-spacing: normal;
   text-align: center;
-  margin: 0 auto;
-  width: 83%;
-  margin-top: 3%;
-  margin-bottom: 5%; }
+  color: #000000;
+  padding: 9px 0 18px 0;
+  height: 18%;
+}
+.mobile-customer{
+  display: flex;
+  height: 82%;
+  justify-content: center;
+  align-items: center;
 
-.alefba-button:hover {
-  color: white; }
+}
 
-.alefba-border {
-  border-right: 0.7995vw solid;
-  border-right-color: black;
-  padding: 0 2.744vw;
-  margin-top: 5%;
-  padding-bottom: 7%; }
 
-.mobile-image-center {
-  text-align: center; }
 
-.alefba-mobile-image {
-  height: auto;
-  width: 84vw; }
+.web-customer {
+  display: none;
+}
 
-.alefba-web-image {
-  display: none; }
+.slider-two {
+  width: 90%;
+}
+.logo-item {
+  width: 33%;
+}
+.item-row {
+  margin-bottom: 5.33vw;
+}
+//.image-sixteen-customer {
+//    height: 23.98vw;
+//}
 
-@media only screen and (max-width: 450px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
 
-@media only screen and (min-width: 550px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-@media only screen and (min-width: 650px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-@media only screen and (min-width: 750px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
 
 /*!* Extra small devices (phones, 600px and down) *!*/
 /*@media only screen and (max-width: 600px) {...}*/
+
 /*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
 /*@media only screen and (min-width: 600px) {...}*/
+
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
+
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
+
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
-  .alefba {
-    width: 100%;
-    background-image: url("../images/alefbaBackground.png");
-    background-repeat: no-repeat; }
-  .alefba-web-text {
-    width: 70%;
-    order: 1;
-    margin-top: 15.90vw;
-    margin-bottom: 15.90vw; }
-  .alefba-image {
-    float: right;
-    height: inherit;
-    position: relative;
-    width: 50%; }
-  .alefba-imageWeb {
-    margin: 0;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    -ms-transform: translate(-50%, -50%);
-    transform: translate(-50%, -50%); }
-  .alefba-introduce {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: inherit; }
-  .alefba-title {
-    direction: rtl;
-    font-size: 2.5654vw;
+@media screen and (min-width: 912px) {
+  .our-customer {
+    background-color: #e4e4e4;
+    height: auto;
+  }
+
+  .our-customer .title {
+    font-family: IRANYekanMobileFaNum, serif;
+    font-size: 50px;
     font-weight: bold;
-    font-family: IRANYekanMobileFaNum;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.54;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    font-family: IRANYekanMobileFaNum, serif; }
-  .alefba-head {
-    font-family: IRANYekanMobileFaNum;
-    font-size: 1.64vw;
-    font-weight: 400;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.56;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    margin-top: 0.974vw; }
-  .alefba-describe {
-    font-family: IRANYekanMobileFaNum;
-    font-weight: 300;
-    font-size: 1.02vw;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.55;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    margin: 0 auto;
-    margin-top: 0.9235vw; }
-  .alefba-web-button {
-    display: block; }
-  .alefba-mobile-button {
-    display: none; }
-  .alefba-button {
-    font-family: IRANYekanMobileFaNum;
-    color: #ffffff;
-    width: 7.59vw;
-    height: 2.46vw;
-    border-radius: 2.5px;
-    box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-    background-color: #245779;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    font-size: 0.71vw;
-    line-height: 1.57;
-    letter-spacing: normal;
     text-align: center;
-    margin: 0;
-    margin-top: 10px;
-    margin-left: 15.7vw;
-    float: left; }
-  .alefba-button:hover {
-    color: white; }
-  .alefba-border {
-    width: 70%;
-    border-right: 5px solid;
-    border-right-color: #000000;
-    padding: 0.64375rem;
-    margin: 0; }
-  .alefba-mobile-image {
-    display: block;
-    margin: 11.133vw auto;
-    width: 27.34vw;
-    height: 26.47vw; } }
+    color: #000000;
+    padding: 20px 0 30px 0;
+  }
+  .mobile-customer{
+    display: none;
+  }
+
+  .web-customer{
+    width: 64%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-row-gap: 1rem;
+    margin-top: 2em;
+    margin-bottom: 3.0625em;
+  }
+  .row-one{
+    grid-row: 1;
+    display: grid;
+    grid-template-columns: 0.215fr 0.1999fr 0.1853fr 0.1853fr 0.1853fr;
+    grid-column-gap: 1.2em;
+    height: max-content;
+  }
+  .row-two{
+    grid-row: 2;
+    display: grid;
+    grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr;
+    grid-column-gap: 1.2em;
+    height: max-content;
+
+  }
+  .row-three{
+    grid-row: 3;
+    display: flex;
+    direction: rtl;
+    height: max-content;
+  }
+  .marginRight{
+
+    display: grid;
+    grid-template-columns:0.1860fr 0.16680fr  0.2082fr 0.3825fr 0.1996fr ;
+    grid-column-gap: 3em;
+    width: 98.3%;
+  }
+
+  .customer-one {
+    grid-column: 1;
+    grid-row: 1;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-two{
+    grid-column: 2;
+    grid-row: 1;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-three{
+    grid-column: 3/4;
+    grid-row: 1;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-four{
+    grid-column: 4;
+    grid-row: 1;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-five{
+    grid-column: 5;
+    grid-row: 1;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-six{
+    grid-column: 1;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-seven{
+    grid-column: 2;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-eight{
+    grid-column: 3;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-nine{
+    grid-column: 4;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-ten{
+    grid-column: 5;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-eleven{
+    grid-column: 6;
+    grid-row: 2;
+    width: 100%;
+    margin: auto;
+
+  }
+  .customer-twelve{
+    grid-column: 1;
+    grid-row: 3;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-thirteen{
+    grid-column: 2;
+    grid-row: 3;
+    width: 100%;
+    height: auto;
+    margin: auto;
+  }
+  .customer-fourteen{
+    grid-column: 3;
+    grid-row: 3;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-fifteen{
+    grid-column: 4;
+    grid-row: 3;
+    width: 100%;
+    margin: auto;
+  }
+  .customer-sixteen{
+    grid-column: 5;
+    grid-row: 3;
+    width: 100%;
+    margin: auto;
+  }
+
+  .customer-image {
+    -webkit-filter: grayscale(100%);
+    filter: grayscale(100%);
+    opacity: 0.4;
+  }
+  .customer-image:hover{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+  }
+  .customer-image:focus{
+    -webkit-filter: grayscale(0%);
+    filter: grayscale(0%);
+    opacity: 1;
+  }}
