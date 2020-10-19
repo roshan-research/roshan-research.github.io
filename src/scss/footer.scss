@@ -2,7 +2,7 @@
   box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
   background-color: #4286f5;
   color: white;
-  padding: 7.5px 10px 10px 19px;
+  padding: 3.99vw 5.3vw;
   font-family: IRANYekanMobileFaNum, serif;
   text-align: right;
 
@@ -109,13 +109,17 @@
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: #4286f5;
     color: #ffffff;
-    padding: 1.1875em 9.5625em 1.25em 12.4375em;
     font-family: IRANYekanMobileFaNum, serif;
     text-align: right;
+    .width-63{
+       width: 63.4%;
+       margin: 0 auto;
+    }
 
     .footer-title {
       margin-bottom: 2.0181vw;
       font-size: 1.041vw;
+      margin-right: -5.6658vw;
 
       span:first-child {
         font-size: 1.3024vw;
@@ -141,6 +145,7 @@
 
       .footer-company {
         font-weight: 300;
+        margin-right: -5.6658vw;
         .footer-company-address {
           display: flex;
           align-items: flex-start;
