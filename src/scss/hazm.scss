@@ -1,113 +1,120 @@
 body {
-    background-color: #e4e4e4;
+  background-color: #e4e4e4;
 }
 
 
 .hazm {
-    width: 100%;
-    background-image: url("../images/hazm-background-mobile.png");
-    background-repeat: no-repeat;
-    padding: 0;
-    margin: 0 ;
-    background-size: 100% 100%;
+  width: 100%;
+  background-image: url("../images/hazm-background-mobile.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%;
 }
-.hazm-web-button{
-    display: none;
+
+.hazm-web-button {
+  display: none;
 }
 
 .hazm-introduce {
-    position: relative;
-    width: 50%;
-    float: left;
-    height: inherit;
+  position: relative;
+  width: 50%;
+  float: left;
+  height: inherit;
 }
-.hazm-title {
-    font-family: IRANYekanMobileFaNum;
-    direction: rtl;
-    font-size: 10.66vw;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.54;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    margin: 0;
-}
-.hazm-head{
-    font-family: IRANYekanMobileFaNum;
-    font-size: 7.995vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.56;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    margin: 0;
-}
-.hazm-describe {
-    font-family: IRANYekanMobileFaNum;
-    font-size: 4.798vw;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.55;
-    letter-spacing: normal;
-    text-align: right;
-    color: white;
-    margin: 0 auto;
-}
-.hazm-button {
-    font-family: IRANYekanMobileFaNum;
-    color: black;
-    width: 83%;
-    height: 12.792vw;
-    border-radius: 0.666vw;
-    box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
-    background-color: #e3d845;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    font-size: 3.198vw;
-    line-height: 1.57;
-    letter-spacing: normal;
-    text-align: center;
-    margin: 0 auto;
-    margin-top: 5%;
-    margin-bottom: 5%;
-}
-.hazm-button:hover {
-    color: black;
-}
-.hazm-borders {
-    border-right: 0.7995vw solid;
-    border-right-color: white;
-    padding: 0 2.744vw;
-    margin-top: 5%;
-    margin-right: 3%;
-    padding-bottom: 8%;
-}
-.hazm-image {
-    text-align: center;
 
+.hazm-title {
+  font-family: IRANYekanMobileFaNum;
+  direction: rtl;
+  font-size: 10.66vw;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.54;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  margin: 0;
 }
-.hazm-imageWeb {
+
+.hazm-head {
+  font-family: IRANYekanMobileFaNum;
+  font-size: 7.995vw;
+  font-weight: normal;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.56;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  margin: 0;
+}
+
+.hazm-describe {
+  font-family: IRANYekanMobileFaNum;
+  font-size: 4.798vw;
+  font-stretch: normal;
+  font-style: normal;
+  line-height: 1.55;
+  letter-spacing: normal;
+  text-align: right;
+  color: white;
+  margin: 0 auto;
+}
+
+.hazm-button {
+  font-family: IRANYekanMobileFaNum;
+  color: black;
+  width: 83%;
+  height: 12.792vw;
+  border-radius: 0.666vw;
+  box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+  background-color: #e3d845;
+  font-weight: bold;
+  font-stretch: normal;
+  font-style: normal;
+  font-size: 3.198vw;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 5%;
+  margin-bottom: 5%;
+}
+
+.hazm-button:hover {
+  color: black;
+}
+
+.hazm-borders {
+  border-right: 0.7995vw solid;
+  border-right-color: white;
+  padding: 0 2.744vw;
+  margin-top: 5%;
+  margin-right: 3%;
+  padding-bottom: 8%;
+}
+
+.hazm-image {
+  text-align: center;
+  img {
     width: 83.73%;
     margin: auto;
+  }
 }
-@media only screen and (max-width: 450px)
-{
+
+@media only screen and (max-width: 450px) {
 
 }
-@media only screen and (min-width: 550px)
-{
+
+@media only screen and (min-width: 550px) {
 }
-@media only screen and (min-width: 650px)
-{
+
+@media only screen and (min-width: 650px) {
 
 }
-@media only screen and (min-width: 750px)
-{
+
+@media only screen and (min-width: 750px) {
 
 }
 
@@ -125,130 +132,117 @@ body {
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
-    .hazm {
-        width: 100%;
-        background-image: url("../images/hazm-background.png");
-        background-repeat: no-repeat;
-        height: auto;
-    }
-    .hazm-web-button {
-        display: block;
-    }
-    .hazm-mobile-button{
-        display: none;
-    }
-    .hazm-image {
-        float: right;
-        height: inherit;
-        position: relative;
-        width: 50%;
-    }
-    .hazm-imageWeb {
-        margin: 0;
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        -ms-transform: translate(-50%, -50%);
-        transform: translate(-50%, -50%);
-    }
-    .hazm-introduce {
-        position: relative;
-        width: 50%;
-        float: left;
-        height: inherit;
-    }
-    .hazm-title {
-        font-size: 2.5654vw;
-        font-weight: bold;
-        font-family: IRANYekanMobileFaNum;
-        direction: rtl;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.54;
-        letter-spacing: normal;
-        text-align: right;
-        color: white;
-    }
-    .hazm-head{
-        font-family: IRANYekanMobileFaNum;
-        font-size: 1.64vw;
-        font-weight: 400;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.56;
-        letter-spacing: normal;
-        text-align: right;
-        color: white;
-        margin: 0;
-        margin-top: 0.974vw;
-    }
-    .hazm-describe {
-        font-family: IRANYekanMobileFaNum;
-        font-size: 1.02vw;
-        font-weight: 300;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.55;
-        letter-spacing: normal;
-        text-align: right;
-        color: white;
-        margin: 0 auto;
-        margin-top: 0.9235vw;
+  .hazm {
+    width: 100%;
+    background-image: url("../images/hazm-background.png");
+    background-repeat: no-repeat;
+    height: auto;
+  }
+  .hazm-web-button {
+    display: block;
+  }
+  .hazm-mobile-button {
+    display: none;
+  }
+
+  .hazm-introduce {
+    position: relative;
+    width: 50%;
+    float: left;
+    height: inherit;
+  }
+  .hazm-title {
+    font-size: 2.5654vw;
+    font-weight: bold;
+    font-family: IRANYekanMobileFaNum;
+    direction: rtl;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+  }
+  .hazm-head {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 1.64vw;
+    font-weight: 400;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin: 0;
+    margin-top: 0.974vw;
+  }
+  .hazm-describe {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 1.02vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin: 0 auto;
+    margin-top: 0.9235vw;
+
+  }
+  .hazm-button {
+    font-family: IRANYekanMobileFaNum;
+    color: black;
+    width: 7.59vw;
+    height: 2.46vw;
+    border-radius: 2.5px;
+    box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #e3d845;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 0.71vw;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    margin: 0;
+    float: left;
+    margin-left: 15.7vw;
+  }
+  .hazm-button:hover {
+    color: black;
+  }
+  .hazm-web-text {
+    width: 50%;
+    order: 1;
+    margin: 16.623vw 0;
+  }
+  .hazm-border {
+    width: 70%;
+    border-right: 5px solid;
+    border-right-color: white;
+    padding: 0.64375rem;
+    margin: 0 0;
+  }
+  .hazm-image {
+    float: right;
+    height: inherit;
+    position: relative;
+    width: 50%;
+    text-align: right;
+
+    img {
+      fill: #848484;
+      background-blend-mode: unset;
+      position: relative !important;
+      top: 0 !important;
+      left: 0 !important;
+      transform: none;
+      width: 29.1313vw;
+      height: 27.603vw;
+      margin: 10.72vw 0;
+      margin-right: 12.52vw;
 
     }
-    .hazm-button {
-        font-family: IRANYekanMobileFaNum;
-        color: black;
-        width: 7.59vw;
-        height: 2.46vw;
-        border-radius: 2.5px;
-        box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-        background-color: #e3d845;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        font-size: 0.71vw;
-        line-height: 1.57;
-        letter-spacing: normal;
-        text-align: center;
-        margin: 0 ;
-        float: left;
-        margin-left: 15.7vw;
-    }
-    .hazm-button:hover {
-        color: black;
-    }
-    .hazm-web-text {
-        width: 50%;
-        order: 1;
-        margin: 16.623vw 0;
-    }
-    .hazm-border {
-        width: 70%;
-        border-right: 5px solid;
-        border-right-color: white;
-        padding: 0.64375rem;
-        margin: 0 0;
-    }
-    .hazm-image {
-        float: right;
-        height: inherit;
-        position: relative;
-        width: 50%;
-        text-align: right;
-    }
-    .hazm-imageWeb {
-        fill: #848484;
-        background-blend-mode: unset;
-        position:relative!important;
-        top: 0 !important;
-        left: 0 !important;
-        transform: none;
-        width: 29.1313vw;
-        height: 27.603vw;
-        margin: 10.72vw 0;
-        margin-right: 12.52vw;
-
-    }
-
+  }
 }
