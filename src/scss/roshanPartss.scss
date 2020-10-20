@@ -23,8 +23,7 @@
     width: 150%;
     mix-blend-mode: screen;
     height: 108.732vw;
-    -webkit-filter: blur(0.5px);
-    filter: blur(0.5px);
+    filter: blur(1px);
     transform: translate(21.853vw);
     opacity: 0.5;
     margin-top: 16vw;
@@ -34,11 +33,12 @@
     text-align: center;
     margin-top: 50%;
     font-size: 5.33vw;
+    font-weight: 300;
     color: white;
     font-family: IRANYekanWeb;
 }
 .text-roshan {
-    font-size: 7.995vw;
+    font-size: 10.66vw;
     font-weight: bold;
 }
 .product-image {
@@ -77,9 +77,9 @@
         display: none;
     }
     .earth-image{
-        width: 43.04vw;
+        width: 47.04vw;
         mix-blend-mode: screen;
-        filter: blur(0.5px);
+        filter: blur(0px);
         transform: none;
         opacity: 0.6;
         margin-top: 5.49vw;
@@ -90,7 +90,7 @@
         max-width: 100%;
     }
     .roshan-mobile-text {
-        position: relative;
+        position: absolute;
         color: white;
         margin: auto 0;
         text-align: start;

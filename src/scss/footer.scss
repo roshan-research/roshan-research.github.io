@@ -2,12 +2,12 @@
   box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
   background-color: #4286f5;
   color: white;
-  padding: 7.5px 10px 10px 19px;
+  padding: 3.99vw 5.3vw;
   font-family: IRANYekanMobileFaNum, serif;
   text-align: right;
 
   .footer-title {
-      margin-bottom: 13.5px;
+      margin-bottom: 7.1955vw;
 
       span:first-child {
         font-size: 4.264vw;
@@ -34,11 +34,11 @@
         .footer-company-address {
           display: flex;
           align-items: flex-start;
-          margin-bottom:  4.8px;
+          margin-bottom: 1.3325vw;
           img.icon {
-            width: 7.6px;
-            height: 12.2px;
-            margin-left: 5.4px;
+            width: 4.06904vw;
+            height: 6.2921vw;
+            margin-left: 2.862vw;
           }
           .text {
             font-size: 4.264vw;
@@ -48,11 +48,11 @@
         }
 
         .footer-company-email {
-          margin-bottom: 5px;
+          margin-bottom: 1.3325vw;
           img.icon {
-            width: 9px;
-            height: 7.2px;
-            margin-left: 5.4px;
+            width: 4.797vw;
+            height: 3.8376vw;
+            margin-left: 2.862vw;
           }
 
           .text {
@@ -63,9 +63,9 @@
 
         .footer-company-call-number {
           img.icon {
-            width: 9px;
-            height: 9px;
-            margin-left: 5.4px;
+            width: 4.6485vw;
+            height: 4.6485vw;
+            margin-left: 2.862vw;
           }
 
           .text {
@@ -76,8 +76,8 @@
       }
 
       .footer-information {
-        margin-top: 13.5px;
-        padding-right: 13.5px;
+        margin-top: 7.1955vw;
+        padding-right: 3.59775vw;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
@@ -109,20 +109,26 @@
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
     background-color: #4286f5;
     color: #ffffff;
-    padding: 1.1875em 9.5625em 1.25em 12.4375em;
     font-family: IRANYekanMobileFaNum, serif;
     text-align: right;
+    .width-63{
+       width: 63.4%;
+       margin: 0 auto;
+    }
 
     .footer-title {
-      margin-bottom: 0.98125em;
+      margin-bottom: 2.0181vw;
+      font-size: 1.041vw;
+      margin-right: -5.6658vw;
 
       span:first-child {
-        font-size: 0.625em
+        font-size: 1.3024vw;
+        font-weight: normal;
       }
 
       span:last-child {
         font-weight: bold;
-        font-size: 0.9375em
+        font-size: 1.9536vw;
       }
     }
 
@@ -130,7 +136,8 @@
       display: flex;
       flex-direction: row;
       justify-content: space-between;
-      font-size: 0.625em;
+      font-size: 1.042vw;
+      font-weight: 300;
       font-stretch: normal;
       font-style: normal;
       line-height: 1.55;
@@ -138,61 +145,67 @@
 
       .footer-company {
         font-weight: 300;
+        margin-right: -5.6658vw;
         .footer-company-address {
           display: flex;
           align-items: flex-start;
-          margin-bottom:  0.23125em;
+          margin-bottom: 1.3024vw;
           img.icon {
-            width: 0.625em;
-            height: 1.00625em;
-            margin-left: 0.4375em;
+            width: 1.302vw;
+            height: 2.093608vw;
+            margin-left: 0.91175vw;
           }
 
           .text {
             display: inline-block;
-            width: 13em;
-            height: 2.375em;
+            width: 60%;
             text-align: right;
+            font-size: 1.3024vw;
           }
         }
 
         .footer-company-email {
-          margin-bottom: 0.625em;
+          margin-bottom: 1.3024vw;
           img.icon {
-            width: 0.80625em;
-            height: 0.64375em;
-            margin-left: 0.4375em;
+            width: 1.67423vw;
+            height: 1.3024vw;
+            margin-left: 0.3863vw;
+
           }
 
           .text {
-            width: 3.96875em;
-            height: 0.96875em;
+            width: 60%;
             text-align: right;
+            font-size: 1.3024vw;
+
           }
         }
 
         .footer-company-call-number {
+          margin-bottom: 1.3024vw;
           img.icon {
-            width: 0.8em;
-            height: 0.8em;
+            width:1.6631vw;
+            height: 1.6631vw;
             margin-left: 0.4375em;
           }
 
           .text {
-            width: 6em;
-            height: 0.96875em;
+            width: 60%;
             text-align: right;
+            font-size: 1.3024vw;
           }
         }
       }
 
       .footer-information {
         display: inline-block;
-        height: 5.46875em;
-        width: 3.375em;
+        margin-top: 0;
+
         p {
           font-weight: bold;
+          font-size: 1.3024vw;
           text-align: right;
+          margin-bottom:1.9536vw ;
         }
       }
     }
