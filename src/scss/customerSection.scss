@@ -1,7 +1,17 @@
-.our-customer {
-  background-color: white;
-  direction: ltr;
-  height: 87vw;
+@media screen and (max-width: 640px) {
+  .our-customer {
+    background-color: white;
+    direction: ltr;
+    height: 44vh;
+  }
+}
+
+@media screen and (min-width: 640px) {
+  .our-customer {
+    background-color: white;
+    direction: ltr;
+    height: 58vh;
+  }
 }
 
 .our-customer .title {
@@ -17,9 +27,9 @@
 .mobile-customer {
   display: flex;
   height: 82%;
+  padding: 11vw 0;
   justify-content: center;
-  align-items: center;
-
+  align-items: flex-start;
 }
 
 
@@ -102,13 +112,27 @@
       height: max-content;
     }
 
-    .row-three {
+    //.row-three {
+    //  grid-row: 3;
+    //  display: grid;
+    //  grid-template-columns: 0.1860fr 0.16680fr 0.2082fr 0.3825fr 0.1996fr;
+    //  grid-column-gap: 3em;
+    //  height: max-content;
+    //}
+
+    .row-three{
       grid-row: 3;
-      display: grid;
-      grid-template-columns: 0.1860fr 0.16680fr 0.2082fr 0.3825fr 0.1996fr;
-      grid-column-gap: 3em;
+      display: flex;
+      direction: rtl;
       height: max-content;
+      .marginRight{
+        display: grid;
+        grid-template-columns:0.1860fr 0.16680fr  0.2082fr 0.3825fr 0.1996fr ;
+        grid-column-gap: 3em;
+        width: 98.3%;
+      }
     }
+
 
     .customer-image {
       -webkit-filter: grayscale(100%);
