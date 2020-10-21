@@ -21,6 +21,10 @@
   height: 82%;
   justify-content: center;
   align-items: flex-start;
+  .logo-item {
+    width: 33%;
+    height: 31.7vw;
+  }
 }
 
 
@@ -30,11 +34,6 @@
 
 .slider-two {
   width: 90%;
-}
-
-.logo-item {
-  width: 33%;
-  height: 31.7vw;
 }
 
 .item-row {
@@ -65,13 +64,15 @@
     background-color: #e4e4e4;
     height: auto;
     direction: ltr;
+    padding-bottom: 0;
     .title {
       font-family: IRANYekanMobileFaNum, serif;
-      font-size: 50px;
+      font-size: 2.6vw;
       font-weight: bold;
       text-align: center;
       color: #000000;
-      padding: 20px 0 30px 0;
+      padding-top: 2.6vw;
+      margin-bottom: 3vw;
     }
   }
 
@@ -81,8 +82,6 @@
     display: grid;
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
-    margin-top: 2em;
-    margin-bottom: 3.0625em;
 
     .row-one {
       grid-row: 1;
@@ -100,25 +99,13 @@
       height: max-content;
     }
 
-    //.row-three {
-    //  grid-row: 3;
-    //  display: grid;
-    //  grid-template-columns: 0.1860fr 0.16680fr 0.2082fr 0.3825fr 0.1996fr;
-    //  grid-column-gap: 3em;
-    //  height: max-content;
-    //}
-
     .row-three{
       grid-row: 3;
-      display: flex;
+      display: grid;
       direction: rtl;
+      grid-template-columns:0.1860fr 0.16680fr  0.2082fr 0.3825fr 0.1996fr ;
+      grid-column-gap: 3em;
       height: max-content;
-      .marginRight{
-        display: grid;
-        grid-template-columns:0.1860fr 0.16680fr  0.2082fr 0.3825fr 0.1996fr ;
-        grid-column-gap: 3em;
-        width: 98.3%;
-      }
     }
 
 
@@ -208,6 +195,7 @@
     width: 100%;
     margin: auto;
   }
+
   .customer-thirteen {
     grid-column: 2;
     grid-row: 3;
@@ -215,23 +203,25 @@
     height: auto;
     margin: auto;
   }
+
   .customer-fourteen {
     grid-column: 3;
     grid-row: 3;
     width: 100%;
     margin: auto;
   }
+
   .customer-fifteen {
     grid-column: 4;
     grid-row: 3;
     width: 100%;
     margin: auto;
   }
+
   .customer-sixteen {
     grid-column: 5;
     grid-row: 3;
     width: 100%;
     margin: auto;
   }
-
 }
