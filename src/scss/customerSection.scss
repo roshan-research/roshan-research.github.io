@@ -1,33 +1,24 @@
-@media screen and (max-width: 640px) {
-  .our-customer {
-    background-color: white;
-    direction: ltr;
-    height: 44vh;
-  }
-}
-
-@media screen and (min-width: 640px) {
-  .our-customer {
-    background-color: white;
-    direction: ltr;
-    height: 58vh;
-  }
+.our-customer {
+  background-color: white;
+  direction: ltr;
+  height: 98vw;
+  padding-bottom: 9vw;
 }
 
 .our-customer .title {
-  font-size: 10.66vw;
+  font-size: 8vw;
   font-family: IRANYekanMobileFaNum, serif;
   font-weight: bold;
   text-align: center;
   color: #000000;
-  padding: 9px 0 18px 0;
+  padding-top: 5vw;
+  margin-bottom: 9vw;
   height: 18%;
 }
 
 .mobile-customer {
   display: flex;
   height: 82%;
-  padding: 11vw 0;
   justify-content: center;
   align-items: flex-start;
 }
@@ -43,15 +34,12 @@
 
 .logo-item {
   width: 33%;
+  height: 31.7vw;
 }
 
 .item-row {
   margin-bottom: 5.33vw;
 }
-
-//.image-sixteen-customer {
-//    height: 23.98vw;
-//}
 
 
 /*!* Extra small devices (phones, 600px and down) *!*/
