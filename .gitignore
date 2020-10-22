@@ -1,7 +1,6 @@
 # dependencies and development#
 #######################
 /node_modules
-public/dist
 
 # production#
 ######################
