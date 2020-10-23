@@ -3,7 +3,7 @@
     width: 100%;
     background-size: 100% 100%;
     background: white;
-    background-image: url("../images/back-harf.png");
+    background-image: url("../../src/images/back-harf.png");
     background-repeat: no-repeat;
 
 }
@@ -125,7 +125,7 @@
 @media only screen and (min-width: 912px) {
 
     .harf {
-        background-image: url(../images/harf-background.png);
+        background-image: url('../../src/images/harf-background.png');
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 100%;

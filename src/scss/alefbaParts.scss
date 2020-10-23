@@ -1,6 +1,6 @@
 .alefba {
     width: 100%;
-    background-image: url("../images/alefba-mobile-background.png");
+    background-image: url("../../src/images/alefba-mobile-background.png");
     background-repeat: no-repeat;
     background-size: 100% 100%;
 }
@@ -149,7 +149,7 @@
 @media only screen and (min-width: 912px) {
     .alefba {
         width: 100%;
-        background-image: url("../images/alefbaBackground.png");
+        background-image: url("../../src/images/alefbaBackground.png");
         background-repeat: no-repeat;
     }
     .alefba-web-text{

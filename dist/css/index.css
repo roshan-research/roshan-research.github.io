@@ -1,7 +1,7 @@
 @charset "UTF-8";
 .alefba {
   width: 100%;
-  background-image: url("../images/alefba-mobile-background.png");
+  background-image: url("../../src/images/alefba-mobile-background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
@@ -135,7 +135,7 @@
 @media only screen and (min-width: 912px) {
   .alefba {
     width: 100%;
-    background-image: url("../images/alefbaBackground.png");
+    background-image: url("../../src/images/alefbaBackground.png");
     background-repeat: no-repeat; }
   .alefba-web-text {
     width: 70%;
@@ -407,31 +407,31 @@
 
 @font-face {
   font-family: IRANYekanBOld;
-  src: url("../Fonts/IRANYekanBold.ttf"); }
+  src: url("../../src/fonts/IRANYekanBold.ttf"); }
 
 @font-face {
   font-family: IRANYekanWeb;
-  src: url("../Fonts/iranyekanwebbold.ttf");
+  src: url("../../src/fonts/iranyekanwebbold.ttf");
   font-weight: bold; }
 
 @font-face {
   font-family: IRANYekanWeb;
-  src: url("../Fonts/iranyekanweblight(fanum).ttf");
+  src: url("../../src/fonts/iranyekanweblight(fanum).ttf");
   font-weight: 300; }
 
 @font-face {
   font-family: IRANYekanMobileFaNum;
-  src: url("../Fonts/IRANYekanMobileBold(FaNum).ttf");
+  src: url("../../src/fonts/IRANYekanMobileBold(FaNum).ttf");
   font-weight: bold; }
 
 @font-face {
   font-family: IRANYekanMobileFaNum;
-  src: url("../Fonts/IRANYekanMobileRegular.ttf");
+  src: url("../../src/fonts/IRANYekanMobileRegular.ttf");
   font-weight: 400; }
 
 @font-face {
   font-family: IRANYekanMobileFaNum;
-  src: url("../Fonts/IRANYekanMobileLight.ttf");
+  src: url("../../src/fonts/IRANYekanMobileLight.ttf");
   font-weight: 300; }
 
 .footer {
@@ -588,7 +588,7 @@
   width: 100%;
   background-size: 100% 100%;
   background: white;
-  background-image: url("../images/back-harf.png");
+  background-image: url("../../src/images/back-harf.png");
   background-repeat: no-repeat; }
 
 .harf-web-button {
@@ -698,7 +698,7 @@
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
   .harf {
-    background-image: url(../images/harf-background.png);
+    background-image: url("../../src/images/harf-background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%; }
@@ -789,7 +789,7 @@ body {
 
 .hazm {
   width: 100%;
-  background-image: url("../images/hazm-background-mobile.png");
+  background-image: url("../../src/images/hazm-background-mobile.png");
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
@@ -888,7 +888,7 @@ body {
 @media only screen and (min-width: 912px) {
   .hazm {
     width: 100%;
-    background-image: url("../images/hazm-background.png");
+    background-image: url("../../src/images/hazm-background.png");
     background-repeat: no-repeat;
     height: auto; }
   .hazm-web-button {
@@ -1306,7 +1306,7 @@ body {
 /*طراحی موبایل*/
 .roshan {
   width: 100%;
-  background-image: url("../images/roshanBackground.JPG");
+  background-image: url("../../src/images/roshanBackground.JPG");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
