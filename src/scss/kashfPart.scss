@@ -80,8 +80,32 @@
     width: 77.285vw;
     height: 77.285vw;
     margin: auto;
+    cursor: pointer;
 }
 
+
+@keyframes fade_animate{
+    0% {opacity: 0;}
+    2% {opacity: 0;}
+    30% {opacity: 1;}
+    70% {opacity: 1;}
+    98% {opacity: 0;}
+    100% {opacity: 0;}
+}
+
+.carousel.carousel-fade .carousel-item.active {
+    transform: none;
+    -webkit-transform: none;
+    transition: none!important;
+    opacity: 0!important;
+    animation: fade_animate 2000ms;
+    &:hover{
+        animation-play-state: paused;
+        img {
+            opacity: 0.75;
+        }
+    }
+}
 
 /*!* Extra small devices (phones, 600px and down) *!*/
 /*@media only screen and (max-width: 600px) {...}*/
@@ -183,10 +207,7 @@
         height: 33.35vw;
         margin-bottom: 4.207vw;
         margin-left: 12.47vw;
-    }
-
-    .kashf-carousel{
-        width: 100%;
+        cursor: pointer;
     }
     .carousel {
         width: 100%;
