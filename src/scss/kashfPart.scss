@@ -98,12 +98,10 @@
     -webkit-transform: none;
     transition: none!important;
     opacity: 0!important;
-    animation: fade_animate 2000ms;
-    &:hover{
+    animation: fade_animate 1950ms;
+    img:hover {
         animation-play-state: paused;
-        img {
-            opacity: 0.75;
-        }
+        opacity: 0.75;
     }
 }
 
