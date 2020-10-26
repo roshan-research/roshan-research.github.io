@@ -1,54 +1,62 @@
-
-
-/*طراحی موبایل*/
-.roshan{
-    width: 100%;
-    background-image: url("../../src/images/roshanBackground.JPG");
-    background-repeat: no-repeat;
-    background-size: 100% 100%;
+html {
+  scroll-behavior: smooth;
 }
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-    width: 100%;
-    padding: 0;
-    margin: 0;
-}
+
 .roshan-web {
-    display: none;
+  display: none;
 }
 
-.roshan:before{
-    /*filter: blur(0.5px);*/
+.roshan {
+  width: 100%;
+  background-image: url("../../src/images/roshanBackground.JPG");
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
 }
-.earth-image{
-    width: 150%;
-    mix-blend-mode: screen;
-    height: 108.732vw;
-    filter: blur(1px);
-    transform: translate(21.853vw);
-    opacity: 0.5;
-    margin-top: 16vw;
+
+.roshan-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8vw;
 }
-.roshan-mobile-text {
-    position: absolute;
-    text-align: center;
-    margin-top: 50%;
-    font-size: 5.33vw;
-    font-weight: 300;
-    color: white;
-    font-family: IRANYekanWeb;
+
+.earth-image {
+  width: 130vw;
+  mix-blend-mode: screen;
+  height: 108.8vw;
+  filter: blur(1px);
+  opacity: 0.5;
+  margin-left: -4vw;
 }
-.text-roshan {
+
+.roshan-text {
+  position: absolute;
+  text-align: center;
+  font-size: 5.33vw;
+  font-weight: 300;
+  color: white;
+  font-family: IRANYekanWeb;
+  margin-top: -1vw;
+
+  span {
     font-size: 10.66vw;
     font-weight: bold;
-}
-.product-image {
-    width: 16.9925vw;
-    display: block;
-    text-align: center;
-    margin: auto;
-    margin-top: 13.325vw;
+    text-shadow: 1.5px 3px 5px rgba(0, 0, 0, 0.16);
+  }
 }
 
+.product-arrow {
+  text-align: center;
+  margin-top: 8vw;
+  margin-bottom: 8.8vw;
+
+  a {
+    img {
+      width: 16.9925vw;
+      margin: auto;
+    }
+  }
+}
 
 
 /*!* Extra small devices (phones, 600px and down) *!*/
@@ -65,91 +73,53 @@
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
-    .roshan {
-        background-size: 100% 100%;
-    }
-    .roshan-web{
-        display: flex;
-        width: 100%;
-        margin: auto;
-    }
-    .roshan-mobile{
-        display: none;
-    }
-    .earth-image{
-        width: 47.04vw;
-        mix-blend-mode: screen;
-        filter: blur(0px);
-        transform: none;
-        opacity: 0.6;
-        margin-top: 5.49vw;
-        height: 37.40vw;
-        margin-left: 7.57vw;
-    }
-    .container {
-        max-width: 100%;
-    }
-    .roshan-mobile-text {
-        position: absolute;
-        color: white;
-        margin: auto 0;
-        text-align: start;
-        /*margin-top: 321px;*/
-        margin-top: 16.47vw;
-        font-family: IRANYekanWeb;
-        font-weight: 300;
-        font-size: 1.84vw;
-        margin-right: 15.7vw;
-        max-width: 50%;
-    }
 
-    .roshan-introduce {
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: 50%;
-        grid-gap: 10px;
-        direction: ltr;
-        margin: auto;
-        width: 69%;
-    }
-    .roshan-introduce-mobile{
-        display: grid;
-        grid-template-columns: 50% 50%;
-        grid-auto-rows: 50%;
-        grid-gap: 10px;
-        direction: ltr;
-        margin: auto;
-        width: 69%;
-    }
+  .roshan-mobile {
+    display: none;
+  }
 
-    .roshan-text {
-        grid-column: 2;
-        grid-row: 1;
-        margin: auto;
-        margin-right: 42px;
-        color: white;
-        text-align: right;
+  .roshan-web {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 10vw 0 11vw;
+  }
 
-    }
-    .product-image {
-        width: auto;
-        display: block;
-        text-align: center;
-        margin: auto;
-        margin-top: 1.325vw;
-    }
-    .text-roshan {
-        font-size: 4.1vw;
-        font-weight: bold;
-        font-family: IRANYekanWeb;
+  .roshan-text {
+    color: white;
+    text-align: right;
+    font-family: IRANYekanWeb;
+    font-weight: 300;
+    font-size: 1.84vw;
+    position: initial;
+    margin: 0;
 
+    span {
+      font-size: 4.1vw;
     }
-    .image {
-        grid-column: 1;
-        grid-row:1;
-        margin-top: 54.5px;
+  }
+
+  .earth-image {
+    width: 43.54vw;
+    height: 35.96vw;
+    mix-blend-mode: screen;
+    filter: blur(0px);
+    opacity: 0.6;
+    margin: 0;
+  }
+
+  .product-arrow {
+    text-align: center;
+    margin-top: 1vw;
+    margin-bottom: 13.38vw;
+
+    a {
+      img {
+        width: 4.791vw;
+        height: 4.166vw;
+      }
     }
-    .width-roshan-text-bog{
-        max-width: 50%;
-    }
+  }
 }

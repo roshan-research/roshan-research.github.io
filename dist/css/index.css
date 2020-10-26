@@ -1,4 +1,50 @@
-@charset "UTF-8";
+body {
+  background-color: #e4e4e4; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.container {
+  max-width: none; }
+
+@media screen and (max-width: 912px) {
+  html, body {
+    overflow-x: hidden; }
+  .col-sm {
+    flex-basis: unset;
+    flex-grow: unset;
+    max-width: none; } }
+
+@font-face {
+  font-family: IRANYekanBOld;
+  src: url("../../src/fonts/IRANYekanBold.ttf"); }
+
+@font-face {
+  font-family: IRANYekanWeb;
+  src: url("../../src/fonts/iranyekanwebbold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: IRANYekanWeb;
+  src: url("../../src/fonts/iranyekanweblight(fanum).ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileBold(FaNum).ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileRegular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileLight.ttf");
+  font-weight: 300; }
+
 .alefba {
   width: 100%;
   background-image: url("../../src/images/alefba-mobile-background.png");
@@ -404,35 +450,6 @@
     grid-row: 3;
     width: 100%;
     margin: auto; } }
-
-@font-face {
-  font-family: IRANYekanBOld;
-  src: url("../../src/fonts/IRANYekanBold.ttf"); }
-
-@font-face {
-  font-family: IRANYekanWeb;
-  src: url("../../src/fonts/iranyekanwebbold.ttf");
-  font-weight: bold; }
-
-@font-face {
-  font-family: IRANYekanWeb;
-  src: url("../../src/fonts/iranyekanweblight(fanum).ttf");
-  font-weight: 300; }
-
-@font-face {
-  font-family: IRANYekanMobileFaNum;
-  src: url("../../src/fonts/IRANYekanMobileBold(FaNum).ttf");
-  font-weight: bold; }
-
-@font-face {
-  font-family: IRANYekanMobileFaNum;
-  src: url("../../src/fonts/IRANYekanMobileRegular.ttf");
-  font-weight: 400; }
-
-@font-face {
-  font-family: IRANYekanMobileFaNum;
-  src: url("../../src/fonts/IRANYekanMobileLight.ttf");
-  font-weight: 300; }
 
 .footer {
   box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
@@ -1101,7 +1118,6 @@ body {
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
   .kashf {
-    margin-top: 12.67vw;
     overflow: hidden; }
   .kashf-web-button {
     display: block;
@@ -1185,20 +1201,16 @@ body {
 body {
   direction: rtl; }
 
-.navbar {
-  height: max-content;
-  padding: 0; }
-
-.nav-item {
-  margin-right: 5%;
-  text-align: right; }
-
 .my-navbar {
   direction: rtl;
   background-color: #4286f5;
   color: white;
-  height: max-content;
-  padding: 0; }
+  padding: 0;
+  height: 18.13vw; }
+
+.nav-item {
+  margin-right: 5%;
+  text-align: right; }
 
 .navbar-nav {
   direction: rtl; }
@@ -1263,14 +1275,11 @@ body {
 @media only screen and (min-width: 912px) {
   body {
     direction: rtl; }
-  .navbar {
-    height: max-content;
-    padding: 0; }
   .my-navbar {
     direction: rtl;
     background-color: #4286f5;
     color: white;
-    height: max-content;
+    height: 4.63vw;
     padding: 0; }
   .navbar-toggler .line {
     color: red; }
@@ -1306,73 +1315,52 @@ body {
   .nav-items:focus {
     color: #cdfff5; } }
 
-@media screen and (min-width: 600px) {
-  body {
-    background-color: #e4e4e4; } }
+html {
+  scroll-behavior: smooth; }
 
-body {
-  background-color: #e4e4e4; }
+.roshan-web {
+  display: none; }
 
-.row {
-  margin-right: 0;
-  margin-left: 0; }
-
-@media screen and (max-width: 912px) {
-  html, body {
-    overflow-x: hidden; }
-  .container {
-    max-width: none; }
-  .col-sm {
-    flex-basis: unset;
-    flex-grow: unset;
-    max-width: none; } }
-
-/*طراحی موبایل*/
 .roshan {
   width: 100%;
   background-image: url("../../src/images/roshanBackground.JPG");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
-.container, .container-fluid, .container-lg, .container-md, .container-sm, .container-xl {
-  width: 100%;
-  padding: 0;
-  margin: 0; }
-
-.roshan-web {
-  display: none; }
-
-.roshan:before {
-  /*filter: blur(0.5px);*/ }
+.roshan-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 8vw; }
 
 .earth-image {
-  width: 150%;
+  width: 130vw;
   mix-blend-mode: screen;
-  height: 108.732vw;
+  height: 108.8vw;
   filter: blur(1px);
-  transform: translate(21.853vw);
   opacity: 0.5;
-  margin-top: 16vw; }
+  margin-left: -4vw; }
 
-.roshan-mobile-text {
+.roshan-text {
   position: absolute;
   text-align: center;
-  margin-top: 50%;
   font-size: 5.33vw;
   font-weight: 300;
   color: white;
-  font-family: IRANYekanWeb; }
+  font-family: IRANYekanWeb;
+  margin-top: -1vw; }
+  .roshan-text span {
+    font-size: 10.66vw;
+    font-weight: bold;
+    text-shadow: 1.5px 3px 5px rgba(0, 0, 0, 0.16); }
 
-.text-roshan {
-  font-size: 10.66vw;
-  font-weight: bold; }
-
-.product-image {
-  width: 16.9925vw;
-  display: block;
+.product-arrow {
   text-align: center;
-  margin: auto;
-  margin-top: 13.325vw; }
+  margin-top: 8vw;
+  margin-bottom: 8.8vw; }
+  .product-arrow a img {
+    width: 16.9925vw;
+    margin: auto; }
 
 /*!* Extra small devices (phones, 600px and down) *!*/
 /*@media only screen and (max-width: 600px) {...}*/
@@ -1384,73 +1372,36 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 @media only screen and (min-width: 912px) {
-  .roshan {
-    background-size: 100% 100%; }
-  .roshan-web {
-    display: flex;
-    width: 100%;
-    margin: auto; }
   .roshan-mobile {
     display: none; }
-  .earth-image {
-    width: 47.04vw;
-    mix-blend-mode: screen;
-    filter: blur(0px);
-    transform: none;
-    opacity: 0.6;
-    margin-top: 5.49vw;
-    height: 37.40vw;
-    margin-left: 7.57vw; }
-  .container {
-    max-width: 100%; }
-  .roshan-mobile-text {
-    position: absolute;
+  .roshan-web {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 10vw 0 11vw; }
+  .roshan-text {
     color: white;
-    margin: auto 0;
-    text-align: start;
-    /*margin-top: 321px;*/
-    margin-top: 16.47vw;
+    text-align: right;
     font-family: IRANYekanWeb;
     font-weight: 300;
     font-size: 1.84vw;
-    margin-right: 15.7vw;
-    max-width: 50%; }
-  .roshan-introduce {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: 50%;
-    grid-gap: 10px;
-    direction: ltr;
-    margin: auto;
-    width: 69%; }
-  .roshan-introduce-mobile {
-    display: grid;
-    grid-template-columns: 50% 50%;
-    grid-auto-rows: 50%;
-    grid-gap: 10px;
-    direction: ltr;
-    margin: auto;
-    width: 69%; }
-  .roshan-text {
-    grid-column: 2;
-    grid-row: 1;
-    margin: auto;
-    margin-right: 42px;
-    color: white;
-    text-align: right; }
-  .product-image {
-    width: auto;
-    display: block;
+    position: initial;
+    margin: 0; }
+    .roshan-text span {
+      font-size: 4.1vw; }
+  .earth-image {
+    width: 43.54vw;
+    height: 35.96vw;
+    mix-blend-mode: screen;
+    filter: blur(0px);
+    opacity: 0.6;
+    margin: 0; }
+  .product-arrow {
     text-align: center;
-    margin: auto;
-    margin-top: 1.325vw; }
-  .text-roshan {
-    font-size: 4.1vw;
-    font-weight: bold;
-    font-family: IRANYekanWeb; }
-  .image {
-    grid-column: 1;
-    grid-row: 1;
-    margin-top: 54.5px; }
-  .width-roshan-text-bog {
-    max-width: 50%; } }
+    margin-top: 1vw;
+    margin-bottom: 13.38vw; }
+    .product-arrow a img {
+      width: 4.791vw;
+      height: 4.166vw; } }

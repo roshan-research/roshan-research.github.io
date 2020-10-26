@@ -1,22 +1,21 @@
 body {
     direction: rtl;
 }
-.navbar {
-    height: max-content;
-    padding: 0;
 
-}
-.nav-item {
-    margin-right: 5%;
-    text-align: right;
-}
 .my-navbar {
     direction: rtl;
     background-color: #4286f5;
     color: white;
-    height: max-content;
     padding: 0;
+    //height: max-content;
+    height: 18.13vw;
 }
+
+.nav-item {
+    margin-right: 5%;
+    text-align: right;
+}
+
 .navbar-nav{
     direction: rtl;
 }
@@ -89,20 +88,19 @@ body {
     body {
         direction: rtl;
     }
-    .navbar {
-        height: max-content;
-        padding: 0;
-    }
+
     .my-navbar {
         direction: rtl;
         background-color: #4286f5;
         color: white;
-        height: max-content;
+        height: 4.63vw;
         padding: 0;
     }
+
     .navbar-toggler .line {
         color: red;
     }
+
     .roshan-logo {
         width: 34%;
         float: right;

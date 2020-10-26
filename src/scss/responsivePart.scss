@@ -1,9 +1,3 @@
-@media screen and (min-width: 600px ) {
-    body{
-        background-color: #e4e4e4;
-    }
-
-}
 body{
     background-color: #e4e4e4;
 }
@@ -12,12 +6,14 @@ body{
     margin-right: 0;
     margin-left: 0;
 }
+
+.container {
+    max-width: none;
+}
+
 @media screen and (max-width: 912px){
     html, body {
         overflow-x: hidden;
-    }
-    .container {
-        max-width: none;
     }
     .col-sm {
         flex-basis: unset;
