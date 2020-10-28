@@ -99,9 +99,11 @@
     transition: none!important;
     opacity: 0!important;
     animation: fade_animate 1950ms;
-    img:hover {
+    &:hover {
         animation-play-state: paused;
-        opacity: 0.75;
+        img {
+            opacity: 0.75;
+        }
     }
 }
 

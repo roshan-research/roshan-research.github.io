@@ -1103,9 +1103,10 @@ body {
   transition: none !important;
   opacity: 0 !important;
   animation: fade_animate 1950ms; }
-  .carousel.carousel-fade .carousel-item.active img:hover {
-    animation-play-state: paused;
-    opacity: 0.75; }
+  .carousel.carousel-fade .carousel-item.active:hover {
+    animation-play-state: paused; }
+    .carousel.carousel-fade .carousel-item.active:hover img {
+      opacity: 0.75; }
 
 /*!* Extra small devices (phones, 600px and down) *!*/
 /*@media only screen and (max-width: 600px) {...}*/
