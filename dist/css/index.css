@@ -8,13 +8,19 @@ body {
 .container {
   max-width: none; }
 
-@media screen and (max-width: 912px) {
+@media screen and (max-width: 992px) {
   html, body {
     overflow-x: hidden; }
   .col-sm {
     flex-basis: unset;
     flex-grow: unset;
     max-width: none; } }
+
+@media screen and (width: 992px) {
+  .kashf .col-sm, .alefba .col-sm, .harf .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%; } }
 
 @font-face {
   font-family: IRANYekanBOld;
@@ -149,36 +155,15 @@ body {
 .alefba-web-image {
   display: none; }
 
-@media only screen and (max-width: 450px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-@media only screen and (min-width: 550px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-@media only screen and (min-width: 650px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-@media only screen and (min-width: 750px) {
-  .alefba {
-    width: 100%;
-    background-size: 100% 100%; } }
-
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .alefba {
     width: 100%;
     background-image: url("../../src/images/alefbaBackground.png");
@@ -277,6 +262,7 @@ body {
     width: 27.34vw;
     height: 26.47vw; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 .our-customer {
   background-color: white;
   direction: ltr;
@@ -311,16 +297,15 @@ body {
 .item-row {
   margin-bottom: 5.33vw; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media screen and (min-width: 912px) {
+@media screen and (min-width: 992px) {
   .mobile-customer {
     display: none; }
   .our-customer {
@@ -451,6 +436,7 @@ body {
     width: 100%;
     margin: auto; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 .footer {
   box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
   background-color: #4286f5;
@@ -515,16 +501,15 @@ body {
         font-weight: bold;
         text-align: right; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .footer {
     height: max-content;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
@@ -600,6 +585,7 @@ body {
           text-align: right;
           margin-bottom: 1.9536vw; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 .harf {
   height: auto;
   width: 100%;
@@ -704,16 +690,15 @@ body {
   /*    height: 231px;*/
   /*}*/ }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .harf {
     background-image: url("../../src/images/harf-background.png");
     background-size: 100% 100%;
@@ -801,6 +786,7 @@ body {
     height: 20.933vw;
     margin: 13.853vw auto; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 body {
   background-color: #e4e4e4; }
 
@@ -893,16 +879,15 @@ body {
     width: 83.73%;
     margin: auto; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .hazm {
     width: 100%;
     background-image: url("../../src/images/hazm-background.png");
@@ -1000,6 +985,7 @@ body {
       margin: 10.72vw 0;
       margin-right: 12.52vw; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 .kashf {
   margin: 0;
   padding: 0; }
@@ -1108,16 +1094,15 @@ body {
     .carousel.carousel-fade .carousel-item.active:hover img {
       opacity: 0.75; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .kashf {
     overflow: hidden; }
   .kashf-web-button {
@@ -1199,6 +1184,7 @@ body {
     display: block;
     margin: auto; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 body {
   direction: rtl; }
 
@@ -1264,16 +1250,15 @@ body {
 .web-nav {
   width: 100%; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   body {
     direction: rtl; }
   .my-navbar {
@@ -1316,6 +1301,7 @@ body {
   .nav-items:focus {
     color: #cdfff5; } }
 
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 html {
   scroll-behavior: smooth; }
 
@@ -1363,16 +1349,15 @@ html {
     width: 16.9925vw;
     margin: auto; }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .roshan-mobile {
     display: none; }
   .roshan-web {
@@ -1406,3 +1391,5 @@ html {
     .product-arrow a img {
       width: 4.791vw;
       height: 4.166vw; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/

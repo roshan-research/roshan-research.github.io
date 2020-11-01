@@ -11,7 +11,7 @@ body{
     max-width: none;
 }
 
-@media screen and (max-width: 912px){
+@media screen and (max-width: 992px){
     html, body {
         overflow-x: hidden;
     }
@@ -19,5 +19,15 @@ body{
         flex-basis: unset;
         flex-grow: unset;
         max-width: none;
+    }
+}
+
+@media screen and (width: 992px){
+    .kashf , .alefba, .harf {
+        .col-sm {
+            flex-basis: 0;
+            flex-grow: 1;
+            max-width: 100%;
+        }
     }
 }

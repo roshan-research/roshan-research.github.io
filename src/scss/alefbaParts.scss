@@ -104,49 +104,20 @@
 .alefba-web-image {
     display: none;
 }
-@media only screen and (max-width: 450px)
-{
-    .alefba{
-        width: 100%;
-        background-size: 100% 100%;
-    }
-}
-@media only screen and (min-width: 550px)
-{
-    .alefba{
-        width: 100%;
-        background-size: 100% 100%;
-    }
-}
-@media only screen and (min-width: 650px)
-{
-    .alefba{
-        width: 100%;
-        background-size: 100% 100%;
-    }
-}
-@media only screen and (min-width: 750px)
-{
-    .alefba{
-        width: 100%;
-        background-size: 100% 100%;
-    }
-}
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
 
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
     .alefba {
         width: 100%;
         background-image: url("../../src/images/alefbaBackground.png");
@@ -269,3 +240,5 @@
 
 
 }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/

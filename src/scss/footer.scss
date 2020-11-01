@@ -90,20 +90,18 @@
   }
 }
 
-/*!* Extra small devices (phones, 600px and down) *!*/
-/*@media only screen and (max-width: 600px) {...}*/
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
 
-/*!* Small devices (portrait tablets and large phones, 600px and up) *!*/
-/*@media only screen and (min-width: 600px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
 
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
 /*@media only screen and (min-width: 768px) {...}*/
 
 /*!* Large devices (laptops/desktops, 992px and up) *!*/
 /*@media only screen and (min-width: 992px) {...}*/
-
-/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
-@media only screen and (min-width: 912px) {
+@media only screen and (min-width: 992px) {
   .footer {
     height: max-content;
     box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
@@ -112,8 +110,8 @@
     font-family: IRANYekanMobileFaNum, serif;
     text-align: right;
     .width-63{
-       width: 63.4%;
-       margin: 0 auto;
+      width: 63.4%;
+      margin: 0 auto;
     }
 
     .footer-title {
@@ -211,3 +209,5 @@
     }
   }
 }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
