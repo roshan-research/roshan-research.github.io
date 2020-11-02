@@ -2,15 +2,14 @@ html {
   scroll-behavior: smooth;
 }
 
-.roshan-web {
-  display: none;
-}
-
 .roshan {
-  width: 100%;
   background-image: url("../../src/images/roshanBackground.JPG");
   background-repeat: no-repeat;
   background-size: 100% 100%;
+}
+
+.roshan-web {
+  display: none;
 }
 
 .roshan-mobile {
@@ -72,13 +71,17 @@ html {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
 
+  .roshan {
+    display: flex;
+    justify-content: center;
+  }
+
   .roshan-mobile {
     display: none;
   }
 
   .roshan-web {
     display: flex;
-    flex-direction: row;
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
@@ -88,8 +91,6 @@ html {
   .roshan-text {
     color: white;
     text-align: right;
-    font-family: IRANYekanWeb;
-    font-weight: 300;
     font-size: 1.84vw;
     position: initial;
     margin: 0;
