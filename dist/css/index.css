@@ -1188,12 +1188,18 @@ body {
 body {
   direction: rtl; }
 
+.nav-background {
+  background-color: #4286f5;
+  height: 18.13vw; }
+
 .my-navbar {
   direction: rtl;
-  background-color: #4286f5;
-  color: white;
-  padding: 0;
-  height: 18.13vw; }
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white; }
 
 .nav-item {
   margin-right: 5%;
@@ -1202,53 +1208,37 @@ body {
 .navbar-nav {
   direction: rtl; }
 
-.navbar-toggler .line {
-  color: red; }
-
 .navbar-button {
-  border: none;
   position: absolute;
-  top: 5vw;
-  height: max-content;
-  width: max-content; }
-
-.roshan-logo {
-  width: 100%; }
-
-.navbar-brand {
-  float: right;
-  padding: 0; }
+  right: 5.33vw;
+  border: none;
+  outline: none;
+  padding: 0;
+  z-index: 3; }
+  .navbar-button .navbar-toggler-icon {
+    width: 7.2vw;
+    height: 4.8vw; }
 
 .navbar-logo {
-  direction: rtl;
-  text-align: right;
-  margin: auto;
-  display: block;
-  height: 21.798vw;
-  padding-top: 2.665vw; }
+  height: 8vw;
+  width: 20.26vw; }
 
 .navbar-collapse {
-  direction: ltr; }
-
-.nav-items {
-  color: #ffffff;
-  font-size: 4.798vw;
-  width: max-content;
-  font-family: IRANYekanMobileFaNum;
-  font-weight: bold; }
-
-.nav-items:hover {
-  color: #cdfff5; }
-
-.nav-items:focus {
-  color: #cdfff5; }
-
-.navbar-toggler-icon {
-  width: 10vw;
-  height: 10vw; }
-
-.web-nav {
-  width: 100%; }
+  direction: ltr;
+  position: absolute;
+  right: 5.53vw;
+  top: 49%;
+  z-index: 2; }
+  .navbar-collapse .nav-items {
+    color: #ffffff;
+    font-size: 4.798vw;
+    width: max-content;
+    font-family: IRANYekanMobileFaNum, serif;
+    font-weight: bold; }
+  .navbar-collapse .nav-items:hover {
+    color: #cdfff5; }
+  .navbar-collapse .nav-items:focus {
+    color: #cdfff5; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1261,45 +1251,34 @@ body {
 @media only screen and (min-width: 992px) {
   body {
     direction: rtl; }
+  .nav-background {
+    height: 4.63vw; }
   .my-navbar {
-    direction: rtl;
-    background-color: #4286f5;
-    color: white;
-    height: 4.63vw;
-    padding: 0; }
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 15.93vw; }
   .navbar-toggler .line {
     color: red; }
-  .roshan-logo {
-    width: 34%;
-    float: right; }
-  .navbar-button {
-    margin-left: 15.7vw;
-    border: none; }
-  .navbar-brand {
-    float: right;
-    margin-right: 15.7vw;
-    padding: 0; }
   .navbar-logo {
-    direction: rtl;
-    text-align: right;
     height: 2.99vw;
-    width: 12.24vw;
-    padding-top: 0;
-    margin-right: 13.7vw;
+    width: 6.14vw;
     margin-top: 0.6512vw; }
   .navbar-collapse {
-    margin-left: 15.9%;
-    direction: ltr;
-    direction: ltr; }
-  .nav-items {
-    color: #ffffff;
-    font-family: IRANYekanMobileFaNum;
-    font-weight: bold;
-    font-size: 1.02vw; }
-  .nav-items:hover {
-    color: #cdfff5; }
-  .nav-items:focus {
-    color: #cdfff5; } }
+    flex-grow: 0;
+    display: inline-flex;
+    position: static; }
+    .navbar-collapse ul {
+      padding-right: 0; }
+    .navbar-collapse .nav-item {
+      margin-right: 3.02vw; }
+    .navbar-collapse .nav-items {
+      color: #ffffff;
+      font-size: 1.02vw; }
+    .navbar-collapse .nav-items:hover {
+      color: #cdfff5; }
+    .navbar-collapse .nav-items:focus {
+      color: #cdfff5; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 html {
