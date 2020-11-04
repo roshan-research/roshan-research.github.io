@@ -1233,7 +1233,7 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 8vw; }
+  padding-top: 4vw; }
 
 .earth-image {
   width: 130vw;
@@ -1258,7 +1258,7 @@ html {
 
 .product-arrow {
   text-align: center;
-  margin-top: 8vw;
+  margin-top: 4vw;
   margin-bottom: 8.8vw; }
   .product-arrow a img {
     width: 16.9925vw;
