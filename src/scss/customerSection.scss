@@ -3,17 +3,17 @@
   direction: ltr;
   height: 98vw;
   padding-bottom: 9vw;
-}
 
-.our-customer .title {
-  font-size: 8vw;
-  font-family: IRANYekanMobileFaNum, serif;
-  font-weight: bold;
-  text-align: center;
-  color: #000000;
-  padding-top: 5vw;
-  margin-bottom: 9vw;
-  height: 18%;
+  .title {
+    font-size: 8vw;
+    font-family: IRANYekanMobileFaNum, serif;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding-top: 5vw;
+    margin-bottom: 9vw;
+    height: 18%;
+  }
 }
 
 .mobile-customer {
@@ -21,23 +21,57 @@
   height: 82%;
   justify-content: center;
   align-items: flex-start;
+
   .logo-item {
     width: 33%;
     height: 31.7vw;
   }
+
+  .slider-two {
+    width: 90%;
+
+    .item-row {
+      margin-bottom: 5.33vw;
+    }
+  }
+
+  //@keyframes move_animate {
+  //  0% { left: 150%; opacity: 1; }
+  //  36% { left:  50%; opacity: 1; }
+  //  72% { left: -50%; opacity: 1; }
+  //  100% { left: -50%; }
+  //}
+
+  //.container_carousel {
+  //  margin: 0 auto;
+  //  width: 8000px;
+  //  background: red;
+  //  padding: 36px;
+  //  display: flex;
+  //  overflow-x: hidden;
+  //  position: relative;
+  //
+  //  .carousel-item2 {
+  //    padding: 36px;
+  //    position: absolute;
+  //    width: 3000px;
+  //    background: #efefef;
+  //    text-align: center;
+  //    border-radius: 4px;
+  //    top: 50%; left: 50%;
+  //    animation: move_animate 10s;
+  //
+  //    &:hover {
+  //      animation-play-state: paused;
+  //    }
+  //  }
+  //}
+
 }
 
 
 .web-customer {
   display: none;
-}
-
-.slider-two {
-  width: 90%;
-}
-
-.item-row {
-  margin-bottom: 5.33vw;
 }
 
 
@@ -63,6 +97,7 @@
     height: auto;
     direction: ltr;
     padding-bottom: 0;
+
     .title {
       font-family: IRANYekanMobileFaNum, serif;
       font-size: 2.6vw;
@@ -81,31 +116,9 @@
     grid-template-rows: 1fr 1fr 1fr;
     grid-row-gap: 1rem;
 
-    .row-one {
-      grid-row: 1;
-      display: grid;
-      grid-template-columns: 0.215fr 0.1999fr 0.1853fr 0.1853fr 0.1853fr;
-      grid-column-gap: 1.2em;
-      height: max-content;
+    > div {
+      justify-content: space-between;
     }
-
-    .row-two {
-      grid-row: 2;
-      display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr;
-      grid-column-gap: 1.2em;
-      height: max-content;
-    }
-
-    .row-three{
-      grid-row: 3;
-      display: grid;
-      direction: rtl;
-      grid-template-columns:0.1860fr 0.16680fr  0.2082fr 0.3825fr 0.1996fr ;
-      grid-column-gap: 3em;
-      height: max-content;
-    }
-
 
     .customer-image {
       -webkit-filter: grayscale(100%);
@@ -118,109 +131,145 @@
         opacity: 1;
       }
     }
-  }
 
-  .customer-one {
-    grid-column: 1;
-    grid-row: 1;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-two {
-    grid-column: 2;
-    grid-row: 1;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-three {
-    grid-column: 3/4;
-    grid-row: 1;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-four {
-    grid-column: 4;
-    grid-row: 1;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-five {
-    grid-column: 5;
-    grid-row: 1;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-six {
-    grid-column: 1;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-seven {
-    grid-column: 2;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-eight {
-    grid-column: 3;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-nine {
-    grid-column: 4;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-ten {
-    grid-column: 5;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
-  }
-  .customer-eleven {
-    grid-column: 6;
-    grid-row: 2;
-    width: 100%;
-    margin: auto;
+    .row-one {
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 0.215fr 0.1999fr 0.1853fr 0.1853fr 0.1853fr;
+      grid-column-gap: 1.2em;
+      height: max-content;
 
-  }
-  .customer-twelve {
-    grid-column: 1;
-    grid-row: 3;
-    width: 100%;
-    margin: auto;
-  }
+      .customer-one {
+        grid-column: 1;
+        grid-row: 1;
+        width: 100%;
+        margin: auto;
+      }
 
-  .customer-thirteen {
-    grid-column: 2;
-    grid-row: 3;
-    width: 100%;
-    height: auto;
-    margin: auto;
-  }
+      .customer-two {
+        grid-column: 2;
+        grid-row: 1;
+        width: 100%;
+        margin: auto;
+      }
 
-  .customer-fourteen {
-    grid-column: 3;
-    grid-row: 3;
-    width: 100%;
-    margin: auto;
-  }
+      .customer-three {
+        grid-column: 3/4;
+        grid-row: 1;
+        width: 100%;
+        margin: auto;
+      }
 
-  .customer-fifteen {
-    grid-column: 4;
-    grid-row: 3;
-    width: 100%;
-    margin: auto;
-  }
+      .customer-four {
+        grid-column: 4;
+        grid-row: 1;
+        width: 100%;
+        margin: auto;
+      }
 
-  .customer-sixteen {
-    grid-column: 5;
-    grid-row: 3;
-    width: 100%;
-    margin: auto;
+      .customer-five {
+        grid-column: 5;
+        grid-row: 1;
+        width: 100%;
+        margin: auto;
+      }
+    }
+
+    .row-two {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr;
+      grid-column-gap: 1.2em;
+      height: max-content;
+
+      .customer-six {
+        grid-column: 1;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-seven {
+        grid-column: 2;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-eight {
+        grid-column: 3;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-nine {
+        grid-column: 4;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-ten {
+        grid-column: 5;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-eleven {
+        grid-column: 6;
+        grid-row: 2;
+        width: 100%;
+        margin: auto;
+
+      }
+    }
+
+    .row-three {
+      grid-row: 3;
+      display: grid;
+      direction: rtl;
+      grid-template-columns: 0.1860fr 0.16680fr 0.2082fr 0.3825fr 0.1996fr;
+      grid-column-gap: 3em;
+      height: max-content;
+
+      .customer-twelve {
+        grid-column: 1;
+        grid-row: 3;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-thirteen {
+        grid-column: 2;
+        grid-row: 3;
+        width: 100%;
+        height: auto;
+        margin: auto;
+      }
+
+      .customer-fourteen {
+        grid-column: 3;
+        grid-row: 3;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-fifteen {
+        grid-column: 4;
+        grid-row: 3;
+        width: 100%;
+        margin: auto;
+      }
+
+      .customer-sixteen {
+        grid-column: 5;
+        grid-row: 3;
+        width: 100%;
+        margin: auto;
+      }
+    }
   }
 }
 
