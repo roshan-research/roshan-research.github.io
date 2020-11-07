@@ -183,7 +183,8 @@ body {
   .alefba-image {
     margin: 11.133vw auto;
     width: 27.76vw;
-    height: 26.87vw; }
+    height: 26.87vw;
+    object-fit: contain; }
   .alefba-button {
     font-family: IRANYekanMobileFaNum, serif;
     width: 7.59vw;
@@ -700,7 +701,7 @@ body {
     line-height: 1.57;
     letter-spacing: normal;
     text-align: center;
-    margin: 0 0;
+    margin: 0.45vw 0 0 0;
     float: left; }
   .harf-button:hover {
     color: white; }
@@ -1010,14 +1011,12 @@ body {
 @keyframes fade_animate {
   0% {
     opacity: 0; }
-  3% {
+  1% {
     opacity: 0; }
-  50% {
+  40% {
     opacity: 1; }
-  83% {
+  80% {
     opacity: 1; }
-  97% {
-    opacity: 0; }
   100% {
     opacity: 0; } }
 
@@ -1026,11 +1025,7 @@ body {
   -webkit-transform: none;
   transition: none !important;
   opacity: 0 !important;
-  animation: fade_animate 2100ms; }
-  .carousel.carousel-fade .carousel-item.active:hover {
-    animation-play-state: paused; }
-    .carousel.carousel-fade .carousel-item.active:hover img {
-      opacity: 0.75; }
+  animation: fade_animate 3970ms; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1042,7 +1037,8 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .kashf {
-    overflow: hidden; }
+    overflow: hidden;
+    padding-top: 7vw; }
   .kashf-web-button {
     display: block;
     margin: 0;
@@ -1103,7 +1099,7 @@ body {
     letter-spacing: normal;
     text-align: center;
     margin: 0 auto;
-    margin-top: 10px; }
+    margin-top: 1.07vw; }
   .kashf-border {
     width: 70%;
     border-right: 5px solid;
@@ -1296,12 +1292,12 @@ html {
     height: 35.96vw;
     mix-blend-mode: screen;
     filter: blur(0px);
-    opacity: 0.6;
+    opacity: 1;
     margin: 0; }
   .product-arrow {
     text-align: center;
     margin-top: 1vw;
-    margin-bottom: 13.38vw; }
+    margin-bottom: 6.38vw; }
     .product-arrow a img {
       width: 4.791vw;
       height: 4.166vw; } }

@@ -1,7 +1,6 @@
 .kashf{
     margin: 0;
     padding: 0;
-
 }
 .kashf .row {
     text-align: center;
@@ -86,10 +85,9 @@
 
 @keyframes fade_animate{
     0% {opacity: 0;}
-    3% {opacity: 0;}
-    50% {opacity: 1;}
-    83% {opacity: 1;}
-    97% {opacity: 0;}
+    1% {opacity: 0;}
+    40% {opacity: 1;}
+    80% {opacity: 1;}
     100% {opacity: 0;}
 }
 
@@ -98,13 +96,7 @@
     -webkit-transform: none;
     transition: none!important;
     opacity: 0!important;
-    animation: fade_animate 2100ms;
-    &:hover {
-        animation-play-state: paused;
-        img {
-            opacity: 0.75;
-        }
-    }
+    animation: fade_animate 3970ms;
 }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
@@ -121,6 +113,7 @@
 @media only screen and (min-width: 992px) {
     .kashf{
         overflow: hidden;
+        padding-top: 7vw;
     }
     .kashf-web-button {
         display: block;
@@ -188,7 +181,7 @@
         letter-spacing: normal;
         text-align: center;
         margin: 0 auto;
-        margin-top: 10px;
+        margin-top: 1.07vw;
     }
     .kashf-border {
         width: 70%;
