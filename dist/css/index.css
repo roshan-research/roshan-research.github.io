@@ -1010,13 +1010,13 @@ body {
 @keyframes fade_animate {
   0% {
     opacity: 0; }
-  2% {
+  3% {
     opacity: 0; }
-  30% {
+  50% {
     opacity: 1; }
-  70% {
+  83% {
     opacity: 1; }
-  98% {
+  97% {
     opacity: 0; }
   100% {
     opacity: 0; } }
@@ -1026,7 +1026,7 @@ body {
   -webkit-transform: none;
   transition: none !important;
   opacity: 0 !important;
-  animation: fade_animate 1950ms; }
+  animation: fade_animate 2100ms; }
   .carousel.carousel-fade .carousel-item.active:hover {
     animation-play-state: paused; }
     .carousel.carousel-fade .carousel-item.active:hover img {
