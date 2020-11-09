@@ -53,7 +53,7 @@ body {
 
 .alefba {
   width: 100%;
-  background-image: url("../../src/images/alefba-mobile-background.png");
+  background-image: url("../../src/images/alefba/alefba-mobile-background.png");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 
@@ -132,7 +132,7 @@ body {
 @media only screen and (min-width: 992px) {
   .alefba {
     width: 100%;
-    background-image: url("../../src/images/alefbaBackground.png");
+    background-image: url("../../src/images/alefba/alefbaBackground.png");
     background-repeat: no-repeat; }
   .alefba-web-text {
     width: 70%;
@@ -530,7 +530,7 @@ body {
   width: 100%;
   background-size: 100% 100%;
   background: white;
-  background-image: url("../../src/images/back-harf.png");
+  background-image: url("../../src/images/harf/back-harf.png");
   background-repeat: no-repeat; }
 
 .harf-web-button {
@@ -639,7 +639,7 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .harf {
-    background-image: url("../../src/images/harf-background.png");
+    background-image: url("../../src/images/harf/harf-background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
     width: 100%; }
@@ -731,7 +731,7 @@ body {
 
 .hazm {
   width: 100%;
-  background-image: url("../../src/images/hazm-background-mobile.png");
+  background-image: url("../../src/images/hazm/hazm-background-mobile.png");
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
@@ -829,7 +829,7 @@ body {
 @media only screen and (min-width: 992px) {
   .hazm {
     width: 100%;
-    background-image: url("../../src/images/hazm-background.png");
+    background-image: url("../../src/images/hazm/hazm-background.png");
     background-repeat: no-repeat;
     height: auto; }
   .hazm-web-button {
@@ -932,11 +932,6 @@ body {
 .kashf .row {
   text-align: center; }
 
-.kashf-introduce {
-  float: right;
-  width: 50%;
-  height: 373px; }
-
 .kashf-title {
   margin: 0;
   direction: rtl;
@@ -1005,8 +1000,7 @@ body {
 .image-carousel {
   width: 77.285vw;
   height: 77.285vw;
-  margin: auto;
-  cursor: pointer; }
+  margin: auto; }
 
 @keyframes fade_animate {
   0% {
@@ -1045,10 +1039,6 @@ body {
     float: left; }
   .kashf-mobile-button {
     display: none; }
-  .kashf-introduce {
-    float: right;
-    width: 50%;
-    height: 373px; }
   .kashf-title {
     direction: rtl;
     font-size: 2.5654vw;
@@ -1111,11 +1101,8 @@ body {
     width: 33.35vw;
     height: 33.35vw;
     margin-bottom: 4.207vw;
-    margin-left: 12.47vw;
-    cursor: pointer; }
+    margin-left: 12.47vw; }
   .carousel {
-    width: 100%;
-    display: block;
     margin: auto; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
@@ -1217,7 +1204,7 @@ html {
   scroll-behavior: smooth; }
 
 .roshan {
-  background-image: url("../../src/images/roshan-background.jpg");
+  background-image: url("../../src/images/roshan/roshan-background.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%; }
 

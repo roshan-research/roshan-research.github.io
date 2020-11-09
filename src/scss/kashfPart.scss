@@ -5,11 +5,7 @@
 .kashf .row {
     text-align: center;
 }
-.kashf-introduce{
-    float: right;
-    width: 50%;
-    height: 373px;
-}
+
 .kashf-title {
     margin: 0;
     direction: rtl;
@@ -79,7 +75,6 @@
     width: 77.285vw;
     height: 77.285vw;
     margin: auto;
-    cursor: pointer;
 }
 
 
@@ -122,11 +117,6 @@
     }
     .kashf-mobile-button{
         display: none;
-    }
-    .kashf-introduce{
-        float: right;
-        width: 50%;
-        height: 373px;
     }
     .kashf-title {
         direction: rtl;
@@ -196,11 +186,8 @@
         height: 33.35vw;
         margin-bottom: 4.207vw;
         margin-left: 12.47vw;
-        cursor: pointer;
     }
     .carousel {
-        width: 100%;
-        display: block;
         margin: auto;
     }
 }
