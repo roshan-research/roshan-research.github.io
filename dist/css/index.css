@@ -257,16 +257,19 @@ body {
       text-align: center;
       color: #000000;
       padding-top: 2.6vw;
-      margin-bottom: 3vw; }
+      margin-bottom: 0; }
   .web-customer {
     width: 64%;
-    margin: 0 auto;
+    margin: 3vw auto;
     display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-    grid-row-gap: 1rem; }
+    grid-row-gap: 2rem; }
     .web-customer > div {
       justify-content: space-between; }
     .web-customer .customer-image {
+      background: url("../../src/images/customer-web/customers.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: 64vw;
+      background-size: 64vw;
       -webkit-filter: grayscale(100%);
       filter: grayscale(100%);
       opacity: 0.4; }
@@ -277,103 +280,136 @@ body {
     .web-customer .row-one {
       grid-row: 1;
       display: grid;
-      grid-template-columns: 0.215fr 0.1999fr 0.1853fr 0.1853fr 0.1853fr;
-      grid-column-gap: 1.2em;
-      height: max-content; }
+      grid-template-columns: 1.2fr 1.1fr 1fr 1fr 1fr;
+      grid-column-gap: 1em;
+      height: auto; }
       .web-customer .row-one .customer-one {
         grid-column: 1;
         grid-row: 1;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-one .customer-one div {
+          height: 11vw;
+          background-position: 0 4%; }
       .web-customer .row-one .customer-two {
         grid-column: 2;
         grid-row: 1;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-one .customer-two div {
+          height: 12.1vw;
+          background-position: 27% 4%; }
       .web-customer .row-one .customer-three {
-        grid-column: 3/4;
+        grid-column: 3;
         grid-row: 1;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-one .customer-three div {
+          height: 12vw;
+          background-position: 52% 4%; }
       .web-customer .row-one .customer-four {
         grid-column: 4;
         grid-row: 1;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-one .customer-four div {
+          height: 12vw;
+          background-position: 76% 4%; }
       .web-customer .row-one .customer-five {
         grid-column: 5;
         grid-row: 1;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-one .customer-five div {
+          height: 12vw;
+          background-position: 100% 3%; }
     .web-customer .row-two {
       grid-row: 2;
       display: grid;
-      grid-template-columns: 1.3fr 1fr 1fr 1fr 1fr 1fr;
-      grid-column-gap: 1.2em;
-      height: max-content; }
+      grid-template-columns: 1.45fr 1.2fr 0.9fr 1.1fr 1.1fr 1.15fr;
+      grid-template-rows: max-content;
+      grid-column-gap: 0.5em;
+      height: auto; }
       .web-customer .row-two .customer-six {
         grid-column: 1;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-six div {
+          background-position: 0 55%;
+          margin-right: 1vw;
+          height: 8.33vw; }
       .web-customer .row-two .customer-seven {
         grid-column: 2;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-seven div {
+          background-position: 23% 55%;
+          margin-left: 0.5vw;
+          height: 10.93vw; }
       .web-customer .row-two .customer-eight {
         grid-column: 3;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-eight div {
+          background-position: 43% 55%;
+          height: 10.93vw; }
       .web-customer .row-two .customer-nine {
         grid-column: 4;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-nine div {
+          background-position: 61.5% 55%;
+          height: 10.93vw; }
       .web-customer .row-two .customer-ten {
         grid-column: 5;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-ten div {
+          background-position: 80% 55%;
+          height: 12.5vw; }
       .web-customer .row-two .customer-eleven {
         grid-column: 6;
         grid-row: 2;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-two .customer-eleven div {
+          background-position: 100% 55%;
+          height: 12.5vw; }
     .web-customer .row-three {
       grid-row: 3;
       display: grid;
-      direction: rtl;
-      grid-template-columns: 0.1860fr 0.16680fr 0.2082fr 0.3825fr 0.1996fr;
-      grid-column-gap: 3em;
-      height: max-content; }
+      grid-template-columns: 1fr 2.2fr 1.25fr 0.8fr 1.1fr;
+      grid-column-gap: 2rem;
+      height: auto; }
       .web-customer .row-three .customer-twelve {
         grid-column: 1;
         grid-row: 3;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-three .customer-twelve div {
+          height: 8.25vw;
+          background-position: 2% 94%; }
       .web-customer .row-three .customer-thirteen {
         grid-column: 2;
         grid-row: 3;
-        width: 100%;
-        height: auto;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-three .customer-thirteen div {
+          height: 6.25vw;
+          background-position: 25% 88%; }
       .web-customer .row-three .customer-fourteen {
         grid-column: 3;
         grid-row: 3;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-three .customer-fourteen div {
+          height: 8.93vw;
+          background-position: 59% 94%; }
       .web-customer .row-three .customer-fifteen {
         grid-column: 4;
         grid-row: 3;
-        width: 100%;
-        margin: auto; }
+        margin: auto 0; }
+        .web-customer .row-three .customer-fifteen div {
+          height: 9.2vw;
+          background-position: 78% 95%; }
       .web-customer .row-three .customer-sixteen {
         grid-column: 5;
         grid-row: 3;
-        width: 100%;
-        margin: auto; } }
+        margin: auto 0; }
+        .web-customer .row-three .customer-sixteen div {
+          height: 8.7vw;
+          background-position: 99% 96%; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 .footer {
