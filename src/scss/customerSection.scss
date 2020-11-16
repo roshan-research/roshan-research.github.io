@@ -22,17 +22,86 @@
   justify-content: center;
   align-items: flex-start;
 
-  .logo-item {
-    width: 33%;
-    height: 31.7vw;
-  }
-
   .slider-two {
     width: 90%;
 
     .item-row {
       margin-bottom: 5.33vw;
     }
+  }
+
+  .customer-image {
+    width: 33%;
+    height: 27.46vw;
+    background: url("../../src/images/customer-mobile/customer-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 255vw;
+  }
+
+  .customer-one {
+    background-position: 75.6% 10%;
+  }
+
+  .customer-two {
+    background-position: 88% 10%;
+  }
+
+  .customer-three {
+    background-position: 101% 10%;
+  }
+
+  .customer-four {
+    background-position: 76% 84%;
+  }
+
+  .customer-five {
+    background-position: 88% 84%;
+  }
+
+  .customer-six {
+      background-position: 100.9% 84%;
+  }
+
+  .customer-seven {
+    background-position: 29.7% 13%;
+  }
+
+  .customer-eight {
+    background-position: 14% 87%;
+  }
+
+  .customer-nine {
+    background-position: 101% 87%;
+  }
+
+  .customer-ten {
+    background-position: 0 84%;
+  }
+
+  .customer-eleven {
+    background-position: -1% 11%;
+  }
+
+  .customer-twelve {
+    background-position: 13.9% 10%;
+  }
+
+  .customer-thirteen {
+    background-position: 47% 107%;
+    background-size: 171vw!important;
+  }
+
+  .customer-fourteen {
+    background-position: 29.2% 91%;
+    background-size: 237vw!important;
+  }
+
+  .customer-fifteen {
+    background-position: 63% 12%;
+  }
+
+  .customer-sixteen {
+    background-position: 62.9% 84%;
   }
 
   //@keyframes move_animate {
@@ -147,6 +216,7 @@
         grid-column: 1;
         grid-row: 1;
         margin: auto 0;
+
         div {
           height: 11vw;
           background-position: 0 4%;
@@ -157,6 +227,7 @@
         grid-column: 2;
         grid-row: 1;
         margin: auto 0;
+
         div {
           height: 12.1vw;
           background-position: 27% 4%;
@@ -167,6 +238,7 @@
         grid-column: 3;
         grid-row: 1;
         margin: auto 0;
+
         div {
           height: 12vw;
           background-position: 52% 4%;
@@ -177,6 +249,7 @@
         grid-column: 4;
         grid-row: 1;
         margin: auto 0;
+
         div {
           height: 12vw;
           background-position: 76% 4%;
@@ -187,6 +260,7 @@
         grid-column: 5;
         grid-row: 1;
         margin: auto 0;
+
         div {
           height: 12vw;
           background-position: 100% 3%;
@@ -206,9 +280,10 @@
         grid-column: 1;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 0 55%;
-          margin-right: 1vw;
+          margin-right: 0.4vw;
           height: 8.33vw;
         }
       }
@@ -217,6 +292,7 @@
         grid-column: 2;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 23% 55%;
           margin-left: 0.5vw;
@@ -228,6 +304,7 @@
         grid-column: 3;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 43% 55%;
           height: 10.93vw;
@@ -238,6 +315,7 @@
         grid-column: 4;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 61.5% 55%;
           height: 10.93vw;
@@ -248,6 +326,7 @@
         grid-column: 5;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 80% 55%;
           height: 12.5vw;
@@ -258,6 +337,7 @@
         grid-column: 6;
         grid-row: 2;
         margin: auto 0;
+
         div {
           background-position: 100% 55%;
           height: 12.5vw;
@@ -276,6 +356,7 @@
         grid-column: 1;
         grid-row: 3;
         margin: auto 0;
+
         div {
           height: 8.25vw;
           background-position: 2% 94%;
@@ -286,6 +367,7 @@
         grid-column: 2;
         grid-row: 3;
         margin: auto 0;
+
         div {
           height: 6.25vw;
           background-position: 25% 88%;
@@ -296,6 +378,7 @@
         grid-column: 3;
         grid-row: 3;
         margin: auto 0;
+
         div {
           height: 8.93vw;
           background-position: 59% 94%;
@@ -306,6 +389,7 @@
         grid-column: 4;
         grid-row: 3;
         margin: auto 0;
+
         div {
           height: 9.2vw;
           background-position: 78% 95%;
@@ -316,6 +400,7 @@
         grid-column: 5;
         grid-row: 3;
         margin: auto 0;
+
         div {
           height: 8.7vw;
           background-position: 99% 96%;

@@ -223,13 +223,50 @@ body {
   height: 82%;
   justify-content: center;
   align-items: flex-start; }
-  .mobile-customer .logo-item {
-    width: 33%;
-    height: 31.7vw; }
   .mobile-customer .slider-two {
     width: 90%; }
     .mobile-customer .slider-two .item-row {
       margin-bottom: 5.33vw; }
+  .mobile-customer .customer-image {
+    width: 33%;
+    height: 27.46vw;
+    background: url("../../src/images/customer-mobile/customer-mobile.png");
+    background-repeat: no-repeat;
+    background-size: 255vw; }
+  .mobile-customer .customer-one {
+    background-position: 75.6% 10%; }
+  .mobile-customer .customer-two {
+    background-position: 88% 10%; }
+  .mobile-customer .customer-three {
+    background-position: 101% 10%; }
+  .mobile-customer .customer-four {
+    background-position: 76% 84%; }
+  .mobile-customer .customer-five {
+    background-position: 88% 84%; }
+  .mobile-customer .customer-six {
+    background-position: 100.9% 84%; }
+  .mobile-customer .customer-seven {
+    background-position: 29.7% 13%; }
+  .mobile-customer .customer-eight {
+    background-position: 14% 87%; }
+  .mobile-customer .customer-nine {
+    background-position: 101% 87%; }
+  .mobile-customer .customer-ten {
+    background-position: 0 84%; }
+  .mobile-customer .customer-eleven {
+    background-position: -1% 11%; }
+  .mobile-customer .customer-twelve {
+    background-position: 13.9% 10%; }
+  .mobile-customer .customer-thirteen {
+    background-position: 47% 107%;
+    background-size: 171vw !important; }
+  .mobile-customer .customer-fourteen {
+    background-position: 29.2% 91%;
+    background-size: 237vw !important; }
+  .mobile-customer .customer-fifteen {
+    background-position: 63% 12%; }
+  .mobile-customer .customer-sixteen {
+    background-position: 62.9% 84%; }
 
 .web-customer {
   display: none; }
@@ -259,7 +296,7 @@ body {
       padding-top: 2.6vw;
       margin-bottom: 0; }
   .web-customer {
-    width: 64%;
+    width: 66%;
     margin: 3vw auto;
     display: grid;
     grid-row-gap: 2rem; }
@@ -331,7 +368,7 @@ body {
         margin: auto 0; }
         .web-customer .row-two .customer-six div {
           background-position: 0 55%;
-          margin-right: 1vw;
+          margin-right: 0.4vw;
           height: 8.33vw; }
       .web-customer .row-two .customer-seven {
         grid-column: 2;
