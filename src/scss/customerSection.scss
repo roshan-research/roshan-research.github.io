@@ -1,7 +1,6 @@
 .our-customer {
   background-color: white;
   direction: ltr;
-  height: 98vw;
   padding-bottom: 9vw;
 
   .title {
@@ -16,7 +15,30 @@
   }
 }
 
+@keyframes slide-show {
+  0% {transform: translateX(0)}
+  100% {transform: translateX(100%)}
+}
+
+
 .mobile-customer {
+
+  //.owl-carousel{
+  //  .owl-item.active {
+  //    width: max-content;
+  //    .item{
+  //      width: 289vw!important;
+  //      height: 72vw;
+  //      overflow-x: hidden;
+  //      background: url("../../src/images/customer-mobile/customer-mobile2.png");
+  //      background-repeat: no-repeat;
+  //      background-size: 100% 100%;
+  //      background-position: 10% 0;
+  //      animation: slide-show 30s linear infinite;
+  //    }
+  //  }
+  //}
+
   display: flex;
   height: 82%;
   justify-content: center;

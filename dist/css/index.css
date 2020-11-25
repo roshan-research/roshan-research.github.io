@@ -206,7 +206,6 @@ body {
 .our-customer {
   background-color: white;
   direction: ltr;
-  height: 98vw;
   padding-bottom: 9vw; }
   .our-customer .title {
     font-size: 8vw;
@@ -217,6 +216,12 @@ body {
     padding-top: 5vw;
     margin-bottom: 9vw;
     height: 18%; }
+
+@keyframes slide-show {
+  0% {
+    transform: translateX(0); }
+  100% {
+    transform: translateX(100%); } }
 
 .mobile-customer {
   display: flex;
@@ -1167,9 +1172,9 @@ body {
     width: 70%;
     border-right: 5px solid;
     border-right-color: white;
-    padding: 10.3px;
+    padding: 10.3px 10.3px 10.3px 0;
     margin-top: 5.849vw;
-    margin-right: 15.7vw; }
+    margin-right: 13.9vw; }
   .image-carousel {
     width: 33.35vw;
     height: 33.35vw;
