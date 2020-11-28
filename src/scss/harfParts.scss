@@ -127,9 +127,11 @@
         background-size: 100% 100%;
         background-repeat: no-repeat;
         width: 100%;
+        height: 49.47vw;
     }
     .harf-web-button {
         display: block;
+        margin-left: 0.94375vw
     }
     .harf-mobile-button{
         display: none;
@@ -173,6 +175,7 @@
         font-style: normal;
         line-height: 1.55;
         letter-spacing: normal;
+        white-space: nowrap;
         text-align: right;
         color: #000000;
         margin: 0 auto;

@@ -118,8 +118,10 @@ body {
   display: none; }
 
 .alefba-image {
-  height: 38.66vw;
-  width: 88.26vw; }
+  text-align: center; }
+  .alefba-image img {
+    height: 38.66vw;
+    width: 88.26vw; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -132,8 +134,12 @@ body {
 @media only screen and (min-width: 992px) {
   .alefba {
     width: 100%;
+    height: 49.47vw;
     background-image: url("../../src/images/alefba/alefbaBackground.png");
     background-repeat: no-repeat; }
+    .alefba .row {
+      margin-left: -15px;
+      margin-right: -15px; }
   .alefba-web-text {
     width: 70%;
     order: 1;
@@ -176,15 +182,19 @@ body {
         font-style: normal;
         line-height: 1.55;
         letter-spacing: normal;
+        white-space: nowrap;
         text-align: right;
         color: #000000;
         margin: 0 auto;
         margin-top: 0.9235vw; }
   .alefba-image {
-    margin: 11.133vw auto;
-    width: 27.76vw;
-    height: 26.87vw;
-    object-fit: contain; }
+    text-align: right;
+    padding-right: 0 !important; }
+    .alefba-image img {
+      margin: 11.133vw auto;
+      width: 44.11vw;
+      height: 32.96vw;
+      object-fit: contain; }
   .alefba-button {
     font-family: IRANYekanMobileFaNum, serif;
     width: 7.59vw;
@@ -196,7 +206,7 @@ body {
     font-size: 0.71vw;
     margin: 0;
     margin-top: 10px;
-    margin-left: 15.7vw; }
+    margin-left: 16.2vw; }
   .alefba-web-button {
     display: block; }
   .alefba-mobile-button {
@@ -720,9 +730,11 @@ body {
     background-image: url("../../src/images/harf/harf-background.png");
     background-size: 100% 100%;
     background-repeat: no-repeat;
-    width: 100%; }
+    width: 100%;
+    height: 49.47vw; }
   .harf-web-button {
-    display: block; }
+    display: block;
+    margin-left: 0.94375vw; }
   .harf-mobile-button {
     display: none; }
   .harf-introduce {
@@ -760,6 +772,7 @@ body {
     font-style: normal;
     line-height: 1.55;
     letter-spacing: normal;
+    white-space: nowrap;
     text-align: right;
     color: #000000;
     margin: 0 auto;
@@ -969,9 +982,8 @@ body {
     line-height: 1.57;
     letter-spacing: normal;
     text-align: center;
-    margin: 0;
-    float: left;
-    margin-left: 15.7vw; }
+    margin: 0.8125vw 0 0 15.7vw;
+    float: left; }
   .hazm-button:hover {
     color: black; }
   .hazm-web-text {
@@ -1069,7 +1081,7 @@ body {
   display: none; }
 
 .kashf-border {
-  border-right: 0.7995vw  solid;
+  border-right: 0.7995vw solid;
   border-right-color: white;
   padding: 0 2.744vw;
   margin-top: 8.528vw;
@@ -1096,8 +1108,9 @@ body {
   transform: none;
   -webkit-transform: none;
   transition: none !important;
-  opacity: 0 !important;
-  animation: fade_animate 3970ms; }
+  opacity: 0;
+  animation: fade_animate 3970ms;
+  -moz-animation: fade_animate 3970ms; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1114,7 +1127,9 @@ body {
   .kashf-web-button {
     display: block;
     margin: 0;
-    float: left; }
+    margin-left: 1.4vw; }
+    .kashf-web-button button {
+      float: left; }
   .kashf-mobile-button {
     display: none; }
   .kashf-title {
@@ -1148,6 +1163,7 @@ body {
     line-height: 1.55;
     letter-spacing: normal;
     text-align: right;
+    white-space: nowrap;
     color: #ffffff;
     margin: 0 auto;
     margin-top: 0.9235vw; }
@@ -1167,14 +1183,15 @@ body {
     letter-spacing: normal;
     text-align: center;
     margin: 0 auto;
-    margin-top: 1.07vw; }
+    margin-top: 1.07vw;
+    clear: left; }
   .kashf-border {
     width: 70%;
     border-right: 5px solid;
     border-right-color: white;
     padding: 10.3px 10.3px 10.3px 0;
     margin-top: 5.849vw;
-    margin-right: 13.9vw; }
+    float: left; }
   .image-carousel {
     width: 33.35vw;
     height: 33.35vw;
@@ -1188,7 +1205,8 @@ body {
   direction: rtl; }
 
 .nav-background {
-  background-color: #4286f5;
+  background-image: url("../../src/images/roshan/roshan-background.jpg");
+  background-repeat: no-repeat;
   height: 18.13vw; }
 
 .inner-navbar {
@@ -1284,7 +1302,8 @@ html {
 .roshan {
   background-image: url("../../src/images/roshan/roshan-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%; }
+  background-size: 100% 100%;
+  background-position-y: -6px; }
 
 .roshan-web {
   display: none; }
