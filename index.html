@@ -74,35 +74,45 @@
         <div class="col-sm">
           <div class="kashf-border">
             <p class="kashf-title">کشف</p>
-            <p class="kashf-head">پردازش تصویر و کشف محتوا</p>
-            <p class="kashf-describe">
+            <div class="kashf-describe">
               کشف با دیدن مثال‌هایی از یک مفهوم تازه در متن یا تصویر آن را می‌شناسد و<br>
               می‌تواند نمونه‌های دیگر آن مفهوم را پیدا کند. این ابزار کاربردهای فراوانی دارد:<br>
-              <span>شناسایی صحنه‌ها</span> ،<span>تحلیل احساس متن</span>، <span>تحلیل ویدئو</span>،<br>
-              <span>شناسایی چهره </span>و <span>پیدا کردن کالاها</span>
-            </p>
+              <div>
+                <span id="kashf-text-1" style="width: 7.2vw">شناسایی صحنه‌ها</span>،
+                <span id="kashf-text-2" style="width: 7.89vw">تحلیل احساس متن </span>،
+                <span id="kashf-text-3" style="width: 4.89vw">تحلیل ویدئو</span>
+              </div>
+              <div>
+                <span id="kashf-text-4" style="width: 6vw">شناسایی چهره </span>و
+                <span id="kashf-text-5" style="width: 6.3vw">پیدا کردن کالاها</span>
+              </div>
+            </div>
           </div>
           <a target="_blank" href="https://www.sobhe.ir/kashf" class="kashf-web-button">
             <button type="button" class="btn btn-warning kashf-button">مطالب بیشتر</button>
           </a>
         </div>
         <div class="col-sm">
-          <div id="carouselExampleControls" class="carousel slide carousel-fade" data-ride="carousel"
-               data-interval="4000" data-pause="false">
+          <div id="kashf-carousel"
+               class="carousel slide carousel-fade"
+               data-ride="carousel"
+               data-interval="4000"
+               data-pause="false"
+          >
             <div class="carousel-inner">
-              <div class="carousel-item active">
+              <div class="carousel-item active" id="kashf-img-1">
                 <img class="d-block image-carousel" src="src/images/kashf/icon1.png" alt="First slide">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="kashf-img-2">
                 <img class="d-block image-carousel" src="src/images/kashf/icon2.png" alt="Second slide">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="kashf-img-3">
                 <img class="d-block image-carousel" src="src/images/kashf/icon3.png" alt="Third slide">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="kashf-img-4">
                 <img class="d-block image-carousel" src="src/images/kashf/icon4.png" alt="Forth slide">
               </div>
-              <div class="carousel-item">
+              <div class="carousel-item" id="kashf-img-5">
                 <img class="d-block image-carousel" src="src/images/kashf/icon5.png" alt="Five slide">
               </div>
             </div>
@@ -382,5 +392,6 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="dist/js/jquery-3.5.1.slim.min.js"></script>
 <script src="dist/js/bootstrap.bundle.min.js"></script>
+<script src="src/js/kashf.js"></script>
 </body>
 </html>
