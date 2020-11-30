@@ -495,28 +495,35 @@ body {
         margin-bottom: 1.3325vw; }
         .footer .footer-body .footer-company .footer-company-address img.icon {
           width: 5.06904vw;
-          margin-left: 2.862vw;
-          margin-top: 0.5vw; }
+          margin-left: 3.862vw;
+          margin-top: 1vw; }
         .footer .footer-body .footer-company .footer-company-address .text {
           font-size: 4.264vw;
           display: inline-block;
           text-align: right; }
       .footer .footer-body .footer-company .footer-company-email {
-        margin-bottom: 1.3325vw; }
+        margin-bottom: 1.3325vw;
+        display: flex;
+        align-items: center; }
         .footer .footer-body .footer-company .footer-company-email img.icon {
           width: 4.797vw;
           height: 3.8376vw;
           margin-left: 2.862vw; }
         .footer .footer-body .footer-company .footer-company-email .text {
           font-size: 4.264vw;
-          text-align: right; }
-      .footer .footer-body .footer-company .footer-company-call-number img.icon {
-        width: 4.6485vw;
-        height: 4.6485vw;
-        margin-left: 2.862vw; }
-      .footer .footer-body .footer-company .footer-company-call-number .text {
-        font-size: 4.264vw;
-        text-align: right; }
+          text-align: right;
+          padding-top: 0.4vw; }
+      .footer .footer-body .footer-company .footer-company-call-number {
+        display: flex;
+        align-items: center; }
+        .footer .footer-body .footer-company .footer-company-call-number img.icon {
+          width: 4.6485vw;
+          height: 4.6485vw;
+          margin-left: 2.862vw; }
+        .footer .footer-body .footer-company .footer-company-call-number .text {
+          font-size: 4.264vw;
+          text-align: right;
+          padding-top: 1.4vw; }
     .footer .footer-body .footer-information {
       margin-top: 7.1955vw;
       padding-right: 3.59775vw;
@@ -577,7 +584,8 @@ body {
           .footer .footer-body .footer-company .footer-company-address img.icon {
             width: 1.302vw;
             height: 2.093608vw;
-            margin-left: 0.91175vw; }
+            margin-left: 1.1vw;
+            margin-top: 0; }
           .footer .footer-body .footer-company .footer-company-address .text {
             display: inline-block;
             width: 60%;
@@ -588,21 +596,23 @@ body {
           .footer .footer-body .footer-company .footer-company-email img.icon {
             width: 1.67423vw;
             height: 1.3024vw;
-            margin-left: 0.3863vw; }
+            margin-left: 0.91175vw; }
           .footer .footer-body .footer-company .footer-company-email .text {
             width: 60%;
             text-align: right;
-            font-size: 1.3024vw; }
+            font-size: 1.3024vw;
+            padding-top: 0.2vw; }
         .footer .footer-body .footer-company .footer-company-call-number {
           margin-bottom: 1.3024vw; }
           .footer .footer-body .footer-company .footer-company-call-number img.icon {
             width: 1.6631vw;
             height: 1.6631vw;
-            margin-left: 0.4375em; }
+            margin-left: 0.91175vw; }
           .footer .footer-body .footer-company .footer-company-call-number .text {
             width: 60%;
             text-align: right;
-            font-size: 1.3024vw; }
+            font-size: 1.3024vw;
+            padding-top: 0.6vw; }
       .footer .footer-body .footer-information {
         display: inline-block;
         margin-top: 0; }

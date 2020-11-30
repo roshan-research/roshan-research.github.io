@@ -37,8 +37,8 @@
           margin-bottom: 1.3325vw;
           img.icon {
             width: 5.06904vw;
-            margin-left: 2.862vw;
-            margin-top: 0.5vw;
+            margin-left: 3.862vw;
+            margin-top: 1vw;
           }
           .text {
             font-size: 4.264vw;
@@ -49,6 +49,8 @@
 
         .footer-company-email {
           margin-bottom: 1.3325vw;
+          display: flex;
+          align-items: center;
           img.icon {
             width: 4.797vw;
             height: 3.8376vw;
@@ -58,10 +60,13 @@
           .text {
             font-size: 4.264vw;
             text-align: right;
+            padding-top: 0.4vw;
           }
         }
 
         .footer-company-call-number {
+          display: flex;
+          align-items: center;
           img.icon {
             width: 4.6485vw;
             height: 4.6485vw;
@@ -71,6 +76,7 @@
           .text {
             font-size: 4.264vw;
             text-align: right;
+            padding-top: 1.4vw;
           }
         }
       }
@@ -151,7 +157,8 @@
           img.icon {
             width: 1.302vw;
             height: 2.093608vw;
-            margin-left: 0.91175vw;
+            margin-left: 1.1vw;
+            margin-top: 0;
           }
 
           .text {
@@ -167,15 +174,14 @@
           img.icon {
             width: 1.67423vw;
             height: 1.3024vw;
-            margin-left: 0.3863vw;
-
+            margin-left: 0.91175vw;
           }
 
           .text {
             width: 60%;
             text-align: right;
             font-size: 1.3024vw;
-
+            padding-top: 0.2vw;
           }
         }
 
@@ -184,13 +190,14 @@
           img.icon {
             width:1.6631vw;
             height: 1.6631vw;
-            margin-left: 0.4375em;
+            margin-left: 0.91175vw;
           }
 
           .text {
             width: 60%;
             text-align: right;
             font-size: 1.3024vw;
+            padding-top: 0.6vw;
           }
         }
       }
