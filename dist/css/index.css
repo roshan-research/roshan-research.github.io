@@ -1132,14 +1132,20 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .kashf {
-    overflow: hidden;
-    padding-top: 7vw; }
+    display: grid;
+    align-items: center;
+    height: 49.47vw;
+    overflow: hidden; }
+    .kashf .row {
+      align-items: center; }
+      .kashf .row > div {
+        height: max-content; }
   .kashf-border {
     width: 70%;
     border-right: 5px solid;
     border-right-color: white;
     padding: 10.3px 10.3px 10.3px 0;
-    margin-top: 9vw;
+    margin-top: 0;
     float: left; }
     .kashf-border .kashf-title {
       direction: rtl;
@@ -1398,7 +1404,7 @@ html {
   .product-arrow {
     text-align: center;
     margin-top: 1vw;
-    margin-bottom: 6.38vw; }
+    margin-bottom: 5.32vw; }
     .product-arrow a img {
       width: 4.791vw;
       height: 4.166vw; } }
