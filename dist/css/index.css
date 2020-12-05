@@ -930,7 +930,7 @@ body {
 @media only screen and (min-width: 992px) {
   .hazm {
     width: 100%;
-    background-image: url("../../src/images/hazm/hazm-background-web.png");
+    background-image: url("../../src/images/hazm/hazm-background-web.jpg");
     background-repeat: no-repeat;
     height: auto; }
   .hazm-web-button {
@@ -1182,13 +1182,21 @@ body {
       color: #ffffff;
       margin: 0 auto;
       margin-top: 0.9235vw; }
-      .kashf-border .kashf-describe > div span {
-        display: inline-block;
-        transition: all;
-        padding: 1px 2px; }
-        .kashf-border .kashf-describe > div span.active {
-          font-weight: bold;
-          font-size: 1.04vw; }
+  @keyframes fade_text_animate {
+    0% {
+      opacity: 0; }
+    10% {
+      opacity: 1; }
+    90% {
+      opacity: 1; }
+    100% {
+      opacity: 0; } }
+      .kashf-border .kashf-describe #kashf-text {
+        font-weight: bold;
+        font-size: 1.04vw;
+        opacity: 0; }
+        .kashf-border .kashf-describe #kashf-text.active {
+          animation: fade_text_animate 3970ms linear; }
   .image-carousel {
     width: 33.35vw;
     height: 33.35vw;
