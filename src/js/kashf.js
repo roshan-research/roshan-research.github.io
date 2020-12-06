@@ -1,7 +1,7 @@
 $(document).ready(function () {
   // swap_word(); TODO
 
-  sync_kashfText_with_kashfCarousel()
+  sync_kashf_text_with_kashfCarousel()
 
 });
 
@@ -67,7 +67,7 @@ window.addEventListener('scroll', scroll_func,  {passive: true});
 
 // handle kashf-text show and swap text synchronous with kashf-carousel
 
-function sync_kashfText_with_kashfCarousel() {
+function sync_kashf_text_with_kashfCarousel() {
 
   const carousel = $("#kashf-carousel");
   const text1 = 'شناسایی چهره';
@@ -83,54 +83,54 @@ function sync_kashfText_with_kashfCarousel() {
 
   carousel.on('slid.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
-    const kashf_text = $('#kashf-text');
-    kashf_text.addClass('active')
+    const carousel_text = $('.carousel-text');
+    carousel_text.addClass('active')
     switch (id) {
       case id1:
-        kashf_text.text(text1);
+        carousel_text.text(text1);
         // swap_word(); TODO: add swap to text
         break;
       case id2:
-        kashf_text.text(text2);
+        carousel_text.text(text2);
         // swap_word();
         break;
       case id3:
-        kashf_text.text(text3);
+        carousel_text.text(text3);
         // swap_word();
         break;
       case id4:
-        kashf_text.text(text4);
+        carousel_text.text(text4);
         // swap_word();
         break;
       case id5:
-        kashf_text.text(text5);
+        carousel_text.text(text5);
         // swap_word()
     }
   });
 
   carousel.on('slide.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
-    const kashf_text = $('#kashf-text');
-    kashf_text.removeClass('active')
+    const carousel_text = $('.carousel-text');
+    carousel_text.removeClass('active')
     switch (id) {
       case id1:
-        kashf_text.text(text1);
+        carousel_text.text(text1);
         // swap_word(); TODO: add swap to text
         break;
       case id2:
-        kashf_text.text(text2);
+        carousel_text.text(text2);
         // swap_word();
         break;
       case id3:
-        kashf_text.text(text3);
+        carousel_text.text(text3);
         // swap_word();
         break;
       case id4:
-        kashf_text.text(text4);
+        carousel_text.text(text4);
         // swap_word();
         break;
       case id5:
-        kashf_text.text(text5);
+        carousel_text.text(text5);
         // swap_word()
     }
   });

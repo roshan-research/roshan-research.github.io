@@ -39,7 +39,7 @@
     color: #000000;
   }
 
-  .alefba-describe {
+  .alefba-describe-mobile {
     font-family: IRANYekanWeb;
     font-size: 4.798vw;
     font-weight: 300;
@@ -50,6 +50,10 @@
     text-align: right;
     color: #000000;
     margin: 0 auto;
+  }
+
+  .alefba-describe-web {
+    display: none;
   }
 }
 
@@ -155,7 +159,8 @@
 
         }
 
-        .alefba-describe {
+        .alefba-describe-web {
+          display: block;
           font-family: IRANYekanMobileFaNum;
           font-weight: 300;
           font-size: 1.02vw;
@@ -168,7 +173,10 @@
           color: #000000;
           margin: 0 auto;
           margin-top: 0.9235vw;
+        }
 
+        .alefba-describe-mobile {
+          display: none;
         }
       }
 

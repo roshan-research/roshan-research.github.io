@@ -42,7 +42,7 @@
         margin: 0;
     }
 
-    .harf-describe {
+    .harf-describe-mobile {
         font-family: IRANYekanMobileFaNum;
         font-size: 4.798vw;
         font-stretch: normal;
@@ -52,7 +52,10 @@
         text-align: right;
         color: #000000;
         margin: 0 auto;
+    }
 
+    .harf-describe-web {
+        display: none;
     }
 }
 
@@ -173,7 +176,8 @@
                     margin-top: 0.974vw;
 
                 }
-                .harf-describe {
+                .harf-describe-web {
+                    display: block;
                     font-family: IRANYekanMobileFaNum;
                     font-weight: 300;
                     font-size: 1.02vw;
@@ -186,7 +190,9 @@
                     color: #000000;
                     margin: 0 auto;
                     margin-top: 0.9235vw;
-
+                }
+                .harf-describe-mobile {
+                    display: none;
                 }
             }
 
