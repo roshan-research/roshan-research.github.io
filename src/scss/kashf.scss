@@ -85,11 +85,11 @@
 }
 
 .kashf-button {
-  color: #000000;
   height: 12.792vw;
+  background-color: #e3d845;
+  color: #000000;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
-  background-color: #e3d845;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
@@ -256,6 +256,13 @@
         text-align: center;
         margin: 0;
         margin-top: 1.07vw;
+        transition: all 0.4s ease 0s;
+        &:hover {
+          color: #000000;
+          text-shadow: 0 0 0.205vw rgba(0,0,0,0.57);
+          -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
+          -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
+        }
       }
     }
   }

@@ -189,12 +189,18 @@
           width: 7.59vw;
           height: 2.46vw;
           background-color: #245779;
-          float: left;
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
           font-size: 0.71vw;
           margin: 0;
           margin-top: 10px;
+          transition: all 0.4s ease 0s;
+          &:hover {
+            color: #ffffff;
+            text-shadow: 0 0 0.205vw rgba(255, 255, 255, 1);
+            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
+            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
+          }
         }
       }
     }

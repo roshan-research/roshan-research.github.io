@@ -189,7 +189,7 @@ body {
 
         .hazm-button {
           font-family: IRANYekanMobileFaNum;
-          color: black;
+          color: #000000;
           width: 7.59vw;
           height: 2.46vw;
           border-radius: 2.5px;
@@ -203,6 +203,13 @@ body {
           letter-spacing: normal;
           text-align: center;
           margin: 0.8125vw 0 0 0;
+          transition: all 0.4s ease 0s;
+          &:hover {
+            color: #000000;
+            text-shadow: 0 0 0.205vw rgba(0,0,0,0.57);
+            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
+            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
+          }
         }
 
         .hazm-button:hover {
