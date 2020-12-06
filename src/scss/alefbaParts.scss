@@ -5,52 +5,51 @@
   background-size: 100% 100%;
 }
 
-.alefba-web-text {
-  .alefba-border {
-    border-right: 0.7995vw solid;
-    border-right-color: black;
-    padding: 0 2.744vw;
-    margin-top: 5%;
-    padding-bottom: 7%;
 
-    .alefba-title {
-      font-family: IRANYekanWeb;
-      direction: rtl;
-      font-size: 10.66vw;
-      font-weight: bold;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.54;
-      letter-spacing: normal;
-      text-align: right;
-      color: #000000;
-      margin: 0;
-    }
+.alefba-text {
+  border-right: 0.7995vw solid;
+  border-right-color: black;
+  padding: 0 2.744vw;
+  margin-top: 5%;
+  padding-bottom: 7%;
 
-    .alefba-head {
-      font-family: IRANYekanWeb;
-      font-size: 7.995vw;
-      font-weight: normal;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.56;
-      letter-spacing: normal;
-      text-align: right;
-      color: #000000;
-    }
+  .alefba-title {
+    font-family: IRANYekanWeb;
+    direction: rtl;
+    font-size: 10.66vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0;
+  }
 
-    .alefba-describe {
-      font-family: IRANYekanWeb;
-      font-size: 4.798vw;
-      font-weight: 300;
-      font-stretch: normal;
-      font-style: normal;
-      line-height: 1.55;
-      letter-spacing: normal;
-      text-align: right;
-      color: #000000;
-      margin: 0 auto;
-    }
+  .alefba-head {
+    font-family: IRANYekanWeb;
+    font-size: 7.995vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+  }
+
+  .alefba-describe {
+    font-family: IRANYekanWeb;
+    font-size: 4.798vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0 auto;
   }
 }
 
@@ -79,6 +78,7 @@
 
 .alefba-image {
   text-align: center;
+
   img {
     height: 38.66vw;
     width: 88.26vw;
@@ -110,68 +110,93 @@
     }
   }
 
-  .alefba-web-text {
-    width: 70%;
+  .alefba-text-outer {
     order: 1;
     margin-top: 15.90vw;
-    margin-bottom: 15.90vw;
+    margin-bottom: 0;
+    height: fit-content;
 
-    .alefba-border {
-      width: 70%;
-      border-right: 5px solid;
-      border-right-color: #000000;
-      padding: 0.64375rem;
-      margin: 0;
+    .alefba-text-inner {
+      width: fit-content;
+      float: right;
 
-      .alefba-title {
-        direction: rtl;
-        font-size: 2.5654vw;
-        font-weight: bold;
-        font-family: IRANYekanMobileFaNum;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.54;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000;
-        font-family: IRANYekanMobileFaNum, serif;
+      .alefba-text {
+        border-right: 5px solid;
+        border-right-color: #000000;
+        padding: 0.64375rem;
+        padding-left: 0;
+        margin: 0;
+
+        .alefba-title {
+          direction: rtl;
+          font-size: 2.5654vw;
+          font-weight: bold;
+          font-family: IRANYekanMobileFaNum;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.54;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          font-family: IRANYekanMobileFaNum, serif;
+        }
+
+        .alefba-head {
+          font-family: IRANYekanMobileFaNum;
+          font-size: 1.64vw;
+          font-weight: 400;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          margin-top: 0.974vw;
+
+        }
+
+        .alefba-describe {
+          font-family: IRANYekanMobileFaNum;
+          font-weight: 300;
+          font-size: 1.02vw;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.55;
+          letter-spacing: normal;
+          white-space: nowrap;
+          text-align: right;
+          color: #000000;
+          margin: 0 auto;
+          margin-top: 0.9235vw;
+
+        }
       }
 
-      .alefba-head {
-        font-family: IRANYekanMobileFaNum;
-        font-size: 1.64vw;
-        font-weight: 400;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.56;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000;
-        margin-top: 0.974vw;
+      .alefba-web-button {
+        display: block;
+        width: 100%;
 
-      }
-
-      .alefba-describe {
-        font-family: IRANYekanMobileFaNum;
-        font-weight: 300;
-        font-size: 1.02vw;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.55;
-        letter-spacing: normal;
-        white-space: nowrap;
-        text-align: right;
-        color: #000000;
-        margin: 0 auto;
-        margin-top: 0.9235vw;
-
+        .alefba-button {
+          font-family: IRANYekanMobileFaNum, serif;
+          width: 7.59vw;
+          height: 2.46vw;
+          background-color: #245779;
+          float: left;
+          border-radius: 2.5px;
+          box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          font-size: 0.71vw;
+          margin: 0;
+          margin-top: 10px;
+        }
       }
     }
+
   }
 
   .alefba-image {
     text-align: right;
-    padding-right: 0!important;
+    padding-right: 0 !important;
+
     img {
       margin: 11.133vw auto;
       width: 44.11vw;
@@ -180,23 +205,6 @@
     }
   }
 
-  .alefba-button {
-    font-family: IRANYekanMobileFaNum, serif;
-    width: 7.59vw;
-    height: 2.46vw;
-    background-color: #245779;
-    float: left;
-    border-radius: 2.5px;
-    box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-    font-size: 0.71vw;
-    margin: 0;
-    margin-top: 10px;
-    margin-left: 16.2vw;
-  }
-
-  .alefba-web-button {
-    display: block;
-  }
   .alefba-mobile-button {
     display: none;
   }

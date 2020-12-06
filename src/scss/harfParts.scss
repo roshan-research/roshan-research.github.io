@@ -7,52 +7,59 @@
     background-repeat: no-repeat;
 
 }
+
+.harf-text {
+    border-right: 0.7995vw solid;
+    border-right-color: black;
+    padding: 0 2.744vw;
+    margin-top: 5%;
+    padding-bottom: 7%;
+
+    .harf-title {
+        font-family: IRANYekanMobileFaNum;
+        direction: rtl;
+        font-size: 10.66vw;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000;
+        margin-bottom: 0.5rem;
+    }
+
+    .harf-head{
+        font-family: IRANYekanMobileFaNum;
+        font-size: 7.995vw;
+        font-weight: normal;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000;
+        margin: 0;
+    }
+
+    .harf-describe {
+        font-family: IRANYekanMobileFaNum;
+        font-size: 4.798vw;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.55;
+        letter-spacing: normal;
+        text-align: right;
+        color: #000000;
+        margin: 0 auto;
+
+    }
+}
+
 .harf-web-button{
     display: none;
 }
-.harf-introduce {
-    position: relative;
-    width: 50%;
-    float: right;
-    height: inherit;
-}
-.harf-title {
-    font-family: IRANYekanMobileFaNum;
-    direction: rtl;
-    font-size: 10.66vw;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.54;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    margin-bottom: 0.5rem;
-}
-.harf-head{
-    font-family: IRANYekanMobileFaNum;
-    font-size: 7.995vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.56;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    margin: 0;
-}
-.harf-describe {
-    font-family: IRANYekanMobileFaNum;
-    font-size: 4.798vw;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.55;
-    letter-spacing: normal;
-    text-align: right;
-    color: #000000;
-    margin: 0 auto;
 
-}
 .harf-button {
     font-family: IRANYekanMobileFaNum;
     color: #ffffff;
@@ -71,16 +78,11 @@
     font-size: 3.198vw;
     margin-bottom: 8%;
 }
+
 .harf-button:hover {
     color: white;
 }
-.harf-border {
-    border-right: 0.7995vw solid;
-    border-right-color: black;
-    padding: 0 2.744vw;
-    margin-top: 5%;
-    padding-bottom: 7%;
-}
+
 .harf-image {
     text-align: center;
     height: 75.9525vw;
@@ -98,6 +100,7 @@
     bottom: 0;
 
 }
+
 @media only screen and (min-width: 450px)
 {
     .harf{
@@ -129,99 +132,100 @@
         width: 100%;
         height: 49.47vw;
     }
-    .harf-web-button {
-        display: block;
-        margin-left: 0.94375vw
-    }
-    .harf-mobile-button{
-        display: none;
-    }
-    .harf-introduce {
-        position: relative;
-        width: 50%;
-        float: right;
-        height: inherit;
-    }
-    .harf-title {
-        direction: rtl;
-        font-size: 2.5654vw;
-        font-weight: bold;
-        font-family: IRANYekanMobileFaNum;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.54;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000;
-    }
-    .harf-head{
-        font-family: IRANYekanMobileFaNum;
-        font-size: 1.64vw;
-        font-weight: 400;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.56;
-        letter-spacing: normal;
-        text-align: right;
-        color: #000000;
-        margin-top: 0.974vw;
 
-    }
-    .harf-describe {
-        font-family: IRANYekanMobileFaNum;
-        font-weight: 300;
-        font-size: 1.02vw;
-        font-stretch: normal;
-        font-style: normal;
-        line-height: 1.55;
-        letter-spacing: normal;
-        white-space: nowrap;
-        text-align: right;
-        color: #000000;
-        margin: 0 auto;
-        margin-top: 0.9235vw;
-
-    }
-    .harf-button {
-        font-family: IRANYekanMobileFaNum;
-        color: #ffffff;
-        width: 7.59vw;
-        height: 2.46vw;
-        border-radius: 2.5px;
-        box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-        background-color: #245779;
-        font-weight: bold;
-        font-stretch: normal;
-        font-style: normal;
-        font-size: 0.71vw;
-        line-height: 1.57;
-        letter-spacing: normal;
-        text-align: center;
-        margin: 0.45vw 0 0 0;
-        float: left;
-    }
-    .harf-button:hover {
-        color: white;
-    }
-    .harf-border {
-        width: 70%;
-        border-right: 5px solid;
-        border-right-color: #000000;
-        padding: 0.64375rem;
-        margin-right:auto;
-
-
-    }
-    .harf-web-text{
+    .harf-text-outer {
         margin-bottom: 16.67vw;
         margin-top: 16.67vw;
+        width: fit-content;
+
+        .harf-text-inner{
+            float: left;
+            width: fit-content;
+
+            .harf-text {
+                border-right: 5px solid;
+                border-right-color: #000000;
+                padding: 0.64375rem;
+                padding-left: 0;
+
+                .harf-title {
+                    direction: rtl;
+                    font-size: 2.5654vw;
+                    font-weight: bold;
+                    font-family: IRANYekanMobileFaNum;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.54;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #000000;
+                }
+                .harf-head{
+                    font-family: IRANYekanMobileFaNum;
+                    font-size: 1.64vw;
+                    font-weight: 400;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.56;
+                    letter-spacing: normal;
+                    text-align: right;
+                    color: #000000;
+                    margin-top: 0.974vw;
+
+                }
+                .harf-describe {
+                    font-family: IRANYekanMobileFaNum;
+                    font-weight: 300;
+                    font-size: 1.02vw;
+                    font-stretch: normal;
+                    font-style: normal;
+                    line-height: 1.55;
+                    letter-spacing: normal;
+                    white-space: nowrap;
+                    text-align: right;
+                    color: #000000;
+                    margin: 0 auto;
+                    margin-top: 0.9235vw;
+
+                }
+            }
+
+            .harf-web-button {
+                display: block;
+                width: 100%;
+
+                .harf-button {
+                    font-family: IRANYekanMobileFaNum;
+                    color: #ffffff;
+                    width: 7.59vw;
+                    height: 2.46vw;
+                    border-radius: 2.5px;
+                    box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+                    background-color: #245779;
+                    font-weight: bold;
+                    font-stretch: normal;
+                    font-style: normal;
+                    font-size: 0.71vw;
+                    line-height: 1.57;
+                    letter-spacing: normal;
+                    text-align: center;
+                    margin: 0.45vw 0 0 0;
+                }
+
+                .harf-button:hover {
+                    color: white;
+                }
+            }
+        }
     }
+
     .harf-image {
         float: left;
         height: inherit;
         position: relative;
         width: 50%;
     }
+
     .harf-imageWeb {
         position: relative;
         width: 20.933vw;
@@ -229,7 +233,9 @@
         margin: 13.853vw auto;
     }
 
-
+    .harf-mobile-button{
+        display: none;
+    }
 }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
