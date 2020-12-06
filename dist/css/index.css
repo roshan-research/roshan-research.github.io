@@ -1360,7 +1360,7 @@ html {
 .roshan {
   background-image: url("../../src/images/roshan/roshan-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position-y: -6px; }
 
 .roshan-web {
@@ -1412,7 +1412,8 @@ html {
 @media only screen and (min-width: 992px) {
   .roshan {
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    background-size: 100% 100%; }
   .roshan-mobile {
     display: none; }
   .roshan-web {

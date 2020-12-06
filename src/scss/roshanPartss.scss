@@ -5,7 +5,7 @@ html {
 .roshan {
   background-image: url("../../src/images/roshan/roshan-background.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: cover;
   background-position-y: -6px;
 }
 
@@ -75,6 +75,7 @@ html {
   .roshan {
     display: flex;
     justify-content: center;
+    background-size: 100% 100%;
   }
 
   .roshan-mobile {
