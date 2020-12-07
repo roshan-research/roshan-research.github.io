@@ -1095,10 +1095,11 @@ body {
     opacity: 1; }
   100% {
     opacity: 0; } }
+    .kashf-text .kashf-describe-mobile .no-wrap-words {
+      white-space: nowrap; }
     .kashf-text .kashf-describe-mobile .carousel-text {
       font-weight: bold;
       font-size: 5.59vw;
-      white-space: nowrap;
       opacity: 0; }
       .kashf-text .kashf-describe-mobile .carousel-text.active {
         animation: fade_text_animate 3970ms linear; }

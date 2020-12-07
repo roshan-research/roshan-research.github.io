@@ -68,10 +68,12 @@
       }
     }
 
+    .no-wrap-words {
+      white-space: nowrap;
+    }
     .carousel-text {
       font-weight: bold;
       font-size: 5.59vw;
-      white-space: nowrap;
       opacity: 0;
       &.active {
         animation: fade_text_animate 3970ms linear;
