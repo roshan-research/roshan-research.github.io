@@ -1354,7 +1354,7 @@ body {
     flex-wrap: nowrap;
     justify-content: space-between !important;
     align-items: center;
-    margin: 0 10vw 0 11vw; }
+    margin: 0 10vw; }
   .navbar-logo {
     height: 2.99vw;
     width: 6.14vw;
@@ -1366,10 +1366,11 @@ body {
     .navbar-collapse ul {
       padding-right: 0; }
     .navbar-collapse .nav-item {
-      margin-right: 3.02vw; }
+      margin-right: 3.82vw !important; }
     .navbar-collapse .nav-items {
       color: #ffffff;
-      font-size: 1.02vw; }
+      font-size: 1.02vw;
+      padding-left: 0 !important; }
     .navbar-collapse .nav-items:hover {
       color: #cdfff5; }
     .navbar-collapse .nav-items:focus {

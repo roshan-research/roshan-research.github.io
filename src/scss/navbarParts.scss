@@ -91,7 +91,7 @@ body {
         flex-wrap: nowrap;
         justify-content: space-between!important;
         align-items: center;
-        margin: 0 10vw 0 11vw;
+        margin: 0 10vw;
     }
 
     .navbar-logo {
@@ -109,12 +109,13 @@ body {
         }
 
         .nav-item {
-            margin-right: 3.02vw;
+            margin-right: 3.82vw!important;
         }
 
         .nav-items{
             color: #ffffff;
             font-size: 1.02vw;
+            padding-left: 0!important;
         }
 
         .nav-items:hover{
