@@ -240,61 +240,84 @@ body {
     margin-bottom: 9vw;
     height: 18%; }
 
-@keyframes slide-show {
+@keyframes move-images {
   0% {
-    transform: translateX(0); }
+    transform: translate3d(0, 0, 0); }
   100% {
-    transform: translateX(100%); } }
+    transform: translate3d(-100%, 0, 0); } }
 
 .mobile-customer {
+  width: 90%;
+  margin: 0 auto;
+  overflow: hidden;
   display: flex;
-  height: 82%;
-  justify-content: center;
-  align-items: flex-start; }
-  .mobile-customer .slider-two {
-    width: 90%; }
-    .mobile-customer .slider-two .item-row {
-      margin-bottom: 5.33vw; }
-  .mobile-customer .customer-image {
-    width: 33%;
-    height: 27.46vw;
-    background: url("../../src/images/customer-mobile/customer-mobile.png");
-    background-repeat: no-repeat;
-    background-size: 255vw; }
-  .mobile-customer .customer-one {
-    background-position: 75.6% 10%; }
-  .mobile-customer .customer-two {
-    background-position: 88% 10%; }
-  .mobile-customer .customer-three {
-    background-position: 101% 10%; }
-  .mobile-customer .customer-four {
-    background-position: 76% 84%; }
-  .mobile-customer .customer-five {
-    background-position: 88% 84%; }
-  .mobile-customer .customer-six {
-    background-position: 100.9% 84%; }
-  .mobile-customer .customer-seven {
-    background-position: 29.7% 13%; }
-  .mobile-customer .customer-eight {
-    background-position: 14% 87%; }
-  .mobile-customer .customer-nine {
-    background-position: 101% 87%; }
-  .mobile-customer .customer-ten {
-    background-position: 0 84%; }
-  .mobile-customer .customer-eleven {
-    background-position: -1% 11%; }
-  .mobile-customer .customer-twelve {
-    background-position: 13.9% 10%; }
-  .mobile-customer .customer-thirteen {
-    background-position: 47% 107%;
-    background-size: 171vw !important; }
-  .mobile-customer .customer-fourteen {
-    background-position: 29.2% 91%;
-    background-size: 237vw !important; }
-  .mobile-customer .customer-fifteen {
-    background-position: 63% 12%; }
-  .mobile-customer .customer-sixteen {
-    background-position: 62.9% 84%; }
+  flex-direction: row; }
+  .mobile-customer .columns {
+    display: flex;
+    width: fit-content;
+    height: 82%;
+    flex-direction: row;
+    animation: move-images 32s linear infinite; }
+    .mobile-customer .columns .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 3.5vw; }
+      .mobile-customer .columns .column .customer-image {
+        height: 27.46vw;
+        background: url("../../src/images/customer-mobile/customer-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 255vw; }
+      .mobile-customer .columns .column .customer-image:first-child {
+        margin-bottom: 5.33vw; }
+    .mobile-customer .columns .col1 {
+      width: 31vw; }
+      .mobile-customer .columns .col1 .customer-one {
+        background-position: 75.4% 10%; }
+      .mobile-customer .columns .col1 .customer-two {
+        background-position: 76% 90%; }
+    .mobile-customer .columns .col2 {
+      width: 22vw; }
+      .mobile-customer .columns .col2 .customer-three {
+        background-position: 87.6% 10%; }
+      .mobile-customer .columns .col2 .customer-four {
+        background-position: 86.8% 89%; }
+    .mobile-customer .columns .col3 {
+      width: 24vw; }
+      .mobile-customer .columns .col3 .customer-five {
+        background-position: 99.5% 10%; }
+      .mobile-customer .columns .col3 .customer-six {
+        background-position: 99.6% 89%; }
+    .mobile-customer .columns .col4 {
+      width: 29vw; }
+      .mobile-customer .columns .col4 .customer-seven {
+        background-position: 0.2% 10%; }
+      .mobile-customer .columns .col4 .customer-eight {
+        background-position: 0.2% 90%; }
+    .mobile-customer .columns .col5 {
+      width: 26vw; }
+      .mobile-customer .columns .col5 .customer-nine {
+        background-position: 14.85% 11%; }
+      .mobile-customer .columns .col5 .customer-ten {
+        background-position: 14% 90%; }
+    .mobile-customer .columns .col6 {
+      width: 31vw; }
+      .mobile-customer .columns .col6 .customer-eleven {
+        background-position: 29.1% 10%; }
+      .mobile-customer .columns .col6 .customer-twelve {
+        background-position: 28.25% 90%; }
+    .mobile-customer .columns .col7 {
+      width: 37vw; }
+      .mobile-customer .columns .col7 .customer-thirteen {
+        background-position: 46.2% 8%; }
+      .mobile-customer .columns .col7 .customer-fourteen {
+        background-position: 46% 88%; }
+    .mobile-customer .columns .col8 {
+      width: 24vw; }
+      .mobile-customer .columns .col8 .customer-fifteen {
+        background-position: 61% 11%; }
+      .mobile-customer .columns .col8 .customer-sixteen {
+        background-position: 62.2% 90%; }
 
 .web-customer {
   display: none; }
@@ -1263,9 +1286,7 @@ body {
   direction: rtl; }
 
 .nav-background {
-  background-image: url("../../src/images/roshan/roshan-background.jpg");
-  background-repeat: no-repeat;
-  background-size: 100%;
+  background-color: #4286f5;
   height: 18.13vw; }
 
 .inner-navbar {
