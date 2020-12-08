@@ -1,3 +1,5 @@
+$mobile-button-width : 79%;
+
 .alefba {
   width: 100%;
   background-image: url("../../src/images/alefba/alefba-mobile-background.png");
@@ -61,7 +63,7 @@
   font-family: IRANYekanWeb, serif;
   color: #ffffff;
   height: 12.792vw;
-  width: 83%;
+  width: $mobile-button-width;
   font-size: 3.198vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
@@ -82,10 +84,8 @@
 
 .alefba-image {
   text-align: center;
-
   img {
-    height: 38.66vw;
-    width: 88.26vw;
+    width: 80.8vw;
   }
 }
 
@@ -195,11 +195,12 @@
           margin: 0;
           margin-top: 10px;
           transition: all 0.4s ease 0s;
+
           &:hover {
             color: #ffffff;
             text-shadow: 0 0 0.205vw rgba(255, 255, 255, 1);
-            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
-            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
+            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57);
           }
         }
       }

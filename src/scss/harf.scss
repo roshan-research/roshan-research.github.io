@@ -1,3 +1,4 @@
+$mobile-button-width : 79%;
 .harf {
     height: auto;
     width: 100%;
@@ -76,7 +77,7 @@
     line-height: 1.57;
     letter-spacing: normal;
     text-align: center;
-    width: 83%;
+    width: $mobile-button-width;
     margin: 0 auto;
     font-size: 3.198vw;
     margin-bottom: 8%;

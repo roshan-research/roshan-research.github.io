@@ -103,7 +103,7 @@ body {
   font-family: IRANYekanWeb, serif;
   color: #ffffff;
   height: 12.792vw;
-  width: 83%;
+  width: 79%;
   font-size: 3.198vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
@@ -122,8 +122,7 @@ body {
 .alefba-image {
   text-align: center; }
   .alefba-image img {
-    height: 38.66vw;
-    width: 88.26vw; }
+    width: 80.8vw; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -725,7 +724,7 @@ body {
   line-height: 1.57;
   letter-spacing: normal;
   text-align: center;
-  width: 83%;
+  width: 79%;
   margin: 0 auto;
   font-size: 3.198vw;
   margin-bottom: 8%; }
@@ -922,7 +921,7 @@ body {
 .hazm-button {
   font-family: IRANYekanMobileFaNum;
   color: black;
-  width: 83%;
+  width: 79%;
   height: 12.792vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
@@ -1143,7 +1142,7 @@ body {
   letter-spacing: normal;
   text-align: center;
   margin: 0 auto;
-  width: 90%;
+  width: 79%;
   margin-bottom: 10%;
   font-family: IRANYekanWeb; }
 

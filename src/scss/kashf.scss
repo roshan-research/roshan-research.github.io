@@ -1,3 +1,5 @@
+$mobile-button-width : 79%;
+
 .kashf {
   margin: 0;
   padding: 0;
@@ -100,7 +102,7 @@
   letter-spacing: normal;
   text-align: center;
   margin: 0 auto;
-  width: 90%;
+  width: $mobile-button-width;
   margin-bottom: 10%;
   font-family: IRANYekanWeb;
 }

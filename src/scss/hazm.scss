@@ -1,3 +1,5 @@
+$mobile-button-width : 79%;
+
 body {
   background-color: #e4e4e4;
 }
@@ -71,7 +73,7 @@ body {
 .hazm-button {
   font-family: IRANYekanMobileFaNum;
   color: black;
-  width: 83%;
+  width: $mobile-button-width;
   height: 12.792vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
