@@ -64,27 +64,32 @@ $mobile-button-width : 79%;
     display: none;
 }
 
-.harf-button {
-    font-family: IRANYekanMobileFaNum;
-    color: #ffffff;
-    height: 12.792vw;
-    border-radius: 0.666vw;
-    box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
-    background-color: #245779;
-    font-weight: bold;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.57;
-    letter-spacing: normal;
-    text-align: center;
-    width: $mobile-button-width;
-    margin: 0 auto;
-    font-size: 3.198vw;
-    margin-bottom: 8%;
-}
+.harf-mobile-button {
 
-.harf-button:hover {
-    color: white;
+    width: $mobile-button-width;
+    margin-bottom: 8%;
+
+    .harf-button {
+        font-family: IRANYekanMobileFaNum;
+        color: #ffffff;
+        height: 12.792vw;
+        border-radius: 0.666vw;
+        box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
+        background-color: #245779;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: normal;
+        text-align: center;
+        width: 100%;
+        margin: 0 auto;
+        font-size: 3.198vw;
+    }
+
+    .harf-button:hover {
+        color: white;
+    }
 }
 
 .harf-image {
@@ -219,17 +224,17 @@ $mobile-button-width : 79%;
                     margin: 0.45vw 0 0 0;
                     transition: all 0.4s ease 0s;
 
-                    &:hover {
-                        color: #ffffff;
-                        text-shadow: 0 0 0.205vw rgba(255, 255, 255, 1);
-                        -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
-                        -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
-                    }
+                    //&:hover {
+                    //    color: #ffffff;
+                    //    text-shadow: 0 0 0.205vw rgba(255, 255, 255, 1);
+                    //    -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
+                    //    -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0,0,0,0.57);
+                    //}
                 }
 
-                .harf-button:hover {
-                    color: white;
-                }
+                //.harf-button:hover {
+                //    color: white;
+                //}
             }
         }
     }

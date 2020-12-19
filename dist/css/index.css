@@ -246,7 +246,6 @@ body {
     transform: translate3d(-100%, 0, 0); } }
 
 .mobile-customer {
-  width: 90%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -256,7 +255,7 @@ body {
     width: fit-content;
     height: 82%;
     flex-direction: row;
-    animation: move-images 32s linear infinite; }
+    animation: move-images 32s linear 1s infinite; }
     .mobile-customer .columns .column {
       display: flex;
       flex-direction: column;
@@ -266,7 +265,9 @@ body {
         height: 27.46vw;
         background: url("../../src/images/customer-mobile/customer-mobile.png");
         background-repeat: no-repeat;
-        background-size: 255vw; }
+        background-size: 255vw;
+        width: 100%;
+        min-width: 100%; }
       .mobile-customer .columns .column .customer-image:first-child {
         margin-bottom: 5.33vw; }
     .mobile-customer .columns .col1 {
@@ -711,26 +712,27 @@ body {
 .harf-web-button {
   display: none; }
 
-.harf-button {
-  font-family: IRANYekanMobileFaNum;
-  color: #ffffff;
-  height: 12.792vw;
-  border-radius: 0.666vw;
-  box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
-  background-color: #245779;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.57;
-  letter-spacing: normal;
-  text-align: center;
+.harf-mobile-button {
   width: 79%;
-  margin: 0 auto;
-  font-size: 3.198vw;
   margin-bottom: 8%; }
-
-.harf-button:hover {
-  color: white; }
+  .harf-mobile-button .harf-button {
+    font-family: IRANYekanMobileFaNum;
+    color: #ffffff;
+    height: 12.792vw;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
+    background-color: #245779;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    width: 100%;
+    margin: 0 auto;
+    font-size: 3.198vw; }
+  .harf-mobile-button .harf-button:hover {
+    color: white; }
 
 .harf-image {
   text-align: center;
@@ -840,13 +842,6 @@ body {
           text-align: center;
           margin: 0.45vw 0 0 0;
           transition: all 0.4s ease 0s; }
-          .harf-text-outer .harf-text-inner .harf-web-button .harf-button:hover {
-            color: #ffffff;
-            text-shadow: 0 0 0.205vw white;
-            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57);
-            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57); }
-        .harf-text-outer .harf-text-inner .harf-web-button .harf-button:hover {
-          color: white; }
   .harf-image {
     float: left;
     height: inherit;
@@ -1045,9 +1040,12 @@ body {
     position: relative;
     width: 50%;
     text-align: right; }
-    .hazm-image img {
-      fill: #848484;
-      background-blend-mode: unset;
+    .hazm-image .hazm-code {
+      padding: 30px 15px;
+      background-color: #848484;
+      color: white;
+      direction: ltr;
+      text-align: left;
       position: relative !important;
       top: 0 !important;
       left: 0 !important;

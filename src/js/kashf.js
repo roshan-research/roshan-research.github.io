@@ -1,8 +1,6 @@
 $(document).ready(function () {
   // swap_word(); TODO
-
   sync_kashf_text_with_kashfCarousel()
-
 });
 
 // for remove arrow in scrolling
@@ -27,46 +25,7 @@ const scroll_func = function toggle_show_arrow() {
 window.addEventListener('scroll', scroll_func,  {passive: true});
 
 
-// swap letter in a span on kashf-text  TODO: add swap to text
-// function swap_word() {
-  //var textWrapper = document.querySelector('.ml3');
-  // textWrapper.innerHTML = textWrapper.textContent.replace(/\S/g, "<span class='letter'>$&</span>");
-
-  // anime.timeline({loop: true})
-  //     .add({
-  //       targets: '.ml3 .letter',
-  //       opacity: [0,1],
-  //       easing: "easeInOutQuad",
-  //       duration: 3970,
-  //       delay: (el, i) => 150 * (i+1),
-  //       language: 'english'
-  //     })
-  //     .add({
-  //       targets: '.ml3',
-  //       opacity: 0,
-  //       duration: 1000,
-  //       easing: "easeOutExpo",
-  //       delay: 1000
-  //     })
-
-  // var app = document.querySelector('.ml3');
-  //
-  // var typewriter = new Typewriter(app, {
-  //   loop: true,
-  //   autoplay: true,
-  //   dir: 'rtl'
-  // });
-  //
-  // typewriter
-  //     .typeString(app.textContent)
-  //     .pauseFor(2500)
-  //     .deleteAll()
-  //     .start();
-// }
-
-
 // handle kashf-text show and swap text synchronous with kashf-carousel
-
 function sync_kashf_text_with_kashfCarousel() {
 
   const carousel = $("#kashf-carousel");
@@ -135,3 +94,19 @@ function sync_kashf_text_with_kashfCarousel() {
     }
   });
 }
+
+// // swap letter in a span on kashf-text  TODO: add swap to text
+// var text_el = document.getElementsByClassName('hazm-code');
+// new TypeIt(".hazm-code", {
+//   strings: text_el.text,
+//   speed: 75,
+//   startDelay: 900,
+//   loop: true,
+//   waitUntilVisible: true,
+//   breakLines: false,
+//
+//   beforeStep: async (step, instance) => {
+//     // Will fire before each step in the queue.
+//     console.log(step, instance)
+//   },
+// }).empty().go();

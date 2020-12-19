@@ -162,7 +162,7 @@
 </div>
 <div class="harf">
   <div class="container">
-    <div class="row">
+    <div class="row justify-content-center">
       <div class="col-sm harf-text-outer">
         <div class="harf-text-inner">
           <div class="harf-text">
@@ -178,15 +178,17 @@
             </p>
           </div>
           <a href="#" class="harf-web-button">
-            <button type="button" class="btn harf-button">به زودی</button>
+            <button type="button" class="btn harf-button disabled" disabled>به زودی</button>
+            <!-- TODO: remove disabled and remove hover comments in harf.css -->
           </a>
         </div>
       </div>
       <div class="col-sm harf-image">
         <img class="harf-imageWeb" src="src/images/harf/harf.png" alt="Harf Image">
       </div>
-      <a href="#" class="harf-mobile-button w-100 text-center">
-        <button type="button" class="btn  harf-button">به زودی</button>
+      <a href="#" class="harf-mobile-button text-center">
+        <button type="button" class="btn  harf-button disabled" disabled>به زودی</button>
+        <!-- TODO: remove disabled and remove hover comments in harf.css -->
       </a>
     </div>
   </div>
@@ -213,6 +215,25 @@
         </div>
       </div>
       <div class="col-sm hazm-image">
+        <!--<div class="hazm-code">        TODO: add swap to text-->
+          <!--<div>-->
+            <!--&gt;>> from i import my_function-->
+          <!--</div>-->
+          <!--<div>-->
+            <!--&gt;>> from i import my_function-->
+          <!--</div>-->
+          <!--<div>-->
+            <!--&gt;>> from i import my_function-->
+          <!--</div>-->
+          <!--<div>-->
+            <!--&gt;>> from i import my_function-->
+
+
+          <!--</div>-->
+          <!--<div>-->
+            <!--&gt;>> from i import my_function-->
+          <!--</div>-->
+        <!--</div>-->
         <picture>
           <source media="(max-width: 991px)" srcset="src/images/hazm/hazm-mobile.png">
           <source media="(min-width: 992px)" srcset="src/images/hazm/hazm-web.png">
@@ -402,8 +423,7 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="dist/js/jquery-3.5.1.slim.min.js"></script>
 <script src="dist/js/bootstrap.bundle.min.js"></script>
-<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/2.0.2/anime.min.js"></script>-->
-<!--<script src="https://unpkg.com/typewriter-effect@latest/dist/core.js"></script>-->
+<!--<script src="https://cdn.jsdelivr.net/npm/typeit@7.0.4/dist/typeit.min.js"></script>  TODO: add swap to text-->
 
 <!-- My JS -->
 <script src="src/js/kashf.js"></script>

@@ -27,7 +27,6 @@
 
 
 .mobile-customer {
-  width: 90%;
   margin: 0 auto;
   overflow: hidden;
   display: flex;
@@ -38,7 +37,7 @@
     width: fit-content;
     height: 82%;
     flex-direction: row;
-    animation: move-images 32s linear infinite;
+    animation: move-images 32s linear 1s infinite;
 
     .column {
       display: flex;
@@ -51,6 +50,8 @@
         background: url("../../src/images/customer-mobile/customer-mobile.png");
         background-repeat: no-repeat;
         background-size: 255vw;
+        width: 100%;
+        min-width: 100%;
       }
 
       .customer-image:first-child {
