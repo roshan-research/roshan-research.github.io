@@ -95,18 +95,13 @@ function sync_kashf_text_with_kashfCarousel() {
   });
 }
 
-// // swap letter in a span on kashf-text  TODO: add swap to text
-// var text_el = document.getElementsByClassName('hazm-code');
-// new TypeIt(".hazm-code", {
-//   strings: text_el.text,
-//   speed: 75,
-//   startDelay: 900,
-//   loop: true,
-//   waitUntilVisible: true,
-//   breakLines: false,
-//
-//   beforeStep: async (step, instance) => {
-//     // Will fire before each step in the queue.
-//     console.log(step, instance)
-//   },
-// }).empty().go();
+// swap letter in a span on kashf-text  TODO: add swap to text
+var text_el = document.querySelector('.hazm-code-inner div');
+new TypeIt(".hazm-code-inner div", {
+  strings: text_el.text,
+  speed: 75,
+  startDelay: 900,
+  loop: true,
+  waitUntilVisible: true,
+  breakLines: false,
+}).empty().go();

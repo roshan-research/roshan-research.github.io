@@ -1,17 +1,20 @@
-$mobile-button-width : 79%;
+$mobile-button-width: 79%;
 
 body {
   background-color: #e4e4e4;
 }
 
-
 .hazm {
-  width: 100%;
   background-image: url("../../src/images/hazm/hazm-background-mobile.png");
   background-repeat: no-repeat;
   padding: 0;
   margin: 0;
   background-size: 100% 100%;
+
+  .hazm-inner {
+    display: flex;
+    flex-flow: column;
+  }
 }
 
 .hazm-text {
@@ -94,11 +97,24 @@ body {
   color: black;
 }
 
-.hazm-image {
+.hazm-code {
   text-align: center;
+
   img {
     width: 83.73%;
     margin: auto;
+  }
+
+  .green {
+    color: #24B48C;
+  }
+
+  .blue {
+    color: #4393D2;
+  }
+
+  .yellow {
+    color: #93A95B;
   }
 }
 
@@ -115,17 +131,21 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .hazm {
-    width: 100%;
     background-image: url("../../src/images/hazm/hazm-background-web.jpg");
     background-repeat: no-repeat;
-    height: auto;
+    height: 49.84vw;
+    display: flex;
+    align-items: center;
+
+    .hazm-inner {
+      display: flex;
+      flex-flow: row;
+      align-items: center;
+    }
   }
 
   .hazm-text-outer {
-    width: 50%;
-    order: 1;
-    margin: 16.623vw 0;
-
+    margin-right: 7.91vw;
     .hazm-text-inner {
       float: right;
       width: fit-content;
@@ -206,9 +226,10 @@ body {
           text-align: center;
           margin: 0.8125vw 0 0 0;
           transition: all 0.4s ease 0s;
+
           &:hover {
             color: #000000;
-            text-shadow: 0 0 0.205vw rgba(0,0,0,0.57);
+            text-shadow: 0 0 0.205vw rgba(0, 0, 0, 0.57);
             -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
             -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
           }
@@ -221,44 +242,74 @@ body {
     }
   }
 
-  .hazm-image {
-    float: right;
-    height: inherit;
+  .hazm-code { //TODO: add swap to text
+    width: 29.48vw;
+    height: 28.03vw;
+    margin-right: 12.61vw;
+    padding: 1.75vw 2vw;
+    background: transparent;
     position: relative;
-    width: 50%;
-    text-align: right;
 
-    img {
-      fill: #848484;
-      background-blend-mode: unset;
-      position: relative !important;
-      top: 0 !important;
-      left: 0 !important;
-      transform: none;
-      width: 29.1313vw;
-      height: 27.603vw;
-      margin: 10.72vw 0;
-      margin-right: 12.52vw;
-
+    &:after {
+      display: block;
+      content: "";
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      border-top: 3px solid #415CB9;
+      border-right: 3px solid #415CB9;
+    }
+    &:before {
+      display: block;
+      content: "";
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border-top: 3px solid #415CB9;
+      border-left: 3px solid #415CB9;
     }
 
-    //.hazm-code {    TODO: add swap to text
-    //  padding: 30px 15px;
-    //  background-color: #848484;
-    //  color: white;
-    //  direction: ltr;
-    //  text-align: left;
-    //  position: relative !important;
-    //  top: 0 !important;
-    //  left: 0 !important;
-    //  transform: none;
-    //  width: 29.1313vw;
-    //  height: 27.603vw;
-    //  margin: 10.72vw 0;
-    //  margin-right: 12.52vw;
-    //}
-  }
+    .hazm-code-inner {
+      height: 100%;
+      padding: 1vw 1.3vw;
+      color: white;
+      direction: ltr;
+      text-align: left;
+      font-size: 0.66vw;
+      background: #7f85d9;
+      background: repeating-linear-gradient(310deg,#425CBC 0%, #6268ca 100%);
+      background: -webkit-repeating-linear-gradient(310deg,#425CBC 0%, #6268ca 100%);
+      background: -moz-repeating-linear-gradient(310deg,#425CBC 0%, #6268ca 100%);
 
+      &:after {
+        display: block;
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        bottom: -3px;
+        right: -3px;
+        border-bottom: 3px solid #415CB9;
+        border-right: 3px solid #415CB9;
+        //box-shadow: 2px -2px 6px -2px
+      }
+      &:before {
+        display: block;
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        bottom: -3px;
+        left: -3px;
+        border-bottom: 3px solid #415CB9;
+        border-left: 3px solid #415CB9;
+      }
+    }
+  }
 
   .hazm-mobile-button {
     display: none;
