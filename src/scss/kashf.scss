@@ -1,90 +1,93 @@
-$mobile-button-width : 79%;
+@import "variables";
 
 .kashf {
-  margin: 0;
-  padding: 0;
-}
-
-.kashf .row {
   text-align: center;
+  margin-right: -15px;
+  margin-left: -15px;
 }
 
-.kashf-text {
-  border-right: 0.7995vw solid;
-  border-right-color: white;
-  padding: 0 2.744vw;
-  margin-top: 8.528vw;
-  padding-bottom: 7%;
+.text-section {
+  width: 100%;
 
-  .kashf-title {
-    margin: 0;
-    direction: rtl;
-    font-size: 10.66vw;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.54;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-    font-weight: bold;
-    font-family: IRANYekanMobileFaNum;
-  }
+  .kashf-text {
+    border-right: 0.7995vw solid;
+    border-right-color: white;
+    padding: 0 2.744vw;
+    margin-top: 8.528vw;
+    padding-bottom: 7%;
 
-  .kashf-head {
-    font-size: 7.995vw;
-    font-weight: normal;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.56;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-    margin: 0;
-    font-family: IRANYekanMobileFaNum;
-  }
-
-  .kashf-describe-mobile {
-    font-size: 4.795vw;
-    font-weight: 300;
-    font-stretch: normal;
-    font-style: normal;
-    line-height: 1.55;
-    letter-spacing: normal;
-    text-align: right;
-    color: #ffffff;
-    margin: 0 auto;
-    font-family: IRANYekanMobileFaNum;
-
-    @keyframes fade_text_animate {
-      0% {
-        opacity: 0;
-      }
-      10% {
-        opacity: 1;
-      }
-      90% {
-        opacity: 1;
-      }
-      100% {
-        opacity: 0;
-      }
-    }
-
-    .no-wrap-words {
-      white-space: nowrap;
-    }
-    .carousel-text {
+    .kashf-title {
+      margin: 0;
+      direction: rtl;
+      font-size: 10.66vw;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.54;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
       font-weight: bold;
-      font-size: 5.59vw;
-      opacity: 0;
-      &.active {
-        animation: fade_text_animate 3970ms linear;
+      font-family: IRANYekanMobileFaNum;
+    }
+
+    .kashf-head {
+      font-size: 7.995vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      margin: 0;
+      font-family: IRANYekanMobileFaNum;
+    }
+
+    .kashf-describe-mobile {
+      font-size: 4.795vw;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.55;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      margin: 0 auto;
+      font-family: IRANYekanMobileFaNum;
+
+      @keyframes fade_text_animate {
+        0% {
+          opacity: 0;
+        }
+        10% {
+          opacity: 1;
+        }
+        90% {
+          opacity: 1;
+        }
+        100% {
+          opacity: 0;
+        }
+      }
+
+      .no-wrap-words {
+        white-space: nowrap;
+      }
+
+      .carousel-text {
+        font-weight: bold;
+        font-size: 5.59vw;
+        opacity: 0;
+
+        &.active {
+          animation: fade_text_animate 3970ms linear;
+        }
       }
     }
-  }
 
-  .kashf-describe-web {
-    display: none;
+    .kashf-describe-web {
+      display: none;
+    }
   }
 }
 
@@ -158,24 +161,17 @@ $mobile-button-width : 79%;
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .kashf {
-    display: grid;
-    align-items: center;
-    height: 49.47vw;
-    overflow: hidden;
-
-    .row {
-      align-items: center;
-
-      > div {
-        height: max-content;
-      }
-    }
+    height: max-content;
+    padding-top: 19.04vw;
   }
 
-  .kashf-text-inner {
-    width: fit-content;
-    float: left;
-
+  .text-section {
+    height: max-content;
+    width: max-content;
+    margin-right: 15.93vw;
+    margin-bottom: 14.16vw;
+    position: relative;
+    z-index: $z-index-of-carousel-kashf + 1;
     .kashf-text {
       border-right: 5px solid;
       border-right-color: white;
@@ -226,6 +222,7 @@ $mobile-button-width : 79%;
           font-weight: bold;
           font-size: 1.04vw;
           opacity: 0;
+
           &.active {
             animation: fade_text_animate 3970ms linear;
           }
@@ -261,9 +258,10 @@ $mobile-button-width : 79%;
         margin: 0;
         margin-top: 1.07vw;
         transition: all 0.4s ease 0s;
+
         &:hover {
           color: #000000;
-          text-shadow: 0 0 0.205vw rgba(0,0,0,0.57);
+          text-shadow: 0 0 0.205vw rgba(0, 0, 0, 0.57);
           -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
           -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(255, 255, 255, 1);
         }
@@ -271,15 +269,21 @@ $mobile-button-width : 79%;
     }
   }
 
-  .image-carousel {
-    width: 33.35vw;
-    height: 33.35vw;
-    margin-bottom: 4.207vw;
-    margin-left: 12.47vw;
-  }
+  .carousel-section {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    z-index: $z-index-of-carousel-kashf;
 
-  .carousel {
-    margin: auto;
+    div {
+      width: 100%;
+      height: 100%;
+    }
+    img {
+      width: 100%;
+      height: 100%;
+    }
   }
 
   .kashf-mobile-button {

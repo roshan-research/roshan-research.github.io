@@ -1,12 +1,15 @@
+@import "variables";
+
 html {
   scroll-behavior: smooth;
 }
 
 .roshan {
-  background-image: url("../../src/images/roshan/roshan-background.jpg");
+  background-image: url("../../src/images/roshan/back-sky.jpg");
   background-repeat: no-repeat;
   background-size: cover;
   background-blend-mode: screen;
+  position: relative;
 }
 
 .roshan-web {
@@ -49,6 +52,8 @@ html {
   text-align: center;
   margin-top: 4vw;
   margin-bottom: 8.8vw;
+  position: relative;
+  z-index: $z-index-of-carousel-kashf + 1;
 
   a {
     img {

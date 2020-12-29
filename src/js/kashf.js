@@ -43,54 +43,44 @@ function sync_kashf_text_with_kashfCarousel() {
   carousel.on('slid.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
     const carousel_text = $('.carousel-text');
-    carousel_text.addClass('active')
+    carousel_text.addClass('active');
     switch (id) {
       case id1:
         carousel_text.text(text1);
-        // swap_word(); TODO: add swap to text
         break;
       case id2:
         carousel_text.text(text2);
-        // swap_word();
         break;
       case id3:
         carousel_text.text(text3);
-        // swap_word();
         break;
       case id4:
         carousel_text.text(text4);
-        // swap_word();
         break;
       case id5:
         carousel_text.text(text5);
-        // swap_word()
     }
   });
 
   carousel.on('slide.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
     const carousel_text = $('.carousel-text');
-    carousel_text.removeClass('active')
+    carousel_text.removeClass('active');
     switch (id) {
       case id1:
         carousel_text.text(text1);
-        // swap_word(); TODO: add swap to text
         break;
       case id2:
         carousel_text.text(text2);
-        // swap_word();
         break;
       case id3:
         carousel_text.text(text3);
-        // swap_word();
         break;
       case id4:
         carousel_text.text(text4);
-        // swap_word();
         break;
       case id5:
         carousel_text.text(text5);
-        // swap_word()
     }
   });
 }
