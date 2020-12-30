@@ -103,7 +103,7 @@ body {
   font-family: IRANYekanWeb, serif;
   color: #ffffff;
   height: 12.792vw;
-  width: 79%;
+  width: 78.93vw;
   font-size: 3.198vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
@@ -713,7 +713,7 @@ body {
   display: none; }
 
 .harf-mobile-button {
-  width: 79%;
+  width: 78.93vw;
   margin-bottom: 8%; }
   .harf-mobile-button .harf-button {
     font-family: IRANYekanMobileFaNum;
@@ -916,7 +916,7 @@ body {
 .hazm-button {
   font-family: IRANYekanMobileFaNum;
   color: black;
-  width: 79%;
+  width: 78.93vw;
   height: 12.792vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
@@ -1061,13 +1061,16 @@ body {
   margin-left: -15px; }
 
 .text-section {
-  width: 100%; }
+  width: 100%;
+  height: max-content;
+  padding: 0 5.22vw 5.33vw 5.22vw;
+  position: relative;
+  z-index: 1; }
   .text-section .kashf-text {
     border-right: 0.7995vw solid;
     border-right-color: white;
-    padding: 0 2.744vw;
-    margin-top: 8.528vw;
-    padding-bottom: 7%; }
+    padding: 0 3.09vw;
+    margin-bottom: 80.69vw; }
     .text-section .kashf-text .kashf-title {
       margin: 0;
       direction: rtl;
@@ -1122,32 +1125,40 @@ body {
           animation: fade_text_animate 3970ms linear; }
     .text-section .kashf-text .kashf-describe-web {
       display: none; }
+  .text-section .kashf-web-button {
+    display: none; }
+  .text-section .kashf-mobile-button .kashf-button {
+    height: 12.792vw;
+    background-color: #e3d845;
+    color: #000000;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    font-size: 3.198vw;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    width: 78.93vw;
+    font-family: IRANYekanWeb; }
 
-.kashf-button {
-  height: 12.792vw;
-  background-color: #e3d845;
-  color: #000000;
-  border-radius: 0.666vw;
-  box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  font-size: 3.198vw;
-  line-height: 1.57;
-  letter-spacing: normal;
-  text-align: center;
-  margin: 0 auto;
-  width: 79%;
-  margin-bottom: 10%;
-  font-family: IRANYekanWeb; }
-
-.kashf-web-button {
-  display: none; }
-
-.image-carousel {
-  width: 77.285vw;
-  height: 77.285vw;
-  margin: auto; }
+.carousel-section .carousel {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+  .carousel-section .carousel div {
+    width: 100%;
+    height: 100%; }
+    .carousel-section .carousel div picture {
+      display: block;
+      width: 100%;
+      height: 100%; }
+      .carousel-section .carousel div picture img {
+        width: 100%;
+        height: 100%; }
 
 @keyframes fade_image_animate {
   0% {
@@ -1182,17 +1193,15 @@ body {
     height: max-content;
     padding-top: 19.04vw; }
   .text-section {
-    height: max-content;
     width: max-content;
     margin-right: 15.93vw;
     margin-bottom: 14.16vw;
-    position: relative;
-    z-index: 1; }
+    padding: 0; }
     .text-section .kashf-text {
       border-right: 5px solid;
       border-right-color: white;
-      padding: 10.3px 10.3px 10.3px 0;
-      margin-top: 0; }
+      padding: 0 1.08vw 0 0;
+      margin-bottom: 1.07vw; }
       .text-section .kashf-text .kashf-title {
         direction: rtl;
         font-size: 2.5654vw;
@@ -1255,28 +1264,14 @@ body {
         line-height: 1.57;
         letter-spacing: normal;
         text-align: center;
-        margin: 0;
-        margin-top: 1.07vw;
         transition: all 0.4s ease 0s; }
         .text-section .kashf-web-button .kashf-button:hover {
           color: #000000;
           text-shadow: 0 0 0.205vw rgba(0, 0, 0, 0.57);
           -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw white;
           -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw white; }
-  .carousel-section {
-    height: 100%;
-    width: 100%;
-    position: absolute;
-    top: 0;
-    z-index: 0; }
-    .carousel-section div {
-      width: 100%;
-      height: 100%; }
-    .carousel-section img {
-      width: 100%;
-      height: 100%; }
-  .kashf-mobile-button {
-    display: none; } }
+    .text-section .kashf-mobile-button {
+      display: none; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 body {
@@ -1378,9 +1373,9 @@ html {
   scroll-behavior: smooth; }
 
 .roshan {
-  background-image: url("../../src/images/roshan/back-sky.jpg");
+  background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-blend-mode: screen;
   position: relative; }
 
@@ -1391,7 +1386,8 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  padding-top: 4vw; }
+  padding-top: 4vw;
+  margin-bottom: 18.13vw; }
 
 .earth-image {
   width: 130vw;
@@ -1416,8 +1412,7 @@ html {
 
 .product-arrow {
   text-align: center;
-  margin-top: 4vw;
-  margin-bottom: 8.8vw;
+  margin-bottom: 12.16vw;
   position: relative;
   z-index: 1; }
   .product-arrow a img {
@@ -1434,9 +1429,9 @@ html {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .roshan {
+    background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
-    justify-content: center;
-    background-size: 100% 100%; }
+    justify-content: center; }
   .roshan-mobile {
     display: none; }
   .roshan-web {
@@ -1444,7 +1439,8 @@ html {
     flex-wrap: nowrap;
     justify-content: space-between;
     align-items: center;
-    padding: 1vw 10vw 0 11vw; }
+    padding: 1vw 10vw 0 11vw;
+    margin-bottom: 1vw; }
   .roshan-text {
     color: white;
     text-align: right;
@@ -1462,7 +1458,6 @@ html {
     margin: 0; }
   .product-arrow {
     text-align: center;
-    margin-top: 1vw;
     margin-bottom: 5.32vw; }
     .product-arrow a img {
       width: 4.791vw;

@@ -5,9 +5,9 @@ html {
 }
 
 .roshan {
-  background-image: url("../../src/images/roshan/back-sky.jpg");
+  background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: cover;
+  background-size: 100% 100%;
   background-blend-mode: screen;
   position: relative;
 }
@@ -21,6 +21,7 @@ html {
   justify-content: center;
   align-items: center;
   padding-top: 4vw;
+  margin-bottom: 18.13vw;
 }
 
 .earth-image {
@@ -50,8 +51,7 @@ html {
 
 .product-arrow {
   text-align: center;
-  margin-top: 4vw;
-  margin-bottom: 8.8vw;
+  margin-bottom: 12.16vw;
   position: relative;
   z-index: $z-index-of-carousel-kashf + 1;
 
@@ -78,9 +78,9 @@ html {
 @media only screen and (min-width: 992px) {
 
   .roshan {
+    background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
     justify-content: center;
-    background-size: 100% 100%;
   }
 
   .roshan-mobile {
@@ -93,6 +93,7 @@ html {
     justify-content: space-between;
     align-items: center;
     padding: 1vw 10vw 0 11vw;
+    margin-bottom: 1vw;
   }
 
   .roshan-text {
@@ -118,7 +119,6 @@ html {
 
   .product-arrow {
     text-align: center;
-    margin-top: 1vw;
     margin-bottom: 5.32vw;
 
     a {
