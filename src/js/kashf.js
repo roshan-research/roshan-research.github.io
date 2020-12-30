@@ -1,12 +1,11 @@
 $(document).ready(function () {
-  // swap_word(); TODO
   sync_kashf_text_with_kashfCarousel()
 });
 
 // for remove arrow in scrolling
 const scroll_func = function toggle_show_arrow() {
   const windowInnerWidth = window.innerWidth;
-  const allowable_px_dive_to_kashf = (4/100)*windowInnerWidth;
+  const allowable_px_dive_to_kashf = windowInnerWidth > 991 ? (4/100)*windowInnerWidth : 0;
   var element_offset = $('#kashf-element').offset().top + allowable_px_dive_to_kashf;
   var window_h = $(window).height();
   var product_arrow = $('.product-arrow');
@@ -43,54 +42,44 @@ function sync_kashf_text_with_kashfCarousel() {
   carousel.on('slid.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
     const carousel_text = $('.carousel-text');
-    carousel_text.addClass('active')
+    carousel_text.addClass('active');
     switch (id) {
       case id1:
         carousel_text.text(text1);
-        // swap_word(); TODO: add swap to text
         break;
       case id2:
         carousel_text.text(text2);
-        // swap_word();
         break;
       case id3:
         carousel_text.text(text3);
-        // swap_word();
         break;
       case id4:
         carousel_text.text(text4);
-        // swap_word();
         break;
       case id5:
         carousel_text.text(text5);
-        // swap_word()
     }
   });
 
   carousel.on('slide.bs.carousel', function () {
     const id = $('#kashf-carousel .active').attr('id');
     const carousel_text = $('.carousel-text');
-    carousel_text.removeClass('active')
+    carousel_text.removeClass('active');
     switch (id) {
       case id1:
         carousel_text.text(text1);
-        // swap_word(); TODO: add swap to text
         break;
       case id2:
         carousel_text.text(text2);
-        // swap_word();
         break;
       case id3:
         carousel_text.text(text3);
-        // swap_word();
         break;
       case id4:
         carousel_text.text(text4);
-        // swap_word();
         break;
       case id5:
         carousel_text.text(text5);
-        // swap_word()
     }
   });
 }
