@@ -88,7 +88,7 @@ function sync_kashf_text_with_kashfCarousel() {
 var text_el = document.querySelector('.hazm-code-inner div');
 new TypeIt(".hazm-code-inner div", {
   strings: text_el.text,
-  speed: 75,
+  speed: 10,
   startDelay: 900,
   loop: true,
   waitUntilVisible: true,
