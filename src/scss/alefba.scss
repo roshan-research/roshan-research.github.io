@@ -62,9 +62,9 @@
 .alefba-button {
   font-family: IRANYekanWeb, serif;
   color: #ffffff;
-  height: 12.792vw;
+  height: $mobile-button-height;
   width: $mobile-button-width;
-  font-size: 3.198vw;
+  font-size: $mobile-button-font-size;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
   background-color: #245779;
@@ -186,12 +186,12 @@
 
         .alefba-button {
           font-family: IRANYekanMobileFaNum, serif;
-          width: 7.59vw;
-          height: 2.46vw;
+          width: $web-button-width;
+          height: $web-button-height;
+          font-size: $web-button-font-size;
           background-color: #245779;
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-          font-size: 0.71vw;
           margin: 0;
           margin-top: 10px;
           transition: all 0.4s ease 0s;

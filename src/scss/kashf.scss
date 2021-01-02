@@ -100,7 +100,9 @@
   .kashf-mobile-button {
 
     .kashf-button {
-      height: 12.792vw;
+      width: $mobile-button-width;
+      height: $mobile-button-height;
+      font-size: $mobile-button-font-size;
       background-color: #e3d845;
       color: #000000;
       border-radius: 0.666vw;
@@ -108,11 +110,9 @@
       font-weight: bold;
       font-stretch: normal;
       font-style: normal;
-      font-size: 3.198vw;
       line-height: 1.57;
       letter-spacing: normal;
       text-align: center;
-      width: $mobile-button-width;
       font-family: IRANYekanWeb;
     }
   }
@@ -266,15 +266,15 @@
       .kashf-button {
         font-family: IRANYekanMobileFaNum;
         color: #000000;
-        width: 7.59vw;
-        height: 2.46vw;
+        width: $web-button-width;
+        height: $web-button-height;
+        font-size: $web-button-font-size;
         border-radius: 2.5px;
         box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
         background-color: #e3d845;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        font-size: 0.71vw;
         line-height: 1.57;
         letter-spacing: normal;
         text-align: center;
