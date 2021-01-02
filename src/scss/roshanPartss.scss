@@ -8,8 +8,9 @@ html {
   background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-blend-mode: screen;
   position: relative;
+  top: -1px;
+  background-position-y: -2px;
 }
 
 .roshan-web {

@@ -102,9 +102,9 @@ body {
 .alefba-button {
   font-family: IRANYekanWeb, serif;
   color: #ffffff;
-  height: 12.792vw;
+  height: 12.8vw;
   width: 78.93vw;
-  font-size: 3.198vw;
+  font-size: 3.2vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
   background-color: #245779;
@@ -199,12 +199,12 @@ body {
         width: 100%; }
         .alefba-text-outer .alefba-text-inner .alefba-web-button .alefba-button {
           font-family: IRANYekanMobileFaNum, serif;
-          width: 7.59vw;
-          height: 2.46vw;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
           background-color: #245779;
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
-          font-size: 0.71vw;
           margin: 0;
           margin-top: 10px;
           transition: all 0.4s ease 0s; }
@@ -718,7 +718,9 @@ body {
   .harf-mobile-button .harf-button {
     font-family: IRANYekanMobileFaNum;
     color: #ffffff;
-    height: 12.792vw;
+    height: 12.8vw;
+    font-size: 3.2vw;
+    width: 100%;
     border-radius: 0.666vw;
     box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
     background-color: #245779;
@@ -728,9 +730,7 @@ body {
     line-height: 1.57;
     letter-spacing: normal;
     text-align: center;
-    width: 100%;
-    margin: 0 auto;
-    font-size: 3.198vw; }
+    margin: 0 auto; }
   .harf-mobile-button .harf-button:hover {
     color: white; }
 
@@ -828,15 +828,15 @@ body {
         .harf-text-outer .harf-text-inner .harf-web-button .harf-button {
           font-family: IRANYekanMobileFaNum;
           color: #ffffff;
-          width: 7.59vw;
-          height: 2.46vw;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
           background-color: #245779;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
-          font-size: 0.71vw;
           line-height: 1.57;
           letter-spacing: normal;
           text-align: center;
@@ -919,14 +919,14 @@ body {
   font-family: IRANYekanMobileFaNum;
   color: black;
   width: 78.93vw;
-  height: 12.792vw;
+  height: 12.8vw;
+  font-size: 3.2vw;
   border-radius: 0.666vw;
   box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
   background-color: #e3d845;
   font-weight: bold;
   font-stretch: normal;
   font-style: normal;
-  font-size: 3.198vw;
   line-height: 1.57;
   letter-spacing: normal;
   text-align: center;
@@ -1024,15 +1024,15 @@ body {
         .hazm-text-outer .hazm-text-inner .hazm-web-button .hazm-button {
           font-family: IRANYekanMobileFaNum;
           color: #000000;
-          width: 7.59vw;
-          height: 2.46vw;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
           background-color: #e3d845;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
-          font-size: 0.71vw;
           line-height: 1.57;
           letter-spacing: normal;
           text-align: center;
@@ -1180,7 +1180,9 @@ body {
   .text-section .kashf-web-button {
     display: none; }
   .text-section .kashf-mobile-button .kashf-button {
-    height: 12.792vw;
+    width: 78.93vw;
+    height: 12.8vw;
+    font-size: 3.2vw;
     background-color: #e3d845;
     color: #000000;
     border-radius: 0.666vw;
@@ -1188,11 +1190,9 @@ body {
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
-    font-size: 3.198vw;
     line-height: 1.57;
     letter-spacing: normal;
     text-align: center;
-    width: 78.93vw;
     font-family: IRANYekanWeb; }
 
 .carousel-section .carousel {
@@ -1304,15 +1304,15 @@ body {
       .text-section .kashf-web-button .kashf-button {
         font-family: IRANYekanMobileFaNum;
         color: #000000;
-        width: 7.59vw;
-        height: 2.46vw;
+        width: 7.7vw;
+        height: 2.5vw;
+        font-size: 0.73vw;
         border-radius: 2.5px;
         box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
         background-color: #e3d845;
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
-        font-size: 0.71vw;
         line-height: 1.57;
         letter-spacing: normal;
         text-align: center;
@@ -1428,8 +1428,9 @@ html {
   background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
   background-size: 100% 100%;
-  background-blend-mode: screen;
-  position: relative; }
+  position: relative;
+  top: -1px;
+  background-position-y: -2px; }
 
 .roshan-web {
   display: none; }
@@ -1483,7 +1484,8 @@ html {
   .roshan {
     background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    background-position-y: 0; }
   .roshan-mobile {
     display: none; }
   .roshan-web {
