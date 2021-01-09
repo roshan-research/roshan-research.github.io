@@ -915,39 +915,44 @@ body {
 .hazm-web-button {
   display: none; }
 
-.hazm-button {
-  font-family: IRANYekanMobileFaNum;
-  color: black;
+.hazm-mobile-button {
   width: 78.93vw;
   height: 12.8vw;
-  font-size: 3.2vw;
-  border-radius: 0.666vw;
-  box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
-  background-color: #e3d845;
-  font-weight: bold;
-  font-stretch: normal;
-  font-style: normal;
-  line-height: 1.57;
-  letter-spacing: normal;
-  text-align: center;
   margin: 0 auto;
-  margin-top: 5%;
   margin-bottom: 5%; }
-
-.hazm-button:hover {
-  color: black; }
+  .hazm-mobile-button .hazm-button {
+    font-family: IRANYekanMobileFaNum;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 3.2vw;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+    background-color: #e3d845;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center; }
+  .hazm-mobile-button .hazm-button:hover {
+    color: black; }
 
 .hazm-code {
-  text-align: center; }
-  .hazm-code img {
-    width: 83.73%;
-    margin: auto; }
-  .hazm-code .green {
-    color: #24B48C; }
-  .hazm-code .blue {
-    color: #4393D2; }
-  .hazm-code .yellow {
-    color: #93A95B; }
+  width: 83.62vw;
+  height: 92.53vw;
+  padding: 2.66vw 2.93vw;
+  margin: 5.44vw auto 2.66vw auto;
+  direction: ltr;
+  text-align: left;
+  text-shadow: 1px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+  font-family: monospace, Arial;
+  background: #7f85d9;
+  background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+  background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+  background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%); }
+  .hazm-code .hazm-code-inner {
+    height: 100%; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -966,7 +971,8 @@ body {
     align-items: center; }
     .hazm .hazm-inner {
       display: flex;
-      flex-flow: row;
+      flex-flow: row-reverse;
+      justify-content: flex-end;
       align-items: center; }
   .hazm-text-outer {
     margin-right: 7.91vw; }
@@ -1048,7 +1054,7 @@ body {
   .hazm-code {
     width: 33.48vw;
     height: 28.03vw;
-    margin-right: 12.61vw;
+    margin: 0 12.61vw 0 0;
     padding: 1.3vw;
     background: transparent;
     position: relative; }
