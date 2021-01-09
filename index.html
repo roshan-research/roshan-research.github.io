@@ -212,52 +212,11 @@
 <div class="hazm">
   <div class="container hazm-inner">
     <div class="hazm-code">
-      <div class="hazm-code-inner">
+      <div class="hazm-code-inner highlight highlight-python">
         <div>
-          >>> <span class="green">from</span>&nbsp;
-          <span class="blue"> _future_</span>&nbsp;
-          <span class="green">import</span>&nbsp; unicode_literals
-          <br>
-          >>> <span class="green">from</span>&nbsp;
-          <span class="blue">hazm</span>&nbsp;
-          <span class="green">import</span>&nbsp;&nbsp;*
-          <br>
-          <br>
-          >>> normalizer = Normalizer()
-          <br>
-          >>> normalizer.normalize(<span class="yellow">'اصلاح نویسه هاو استفاده از نیم فاصله پردازش را آسان می کند'</span>)
-          <br>
-          <span class="yellow">'اصلاح نویسه هاو استفاده از نیم فاصله پردازش را آسان می کند'</span>
-          <br>
-          <br>
-          >>> lemmatizer = Lemmatizer()
-          <br>
-          >>> lemmatizer. lemmatize(<span class="yellow">'می روم'</span>)
-          <br>
-          <span class="yellow">'رفت#رو'</span>
-          <br>
-          <br>
-          >>> tagger = POSTagger(model=<span class="yellow">'resources/postagger.model'</span>)
-          <br>
-          >>> taggertag(word_tokenize(<span class="yellow">'ما بسیار کتاب می خوانیم'</span>),
-          <br>
-          [(<span class="yellow">'ما', PRO</span>), (<span class="yellow">'بسیار', ADV</span>), ( <span class="yellow">'کتاب', N</span>), (<span class="yellow">'می خوانیم', V</span>)]
-          <br>
-          <br>
-          >>> chunker = Chunker(model=<span class="yellow">'resourcesichunkermoder'</span>)
-          <br>
-          >>> tagged = tagger.tag(word_tokenize(<span class="yellow">'کتاب خواندن را دوست داریم'</span>))
-          <br>
-          >>> tree2brackets(chunker.parse(tagged))
-          <br>
-          <span class="yellow">'[کتاب خواندن NP] [را POSTP] [دوست داریم VP]'</span>
-          <br>
-          <br>
-          >>> parser = DependencyParser(tagger=tagger, lemmatizer=lemmatizer)
-          <br>
-          >>> parser.parse(word_tokenize(<span class="yellow">'زنگ ها برای که به صدای در می آید؟'</span>))
-
+          <!-- added by js-->
         </div>
+
         <!--<picture>-->
         <!--<source media="(max-width: 991px)" srcset="src/images/hazm/hazm-mobile.png">-->
         <!--<source media="(min-width: 992px)" srcset="src/images/hazm/hazm-web.png">-->
@@ -465,7 +424,6 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="dist/js/jquery-3.5.1.slim.min.js"></script>
 <script src="dist/js/bootstrap.bundle.min.js"></script>
-<script src="dist/js/typeit.min.js"></script> <!-- TODO: add swap to text -->
 
 <!-- My JS -->
 <script src="src/js/kashf.js"></script>
