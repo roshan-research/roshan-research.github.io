@@ -79,6 +79,7 @@
         border-radius: 0.666vw;
         box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
         background-color: #245779;
+        opacity: 0.4; // for show this is disable button. TODO
         font-weight: bold;
         font-stretch: normal;
         font-style: normal;
@@ -216,6 +217,7 @@
                     border-radius: 2.5px;
                     box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
                     background-color: #245779;
+                    opacity: 0.4; // for show this is disable button. TODO
                     font-weight: bold;
                     font-stretch: normal;
                     font-style: normal;

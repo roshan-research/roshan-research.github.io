@@ -724,6 +724,7 @@ body {
     border-radius: 0.666vw;
     box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
     background-color: #245779;
+    opacity: 0.4;
     font-weight: bold;
     font-stretch: normal;
     font-style: normal;
@@ -834,6 +835,7 @@ body {
           border-radius: 2.5px;
           box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
           background-color: #245779;
+          opacity: 0.4;
           font-weight: bold;
           font-stretch: normal;
           font-style: normal;
@@ -940,7 +942,7 @@ body {
 
 .hazm-code {
   width: 83.62vw;
-  height: 92.53vw;
+  height: fit-content;
   padding: 2.66vw 2.93vw;
   margin: 5.44vw auto 2.66vw auto;
   direction: ltr;
@@ -953,6 +955,12 @@ body {
   background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%); }
   .hazm-code .hazm-code-inner {
     height: 100%; }
+    .hazm-code .hazm-code-inner .lines .line {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .hazm-code .hazm-code-inner .lines .has-break {
+      margin-bottom: 1.5rem !important; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1053,7 +1061,6 @@ body {
           color: black; }
   .hazm-code {
     width: 33.48vw;
-    height: 28.03vw;
     margin: 0 12.61vw 0 0;
     padding: 1.3vw;
     background: transparent;
@@ -1079,7 +1086,6 @@ body {
       border-top: 3px solid #415CB9;
       border-left: 3px solid #415CB9; }
     .hazm-code .hazm-code-inner {
-      height: 100%;
       padding: 1vw 1.3vw;
       direction: ltr;
       text-align: left;
@@ -1088,6 +1094,8 @@ body {
       background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
       background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
       background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%); }
+      .hazm-code .hazm-code-inner .lines .has-break {
+        margin-bottom: 0.75rem !important; }
       .hazm-code .hazm-code-inner:after {
         display: block;
         content: "";

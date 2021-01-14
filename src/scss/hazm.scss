@@ -104,7 +104,7 @@ body {
 
 .hazm-code {
   width: 83.62vw;
-  height: 92.53vw;
+  height: fit-content;
   padding: 2.66vw 2.93vw;
   margin: 5.44vw auto 2.66vw auto;
   direction: ltr;
@@ -118,6 +118,18 @@ body {
 
   .hazm-code-inner {
     height: 100%;
+
+    .lines {
+      .line {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+      }
+
+      .has-break {
+        margin-bottom: 1.5rem!important;
+      }
+    }
   }
 }
 
@@ -249,7 +261,6 @@ body {
 
   .hazm-code {
     width: 33.48vw;
-    height: 28.03vw;
     margin: 0 12.61vw 0 0;
     padding: 1.3vw;
     background: transparent;
@@ -280,7 +291,6 @@ body {
     }
 
     .hazm-code-inner {
-      height: 100%;
       padding: 1vw 1.3vw;
       direction: ltr;
       text-align: left;
@@ -289,6 +299,12 @@ body {
       background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
       background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
       background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+
+      .lines {
+        .has-break {
+          margin-bottom: 0.75rem!important;
+        }
+      }
 
       &:after {
         display: block;
