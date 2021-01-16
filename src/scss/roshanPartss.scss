@@ -7,10 +7,11 @@ html {
 .roshan {
   background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   position: relative;
   top: -1px;
   background-position-y: -2px;
+  height: 336vw;
 }
 
 .roshan-web {
@@ -82,6 +83,7 @@ html {
     background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
     justify-content: center;
+    height: auto;
   }
 
   .roshan-mobile {

@@ -1448,7 +1448,7 @@ body {
     border-right: 0.7995vw solid;
     border-right-color: white;
     padding: 0 3.09vw;
-    margin-bottom: 80.69vw; }
+    margin-bottom: 100.5vw; }
     .text-section .kashf-text .kashf-title {
       margin: 0;
       direction: rtl;
@@ -1522,21 +1522,20 @@ body {
     font-family: IRANYekanWeb; }
 
 .carousel-section .carousel {
-  height: 100%;
   width: 100%;
+  height: 100%;
   position: absolute;
   top: 0;
   z-index: 0; }
   .carousel-section .carousel div {
-    width: 100%;
-    height: 100%; }
+    height: inherit; }
     .carousel-section .carousel div picture {
       display: block;
-      width: 100%;
-      height: 100%; }
+      height: inherit; }
       .carousel-section .carousel div picture img {
         width: 100%;
-        height: 100%; }
+        height: auto;
+        object-fit: cover; }
 
 @keyframes fade_image_animate {
   0% {
@@ -1649,7 +1648,11 @@ body {
           -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw white;
           -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw white; }
     .text-section .kashf-mobile-button {
-      display: none; } }
+      display: none; }
+  .carousel-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 body {
@@ -1751,10 +1754,11 @@ html {
 .roshan {
   background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
   background-repeat: no-repeat;
-  background-size: 100% 100%;
+  background-size: 100% auto;
   position: relative;
   top: -1px;
-  background-position-y: -2px; }
+  background-position-y: -2px;
+  height: 336vw; }
 
 .roshan-web {
   display: none; }
@@ -1808,7 +1812,8 @@ html {
   .roshan {
     background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
-    justify-content: center; }
+    justify-content: center;
+    height: auto; }
   .roshan-mobile {
     display: none; }
   .roshan-web {
