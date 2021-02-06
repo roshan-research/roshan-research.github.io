@@ -961,8 +961,6 @@ body {
       flex-wrap: wrap; }
     .hazm-code .hazm-code-inner .lines .has-break {
       margin-bottom: 1.5rem !important; }
-    .hazm-code .hazm-code-inner .lines .rtl {
-      direction: rtl; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1570,11 +1568,10 @@ body {
 @media only screen and (min-width: 992px) {
   .kashf {
     height: max-content;
-    padding-top: 19.04vw; }
+    padding-top: 23.2vw; }
   .text-section {
     width: max-content;
     margin-right: 15.93vw;
-    margin-bottom: 14.16vw;
     padding: 0; }
     .text-section .kashf-text {
       border-right: 5px solid;
@@ -1815,7 +1812,7 @@ html {
     background-image: url("../../src/images/roshan/back-sky-web.jpg");
     display: flex;
     justify-content: center;
-    height: auto; }
+    height: 101.614vw; }
   .roshan-mobile {
     display: none; }
   .roshan-web {
