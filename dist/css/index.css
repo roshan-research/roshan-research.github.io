@@ -1568,7 +1568,7 @@ body {
 @media only screen and (min-width: 992px) {
   .kashf {
     height: max-content;
-    padding-top: 23.2vw; }
+    padding-top: 19vw; }
   .text-section {
     width: max-content;
     margin-right: 15.93vw;
@@ -1839,7 +1839,7 @@ html {
     margin: 0; }
   .product-arrow {
     text-align: center;
-    margin-bottom: 5.32vw; }
+    margin-bottom: 9.52vw; }
     .product-arrow a img {
       width: 4.791vw;
       height: 4.166vw; } }
