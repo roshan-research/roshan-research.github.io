@@ -961,6 +961,8 @@ body {
       flex-wrap: wrap; }
     .hazm-code .hazm-code-inner .lines .has-break {
       margin-bottom: 1.5rem !important; }
+    .hazm-code .hazm-code-inner .lines .rtl {
+      direction: rtl; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
