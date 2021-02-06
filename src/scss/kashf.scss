@@ -7,17 +7,18 @@
 }
 
 .text-section {
-  width: 100%;
-  height: max-content;
-  padding: 0 5.22vw 5.33vw 5.22vw;
+  padding: 0 5.22vw $mobile_button_margin 5.22vw;
   position: relative;
   z-index: $z-index-of-carousel-kashf + 1;
+  height: 161vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 
   .kashf-text {
     border-right: 0.7995vw solid;
     border-right-color: white;
     padding: 0 3.09vw;
-    margin-bottom: 89.4vw;
 
     .kashf-title {
       margin: 0;
@@ -190,6 +191,7 @@
 
   .text-section {
     width: max-content;
+    height: auto;
     margin-right: 15.93vw;
     padding: 0;
 

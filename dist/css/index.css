@@ -114,7 +114,7 @@ body {
   text-align: center;
   margin: 0 auto;
   margin-top: 3%;
-  margin-bottom: 5%; }
+  margin-bottom: 5.33vw; }
 
 .alefba-web-button {
   display: none; }
@@ -714,7 +714,7 @@ body {
 
 .harf-mobile-button {
   width: 78.93vw;
-  margin-bottom: 8%; }
+  margin-bottom: 5.33vw; }
   .harf-mobile-button .harf-button {
     font-family: IRANYekanMobileFaNum;
     color: #ffffff;
@@ -730,8 +730,7 @@ body {
     font-style: normal;
     line-height: 1.57;
     letter-spacing: normal;
-    text-align: center;
-    margin: 0 auto; }
+    text-align: center; }
   .harf-mobile-button .harf-button:hover {
     color: white; }
 
@@ -920,8 +919,7 @@ body {
 .hazm-mobile-button {
   width: 78.93vw;
   height: 12.8vw;
-  margin: 0 auto;
-  margin-bottom: 5%; }
+  margin: 0 auto 5.33vw auto; }
   .hazm-mobile-button .hazm-button {
     font-family: IRANYekanMobileFaNum;
     color: black;
@@ -1439,16 +1437,17 @@ body {
   margin-left: -15px; }
 
 .text-section {
-  width: 100%;
-  height: max-content;
   padding: 0 5.22vw 5.33vw 5.22vw;
   position: relative;
-  z-index: 1; }
+  z-index: 1;
+  height: 161vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
   .text-section .kashf-text {
     border-right: 0.7995vw solid;
     border-right-color: white;
-    padding: 0 3.09vw;
-    margin-bottom: 89.4vw; }
+    padding: 0 3.09vw; }
     .text-section .kashf-text .kashf-title {
       margin: 0;
       direction: rtl;
@@ -1571,6 +1570,7 @@ body {
     padding-top: 19vw; }
   .text-section {
     width: max-content;
+    height: auto;
     margin-right: 15.93vw;
     padding: 0; }
     .text-section .kashf-text {

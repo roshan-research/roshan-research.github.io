@@ -76,8 +76,7 @@ body {
 .hazm-mobile-button {
   width: $mobile-button-width;
   height: $mobile-button-height;
-  margin: 0 auto;
-  margin-bottom: 5%;
+  margin: 0 auto $mobile_button_margin auto;
 
   .hazm-button {
     font-family: IRANYekanMobileFaNum;

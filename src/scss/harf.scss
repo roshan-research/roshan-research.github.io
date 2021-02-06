@@ -68,7 +68,7 @@
 .harf-mobile-button {
 
     width: $mobile-button-width;
-    margin-bottom: 8%;
+    margin-bottom: $mobile_button_margin;
 
     .harf-button {
         font-family: IRANYekanMobileFaNum;
@@ -86,7 +86,6 @@
         line-height: 1.57;
         letter-spacing: normal;
         text-align: center;
-        margin: 0 auto;
     }
 
     .harf-button:hover {
