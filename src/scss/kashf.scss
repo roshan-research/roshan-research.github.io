@@ -10,7 +10,7 @@
   padding: 0 5.22vw $mobile_button_margin 5.22vw;
   position: relative;
   z-index: $z-index-of-carousel-kashf + 1;
-  height: 161vw;
+  height: 167.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -185,8 +185,9 @@
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .kashf {
-    height: max-content;
-    padding-top: 19vw;
+    text-align: initial;
+    height: 44.5vw;
+    padding-top: 14vw;
   }
 
   .text-section {

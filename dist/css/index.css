@@ -348,7 +348,8 @@ body {
       margin-bottom: 0; }
   .web-customer {
     width: 66%;
-    margin: 3vw auto;
+    margin: auto;
+    padding: 3vw 0;
     display: grid;
     grid-row-gap: 2rem; }
     .web-customer > div {
@@ -1440,7 +1441,7 @@ body {
   padding: 0 5.22vw 5.33vw 5.22vw;
   position: relative;
   z-index: 1;
-  height: 161vw;
+  height: 167.5vw;
   display: flex;
   flex-direction: column;
   justify-content: space-between; }
@@ -1566,8 +1567,9 @@ body {
 /*@media only screen and (min-width: 992px) {...}*/
 @media only screen and (min-width: 992px) {
   .kashf {
-    height: max-content;
-    padding-top: 19vw; }
+    text-align: initial;
+    height: 44.5vw;
+    padding-top: 14vw; }
   .text-section {
     width: max-content;
     height: auto;
@@ -1839,7 +1841,7 @@ html {
     margin: 0; }
   .product-arrow {
     text-align: center;
-    margin-bottom: 9.52vw; }
+    margin-bottom: 14.52vw; }
     .product-arrow a img {
       width: 4.791vw;
       height: 4.166vw; } }
