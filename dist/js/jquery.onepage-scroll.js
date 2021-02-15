@@ -48,7 +48,7 @@
       //   "transition": "all " + settings.animationTime + "ms " + settings.easing
       // });
 
-      next_el[0].scrollIntoView({behavior: "smooth"});
+      next_el[0].scrollIntoView({behavior: "smooth", block:"start"});
 
       main_el.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
         if (typeof settings.afterMove == 'function') settings.afterMove(index);
