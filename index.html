@@ -65,7 +65,7 @@
           <img class="earth-image" src="src/images/roshan/earth.png" alt="earth">
         </div>
         <div class="product-arrow">
-          <a href="#kashf-element">
+          <a>
             <img src="src/images/roshan/product.png" alt="product">
           </a>
         </div>
@@ -676,8 +676,9 @@
 <!-- jQuery first, then Popper.js, then Bootstrap JS -->
 <script src="dist/js/jquery-3.5.1.min.js"></script>
 <script src="dist/js/bootstrap.bundle.min.js"></script>
-<script type="text/javascript" src="dist/js/jquery.onepage-scroll.js"></script>
+<script src="dist/js/jquery.onepage-scroll.js"></script>
 <script>
+  $(document).ready(function () {
     $(".main").onepage_scroll({
       sectionContainer: "section",     // sectionContainer accepts any kind of selector in case you don't want to use section
       easing: "ease",                  // Easing options accepts the CSS3 easing animation such "ease", "linear", "ease-in",
@@ -695,9 +696,11 @@
       // you want the responsive fallback to be triggered. For example, set this to 600 and whenever
       // the browser's width is less than 600, the fallback will kick in.
     });
+  })
 </script>
 
 <!-- My JS -->
 <script src="src/js/kashf.js"></script>
+<script src="src/js/hazm.js"></script>
 </body>
 </html>

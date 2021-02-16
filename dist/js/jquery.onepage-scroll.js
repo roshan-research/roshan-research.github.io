@@ -39,7 +39,8 @@
         quietPeriod = 500,
         paginationList = "";
 
-    $.fn.transformPage = function (next_el, index) {
+    $.fn.transformPage = function (next_el, index, scroll_option={behavior: "smooth", block: "center"}) {
+
       // if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
       // main_el.css({
       //   "-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
@@ -48,7 +49,7 @@
       //   "transition": "all " + settings.animationTime + "ms " + settings.easing
       // });
 
-      next_el[0].scrollIntoView({behavior: "smooth", block: "center"});
+      next_el[0].scrollIntoView(scroll_option);
 
       // main_el.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
       //   if (typeof settings.afterMove == 'function') settings.afterMove(index);
@@ -111,7 +112,7 @@
       main_el.transformPage(next, next.data("index"));
     };
 
-    $.fn.moveTo = function (page_index) {
+    $.fn.moveTo = function (page_index, scroll_option) {
       current = $("." + settings.sectionContainer + ".active");
       next = $("." + settings.sectionContainer + "[data-index='" + (page_index) + "']");
 
@@ -132,7 +133,7 @@
         history.pushState({}, document.title, href);
       }
 
-      main_el.transformPage(next, next.data("index"));
+      main_el.transformPage(next, next.data("index"), scroll_option);
     };
 
     function init_scroll(event) {
@@ -155,20 +156,22 @@
 
     function responsive() {
       //start modification
-      var valForTest = false;
+      var one_page_scroll_should_be_disable = false;
       var typeOfRF = typeof settings.responsiveFallback;
+      var product_arrow_block = 'center';
 
       if (typeOfRF == "number") {
-        valForTest = $(window).width() < settings.responsiveFallback;
+        one_page_scroll_should_be_disable = $(window).width() < settings.responsiveFallback;
       }
       if (typeOfRF == "boolean") {
-        valForTest = settings.responsiveFallback;
+        one_page_scroll_should_be_disable = settings.responsiveFallback;
       }
 
       //end modification
-      if (valForTest) {
+      if (one_page_scroll_should_be_disable) {
         $("body").addClass("disabled-onepage-scroll");
         $(document).off('wheel DOMMouseScroll MozMousePixelScroll');
+        product_arrow_block = 'start';
       } else {
         if ($("body").hasClass("disabled-onepage-scroll")) {
           $("body").removeClass("disabled-onepage-scroll");
@@ -179,6 +182,11 @@
           init_scroll(event);
         });
       }
+
+      //handle product_arrow action
+      $(".product-arrow  a").on('click', function (e) {
+        main_el.moveTo(2, {behavior: "smooth", block: product_arrow_block});
+      })
     }
 
 

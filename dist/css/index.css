@@ -1842,8 +1842,10 @@ html {
   .product-arrow {
     text-align: center;
     margin-bottom: 14.52vw; }
-    .product-arrow a img {
-      width: 4.791vw;
-      height: 4.166vw; } }
+    .product-arrow a {
+      cursor: pointer; }
+      .product-arrow a img {
+        width: 4.791vw;
+        height: 4.166vw; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
