@@ -58,6 +58,7 @@ html {
   z-index: $z-index-of-carousel-kashf + 1;
 
   a {
+    cursor: pointer;
     img {
       width: 16.9925vw;
       margin: auto;
@@ -125,7 +126,6 @@ html {
     margin-bottom: 14.52vw;
 
     a {
-      cursor: pointer;
       img {
         width: 4.791vw;
         height: 4.166vw;

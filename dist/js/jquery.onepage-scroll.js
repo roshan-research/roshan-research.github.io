@@ -256,27 +256,33 @@
         var tag = e.target.tagName.toLowerCase();
 
         if (!$("body").hasClass("disabled-onepage-scroll") && (tag != 'input' && tag != 'textarea')) {
-          e.preventDefault();
           switch (e.which) {
             case 38:
+              e.preventDefault();
                main_el.moveUp();
               break;
             case 40:
+              e.preventDefault();
               main_el.moveDown();
               break;
             case 32: //spacebar
+              e.preventDefault();
               main_el.moveDown();
               break;
             case 33: //pageg up
+              e.preventDefault();
               main_el.moveUp();
               break;
             case 34: //page dwn
+              e.preventDefault();
               main_el.moveDown();
               break;
             case 36: //home
+              e.preventDefault();
               main_el.moveTo(1);
               break;
             case 35: //end
+              e.preventDefault();
               main_el.moveTo(total);
               break;
             default:
