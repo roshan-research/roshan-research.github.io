@@ -36,10 +36,10 @@
         sections = $("." + settings.sectionContainer),
         total = sections.length,
         lastAnimation = 0,
-        quietPeriod = 500,
+        quietPeriod = 250,
         paginationList = "";
 
-    $.fn.transformPage = function (next_el, index, scroll_option={behavior: "smooth", block: "center"}) {
+    $.fn.transformPage = function (next_el, index, scroll_option = {behavior: "smooth", block: "center"}) {
 
       // if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
       // main_el.css({
@@ -137,6 +137,7 @@
     };
 
     function init_scroll(event) {
+      event.preventDefault();
       var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
       var timeNow = new Date().getTime();
 
@@ -170,17 +171,14 @@
       //end modification
       if (one_page_scroll_should_be_disable) {
         $("body").addClass("disabled-onepage-scroll");
-        $(document).off('wheel DOMMouseScroll MozMousePixelScroll');
+        $(document).off('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
         product_arrow_block = 'start';
       } else {
         if ($("body").hasClass("disabled-onepage-scroll")) {
           $("body").removeClass("disabled-onepage-scroll");
           $("html, body, .main").animate({scrollTop: 0}, "fast");
         }
-        $(document).on('wheel DOMMouseScroll MozMousePixelScroll', function (event) {
-          event.preventDefault();
-          init_scroll(event);
-        });
+        $(document).on('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
       }
 
       //handle product_arrow action
@@ -242,13 +240,9 @@
         responsive()
       });
       responsive();
+    } else if (!$("body").hasClass("disabled-onepage-scroll")) {
+      $(document).on('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
     }
-
-
-    $(document).on('wheel DOMMouseScroll MozMousePixelScroll', function (event) {
-      event.preventDefault();
-      if (!$("body").hasClass("disabled-onepage-scroll")) init_scroll(event);
-    });
 
 
     if (settings.keyboard == true) {
@@ -259,7 +253,7 @@
           switch (e.which) {
             case 38:
               e.preventDefault();
-               main_el.moveUp();
+              main_el.moveUp();
               break;
             case 40:
               e.preventDefault();
