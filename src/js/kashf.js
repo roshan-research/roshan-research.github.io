@@ -1,6 +1,5 @@
 $(document).ready(function () {
   sync_kashf_text_with_kashfCarousel();
-  add_line()
 });
 
 // for remove arrow in scrolling

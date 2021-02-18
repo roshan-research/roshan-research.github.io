@@ -41,19 +41,13 @@
 
     $.fn.transformPage = function (next_el, index, scroll_option = {behavior: "smooth", block: "center"}) {
 
-      // if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
-      // main_el.css({
-      //   "-webkit-transition": "all " + settings.animationTime + "ms " + settings.easing,
-      //   "-moz-transition": "all " + settings.animationTime + "ms " + settings.easing,
-      //   "-ms-transition": "all " + settings.animationTime + "ms " + settings.easing,
-      //   "transition": "all " + settings.animationTime + "ms " + settings.easing
-      // });
+      if (typeof settings.beforeMove == 'function') settings.beforeMove(index);
 
       next_el[0].scrollIntoView(scroll_option);
 
-      // main_el.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
-      //   if (typeof settings.afterMove == 'function') settings.afterMove(index);
-      // });
+      main_el.one('webkitTransitionEnd otransitionend oTransitionEnd msTransitionEnd transitionend', function (e) {
+        if (typeof settings.afterMove == 'function') settings.afterMove(index);
+      });
     };
 
     $.fn.moveDown = function () {

@@ -1,8 +1,3 @@
-$(document).ready(function () {
-  add_line()
-});
-
-
 // handle show code as type writer in hazm
 var lines = $('.lines');
 const lines_array = Array.from(lines[0].children);
@@ -60,3 +55,8 @@ async function add_line() {
     await sleep_for_addLine()
   }
 }
+
+
+$(document).ready(function () {
+  return add_line()
+});

@@ -102,14 +102,13 @@ body {
 
 
 .hazm-code {
-  width: 83.62vw;
+  width: 81vw;
   height: fit-content;
   padding: 2.66vw 2.93vw;
   margin: 5.44vw auto 2.66vw auto;
   direction: ltr;
   text-align: left;
   text-shadow: 1px 1.5px 1.5px rgba(0, 0, 0, 0.16);
-  font-family: monospace, Arial;
   background: #7f85d9;
   background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
   background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
@@ -117,6 +116,7 @@ body {
 
   .hazm-code-inner {
     height: 100%;
+    font: 1.6vw monospace, Arial;
 
     .lines {
       .line {
@@ -126,7 +126,7 @@ body {
       }
 
       .has-break {
-        margin-bottom: 1.5rem!important;
+        margin-bottom: 1.3rem!important;
       }
     }
   }
