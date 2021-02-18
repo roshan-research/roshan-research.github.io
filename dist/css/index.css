@@ -959,10 +959,14 @@ body {
       flex-direction: row;
       flex-wrap: wrap; }
     .hazm-code .hazm-code-inner .lines .has-break {
-      margin-bottom: 1.3rem !important; }
+      margin-bottom: 1.3rem; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
+@media only screen and (max-width: 576px) {
+  .lines .has-break {
+    margin-bottom: 1rem !important; } }
+
 /*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
 /*@media only screen and (min-width: 576px) {...}*/
 /*!* Medium devices (landscape tablets, 768px and up) *!*/
