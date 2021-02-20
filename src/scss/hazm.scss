@@ -134,6 +134,7 @@ body {
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
+// in this case, max-width:456
 @media only screen and (max-width: 476px) {
   .lines {
     .has-break {

@@ -36,7 +36,7 @@
         sections = $("." + settings.sectionContainer),
         total = sections.length,
         lastAnimation = 0,
-        quietPeriod = 250,
+        quietPeriod = 350,
         paginationList = "";
 
     $.fn.transformPage = function (next_el, index, scroll_option = {behavior: "smooth", block: "center"}) {
@@ -132,7 +132,7 @@
 
     function init_scroll(event) {
       event.preventDefault();
-      var delta = event.originalEvent.wheelDelta || -event.originalEvent.detail;
+      var delta = -event.originalEvent.deltaY;
       var timeNow = new Date().getTime();
 
       // Cancel scroll if currently animating or within quiet period
@@ -142,8 +142,10 @@
 
       if (delta < 0) {
         main_el.moveDown()
-      } else {
+      } else if (delta > 0) {
         main_el.moveUp()
+      } else {
+        console.log("your wheel move in X direction")
       }
 
       lastAnimation = timeNow;
@@ -165,14 +167,14 @@
       //end modification
       if (one_page_scroll_should_be_disable) {
         $("body").addClass("disabled-onepage-scroll");
-        $(document).off('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
+        $(document).off('wheel', init_scroll);
         product_arrow_block = 'start';
       } else {
         if ($("body").hasClass("disabled-onepage-scroll")) {
           $("body").removeClass("disabled-onepage-scroll");
           $("html, body, .main").animate({scrollTop: 0}, "fast");
         }
-        $(document).on('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
+        $(document).on('wheel', init_scroll);
       }
 
       //handle product_arrow action
@@ -235,7 +237,7 @@
       });
       responsive();
     } else if (!$("body").hasClass("disabled-onepage-scroll")) {
-      $(document).on('wheel DOMMouseScroll MozMousePixelScroll', init_scroll);
+      $(document).on('wheel', init_scroll);
     }
 
 
