@@ -48,8 +48,7 @@ async function add_line() {
     lines.append('<div class="' + className + '"></div>');
     i++;
     await add_line_child(line_children);
-  }
-  else {
+  } else {
     i = 0;
     lines.empty();
     await sleep_for_addLine()

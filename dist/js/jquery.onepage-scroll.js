@@ -131,7 +131,6 @@
     };
 
     function init_scroll(event) {
-      event.preventDefault();
       var delta = -event.originalEvent.deltaY;
       var timeNow = new Date().getTime();
 
