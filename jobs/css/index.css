@@ -1,0 +1,1855 @@
+body {
+  background-color: #e4e4e4; }
+
+.row {
+  margin-right: 0;
+  margin-left: 0; }
+
+.container {
+  max-width: none; }
+
+@media screen and (max-width: 992px) {
+  html, body {
+    overflow-x: hidden; }
+  .col-sm {
+    flex-basis: unset;
+    flex-grow: unset;
+    max-width: none; } }
+
+@media screen and (width: 992px) {
+  .kashf .col-sm, .alefba .col-sm, .harf .col-sm {
+    flex-basis: 0;
+    flex-grow: 1;
+    max-width: 100%; } }
+
+@font-face {
+  font-family: IRANYekanBOld;
+  src: url("../../src/fonts/IRANYekanBold.ttf"); }
+
+@font-face {
+  font-family: IRANYekanWeb;
+  src: url("../../src/fonts/iranyekanwebbold.ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: IRANYekanWeb;
+  src: url("../../src/fonts/iranyekanweblight(fanum).ttf");
+  font-weight: 300; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileBold(FaNum).ttf");
+  font-weight: bold; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileRegular.ttf");
+  font-weight: 400; }
+
+@font-face {
+  font-family: IRANYekanMobileFaNum;
+  src: url("../../src/fonts/IRANYekanMobileLight.ttf");
+  font-weight: 300; }
+
+.alefba {
+  width: 100%;
+  background-image: url("../../src/images/alefba/alefba-mobile-background.png");
+  background-repeat: no-repeat;
+  background-size: 100% 100%; }
+
+.alefba-text {
+  border-right: 0.7995vw solid;
+  border-right-color: black;
+  padding: 0 2.744vw;
+  margin-top: 5%;
+  padding-bottom: 7%; }
+  .alefba-text .alefba-title {
+    font-family: IRANYekanWeb;
+    direction: rtl;
+    font-size: 10.66vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0; }
+  .alefba-text .alefba-head {
+    font-family: IRANYekanWeb;
+    font-size: 7.995vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000; }
+  .alefba-text .alefba-describe-mobile {
+    font-family: IRANYekanWeb;
+    font-size: 4.798vw;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0 auto; }
+  .alefba-text .alefba-describe-web {
+    display: none; }
+
+.alefba-button {
+  font-family: IRANYekanWeb, serif;
+  color: #ffffff;
+  height: 12.8vw;
+  width: 78.93vw;
+  font-size: 3.2vw;
+  border-radius: 0.666vw;
+  box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+  background-color: #245779;
+  font-weight: bold;
+  line-height: 1.57;
+  letter-spacing: normal;
+  text-align: center;
+  margin: 0 auto;
+  margin-top: 3%;
+  margin-bottom: 5.33vw; }
+
+.alefba-web-button {
+  display: none; }
+
+.alefba-image {
+  text-align: center; }
+  .alefba-image img {
+    width: 80.8vw; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .alefba {
+    width: 100%;
+    height: 49.47vw;
+    background-image: url("../../src/images/alefba/alefbaBackground.png");
+    background-repeat: no-repeat; }
+    .alefba .row {
+      margin-left: -15px;
+      margin-right: -15px; }
+  .alefba-text-outer {
+    order: 1;
+    margin-top: 15.90vw;
+    margin-bottom: 0;
+    height: fit-content; }
+    .alefba-text-outer .alefba-text-inner {
+      width: fit-content;
+      float: right; }
+      .alefba-text-outer .alefba-text-inner .alefba-text {
+        border-right: 5px solid;
+        border-right-color: #000000;
+        padding: 0.64375rem;
+        padding-left: 0;
+        margin: 0; }
+        .alefba-text-outer .alefba-text-inner .alefba-text .alefba-title {
+          direction: rtl;
+          font-size: 2.5654vw;
+          font-weight: bold;
+          font-family: IRANYekanMobileFaNum;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.54;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          font-family: IRANYekanMobileFaNum, serif; }
+        .alefba-text-outer .alefba-text-inner .alefba-text .alefba-head {
+          font-family: IRANYekanMobileFaNum;
+          font-size: 1.64vw;
+          font-weight: 400;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          margin-top: 0.974vw; }
+        .alefba-text-outer .alefba-text-inner .alefba-text .alefba-describe-web {
+          display: block;
+          font-family: IRANYekanMobileFaNum;
+          font-weight: 300;
+          font-size: 1.02vw;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.55;
+          letter-spacing: normal;
+          white-space: nowrap;
+          text-align: right;
+          color: #000000;
+          margin: 0 auto;
+          margin-top: 0.9235vw; }
+        .alefba-text-outer .alefba-text-inner .alefba-text .alefba-describe-mobile {
+          display: none; }
+      .alefba-text-outer .alefba-text-inner .alefba-web-button {
+        display: block;
+        width: 100%; }
+        .alefba-text-outer .alefba-text-inner .alefba-web-button .alefba-button {
+          font-family: IRANYekanMobileFaNum, serif;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
+          background-color: #245779;
+          border-radius: 2.5px;
+          box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          margin: 0;
+          margin-top: 10px;
+          transition: all 0.4s ease 0s; }
+          .alefba-text-outer .alefba-text-inner .alefba-web-button .alefba-button:hover {
+            color: #ffffff;
+            text-shadow: 0 0 0.205vw white;
+            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57);
+            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw rgba(0, 0, 0, 0.57); }
+  .alefba-image {
+    text-align: right;
+    padding-right: 0 !important; }
+    .alefba-image img {
+      margin: 11.133vw auto;
+      width: 44.11vw;
+      height: 32.96vw;
+      object-fit: contain; }
+  .alefba-mobile-button {
+    display: none; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+.our-customer {
+  background-color: white;
+  direction: ltr;
+  padding-bottom: 9vw; }
+  .our-customer .title {
+    font-size: 8vw;
+    font-family: IRANYekanMobileFaNum, serif;
+    font-weight: bold;
+    text-align: center;
+    color: #000000;
+    padding-top: 5vw;
+    margin-bottom: 9vw;
+    height: 18%; }
+
+@keyframes move-images {
+  0% {
+    transform: translate3d(0, 0, 0); }
+  100% {
+    transform: translate3d(-100%, 0, 0); } }
+
+.mobile-customer {
+  margin: 0 auto;
+  overflow: hidden;
+  display: flex;
+  flex-direction: row; }
+  .mobile-customer .columns {
+    display: flex;
+    width: fit-content;
+    height: 82%;
+    flex-direction: row;
+    animation: move-images 32s linear 1s infinite; }
+    .mobile-customer .columns .column {
+      display: flex;
+      flex-direction: column;
+      justify-content: flex-start;
+      margin-right: 3.5vw; }
+      .mobile-customer .columns .column .customer-image {
+        height: 27.46vw;
+        background: url("../../src/images/customer-mobile/customer-mobile.png");
+        background-repeat: no-repeat;
+        background-size: 255vw;
+        width: 100%;
+        min-width: 100%; }
+      .mobile-customer .columns .column .customer-image:first-child {
+        margin-bottom: 5.33vw; }
+    .mobile-customer .columns .col1 {
+      width: 31vw; }
+      .mobile-customer .columns .col1 .customer-one {
+        background-position: 75.4% 10%; }
+      .mobile-customer .columns .col1 .customer-two {
+        background-position: 76% 90%; }
+    .mobile-customer .columns .col2 {
+      width: 22vw; }
+      .mobile-customer .columns .col2 .customer-three {
+        background-position: 87.6% 10%; }
+      .mobile-customer .columns .col2 .customer-four {
+        background-position: 86.8% 89%; }
+    .mobile-customer .columns .col3 {
+      width: 24vw; }
+      .mobile-customer .columns .col3 .customer-five {
+        background-position: 99.5% 10%; }
+      .mobile-customer .columns .col3 .customer-six {
+        background-position: 99.6% 89%; }
+    .mobile-customer .columns .col4 {
+      width: 29vw; }
+      .mobile-customer .columns .col4 .customer-seven {
+        background-position: 0.2% 10%; }
+      .mobile-customer .columns .col4 .customer-eight {
+        background-position: 0.2% 90%; }
+    .mobile-customer .columns .col5 {
+      width: 26vw; }
+      .mobile-customer .columns .col5 .customer-nine {
+        background-position: 14.85% 11%; }
+      .mobile-customer .columns .col5 .customer-ten {
+        background-position: 14% 90%; }
+    .mobile-customer .columns .col6 {
+      width: 31vw; }
+      .mobile-customer .columns .col6 .customer-eleven {
+        background-position: 29.1% 10%; }
+      .mobile-customer .columns .col6 .customer-twelve {
+        background-position: 28.25% 90%; }
+    .mobile-customer .columns .col7 {
+      width: 37vw; }
+      .mobile-customer .columns .col7 .customer-thirteen {
+        background-position: 46.2% 8%; }
+      .mobile-customer .columns .col7 .customer-fourteen {
+        background-position: 46% 88%; }
+    .mobile-customer .columns .col8 {
+      width: 24vw; }
+      .mobile-customer .columns .col8 .customer-fifteen {
+        background-position: 61% 11%; }
+      .mobile-customer .columns .col8 .customer-sixteen {
+        background-position: 62.2% 90%; }
+
+.web-customer {
+  display: none; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media screen and (min-width: 992px) {
+  .mobile-customer {
+    display: none; }
+  .our-customer {
+    background-color: #e4e4e4;
+    height: auto;
+    direction: ltr;
+    padding-bottom: 0; }
+    .our-customer .title {
+      font-family: IRANYekanMobileFaNum, serif;
+      font-size: 2.6vw;
+      font-weight: bold;
+      text-align: center;
+      color: #000000;
+      padding-top: 2.6vw;
+      margin-bottom: 0; }
+  .web-customer {
+    width: 66%;
+    margin: auto;
+    padding: 3vw 0;
+    display: grid;
+    grid-row-gap: 2rem; }
+    .web-customer > div {
+      justify-content: space-between; }
+    .web-customer .customer-image {
+      background: url("../../src/images/customer-web/customers.png");
+      background-repeat: no-repeat;
+      -webkit-background-size: 64vw;
+      background-size: 64vw;
+      -webkit-filter: grayscale(100%);
+      filter: grayscale(100%);
+      opacity: 0.4; }
+      .web-customer .customer-image:hover, .web-customer .customer-image:focus {
+        -webkit-filter: grayscale(0%);
+        filter: grayscale(0%);
+        opacity: 1; }
+    .web-customer .row-one {
+      grid-row: 1;
+      display: grid;
+      grid-template-columns: 1.2fr 1.1fr 1fr 1fr 1fr;
+      grid-column-gap: 1em;
+      height: auto; }
+      .web-customer .row-one .customer-one {
+        grid-column: 1;
+        grid-row: 1;
+        margin: auto 0; }
+        .web-customer .row-one .customer-one div {
+          height: 11vw;
+          background-position: 0 4%; }
+      .web-customer .row-one .customer-two {
+        grid-column: 2;
+        grid-row: 1;
+        margin: auto 0; }
+        .web-customer .row-one .customer-two div {
+          height: 12.1vw;
+          background-position: 27% 4%; }
+      .web-customer .row-one .customer-three {
+        grid-column: 3;
+        grid-row: 1;
+        margin: auto 0; }
+        .web-customer .row-one .customer-three div {
+          height: 12vw;
+          background-position: 52% 4%; }
+      .web-customer .row-one .customer-four {
+        grid-column: 4;
+        grid-row: 1;
+        margin: auto 0; }
+        .web-customer .row-one .customer-four div {
+          height: 12vw;
+          background-position: 76% 4%; }
+      .web-customer .row-one .customer-five {
+        grid-column: 5;
+        grid-row: 1;
+        margin: auto 0; }
+        .web-customer .row-one .customer-five div {
+          height: 12vw;
+          background-position: 100% 3%; }
+    .web-customer .row-two {
+      grid-row: 2;
+      display: grid;
+      grid-template-columns: 1.45fr 1.2fr 0.9fr 1.1fr 1.1fr 1.15fr;
+      grid-template-rows: max-content;
+      grid-column-gap: 0.5em;
+      height: auto; }
+      .web-customer .row-two .customer-six {
+        grid-column: 1;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-six div {
+          background-position: 0 55%;
+          margin-right: 0.4vw;
+          height: 8.33vw; }
+      .web-customer .row-two .customer-seven {
+        grid-column: 2;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-seven div {
+          background-position: 23% 55%;
+          margin-left: 0.5vw;
+          height: 10.93vw; }
+      .web-customer .row-two .customer-eight {
+        grid-column: 3;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-eight div {
+          background-position: 43% 55%;
+          height: 10.93vw; }
+      .web-customer .row-two .customer-nine {
+        grid-column: 4;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-nine div {
+          background-position: 61.5% 55%;
+          height: 10.93vw; }
+      .web-customer .row-two .customer-ten {
+        grid-column: 5;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-ten div {
+          background-position: 80% 55%;
+          height: 12.5vw; }
+      .web-customer .row-two .customer-eleven {
+        grid-column: 6;
+        grid-row: 2;
+        margin: auto 0; }
+        .web-customer .row-two .customer-eleven div {
+          background-position: 100% 55%;
+          height: 12.5vw; }
+    .web-customer .row-three {
+      grid-row: 3;
+      display: grid;
+      grid-template-columns: 1fr 2.2fr 1.25fr 0.8fr 1.1fr;
+      grid-column-gap: 2rem;
+      height: auto; }
+      .web-customer .row-three .customer-twelve {
+        grid-column: 1;
+        grid-row: 3;
+        margin: auto 0; }
+        .web-customer .row-three .customer-twelve div {
+          height: 8.25vw;
+          background-position: 2% 94%; }
+      .web-customer .row-three .customer-thirteen {
+        grid-column: 2;
+        grid-row: 3;
+        margin: auto 0; }
+        .web-customer .row-three .customer-thirteen div {
+          height: 6.25vw;
+          background-position: 25% 88%; }
+      .web-customer .row-three .customer-fourteen {
+        grid-column: 3;
+        grid-row: 3;
+        margin: auto 0; }
+        .web-customer .row-three .customer-fourteen div {
+          height: 8.93vw;
+          background-position: 59% 94%; }
+      .web-customer .row-three .customer-fifteen {
+        grid-column: 4;
+        grid-row: 3;
+        margin: auto 0; }
+        .web-customer .row-three .customer-fifteen div {
+          height: 9.2vw;
+          background-position: 78% 95%; }
+      .web-customer .row-three .customer-sixteen {
+        grid-column: 5;
+        grid-row: 3;
+        margin: auto 0; }
+        .web-customer .row-three .customer-sixteen div {
+          height: 8.7vw;
+          background-position: 99% 96%; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+.footer {
+  box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
+  background-color: #4286f5;
+  color: white;
+  padding: 3.99vw 5.3vw;
+  font-family: IRANYekanMobileFaNum, serif;
+  text-align: right; }
+  .footer .footer-title {
+    margin-bottom: 7.1955vw; }
+    .footer .footer-title span:first-child {
+      font-size: 4.264vw; }
+    .footer .footer-title span:last-child {
+      font-weight: bold;
+      font-size: 5.33vw; }
+  .footer .footer-body {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    font-weight: 300;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal; }
+    .footer .footer-body .footer-company {
+      font-weight: 300; }
+      .footer .footer-body .footer-company .footer-company-address {
+        display: flex;
+        align-items: flex-start;
+        margin-bottom: 1.3325vw; }
+        .footer .footer-body .footer-company .footer-company-address img.icon {
+          width: 5.06904vw;
+          margin-left: 3.862vw;
+          margin-top: 1vw; }
+        .footer .footer-body .footer-company .footer-company-address .text {
+          font-size: 4.264vw;
+          display: inline-block;
+          text-align: right; }
+      .footer .footer-body .footer-company .footer-company-email {
+        margin-bottom: 1.3325vw;
+        display: flex;
+        align-items: center; }
+        .footer .footer-body .footer-company .footer-company-email img.icon {
+          width: 4.797vw;
+          height: 3.8376vw;
+          margin-left: 2.862vw; }
+        .footer .footer-body .footer-company .footer-company-email .text {
+          font-size: 4.264vw;
+          text-align: right;
+          padding-top: 0.4vw; }
+      .footer .footer-body .footer-company .footer-company-call-number {
+        display: flex;
+        align-items: center; }
+        .footer .footer-body .footer-company .footer-company-call-number img.icon {
+          width: 4.6485vw;
+          height: 4.6485vw;
+          margin-left: 2.862vw; }
+        .footer .footer-body .footer-company .footer-company-call-number .text {
+          font-size: 4.264vw;
+          text-align: right;
+          padding-top: 1.4vw; }
+    .footer .footer-body .footer-information {
+      margin-top: 7.1955vw;
+      padding-right: 3.59775vw;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between; }
+      .footer .footer-body .footer-information p {
+        font-size: 4.264vw;
+        font-weight: bold;
+        text-align: right; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .footer {
+    height: max-content;
+    box-shadow: 0 -1.5px 3px 0 rgba(0, 0, 0, 0.16);
+    background-color: #4286f5;
+    color: #ffffff;
+    font-family: IRANYekanMobileFaNum, serif;
+    text-align: right; }
+    .footer .width-63 {
+      width: 63.4%;
+      margin: 0 auto; }
+    .footer .footer-title {
+      margin-bottom: 2.0181vw;
+      font-size: 1.041vw;
+      margin-right: -5.6658vw; }
+      .footer .footer-title span:first-child {
+        font-size: 1.3024vw;
+        font-weight: normal; }
+      .footer .footer-title span:last-child {
+        font-weight: bold;
+        font-size: 1.9536vw; }
+    .footer .footer-body {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      font-size: 1.042vw;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.55;
+      letter-spacing: normal; }
+      .footer .footer-body .footer-company {
+        font-weight: 300;
+        margin-right: -5.6658vw; }
+        .footer .footer-body .footer-company .footer-company-address {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 1.3024vw; }
+          .footer .footer-body .footer-company .footer-company-address img.icon {
+            width: 1.302vw;
+            height: 2.093608vw;
+            margin-left: 1.1vw;
+            margin-top: 0; }
+          .footer .footer-body .footer-company .footer-company-address .text {
+            display: inline-block;
+            width: 60%;
+            text-align: right;
+            font-size: 1.3024vw; }
+        .footer .footer-body .footer-company .footer-company-email {
+          margin-bottom: 1.3024vw; }
+          .footer .footer-body .footer-company .footer-company-email img.icon {
+            width: 1.67423vw;
+            height: 1.3024vw;
+            margin-left: 0.91175vw; }
+          .footer .footer-body .footer-company .footer-company-email .text {
+            width: 60%;
+            text-align: right;
+            font-size: 1.3024vw;
+            padding-top: 0.2vw; }
+        .footer .footer-body .footer-company .footer-company-call-number {
+          margin-bottom: 1.3024vw; }
+          .footer .footer-body .footer-company .footer-company-call-number img.icon {
+            width: 1.6631vw;
+            height: 1.6631vw;
+            margin-left: 0.91175vw; }
+          .footer .footer-body .footer-company .footer-company-call-number .text {
+            width: 60%;
+            text-align: right;
+            font-size: 1.3024vw;
+            padding-top: 0.6vw; }
+      .footer .footer-body .footer-information {
+        display: inline-block;
+        margin-top: 0; }
+        .footer .footer-body .footer-information p {
+          font-weight: bold;
+          font-size: 1.3024vw;
+          text-align: right;
+          margin-bottom: 1.9536vw; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+.harf {
+  height: auto;
+  width: 100%;
+  background-size: 100% 100%;
+  background: white;
+  background-image: url("../../src/images/harf/back-harf.png");
+  background-repeat: no-repeat; }
+
+.harf-text {
+  border-right: 0.7995vw solid;
+  border-right-color: black;
+  padding: 0 2.744vw;
+  margin-top: 5%;
+  padding-bottom: 7%; }
+  .harf-text .harf-title {
+    font-family: IRANYekanMobileFaNum;
+    direction: rtl;
+    font-size: 10.66vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin-bottom: 0.5rem; }
+  .harf-text .harf-head {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 7.995vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0; }
+  .harf-text .harf-describe-mobile {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 4.798vw;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: right;
+    color: #000000;
+    margin: 0 auto; }
+  .harf-text .harf-describe-web {
+    display: none; }
+
+.harf-web-button {
+  display: none; }
+
+.harf-mobile-button {
+  width: 78.93vw;
+  margin-bottom: 5.33vw; }
+  .harf-mobile-button .harf-button {
+    font-family: IRANYekanMobileFaNum;
+    color: #ffffff;
+    height: 12.8vw;
+    font-size: 3.2vw;
+    width: 100%;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7955vw 0 rgba(0, 0, 0, 0.16);
+    background-color: #245779;
+    opacity: 0.4;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center; }
+  .harf-mobile-button .harf-button:hover {
+    color: white; }
+
+.harf-image {
+  text-align: center;
+  height: 75.9525vw; }
+
+.harf-imageWeb {
+  width: 51.4543vw;
+  height: 51.4545vw;
+  display: block;
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0; }
+
+@media only screen and (min-width: 450px) {
+  .harf {
+    background-size: 100% 100%; }
+  /*.harf-imageWeb {*/
+  /*    width: 231px;*/
+  /*    height: 231px;*/
+  /*}*/ }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .harf {
+    background-image: url("../../src/images/harf/harf-background.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 49.47vw; }
+  .harf-text-outer {
+    margin-bottom: 16.67vw;
+    margin-top: 16.67vw;
+    width: fit-content; }
+    .harf-text-outer .harf-text-inner {
+      float: left;
+      width: fit-content; }
+      .harf-text-outer .harf-text-inner .harf-text {
+        border-right: 5px solid;
+        border-right-color: #000000;
+        padding: 0.64375rem;
+        padding-left: 0; }
+        .harf-text-outer .harf-text-inner .harf-text .harf-title {
+          direction: rtl;
+          font-size: 2.5654vw;
+          font-weight: bold;
+          font-family: IRANYekanMobileFaNum;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.54;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000; }
+        .harf-text-outer .harf-text-inner .harf-text .harf-head {
+          font-family: IRANYekanMobileFaNum;
+          font-size: 1.64vw;
+          font-weight: 400;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: right;
+          color: #000000;
+          margin-top: 0.974vw; }
+        .harf-text-outer .harf-text-inner .harf-text .harf-describe-web {
+          display: block;
+          font-family: IRANYekanMobileFaNum;
+          font-weight: 300;
+          font-size: 1.02vw;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.55;
+          letter-spacing: normal;
+          white-space: nowrap;
+          text-align: right;
+          color: #000000;
+          margin: 0 auto;
+          margin-top: 0.9235vw; }
+        .harf-text-outer .harf-text-inner .harf-text .harf-describe-mobile {
+          display: none; }
+      .harf-text-outer .harf-text-inner .harf-web-button {
+        display: block;
+        width: 100%; }
+        .harf-text-outer .harf-text-inner .harf-web-button .harf-button {
+          font-family: IRANYekanMobileFaNum;
+          color: #ffffff;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
+          border-radius: 2.5px;
+          box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          background-color: #245779;
+          opacity: 0.4;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          text-align: center;
+          margin: 0.45vw 0 0 0;
+          transition: all 0.4s ease 0s; }
+  .harf-image {
+    float: left;
+    height: inherit;
+    position: relative;
+    width: 50%; }
+  .harf-imageWeb {
+    position: relative;
+    width: 20.933vw;
+    height: 20.933vw;
+    margin: 13.853vw auto; }
+  .harf-mobile-button {
+    display: none; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+body {
+  background-color: #e4e4e4; }
+
+.hazm {
+  background-image: url("../../src/images/hazm/hazm-background-mobile.png");
+  background-repeat: no-repeat;
+  padding: 0;
+  margin: 0;
+  background-size: 100% 100%; }
+  .hazm .hazm-inner {
+    display: flex;
+    flex-flow: column; }
+
+.hazm-text {
+  border-right: 0.7995vw solid;
+  border-right-color: white;
+  padding: 0 2.744vw;
+  margin-top: 5%;
+  margin-right: 3%;
+  padding-bottom: 8%; }
+  .hazm-text .hazm-title {
+    font-family: IRANYekanMobileFaNum;
+    direction: rtl;
+    font-size: 10.66vw;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.54;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin: 0; }
+  .hazm-text .hazm-head {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 7.995vw;
+    font-weight: normal;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.56;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin: 0; }
+  .hazm-text .hazm-describe-mobile {
+    font-family: IRANYekanMobileFaNum;
+    font-size: 4.798vw;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.55;
+    letter-spacing: normal;
+    text-align: right;
+    color: white;
+    margin: 0 auto; }
+  .hazm-text .hazm-describe-web {
+    display: none; }
+
+.hazm-web-button {
+  display: none; }
+
+.hazm-mobile-button {
+  width: 78.93vw;
+  height: 12.8vw;
+  margin: 0 auto 5.33vw auto; }
+  .hazm-mobile-button .hazm-button {
+    font-family: IRANYekanMobileFaNum;
+    color: black;
+    width: 100%;
+    height: 100%;
+    font-size: 3.2vw;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+    background-color: #e3d845;
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center; }
+  .hazm-mobile-button .hazm-button:hover {
+    color: black; }
+
+.hazm-code {
+  width: 81vw;
+  height: fit-content;
+  padding: 2.66vw 2.93vw;
+  margin: 5.44vw auto 2.66vw auto;
+  direction: ltr;
+  text-align: left;
+  text-shadow: 1px 1.5px 1.5px rgba(0, 0, 0, 0.16);
+  background: #7f85d9;
+  background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+  background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+  background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%); }
+  .hazm-code .hazm-code-inner {
+    height: 100%;
+    font: 1.6vw monospace, Arial; }
+    .hazm-code .hazm-code-inner .lines .line {
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap; }
+    .hazm-code .hazm-code-inner .lines .has-break {
+      margin-bottom: 1.3rem; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+@media only screen and (max-width: 476px) {
+  .lines .has-break {
+    margin-bottom: 0.6rem !important; } }
+
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .hazm {
+    background-image: url("../../src/images/hazm/hazm-background-web.jpg");
+    background-repeat: no-repeat;
+    height: 49.84vw;
+    display: flex;
+    align-items: center; }
+    .hazm .hazm-inner {
+      display: flex;
+      flex-flow: row-reverse;
+      justify-content: flex-end;
+      align-items: center; }
+  .hazm-text-outer {
+    margin-right: 7.91vw; }
+    .hazm-text-outer .hazm-text-inner {
+      float: right;
+      width: fit-content; }
+      .hazm-text-outer .hazm-text-inner .hazm-text {
+        border-right: 5px solid;
+        border-right-color: white;
+        padding: 0.64375rem;
+        padding-left: 0;
+        margin: 0 0; }
+        .hazm-text-outer .hazm-text-inner .hazm-text .hazm-title {
+          font-size: 2.5654vw;
+          font-weight: bold;
+          font-family: IRANYekanMobileFaNum;
+          direction: rtl;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.54;
+          letter-spacing: normal;
+          text-align: right;
+          color: white; }
+        .hazm-text-outer .hazm-text-inner .hazm-text .hazm-head {
+          font-family: IRANYekanMobileFaNum;
+          font-size: 1.64vw;
+          font-weight: 400;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.56;
+          letter-spacing: normal;
+          text-align: right;
+          color: white;
+          margin: 0;
+          margin-top: 0.974vw; }
+        .hazm-text-outer .hazm-text-inner .hazm-text .hazm-describe-web {
+          display: block;
+          font-family: IRANYekanMobileFaNum;
+          font-size: 1.02vw;
+          font-weight: 300;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.55;
+          white-space: nowrap;
+          letter-spacing: normal;
+          text-align: right;
+          color: white;
+          margin: 0 auto;
+          margin-top: 0.9235vw; }
+        .hazm-text-outer .hazm-text-inner .hazm-text .hazm-describe-mobile {
+          display: none; }
+      .hazm-text-outer .hazm-text-inner .hazm-web-button {
+        display: block;
+        width: 100%; }
+        .hazm-text-outer .hazm-text-inner .hazm-web-button .hazm-button {
+          font-family: IRANYekanMobileFaNum;
+          color: #000000;
+          width: 7.7vw;
+          height: 2.5vw;
+          font-size: 0.73vw;
+          border-radius: 2.5px;
+          box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+          background-color: #e3d845;
+          font-weight: bold;
+          font-stretch: normal;
+          font-style: normal;
+          line-height: 1.57;
+          letter-spacing: normal;
+          text-align: center;
+          margin: 0.8125vw 0 0 0;
+          transition: all 0.4s ease 0s; }
+          .hazm-text-outer .hazm-text-inner .hazm-web-button .hazm-button:hover {
+            color: #000000;
+            text-shadow: 0 0 0.205vw rgba(0, 0, 0, 0.57);
+            -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw white;
+            -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw white; }
+        .hazm-text-outer .hazm-text-inner .hazm-web-button .hazm-button:hover {
+          color: black; }
+  .hazm-code {
+    width: 33.48vw;
+    margin: 0 12.61vw 0 0;
+    padding: 1.3vw;
+    background: transparent;
+    position: relative; }
+    .hazm-code:after {
+      display: block;
+      content: "";
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: -3px;
+      right: -3px;
+      border-top: 3px solid #415CB9;
+      border-right: 3px solid #415CB9; }
+    .hazm-code:before {
+      display: block;
+      content: "";
+      width: 34px;
+      height: 34px;
+      position: absolute;
+      top: -3px;
+      left: -3px;
+      border-top: 3px solid #415CB9;
+      border-left: 3px solid #415CB9; }
+    .hazm-code .hazm-code-inner {
+      padding: 1vw 1.3vw;
+      direction: ltr;
+      text-align: left;
+      font: 0.6vw monospace, Arial;
+      background: #7f85d9;
+      background: repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+      background: -webkit-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%);
+      background: -moz-repeating-linear-gradient(310deg, #425CBC 0%, #6268ca 100%); }
+      .hazm-code .hazm-code-inner .lines .has-break {
+        margin-bottom: 0.75rem !important; }
+      .hazm-code .hazm-code-inner:after {
+        display: block;
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        bottom: -3px;
+        right: -3px;
+        border-bottom: 3px solid #415CB9;
+        border-right: 3px solid #415CB9; }
+      .hazm-code .hazm-code-inner:before {
+        display: block;
+        content: "";
+        width: 34px;
+        height: 34px;
+        position: absolute;
+        bottom: -3px;
+        left: -3px;
+        border-bottom: 3px solid #415CB9;
+        border-left: 3px solid #415CB9; }
+  .hazm-mobile-button {
+    display: none; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+/*         highlightes color         */
+@font-face {
+  font-family: IRMitra;
+  font-weight: normal;
+  src: url("../../src/fonts/IRMitra.woff") format("woff"); }
+
+@font-face {
+  font-family: IRMitra;
+  font-weight: bold;
+  src: url("../../src/fonts/IRMitraBd.woff") format("woff"); }
+
+@font-face {
+  font-family: BMitra;
+  font-weight: normal;
+  src: url("../fonts/BMitra.woff") format("woff"); }
+
+.highlight {
+  color: #ffffff; }
+
+.highlight .s {
+  font-family: Arial; }
+
+.highlight .c {
+  color: #999999;
+  font-style: italic; }
+
+/* Comment */
+.highlight .err {
+  color: #a61717;
+  background-color: #e3d2d2; }
+
+/* Error */
+.highlight .g {
+  color: #ffffff; }
+
+/* Generic */
+.highlight .k {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword */
+.highlight .l {
+  color: #ffffff; }
+
+/* Literal */
+.highlight .n {
+  color: #ffffff; }
+
+/* Name */
+.highlight .o {
+  color: #ffffff; }
+
+/* Operator */
+.highlight .x {
+  color: #ffffff; }
+
+/* Other */
+.highlight .p {
+  color: #ffffff; }
+
+/* Punctuation */
+.highlight .cm {
+  color: #999999;
+  font-style: italic; }
+
+/* Comment.Multiline */
+.highlight .cp {
+  color: #cd2828;
+  font-weight: normal; }
+
+/* Comment.Preproc */
+.highlight .c1 {
+  color: #999999;
+  font-style: italic; }
+
+/* Comment.Single */
+.highlight .cs {
+  color: #e50808;
+  font-weight: normal;
+  background-color: #520000; }
+
+/* Comment.Special */
+.highlight .gd {
+  color: #d22323; }
+
+/* Generic.Deleted */
+.highlight .ge {
+  color: #ffffff;
+  font-style: italic; }
+
+/* Generic.Emph */
+.highlight .gr {
+  color: #d22323; }
+
+/* Generic.Error */
+.highlight .gh {
+  color: #ffffff;
+  font-weight: normal; }
+
+/* Generic.Heading */
+.highlight .gi {
+  color: #589819; }
+
+/* Generic.Inserted */
+.highlight .go {
+  color: #cccccc; }
+
+/* Generic.Output */
+.highlight .gp {
+  color: #aaaaaa; }
+
+/* Generic.Prompt */
+.highlight .gs {
+  color: #ffffff;
+  font-weight: normal; }
+
+/* Generic.Strong */
+.highlight .gu {
+  color: #ffffff;
+  text-decoration: underline; }
+
+/* Generic.Subheading */
+.highlight .gt {
+  color: #d22323; }
+
+/* Generic.Traceback */
+.highlight .kc {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword.Constant */
+.highlight .kd {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword.Declaration */
+.highlight .kn {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword.Namespace */
+.highlight .kp {
+  color: #6ab825; }
+
+/* Keyword.Pseudo */
+.highlight .kr {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword.Reserved */
+.highlight .kt {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Keyword.Type */
+.highlight .ld {
+  color: #ffffff; }
+
+/* Literal.Date */
+.highlight .m {
+  color: #3677a9; }
+
+/* Literal.Number */
+.highlight .s {
+  color: #ff8; }
+
+/* Literal.String */
+.highlight .na {
+  color: #bbbbbb; }
+
+/* Name.Attribute */
+.highlight .nb {
+  color: #24909d; }
+
+/* Name.Builtin */
+.highlight .nc {
+  color: #447fcf;
+  text-decoration: underline; }
+
+/* Name.Class */
+.highlight .no {
+  color: #40ffff; }
+
+/* Name.Constant */
+.highlight .nd {
+  color: #ffa500; }
+
+/* Name.Decorator */
+.highlight .ni {
+  color: #ffffff; }
+
+/* Name.Entity */
+.highlight .ne {
+  color: #bbbbbb; }
+
+/* Name.Exception */
+.highlight .nf {
+  color: #447fcf; }
+
+/* Name.Function */
+.highlight .nl {
+  color: #ffffff; }
+
+/* Name.Label */
+.highlight .nn {
+  color: #447fcf; }
+
+/* Name.Namespace */
+.highlight .nx {
+  color: #ffffff; }
+
+/* Name.Other */
+.highlight .py {
+  color: #ffffff; }
+
+/* Name.Property */
+.highlight .nt {
+  color: #6ab825; }
+
+/* Name.Tag */
+.highlight .nv {
+  color: #40ffff; }
+
+/* Name.Variable */
+.highlight .ow {
+  color: #6ab825;
+  font-weight: normal; }
+
+/* Operator.Word */
+.highlight .w {
+  color: #666666; }
+
+/* Text.Whitespace */
+.highlight .mf {
+  color: #3677a9; }
+
+/* Literal.Number.Float */
+.highlight .mh {
+  color: #3677a9; }
+
+/* Literal.Number.Hex */
+.highlight .mi {
+  color: #3677a9; }
+
+/* Literal.Number.Integer */
+.highlight .mo {
+  color: #3677a9; }
+
+/* Literal.Number.Oct */
+.highlight .sb {
+  color: #ff8; }
+
+/* Literal.String.Backtick */
+.highlight .sc {
+  color: #ff8; }
+
+/* Literal.String.Char */
+.highlight .sd {
+  color: #ff8; }
+
+/* Literal.String.Doc */
+.highlight .s2 {
+  color: #ff8; }
+
+/* Literal.String.Double */
+.highlight .se {
+  color: #ff8; }
+
+/* Literal.String.Escape */
+.highlight .sh {
+  color: #ff8; }
+
+/* Literal.String.Heredoc */
+.highlight .si {
+  color: #ff8; }
+
+/* Literal.String.Interpol */
+.highlight .sx {
+  color: #ffa500; }
+
+/* Literal.String.Other */
+.highlight .sr {
+  color: #ff8; }
+
+/* Literal.String.Regex */
+.highlight .s1 {
+  color: #ff8; }
+
+/* Literal.String.Single */
+.highlight .ss {
+  color: #ff8; }
+
+/* Literal.String.Symbol */
+.highlight .bp {
+  color: #24909d; }
+
+/* Name.Builtin.Pseudo */
+.highlight .vc {
+  color: #40ffff; }
+
+/* Name.Variable.Class */
+.highlight .vg {
+  color: #40ffff; }
+
+/* Name.Variable.Global */
+.highlight .vi {
+  color: #40ffff; }
+
+/* Name.Variable.Instance */
+.highlight .il {
+  color: #3677a9; }
+
+/* Literal.Number.Integer.Long */
+.kashf {
+  text-align: center;
+  margin-right: -15px;
+  margin-left: -15px; }
+
+.text-section {
+  padding: 0 5.22vw 5.33vw 5.22vw;
+  position: relative;
+  z-index: 1;
+  height: 167.5vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; }
+  .text-section .kashf-text {
+    border-right: 0.7995vw solid;
+    border-right-color: white;
+    padding: 0 3.09vw; }
+    .text-section .kashf-text .kashf-title {
+      margin: 0;
+      direction: rtl;
+      font-size: 10.66vw;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.54;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      font-weight: bold;
+      font-family: IRANYekanMobileFaNum; }
+    .text-section .kashf-text .kashf-head {
+      font-size: 7.995vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.56;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      margin: 0;
+      font-family: IRANYekanMobileFaNum; }
+    .text-section .kashf-text .kashf-describe-mobile {
+      font-size: 4.795vw;
+      font-weight: 300;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: 1.55;
+      letter-spacing: normal;
+      text-align: right;
+      color: #ffffff;
+      margin: 0 auto;
+      font-family: IRANYekanMobileFaNum; }
+
+@keyframes fade_text_animate {
+  0% {
+    opacity: 0; }
+  10% {
+    opacity: 1; }
+  90% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+      .text-section .kashf-text .kashf-describe-mobile .no-wrap-words {
+        white-space: nowrap; }
+      .text-section .kashf-text .kashf-describe-mobile .carousel-text {
+        font-weight: bold;
+        font-size: 5.59vw;
+        opacity: 0; }
+        .text-section .kashf-text .kashf-describe-mobile .carousel-text.active {
+          animation: fade_text_animate 3970ms linear; }
+    .text-section .kashf-text .kashf-describe-web {
+      display: none; }
+  .text-section .kashf-web-button {
+    display: none; }
+  .text-section .kashf-mobile-button .kashf-button {
+    width: 78.93vw;
+    height: 12.8vw;
+    font-size: 3.2vw;
+    background-color: #e3d845;
+    color: #000000;
+    border-radius: 0.666vw;
+    box-shadow: 0.3996vw 0.3996vw 0.7995vw 0 rgba(0, 0, 0, 0.16);
+    font-weight: bold;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: center;
+    font-family: IRANYekanWeb; }
+
+.carousel-section .carousel {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  z-index: 0; }
+  .carousel-section .carousel div {
+    height: inherit; }
+    .carousel-section .carousel div picture {
+      display: block;
+      height: inherit; }
+      .carousel-section .carousel div picture img {
+        width: 100%;
+        height: auto;
+        object-fit: cover; }
+
+@keyframes fade_image_animate {
+  0% {
+    opacity: 0; }
+  1% {
+    opacity: 0; }
+  40% {
+    opacity: 1; }
+  80% {
+    opacity: 1; }
+  100% {
+    opacity: 0; } }
+
+.carousel.carousel-fade .carousel-item.active {
+  transform: none;
+  -webkit-transform: none;
+  transition: none !important;
+  opacity: 0;
+  animation: fade_image_animate 3970ms;
+  -moz-animation: fade_image_animate 3970ms; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .kashf {
+    text-align: initial;
+    height: 44.5vw;
+    padding-top: 14vw; }
+  .text-section {
+    width: max-content;
+    height: auto;
+    margin-right: 15.93vw;
+    padding: 0; }
+    .text-section .kashf-text {
+      border-right: 5px solid;
+      border-right-color: white;
+      padding: 0 1.08vw 0 0;
+      margin-bottom: 1.07vw; }
+      .text-section .kashf-text .kashf-title {
+        direction: rtl;
+        font-size: 2.5654vw;
+        font-weight: bold;
+        font-family: IRANYekanMobileFaNum;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.54;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ffffff; }
+      .text-section .kashf-text .kashf-head {
+        font-family: IRANYekanMobileFaNum;
+        font-size: 1.64vw;
+        font-weight: 400;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.56;
+        letter-spacing: normal;
+        text-align: right;
+        color: #ffffff;
+        margin-top: 0.974vw; }
+      .text-section .kashf-text .kashf-describe-web {
+        display: block;
+        font-family: IRANYekanMobileFaNum;
+        font-weight: 300;
+        font-size: 1.02vw;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.55;
+        letter-spacing: normal;
+        text-align: right;
+        white-space: nowrap;
+        color: #ffffff;
+        margin-top: 0.9235vw; }
+        .text-section .kashf-text .kashf-describe-web .carousel-text {
+          font-weight: bold;
+          font-size: 1.04vw;
+          opacity: 0; }
+          .text-section .kashf-text .kashf-describe-web .carousel-text.active {
+            animation: fade_text_animate 3970ms linear; }
+      .text-section .kashf-text .kashf-describe-mobile {
+        display: none; }
+    .text-section .kashf-web-button {
+      display: block;
+      width: 100%;
+      text-align: left; }
+      .text-section .kashf-web-button .kashf-button {
+        font-family: IRANYekanMobileFaNum;
+        color: #000000;
+        width: 7.7vw;
+        height: 2.5vw;
+        font-size: 0.73vw;
+        border-radius: 2.5px;
+        box-shadow: 1.5px 1.5px 3px 0 rgba(0, 0, 0, 0.16);
+        background-color: #e3d845;
+        font-weight: bold;
+        font-stretch: normal;
+        font-style: normal;
+        line-height: 1.57;
+        letter-spacing: normal;
+        text-align: center;
+        transition: all 0.4s ease 0s; }
+        .text-section .kashf-web-button .kashf-button:hover {
+          color: #000000;
+          text-shadow: 0 0 0.205vw rgba(0, 0, 0, 0.57);
+          -webkit-box-shadow: 0 0.17vw 1.36vw -0.341vw white;
+          -moz-box-shadow: 0 0.17vw 1.36vw -0.341vw white; }
+    .text-section .kashf-mobile-button {
+      display: none; }
+  .carousel-section img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+body {
+  direction: rtl; }
+
+.nav-background {
+  background-color: #4286f5;
+  height: 18.13vw; }
+
+.inner-navbar {
+  position: relative;
+  direction: rtl;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center !important;
+  align-items: center;
+  color: white; }
+
+.nav-item {
+  margin-right: 5%;
+  text-align: right; }
+
+.navbar-nav {
+  direction: rtl; }
+
+.navbar-button {
+  position: absolute;
+  right: 5.33vw;
+  padding: 0;
+  z-index: 3; }
+  .navbar-button .navbar-toggler-icon {
+    width: 7.2vw;
+    height: 4.8vw; }
+
+.navbar-logo {
+  height: 8vw; }
+
+.navbar-collapse {
+  direction: ltr;
+  position: absolute;
+  right: 5.53vw;
+  top: 49%;
+  z-index: 2; }
+  .navbar-collapse .nav-items {
+    color: #ffffff;
+    font-size: 4.798vw;
+    width: max-content;
+    font-family: IRANYekanMobileFaNum, serif;
+    font-weight: bold; }
+  .navbar-collapse .nav-items:hover {
+    color: #cdfff5; }
+  .navbar-collapse .nav-items:focus {
+    color: #cdfff5; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  body {
+    direction: rtl; }
+  .nav-background {
+    height: 4.63vw;
+    justify-content: center; }
+  .inner-navbar {
+    flex-wrap: nowrap;
+    justify-content: space-between !important;
+    align-items: center;
+    margin: 0 10vw; }
+  .navbar-logo {
+    height: 2.99vw;
+    margin-top: 0.6512vw; }
+  .navbar-collapse {
+    flex-grow: 0;
+    display: inline-flex;
+    position: static; }
+    .navbar-collapse ul {
+      padding-right: 0; }
+    .navbar-collapse .nav-item {
+      margin-right: 3.82vw !important; }
+    .navbar-collapse .nav-items {
+      color: #ffffff;
+      font-size: 1.02vw;
+      padding-left: 0 !important; }
+    .navbar-collapse .nav-items:hover {
+      color: #cdfff5; }
+    .navbar-collapse .nav-items:focus {
+      color: #cdfff5; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
+html {
+  scroll-behavior: smooth; }
+
+.roshan {
+  background-image: url("../../src/images/roshan/back-sky-mobile.jpg");
+  background-repeat: no-repeat;
+  background-size: 100% auto;
+  position: relative;
+  top: -1px;
+  background-position-y: -2px;
+  height: 336vw; }
+
+.roshan-web {
+  display: none; }
+
+.roshan-mobile {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 4vw;
+  margin-bottom: 18.13vw; }
+
+.earth-image {
+  width: 130vw;
+  mix-blend-mode: screen;
+  height: 108.8vw;
+  filter: blur(1px);
+  opacity: 0.5;
+  margin-left: -4vw; }
+
+.roshan-text {
+  position: absolute;
+  text-align: center;
+  font-size: 5.33vw;
+  font-weight: 300;
+  color: white;
+  font-family: IRANYekanWeb;
+  margin-top: -1vw; }
+  .roshan-text span {
+    font-size: 10.66vw;
+    font-weight: bold;
+    text-shadow: 1.5px 3px 5px rgba(0, 0, 0, 0.16); }
+
+.product-arrow {
+  text-align: center;
+  margin-bottom: 12.16vw;
+  position: relative;
+  z-index: 1; }
+  .product-arrow a {
+    cursor: pointer; }
+    .product-arrow a img {
+      width: 16.9925vw;
+      margin: auto; }
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+/*!* Small devices (portrait tablets and large phones, 576px and up) *!*/
+/*@media only screen and (min-width: 576px) {...}*/
+/*!* Medium devices (landscape tablets, 768px and up) *!*/
+/*@media only screen and (min-width: 768px) {...}*/
+/*!* Large devices (laptops/desktops, 992px and up) *!*/
+/*@media only screen and (min-width: 992px) {...}*/
+@media only screen and (min-width: 992px) {
+  .roshan {
+    background-image: url("../../src/images/roshan/back-sky-web.jpg");
+    display: flex;
+    justify-content: center;
+    height: 101.614vw; }
+  .roshan-mobile {
+    display: none; }
+  .roshan-web {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1vw 10vw 0 11vw;
+    margin-bottom: 1vw; }
+  .roshan-text {
+    color: white;
+    text-align: right;
+    font-size: 1.84vw;
+    position: initial;
+    margin: 0; }
+    .roshan-text span {
+      font-size: 4.1vw; }
+  .earth-image {
+    width: 43.54vw;
+    height: 35.96vw;
+    mix-blend-mode: screen;
+    filter: blur(0px);
+    opacity: 1;
+    margin: 0; }
+  .product-arrow {
+    text-align: center;
+    margin-bottom: 14.52vw; }
+    .product-arrow a img {
+      width: 4.791vw;
+      height: 4.166vw; } }
+
+/*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
