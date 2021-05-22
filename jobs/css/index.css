@@ -40,7 +40,7 @@ html, body, .main {
 }
 
 .description {
-    width: 34.86vw;
+    width: fit-content;
     height: 16.45vw;
     margin: 21.11vw 15vw 26.8vw 0;
     position: relative;
