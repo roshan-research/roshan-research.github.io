@@ -1,6 +1,6 @@
 html, body, .main {
     height: 100%;
-    font-family: iranyekan-regular;
+    font-family: iranyekan-regular; /*TODO: add sans-serif, and fix problem when add sans-serif */
 }
 
 .top-bar-wrapper {
@@ -42,8 +42,7 @@ html, body, .main {
 .description {
     width: 34.86vw;
     height: 16.45vw;
-    margin-top: 21.11vw;
-    margin-right: 15vw;
+    margin: 21.11vw 15vw 26.8vw 0;
     position: relative;
 }
 
