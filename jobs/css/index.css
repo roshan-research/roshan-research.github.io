@@ -13,7 +13,7 @@ html, body, .main {
     height: 2.85vw;
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -21,6 +21,13 @@ html, body, .main {
     font-family: iranyekan-regular;
     font-size: 1.11vw;
     letter-spacing: 0;
+    color: #000000;
+    margin-right: 6.04vw;
+}
+
+.top-bar a{
+    color: #000000!important;
+    text-decoration: none;
 }
 
 .logo {
@@ -34,7 +41,6 @@ html, body, .main {
 .left-image {
     width: 37.63vw;
     height: 67.22vw;
-    /*height: calc(100% - 2.01vw);*/
     position: absolute;
     background-image: url('../images/Bitmap.png');
     background-repeat: no-repeat;
