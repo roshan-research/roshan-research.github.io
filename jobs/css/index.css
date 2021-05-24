@@ -20,21 +20,26 @@ html, body, .main {
 .top-bar .item {
     font-family: iranyekan-regular;
     font-size: 1.11vw;
+    letter-spacing: 0;
 }
 
 .logo {
-    background-color: #1b6d85;
     width: 4.65vw;
     height: 100%;
     font-family: iranyekan-medium;
     font-size: 1.66vw;
+    letter-spacing: 0;
 }
 
 .left-image {
     width: 37.63vw;
-    /*height: 67.22vw;*/
-    height: calc(100% - 2.01vw);
+    height: 67.22vw;
+    /*height: calc(100% - 2.01vw);*/
     position: absolute;
+    background-image: url('../images/Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: -2.5vw 0;
+    background-size: cover;
     top: 2.01vw;
     left: 0;
 }
