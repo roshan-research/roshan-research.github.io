@@ -3,21 +3,38 @@ html, body, .main {
     font-family: iranyekan-regular; /*TODO: add sans-serif, and fix problem when add sans-serif */
 }
 
-.top-bar-wrapper {
-    padding-top: 3.88vw;
-    padding-right: 9.03vw;
+.proximaNovaRegFont {
+    font-family: proximaNovaReg;
 }
 
-.top-bar {
-    width: 33.72vw;
+.helveticaFont {
+    font-family: Helvetica;
+}
+
+.top-bar-wrapper {
+    margin-top: 3.88vw;
+    margin-right: 9.03vw;
     height: 2.85vw;
+}
+
+.top-bar-web {
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
     align-items: center;
+    height: 100%;
 }
 
-.top-bar .item {
+.top-bar-mobile {
+    display: none;
+}
+
+.top-bar-web a {
+    color: #000000 !important;
+    text-decoration: none;
+}
+
+.top-bar-web .item {
     font-family: iranyekan-regular;
     font-size: 1.11vw;
     letter-spacing: 0;
@@ -25,12 +42,7 @@ html, body, .main {
     margin-right: 6.04vw;
 }
 
-.top-bar a{
-    color: #000000!important;
-    text-decoration: none;
-}
-
-.logo {
+.top-bar-web .logo {
     width: 4.65vw;
     height: 100%;
     font-family: iranyekan-medium;
@@ -38,7 +50,7 @@ html, body, .main {
     letter-spacing: 0;
 }
 
-.left-image {
+.left-image-web {
     width: 37.63vw;
     height: 67.22vw;
     position: absolute;
@@ -51,7 +63,7 @@ html, body, .main {
 }
 
 .description {
-    width: fit-content;
+    width: max-content;
     height: 16.45vw;
     margin: 21.11vw 15vw 26.8vw 0;
     position: relative;
@@ -61,22 +73,176 @@ html, body, .main {
     text-align: right;
     color: #303030;
     font-size: 1.11vw;
+    letter-spacing: 0;
 }
 
-.description .bold-text {
+.description .bold-text-mobile {
+    display: none;
+}
+
+.description .bold-text-web {
+    display: block;
     margin-top: 1.25vw;
     text-align: right;
     font-size: 1.94vw;
     font-family: iranyekan-black;
+    letter-spacing: 0;
 }
 
-.description .bold-text span {
+.description .bold-text-web span {
     color: #0045B2;
 }
 
-.description .email {
+.description .email-web {
     margin-top: 4.37vw;
     color: #303030;
-    font-family: Helvetica-Light;
     font-size: 1.8vw;
+    letter-spacing: 0.13vw;
+}
+
+.description .email-mobile {
+    display: none;
+}
+
+/*!* Extra small devices (phones, 576px and down) *!*/
+/*@media only screen and (max-width: 576px) {...}*/
+@media only screen and (max-width: 576px) {
+
+    .main {
+        position: relative;
+    }
+
+    .top-bar-wrapper {
+        margin: 6.13vw 10.66vw 0 8.13vw;
+        height: 8.26vw;
+    }
+
+    .top-bar-web {
+        display: none;
+    }
+
+    .top-bar-mobile {
+        display: block;
+        height: 100%;
+    }
+
+    .top-bar-mobile .closed-menu {
+        display: flex;
+        height: 100%;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+    .top-bar-mobile .closed-menu a {
+        color: #000000 !important;
+        text-decoration: none;
+    }
+
+    .top-bar-mobile .closed-menu .logo {
+        font-family: iranyekan-medium;
+        font-size: 4.8vw;
+        letter-spacing: 0;
+    }
+
+    .top-bar-mobile .closed-menu .menu-icon {
+        width: 4.26vw;
+        height: 1.86vw;
+        border-width: 2px 0 2px 0;
+        border-style: solid;
+        border-color: #303030;
+    }
+
+    .top-bar-mobile .opened-menu {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+    }
+
+    .top-bar-mobile .opened-menu a {
+        color: #303030 !important;
+        text-decoration: none;
+    }
+
+    .top-bar-mobile .opened-menu .close-icon img {
+        width: 3vw;
+        height: 3vw;
+    }
+
+    .top-bar-mobile .opened-menu .items {
+        position: absolute;
+        top: 55.46vw;
+        left: 41.95vw;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .top-bar-mobile .opened-menu .items  > div {
+        height: 8.26vw;
+        display: flex;
+        align-items: center;
+        margin-bottom: 10.4vw;
+        justify-content: center;
+        z-index: 10;
+        font-size: 4.8vw;
+        font-family: iranyekan-medium;
+        letter-spacing: 0;
+    }
+
+    .left-image-web {
+        display: none;
+    }
+
+    .description {
+        height: max-content;
+        margin: 37.33vw auto 0 auto;
+    }
+
+    .description .text {
+        font-size: 4.26vw;
+        letter-spacing: 0;
+    }
+
+    .description .bold-text-web {
+        display: none;
+    }
+
+    .description .bold-text-mobile {
+        display: block;
+        margin-top: 4.53vw;
+        text-align: right;
+        font-size: 6.4vw;
+        font-family: iranyekan-black;
+        letter-spacing: 0;
+    }
+
+    .description .bold-text-mobile span {
+        color: #4286F5;
+    }
+
+    .description .email-web {
+        display: none;
+    }
+
+    .description .email-mobile {
+        display: block;
+        margin-top: 7.46vw;
+        color: #303030;
+        font-size: 5.33vw;
+        letter-spacing: 0.41vw;
+        font-family: proximaNovaReg;
+    }
+
+    .bottom-image-mobile {
+        width: 94.93vw;
+        height: max(100vw, calc(100% - 83.46vw));
+        position: absolute;
+        background-image: url('../images/Bitmap.png');
+        background-repeat: no-repeat;
+        background-position: -11.2vw 0;
+        background-size: cover;
+        left: 0;
+        top: 83.46vw;
+    }
 }

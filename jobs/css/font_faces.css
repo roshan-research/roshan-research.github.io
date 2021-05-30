@@ -56,6 +56,11 @@
 /*----------------------------- other fonts ------------------------------------------*/
 
 @font-face {
-    font-family: Helvetica-Light;
-    src: url("../fonts/helvetica_light.ttf");
+    font-family: Helvetica;
+    src: url("../fonts/Helvetica.ttf");
+}
+
+@font-face {
+    font-family: proximaNovaReg;
+    src: url("../fonts/proximaNovaReg.ttf");
 }

@@ -15,28 +15,65 @@
 <body>
 <div class="main">
   <div class="top-bar-wrapper">
-    <div class="top-bar">
+    <div class="top-bar-web">
       <span class="logo"><a href="/">روشــن</a></span>
       <!--<span class="item">بلاگ</span>-->
       <!--<span class="item"><a href="">درباره ما</a></span>-->
       <span class="item"><a href="/#company-call-number">تماس با ما</a></span>
     </div>
+    <div class="top-bar-mobile">
+      <div class="closed-menu">
+        <span class="logo"><a href="/">روشــن</a></span>
+        <div class="menu-icon"></div>
+      </div>
+      <div class="opened-menu">
+        <img class="close-icon" src="images/Group.svg" alt="close-menu">
+        <div class="items">
+          <div><a href="/">روشــن</a></div>
+          <div><a href="#">بلاگ</a></div>
+          <div><a href="#">درباره ما</a></div>
+        </div>
+      </div>
+    </div>
   </div>
-  <div class="left-image"></div>
+  <div class="left-image-web"></div>
+  <div class="bottom-image-mobile"></div>
   <div class="description">
     <div class="text">
       اگر به هوش مصنوعی علاقمندید،
     </div>
-    <div class="bold-text">
+    <div class="bold-text-web">
       <div>برای حضور در کنار تیم جوان و خلاق <span>روشن</span>،</div>
       <div>با ما در ارتباط باشید.</div>
     </div>
-    <div class="email">
-      salam@roshan-ai.ir
+    <div class="bold-text-mobile">
+      <div>برای حضور در کنار تیم جوان</div>
+      <div>و خلاق <span>روشن</span>، با ما در ارتباط</div>
+      <div>باشید.</div>
+    </div>
+    <div class="email-web">
+      <span class="proximaNovaRegFont">salam@</span><span class="helveticaFont">roshan-ai</span><span
+        class="proximaNovaRegFont">.ir</span>
+    </div>
+    <div class="email-mobile">
+      salam@roshan.ai.ir
     </div>
   </div>
 </div>
 <script src="js/jquery-3.5.1.min.js"></script>
 <script src="js/bootstrap.bundle.min.js"></script>
+<script>
+  $('.opened-menu').hide();
+  $('.menu-icon').on('click', function () {
+    $('.closed-menu').hide();
+    $('.description').hide();
+    $('.opened-menu').show()
+  });
+  $('.close-icon').on('click', function () {
+    $('.opened-menu').hide();
+    $('.closed-menu').show();
+    $('.description').show()
+  });
+</script>
 </body>
 </html>
