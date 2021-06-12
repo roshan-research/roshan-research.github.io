@@ -1,5 +1,5 @@
 html, body, .main {
-    height: 100%;
+    height: 100vh;
     font-family: iranyekan-regular; /*TODO: add sans-serif, and fix problem when add sans-serif */
 }
 
@@ -11,8 +11,11 @@ html, body, .main {
     font-family: Helvetica;
 }
 
+.main {
+    padding-top: 3.88vw
+}
+
 .top-bar-wrapper {
-    margin-top: 3.88vw;
     margin-right: 9.03vw;
     height: 2.85vw;
 }
@@ -50,22 +53,10 @@ html, body, .main {
     letter-spacing: 0;
 }
 
-.left-image-web {
-    width: 37.63vw;
-    height: 67.22vw;
-    position: absolute;
-    background-image: url('../images/Bitmap.png');
-    background-repeat: no-repeat;
-    background-position: -2.5vw 0;
-    background-size: cover;
-    top: 2.01vw;
-    left: 0;
-}
-
 .description {
     width: max-content;
     height: 16.45vw;
-    margin: 21.11vw 15vw 26.8vw 0;
+    margin: 12vw 15vw 0 0;
     position: relative;
 }
 
@@ -104,16 +95,37 @@ html, body, .main {
     display: none;
 }
 
+.bottom-image-mobile{
+    display: none;
+}
+
+.left-image-web {
+    width: 37.63vw;
+    height: 100vh;
+    position: absolute;
+    background-image: url('../images/Bitmap.png');
+    background-repeat: no-repeat;
+    background-position: -2.5vw -5vw;
+    background-size: 100% auto;
+    top: 0;
+    left: 0;
+}
+
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
 @media only screen and (max-width: 576px) {
 
+    html, body, .main {
+        height: auto;
+    }
+
     .main {
         position: relative;
+        padding-top: 6.12vw;
     }
 
     .top-bar-wrapper {
-        margin: 6.13vw 10.66vw 0 8.13vw;
+        margin: 0 10.66vw 0 8.13vw;
         height: 8.26vw;
     }
 
@@ -172,7 +184,7 @@ html, body, .main {
 
     .top-bar-mobile .opened-menu .items {
         position: absolute;
-        top: 55.46vw;
+        top: 25vw;
         left: 41.95vw;
         display: flex;
         flex-direction: column;
@@ -184,19 +196,14 @@ html, body, .main {
         align-items: center;
         margin-bottom: 10.4vw;
         justify-content: center;
-        z-index: 10;
         font-size: 4.8vw;
         font-family: iranyekan-medium;
         letter-spacing: 0;
     }
 
-    .left-image-web {
-        display: none;
-    }
-
     .description {
         height: max-content;
-        margin: 37.33vw auto 0 auto;
+        margin: 15vw auto 0 auto;
     }
 
     .description .text {
@@ -234,15 +241,22 @@ html, body, .main {
         font-family: proximaNovaReg;
     }
 
+    .left-image-web {
+        display: none;
+    }
+
     .bottom-image-mobile {
+        display: block;
         width: 94.93vw;
-        height: max(100vw, calc(100% - 83.46vw));
+        height: max(94.4vw, calc(100vh - 60vw));
+        /*height: 94.4vw;*/
         position: absolute;
         background-image: url('../images/Bitmap.png');
         background-repeat: no-repeat;
-        background-position: -11.2vw 0;
+        background-position: -8vw 9vw;
         background-size: cover;
         left: 0;
-        top: 83.46vw;
+        top: 60vw;
+        z-index: -1;
     }
 }
