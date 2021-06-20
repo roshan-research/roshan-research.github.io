@@ -1665,10 +1665,10 @@ body {
 
 .nav-background {
   background-color: #4286f5;
-  height: 18.13vw; }
+  height: 18.13vw;
+  position: relative; }
 
 .inner-navbar {
-  position: relative;
   direction: rtl;
   width: 100%;
   height: 100%;
@@ -1677,18 +1677,15 @@ body {
   align-items: center;
   color: white; }
 
-.nav-item {
-  margin-right: 5%;
-  text-align: right; }
-
 .navbar-nav {
   direction: rtl; }
 
 .navbar-button {
   position: absolute;
   right: 5.33vw;
-  padding: 0;
-  z-index: 3; }
+  padding: 0; }
+  .navbar-button:focus {
+    outline: 0; }
   .navbar-button .navbar-toggler-icon {
     width: 7.2vw;
     height: 4.8vw; }
@@ -1698,20 +1695,45 @@ body {
 
 .navbar-collapse {
   direction: ltr;
+  padding: 2.29vw 2.66vw 4.5vw 4vw;
+  border-radius: 2.66vw 0 2.66vw 2.66vw;
+  background-color: #153b79;
+  width: 30vw;
+  height: max-content;
   position: absolute;
-  right: 5.53vw;
-  top: 49%;
-  z-index: 2; }
-  .navbar-collapse .nav-items {
-    color: #ffffff;
-    font-size: 4.798vw;
+  right: 5.2vw;
+  top: 6.5vw;
+  z-index: 1; }
+  .navbar-collapse .close-icon {
+    display: block;
+    cursor: pointer;
+    width: 4.5vw;
+    height: 4.5vw;
+    margin: 0.42vw 0 3.09vw auto; }
+  .navbar-collapse ul {
+    padding: 0;
     width: max-content;
-    font-family: IRANYekanMobileFaNum, serif;
-    font-weight: bold; }
-  .navbar-collapse .nav-items:hover {
-    color: #cdfff5; }
-  .navbar-collapse .nav-items:focus {
-    color: #cdfff5; }
+    margin: 0 auto; }
+  .navbar-collapse .nav-item {
+    text-align: right;
+    margin-right: 0;
+    height: 8.3vw;
+    display: inline-flex;
+    align-items: center; }
+    .navbar-collapse .nav-item a {
+      color: #ffffff;
+      width: max-content;
+      font-family: IRANYekanMobileFaNum, serif;
+      font-size: 4.5vw;
+      font-weight: normal;
+      font-stretch: normal;
+      font-style: normal;
+      line-height: normal;
+      letter-spacing: normal; }
+    .navbar-collapse .nav-item a:hover {
+      color: #cdfff5; }
+    .navbar-collapse .nav-item a:focus {
+      color: #cdfff5; }
 
 /*!* Extra small devices (phones, 576px and down) *!*/
 /*@media only screen and (max-width: 576px) {...}*/
@@ -1736,21 +1758,25 @@ body {
     height: 2.99vw;
     margin-top: 0.6512vw; }
   .navbar-collapse {
+    padding: 0;
     flex-grow: 0;
     display: inline-flex;
-    position: static; }
-    .navbar-collapse ul {
-      padding-right: 0; }
+    position: static;
+    background-color: inherit; }
+    .navbar-collapse .close-icon {
+      display: none; }
     .navbar-collapse .nav-item {
-      margin-right: 3.82vw !important; }
-    .navbar-collapse .nav-items {
-      color: #ffffff;
-      font-size: 1.02vw;
-      padding-left: 0 !important; }
-    .navbar-collapse .nav-items:hover {
-      color: #cdfff5; }
-    .navbar-collapse .nav-items:focus {
-      color: #cdfff5; } }
+      margin-right: 3.82vw;
+      height: auto; }
+      .navbar-collapse .nav-item a {
+        color: #ffffff;
+        font-size: 1.02vw;
+        font-weight: bold;
+        padding-left: 0 !important; }
+      .navbar-collapse .nav-item a:hover {
+        color: #cdfff5; }
+      .navbar-collapse .nav-item a:focus {
+        color: #cdfff5; } }
 
 /*!* Extra large devices (large laptops and desktops, 1200px and up) *!*/
 html {
