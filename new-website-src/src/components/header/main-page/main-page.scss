@@ -1,0 +1,18 @@
+
+@import "./src/shared-styles/mobile-mediaqueries-header";
+
+.all .mobile-background{
+  display: none;
+  height: 70vh;
+  width:auto;
+  float: left;
+  position: relative;
+}
+
+.all .web-background{
+  width:100%;
+  height: 93vh;
+  position: relative;
+}
+
+@include mobile-media-queries-header()

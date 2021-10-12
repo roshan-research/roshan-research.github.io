@@ -1,0 +1,18 @@
+.contact-us #button{
+  height: 3.35vh;
+  width: 5vw;
+}
+
+#button:hover{
+  #text{
+    fill: #7AB8FF
+  }
+}
+
+@media screen and (max-width: 500px){
+  .contact-us #button{
+    padding-top: 10vh;
+    height: 5.24vh;
+    width: 25vw;
+  }
+}
