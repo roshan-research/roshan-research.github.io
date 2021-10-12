@@ -116,6 +116,7 @@ function HarfWebText(props) {
             />
                 <a
                     href={''}
+                    target="_blank"
                     id={'link-harf'}
                 >
                     <rect id="Hidden Layer" y="218" width="153" height="33" fill="black" fillOpacity="0.01"/>

@@ -118,6 +118,7 @@ function HazmWebText(props) {
                 d="M248.14 62.088a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"
             />
                 <a
+                    target="_blank"
                     href={'https://www.sobhe.ir/hazm'}
                     id={'link-hazm'}
                 >
