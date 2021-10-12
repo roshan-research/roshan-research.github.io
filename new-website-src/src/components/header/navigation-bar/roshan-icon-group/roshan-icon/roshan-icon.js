@@ -5,7 +5,7 @@ import {Link} from "react-router-dom";
 function RoshanIcon() {
     return (
         <div className='roshan-icon'>
-            <Link to={'/test'}>
+            <Link to={'/roshan-ir.github.io'}>
                 <RoshanSVG className='icon'/>
             </Link>
         </div>
