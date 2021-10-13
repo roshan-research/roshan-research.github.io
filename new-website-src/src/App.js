@@ -4,7 +4,7 @@ import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
 import {FullPage as NormalFullPage,Slide as NormalSlide} from 'react-full-page';
 
-import {isOpera} from "react-device-detect";
+import {isOpera, isSafari} from "react-device-detect";
 import FooterWeb from "./components/slides/footer/footer";
 
 const Header = lazy(() => import("./components/header/header"));
@@ -60,7 +60,7 @@ class RoshanWebsite extends Component {
         };
 
         const browserChooser = (fullPageOptions,onSlideChangeStart) => {
-            if(isOpera) {
+            if(isOpera || isSafari) {
                 return(
                     <NormalFullPage>
                         <NormalSlide>
