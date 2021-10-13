@@ -97,7 +97,7 @@ class RoshanWebsite extends Component {
             <div>
                 <Suspense fallback={<ProgressIndicator/>}>
                     <Switch>
-                        <Route path={'/roshan-ir.github.io'} exact>
+                        <Route path={'/'} exact>
                             {browserChooser(fullPageOptions,onSlideChangeStart)}
                         </Route>
                         <Route path={'/contact-us'}>
