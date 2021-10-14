@@ -6,14 +6,20 @@
 }
 
 #compact-menu{
-  margin-top: 60px;
-  height: 150px;
+  height: 22.66vh;
+  width: 28.61vw;
+  margin-top: 27.34vh;
+  margin-right: 36.11vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
 }
 
+#compact-menu #home{
+  height: 5.47vh;
+  width: 9.73vw;
+}
 
 #background {
   width: 100vm;
