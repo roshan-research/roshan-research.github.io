@@ -5,7 +5,7 @@ import './kashf.scss'
 import {isMobile} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
-    if(!isMobile){
+    if(isMobile){
         return(
             <div id={'mobile'}>
                 <KashfMobile status={props.scrollQuantity}/>

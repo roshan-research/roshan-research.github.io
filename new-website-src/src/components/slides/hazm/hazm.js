@@ -5,7 +5,7 @@ import HazmWebText from "../../jsx-svgs/web/hazm-text";
 import {isMobile} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
-    if(!isMobile){
+    if(isMobile){
         return(
             <div id={'mobile'}>
                 <HazmMobile status={props.scrollQuantity}/>

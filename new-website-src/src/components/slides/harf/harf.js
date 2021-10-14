@@ -19,7 +19,7 @@ const animationChooser = (scrollQuantity) => {
 
 
 const returnBasedOneDevice = (props) => {
-    if(!isMobile){
+    if(isMobile){
         return(
             <div id={'mobile'}>
                 <HarfMobile status={props.scrollQuantity}/>

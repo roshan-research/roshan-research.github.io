@@ -5,7 +5,7 @@ import AlefbaWebImage from "../../jsx-svgs/web/alefba-image";
 import {isMobile} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
-    if(!isMobile){
+    if(isMobile){
         return(
             <div id={'mobile'}>
                 <AlefbaMobile status={props.scrollQuantity}/>

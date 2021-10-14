@@ -23,7 +23,7 @@ const imageAnimationChooser = (scrollQuantity) => {
 };
 
 const returnBasedOneDevice = () => {
-  if(!isMobile){
+  if(isMobile){
       return(
           <MobileBackground className='mobile-background'/>
       )
