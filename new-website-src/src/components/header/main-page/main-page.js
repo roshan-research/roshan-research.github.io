@@ -22,8 +22,8 @@ const imageAnimationChooser = (scrollQuantity) => {
     }
 };
 
-const returnBasedOneDevice = (props) => {
-  if(isMobile){
+const returnBasedOneDevice = () => {
+  if(!isMobile){
       return(
           <MobileBackground className='mobile-background'/>
       )
