@@ -1,7 +1,7 @@
 #table{
     height: 73.5vh;
     width: 80.6vw;
-    margin-top: 15.63vh;
+    margin-top: 6vh;
     display:table;
 }
 
@@ -36,4 +36,17 @@
 
 #stack{
     position: absolute;
+}
+
+#customers{
+   display: flex;
+    justify-content: start;
+    align-content: start;
+    flex-direction: column;
+}
+
+#text{
+    margin-top: 8vh;
+    height: 5.46vh;
+    width: 27.7vw;
 }
