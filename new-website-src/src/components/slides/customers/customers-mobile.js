@@ -28,6 +28,10 @@ import {ReactComponent as Nazdika} from "../../../assets/images/mobile/customers
 import {ReactComponent as Amin} from "../../../assets/images/mobile/customers/row2/couple1/Amin.svg";
 import {ReactComponent as Ammar} from "../../../assets/images/mobile/customers/row2/couple2/Ammar.svg";
 import {ReactComponent as Farabi} from "../../../assets/images/mobile/customers/row2/couple3/Farabi.svg";
+
+import {ReactComponent as Fars} from "../../../assets/images/mobile/customers/row3/couple1/Fars.svg";
+import {ReactComponent as Tabeii} from "../../../assets/images/mobile/customers/row3/couple2/Tabeii.svg";
+import {ReactComponent as Civilica} from "../../../assets/images/mobile/customers/row3/couple3/Civilica.svg";
 import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg'
 import {
     couple21Man,
@@ -36,6 +40,13 @@ import {
     couple22Woman, couple23Man,
     couple23Woman
 } from "../../../animations/customers-mobile/row2";
+import {
+    couple31Man,
+    couple31Woman,
+    couple32Man,
+    couple32Woman,
+    couple33Man, couple33Woman
+} from "../../../animations/customers-mobile/row3";
 
 
 function CustomersMobile(props){
@@ -171,13 +182,64 @@ function CustomersMobile(props){
                 </div>
                 <div className={'row'}>
                     <div className={'box'} id={'box-left'}>
-                        <Parsian/>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple31Man.initial}
+                            animate={couple31Man.animate}
+                            transition={couple31Man.transition}
+                        >
+                            <Parsian/>
+                        </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple31Woman.initial}
+                            animate={couple31Woman.animate}
+                            transition={couple31Woman.transition}
+                        >
+                            <Fars/>
+                        </motion.div>
                     </div>
                     <div className={'box'} id={'box-middle'}>
-                        <Irandoc/>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple32Man.initial}
+                            animate={couple32Man.animate}
+                            transition={couple32Man.transition}
+                        >
+                            <Irandoc/>
+                        </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple32Woman.initial}
+                            animate={couple32Woman.animate}
+                            transition={couple32Woman.transition}
+                        >
+                            <Tabeii/>
+                        </motion.div>
                     </div>
                     <div className={'box'} id={'box-right'}>
-                        <Azmoon/>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple33Man.initial}
+                            animate={couple33Man.animate}
+                            transition={couple33Man.transition}
+                        >
+                            <Azmoon/>
+                        </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple33Woman.initial}
+                            animate={couple33Woman.animate}
+                            transition={couple33Woman.transition}
+                        >
+                            <Civilica/>
+                        </motion.div>
                     </div>
                 </div>
                 <div className={'row'}>

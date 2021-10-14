@@ -6,7 +6,7 @@ export const couple31Man = {
         opacity: 0,
     },
     transition:{
-        repeatDelay: 10,
+        repeatDelay: 5,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
@@ -22,7 +22,7 @@ export const couple31Woman = {
         opacity: 1,
     },
     transition:{
-        repeatDelay: 10,
+        repeatDelay: 5,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
@@ -37,8 +37,8 @@ export const couple32Man = {
         opacity: 0,
     },
     transition:{
-        delay: 4,
-        repeatDelay: 10,
+        delay: 14,
+        repeatDelay: 5,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
@@ -54,8 +54,8 @@ export const couple32Woman = {
         opacity: 1,
     },
     transition:{
-        delay: 4,
-        repeatDelay: 10,
+        delay: 14,
+        repeatDelay: 5,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
@@ -70,8 +70,8 @@ export const couple33Man = {
         opacity: 0,
     },
     transition:{
-        delay: 10,
-        repeatDelay: 10,
+        delay: 2,
+        repeatDelay: 20,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
@@ -87,8 +87,8 @@ export const couple33Woman = {
         opacity: 1,
     },
     transition:{
-        delay: 10,
-        repeatDelay: 10,
+        delay: 2,
+        repeatDelay: 20,
         ease: "linear",
         duration: 2,
         repeatType: "reverse",
