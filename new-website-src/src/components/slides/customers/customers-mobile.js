@@ -32,6 +32,9 @@ import {ReactComponent as Farabi} from "../../../assets/images/mobile/customers/
 import {ReactComponent as Fars} from "../../../assets/images/mobile/customers/row3/couple1/Fars.svg";
 import {ReactComponent as Tabeii} from "../../../assets/images/mobile/customers/row3/couple2/Tabeii.svg";
 import {ReactComponent as Civilica} from "../../../assets/images/mobile/customers/row3/couple3/Civilica.svg";
+
+import {ReactComponent as Bimarestan} from "../../../assets/images/mobile/customers/row4/couple1/Bimarestan.svg";
+
 import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg'
 import {
     couple21Man,
@@ -47,6 +50,7 @@ import {
     couple32Woman,
     couple33Man, couple33Woman
 } from "../../../animations/customers-mobile/row3";
+import {couple42Man, couple42Woman} from "../../../animations/customers-mobile/row4";
 
 
 function CustomersMobile(props){
@@ -247,7 +251,24 @@ function CustomersMobile(props){
                         <Tamasha/>
                     </div>
                     <div className={'box'} id={'box-middle'}>
-                        <Taghche/>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Man.initial}
+                            animate={couple42Man.animate}
+                            transition={couple42Man.transition}
+                        >
+                            <Taghche/>
+                        </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Woman.initial}
+                            animate={couple42Woman.animate}
+                            transition={couple42Woman.transition}
+                        >
+                            <Bimarestan/>
+                        </motion.div>
                     </div>
                     <div className={'box'} id={'box-right'}>
                         <Varzesh/>
