@@ -1,12 +1,19 @@
 import './customers-mobile.scss';
+import {
+    couple11Man,
+    couple11Woman,
+    couple12Man, couple12Woman,
+    couple13Man, couple13Woman
+} from "../../../animations/customers-mobile/row1";
+import {motion} from 'framer-motion';
 
-import {ReactComponent as Keshvar} from "../../../assets/images/mobile/customers/row1/Keshvar.svg";
-import {ReactComponent as Naft} from "../../../assets/images/mobile/customers/row1/Naft.svg";
-import {ReactComponent as Ketabkhaneh} from "../../../assets/images/mobile/customers/row1/Ketabkhaneh.svg";
+import {ReactComponent as Keshvar} from "../../../assets/images/mobile/customers/row1/couple1/Keshvar.svg";
+import {ReactComponent as Naft} from "../../../assets/images/mobile/customers/row1/couple2/Naft.svg";
+import {ReactComponent as Ketabkhaneh} from "../../../assets/images/mobile/customers/row1/couple3/Ketabkhaneh.svg";
 
-import {ReactComponent as Setad} from "../../../assets/images/mobile/customers/row2/Setad.svg";
-import {ReactComponent as Astan} from "../../../assets/images/mobile/customers/row2/Astan.svg";
-import {ReactComponent as Mokhaberat} from "../../../assets/images/mobile/customers/row2/Mokhaberat.svg";
+import {ReactComponent as Setad} from "../../../assets/images/mobile/customers/row2/couple2/Setad.svg";
+import {ReactComponent as Astan} from "../../../assets/images/mobile/customers/row2/couple2/Astan.svg";
+import {ReactComponent as Mokhaberat} from "../../../assets/images/mobile/customers/row2/couple3/Mokhaberat.svg";
 
 import {ReactComponent as Parsian} from "../../../assets/images/mobile/customers/row3/Parsian.svg";
 import {ReactComponent as Irandoc} from "../../../assets/images/mobile/customers/row3/Irandoc.svg";
@@ -16,18 +23,74 @@ import {ReactComponent as Tamasha} from "../../../assets/images/mobile/customers
 import {ReactComponent as Taghche} from "../../../assets/images/mobile/customers/row4/Taghche.svg";
 import {ReactComponent as Varzesh} from "../../../assets/images/mobile/customers/row4/Varzesh.svg";
 
+import {ReactComponent as Jahad} from "../../../assets/images/mobile/customers/row1/couple1/Jahad.svg";
+import {ReactComponent as Bimeh} from "../../../assets/images/mobile/customers/row1/couple2/Bimeh.svg";
+import {ReactComponent as Nazdika} from "../../../assets/images/mobile/customers/row1/couple3/Nazdika.svg";
+
+
 function CustomersMobile(props){
     return(
         <div id={'table'}>
             <div className={'row'}>
-                <div className={'box'} id={'box-left'}>
-                    <Keshvar/>
-                </div>
+                <motion.div className={'box'} id={'box-left'}>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple11Man.initial}
+                        animate={couple11Man.animate}
+                        transition={couple11Man.transition}
+                    >
+                        <Keshvar/>
+                    </motion.div>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple11Woman.initial}
+                        animate={couple11Woman.animate}
+                        transition={couple11Woman.transition}
+                    >
+                        <Jahad/>
+                    </motion.div>
+                </motion.div>
                 <div className={'box'} id={'box-middle'}>
-                    <Naft/>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple12Man.initial}
+                        animate={couple12Man.animate}
+                        transition={couple12Man.transition}
+                    >
+                        <Naft/>
+                    </motion.div>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple12Woman.initial}
+                        animate={couple12Woman.animate}
+                        transition={couple12Woman.transition}
+                    >
+                        <Bimeh/>
+                    </motion.div>
                 </div>
                 <div className={'box'} id={'box-right'}>
-                    <Ketabkhaneh/>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple13Man.initial}
+                        animate={couple13Man.animate}
+                        transition={couple13Man.transition}
+                    >
+                        <Ketabkhaneh/>
+                    </motion.div>
+                    <motion.div
+                        className={'box'}
+                        id={'stack'}
+                        initial={couple13Woman.initial}
+                        animate={couple13Woman.animate}
+                        transition={couple13Woman.transition}
+                    >
+                        <Nazdika/>
+                    </motion.div>
                 </div>
             </div>
             <div className={'row'}>

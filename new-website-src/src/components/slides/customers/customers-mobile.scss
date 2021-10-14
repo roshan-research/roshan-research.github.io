@@ -16,12 +16,14 @@
     color: white;
     float:left;
     display: flex;
+    flex-direction: row;
     justify-content: center;
     height: 14.06vh;
     width: 25vw;
 }
 
 #box-left{
+
 }
 
 #box-middle{
@@ -30,4 +32,8 @@
 
 #box-right{
     padding-left: 2.7vw;
+}
+
+#stack{
+    position: absolute;
 }
