@@ -1,16 +1,16 @@
 import CustomersWeb from "../../jsx-svgs/web/customers";
-import {ReactComponent as CustomersMobile} from "../../../assets/images/mobile-customers.svg";
 import './customers.scss'
 import {isMobile} from "react-device-detect";
 import {Component} from "react";
 import {findDOMNode} from "react-dom";
+import CustomersMobile from "./customers-mobile";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
 }
 
 const returnBasedOneDevice = (props) => {
-    if(isMobile){
+    if(!isMobile){
         return(
             <CustomersMobile id={'mobile'}/>
         )

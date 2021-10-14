@@ -1,0 +1,33 @@
+#table{
+    height: 73.5vh;
+    width: 80.6vw;
+    margin-top: 15.63vh;
+    display:table;
+}
+
+.row{
+    width: 80.6vw;
+    display: table-row;
+    height: 14.06vh;
+}
+
+
+.box{
+    color: white;
+    float:left;
+    display: flex;
+    justify-content: center;
+    height: 14.06vh;
+    width: 25vw;
+}
+
+#box-left{
+}
+
+#box-middle{
+    padding-left: 2.7vw;
+}
+
+#box-right{
+    padding-left: 2.7vw;
+}
