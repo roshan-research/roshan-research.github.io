@@ -5,7 +5,7 @@ import {Fullpage,Slide} from 'fullpage-react';
 import {FullPage as NormalFullPage,Slide as NormalSlide} from 'react-full-page';
 
 import {isOpera, isSafari} from "react-device-detect";
-import FooterWeb from "./components/slides/footer/footer";
+import Footer from "./components/slides/footer/footer";
 
 const Header = lazy(() => import("./components/header/header"));
 const Kashf = lazy(() => import("./components/slides/kashf/kashf"));
@@ -87,7 +87,7 @@ class RoshanWebsite extends Component {
                 return(
                     <div>
                         <Fullpage {...fullPageOptions} onSlideChangeStart={onSlideChangeStart}/>
-                        <FooterWeb/>
+                        <Footer/>
                     </div>
                 )
             }
