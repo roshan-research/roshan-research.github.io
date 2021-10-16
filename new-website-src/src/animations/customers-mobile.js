@@ -1,4 +1,39 @@
-export const couple21Man = {
+export default function customersAnimation(repeatDelay,delay,initialOpacity,targetOpacity){
+    return {
+        initial: {
+            opacity: initialOpacity,
+        },
+        animate: {
+            opacity: targetOpacity,
+        },
+        transition:{
+            repeatDelay: repeatDelay,
+            delay: delay,
+            ease: "linear",
+            duration: 1,
+            repeatType: "reverse",
+            repeat: Infinity
+        }
+    };
+}
+
+
+export const couple11Woman = {
+    initial: {
+        opacity: 0,
+    },
+    animate: {
+        opacity: 1,
+    },
+    transition:{
+        repeatDelay: 10,
+        ease: "linear",
+        duration: 1,
+        repeatType: "reverse",
+        repeat: Infinity
+    }
+};
+export const couple12Man = {
     initial: {
         opacity: 1,
     },
@@ -6,8 +41,8 @@ export const couple21Man = {
         opacity: 0,
     },
     transition:{
-        delay:1,
-        repeatDelay: 5,
+        delay: 4,
+        repeatDelay: 10,
         ease: "linear",
         duration: 1,
         repeatType: "reverse",
@@ -15,7 +50,7 @@ export const couple21Man = {
     }
 };
 
-export const couple21Woman = {
+export const couple12Woman = {
     initial: {
         opacity: 0,
     },
@@ -23,48 +58,15 @@ export const couple21Woman = {
         opacity: 1,
     },
     transition:{
-        delay:1,
-        repeatDelay: 5,
+        delay: 4,
+        repeatDelay: 10,
         ease: "linear",
         duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
 };
-export const couple22Man = {
-    initial: {
-        opacity: 1,
-    },
-    animate: {
-        opacity: 0,
-    },
-    transition:{
-        delay: 7,
-        repeatDelay: 15,
-        ease: "linear",
-        duration: 1,
-        repeatType: "reverse",
-        repeat: Infinity
-    }
-};
-
-export const couple22Woman = {
-    initial: {
-        opacity: 0,
-    },
-    animate: {
-        opacity: 1,
-    },
-    transition:{
-        delay: 7,
-        repeatDelay: 15,
-        ease: "linear",
-        duration: 1,
-        repeatType: "reverse",
-        repeat: Infinity
-    }
-};
-export const couple23Man = {
+export const couple13Man = {
     initial: {
         opacity: 1,
     },
@@ -73,7 +75,7 @@ export const couple23Man = {
     },
     transition:{
         delay: 10,
-        repeatDelay: 6,
+        repeatDelay: 10,
         ease: "linear",
         duration: 1,
         repeatType: "reverse",
@@ -81,7 +83,7 @@ export const couple23Man = {
     }
 };
 
-export const couple23Woman = {
+export const couple13Woman = {
     initial: {
         opacity: 0,
     },
@@ -90,7 +92,7 @@ export const couple23Woman = {
     },
     transition:{
         delay: 10,
-        repeatDelay: 6,
+        repeatDelay: 10,
         ease: "linear",
         duration: 1,
         repeatType: "reverse",
