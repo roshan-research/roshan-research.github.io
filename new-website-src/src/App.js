@@ -86,6 +86,7 @@ class RoshanWebsite extends Component {
             } else {
                 return(
                     <div>
+                        <ProgressIndicator/>
                         <Fullpage {...fullPageOptions} onSlideChangeStart={onSlideChangeStart}/>
                         <Footer/>
                     </div>
