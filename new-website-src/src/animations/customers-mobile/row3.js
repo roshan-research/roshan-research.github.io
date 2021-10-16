@@ -8,7 +8,7 @@ export const couple31Man = {
     transition:{
         repeatDelay: 5,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
@@ -24,7 +24,7 @@ export const couple31Woman = {
     transition:{
         repeatDelay: 5,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
@@ -40,7 +40,7 @@ export const couple32Man = {
         delay: 14,
         repeatDelay: 5,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
@@ -57,7 +57,7 @@ export const couple32Woman = {
         delay: 14,
         repeatDelay: 5,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
@@ -73,7 +73,7 @@ export const couple33Man = {
         delay: 2,
         repeatDelay: 20,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }
@@ -90,7 +90,7 @@ export const couple33Woman = {
         delay: 2,
         repeatDelay: 20,
         ease: "linear",
-        duration: 2,
+        duration: 1,
         repeatType: "reverse",
         repeat: Infinity
     }

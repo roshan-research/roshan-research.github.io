@@ -19,7 +19,7 @@ import {ReactComponent as Azmoon} from "../../../assets/images/mobile/customers/
 
 import {ReactComponent as Tamasha} from "../../../assets/images/mobile/customers/row4/couple1/Tamasha.svg";
 import {ReactComponent as Taghche} from "../../../assets/images/mobile/customers/row4/couple2/Taghche.svg";
-import {ReactComponent as Varzesh} from "../../../assets/images/mobile/customers/row4/couple3/Varzesh.svg";
+import {ReactComponent as Varzesh} from "../../../assets/images/mobile/customers/row4/couple1/Varzesh.svg";
 
 import {ReactComponent as Jahad} from "../../../assets/images/mobile/customers/row1/couple1/Jahad.svg";
 import {ReactComponent as Bimeh} from "../../../assets/images/mobile/customers/row1/couple2/Bimeh.svg";
@@ -33,7 +33,7 @@ import {ReactComponent as Fars} from "../../../assets/images/mobile/customers/ro
 import {ReactComponent as Tabeii} from "../../../assets/images/mobile/customers/row3/couple2/Tabeii.svg";
 import {ReactComponent as Civilica} from "../../../assets/images/mobile/customers/row3/couple3/Civilica.svg";
 
-import {ReactComponent as Bimarestan} from "../../../assets/images/mobile/customers/row4/couple1/Bimarestan.svg";
+import {ReactComponent as Bimarestan} from "../../../assets/images/mobile/customers/row4/couple2/Bimarestan.svg";
 
 import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg'
 import {
