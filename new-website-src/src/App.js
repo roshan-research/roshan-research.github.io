@@ -2,7 +2,6 @@ import {Route, Switch} from 'react-router-dom';
 import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
-import {FullPage as NormalFullPage,Slide as NormalSlide} from 'react-full-page';
 
 import {isOpera, isSafari} from "react-device-detect";
 import Footer from "./components/slides/footer/footer";
@@ -32,25 +31,32 @@ class RoshanWebsite extends Component {
         };
 
         fullPageOptions.slides = [
-            // <Slide>
-            //     <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
-            // <Slide>
-            //     <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
-            // <Slide>
-            //     <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
-            // <Slide>
-            //     <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
-            // <Slide>
-            //     <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
+            <Slide>
+                <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
             <Slide>
                 <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>
         ];
+
+        const divStyle={
+            overflowY: 'scroll',
+            float: 'left',
+            height:'100vh',
+            position:'relative'
+        };
 
         const onSlideChangeStart = () => {
             this.setState({
@@ -62,26 +68,15 @@ class RoshanWebsite extends Component {
         const browserChooser = (fullPageOptions,onSlideChangeStart) => {
             if(isOpera || isSafari) {
                 return(
-                    <NormalFullPage>
-                        <NormalSlide>
-                            <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                        <NormalSlide>
-                            <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                        <NormalSlide>
-                            <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                        <NormalSlide>
-                            <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                        <NormalSlide>
-                            <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                        <NormalSlide>
-                            <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        </NormalSlide>
-                    </NormalFullPage>
+                    <div style={divStyle}>
+                        <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Footer/>
+                    </div>
                 )
             } else {
                 return(
