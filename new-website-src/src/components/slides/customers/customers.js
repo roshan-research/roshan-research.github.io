@@ -4,6 +4,8 @@ import {isMobile} from "react-device-detect";
 import {Component} from "react";
 import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
+import {flowerAnimation} from "../../../animations/kashf-image";
+import {motion} from 'framer-motion';
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
@@ -12,7 +14,13 @@ function shouldRender(scrollQuantity){
 const returnBasedOneDevice = (props) => {
     if(isMobile){
         return(
-            <CustomersMobile id={'mobile'}/>
+            <motion.div
+                variants={flowerAnimation}
+                initial={"hidden"}
+                animate={"visible"}
+            >
+                <CustomersMobile id={'mobile'}/>
+            </motion.div>
         )
     } else {
         return(
