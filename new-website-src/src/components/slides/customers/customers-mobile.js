@@ -248,8 +248,27 @@ function CustomersMobile(props){
                 </div>
                 <div className={'row'}>
                     <div className={'box'} id={'box-left'}>
+                        <motion.div className={'box'} id={'box-right'}>
+                            <motion.div
+                                className={'box'}
+                                id={'stack'}
+                                initial={couple42Man.initial}
+                                animate={couple42Man.animate}
+                                transition={couple42Man.transition}
+                            >
+                                <Tamasha/>
+                            </motion.div>
+                            <motion.div
+                                className={'box'}
+                                id={'stack'}
+                                initial={couple42Woman.initial}
+                                animate={couple42Woman.animate}
+                                transition={couple42Woman.transition}
+                            >
+                                <Fars/>
+                            </motion.div>
+                        </motion.div>
                         <div className={'box'}>
-                            <Tamasha/>
                         </div>
                     </div>
                     <div className={'box'} id={'box-middle'}>
@@ -273,9 +292,24 @@ function CustomersMobile(props){
                         </motion.div>
                     </div>
                     <motion.div className={'box'} id={'box-right'}>
-                        <div className={'box'}>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Man.initial}
+                            animate={couple42Man.animate}
+                            transition={couple42Man.transition}
+                        >
                             <Varzesh/>
-                        </div>
+                        </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Woman.initial}
+                            animate={couple42Woman.animate}
+                            transition={couple42Woman.transition}
+                        >
+                            <Azmoon/>
+                        </motion.div>
                     </motion.div>
                 </div>
             </div>
