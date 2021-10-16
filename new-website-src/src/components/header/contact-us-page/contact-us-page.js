@@ -7,7 +7,7 @@ import {startingAnimation} from "../../../animations/main-page";
 import {isMobile} from "react-device-detect";
 
 const returnBasedOneDevice = () => {
-    if(!isMobile){
+    if(isMobile){
         return(
             <ContactUsMobile id={'mobile'}/>
         )
