@@ -12,7 +12,7 @@ function shouldRender(scrollQuantity){
 }
 
 const returnBasedOneDevice = (props) => {
-    if(isMobile){
+    if(!isMobile){
         return(
             <motion.div
                 variants={flowerAnimation}

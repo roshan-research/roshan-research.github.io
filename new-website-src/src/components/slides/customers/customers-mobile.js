@@ -248,28 +248,24 @@ function CustomersMobile(props){
                 </div>
                 <div className={'row'}>
                     <div className={'box'} id={'box-left'}>
-                        <motion.div className={'box'} id={'box-right'}>
-                            <motion.div
-                                className={'box'}
-                                id={'stack'}
-                                initial={couple42Man.initial}
-                                animate={couple42Man.animate}
-                                transition={couple42Man.transition}
-                            >
-                                <Tamasha/>
-                            </motion.div>
-                            <motion.div
-                                className={'box'}
-                                id={'stack'}
-                                initial={couple42Woman.initial}
-                                animate={couple42Woman.animate}
-                                transition={couple42Woman.transition}
-                            >
-                                <Fars/>
-                            </motion.div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Man.initial}
+                            animate={couple42Man.animate}
+                            transition={couple42Man.transition}
+                        >
+                            <Tamasha/>
                         </motion.div>
-                        <div className={'box'}>
-                        </div>
+                        <motion.div
+                            className={'box'}
+                            id={'stack'}
+                            initial={couple42Woman.initial}
+                            animate={couple42Woman.animate}
+                            transition={couple42Woman.transition}
+                        >
+                            <Fars/>
+                        </motion.div>
                     </div>
                     <div className={'box'} id={'box-middle'}>
                         <motion.div
@@ -291,7 +287,7 @@ function CustomersMobile(props){
                             <Bimarestan/>
                         </motion.div>
                     </div>
-                    <motion.div className={'box'} id={'box-right'}>
+                    <div className={'box'} id={'box-right'}>
                         <motion.div
                             className={'box'}
                             id={'stack'}
@@ -310,7 +306,7 @@ function CustomersMobile(props){
                         >
                             <Azmoon/>
                         </motion.div>
-                    </motion.div>
+                    </div>
                 </div>
             </div>
         </div>
