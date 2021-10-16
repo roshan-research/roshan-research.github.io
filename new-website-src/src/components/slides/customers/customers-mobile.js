@@ -59,7 +59,7 @@ function CustomersMobile(props){
             <div id={'text'}>
                 <Text/>
             </div>
-            <div id={'table'}>
+            <div id={'table stack'}>
                 <div className={'row'}>
                     <div className={'box'} id={'box-left'}>
                         <motion.div
@@ -248,7 +248,9 @@ function CustomersMobile(props){
                 </div>
                 <div className={'row'}>
                     <div className={'box'} id={'box-left'}>
-                        <Tamasha/>
+                        <div className={'box'}>
+                            <Tamasha/>
+                        </div>
                     </div>
                     <div className={'box'} id={'box-middle'}>
                         <motion.div
@@ -270,9 +272,11 @@ function CustomersMobile(props){
                             <Bimarestan/>
                         </motion.div>
                     </div>
-                    <div className={'box'} id={'box-right'}>
-                        <Varzesh/>
-                    </div>
+                    <motion.div className={'box'} id={'box-right'}>
+                        <div className={'box'}>
+                            <Varzesh/>
+                        </div>
+                    </motion.div>
                 </div>
             </div>
         </div>
