@@ -10,12 +10,3 @@
     align-items: center;
     flex-direction: column;
 }
-
-@media screen and (max-width: 500px){
-    .wrapper #progress-indicator{
-        height: 70vh;
-        margin-top:14vh;
-        width:70vw;
-    }
-
-}
