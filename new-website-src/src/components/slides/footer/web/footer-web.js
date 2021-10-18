@@ -81,7 +81,7 @@ export default function FooterWeb() {
                 </div>
                 <div id={'left'}>
                     <div id={'links'}>
-                        <Link to={'/contact-us'} target="_blank" rel="noopener noreferrer" title={'بخش تماس با ما'}>
+                        <Link to={'/contact-us'}  title={'بخش تماس با ما'}>
                             <svg
                                 id={'contact-us'}
                                 width={62}
@@ -98,7 +98,7 @@ export default function FooterWeb() {
                                 />
                             </svg>
                         </Link>
-                        <Link to={'/join-us'} target="_blank" rel="noopener noreferrer" title={'بخش همکاری باما'}>
+                        <Link to={'/join-us'}  title={'بخش همکاری باما'}>
                             <svg
                                 id={'join-us'}
                                 width={72}

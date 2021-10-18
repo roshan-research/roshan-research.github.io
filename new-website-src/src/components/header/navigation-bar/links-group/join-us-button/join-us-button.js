@@ -4,7 +4,7 @@ import {Link} from 'react-router-dom';
 function JoinUsButton() {
     return (
         <div className="join-us" title={'بخش همکاری با ما'}>
-            <Link to={'/join-us'} target="_blank" rel="noopener noreferrer">
+            <Link to={'/join-us'} >
                 <svg
                     id={'button'}
                     width={72}
