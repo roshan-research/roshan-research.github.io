@@ -1,11 +1,12 @@
-import React from 'react';
+import React, {lazy} from 'react';
 import {Component} from 'react';
 import './header.scss'
 import Navbar from "./navigation-bar/navbar";
 import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
 import ContactUsButton from "./navigation-bar/links-group/contact-us-button/contact-us-button";
-import JoinusPage from "./join-us-page/joinus-page";
+
+const JoinusPage = lazy(() => import("./join-us-page/joinus-page"));
 
 class Header extends Component {
     state = {
