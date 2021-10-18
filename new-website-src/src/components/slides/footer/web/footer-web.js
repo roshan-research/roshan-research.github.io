@@ -49,7 +49,7 @@ export default function FooterWeb() {
             <Line id={'line'}/>
             <div id={'body'}>
                 <div id={'icons-group'}>
-                    <button onClick={() => {
+                    <button title={'خانه'} onClick={() => {
                         scrollToTop(height);
                     }} style={{
                         backgroundColor: 'transparent',
@@ -57,7 +57,7 @@ export default function FooterWeb() {
                     }}>
                         <RoshanSVG id={'icon'}/>
                     </button>
-                    <button onClick={() => {
+                    <button title={'خانه'} onClick={() => {
                         scrollToTop(height);
                     }} style={{
                         backgroundColor: 'transparent',
@@ -81,7 +81,7 @@ export default function FooterWeb() {
                 </div>
                 <div id={'left'}>
                     <div id={'links'}>
-                        <Link to={'/contact-us'}>
+                        <Link to={'/contact-us'} target="_blank" rel="noopener noreferrer" title={'بخش تماس با ما'}>
                             <svg
                                 id={'contact-us'}
                                 width={62}
@@ -98,7 +98,7 @@ export default function FooterWeb() {
                                 />
                             </svg>
                         </Link>
-                        <Link to={'/join-us'}>
+                        <Link to={'/join-us'} target="_blank" rel="noopener noreferrer" title={'بخش همکاری باما'}>
                             <svg
                                 id={'join-us'}
                                 width={72}

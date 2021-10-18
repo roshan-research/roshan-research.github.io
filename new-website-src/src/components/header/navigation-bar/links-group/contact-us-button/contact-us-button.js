@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 
 function ContactUsButton() {
     return (
-        <div className='contact-us'>
-            <Link to={'/contact-us'}>
+        <div className='contact-us' title={'بخش تماس با ما'}>
+            <Link to={'/contact-us'} target="_blank" rel="noopener noreferrer">
                 <svg
                     id={'button'}
                     width={62}

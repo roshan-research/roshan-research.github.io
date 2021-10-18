@@ -3,8 +3,8 @@ import {Link} from 'react-router-dom';
 
 function JoinUsButton() {
     return (
-        <div className="join-us">
-            <Link to={'/join-us'}>
+        <div className="join-us" title={'بخش همکاری با ما'}>
+            <Link to={'/join-us'} target="_blank" rel="noopener noreferrer">
                 <svg
                     id={'button'}
                     width={72}
