@@ -7,7 +7,7 @@ function App() {
   return (
       <Suspense fallback={<ProgressIndicator/>}>
           <Switch>
-              <Route path={'/join-us'} exact>
+              <Route path={'/'} exact>
                   <Header/>
               </Route>
           </Switch>

@@ -1,11 +1,13 @@
 {
-  "name": "contact-us",
+  "homepage": "https://www.roshan-ai.ir/join-us",
+  "name": "join-us",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.14.1",
     "@testing-library/react": "^11.2.7",
     "@testing-library/user-event": "^12.8.3",
+    "framer-motion": "^4.1.17",
     "lottie-react": "^2.1.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
