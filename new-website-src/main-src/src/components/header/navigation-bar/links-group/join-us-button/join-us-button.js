@@ -1,10 +1,9 @@
 import './join-us-button.scss'
-import {Link} from 'react-router-dom';
 
 function JoinUsButton() {
     return (
         <div className="join-us" title={'بخش همکاری با ما'}>
-            <Link to={'/join-us'} >
+            <a href={'https://www.roshan-ai.ir/join-us'} >
                 <svg
                     id={'button'}
                     width={72}
@@ -19,7 +18,7 @@ function JoinUsButton() {
                         fill="#fff"
                     />
                 </svg>
-            </Link>
+            </a>
         </div>
     )
 }

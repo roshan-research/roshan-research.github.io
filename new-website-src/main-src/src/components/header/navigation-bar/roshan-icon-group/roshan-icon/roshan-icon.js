@@ -1,13 +1,12 @@
 import './roshan-icon.scss'
 import {ReactComponent as RoshanSVG} from '../../../../../assets/images/roshan-icon.svg';
-import {Link} from "react-router-dom";
 
 function RoshanIcon() {
     return (
-        <div className='roshan-icon'>
-            <Link to={'/'}>
+        <div className='roshan-icon' title={'خانه'}>
+            <a href={'https://www.roshan-ai.ir/'}>
                 <RoshanSVG className='icon'/>
-            </Link>
+            </a>
         </div>
     )
 }

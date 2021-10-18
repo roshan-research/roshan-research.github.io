@@ -1,4 +1,4 @@
-import React, {lazy} from 'react';
+import React from 'react';
 import {Component} from 'react';
 import './header.scss'
 import Navbar from "./navigation-bar/navbar";
@@ -6,10 +6,6 @@ import MainPage from "./main-page/main-page";
 import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
 import ContactUsButton from "./navigation-bar/links-group/contact-us-button/contact-us-button";
-import {Link} from "react-router-dom";
-
-const JoinusPage = lazy(() => import("./join-us-page/joinus-page"));
-const ContactUsPage = lazy(() => import("./contact-us-page/contact-us-page"));
 
 class Header extends Component {
     state = {
@@ -26,19 +22,17 @@ class Header extends Component {
         if (this.state.isOpen) {
             return (
                 <div id={'compact-menu'}>
-                    <Link to={'/'}>
+                    <a href={'https://www.roshan-ai.ir/'}>
                         <HomeButton id={'home'}/>
-                    </Link>
+                    </a>
                     <ContactUsButton />
                     <JoinUsButton />
                 </div>
             )
         } else {
-            switch (this.props.type){
-                case 'main': return (<MainPage scrollQuantity={this.props.scrollQuantity}/>);
-                case 'contact-us': return (<ContactUsPage/>);
-                case 'join-us': return (<JoinusPage/>);
-            }
+            return (
+                <MainPage scrollQuantity={this.props.scrollQuantity}/>
+            );
         }
     }
 

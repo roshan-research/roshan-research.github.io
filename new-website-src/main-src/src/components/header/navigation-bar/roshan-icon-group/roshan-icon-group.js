@@ -5,7 +5,7 @@ import './roshan-icon-group.scss';
 
 function IconTextGroup() {
     return (
-        <div className='roshan-icon-group' title={'خانه'}>
+        <div className='roshan-icon-group'>
             <RoshanIcon/>
             <RoshanTitle/>
         </div>

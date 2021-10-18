@@ -1,10 +1,9 @@
 import './roshan-title.scss'
-import {Link} from "react-router-dom";
 
 function RoshanTitle() {
     return (
-        <div className='roshan-title'>
-            <Link to={'/'}>
+        <div className='roshan-title' title={'خانه'}>
+            <a to={'https://www.roshan-ai.ir/'}>
                 <svg
                     width={44}
                     height={17}
@@ -19,7 +18,7 @@ function RoshanTitle() {
                         fill="#fff"
                     />
                 </svg>
-            </Link>
+            </a>
         </div>
     )
 }
