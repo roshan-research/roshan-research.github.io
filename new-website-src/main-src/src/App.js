@@ -2,7 +2,7 @@ import {Route, Switch} from 'react-router-dom';
 import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
-
+import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
 import Footer from "./components/slides/footer/footer";
 
@@ -25,7 +25,7 @@ class RoshanWebsite extends Component {
         const fullPageOptions = {
             scrollSensitivity: 2,
             touchSensitivity: 0.5,
-            scrollSpeed: 600,
+            scrollSpeed: 500,
             hideScrollBars: true,
             enableArrowKeys: false,
         };
@@ -51,12 +51,6 @@ class RoshanWebsite extends Component {
             </Slide>
         ];
 
-        const divStyle={
-            overflowY: 'scroll',
-            float: 'left',
-            height:'100vh',
-            position:'relative'
-        };
 
         const onSlideChangeStart = () => {
             this.setState({
@@ -68,7 +62,7 @@ class RoshanWebsite extends Component {
         const browserChooser = (fullPageOptions,onSlideChangeStart) => {
             if(isOpera || isSafari) {
                 return(
-                    <div style={divStyle}>
+                    <div id={'temporary-safari'}>
                         <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
                         <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
                         <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
@@ -83,8 +77,9 @@ class RoshanWebsite extends Component {
             } else {
                 return(
                     <div>
-                        <ProgressIndicator/>
-                        <Fullpage {...fullPageOptions} onSlideChangeStart={onSlideChangeStart}/>
+                        <Fullpage
+                            {...fullPageOptions}
+                            onSlideChangeStart={onSlideChangeStart}/>
                         <Footer/>
                     </div>
                 )
