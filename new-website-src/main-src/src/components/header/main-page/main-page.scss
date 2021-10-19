@@ -1,6 +1,3 @@
-
-@import "./src/shared-styles/mobile-mediaqueries-header";
-
 .all .mobile-background{
   display: none;
   height: 70vh;
@@ -15,4 +12,14 @@
   position: relative;
 }
 
-@include mobile-media-queries-header()
+@media screen and (max-width: 500px){
+  .all .mobile-background{
+    position: relative;
+    display: flex;
+    width:100%;
+  }
+
+  .all .web-background{
+    display: none;
+  }
+}

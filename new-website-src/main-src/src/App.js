@@ -23,7 +23,7 @@ class RoshanWebsite extends Component {
     render() {
 
         const fullPageOptions = {
-            scrollSensitivity: 2,
+            scrollSensitivity: 1,
             touchSensitivity: 0.5,
             scrollSpeed: 500,
             hideScrollBars: true,
