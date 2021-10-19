@@ -32,7 +32,7 @@ class Header extends Component {
             )
         } else {
             return(
-                <ContactUsPage/>
+                <ContactUsPage scrollQuantity={this.props.scrollQuantity}/>
             )
         }
     }

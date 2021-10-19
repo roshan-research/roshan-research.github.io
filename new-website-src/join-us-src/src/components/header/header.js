@@ -32,7 +32,7 @@ class Header extends Component {
             )
         } else {
             return(
-                <JoinusPage/>
+                <JoinusPage scrollQuantity={this.props.scrollQuantity}/>
             )
         }
     }
