@@ -1,4 +1,5 @@
 .wrapper #progress-indicator{
+    margin: 27.5vh 27.5vw;
     height: 45vh;
     width:45vw;
 }
@@ -14,6 +15,7 @@
 
 @media screen and (max-width: 500px){
     .wrapper #progress-indicator{
+        margin: 0;
         height: 100vh;
         width: 100vw;
     }

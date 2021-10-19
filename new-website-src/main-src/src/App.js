@@ -74,13 +74,16 @@ class RoshanWebsite extends Component {
                         <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
                         <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
                         <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <div style={{height:'10vh',}}/>
                         <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <div style={{height:'10vh',}}/>
                         <Footer/>
                     </div>
                 )
             } else {
                 return(
                     <div>
+                        <ProgressIndicator/>
                         <Fullpage {...fullPageOptions} onSlideChangeStart={onSlideChangeStart}/>
                         <Footer/>
                     </div>
