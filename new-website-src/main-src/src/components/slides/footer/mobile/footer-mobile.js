@@ -7,7 +7,14 @@ export default function FooterMobile(){
         <div>
             <div id={'email-name-mobile'}>
                 <Name id={'name-mobile'}/>
-                <Email id={'email-mobile'}/>
+                <a
+                    title={'تماس از طریق ایمیل'}
+                    href={'mailto:salam@roshan-ai.ir'}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                >
+                    <Email id={'email-mobile'}/>
+                </a>
             </div>
         </div>
     )

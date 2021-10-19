@@ -116,7 +116,14 @@ export default function FooterWeb() {
                     </div>
                     <div id={'email-name'}>
                         <Name id={'name'}/>
-                        <Email id={'email'}/>
+                        <a
+                            title={'تماس از طریق ایمیل'}
+                            href={'mailto:salam@roshan-ai.ir'}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >
+                            <Email id={'email'}/>
+                        </a>
                     </div>
                 </div>
             </div>
