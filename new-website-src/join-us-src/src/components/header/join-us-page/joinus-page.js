@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as JoinUsMobile} from "../../../assets/images/mobile-join-us.svg";
+import JoinUsMobile from "./join-us-mobile";
 import JoinUsWeb from "./join-us-web";
 import './joinus-page.scss';
 import {motion} from 'framer-motion';
@@ -17,7 +17,9 @@ const imageAnimationChooser = (props) => {
 const returnBasedOneDevice = () => {
     if(isMobile){
         return(
-            <JoinUsMobile id={'mobile'}/>
+            <div id={'mobile'}>
+                <JoinUsMobile/>
+            </div>
         )
     } else {
         return(
