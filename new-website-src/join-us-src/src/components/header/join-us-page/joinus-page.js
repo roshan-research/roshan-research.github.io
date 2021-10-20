@@ -1,6 +1,6 @@
 import React from 'react';
 import {ReactComponent as JoinUsMobile} from "../../../assets/images/mobile-join-us.svg";
-import {ReactComponent as JoinUsWeb} from "../../../assets/images/web-join-us.svg";
+import JoinUsWeb from "./join-us-web";
 import './joinus-page.scss';
 import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
