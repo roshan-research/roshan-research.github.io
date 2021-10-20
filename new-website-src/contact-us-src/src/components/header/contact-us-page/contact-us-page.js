@@ -17,7 +17,9 @@ const imageAnimationChooser = (props) => {
 const returnBasedOneDevice = () => {
     if(isMobile){
         return(
-            <ContactUsMobile id={'mobile'}/>
+            <div id={'mobile'}>
+                <ContactUsMobile />
+            </div>
         )
     } else {
         return(
