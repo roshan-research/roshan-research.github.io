@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact-us-page.scss';
-import {ReactComponent as ContactUsMobile} from "../../../assets/images/mobile-contact-us.svg";
-import ContactUsWeb from "./contact-us-web";
+import ContactUsMobile from "./mobile/contact-us-mobile";
+import ContactUsWeb from "./web/contact-us-web";
 import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
 import {isMobile} from "react-device-detect";
