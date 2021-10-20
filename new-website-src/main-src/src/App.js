@@ -1,7 +1,7 @@
 import {Route, Switch} from 'react-router-dom';
 import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
-import {Fullpage,Slide} from 'fullpage-react';
+import {Fullpage,Slide} from 'react-fullpage-slide';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
 import Footer from "./components/slides/footer/footer";

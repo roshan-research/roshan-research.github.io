@@ -2,6 +2,10 @@
   overflow-y: scroll;
   float: left;
   height:100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-content: space-between;
   position:relative;
 }
 
