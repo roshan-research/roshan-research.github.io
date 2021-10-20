@@ -11,11 +11,13 @@ const JoinusPage = lazy(() => import("./join-us-page/joinus-page"));
 class Header extends Component {
     state = {
         isOpen:false,
+        timesRendered: 0,
     }
 
     toggle = () => {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen,
+            timesRendered: this.state.timesRendered + 1
         })
     };
 
@@ -32,7 +34,7 @@ class Header extends Component {
             )
         } else {
             return(
-                <JoinusPage scrollQuantity={this.props.scrollQuantity}/>
+                <JoinusPage shouldRerender={this.state.timesRendered === 0}/>
             )
         }
     }

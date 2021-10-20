@@ -6,12 +6,11 @@ import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
 import {isMobile} from "react-device-detect";
 
-const imageAnimationChooser = (scrollQuantity) => {
-    switch (scrollQuantity) {
-        case 0:
-            return startingAnimation;
-        default:
-            return noneAnimation;
+const imageAnimationChooser = (props) => {
+    if(props.shouldRerender){
+        return startingAnimation;
+    } else {
+        return noneAnimation;
     }
 };
 
@@ -27,17 +26,15 @@ const returnBasedOneDevice = () => {
     }
 };
 
-function ContactUsPage(props) {
+export default function ContactUsPage(props) {
     return (
         <motion.div
             className={'contact-us-page'}
-            initial={imageAnimationChooser(props.scrollQuantity).initial}
-            animate={imageAnimationChooser(props.scrollQuantity).animate}
-            transition={imageAnimationChooser(props.scrollQuantity).transition}
+            initial={imageAnimationChooser(props).initial}
+            animate={imageAnimationChooser(props).animate}
+            transition={imageAnimationChooser(props).transition}
         >
             {returnBasedOneDevice()}
         </motion.div>
     )
 }
-
-export default ContactUsPage;

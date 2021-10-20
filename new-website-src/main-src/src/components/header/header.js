@@ -10,11 +10,13 @@ import ContactUsButton from "./navigation-bar/links-group/contact-us-button/cont
 class Header extends Component {
     state = {
         isOpen:false,
+        timesRendered: 0,
     }
 
-    toggle = () => {
+     toggle = () => {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen,
+            timesRendered: this.state.timesRendered + 1
         })
     };
 
@@ -31,7 +33,10 @@ class Header extends Component {
             )
         } else {
             return (
-                <MainPage scrollQuantity={this.props.scrollQuantity}/>
+                <MainPage
+                    scrollQuantity={this.props.scrollQuantity}
+                    shouldRerender={this.state.timesRendered === 0}
+                />
             );
         }
     }

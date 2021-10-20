@@ -10,15 +10,16 @@ import {
 } from "../../../animations/main-page";
 import {useEffect} from "react";
 
-
-const imageAnimationChooser = (scrollQuantity) => {
-    switch (scrollQuantity) {
-        case 1:
-            return imageScrollDownAnimation;
-        case 0:
-            return startingAnimation;
-        default:
-            return noneAnimation;
+const imageAnimationChooser = (props) => {
+    if(props.shouldRerender && props.scrollQuantity === 0){
+        return startingAnimation;
+    } else {
+        switch (props.scrollQuantity) {
+            case 1:
+                return imageScrollDownAnimation;
+            default:
+                return noneAnimation;
+        }
     }
 };
 
@@ -51,9 +52,9 @@ function MainPage(props) {
     return (
         <motion.div
             className='all'
-            initial={imageAnimationChooser(props.scrollQuantity).initial}
-            animate={imageAnimationChooser(props.scrollQuantity).animate}
-            transition={imageAnimationChooser(props.scrollQuantity).transition}
+            initial={imageAnimationChooser(props).initial}
+            animate={imageAnimationChooser(props).animate}
+            transition={imageAnimationChooser(props).transition}
         >
             {returnBasedOneDevice()}
         </motion.div>

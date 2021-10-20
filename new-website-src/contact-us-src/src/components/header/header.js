@@ -1,6 +1,6 @@
 import React, {lazy} from 'react';
 import {Component} from 'react';
-import './header.scss'
+import './header.scss';
 import Navbar from "./navigation-bar/navbar";
 import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
@@ -8,14 +8,16 @@ import ContactUsButton from "./navigation-bar/links-group/contact-us-button/cont
 
 const ContactUsPage = lazy(() => import("./contact-us-page/contact-us-page"));
 
-class Header extends Component {
+export default class Header extends Component {
     state = {
         isOpen:false,
+        timesRendered: 0,
     }
 
     toggle = () => {
         this.setState({
-            isOpen: !this.state.isOpen
+            isOpen: !this.state.isOpen,
+            timesRendered: this.state.timesRendered + 1
         })
     };
 
@@ -32,7 +34,7 @@ class Header extends Component {
             )
         } else {
             return(
-                <ContactUsPage scrollQuantity={this.props.scrollQuantity}/>
+                <ContactUsPage shouldRerender={this.state.timesRendered === 0}/>
             )
         }
     }
@@ -51,5 +53,3 @@ class Header extends Component {
         )
     }
 }
-
-export default Header;
