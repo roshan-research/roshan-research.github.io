@@ -63,13 +63,13 @@ class RoshanWebsite extends Component {
             if(isOpera || isSafari) {
                 return(
                     <div id={'temporary-safari'}>
-                        <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-                        <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Header scrollQuantity={this.state.scrollsQuantity}/>
+                        <Kashf scrollQuantity={this.state.scrollsQuantity}/>
+                        <Alefba scrollQuantity={this.state.scrollsQuantity}/>
+                        <Harf scrollQuantity={this.state.scrollsQuantity}/>
+                        <Hazm scrollQuantity={this.state.scrollsQuantity}/>
                         <div style={{height:'10vh',}}/>
-                        <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                        <Customers scrollQuantity={this.state.scrollsQuantity}/>
                         <div style={{height:'10vh',}}/>
                         <Footer/>
                     </div>
