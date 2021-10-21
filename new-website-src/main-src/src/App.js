@@ -66,8 +66,8 @@ class RoshanWebsite extends Component {
                         <Header scrollQuantity={this.state.scrollsQuantity}/>
                         <Kashf scrollQuantity={this.state.scrollsQuantity}/>
                         <Alefba scrollQuantity={this.state.scrollsQuantity}/>
-                        <Harf scrollQuantity={this.state.scrollsQuantity}/>
                         <Hazm scrollQuantity={this.state.scrollsQuantity}/>
+                        <Harf scrollQuantity={this.state.scrollsQuantity}/>
                         <div style={{height:'10vh',}}/>
                         <Customers scrollQuantity={this.state.scrollsQuantity}/>
                         <div style={{height:'10vh',}}/>
