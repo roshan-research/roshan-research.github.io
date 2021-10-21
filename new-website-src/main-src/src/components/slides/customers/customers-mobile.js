@@ -1,7 +1,6 @@
 import './customers-mobile.scss';
 import customersAnimation from "../../../animations/customers-mobile";
 import CustomerBox from "./box";
-import ReactTouchEvents from "react-touch-events";
 
 import {ReactComponent as Keshvar} from "../../../assets/images/mobile/customers/row1/couple1/Keshvar.svg";
 import {ReactComponent as Naft} from "../../../assets/images/mobile/customers/row1/couple2/Naft.svg";
@@ -52,126 +51,107 @@ const couple42Woman = customersAnimation(10, 4, 0, 1);
 const couple43Man = customersAnimation(10, 9, 1, 0);
 const couple43Woman = customersAnimation(10, 9, 0, 1);
 
-const scrollToFooter = () => {
-    const height = window.innerHeight;
-    const totalHeight = 5 * height + height;
-    window.scrollTo({
-        top: totalHeight,
-        behavior: 'smooth',
-    })
-}
-const handleSwipe = (direction) => {
-
-    switch (direction) {
-        case "top": scrollToFooter()
-    }
-}
-
 function CustomersMobile(){
     return(
-        <ReactTouchEvents
-            onSwipe={handleSwipe}
-        >
-            <div id={'customers'}>
-                <div id={'text'}>
-                    <Text/>
+        <div id={'customers'}>
+            <div id={'text'}>
+                <Text/>
+            </div>
+            <div id={'table stack'}>
+                <div className={'row'}>
+                    <CustomerBox
+                        animationMan={couple11Man}
+                        animationWoman={couple11Woman}
+                        boxID={'box-left'}
+                        manComponent={<Keshvar/>}
+                        womanComponent={<Jahad/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple12Man}
+                        animationWoman={couple12Woman}
+                        boxID={'box-middle'}
+                        manComponent={<Naft/>}
+                        womanComponent={<Bimeh/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple13Man}
+                        animationWoman={couple13Woman}
+                        boxID={'box-right'}
+                        manComponent={<Ketabkhaneh/>}
+                        womanComponent={<Nazdika/>}
+                    />
                 </div>
-                <div id={'table stack'}>
-                    <div className={'row'}>
-                        <CustomerBox
-                            animationMan={couple11Man}
-                            animationWoman={couple11Woman}
-                            boxID={'box-left'}
-                            manComponent={<Keshvar/>}
-                            womanComponent={<Jahad/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple12Man}
-                            animationWoman={couple12Woman}
-                            boxID={'box-middle'}
-                            manComponent={<Naft/>}
-                            womanComponent={<Bimeh/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple13Man}
-                            animationWoman={couple13Woman}
-                            boxID={'box-right'}
-                            manComponent={<Ketabkhaneh/>}
-                            womanComponent={<Nazdika/>}
-                        />
-                    </div>
-                    <div className={'row'}>
-                        <CustomerBox
-                            animationMan={couple21Man}
-                            animationWoman={couple21Woman}
-                            boxID={'box-left'}
-                            manComponent={<Setad/>}
-                            womanComponent={<Amin/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple22Man}
-                            animationWoman={couple22Woman}
-                            boxID={'box-middle'}
-                            manComponent={<Astan/>}
-                            womanComponent={<Ammar/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple23Man}
-                            animationWoman={couple23Woman}
-                            boxID={'box-right'}
-                            manComponent={<Mokhaberat/>}
-                            womanComponent={<Farabi/>}
-                        />
-                    </div>
-                    <div className={'row'}>
-                        <CustomerBox
-                            animationMan={couple31Man}
-                            animationWoman={couple31Woman}
-                            boxID={'box-left'}
-                            manComponent={<Parsian/>}
-                            womanComponent={<Fars/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple32Man}
-                            animationWoman={couple32Woman}
-                            boxID={'box-middle'}
-                            manComponent={<Irandoc/>}
-                            womanComponent={<Tabeii/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple33Man}
-                            animationWoman={couple33Woman}
-                            boxID={'box-right'}
-                            manComponent={<Azmoon/>}
-                            womanComponent={<Civilica/>}
-                        />
-                    </div>
-                    <div className={'row'}>
-                        <CustomerBox
-                            animationMan={couple41Man}
-                            animationWoman={couple41Woman}
-                            boxID={'box-left'}
-                            manComponent={<Tamasha/>}
-                            womanComponent={<Ketabkhaneh/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple42Man}
-                            animationWoman={couple42Woman}
-                            boxID={'box-middle'}
-                            manComponent={<Taghche/>}
-                            womanComponent={<Bimarestan/>}
-                        />
-                        <CustomerBox
-                            animationMan={couple43Man}
-                            animationWoman={couple43Woman}
-                            boxID={'box-right'}
-                            manComponent={<Varzesh/>}
-                            womanComponent={<Azmoon/>}
-                        />
-                    </div>
+                <div className={'row'}>
+                    <CustomerBox
+                        animationMan={couple21Man}
+                        animationWoman={couple21Woman}
+                        boxID={'box-left'}
+                        manComponent={<Setad/>}
+                        womanComponent={<Amin/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple22Man}
+                        animationWoman={couple22Woman}
+                        boxID={'box-middle'}
+                        manComponent={<Astan/>}
+                        womanComponent={<Ammar/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple23Man}
+                        animationWoman={couple23Woman}
+                        boxID={'box-right'}
+                        manComponent={<Mokhaberat/>}
+                        womanComponent={<Farabi/>}
+                    />
+                </div>
+                <div className={'row'}>
+                    <CustomerBox
+                        animationMan={couple31Man}
+                        animationWoman={couple31Woman}
+                        boxID={'box-left'}
+                        manComponent={<Parsian/>}
+                        womanComponent={<Fars/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple32Man}
+                        animationWoman={couple32Woman}
+                        boxID={'box-middle'}
+                        manComponent={<Irandoc/>}
+                        womanComponent={<Tabeii/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple33Man}
+                        animationWoman={couple33Woman}
+                        boxID={'box-right'}
+                        manComponent={<Azmoon/>}
+                        womanComponent={<Civilica/>}
+                    />
+                </div>
+                <div className={'row'}>
+                    <CustomerBox
+                        animationMan={couple41Man}
+                        animationWoman={couple41Woman}
+                        boxID={'box-left'}
+                        manComponent={<Tamasha/>}
+                        womanComponent={<Ketabkhaneh/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple42Man}
+                        animationWoman={couple42Woman}
+                        boxID={'box-middle'}
+                        manComponent={<Taghche/>}
+                        womanComponent={<Bimarestan/>}
+                    />
+                    <CustomerBox
+                        animationMan={couple43Man}
+                        animationWoman={couple43Woman}
+                        boxID={'box-right'}
+                        manComponent={<Varzesh/>}
+                        womanComponent={<Azmoon/>}
+                    />
                 </div>
             </div>
-        </ReactTouchEvents>
+        </div>
     )
 }
 

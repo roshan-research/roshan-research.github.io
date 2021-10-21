@@ -6,9 +6,25 @@ import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
+import ReactTouchEvents from "react-touch-events";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
+}
+
+const scrollToFooter = () => {
+    const height = window.innerHeight;
+    const totalHeight = 5 * height + height;
+    window.scrollTo({
+        top: totalHeight,
+        behavior: 'smooth',
+    })
+}
+const handleSwipe = (direction) => {
+    switch (direction) {
+        case "top": scrollToFooter(); break;
+        case "bottom": console.log('bottom');
+    }
 }
 
 const returnBasedOneDevice = (props) => {
@@ -55,11 +71,13 @@ class Customers extends Component {
 
     render() {
         return (
-            <div>
-                <div id={'customers'}>
-                    {returnBasedOneDevice(this.props)}
+            <ReactTouchEvents onSwipe={handleSwipe}>
+                <div>
+                    <div id={'customers'}>
+                        {returnBasedOneDevice(this.props)}
+                    </div>
                 </div>
-            </div>
+            </ReactTouchEvents>
         )
     }
 }
