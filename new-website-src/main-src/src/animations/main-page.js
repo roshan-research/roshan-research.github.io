@@ -19,7 +19,7 @@ export const imageScrollDownAnimation = {
         opacity: 0,
     },
     transition:{
-        default: { duration: 0.1},
+        default: { duration: 0.3},
     }
 };
 
