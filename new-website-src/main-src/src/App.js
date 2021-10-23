@@ -64,14 +64,14 @@ class RoshanWebsite extends Component {
                 <Suspense fallback={<ProgressIndicator/>}>
                     <Switch>
                         <Route path={'/'} exact>
-                            <div id={isOpera || isSafari ? 'opera-safari': 'normal'}>
-                                <div>
+                            <div>
+                                <div id={isOpera || isSafari ? 'opera-safari': 'normal'}>
                                     <Fullpage
                                         {...fullPageOptions}
                                         onSlideChangeStart={onSlideChangeStart}
                                     />
                                 </div>
-                                <Footer/>
+                                {isOpera || isSafari ? (<div/>):(<Footer/>)}
                             </div>
                         </Route>
                     </Switch>
