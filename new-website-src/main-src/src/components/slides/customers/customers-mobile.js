@@ -24,7 +24,9 @@ import {ReactComponent as Fars} from "../../../assets/images/mobile/customers/ro
 import {ReactComponent as Tabeii} from "../../../assets/images/mobile/customers/row3/couple2/Tabeii.svg";
 import {ReactComponent as Civilica} from "../../../assets/images/mobile/customers/row3/couple3/Civilica.svg";
 import {ReactComponent as Bimarestan} from "../../../assets/images/mobile/customers/row4/couple2/Bimarestan.svg";
-import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg'
+import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg';
+import {ReactComponent as Aparat} from '../../../assets/images/mobile/customers/row4/couple1/Aparat.svg';
+
 
 const couple11Man = customersAnimation(10, 0, 1, 0);
 const couple11Woman = customersAnimation(10, 0, 0, 1);
@@ -133,7 +135,7 @@ function CustomersMobile(){
                         animationWoman={couple41Woman}
                         boxID={'box-left'}
                         manComponent={<Tamasha/>}
-                        womanComponent={<Ketabkhaneh/>}
+                        womanComponent={<Aparat/>}
                     />
                     <CustomerBox
                         animationMan={couple42Man}
