@@ -18,6 +18,7 @@ class RoshanWebsite extends Component {
     state = {
         fake:false,
         scrollsQuantity: 0,
+
     }
 
     render() {
@@ -51,7 +52,6 @@ class RoshanWebsite extends Component {
             </Slide>
         ];
 
-
         const onSlideChangeStart = () => {
             this.setState({
                 fake: !this.state.fake,
@@ -59,45 +59,20 @@ class RoshanWebsite extends Component {
             });
         };
 
-        const browserChooser = (fullPageOptions,onSlideChangeStart) => {
-            if(isOpera || isSafari) {
-                return(
-                    <div id={'temporary-safari'}>
-                        <Header scrollQuantity={this.state.scrollsQuantity}/>
-                        <Kashf scrollQuantity={this.state.scrollsQuantity}/>
-                        <Alefba scrollQuantity={this.state.scrollsQuantity}/>
-                        <Hazm scrollQuantity={this.state.scrollsQuantity}/>
-                        <Harf scrollQuantity={this.state.scrollsQuantity}/>
-                        <div style={{height:'10vh',}}/>
-                        <Customers scrollQuantity={this.state.scrollsQuantity}/>
-                        <div style={{height:'10vh',}}/>
-                        <Footer/>
-                    </div>
-                )
-            } else {
-                return(
-                    <div>
-                        <Fullpage
-                            {...fullPageOptions}
-                            onSlideChangeStart={onSlideChangeStart}/>
-                        <Footer/>
-                    </div>
-                )
-            }
-        };
-
         return (
             <div>
                 <Suspense fallback={<ProgressIndicator/>}>
                     <Switch>
                         <Route path={'/'} exact>
-                            {browserChooser(fullPageOptions,onSlideChangeStart)}
-                        </Route>
-                        <Route path={'/contact-us'}>
-                            <Header type={'contact-us'}/>
-                        </Route>
-                        <Route path={'/join-us'}>
-                            <Header type={'join-us'}/>
+                            <div id={isOpera || isSafari ? 'opera-safari': 'normal'}>
+                                <div>
+                                    <Fullpage
+                                        {...fullPageOptions}
+                                        onSlideChangeStart={onSlideChangeStart}
+                                    />
+                                </div>
+                                <Footer/>
+                            </div>
                         </Route>
                     </Switch>
                 </Suspense>

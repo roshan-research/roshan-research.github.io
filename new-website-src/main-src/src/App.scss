@@ -1,18 +1,7 @@
-#temporary-safari{
-  overflow-y: scroll;
-  height:100vh;
-  display: flex;
-  flex-direction: column;
-  justify-content: space-between;
-  align-content: space-between;
-  position:relative;
+#opera-safari{
+  height: 120vh;
 }
 
-#temporary-safari::-webkit-scrollbar {
-  display: none;
-}
-
-#temporary-safari {
-  -ms-overflow-style: none;
-  scrollbar-width: none;
+#main{
+  height: 100vh;
 }
