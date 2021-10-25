@@ -17,7 +17,7 @@ const imageAnimationChooser = (props) => {
 const returnBasedOneDevice = () => {
     if(isMobile){
         return(
-            <div id={isSafari ? 'mobile-safari ': 'mobile'}>
+            <div id={isSafari ? 'mobile-safari': 'mobile'}>
                 <JoinUsMobile/>
             </div>
         )
