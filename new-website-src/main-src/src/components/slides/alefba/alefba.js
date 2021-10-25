@@ -2,12 +2,12 @@ import AlefbaMobile from "../../jsx-svgs/mobile/alefba";
 import './alefba.scss'
 import AlefbaWebText from "../../jsx-svgs/web/alefba-text";
 import AlefbaWebImage from "../../jsx-svgs/web/alefba-image";
-import {isMobile} from "react-device-detect";
+import {isMobile,isSafari} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile){
         return(
-            <div id={'mobile'}>
+            <div id={isSafari ? 'mobile-safari ': 'mobile'}>
                 <AlefbaMobile status={props.scrollQuantity}/>
             </div>
         )

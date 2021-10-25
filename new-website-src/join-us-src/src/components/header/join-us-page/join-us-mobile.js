@@ -1,3 +1,4 @@
+import './join-us-web.scss'
 export default function JoinUsMobile() {
     return (
         <svg
