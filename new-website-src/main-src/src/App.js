@@ -70,8 +70,6 @@ class RoshanWebsite extends Component {
                                         {...fullPageOptions}
                                         onSlideChangeStart={onSlideChangeStart}
                                     />
-                                </div>
-                                <div>
                                     <Footer/>
                                 </div>
                             </div>
