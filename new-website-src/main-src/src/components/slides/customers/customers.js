@@ -55,7 +55,6 @@ class Customers extends Component {
         const height = window.innerHeight;
         findDOMNode(this).addEventListener("wheel", (event) => {
             const delta = Math.sign(event.deltaY);
-            console.log(delta);
             if (delta === 1) {
                 const totalHeight = 5 * height + height;
                 window.scrollTo({
