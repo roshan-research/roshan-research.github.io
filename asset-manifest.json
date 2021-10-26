@@ -3,10 +3,10 @@
     "static/js/0.8ac490d7.chunk.js": "/static/js/0.8ac490d7.chunk.js",
     "main.css": "/static/css/main.876481ba.chunk.css",
     "main.js": "/static/js/main.edbc6b77.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.38f485c6.js",
+    "runtime-main.js": "/static/js/runtime-main.bc9700c2.js",
     "static/js/3.33521daa.chunk.js": "/static/js/3.33521daa.chunk.js",
     "static/css/4.e817f2ae.chunk.css": "/static/css/4.e817f2ae.chunk.css",
-    "static/js/4.58d62551.chunk.js": "/static/js/4.58d62551.chunk.js",
+    "static/js/4.7e461cfd.chunk.js": "/static/js/4.7e461cfd.chunk.js",
     "static/css/5.a45f8f17.chunk.css": "/static/css/5.a45f8f17.chunk.css",
     "static/js/5.40588e4b.chunk.js": "/static/js/5.40588e4b.chunk.js",
     "static/css/6.7b34b59e.chunk.css": "/static/css/6.7b34b59e.chunk.css",
@@ -53,10 +53,10 @@
     "static/media/roshan-icon.svg": "/static/media/roshan-icon.102d03da.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/text.810f1b1e.svg": "/static/media/text.810f1b1e.svg",
-    "static/media/web-background.1599f498.svg": "/static/media/web-background.1599f498.svg"
+    "static/media/web-background.1fa53bf3.svg": "/static/media/web-background.1fa53bf3.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.38f485c6.js",
+    "static/js/runtime-main.bc9700c2.js",
     "static/js/3.33521daa.chunk.js",
     "static/css/main.876481ba.chunk.css",
     "static/js/main.edbc6b77.chunk.js"
