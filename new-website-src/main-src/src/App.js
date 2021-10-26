@@ -31,7 +31,7 @@ class RoshanWebsite extends Component {
             enableArrowKeys: false,
         };
 
-        fullPageOptions.slides = isSafari ?
+        fullPageOptions.slides = isSafari || isOpera ?
         [
             <Slide>
                 <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
@@ -55,7 +55,7 @@ class RoshanWebsite extends Component {
                 <div id={'fullpage-footer'}>
                     <Footer/>
                 </div>
-            </Slide>    
+            </Slide>
         ]
         :[
             <Slide>
@@ -75,7 +75,7 @@ class RoshanWebsite extends Component {
             </Slide>,
             <Slide>
                 <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,     
+            </Slide>,
         ];
 
         const onSlideChangeStart = () => {

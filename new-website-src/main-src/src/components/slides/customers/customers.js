@@ -1,6 +1,6 @@
 import CustomersWeb from "../../jsx-svgs/web/customers";
 import './customers.scss'
-import {isMobile, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari} from "react-device-detect";
 import React, {Component} from "react";
 import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
@@ -73,7 +73,7 @@ class Customers extends Component {
     }
 
     render() {
-        return isSafari ? (
+        return isSafari || isOpera ? (
             <div>
                 <div id={'customers'}>
                     {returnBasedOneDevice(this.props)}
