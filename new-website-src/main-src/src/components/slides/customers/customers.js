@@ -1,6 +1,6 @@
 import CustomersWeb from "../../jsx-svgs/web/customers";
 import './customers.scss'
-import {isMobile} from "react-device-detect";
+import {isMobile, isSafari} from "react-device-detect";
 import React, {Component} from "react";
 import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
@@ -54,8 +54,8 @@ class Customers extends Component {
     componentDidMount() {
         const height = window.innerHeight;
         findDOMNode(this).addEventListener("wheel", (event) => {
-            console.log(height)
             const delta = Math.sign(event.deltaY);
+            console.log(delta);
             if (delta === 1) {
                 const totalHeight = 5 * height + height;
                 window.scrollTo({
@@ -73,7 +73,13 @@ class Customers extends Component {
     }
 
     render() {
-        return (
+        return isSafari ? (
+            <div>
+                <div id={'customers'}>
+                    {returnBasedOneDevice(this.props)}
+                </div>
+            </div>
+        ):(
             <ReactTouchEvents onSwipe={handleSwipe}>
                 <div>
                     <div id={'customers'}>

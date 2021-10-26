@@ -31,7 +31,8 @@ class RoshanWebsite extends Component {
             enableArrowKeys: false,
         };
 
-        fullPageOptions.slides = [
+        fullPageOptions.slides = isSafari ?
+        [
             <Slide>
                 <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
@@ -49,7 +50,32 @@ class RoshanWebsite extends Component {
             </Slide>,
             <Slide>
                 <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>
+            </Slide>,
+            <Slide>
+                <div id={'fullpage-footer'}>
+                    <Footer/>
+                </div>
+            </Slide>    
+        ]
+        :[
+            <Slide>
+                <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
+            <Slide>
+                <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,     
         ];
 
         const onSlideChangeStart = () => {
