@@ -6,6 +6,7 @@ import {isMobile, isSafari} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
+import Div100vh from "react-div-100vh";
 
 const animationChooser = (scrollQuantity) => {
 
@@ -21,9 +22,11 @@ const animationChooser = (scrollQuantity) => {
 const returnBasedOneDevice = (props) => {
     if(isMobile){
         return(
-            <div id={isSafari ? 'mobile-safari': 'mobile'}>
-                <HarfMobile status={props.scrollQuantity}/>
-            </div>
+            <Div100vh>
+                <div id={'mobile'}>
+                    <HarfMobile status={props.scrollQuantity}/>
+                </div>
+            </Div100vh>
         )
     } else {
         return(

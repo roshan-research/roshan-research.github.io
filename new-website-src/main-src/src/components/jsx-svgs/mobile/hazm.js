@@ -7,7 +7,7 @@ import {
     dotAnimation,
     textAnimation, basicKashfAnimation,
 } from '../../../animations/kashf';
-
+import { use100vh } from 'react-div-100vh'
 import {
     backgroundAnimationHazmMobile,
     bottomLineAnimationHazmMobile,
@@ -55,13 +55,14 @@ const animationChooser = (scrollQuantity) => {
 };
 
 function HazmMobile(props) {
+    const height = use100vh();
     return (
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width='245'
-            height='500'
+            height={height}
             fill='none'
-            viewBox='0 0 245 460'
+            viewBox={`0 0 245 ${height}`}
         >
             <motion.path
                 variants={animationChooser(props.status)['basicKashfAnimation']}

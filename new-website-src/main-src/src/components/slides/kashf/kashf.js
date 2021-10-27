@@ -2,14 +2,17 @@ import KashfMobile from "../../jsx-svgs/mobile/kashf";
 import KashfWebText from "../../jsx-svgs/web/kashf-text";
 import KashfWebImage from "../../jsx-svgs/web/kashf-image";
 import './kashf.scss'
-import {isMobile, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari} from "react-device-detect";
+import Div100vh from 'react-div-100vh'
 
 const returnBasedOneDevice = (props) => {
     if(isMobile){
         return(
-            <div id={isSafari ? 'mobile-safari': 'mobile'}>
-                <KashfMobile status={props.scrollQuantity}/>
-            </div>
+            <Div100vh>
+                <div id={'mobile'}>
+                    <KashfMobile status={props.scrollQuantity}/>
+                </div>
+            </Div100vh>
         )
     }  else {
         return(

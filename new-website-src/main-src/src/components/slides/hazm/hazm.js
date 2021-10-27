@@ -3,13 +3,16 @@ import './hazm.scss'
 import HazmWebImage from "../../jsx-svgs/web/hazm-image";
 import HazmWebText from "../../jsx-svgs/web/hazm-text";
 import {isMobile, isSafari} from "react-device-detect";
+import Div100vh from "react-div-100vh";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile){
         return(
-            <div id={isSafari ? 'mobile-safari': 'mobile'}>
-                <HazmMobile status={props.scrollQuantity}/>
-            </div>
+            <Div100vh>
+                <div id={'mobile'}>
+                    <HazmMobile status={props.scrollQuantity}/>
+                </div>
+            </Div100vh>
         )
     } else {
         return(

@@ -8,7 +8,7 @@ import {
     textAnimation,
     basicKashfAnimation
 } from '../../../animations/kashf';
-
+import { use100vh } from 'react-div-100vh'
 import {
     backgroundAnimationHarf,
     bottomLineAnimationHarf,
@@ -56,13 +56,14 @@ const animationChooser = (scrollQuantity) => {
 };
 
 function HarfMobile(props) {
+    const height = use100vh();
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="248"
-            height="452"
+            height={height}
             fill="none"
-            viewBox="0 0 248 452"
+            viewBox={`0 0 248 ${height}`}
         >
             {/*main text*/}
             <motion.path
