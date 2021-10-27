@@ -47,6 +47,7 @@ function MainPage(props) {
             window.removeEventListener("beforeunload", scrollToTop);
         };
     }, []);
+
     const scrollToTop = () => {
         window.scrollTo({
             top: 0,

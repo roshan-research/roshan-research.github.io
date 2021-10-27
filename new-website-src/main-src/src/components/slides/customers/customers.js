@@ -2,7 +2,6 @@ import CustomersWeb from "../../jsx-svgs/web/customers";
 import './customers.scss'
 import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";
-import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
@@ -58,9 +57,8 @@ const returnBasedOneDevice = (props) => {
 
 class Customers extends Component {
     componentDidMount() {
-
         const height = window.innerHeight;
-        findDOMNode(this).addEventListener("wheel", (event) => {
+        document.getElementById('wrapper').addEventListener("wheel", (event) => {
             const delta = Math.sign(event.deltaY);
             if (delta === 1) {
                 scrollToFooter();
@@ -73,11 +71,6 @@ class Customers extends Component {
             }
         });
 
-        window.addEventListener("keydown", () => {
-            if(shouldRender(this.props.scrollQuantity)){
-                scrollToFooter();
-            }
-        });
     }
 
     render() {
@@ -88,13 +81,15 @@ class Customers extends Component {
                 </div>
             </div>
         ):(
-            <ReactTouchEvents onSwipe={handleSwipe}>
-                <div>
-                    <div id={'customers'}>
-                        {returnBasedOneDevice(this.props)}
+            <div id={'wrapper'}>
+                <ReactTouchEvents onSwipe={handleSwipe}>
+                    <div>
+                        <div id={'customers'}>
+                            {returnBasedOneDevice(this.props)}
+                        </div>
                     </div>
-                </div>
-            </ReactTouchEvents>
+                </ReactTouchEvents>
+            </div>
         )
     }
 }

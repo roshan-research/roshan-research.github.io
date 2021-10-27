@@ -22,7 +22,21 @@ class RoshanWebsite extends Component {
         fake:false,
         scrollsQuantity: 0,
     }
+
+    scrollToFooter = () => {
+        const height = window.innerHeight;
+        const totalHeight = 5 * height + height;
+        window.scrollTo({
+            top: totalHeight,
+            behavior: 'smooth',
+        })
+    }
+
     onSlideChangeStart = (name, props, state, newState) => {
+        const shouldAdd = newState.activeSlide === 5;
+        shouldAdd ? document.addEventListener("keydown", this.scrollToFooter) :
+            document.removeEventListener("keydown", this.scrollToFooter)
+
         this.setState({
             fake: !this.state.fake,
             scrollsQuantity: newState.activeSlide,
