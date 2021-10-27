@@ -39,7 +39,7 @@ class RoshanWebsite extends Component {
 
         this.setState({
             fake: !this.state.fake,
-            scrollsQuantity: newState.activeSlide,
+            scrollsQuantity: this.state.scrollsQuantity + 1,
         });
     };
     render() {
