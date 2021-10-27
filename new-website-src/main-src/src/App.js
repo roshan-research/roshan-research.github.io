@@ -32,14 +32,14 @@ class RoshanWebsite extends Component {
         })
     }
 
-    onSlideChangeStart = (name, props, state, newState) => {
+    onSlideChangeStart = (newState) => {
         const shouldAdd = newState.activeSlide === 5;
         shouldAdd ? document.addEventListener("keydown", this.scrollToFooter) :
             document.removeEventListener("keydown", this.scrollToFooter)
 
         this.setState({
             fake: !this.state.fake,
-            scrollsQuantity: newState.activeSlide,
+            scrollsQuantity: this.state.scrollsQuantity + 1,
         });
     };
     render() {
