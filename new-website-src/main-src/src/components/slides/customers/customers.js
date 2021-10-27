@@ -7,8 +7,6 @@ import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
-import {ReactComponent as BackToTop} from "../../../assets/images/back-to-top-web.svg";
-import {ReactComponent as BackToTopHover} from "../../../assets/images/back-to-top-web-hover.svg";
 import scrollToTop from "../scroll-to-top";
 
 function shouldRender(scrollQuantity){
@@ -35,8 +33,6 @@ const returnBasedOneDevice = (props) => {
         return(
             <div id={'web-all'}>
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
-                <BackToTop/>
-                <BackToTopHover/>
             </div>
         )
     } else if(isMobile){
@@ -54,19 +50,10 @@ const returnBasedOneDevice = (props) => {
             <div id={'web-all'}>
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
                 <button
-                    id={'to-top-normal'}
                     onClick={scrollToTop}
                 >
-                    <div>
-                        <BackToTop/>
-                    </div>
-                </button>
-                <button
-                    id={'to-top-hovered'}
-                    onClick={scrollToTop}
-                >
-                    <div>
-                        <BackToTopHover/>
+                    <div id={'to-top'}>
+                        &#8593;
                     </div>
                 </button>
             </div>
