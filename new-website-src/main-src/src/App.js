@@ -32,7 +32,7 @@ class RoshanWebsite extends Component {
         })
     }
 
-    onSlideChangeStart = (name, props, state, newState) => {
+    onSlideChangeStart = (newState) => {
         const shouldAdd = newState.activeSlide === 5;
         shouldAdd ? document.addEventListener("keydown", this.scrollToFooter) :
             document.removeEventListener("keydown", this.scrollToFooter)
