@@ -6,10 +6,10 @@ import CustomersMobile from "./customers-mobile";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
-import Footer from "../footer/footer";
 import {findDOMNode} from "react-dom";
 import {ReactComponent as BackToTop} from "../../../assets/images/back-to-top-web.svg";
 import {ReactComponent as BackToTopHover} from "../../../assets/images/back-to-top-web-hover.svg";
+import scrollToTop from "../scroll-to-top";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
@@ -55,6 +55,7 @@ const returnBasedOneDevice = (props) => {
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
                 <button
                     id={'to-top-normal'}
+                    onClick={scrollToTop}
                 >
                     <div>
                         <BackToTop/>
@@ -62,6 +63,7 @@ const returnBasedOneDevice = (props) => {
                 </button>
                 <button
                     id={'to-top-hovered'}
+                    onClick={scrollToTop}
                 >
                     <div>
                         <BackToTopHover/>

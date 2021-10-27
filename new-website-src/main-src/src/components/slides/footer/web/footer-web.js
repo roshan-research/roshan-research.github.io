@@ -2,46 +2,10 @@ import './footer-web.scss';
 import {ReactComponent as Line} from "../../../../assets/images/footer-line.svg";
 import {ReactComponent as Name} from "../../../../assets/images/sherkat.svg";
 import {ReactComponent as RoshanSVG} from "../../../../assets/images/roshan-icon.svg";
+import scrollToTop from "../../scroll-to-top";
 
 export default function FooterWeb() {
     const height = window.innerHeight;
-
-    const scrollToTop = (height) => {
-        const totalHeight = 5 * height;
-        window.scrollTo({
-            top: totalHeight - 1 * height,
-            behavior:'smooth',
-        });
-        setTimeout(() => {
-            window.scrollTo({
-                top: totalHeight - 2 * height,
-                behavior:'smooth',
-            });
-        }, 500);
-        setTimeout(() => {
-            window.scrollTo({
-                top: totalHeight - 3 * height,
-                behavior:'smooth',
-            });
-        }, 1000);
-        setTimeout(() => {
-            window.scrollTo({
-                top: totalHeight - 4 * height,
-                behavior:'smooth',
-            });
-        }, 1500);
-        setTimeout(() => {
-            window.scrollTo({
-                top: totalHeight - 5 * height,
-                behavior:'smooth',
-            });
-        }, 2000);
-
-        setTimeout(() => {
-            window.location.reload();
-        }, 2500);
-    };
-
     return (
         <div id={'footer'}>
             <Line id={'line'}/>
