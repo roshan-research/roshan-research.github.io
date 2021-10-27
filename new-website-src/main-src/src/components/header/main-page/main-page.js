@@ -1,5 +1,5 @@
 import './main-page.scss'
-import {isMobile} from 'react-device-detect';
+import {isMobile, isTablet} from 'react-device-detect';
 import {ReactComponent as MobileBackground} from "../../../assets/images/mobile-background.svg";
 import {ReactComponent as WebBackground} from "../../../assets/images/web-background.svg";
 import {motion} from "framer-motion";
@@ -24,14 +24,18 @@ const imageAnimationChooser = (props) => {
 };
 
 const returnBasedOneDevice = () => {
-  if(isMobile){
-      return(
-          <MobileBackground className='mobile-background'/>
-      )
-  } else {
-      return(
+  if(isTablet){
+        return(
             <WebBackground className='web-background'/>
-      )
+        )
+  } else if(isMobile){
+        return(
+            <MobileBackground className='mobile-background'/>
+        )
+  } else {
+        return(
+            <WebBackground className='web-background'/>
+        )
   }
 };
 

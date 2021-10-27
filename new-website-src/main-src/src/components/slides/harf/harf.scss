@@ -14,7 +14,7 @@
   width: 68.68vw;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
 }
 
 #harf #web #text{
@@ -29,13 +29,4 @@
 
 #harf #web #space-between{
   width: 11vw;
-}
-@media screen and (min-width: 500px){
-  #harf #mobile{
-    display: none;
-  }
-
-  #harf #web{
-    display: flex;
-  }
 }

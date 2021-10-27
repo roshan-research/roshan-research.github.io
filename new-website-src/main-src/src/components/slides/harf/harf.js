@@ -2,7 +2,7 @@ import HarfMobile from "../../jsx-svgs/mobile/harf";
 import './harf.scss'
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
 import HarfWebText from "../../jsx-svgs/web/harf-text";
-import {isMobile, isSafari} from "react-device-detect";
+import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
@@ -20,7 +20,23 @@ const animationChooser = (scrollQuantity) => {
 
 
 const returnBasedOneDevice = (props) => {
-    if(isMobile){
+    if(isTablet){
+        return(
+            <div id={'web'}>
+                <motion.div
+                    variants={animationChooser(props.scrollQuantity)}
+                    initial={"hidden"}
+                    animate={"visible"}
+                >
+                    <HarfWebImage id={'image'} />
+                </motion.div>
+                <div id={'space-between'} />
+                <div id={'text'}>
+                    <HarfWebText status={props.scrollQuantity}/>
+                </div>
+            </div>
+        )
+    } else if(isMobile){
         return(
             <Div100vh>
                 <div id={'mobile'}>

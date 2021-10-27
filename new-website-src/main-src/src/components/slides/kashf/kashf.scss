@@ -15,7 +15,7 @@
     width: 68.44vw;
     justify-content: center;
     align-items: center;
-    display: none;
+    display: flex;
 }
 
 #kashf #web #text{
@@ -31,14 +31,4 @@
 #kashf #web #image{
     height: 25.78vh;
     width: 14.5vw;
-}
-
-@media screen and (min-width: 500px){
-    #kashf #mobile{
-        display: none;
-    }
-
-    #kashf #web{
-        display: flex;
-    }
 }

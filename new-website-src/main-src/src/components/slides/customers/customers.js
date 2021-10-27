@@ -1,6 +1,6 @@
 import CustomersWeb from "../../jsx-svgs/web/customers";
 import './customers.scss'
-import {isMobile, isOpera, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";
 import {findDOMNode} from "react-dom";
 import CustomersMobile from "./customers-mobile";
@@ -29,7 +29,14 @@ const handleSwipe = (direction) => {
 }
 
 const returnBasedOneDevice = (props) => {
-    if(isMobile){
+    if(isTablet){
+        return(
+            <div id={'web-all'}>
+                <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
+                <Footer/>
+            </div>
+        )
+    } else if(isMobile){
         return(
             <motion.div
                 variants={flowerAnimation}

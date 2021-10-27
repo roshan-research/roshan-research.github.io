@@ -4,7 +4,7 @@ import ContactUsMobile from "./mobile/contact-us-mobile";
 import ContactUsWeb from "./web/contact-us-web";
 import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
-import {isMobile, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari,isTablet} from "react-device-detect";
 
 const imageAnimationChooser = (props) => {
     if(props.shouldRerender){
@@ -15,9 +15,13 @@ const imageAnimationChooser = (props) => {
 };
 
 const returnBasedOneDevice = () => {
-    if(isMobile){
+    if(isTablet){
         return(
-            <div id={isSafari ? 'mobile-safari': 'mobile'}>
+            <ContactUsWeb id={'web'}/>
+        )
+    } else if(isMobile){
+        return(
+            <div id={isSafari || isOpera? 'mobile-safari': 'mobile'}>
                 <ContactUsMobile />
             </div>
         )

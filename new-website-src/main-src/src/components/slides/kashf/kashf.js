@@ -2,11 +2,23 @@ import KashfMobile from "../../jsx-svgs/mobile/kashf";
 import KashfWebText from "../../jsx-svgs/web/kashf-text";
 import KashfWebImage from "../../jsx-svgs/web/kashf-image";
 import './kashf.scss'
-import {isMobile, isOpera, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import Div100vh from 'react-div-100vh'
 
 const returnBasedOneDevice = (props) => {
-    if(isMobile){
+    if(isTablet){
+        return(
+            <div id={'web'}>
+                <div id={'image'}>
+                    <KashfWebImage status={props.scrollQuantity}/>
+                </div>
+                <div id={'space-between'}/>
+                <div id={'text'}>
+                    <KashfWebText status={props.scrollQuantity}/>
+                </div>
+            </div>
+        )
+    } else if(isMobile){
         return(
             <Div100vh>
                 <div id={'mobile'}>
@@ -14,7 +26,7 @@ const returnBasedOneDevice = (props) => {
                 </div>
             </Div100vh>
         )
-    }  else {
+    } else {
         return(
             <div id={'web'}>
                 <div id={'image'}>

@@ -4,7 +4,7 @@ import JoinUsWeb from "./join-us-web";
 import './joinus-page.scss';
 import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
-import {isMobile, isSafari} from "react-device-detect";
+import {isMobile, isSafari,isOpera,isTablet} from "react-device-detect";
 
 const imageAnimationChooser = (props) => {
     if(props.shouldRerender){
@@ -15,10 +15,14 @@ const imageAnimationChooser = (props) => {
 };
 
 const returnBasedOneDevice = () => {
-    if(isMobile){
+    if(isTablet){
         return(
-            <div id={isSafari ? 'mobile-safari': 'mobile'}>
-                <JoinUsMobile/>
+            <JoinUsWeb id={'web'}/>
+        )
+    } else if(isMobile){
+        return(
+            <div id={isSafari || isOpera? 'mobile-safari': 'mobile'}>
+                <JoinUsMobile />
             </div>
         )
     } else {

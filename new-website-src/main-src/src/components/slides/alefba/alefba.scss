@@ -21,7 +21,7 @@
   width: 68.44vw;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
 }
 
 #alefba #web #text{
@@ -36,14 +36,4 @@
 #alefba #web #image{
   height: 32.36vh;
   width: 15.79vw;
-}
-
-@media screen and (min-width: 500px){
-  #alefba #mobile{
-    display: none;
-  }
-
-  #alefba #web{
-    display: flex;
-  }
 }

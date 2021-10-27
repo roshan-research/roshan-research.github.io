@@ -1,9 +1,13 @@
-import {isMobile} from "react-device-detect";
+import {isMobile, isTablet} from "react-device-detect";
 import FooterWeb from "./web/footer-web";
 import FooterMobile from "./mobile/footer-mobile";
 
 const returnBasedOneDevice = () => {
-    if(isMobile){
+    if(isTablet){
+        return(
+            <FooterWeb/>
+        )
+    } else if(isMobile){
         return(
             <FooterMobile/>
         )

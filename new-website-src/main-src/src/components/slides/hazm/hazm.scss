@@ -14,7 +14,7 @@
   width: 68.44vw;
   justify-content: center;
   align-items: center;
-  display: none;
+  display: flex;
 }
 
 #hazm #web #text{
@@ -30,14 +30,4 @@
 #hazm #web #image{
   height: 25.41vh;
   width: 20vw;
-}
-
-@media screen and (min-width: 500px){
-  #hazm #mobile{
-    display: none;
-  }
-
-  #hazm #web{
-    display: flex;
-  }
 }

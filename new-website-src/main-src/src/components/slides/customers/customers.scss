@@ -1,5 +1,5 @@
 #customers #web {
-  display: none;
+  display: flex;
   height: 95vh;
   width: 70vw;
 }
@@ -44,14 +44,4 @@ button{
   align-items: center;
   flex-direction: column;
   position: relative;
-}
-
-@media screen and (min-width: 500px){
-  #customers #mobile{
-    display: none;
-  }
-
-  #customers #web{
-    display: flex;
-  }
 }
