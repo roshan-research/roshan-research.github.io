@@ -1,6 +1,6 @@
 #customers #web {
   display: flex;
-  height: 95vh;
+  height: 90vh;
   width: 70vw;
 }
 
@@ -45,3 +45,23 @@ button{
   flex-direction: column;
   position: relative;
 }
+
+#to-top-normal{
+  height: 6vh;
+  width: 6vw;
+  margin-left: 80vw;
+}
+
+#to-top-hovered{
+  position: absolute;
+  margin-top: 90vh;
+  height: 6vh;
+  width: 6vw;
+  display: none;
+  margin-left: 80vw;
+}
+
+#to-top-normal:hover + #to-top-hovered{
+    display: inline;
+}
+

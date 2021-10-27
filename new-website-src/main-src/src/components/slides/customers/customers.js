@@ -8,6 +8,8 @@ import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import Footer from "../footer/footer";
 import {findDOMNode} from "react-dom";
+import {ReactComponent as BackToTop} from "../../../assets/images/back-to-top-web.svg";
+import {ReactComponent as BackToTopHover} from "../../../assets/images/back-to-top-web-hover.svg";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
@@ -33,6 +35,8 @@ const returnBasedOneDevice = (props) => {
         return(
             <div id={'web-all'}>
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
+                <BackToTop/>
+                <BackToTopHover/>
             </div>
         )
     } else if(isMobile){
@@ -49,7 +53,20 @@ const returnBasedOneDevice = (props) => {
         return(
             <div id={'web-all'}>
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
-                <Footer/>
+                <button
+                    id={'to-top-normal'}
+                >
+                    <div>
+                        <BackToTop/>
+                    </div>
+                </button>
+                <button
+                    id={'to-top-hovered'}
+                >
+                    <div>
+                        <BackToTopHover/>
+                    </div>
+                </button>
             </div>
         )
     }
