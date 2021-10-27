@@ -2,11 +2,10 @@ import HarfMobile from "../../jsx-svgs/mobile/harf";
 import './harf.scss'
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
 import HarfWebText from "../../jsx-svgs/web/harf-text";
-import {isMobile, isSafari, isTablet} from "react-device-detect";
+import {isMobile, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
-import Div100vh from "react-div-100vh";
 
 const animationChooser = (scrollQuantity) => {
 
@@ -38,11 +37,9 @@ const returnBasedOneDevice = (props) => {
         )
     } else if(isMobile){
         return(
-            <Div100vh>
-                <div id={'mobile'}>
-                    <HarfMobile status={props.scrollQuantity}/>
-                </div>
-            </Div100vh>
+            <div id={'mobile'}>
+                <HarfMobile status={props.scrollQuantity}/>
+            </div>
         )
     } else {
         return(

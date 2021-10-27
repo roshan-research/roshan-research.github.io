@@ -2,8 +2,7 @@ import AlefbaMobile from "../../jsx-svgs/mobile/alefba";
 import './alefba.scss'
 import AlefbaWebText from "../../jsx-svgs/web/alefba-text";
 import AlefbaWebImage from "../../jsx-svgs/web/alefba-image";
-import {isMobile,isSafari, isTablet} from "react-device-detect";
-import Div100vh from "react-div-100vh";
+import {isMobile,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
     if(isTablet){
@@ -20,11 +19,9 @@ const returnBasedOneDevice = (props) => {
         )
     } else if(isMobile){
         return(
-            <Div100vh>
-                <div id={'mobile'}>
-                    <AlefbaMobile status={props.scrollQuantity}/>
-                </div>
-            </Div100vh>
+            <div id={'mobile'}>
+                <AlefbaMobile status={props.scrollQuantity}/>
+            </div>
         )
     } else {
         return(
