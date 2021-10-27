@@ -18,7 +18,6 @@ class RoshanWebsite extends Component {
     state = {
         fake:false,
         scrollsQuantity: 0,
-
     }
 
     render() {
@@ -28,7 +27,7 @@ class RoshanWebsite extends Component {
             touchSensitivity: 0.5,
             scrollSpeed: 500,
             hideScrollBars: true,
-            enableArrowKeys: false,
+            enableArrowKeys: true,
         };
 
         fullPageOptions.slides = isSafari || isOpera ?
