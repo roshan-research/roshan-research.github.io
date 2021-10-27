@@ -33,6 +33,13 @@ const returnBasedOneDevice = (props) => {
         return(
             <div id={'web-all'}>
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
+                <button
+                    onClick={scrollToTop}
+                >
+                    <div id={'to-top'}>
+                        &#129121;
+                    </div>
+                </button>
             </div>
         )
     } else if(isMobile){
