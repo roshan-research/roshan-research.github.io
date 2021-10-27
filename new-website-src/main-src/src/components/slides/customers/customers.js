@@ -53,7 +53,7 @@ const returnBasedOneDevice = (props) => {
                     onClick={scrollToTop}
                 >
                     <div id={'to-top'}>
-                        &#8593;
+                        &#129121;
                     </div>
                 </button>
             </div>
