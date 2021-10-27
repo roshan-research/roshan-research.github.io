@@ -14,12 +14,20 @@ const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
 const Customers = lazy(() => import("./components/slides/customers/customers"));
 
 class RoshanWebsite extends Component {
-
+    constructor(props) {
+        super(props);
+        this.onSlideChangeStart = this.onSlideChangeStart.bind(this);
+    }
     state = {
         fake:false,
         scrollsQuantity: 0,
     }
-
+    onSlideChangeStart = (name, props, state, newState) => {
+        this.setState({
+            fake: !this.state.fake,
+            scrollsQuantity: newState.activeSlide,
+        });
+    };
     render() {
 
         const fullPageOptions = {
@@ -77,13 +85,6 @@ class RoshanWebsite extends Component {
             </Slide>,
         ];
 
-        const onSlideChangeStart = () => {
-            this.setState({
-                fake: !this.state.fake,
-                scrollsQuantity: this.state.scrollsQuantity + 1,
-            });
-        };
-
         return (
             <div id={'main'}>
                 <Suspense fallback={<ProgressIndicator/>}>
@@ -93,7 +94,7 @@ class RoshanWebsite extends Component {
                                 <div>
                                     <Fullpage
                                         {...fullPageOptions}
-                                        onSlideChangeStart={onSlideChangeStart}
+                                        onSlideChangeStart={this.onSlideChangeStart}
                                     />
                                     if(!isSafari && !isOpera){(
                                         <Footer/>
