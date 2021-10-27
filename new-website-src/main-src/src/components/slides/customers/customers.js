@@ -7,6 +7,7 @@ import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import Footer from "../footer/footer";
+import {findDOMNode} from "react-dom";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
@@ -58,7 +59,7 @@ const returnBasedOneDevice = (props) => {
 class Customers extends Component {
     componentDidMount() {
         const height = window.innerHeight;
-        document.getElementById('wrapper').addEventListener("wheel", (event) => {
+        findDOMNode(this).addEventListener("wheel", (event) => {
             const delta = Math.sign(event.deltaY);
             if (delta === 1) {
                 scrollToFooter();
@@ -81,15 +82,13 @@ class Customers extends Component {
                 </div>
             </div>
         ):(
-            <div id={'wrapper'}>
-                <ReactTouchEvents onSwipe={handleSwipe}>
-                    <div>
-                        <div id={'customers'}>
-                            {returnBasedOneDevice(this.props)}
-                        </div>
+            <ReactTouchEvents onSwipe={handleSwipe}>
+                <div>
+                    <div id={'customers'}>
+                        {returnBasedOneDevice(this.props)}
                     </div>
-                </ReactTouchEvents>
-            </div>
+                </div>
+            </ReactTouchEvents>
         )
     }
 }
