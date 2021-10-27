@@ -52,8 +52,7 @@ class RoshanWebsite extends Component {
             enableArrowKeys: true,
         };
 
-        fullPageOptions.slides = isSafari || isOpera ?
-        [
+        fullPageOptions.slides = isSafari || isOpera ? [
             <Slide>
                 <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
@@ -77,8 +76,7 @@ class RoshanWebsite extends Component {
                     <Footer/>
                 </div>
             </Slide>
-        ]
-        :[
+        ]:[
             <Slide>
                 <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
