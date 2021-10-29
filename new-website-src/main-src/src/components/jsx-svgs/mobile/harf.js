@@ -56,14 +56,13 @@ const animationChooser = (scrollQuantity) => {
 };
 
 function HarfMobile(props) {
-    const height = use100vh();
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             width="248"
-            height={height}
+            height="452"
             fill="none"
-            viewBox={`0 0 248 ${height}`}
+            viewBox="0 0 248 452"
         >
             {/*main text*/}
             <motion.path

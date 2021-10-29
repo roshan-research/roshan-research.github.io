@@ -14,7 +14,6 @@ import {
 import {flowerAnimation} from '../../../animations/kashf-image';
 import {motion} from 'framer-motion';
 import {noneAnimation} from "../../../animations/main-page";
-import { use100vh } from 'react-div-100vh'
 const animationChooser = (scrollQuantity) => {
 
     switch (scrollQuantity) {
@@ -55,17 +54,14 @@ function KashfMobile(props) {
     const imageStyle = {
         mixBlendMode:'lighten',
     };
-
-    const height = use100vh();
-
     return (
         <svg
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             width="242"
-            height={height}
+            height="509"
             fill="none"
-            viewBox={`0 0 242 ${height}`}
+            viewBox="0 0 242 509"
         >
             <g style={imageStyle}>
                 <rect x="25" width="186" height="200" fill="url(#patternKashfMobile)"/>
