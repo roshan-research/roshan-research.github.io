@@ -4,5 +4,28 @@
   margin-top: 4.8vh;
   flex-direction: row;
   display: flex;
+  background-image: url("./galaxy.png");
   justify-content: center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  background-position: top left;
+}
+
+#line{
+  background-image: linear-gradient(to right,
+          #0a0a0a,
+          #080a0c,
+          #0a0d10,
+          #0d1114,
+          #0e1317,
+          #13181e,
+          #161c23,
+          #192028,
+          #1e252f
+  );
+  height: 9.1vh;
+  display: flex;
+  justify-content: end;
+  align-items: end;
+  flex-direction: column;
 }

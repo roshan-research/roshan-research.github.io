@@ -6,11 +6,13 @@ import MenuButtons from "./menu-buttons/menu-buttons";
 
 function Navbar(props) {
     return (
-        <iv className='navbar'>
-            <DoubleTextGroup />
-            <IconTextGroup/>
-            <MenuButtons toggle={props.toggle} isOpen={props.isOpen}/>
-        </iv>
+        <div id={'line'}>
+            <div className='navbar'>
+                <DoubleTextGroup />
+                <IconTextGroup/>
+                <MenuButtons toggle={props.toggle} isOpen={props.isOpen}/>
+            </div>
+        </div>
     )
 }
 
