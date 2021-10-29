@@ -108,9 +108,7 @@ class RoshanWebsite extends Component {
                                         {...fullPageOptions}
                                         onSlideChangeStart={this.onSlideChangeStart}
                                     />
-                                    if(!isSafari && !isOpera){(
-                                        <Footer/>
-                                    )}
+                                    {!isSafari && !isOpera ?(<Footer/>): (<div/>)}
                                 </div>
                             </div>
                         </Route>
