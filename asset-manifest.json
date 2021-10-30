@@ -2,11 +2,11 @@
   "files": {
     "static/js/0.b69d8e9a.chunk.js": "/static/js/0.b69d8e9a.chunk.js",
     "main.css": "/static/css/main.876481ba.chunk.css",
-    "main.js": "/static/js/main.34170ea7.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.1e561265.js",
-    "static/js/3.f4c9b3a9.chunk.js": "/static/js/3.f4c9b3a9.chunk.js",
+    "main.js": "/static/js/main.bccba225.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.b9f21034.js",
+    "static/js/3.a5b367b8.chunk.js": "/static/js/3.a5b367b8.chunk.js",
     "static/css/4.5d49def1.chunk.css": "/static/css/4.5d49def1.chunk.css",
-    "static/js/4.30a2cd99.chunk.js": "/static/js/4.30a2cd99.chunk.js",
+    "static/js/4.03e1e13f.chunk.js": "/static/js/4.03e1e13f.chunk.js",
     "static/css/5.4e5c8b6b.chunk.css": "/static/css/5.4e5c8b6b.chunk.css",
     "static/js/5.fe9fd3fe.chunk.js": "/static/js/5.fe9fd3fe.chunk.js",
     "static/css/6.5d4a0307.chunk.css": "/static/css/6.5d4a0307.chunk.css",
@@ -15,12 +15,12 @@
     "static/js/7.14eb7221.chunk.js": "/static/js/7.14eb7221.chunk.js",
     "static/css/8.d36dc4d4.chunk.css": "/static/css/8.d36dc4d4.chunk.css",
     "static/js/8.f7630028.chunk.js": "/static/js/8.f7630028.chunk.js",
-    "static/css/9.4d5afc40.chunk.css": "/static/css/9.4d5afc40.chunk.css",
-    "static/js/9.4a2acca4.chunk.js": "/static/js/9.4a2acca4.chunk.js",
+    "static/css/9.6199d26a.chunk.css": "/static/css/9.6199d26a.chunk.css",
+    "static/js/9.dc39441c.chunk.js": "/static/js/9.dc39441c.chunk.js",
     "static/js/10.e4d4662f.chunk.js": "/static/js/10.e4d4662f.chunk.js",
     "index.html": "/index.html",
     "static/js/0.b69d8e9a.chunk.js.LICENSE.txt": "/static/js/0.b69d8e9a.chunk.js.LICENSE.txt",
-    "static/js/3.f4c9b3a9.chunk.js.LICENSE.txt": "/static/js/3.f4c9b3a9.chunk.js.LICENSE.txt",
+    "static/js/3.a5b367b8.chunk.js.LICENSE.txt": "/static/js/3.a5b367b8.chunk.js.LICENSE.txt",
     "static/media/Amin.6854caad.svg": "/static/media/Amin.6854caad.svg",
     "static/media/Ammar.79433f63.svg": "/static/media/Ammar.79433f63.svg",
     "static/media/Aparat.2d7ab043.svg": "/static/media/Aparat.2d7ab043.svg",
@@ -49,16 +49,16 @@
     "static/media/harf-image.066dda98.svg": "/static/media/harf-image.066dda98.svg",
     "static/media/home-mobile.87ab725e.svg": "/static/media/home-mobile.87ab725e.svg",
     "static/media/menu-icon.a0de4dbf.svg": "/static/media/menu-icon.a0de4dbf.svg",
-    "static/media/mobile-background.1e627ca4.svg": "/static/media/mobile-background.1e627ca4.svg",
+    "static/media/mobile-background.752712e8.svg": "/static/media/mobile-background.752712e8.svg",
     "static/media/roshan-icon.svg": "/static/media/roshan-icon.102d03da.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/text.810f1b1e.svg": "/static/media/text.810f1b1e.svg",
     "static/media/web-background.85b4851c.svg": "/static/media/web-background.85b4851c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1e561265.js",
-    "static/js/3.f4c9b3a9.chunk.js",
+    "static/js/runtime-main.b9f21034.js",
+    "static/js/3.a5b367b8.chunk.js",
     "static/css/main.876481ba.chunk.css",
-    "static/js/main.34170ea7.chunk.js"
+    "static/js/main.bccba225.chunk.js"
   ]
 }
