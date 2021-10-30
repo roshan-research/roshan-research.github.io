@@ -17,7 +17,9 @@ const imageAnimationChooser = (props) => {
 const returnBasedOneDevice = () => {
     if(isTablet){
         return(
-            <JoinUsWeb id={'web'}/>
+            <div id={'web'}>
+                <JoinUsWeb id={'pic'}/>
+            </div>
         )
     } else if(isMobile){
         return(
@@ -27,7 +29,9 @@ const returnBasedOneDevice = () => {
         )
     } else {
         return(
-            <JoinUsWeb id={'web'}/>
+            <div id={'web'}>
+                <JoinUsWeb id={'pic'}/>
+            </div>
         )
     }
 };

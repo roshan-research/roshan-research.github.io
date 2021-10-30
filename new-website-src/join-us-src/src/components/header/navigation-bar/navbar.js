@@ -3,10 +3,11 @@ import IconTextGroup from "./roshan-icon-group/roshan-icon-group";
 import './navbar.scss'
 import React from 'react';
 import MenuButtons from "./menu-buttons/menu-buttons";
+import {isMobile} from "react-device-detect";
 
 function Navbar(props) {
     return (
-        <div id={'line'}>
+        <div>
             <div className='navbar'>
                 <DoubleTextGroup />
                 <IconTextGroup/>
