@@ -32,9 +32,11 @@ button{
   width: 100vw;
 }
 #footer-mobile {
-  margin-top: 8vh;
-  height: 40vh;
+  height: 20vh;
   width: 100vw;
+  display: flex;
+  justify-content: end;
+  flex-direction: column;
 }
 
 #background {
