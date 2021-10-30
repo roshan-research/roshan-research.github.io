@@ -5,12 +5,12 @@
   "private": true,
   "dependencies": {
     "framer-motion": "^4.1.17",
+    "fullpage-react": "^3.1.0",
     "lottie-react": "^2.1.0",
     "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-device-detect": "^1.17.0",
     "react-dom": "^17.0.2",
-    "react-fullpage-slide": "https://github.com/muhammadksht/react-fullpage-slide/tarball/master",
     "react-router-dom": "^5.3.0",
     "react-scripts": "4.0.3",
     "react-touch-events": "^2.1.0"

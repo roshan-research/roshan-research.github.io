@@ -1,13 +1,16 @@
 import {isMobile, isTablet} from "react-device-detect";
 import FooterWeb from "./web/footer-web";
 import FooterMobile from "./mobile/footer-mobile";
-import scrollToTop from "../scroll-to-top";
+import {Fullpage} from 'fullpage-react';
+const { changeFullpageSlide} = Fullpage;
+
+const goToTop = changeFullpageSlide.bind(null, 0);
 
 const returnBasedOneDevice = () => {
     if(isTablet){
         return(
             <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={scrollToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTop}>
                     <div id={'to-top'}>
                         &uarr;
                     </div>
@@ -20,7 +23,7 @@ const returnBasedOneDevice = () => {
             <div id={'footer-mobile'} style={{
                 position: 'absolute',
             }}>
-                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={scrollToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTop}>
                     <div id={'to-top-mobile'}>
                         &uarr;
                     </div>
@@ -34,7 +37,7 @@ const returnBasedOneDevice = () => {
     } else {
         return(
             <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'} onClick={scrollToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'} onClick={goToTop}>
                     <div id={'to-top'}>
                         &uarr;
                     </div>

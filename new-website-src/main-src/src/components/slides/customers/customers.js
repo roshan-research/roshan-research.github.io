@@ -7,7 +7,6 @@ import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
-import scrollToTop from "../scroll-to-top";
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;

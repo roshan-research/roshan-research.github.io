@@ -2,26 +2,24 @@ import './footer-web.scss';
 import {ReactComponent as Line} from "../../../../assets/images/footer-line.svg";
 import {ReactComponent as Name} from "../../../../assets/images/sherkat.svg";
 import {ReactComponent as RoshanSVG} from "../../../../assets/images/roshan-icon.svg";
-import scrollToTop from "../../scroll-to-top";
+import {Fullpage} from 'fullpage-react';
+const { changeFullpageSlide} = Fullpage;
+
+const goToTop = changeFullpageSlide.bind(null, 0);
 
 export default function FooterWeb() {
-    const height = window.innerHeight;
     return (
         <div id={'footer'}>
             <Line id={'line'}/>
             <div id={'body'}>
                 <div id={'icons-group'}>
-                    <button title={'خانه'} onClick={() => {
-                        scrollToTop(height);
-                    }} style={{
+                    <button title={'خانه'} onClick={goToTop} style={{
                         backgroundColor: 'transparent',
                         borderColor: 'transparent',
                     }}>
                         <RoshanSVG id={'icon'}/>
                     </button>
-                    <button title={'خانه'} onClick={() => {
-                        scrollToTop(height);
-                    }} style={{
+                    <button title={'خانه'} onClick={goToTop} style={{
                         backgroundColor: 'transparent',
                         borderColor: 'transparent',
                     }}>
