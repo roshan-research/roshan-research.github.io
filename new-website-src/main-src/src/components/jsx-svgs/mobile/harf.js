@@ -8,7 +8,6 @@ import {
     textAnimation,
     basicKashfAnimation
 } from '../../../animations/kashf';
-import { use100vh } from 'react-div-100vh'
 import {
     backgroundAnimationHarf,
     bottomLineAnimationHarf,

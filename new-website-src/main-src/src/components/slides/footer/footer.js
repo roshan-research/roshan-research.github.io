@@ -17,7 +17,7 @@ const returnBasedOneDevice = () => {
         )
     } else if(isMobile){
         return(
-            <div style={{
+            <div id={'footer-mobile'} style={{
                 position: 'absolute',
             }}>
                 <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={scrollToTop}>
