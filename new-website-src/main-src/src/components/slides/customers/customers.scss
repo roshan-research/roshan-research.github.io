@@ -28,7 +28,7 @@ button{
 
 #footer {
   margin-top: 8vh;
-  height: 20vh;
+  height: 40vh;
   width: 100vw;
 }
 
@@ -63,6 +63,28 @@ button{
 }
 
 #to-top:hover{
+  border: 1px solid #FFFFFF;
+  color: black;
+  background-color: white;
+}
+
+#to-top-mobile{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: 1px solid #FFFFFF;
+  color: white;
+  font-weight: bold;
+  border-radius: 2px;
+  background-color: transparent;
+  height: 5vh;
+  width: 5vh;
+  margin-right: 10vw;
+  font-size: 5vw;
+  transition: 1s;
+}
+
+#to-top-mobile:hover{
   border: 1px solid #FFFFFF;
   color: black;
   background-color: white;
