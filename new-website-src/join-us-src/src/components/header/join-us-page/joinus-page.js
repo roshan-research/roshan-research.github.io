@@ -11,7 +11,7 @@ const returnBasedOneDevice = () => {
                 <JoinUsWeb id={'pic'}/>
             </div>
         )
-    } else if(!isMobile){
+    } else if(isMobile){
         return(
             <div id={isSafari || isOpera ? 'mobile-safari': 'mobile'}>
                 <JoinUsMobile/>

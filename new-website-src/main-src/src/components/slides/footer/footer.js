@@ -9,7 +9,7 @@ const returnBasedOneDevice = () => {
             <div>
                 <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={scrollToTop}>
                     <div id={'to-top'}>
-                        &#129121;
+                        &uarr;
                     </div>
                 </a>
                 <FooterWeb/>
@@ -22,7 +22,7 @@ const returnBasedOneDevice = () => {
             }}>
                 <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={scrollToTop}>
                     <div id={'to-top-mobile'}>
-                        &#129121;
+                        &uarr;
                     </div>
                 </a>
                 <div style={{
@@ -36,7 +36,7 @@ const returnBasedOneDevice = () => {
             <div>
                 <a role="button" style={{color:'transparent'}} href={'#!'} onClick={scrollToTop}>
                     <div id={'to-top'}>
-                        &#129121;
+                        &uarr;
                     </div>
                 </a>
                 <FooterWeb/>
