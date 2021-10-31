@@ -26,9 +26,14 @@ const scrollToFooter = () => {
     })
 }
 const handleSwipe = (direction) => {
-    switch (direction) {
-        case "top": scrollToFooter(); break;
-        case "bottom": console.log('bottom');
+    if (direction === "top") {
+        isFooterOpen = true;
+        scrollToFooter();
+    } else if (direction === "bottom") {
+        isFooterOpen = false;
+        setTimeout(() => {
+            goToCustomers()
+        },1000);
     }
 }
 
@@ -83,7 +88,7 @@ class Customers extends Component {
                 </div>
             </div>
         ):(
-            <ReactTouchEvents onSwipe={handleSwipe}>
+            <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={5}>
                 <div>
                     <div id={'customers'}>
                         {returnBasedOneDevice(this.props)}
