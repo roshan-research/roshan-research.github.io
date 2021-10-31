@@ -2,11 +2,11 @@
   "files": {
     "static/js/0.e97b0fd9.chunk.js": "/static/js/0.e97b0fd9.chunk.js",
     "main.css": "/static/css/main.876481ba.chunk.css",
-    "main.js": "/static/js/main.b8fb6233.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.3e65ebac.js",
+    "main.js": "/static/js/main.82326bdf.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.f81b939f.js",
     "static/js/3.504edc6f.chunk.js": "/static/js/3.504edc6f.chunk.js",
     "static/css/4.5d49def1.chunk.css": "/static/css/4.5d49def1.chunk.css",
-    "static/js/4.9dfde5eb.chunk.js": "/static/js/4.9dfde5eb.chunk.js",
+    "static/js/4.152f30ee.chunk.js": "/static/js/4.152f30ee.chunk.js",
     "static/css/5.4e5c8b6b.chunk.css": "/static/css/5.4e5c8b6b.chunk.css",
     "static/js/5.45f03399.chunk.js": "/static/js/5.45f03399.chunk.js",
     "static/css/6.5d4a0307.chunk.css": "/static/css/6.5d4a0307.chunk.css",
@@ -15,8 +15,8 @@
     "static/js/7.7145c849.chunk.js": "/static/js/7.7145c849.chunk.js",
     "static/css/8.d36dc4d4.chunk.css": "/static/css/8.d36dc4d4.chunk.css",
     "static/js/8.d90d24e2.chunk.js": "/static/js/8.d90d24e2.chunk.js",
-    "static/css/9.8e0b689d.chunk.css": "/static/css/9.8e0b689d.chunk.css",
-    "static/js/9.9e08816e.chunk.js": "/static/js/9.9e08816e.chunk.js",
+    "static/css/9.0435d18f.chunk.css": "/static/css/9.0435d18f.chunk.css",
+    "static/js/9.a90ef20d.chunk.js": "/static/js/9.a90ef20d.chunk.js",
     "static/js/10.7cb31216.chunk.js": "/static/js/10.7cb31216.chunk.js",
     "index.html": "/index.html",
     "static/js/0.e97b0fd9.chunk.js.LICENSE.txt": "/static/js/0.e97b0fd9.chunk.js.LICENSE.txt",
@@ -49,16 +49,16 @@
     "static/media/harf-image.066dda98.svg": "/static/media/harf-image.066dda98.svg",
     "static/media/home-mobile.87ab725e.svg": "/static/media/home-mobile.87ab725e.svg",
     "static/media/menu-icon.a0de4dbf.svg": "/static/media/menu-icon.a0de4dbf.svg",
-    "static/media/mobile-background.752712e8.svg": "/static/media/mobile-background.752712e8.svg",
+    "static/media/mobile-background.890fd5bc.svg": "/static/media/mobile-background.890fd5bc.svg",
     "static/media/roshan-icon.svg": "/static/media/roshan-icon.102d03da.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/text.810f1b1e.svg": "/static/media/text.810f1b1e.svg",
     "static/media/web-background.85b4851c.svg": "/static/media/web-background.85b4851c.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3e65ebac.js",
+    "static/js/runtime-main.f81b939f.js",
     "static/js/3.504edc6f.chunk.js",
     "static/css/main.876481ba.chunk.css",
-    "static/js/main.b8fb6233.chunk.js"
+    "static/js/main.82326bdf.chunk.js"
   ]
 }
