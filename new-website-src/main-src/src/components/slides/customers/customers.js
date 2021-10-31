@@ -7,6 +7,9 @@ import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
+import {Fullpage} from 'fullpage-react';
+const { changeFullpageSlide} = Fullpage;
+const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
@@ -55,17 +58,14 @@ const returnBasedOneDevice = (props) => {
 
 class Customers extends Component {
     componentDidMount() {
-        const height = window.innerHeight;
         findDOMNode(this).addEventListener("wheel", (event) => {
             const delta = Math.sign(event.deltaY);
             if (delta === 1) {
                 scrollToFooter();
             } else if (delta === -1) {
-                const totalHeight = 5 * height;
-                window.scrollTo({
-                    top: totalHeight,
-                    behavior: 'smooth',
-                })
+                setTimeout(() => {
+                    goToCustomers()
+                },1000);
             }
         });
 
