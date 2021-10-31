@@ -8,7 +8,7 @@ import {isMobile} from "react-device-detect";
 function Navbar(props) {
     return (
         <div>
-            <div className='navbar'>
+            <div className={isMobile ? 'navbar-mobile' :'navbar'}>
                 <DoubleTextGroup />
                 <IconTextGroup/>
                 <MenuButtons toggle={props.toggle} isOpen={props.isOpen}/>

@@ -1,8 +1,8 @@
 import React from 'react';
-import JoinUsMobile from "./join-us-mobile";
+import {ReactComponent as JoinUsMobile} from "../../../assets/images/mobile-join-us.svg";
 import {ReactComponent as JoinUsWeb} from "../../../assets/images/web-join-us.svg";
 import './joinus-page.scss';
-import {isMobile, isSafari,isOpera,isTablet} from "react-device-detect";
+import {isMobile,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = () => {
     if(isTablet){
@@ -13,8 +13,8 @@ const returnBasedOneDevice = () => {
         )
     } else if(isMobile){
         return(
-            <div id={isSafari || isOpera ? 'mobile-safari-j': 'mobile-j'}>
-                <JoinUsMobile/>
+            <div id={ 'mobile-j'}>
+                <JoinUsMobile id={'pic'}/>
             </div>
         )
     } else {
@@ -26,7 +26,7 @@ const returnBasedOneDevice = () => {
     }
 };
 
-export default function JoinusPage(props) {
+export default function JoinusPage() {
     return (
         <div className={'join-us-page'}>
             {returnBasedOneDevice()}
