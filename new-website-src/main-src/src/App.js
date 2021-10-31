@@ -16,6 +16,8 @@ const Harf = lazy(() => import("./components/slides/harf/harf"));
 const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
 const Customers = lazy(() => import("./components/slides/customers/customers"));
 
+let isFooterOpen = false;
+
 const scrollToFooter = () => {
     const height = window.innerHeight;
     const totalHeight = 5 * height + height;
@@ -36,12 +38,14 @@ class RoshanWebsite extends Component {
     }
 
     toggleFooter(event){
-        if(event.keyCode === 38){
+        if(event.keyCode === 38 && isFooterOpen){
+            isFooterOpen = false;
             setTimeout(() => {
                 goToCustomers()
             },1000);
         } else if(event.keyCode === 40){
             scrollToFooter()
+            isFooterOpen = true;
         }
     }
 

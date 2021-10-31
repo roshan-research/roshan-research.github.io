@@ -11,6 +11,8 @@ import {Fullpage} from 'fullpage-react';
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
+let isFooterOpen = false;
+
 function shouldRender(scrollQuantity){
     return scrollQuantity === 5;
 }
@@ -62,7 +64,9 @@ class Customers extends Component {
             const delta = Math.sign(event.deltaY);
             if (delta === 1) {
                 scrollToFooter();
-            } else if (delta === -1) {
+                isFooterOpen = true;
+            } else if (delta === -1 && isFooterOpen) {
+                isFooterOpen = false;
                 setTimeout(() => {
                     goToCustomers()
                 },1000);
