@@ -5,6 +5,9 @@ import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
 import Footer from "./components/slides/footer/footer";
+const { changeFullpageSlide} = Fullpage;
+
+const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 const Header = lazy(() => import("./components/header/header"));
 const Kashf = lazy(() => import("./components/slides/kashf/kashf"));
@@ -12,6 +15,15 @@ const Alefba = lazy(() => import("./components/slides/alefba/alefba"));
 const Harf = lazy(() => import("./components/slides/harf/harf"));
 const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
 const Customers = lazy(() => import("./components/slides/customers/customers"));
+
+const scrollToFooter = () => {
+    const height = window.innerHeight;
+    const totalHeight = 5 * height + height;
+    window.scrollTo({
+        top: totalHeight,
+        behavior: 'smooth',
+    })
+}
 
 class RoshanWebsite extends Component {
     constructor(props) {
@@ -23,20 +35,23 @@ class RoshanWebsite extends Component {
         scrollsQuantity: 0,
     }
 
-    scrollToFooter = () => {
-        const height = window.innerHeight;
-        const totalHeight = 5 * height + height;
-        window.scrollTo({
-            top: totalHeight,
-            behavior: 'smooth',
-        })
+    toggleFooter(event){
+        if(event.keyCode === 38){
+            setTimeout(() => {
+                goToCustomers()
+            },1000);
+        } else if(event.keyCode === 40){
+            scrollToFooter()
+        }
     }
 
     onSlideChangeStart = (name,props,state,newState) => {
         const shouldAdd = newState.activeSlide === 5;
-        shouldAdd ? document.addEventListener("keydown", this.scrollToFooter) :
-            document.removeEventListener("keydown", this.scrollToFooter)
-
+        if(shouldAdd) {
+            document.addEventListener("keydown", this.toggleFooter)
+        } else {
+            document.removeEventListener("keydown",this.toggleFooter)
+        }
         this.setState({
             fake: !this.state.fake,
             scrollsQuantity: this.state.scrollsQuantity + 1,
