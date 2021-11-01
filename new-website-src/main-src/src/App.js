@@ -141,6 +141,14 @@ class RoshanWebsite extends Component {
         ];
 
         const generalStyle = isOpera || isSafari ? this.state.style : {};
+        const shrink = () => {
+            this.setState({
+                style: {
+                    height : '100vh',
+                    transition : '1.5s',
+                }
+            })
+        };
 
         return (
             <div id={'main'}>
@@ -152,7 +160,7 @@ class RoshanWebsite extends Component {
                                     {...fullPageOptions}
                                     onSlideChangeStart={this.onSlideChangeStart}
                                 />
-                                <Footer/>
+                                <Footer beforehanadFunction={shrink}/>
                             </div>
                         </Route>
                     </Switch>

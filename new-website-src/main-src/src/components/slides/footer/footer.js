@@ -6,11 +6,17 @@ const { changeFullpageSlide} = Fullpage;
 
 const goToTop = changeFullpageSlide.bind(null, 0);
 
-const returnBasedOneDevice = () => {
+const returnBasedOneDevice = (beforehandFunction) => {
+
+    const goToTopAll = () => {
+        beforehandFunction();
+        goToTop();
+    }
+
     if(isTablet){
         return(
             <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTopAll}>
                     <div id={'to-top'}>
                         &uarr;
                     </div>
@@ -23,7 +29,7 @@ const returnBasedOneDevice = () => {
             <div id={'footer-mobile'} style={isSafari ? {} :{
                 position: 'absolute',
             }}>
-                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTopAll}>
                     <div id={'to-top-mobile'}>
                         &uarr;
                     </div>
@@ -37,7 +43,7 @@ const returnBasedOneDevice = () => {
     } else {
         return(
             <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'} onClick={goToTop}>
+                <a role="button" style={{color:'transparent'}} href={'#!'} onClick={goToTopAll}>
                     <div id={'to-top'}>
                         &uarr;
                     </div>
@@ -48,11 +54,11 @@ const returnBasedOneDevice = () => {
     }
 };
 
-export default function Footer() {
+export default function Footer(props) {
 
     return (
         <div>
-            {returnBasedOneDevice()}
+            {returnBasedOneDevice(props.beforehanadFunction)}
         </div>
     )
 
