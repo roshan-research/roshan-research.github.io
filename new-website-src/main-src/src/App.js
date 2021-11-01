@@ -35,6 +35,10 @@ class RoshanWebsite extends Component {
     state = {
         fake:false,
         scrollsQuantity: 0,
+        style: {
+            height : '100vh',
+            transition : '1.5s',
+        }
     }
 
     toggleFooter(event){
@@ -52,9 +56,53 @@ class RoshanWebsite extends Component {
     onSlideChangeStart = (name,props,state,newState) => {
         const shouldAdd = newState.activeSlide === 5;
         if(shouldAdd) {
-            document.addEventListener("keydown", this.toggleFooter)
+            document.addEventListener("keydown", this.toggleFooter);
+            if(isSafari || isOpera){
+                document.addEventListener("wheel", (event) => {
+                    const delta = Math.sign(event.deltaY);
+                    if (delta === 1) {
+                        this.setState({
+                            style: {
+                                height : '140vh',
+                                transition : '1.5s',
+                            }
+                        })
+                        isFooterOpen = true;
+                    } else if (delta === -1 && isFooterOpen) {
+                        isFooterOpen = false;
+                        this.setState({
+                            style: {
+                                height : '100vh',
+                                transition : '1.5s',
+                            }
+                        })
+                    }
+                });
+            }
         } else {
-            document.removeEventListener("keydown",this.toggleFooter)
+            document.removeEventListener("keydown",this.toggleFooter);
+            if(isSafari || isOpera){
+                document.removeEventListener("wheel", (event) => {
+                    const delta = Math.sign(event.deltaY);
+                    if (delta === 1) {
+                        this.setState({
+                            style: {
+                                height : '140vh',
+                                transition : '1.5s',
+                            }
+                        })
+                        isFooterOpen = true;
+                    } else if (delta === -1 && isFooterOpen) {
+                        isFooterOpen = false;
+                        this.setState({
+                            style: {
+                                height : '100vh',
+                                transition : '1.5s',
+                            }
+                        })
+                    }
+                });
+            }
         }
         this.setState({
             fake: !this.state.fake,
@@ -71,31 +119,7 @@ class RoshanWebsite extends Component {
             enableArrowKeys: true,
         };
 
-        fullPageOptions.slides = isSafari || isOpera ? [
-            <Slide>
-                <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <div id={'fullpage-footer'}>
-                    <Footer/>
-                </div>
-            </Slide>
-        ]:[
+        fullPageOptions.slides = [
             <Slide>
                 <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
@@ -116,19 +140,19 @@ class RoshanWebsite extends Component {
             </Slide>,
         ];
 
+        const generalStyle = isOpera || isSafari ? this.state.style : {};
+
         return (
             <div id={'main'}>
                 <Suspense fallback={<ProgressIndicator/>}>
                     <Switch>
                         <Route path={'/'} exact>
-                            <div id={isOpera || isSafari ? 'opera-safari': 'normal'}>
-                                <div>
-                                    <Fullpage
-                                        {...fullPageOptions}
-                                        onSlideChangeStart={this.onSlideChangeStart}
-                                    />
-                                    {!isSafari && !isOpera ?(<Footer/>): (<div/>)}
-                                </div>
+                            <div style={generalStyle}>
+                                <Fullpage
+                                    {...fullPageOptions}
+                                    onSlideChangeStart={this.onSlideChangeStart}
+                                />
+                                <Footer/>
                             </div>
                         </Route>
                     </Switch>

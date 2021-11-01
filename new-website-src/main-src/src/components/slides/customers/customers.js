@@ -25,6 +25,7 @@ const scrollToFooter = () => {
         behavior: 'smooth',
     })
 }
+
 const handleSwipe = (direction) => {
     if (direction === "top") {
         isFooterOpen = true;
