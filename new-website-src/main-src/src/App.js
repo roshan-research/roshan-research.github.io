@@ -3,10 +3,10 @@ import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
-import {isOpera, isSafari} from "react-device-detect";
+import {isMobile, isOpera, isSafari} from "react-device-detect";
+import ReactTouchEvents from "react-touch-events";
 import Footer from "./components/slides/footer/footer";
 const { changeFullpageSlide} = Fullpage;
-
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 const Header = lazy(() => import("./components/header/header"));
@@ -38,7 +38,8 @@ class RoshanWebsite extends Component {
         style: {
             height : '100vh',
             transition : '1.5s',
-        }
+        },
+        handleSwipe: () => {}
     }
 
     toggleFooter(event){
@@ -58,6 +59,27 @@ class RoshanWebsite extends Component {
         if(shouldAdd) {
             document.addEventListener("keydown", this.toggleFooter);
             if(isSafari || isOpera){
+                this.setState({
+                    handleSwipe: (direction) => {
+                        if (direction === "top") {
+                            isFooterOpen = true;
+                            this.setState({
+                                style: {
+                                    height: '140vh',
+                                    transition: '1.5s',
+                                }
+                            })
+                        } else if (direction === "bottom" && isFooterOpen) {
+                            isFooterOpen = false;
+                            this.setState({
+                                style: {
+                                    height: '100vh',
+                                    transition: '1.5s',
+                                }
+                            })
+                        }
+                    }
+                })
                 document.addEventListener("wheel", (event) => {
                     const delta = Math.sign(event.deltaY);
                     if (delta === 1) {
@@ -82,6 +104,10 @@ class RoshanWebsite extends Component {
         } else {
             document.removeEventListener("keydown",this.toggleFooter);
             if(isSafari || isOpera){
+                this.setState({
+                    handleSwipe: () => {
+                    },
+                })
                 document.removeEventListener("wheel", (event) => {
                     const delta = Math.sign(event.deltaY);
                     if (delta === 1) {
@@ -155,13 +181,26 @@ class RoshanWebsite extends Component {
                 <Suspense fallback={<ProgressIndicator/>}>
                     <Switch>
                         <Route path={'/'} exact>
-                            <div style={generalStyle}>
-                                <Fullpage
-                                    {...fullPageOptions}
-                                    onSlideChangeStart={this.onSlideChangeStart}
-                                />
-                                <Footer beforehanadFunction={shrink}/>
-                            </div>
+                            {isSafari || isOpera? (
+                                <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
+                                    <div style={generalStyle}>
+                                        <Fullpage
+                                            {...fullPageOptions}
+                                            onSlideChangeStart={this.onSlideChangeStart}
+                                        />
+                                        <Footer beforehanadFunction={shrink}/>
+                                    </div>
+                                </ReactTouchEvents>
+                            ) : (
+                                <div style={generalStyle}>
+                                    <Fullpage
+                                        {...fullPageOptions}
+                                        onSlideChangeStart={this.onSlideChangeStart}
+                                    />
+                                    <Footer beforehanadFunction={shrink}/>
+                                </div>
+                            )}
+
                         </Route>
                     </Switch>
                 </Suspense>
