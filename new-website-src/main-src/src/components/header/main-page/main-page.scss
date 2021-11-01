@@ -1,9 +1,16 @@
 .all .mobile-background{
   display: flex;
-  height: 70vh;
-  width:100%;
+  width:100vw;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   float: left;
   position: relative;
+}
+
+.mobile-background #body-main{
+  width: 100%;
+  height: 85vh;
 }
 
 .all .web-background{

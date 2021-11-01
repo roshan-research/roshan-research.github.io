@@ -30,7 +30,9 @@ const returnBasedOneDevice = () => {
         )
   } else if(isMobile){
         return(
-            <MobileBackground className='mobile-background'/>
+            <div className='mobile-background'>
+                <MobileBackground id={'body-main'}/>
+            </div>
         )
   } else {
         return(
