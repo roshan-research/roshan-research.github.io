@@ -21,8 +21,8 @@ const returnBasedOneDevice = () => {
         )
     } else if(isMobile){
         return(
-            <div id={isSafari || isOpera? 'mobile-safari': 'mobile'}>
-                <ContactUsMobile />
+            <div id={'mobile'}>
+                <ContactUsMobile id={'body-mobile'}/>
             </div>
         )
     } else {
