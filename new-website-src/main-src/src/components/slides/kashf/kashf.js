@@ -2,7 +2,7 @@ import KashfMobile from "../../jsx-svgs/mobile/kashf";
 import KashfWebText from "../../jsx-svgs/web/kashf-text";
 import KashfWebImage from "../../jsx-svgs/web/kashf-image";
 import './kashf.scss'
-import {isMobile,isTablet} from "react-device-detect";
+import {isMobile,isSafari,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
     if(isTablet){
@@ -19,7 +19,7 @@ const returnBasedOneDevice = (props) => {
         )
     } else if(isMobile){
         return(
-            <div id={'mobile'}>
+            <div id={isSafari ? 'mobile-safari' : 'mobile'}>
                 <KashfMobile status={props.scrollQuantity}/>
             </div>
         )

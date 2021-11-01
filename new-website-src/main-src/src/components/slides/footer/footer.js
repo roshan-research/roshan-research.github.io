@@ -1,4 +1,4 @@
-import {isMobile, isTablet} from "react-device-detect";
+import {isMobile, isSafari, isTablet} from "react-device-detect";
 import FooterWeb from "./web/footer-web";
 import FooterMobile from "./mobile/footer-mobile";
 import {Fullpage} from 'fullpage-react';
@@ -20,7 +20,7 @@ const returnBasedOneDevice = () => {
         )
     } else if(isMobile){
         return(
-            <div id={'footer-mobile'} style={{
+            <div id={'footer-mobile'} style={isSafari ? {} :{
                 position: 'absolute',
             }}>
                 <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTop}>

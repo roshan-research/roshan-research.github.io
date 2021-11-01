@@ -2,7 +2,7 @@ import HarfMobile from "../../jsx-svgs/mobile/harf";
 import './harf.scss'
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
 import HarfWebText from "../../jsx-svgs/web/harf-text";
-import {isMobile, isTablet} from "react-device-detect";
+import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
@@ -37,7 +37,7 @@ const returnBasedOneDevice = (props) => {
         )
     } else if(isMobile){
         return(
-            <div id={'mobile'}>
+            <div id={isSafari ? 'mobile-safari' :'mobile'}>
                 <HarfMobile status={props.scrollQuantity}/>
             </div>
         )

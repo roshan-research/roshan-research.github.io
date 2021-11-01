@@ -26,6 +26,12 @@ button{
   height: 95vh;
 }
 
+#customers #mobile-safari{
+  display: flex;
+  height: 80vh;
+}
+
+
 #footer {
   margin-top: 8vh;
   height: 20vh;
@@ -40,7 +46,7 @@ button{
 }
 
 #background {
-  width: 100vm;
+  width: 100vw;
   height: 100vh;
   position:absolute;
 }

@@ -58,9 +58,9 @@ function HazmMobile(props) {
         <svg
             xmlns='http://www.w3.org/2000/svg'
             width='245'
-            height="460"
+            height="470"
             fill='none'
-            viewBox="0 0 245 460"
+            viewBox="0 0 245 470"
         >
             <motion.path
                 variants={animationChooser(props.status)['basicKashfAnimation']}
