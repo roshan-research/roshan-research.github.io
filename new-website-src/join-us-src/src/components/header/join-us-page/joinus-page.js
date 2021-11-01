@@ -15,7 +15,7 @@ const returnBasedOneDevice = () => {
                 </div>
             </div>
         )
-    } else if(!isMobile){
+    } else if(isMobile){
         return(
             <div id={ 'mobile-j'}>
                 <JoinUsMobile id={'pic'}/>
