@@ -45,7 +45,7 @@ const returnBasedOneDevice = (props) => {
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
             </div>
         )
-    } else if(isMobile){
+    } else if(!isMobile){
         return(
             <motion.div
                 variants={flowerAnimation}
@@ -65,6 +65,7 @@ const returnBasedOneDevice = (props) => {
 };
 
 class Customers extends Component {
+
     componentDidMount() {
         findDOMNode(this).addEventListener("wheel", (event) => {
             const delta = Math.sign(event.deltaY);
@@ -78,7 +79,6 @@ class Customers extends Component {
                 },1000);
             }
         });
-
     }
 
     render() {

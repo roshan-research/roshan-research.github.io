@@ -26,40 +26,58 @@ import {ReactComponent as Civilica} from "../../../assets/images/mobile/customer
 import {ReactComponent as Bimarestan} from "../../../assets/images/mobile/customers/row4/couple2/Bimarestan.svg";
 import {ReactComponent as Text} from '../../../assets/images/mobile/customers/text.svg';
 import {ReactComponent as Aparat} from '../../../assets/images/mobile/customers/row4/couple1/Aparat.svg';
+import {useEffect, useState} from "react";
+import {flowerAnimation} from "../../../animations/kashf-image";
+import {motion} from 'framer-motion';
 
-
-const couple11Man = customersAnimation(10, 0, 1, 0);
-const couple11Woman = customersAnimation(10.5, 0, 0, 1);
-const couple12Man = customersAnimation(10, 4, 1, 0);
-const couple12Woman = customersAnimation(10.5, 4, 0, 1);
-const couple13Man = customersAnimation(10, 10, 1, 0);
-const couple13Woman = customersAnimation(10.5, 10, 0, 1);
-const couple21Man = customersAnimation(5, 2, 1, 0);
-const couple21Woman = customersAnimation(5.5, 2, 0, 1);
-const couple22Man = customersAnimation(15, 7, 1, 0);
-const couple22Woman = customersAnimation(15.5, 7, 0, 1);
-const couple23Man = customersAnimation(6, 10, 1, 0);
-const couple23Woman = customersAnimation(6.5, 10, 0, 1);
-const couple31Man = customersAnimation(5, 3, 1, 0);
-const couple31Woman = customersAnimation(5.5, 3, 0, 1);
-const couple32Man = customersAnimation(5, 14, 1, 0);
-const couple32Woman = customersAnimation(5.5, 14, 0, 1);
-const couple33Man = customersAnimation(20, 3, 1, 0);
-const couple33Woman = customersAnimation(20.5, 3, 0, 1);
-const couple41Man = customersAnimation(13, 0, 1, 0);
-const couple41Woman = customersAnimation(13.5, 0, 0, 1);
-const couple42Man = customersAnimation(10, 4, 1, 0);
-const couple42Woman = customersAnimation(10.5, 4, 0, 1);
-const couple43Man = customersAnimation(10, 9, 1, 0);
-const couple43Woman = customersAnimation(10.5, 9, 0, 1);
+const couple11Man = customersAnimation(5.2, 1, 0);
+const couple11Woman = customersAnimation(0, 0, 1);
+const couple12Man = customersAnimation(2.3, 1, 0);
+const couple12Woman = customersAnimation(0, 0, 1);
+const couple13Man = customersAnimation(5.3, 1, 0);
+const couple13Woman = customersAnimation( 0, 0, 1);
+const couple21Man = customersAnimation(4, 1, 0);
+const couple21Woman = customersAnimation(0, 0, 1);
+const couple22Man = customersAnimation(3, 1, 0);
+const couple22Woman = customersAnimation(0, 0, 1);
+const couple23Man = customersAnimation(1.5, 1, 0);
+const couple23Woman = customersAnimation(0, 0, 1);
+const couple31Man = customersAnimation(5.6, 1, 0);
+const couple31Woman = customersAnimation(0, 0, 1);
+const couple32Man = customersAnimation(3, 1, 0);
+const couple32Woman = customersAnimation(0, 0, 1);
+const couple33Man = customersAnimation(4.4, 1, 0);
+const couple33Woman = customersAnimation(0, 0, 1);
+const couple41Man = customersAnimation(2.1, 1, 0);
+const couple41Woman = customersAnimation(0, 0, 1);
+const couple42Man = customersAnimation(1, 1, 0);
+const couple42Woman = customersAnimation(0, 0, 1);
+const couple43Man = customersAnimation(4.2, 1, 0);
+const couple43Woman = customersAnimation(0, 0, 1);
 
 function CustomersMobile(){
+
+    const [count, setCount] = useState(0);
+
+    useEffect(() => {
+        const interval = setInterval(() => {
+            setCount(count + 1);
+        }, 18000);
+        return () => clearInterval(interval);
+    })
+
     return(
         <div id={'customers'}>
             <div id={'text'}>
                 <Text/>
             </div>
-            <div id={'table stack'}>
+            <motion.div
+                id={'table stack'}
+                variants={flowerAnimation}
+                initial={"hidden"}
+                animate={"visible"}
+                key={count}
+            >
                 <div className={'row'}>
                     <CustomerBox
                         animationMan={couple11Man}
@@ -152,7 +170,7 @@ function CustomersMobile(){
                         womanComponent={<Azmoon/>}
                     />
                 </div>
-            </div>
+            </motion.div>
         </div>
     )
 }

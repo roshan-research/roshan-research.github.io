@@ -1,4 +1,4 @@
-export default function customersAnimation(repeatDelay,delay,initialOpacity,targetOpacity){
+export default function customersAnimation(delay,initialOpacity,targetOpacity){
     return {
         initial: {
             opacity: initialOpacity,
@@ -7,12 +7,9 @@ export default function customersAnimation(repeatDelay,delay,initialOpacity,targ
             opacity: targetOpacity,
         },
         transition:{
-            repeatDelay: repeatDelay,
             delay: delay,
-            ease: "linear",
+            ease: "easeIn",
             duration: 1,
-            repeatType: "reverse",
-            repeat: Infinity
         }
     };
 }
