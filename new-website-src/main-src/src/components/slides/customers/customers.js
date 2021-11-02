@@ -45,7 +45,7 @@ const returnBasedOneDevice = (props) => {
                 <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
             </div>
         )
-    } else if(!isMobile){
+    } else if(isMobile){
         return(
             <motion.div
                 variants={flowerAnimation}

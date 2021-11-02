@@ -17,7 +17,7 @@ const returnBasedOneDevice = (props) => {
                 </div>
             </div>
         )
-    } else if(!isMobile){
+    } else if(isMobile){
         return(
             <div id={isSafari ? 'mobile-safari' :'mobile'}>
                 <HazmMobile status={props.scrollQuantity}/>
