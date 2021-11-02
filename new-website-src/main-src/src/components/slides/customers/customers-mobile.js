@@ -31,29 +31,29 @@ import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 
 const couple11Man = customersAnimation(5.2, 1, 0);
-const couple11Woman = customersAnimation(0, 0, 1);
+const couple11Woman = customersAnimation(1, 0, 1);
 const couple12Man = customersAnimation(2.3, 1, 0);
-const couple12Woman = customersAnimation(0, 0, 1);
+const couple12Woman = customersAnimation(1, 0, 1);
 const couple13Man = customersAnimation(5.3, 1, 0);
-const couple13Woman = customersAnimation( 0, 0, 1);
+const couple13Woman = customersAnimation( 1, 0, 1);
 const couple21Man = customersAnimation(4, 1, 0);
-const couple21Woman = customersAnimation(0, 0, 1);
+const couple21Woman = customersAnimation(1, 0, 1);
 const couple22Man = customersAnimation(3, 1, 0);
-const couple22Woman = customersAnimation(0, 0, 1);
+const couple22Woman = customersAnimation(1, 0, 1);
 const couple23Man = customersAnimation(1.5, 1, 0);
-const couple23Woman = customersAnimation(0, 0, 1);
+const couple23Woman = customersAnimation(1, 0, 1);
 const couple31Man = customersAnimation(5.6, 1, 0);
-const couple31Woman = customersAnimation(0, 0, 1);
+const couple31Woman = customersAnimation(1, 0, 1);
 const couple32Man = customersAnimation(3, 1, 0);
-const couple32Woman = customersAnimation(0, 0, 1);
+const couple32Woman = customersAnimation(1, 0, 1);
 const couple33Man = customersAnimation(4.4, 1, 0);
-const couple33Woman = customersAnimation(0, 0, 1);
+const couple33Woman = customersAnimation(1, 0, 1);
 const couple41Man = customersAnimation(2.1, 1, 0);
-const couple41Woman = customersAnimation(0, 0, 1);
+const couple41Woman = customersAnimation(1, 0, 1);
 const couple42Man = customersAnimation(1, 1, 0);
-const couple42Woman = customersAnimation(0, 0, 1);
+const couple42Woman = customersAnimation(1, 0, 1);
 const couple43Man = customersAnimation(4.2, 1, 0);
-const couple43Woman = customersAnimation(0, 0, 1);
+const couple43Woman = customersAnimation(1, 0, 1);
 
 function CustomersMobile(){
 
@@ -62,7 +62,7 @@ function CustomersMobile(){
     useEffect(() => {
         const interval = setInterval(() => {
             setCount(count + 1);
-        }, 18000);
+        }, 25000);
         return () => clearInterval(interval);
     })
 

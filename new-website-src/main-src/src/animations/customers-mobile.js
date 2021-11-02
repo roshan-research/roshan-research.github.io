@@ -9,7 +9,7 @@ export default function customersAnimation(delay,initialOpacity,targetOpacity){
         transition:{
             delay: delay,
             ease: "easeIn",
-            duration: 1,
+            duration: 2,
         }
     };
 }

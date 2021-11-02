@@ -200,7 +200,6 @@ class RoshanWebsite extends Component {
                                     <Footer beforehanadFunction={shrink}/>
                                 </div>
                             )}
-
                         </Route>
                     </Switch>
                 </Suspense>
