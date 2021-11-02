@@ -184,6 +184,7 @@ class RoshanWebsite extends Component {
                             {isSafari || isOpera? (
                                 <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
                                     <div style={generalStyle}>
+                                        <ProgressIndicator/>
                                         <Fullpage
                                             {...fullPageOptions}
                                             onSlideChangeStart={this.onSlideChangeStart}

@@ -5,7 +5,9 @@ import './progress-indicator.css'
 function ProgressIndicator(){
     return(
         <div className={'wrapper'}>
-            <Lottie animationData={progressIndicator} id={'progress-indicator'}/>
+            <div id={'progress-indicator'}>
+                <Lottie animationData={progressIndicator}/>
+            </div>
         </div>
     )
 }

@@ -14,8 +14,13 @@
 }
 
 @media screen and (max-width: 500px){
-    .wrapper #progress-indicator{
+    .wrapper {
         height: 100vh;
-        width: 115vw;
+        width: 100vw;
+    }
+
+    .wrapper #progress-indicator {
+        width: 100%;
+        height: 100%;
     }
 }
