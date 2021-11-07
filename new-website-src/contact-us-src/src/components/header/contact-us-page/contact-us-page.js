@@ -24,7 +24,7 @@ const returnBasedOneDevice = () => {
                 <ContactUsWeb id={'web'}/>
             </div>
         )
-    } else if(!isMobile){
+    } else if(isMobile){
         return(
             <div id={'mobile'}>
                 <p id={'address-mobile'}>
