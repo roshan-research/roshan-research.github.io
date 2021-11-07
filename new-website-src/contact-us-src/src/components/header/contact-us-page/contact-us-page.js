@@ -17,7 +17,12 @@ const imageAnimationChooser = (props) => {
 const returnBasedOneDevice = () => {
     if(isTablet){
         return(
-            <ContactUsWeb id={'web'}/>
+            <div>
+                <p id={'address'}>
+                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
+                </p>
+                <ContactUsWeb id={'web'}/>
+            </div>
         )
     } else if(isMobile){
         return(
@@ -27,7 +32,12 @@ const returnBasedOneDevice = () => {
         )
     } else {
         return(
-            <ContactUsWeb id={'web'}/>
+            <div>
+                <p id={'address'}>
+                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
+                </p>
+                <ContactUsWeb id={'web'}/>
+            </div>
         )
     }
 };

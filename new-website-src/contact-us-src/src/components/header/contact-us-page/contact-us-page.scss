@@ -1,3 +1,7 @@
+@font-face {
+  font-family: iranYekan;
+  src: url(../../../assets/IRANYekan.ttf);
+}
 #mobile {
   margin-top: 10vh;
   width: 80vw;
@@ -5,6 +9,17 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+#address{
+  color: white;
+  font-family: iranYekan, serif;
+  margin-top: 61vh;
+  width: 27vw;
+  height: 70vh;
+  padding-right: 3vw;
+  font-size: 1.1vw;
+  position: absolute;
 }
 
 #mobile #body-main{
@@ -23,4 +38,40 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+}
+
+@media screen and (max-width: 1250px){
+  #address{
+    margin-top: 57vh;
+  }
+}
+
+@media screen and (max-width: 1200px){
+  #address{
+    margin-top: 57vh;
+  }
+}
+
+@media screen and (max-width: 1000px){
+  #address{
+    margin-top: 55vh;
+  }
+}
+
+@media screen and (max-width: 900px){
+  #address{
+    margin-top: 53vh;
+  }
+}
+
+@media screen and (max-width: 700px){
+  #address{
+    margin-top: 52vh;
+  }
+}
+
+@media screen and (max-width: 600px){
+  #address{
+    margin-top: 50vh;
+  }
 }
