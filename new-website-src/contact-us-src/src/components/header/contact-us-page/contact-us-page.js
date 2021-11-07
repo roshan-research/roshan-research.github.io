@@ -24,9 +24,12 @@ const returnBasedOneDevice = () => {
                 <ContactUsWeb id={'web'}/>
             </div>
         )
-    } else if(isMobile){
+    } else if(!isMobile){
         return(
             <div id={'mobile'}>
+                <p id={'address-mobile'}>
+                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
+                </p>
                 <ContactUsMobile id={'body-mobile'}/>
             </div>
         )
