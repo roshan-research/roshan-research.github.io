@@ -24,11 +24,7 @@ const imageAnimationChooser = (props) => {
 };
 
 const returnBasedOneDevice = () => {
-  if(isTablet){
-        return(
-            <WebBackground className='web-background'/>
-        )
-  } else if(isMobile){
+  if(isMobile || isTablet){
         return(
             <div className='mobile-background'>
                 <MobileBackground id={'body-main'}/>

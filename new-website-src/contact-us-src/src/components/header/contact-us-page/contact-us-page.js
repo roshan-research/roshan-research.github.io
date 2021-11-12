@@ -15,16 +15,7 @@ const imageAnimationChooser = (props) => {
 };
 
 const returnBasedOneDevice = () => {
-    if(isTablet){
-        return(
-            <div>
-                <p id={'address'}>
-                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
-                </p>
-                <ContactUsWeb id={'web'}/>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={'mobile'}>
                 <p id={'address-mobile'}>

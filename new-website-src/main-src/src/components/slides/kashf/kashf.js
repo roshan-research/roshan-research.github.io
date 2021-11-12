@@ -5,19 +5,7 @@ import './kashf.scss'
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
-    if(isTablet){
-        return(
-            <div id={'web'}>
-                <div id={'image'}>
-                    <KashfWebImage status={props.scrollQuantity}/>
-                </div>
-                <div id={'space-between'}/>
-                <div id={'text'}>
-                    <KashfWebText status={props.scrollQuantity}/>
-                </div>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={isSafari ? 'mobile-safari' : 'mobile'}>
                 <KashfMobile status={props.scrollQuantity}/>

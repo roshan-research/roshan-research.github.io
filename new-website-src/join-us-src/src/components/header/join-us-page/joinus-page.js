@@ -6,16 +6,7 @@ import './joinus-page.scss';
 import {isMobile,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = () => {
-    if(isTablet){
-        return(
-            <div id={'web'}>
-                <JoinUsWeb id={'pic'}/>
-                <div id={'text-group'}>
-                    <JoinUsText id={'inner'}/>
-                </div>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={ 'mobile-j'}>
                 <JoinUsMobile id={'pic'}/>

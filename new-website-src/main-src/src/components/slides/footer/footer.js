@@ -13,18 +13,7 @@ const returnBasedOneDevice = (beforehandFunction) => {
         goToTop();
     }
 
-    if(isTablet){
-        return(
-            <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTopAll}>
-                    <div id={'to-top'}>
-                        &uarr;
-                    </div>
-                </a>
-                <FooterWeb/>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={'footer-mobile'} style={isSafari ? {} :{
                 position: 'absolute',

@@ -5,19 +5,7 @@ import AlefbaWebImage from "../../jsx-svgs/web/alefba-image";
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 
 const returnBasedOneDevice = (props) => {
-    if(isTablet){
-        return(
-            <div id={'web'}>
-                <div id={'text'}>
-                    <AlefbaWebText status={props.scrollQuantity}/>
-                </div>
-                <div id={'space-between'}/>
-                <div id={'image'}>
-                    <AlefbaWebImage status={props.scrollQuantity}/>
-                </div>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={isSafari ? 'mobile-safari' : 'mobile'}>
                 <AlefbaMobile status={props.scrollQuantity}/>

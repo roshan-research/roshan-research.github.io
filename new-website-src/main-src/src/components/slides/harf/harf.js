@@ -19,23 +19,7 @@ const animationChooser = (scrollQuantity) => {
 
 
 const returnBasedOneDevice = (props) => {
-    if(isTablet){
-        return(
-            <div id={'web'}>
-                <motion.div
-                    variants={animationChooser(props.scrollQuantity)}
-                    initial={"hidden"}
-                    animate={"visible"}
-                >
-                    <HarfWebImage id={'image'} />
-                </motion.div>
-                <div id={'space-between'} />
-                <div id={'text'}>
-                    <HarfWebText status={props.scrollQuantity}/>
-                </div>
-            </div>
-        )
-    } else if(isMobile){
+    if(isMobile || isTablet){
         return(
             <div id={isSafari ? 'mobile-safari' :'mobile'}>
                 <HarfMobile status={props.scrollQuantity}/>
