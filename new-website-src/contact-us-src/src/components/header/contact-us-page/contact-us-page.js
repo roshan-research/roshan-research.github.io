@@ -4,7 +4,7 @@ import ContactUsMobile from "./mobile/contact-us-mobile";
 import ContactUsWeb from "./web/contact-us-web";
 import {motion} from 'framer-motion';
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
-import {isMobile, isOpera, isSafari,isTablet} from "react-device-detect";
+import {isMobile,isTablet} from "react-device-detect";
 
 const imageAnimationChooser = (props) => {
     if(props.shouldRerender){
