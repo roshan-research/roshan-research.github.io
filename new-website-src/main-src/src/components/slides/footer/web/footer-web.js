@@ -13,12 +13,7 @@ export default function FooterWeb() {
             <Line id={'line'}/>
             <div id={'body'}>
                 <div id={'icons-group'}>
-                    <button title={'خانه'} onClick={goToTop} style={{
-                        backgroundColor: 'transparent',
-                        borderColor: 'transparent',
-                    }}>
-                        <Logo className={'icon-footer'}/>
-                    </button>
+                    <Logo className={'icon-footer'}/>
                 </div>
                 <div id={'left'}>
                     <div id={'links'}>
