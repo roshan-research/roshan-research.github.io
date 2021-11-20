@@ -3,9 +3,9 @@ import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
-import {isMobile, isOpera, isSafari} from "react-device-detect";
+import {isOpera, isSafari} from "react-device-detect";
 import ReactTouchEvents from "react-touch-events";
-import FooterWeb from "./components/slides/footer/web/FooterWeb";
+import Footer from "./components/slides/footer/footer";
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
@@ -188,7 +188,7 @@ class RoshanWebsite extends Component {
                                             {...fullPageOptions}
                                             onSlideChangeStart={this.onSlideChangeStart}
                                         />
-                                        <FooterWeb beforehanadFunction={shrink}/>
+                                        <Footer beforehanadFunction={shrink}/>
                                     </div>
                                 </ReactTouchEvents>
                             ) : (
@@ -197,7 +197,7 @@ class RoshanWebsite extends Component {
                                         {...fullPageOptions}
                                         onSlideChangeStart={this.onSlideChangeStart}
                                     />
-                                    <FooterWeb beforehanadFunction={shrink}/>
+                                    <Footer beforehanadFunction={shrink}/>
                                 </div>
                             )}
                         </Route>
