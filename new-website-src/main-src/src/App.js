@@ -5,7 +5,7 @@ import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isMobile, isOpera, isSafari} from "react-device-detect";
 import ReactTouchEvents from "react-touch-events";
-import Footer from "./components/slides/footer/footer";
+import FooterWeb from "./components/slides/footer/web/FooterWeb";
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
@@ -188,7 +188,7 @@ class RoshanWebsite extends Component {
                                             {...fullPageOptions}
                                             onSlideChangeStart={this.onSlideChangeStart}
                                         />
-                                        <Footer beforehanadFunction={shrink}/>
+                                        <FooterWeb beforehanadFunction={shrink}/>
                                     </div>
                                 </ReactTouchEvents>
                             ) : (
@@ -197,7 +197,7 @@ class RoshanWebsite extends Component {
                                         {...fullPageOptions}
                                         onSlideChangeStart={this.onSlideChangeStart}
                                     />
-                                    <Footer beforehanadFunction={shrink}/>
+                                    <FooterWeb beforehanadFunction={shrink}/>
                                 </div>
                             )}
                         </Route>

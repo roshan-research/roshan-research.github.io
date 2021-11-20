@@ -1,5 +1,5 @@
 import {isMobile, isSafari, isTablet} from "react-device-detect";
-import FooterWeb from "./web/footer-web";
+import FooterWeb from "./web/FooterWeb.jsx";
 import FooterMobile from "./mobile/footer-mobile";
 import {Fullpage} from 'fullpage-react';
 const { changeFullpageSlide} = Fullpage;
