@@ -1,10 +1,9 @@
 import React from 'react';
 import './contact-us-page.scss';
-import ContactUsMobile from "./mobile/contact-us-mobile";
-import ContactUsWeb from "./web/contact-us-web";
 import {motion} from 'framer-motion';
+import imageSource from '../../../assets/images/contact-us-image.png';
+
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
-import {isMobile,isTablet} from "react-device-detect";
 
 const imageAnimationChooser = (props) => {
     if(props.shouldRerender){
@@ -14,37 +13,43 @@ const imageAnimationChooser = (props) => {
     }
 };
 
-const returnBasedOneDevice = () => {
-    if(isMobile || isTablet){
-        return(
-            <div id={'mobile'}>
-                <p id={'address-mobile'}>
-                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
-                </p>
-                <ContactUsMobile id={'body-mobile'}/>
-            </div>
-        )
-    } else {
-        return(
-            <div>
-                <p id={'address'}>
-                    میدان ولیعصر، خیابان کریم خان زند، خیابان به آفرین، پلاک 30، طبقه دوم
-                </p>
-                <ContactUsWeb id={'web'}/>
-            </div>
-        )
-    }
-};
-
 export default function ContactUsPage(props) {
     return (
         <motion.div
-            className={'contact-us-page'}
+            className={'contact-us'}
             initial={imageAnimationChooser(props).initial}
             animate={imageAnimationChooser(props).animate}
             transition={imageAnimationChooser(props).transition}
         >
-            {returnBasedOneDevice()}
+            <div id={'texts-links'}>
+                <p id={'in-the-name'}>
+                    به نام خداوند جان و خرد
+                </p>
+                <p id={'body-text'}>
+
+                </p>
+                <div id={'email-row'}>
+                    <p>
+
+                    </p>
+                    <img alt={''}/>
+                </div>
+                <div id={'phone-row'}>
+                    <p>
+
+                    </p>
+                    <img alt={''}/>
+                </div>
+                <div id={'address-row'}>
+                    <p>
+
+                    </p>
+                    <img alt={''}/>
+                </div>
+            </div>
+            <div id={'contact-image'}>
+                <img src={imageSource} id={'main-image'} alt={''}/>
+            </div>
         </motion.div>
     )
 }
