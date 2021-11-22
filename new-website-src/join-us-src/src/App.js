@@ -1,6 +1,7 @@
 import Header from "./components/header/header";
 import {Route, Switch} from "react-router-dom";
 import {Suspense} from 'react';
+import './App.css';
 import ProgressIndicator from "./components/progress-indicator";
 
 function App() {
