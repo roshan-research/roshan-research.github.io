@@ -46,7 +46,7 @@ export default function ContactUsPage(props) {
                     </div>
                     <div id={'address-row'}>
                         <img id={'location-icon'} src={locationSource} alt={''}/>
-                        <p>
+                        <p id={'address-text'}>
                             میدان ولیعصر، خیابان کریم‌خان زند، خیابان به‌آفرین، پلاک 30، طبقه دوم
                         </p>
                     </div>
