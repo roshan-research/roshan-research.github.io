@@ -9,12 +9,13 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  height: 95vh;
+  box-sizing: border-box;
+  height: 92vh;
 }
 
 #group{
   height:auto;
-  width:80.125vw;
+  width:85vw;
   flex-direction: row;
   display: flex;
   justify-content: space-between;
@@ -23,7 +24,7 @@
 
 #main-image{
   height:auto;
-  width:33.15625vw;
+  width:33vw;
 }
 
 #text-links{
