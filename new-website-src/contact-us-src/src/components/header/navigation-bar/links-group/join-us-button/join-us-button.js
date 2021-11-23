@@ -1,5 +1,4 @@
 import './join-us-button.scss'
-import React from 'react';
 
 function JoinUsButton() {
     return (

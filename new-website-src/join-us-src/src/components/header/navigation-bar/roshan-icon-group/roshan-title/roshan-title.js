@@ -1,9 +1,9 @@
-import './roshan-title.scss';
+import './roshan-title.scss'
 
 function RoshanTitle() {
     return (
         <div className='roshan-title' title={'خانه'}>
-            <a href={'https://www.roshan-ai.ir/'}>
+            <a to={'https://www.roshan-ai.ir/'}>
                 <svg
                     width={44}
                     height={17}

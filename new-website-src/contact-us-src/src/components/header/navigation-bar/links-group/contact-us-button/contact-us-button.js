@@ -1,5 +1,4 @@
 import './contact-us-button.scss';
-import React from 'react';
 
 function ContactUsButton() {
     return (

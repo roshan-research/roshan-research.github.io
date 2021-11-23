@@ -1,6 +1,6 @@
 import React from 'react';
-import RoshanIcon from "./roshan-icon/roshan-icon";
 import './roshan-icon-group.scss';
+import RoshanIcon from "./roshan-icon/roshan-icon";
 
 function IconTextGroup() {
     return (
