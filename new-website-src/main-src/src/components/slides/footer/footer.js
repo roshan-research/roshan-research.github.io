@@ -32,11 +32,9 @@ const returnBasedOneDevice = (beforehandFunction) => {
     } else {
         return(
             <div>
-                <a role="button" style={{color:'transparent'}} href={'#!'} onClick={goToTopAll}>
-                    <div id={'to-top'}>
-                        &uarr;
-                    </div>
-                </a>
+                <div id={'to-top'} onClick={goToTopAll}>
+                    &uarr;
+                </div>
                 <FooterWeb/>
             </div>
         )

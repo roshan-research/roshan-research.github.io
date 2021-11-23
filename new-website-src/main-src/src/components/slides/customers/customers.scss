@@ -73,12 +73,14 @@ button{
   margin-right: 5vw;
   font-size: 1.3vw;
   transition: 1s;
+  cursor: pointer;
 }
 
 #to-top:hover{
   border: 0.5px solid #FFFFFF;
   color: black;
   background-color: white;
+  cursor: pointer;
 }
 
 #to-top-mobile{
