@@ -13,7 +13,6 @@ export const opacityAnimation = {
 
 export const bottomLineAnimation = {
     hidden: {
-        x:-25,
         pathLength:0
     },
     visible: {
