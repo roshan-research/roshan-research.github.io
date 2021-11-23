@@ -13,6 +13,7 @@ export const opacityAnimation = {
 
 export const bottomLineAnimation = {
     hidden: {
+        x:-25,
         pathLength:0
     },
     visible: {
@@ -27,7 +28,20 @@ export const bottomLineAnimation = {
 export const boxAnimation = {
     hidden: {
         pathLength:0,
-        x:10,
+        x:12,
+    },
+    visible: {
+        pathLength:1,
+        transition: {
+            delay:4,
+            duration: 1.1
+        }
+    },
+};
+
+export const boxAnimationNoX = {
+    hidden: {
+        pathLength:0,
     },
     visible: {
         pathLength:1,
@@ -40,7 +54,7 @@ export const boxAnimation = {
 
 export const backgroundAnimation = {
     hidden: {
-        x:-20,
+        x:-30,
         opacity: 0
     },
     visible: {
@@ -54,7 +68,7 @@ export const backgroundAnimation = {
 
 export const aboutAnimation = {
     hidden: {
-        x:-20,
+        x:-30,
         opacity: 0
     },
     visible: {

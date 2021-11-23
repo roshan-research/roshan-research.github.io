@@ -1,8 +1,8 @@
 import {motion} from 'framer-motion';
 import {
         backgroundAnimation,
-        bottomLineAnimation,
         boxAnimation,
+        boxAnimationNoX,
         aboutAnimation,
 } from '../../../animations/alefba';
 
@@ -30,8 +30,8 @@ const animationChooser = (scrollQuantity) => {
                 'dotAnimation': dotAnimation,
                 'textAnimation': textAnimation,
                 'backgroundAnimation': backgroundAnimation,
-                'bottomLineAnimation': bottomLineAnimation,
                 'boxAnimation': boxAnimation,
+                'boxAnimationNoX': boxAnimationNoX,
                 'aboutAnimation': aboutAnimation,
                 'basicKashfAnimation':basicKashfAnimation,
             };
@@ -46,6 +46,7 @@ const animationChooser = (scrollQuantity) => {
                 'textAnimation': noneAnimationAlefba,
                 'backgroundAnimation': noneAnimationAlefba,
                 'boxAnimation': noneAnimation,
+                'boxAnimationNoX': noneAnimation,
                 'aboutAnimation': noneAnimationAlefba,
                 'basicKashfAnimation':noneAnimation,
             };
@@ -140,7 +141,7 @@ function AlefbaWebText(props) {
                         <motion.path
                             d="M189.19 186.5H162.89L123.24 219.5H152.5V251.5H0.5V219.5H116.64"
                             stroke="#FF6200"
-                            variants={animationChooser(props.status)['boxAnimation']}
+                            variants={animationChooser(props.status)['boxAnimationNoX']}
                             initial={"hidden"}
                             animate={"visible"}
                         />
