@@ -611,7 +611,7 @@ function CustomersWeb(props) {
                 animate={"visible"}
             >
                 <path
-                    d="M322 329h-90v90h90v-90z"
+                    d="M322 329h-87v90h90v-90z"
                     stroke="#55A2E7"
                     strokeOpacity={0.596}
                 />
@@ -1735,7 +1735,7 @@ function CustomersWeb(props) {
                 <path
                     d="M325 95h-90v90h90V95z"
                     stroke="#55A2E7"
-                    strokeOpacity={0.596}
+                    strokeOpacity={1}
                     strokeWidth={0.5}
                 />
                 <path
