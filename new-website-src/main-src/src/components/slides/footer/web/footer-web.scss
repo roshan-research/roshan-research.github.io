@@ -4,7 +4,7 @@
 }
 
 #footer{
-  height:10vw;
+  height:12vw;
   border-style: solid;
   border-top-color: rgba(255, 255, 255, 0.4);
   border-width: 0.5px;
@@ -43,7 +43,7 @@
   color: white;
   font-family: iran-yekan, serif;
   font-size: 1.1vw;
-  height:2.7777777777777777vh;
+  margin-top: 1.6vw;
   width:9.375vw;
 }
 
@@ -59,8 +59,9 @@
 }
 
 #icon-footer {
+  margin-top: 0.35vw;
   height:3vw;
-  width:4vw;
+  width:3.7vw;
 }
 
 #contact-footer {
@@ -69,7 +70,6 @@
   justify-content: space-between;
   align-items: start;
   flex-direction: column;
-  height: 4.2vw;
   margin-top:3vh;
   margin-right:58.59375vw;
   margin-left:39.0625vw;
@@ -79,7 +79,6 @@
   position: absolute;
   display: flex;
   margin-right:74.21875vw;
-  height:4.2vw;
   margin-top:3.3vh;
   margin-left:10.546875vw;
   justify-content: space-between;
