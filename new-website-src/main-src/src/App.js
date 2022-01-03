@@ -1,4 +1,3 @@
-import {Route, Switch} from 'react-router-dom';
 import React, {Component, lazy, Suspense} from 'react';
 import ProgressIndicator from "./components/progress-indicator";
 import {Fullpage,Slide} from 'fullpage-react';
@@ -179,29 +178,25 @@ class RoshanWebsite extends Component {
         return (
             <div id={'main'}>
                 <Suspense fallback={<ProgressIndicator/>}>
-                    <Switch>
-                        <Route path={'/'} exact>
-                            {isSafari || isOpera? (
-                                <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
-                                    <div style={generalStyle}>
-                                        <Fullpage
-                                            {...fullPageOptions}
-                                            onSlideChangeStart={this.onSlideChangeStart}
-                                        />
-                                        <Footer beforehanadFunction={shrink}/>
-                                    </div>
-                                </ReactTouchEvents>
-                            ) : (
-                                <div style={generalStyle}>
-                                    <Fullpage
-                                        {...fullPageOptions}
-                                        onSlideChangeStart={this.onSlideChangeStart}
-                                    />
-                                    <Footer beforehanadFunction={shrink}/>
-                                </div>
-                            )}
-                        </Route>
-                    </Switch>
+                    {isSafari || isOpera? (
+                        <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
+                            <div style={generalStyle}>
+                                <Fullpage
+                                    {...fullPageOptions}
+                                    onSlideChangeStart={this.onSlideChangeStart}
+                                />
+                                <Footer beforehanadFunction={shrink}/>
+                            </div>
+                        </ReactTouchEvents>
+                    ) : (
+                        <div style={generalStyle}>
+                            <Fullpage
+                                {...fullPageOptions}
+                                onSlideChangeStart={this.onSlideChangeStart}
+                            />
+                            <Footer beforehanadFunction={shrink}/>
+                        </div>
+                    )}
                 </Suspense>
             </div>
         )
