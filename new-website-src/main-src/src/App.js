@@ -9,10 +9,10 @@ const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 const Header = lazy(() => import("./components/header/header"));
-const Kashf = lazy(() => import("./components/slides/kashf/kashf"));
-const Alefba = lazy(() => import("./components/slides/alefba/alefba"));
-const Harf = lazy(() => import("./components/slides/harf/harf"));
-const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
+const Kashf = lazy(() => import("./components/slides/kashf"));
+const Alefba = lazy(() => import("./components/slides/alefba"));
+const Harf = lazy(() => import("./components/slides/harf"));
+const Hazm = lazy(() => import("./components/slides/hazm"));
 const Customers = lazy(() => import("./components/slides/customers/customers"));
 
 let isFooterOpen = false;

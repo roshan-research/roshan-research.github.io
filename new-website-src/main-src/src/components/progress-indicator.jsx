@@ -1,6 +1,6 @@
 import Lottie from "lottie-react";
 import progressIndicator from "../assets/lotties/progress-indicator.json";
-import './progress-indicator.css'
+import '../stylesheets/progress-indicator.css'
 import {isMobile} from "react-device-detect";
 
 function ProgressIndicator(){
