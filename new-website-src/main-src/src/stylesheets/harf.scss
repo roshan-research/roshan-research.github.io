@@ -40,3 +40,47 @@
 #harf #web #space-between{
   width: 11vw;
 }
+
+#harf-main-text {
+  width: 21vw;
+  color: rgba(255, 255, 255, 0.82);
+  font-family: iran-yekan, serif;
+  font-size: 1.1vw;
+  font-weight: normal;
+  line-height: 1.8vw;
+}
+
+#harf-title-text {
+  color: rgb(255, 255, 255);
+  font-size: 1.45vw;
+  font-weight: 800;
+  height: 1.3vw;
+  font-family: iran-yekan, serif;
+}
+
+#harf-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: start;
+  width: 20vw;
+  height: 10vw;
+  margin-right: 9vw;
+  margin-top: 5.5vw;
+  position: absolute;
+}
+
+#harf-emerging-title {
+  color: #FFFFFF;
+  font-size: 1.25vw;
+  font-family: iran-yekan, serif;
+  font-weight: normal;
+}
+
+#harf-emerging-box {
+  position: absolute;
+  width: 3vw;
+  margin-right: 3.9vw;
+  margin-top: -0.85vw;
+  height: 20vw;
+}
