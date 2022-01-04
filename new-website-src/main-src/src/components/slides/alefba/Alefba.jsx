@@ -1,11 +1,11 @@
-import AlefbaMobile from "../jsx-svgs/mobile/alefba";
-import '../../stylesheets/alefba.scss'
-import AlefbaWebText from "../jsx-svgs/web/alefba-text";
-import AlefbaWebImage from "../jsx-svgs/web/alefba-image";
+import AlefbaMobile from "./AlefbaMobile";
+import '../../../stylesheets/alefba.scss'
+import AlefbaWebText from "./AlefbaWebText";
+import AlefbaWebImage from "./AlefbaWebImage";
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import {Helmet} from "react-helmet";
 import React from "react";
-import keywords from "../keywords";
+import keywords from "../../keywords";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){

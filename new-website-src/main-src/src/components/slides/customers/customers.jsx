@@ -1,4 +1,4 @@
-import CustomersWeb from "../../jsx-svgs/web/customers";
+import CustomersWeb from "./CustomersWeb";
 import '../../../stylesheets/customers.scss'
 import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";

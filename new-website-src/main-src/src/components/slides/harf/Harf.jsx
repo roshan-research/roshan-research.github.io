@@ -1,7 +1,7 @@
 import HarfMobile from "./HarfMobile";
 import '../../../stylesheets/harf.scss'
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
-import HarfWebText from "./HarfText";
+import HarfWebText from "./HarfWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";

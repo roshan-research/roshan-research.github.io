@@ -1,10 +1,10 @@
-import HazmMobile from "../jsx-svgs/mobile/hazm.jsx";
-import '../../stylesheets/hazm.scss'
-import HazmWebImage from "../jsx-svgs/web/hazm-image";
-import HazmWebText from "../jsx-svgs/web/hazm-text";
+import HazmMobile from "./HazmMobile.jsx";
+import '../../../stylesheets/hazm.scss'
+import HazmWebImage from "./HazmWebImage";
+import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {Helmet} from "react-helmet";
-import keywords from "../keywords";
+import keywords from "../../keywords";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){

@@ -1,5 +1,5 @@
 import React, {Component, lazy, Suspense} from 'react';
-import ProgressIndicator from "./components/progress-indicator";
+import ProgressIndicator from "./components/ProgressIndicator";
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
@@ -10,9 +10,9 @@ const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 const Header = lazy(() => import("./components/header/header"));
 const Kashf = lazy(() => import("./components/slides/kashf/Kashf"));
-const Alefba = lazy(() => import("./components/slides/alefba"));
+const Alefba = lazy(() => import("./components/slides/alefba/Alefba"));
 const Harf = lazy(() => import("./components/slides/harf/Harf"));
-const Hazm = lazy(() => import("./components/slides/hazm"));
+const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
 const Customers = lazy(() => import("./components/slides/customers/customers"));
 
 let isFooterOpen = false;
@@ -151,9 +151,9 @@ class RoshanWebsite extends Component {
             // <Slide>
             //     <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             // </Slide>,
-            // <Slide>
-            //     <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            // </Slide>,
+            <Slide>
+                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            </Slide>,
             <Slide>
                 <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
