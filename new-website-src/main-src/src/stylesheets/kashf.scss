@@ -50,14 +50,15 @@
     color: rgba(255, 255, 255, 0.82);
     font-family: iran-yekan, serif;
     font-size: 1.1vw;
+    font-weight: normal;
     line-height: 1.8vw;
 }
 
 #kashf-title-text {
     color: rgb(255, 255, 255);
-    font-size: 1.5vw;
+    font-size: 1.45vw;
     font-weight: 800;
-    height: 1vw;
+    height: 1.3vw;
     font-family: iran-yekan, serif;
 }
 
@@ -69,6 +70,21 @@
     width: 25vw;
     height: 10vw;
     margin-right: 6.3vw;
-    margin-top: 5vw;
+    margin-top: 5.5vw;
     position: absolute;
+}
+
+#kashf-emerging-title {
+    color: #FFFFFF;
+    font-size: 1.25vw;
+    font-family: iran-yekan, serif;
+    font-weight: normal;
+}
+
+#kashf-emerging-box {
+    position: absolute;
+    width: 3vw;
+    margin-right: 3.9vw;
+    margin-top: -0.85vw;
+    height: 20vw;
 }

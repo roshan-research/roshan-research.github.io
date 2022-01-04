@@ -1,4 +1,4 @@
-import HazmMobile from "../jsx-svgs/mobile/hazm";
+import HazmMobile from "../jsx-svgs/mobile/hazm.jsx";
 import '../../stylesheets/hazm.scss'
 import HazmWebImage from "../jsx-svgs/web/hazm-image";
 import HazmWebText from "../jsx-svgs/web/hazm-text";

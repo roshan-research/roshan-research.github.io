@@ -9,7 +9,7 @@ const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 const Header = lazy(() => import("./components/header/header"));
-const Kashf = lazy(() => import("./components/slides/kashf"));
+const Kashf = lazy(() => import("./components/slides/kashf/Kashf"));
 const Alefba = lazy(() => import("./components/slides/alefba"));
 const Harf = lazy(() => import("./components/slides/harf"));
 const Hazm = lazy(() => import("./components/slides/hazm"));
