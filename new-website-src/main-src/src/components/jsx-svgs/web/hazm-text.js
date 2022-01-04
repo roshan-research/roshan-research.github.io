@@ -16,7 +16,7 @@ import {
     aboutAnimationHazm,
 } from '../../../animations/hazm';
 import {noneAnimation, noneAnimationHazm} from "../../../animations/main-page";
-import './buttons.scss';
+import '../../../stylesheets/buttons.scss';
 
 const animationChooser = (scrollQuantity) => {
 

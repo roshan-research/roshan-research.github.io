@@ -15,7 +15,7 @@ import {
     aboutAnimationHarf,
 } from '../../../animations/harf';
 import {noneAnimation,} from "../../../animations/main-page";
-import './buttons.scss';
+import '../../../stylesheets/buttons.scss';
 
 const animationChooser = (scrollQuantity) => {
 

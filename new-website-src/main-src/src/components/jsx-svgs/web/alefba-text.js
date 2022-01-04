@@ -16,7 +16,7 @@ import {
     flowerAndFrameAnimation,
 } from '../../../animations/kashf';
 import {noneAnimation, noneAnimationAlefba} from "../../../animations/main-page";
-import './buttons.scss';
+import '../../../stylesheets/buttons.scss';
 
 const animationChooser = (scrollQuantity) => {
 

@@ -1,4 +1,7 @@
-
+@font-face {
+    src: url("../../src/assets/fonts/IRANYekan.ttf");
+    font-family: iran-yekan;
+}
 #kashf #mobile{
     display: flex;
     justify-content: center;
@@ -40,4 +43,32 @@
     box-sizing: border-box;
     height: 20vh;
     width: 14.5vw;
+}
+
+#kashf-main-text {
+    width: 26vw;
+    color: rgba(255, 255, 255, 0.82);
+    font-family: iran-yekan, serif;
+    font-size: 1.1vw;
+    line-height: 1.8vw;
+}
+
+#kashf-title-text {
+    color: rgb(255, 255, 255);
+    font-size: 1.5vw;
+    font-weight: 800;
+    height: 1vw;
+    font-family: iran-yekan, serif;
+}
+
+#kashf-text-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: start;
+    width: 25vw;
+    height: 10vw;
+    margin-right: 6.3vw;
+    margin-top: 5vw;
+    position: absolute;
 }
