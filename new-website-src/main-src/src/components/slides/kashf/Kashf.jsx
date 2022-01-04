@@ -1,7 +1,7 @@
 import KashfMobile from "./KashfMobile";
 import KashfWebText from "./KashfWebText";
 import KashfWebImage from "./KashfWebImage";
-import '../../../stylesheets/kashf.scss'
+import '../../../stylesheets/slides/kashf.scss'
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import {Helmet} from "react-helmet";
 import React from "react";

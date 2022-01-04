@@ -1,5 +1,5 @@
 import {motion,useAnimation} from "framer-motion";
-import '../../../stylesheets/customers-mobile.scss';
+import '../../../stylesheets/slides/customers-mobile.scss';
 import {useEffect, useState} from "react";
 
 export default function CustomerBox({animationMan,animationWoman,boxID,manComponent,womanComponent}){

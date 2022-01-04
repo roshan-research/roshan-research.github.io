@@ -1,4 +1,4 @@
-import '../../../stylesheets/footer-web.scss';
+import '../../../stylesheets/slides/footer-web.scss';
 import {ReactComponent as Logo} from "../../../assets/images/roshan-logosvg.svg";
 
 const FooterWeb = () => {

@@ -1,5 +1,5 @@
 import CustomersWeb from "./CustomersWeb";
-import '../../../stylesheets/customers.scss'
+import '../../../stylesheets/slides/customers.scss'
 import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";
 import CustomersMobile from "./customers-mobile";

@@ -1,4 +1,4 @@
-import '../../../stylesheets/customers-mobile.scss';
+import '../../../stylesheets/slides/customers-mobile.scss';
 import customersAnimation from "../../../animations/customers-mobile";
 import CustomerBox from "./box";
 

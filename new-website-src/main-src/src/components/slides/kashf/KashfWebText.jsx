@@ -14,7 +14,7 @@ import {
 } from '../../../animations/kashf';
 import {noneAnimation} from "../../../animations/main-page";
 import '../../../stylesheets/buttons.scss';
-import '../../../stylesheets/kashf.scss';
+import '../../../stylesheets/slides/kashf.scss';
 
 const animationChooser = (scrollQuantity) => {
 

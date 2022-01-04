@@ -1,5 +1,5 @@
 import {ReactComponent as Name} from "../../../assets/images/sherkat.svg";
-import '../../../stylesheets/footer-mobile.scss';
+import '../../../stylesheets/slides/footer-mobile.scss';
 
 export default function FooterMobile(){
     return(

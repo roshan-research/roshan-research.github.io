@@ -1,5 +1,5 @@
 import HazmMobile from "./HazmMobile.jsx";
-import '../../../stylesheets/hazm.scss'
+import '../../../stylesheets/slides/hazm.scss'
 import HazmWebImage from "./HazmWebImage";
 import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";

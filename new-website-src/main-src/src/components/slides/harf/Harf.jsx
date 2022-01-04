@@ -1,5 +1,5 @@
 import HarfMobile from "./HarfMobile";
-import '../../../stylesheets/harf.scss'
+import '../../../stylesheets/slides/harf.scss'
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
 import HarfWebText from "./HarfWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";

@@ -18,7 +18,7 @@ import {
 import {noneAnimation, noneAnimationAlefba} from "../../../animations/main-page";
 import '../../../stylesheets/buttons.scss';
 //the styles of kashf worked with alefba too, so I reused it as is.
-import '../../../stylesheets/kashf.scss';
+import '../../../stylesheets/slides/kashf.scss';
 
 const animationChooser = (scrollQuantity) => {
 
