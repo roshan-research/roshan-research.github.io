@@ -46,11 +46,11 @@ const returnBasedOneDevice = (props) => {
 
 function Harf(props) {
     return (
-        <div>
+        <article>
             <div id={'harf'}>
                 {returnBasedOneDevice(props)}
             </div>
-        </div>
+        </article>
     )
 }
 

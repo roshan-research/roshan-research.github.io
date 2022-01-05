@@ -128,6 +128,7 @@ function HazmWebText(props) {
                     target="_blank"
                     href={'https://www.sobhe.ir/hazm'}
                     id={'link-hazm'}
+                    title={'هضم'}
                 >
                     <motion.rect
                         id="Hidden Layer"

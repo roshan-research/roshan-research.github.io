@@ -28,11 +28,11 @@ const returnBasedOneDevice = (props) => {
 };
 function Alefba(props) {
     return (
-        <div>
+        <article>
             <div id={'alefba'}>
                 {returnBasedOneDevice(props)}
             </div>
-        </div>
+        </article>
     )
 }
 

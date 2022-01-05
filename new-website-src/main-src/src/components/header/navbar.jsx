@@ -1,16 +1,16 @@
-import DoubleTextGroup from "./links-group";
-import IconTextGroup from "./roshan-icon-group";
+import LinksGroup from "./LinksGroup";
+import IconTextGroup from "./RoshaniIconGroup";
 import '../../stylesheets/navbar.scss'
-import MenuButtons from "./menu-buttons";
+import MenuButtons from "./MenuButtons";
 import {motion} from 'framer-motion';
 
 function Navbar(props) {
     return (
-        <motion.div className='navbar'>
-            <DoubleTextGroup />
+        <motion.header className='navbar'>
+            <LinksGroup/>
             <IconTextGroup/>
             <MenuButtons toggle={props.toggle} isOpen={props.isOpen}/>
-        </motion.div>
+        </motion.header>
     )
 }
 

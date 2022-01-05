@@ -1,8 +1,8 @@
 import '../../stylesheets/roshan-icon.scss'
-import Logo from "../../assets/images/roshan-logosvg.svg";
+import Logo from "../../assets/images/روشن.svg";
 import React from "react";
 
-function RoshanIcon() {
+function RoshanLogo() {
     return (
         <div className='roshan-icon' title={'خانه'}>
             <a href={'https://www.roshan-ai.ir/'}>
@@ -12,4 +12,4 @@ function RoshanIcon() {
     )
 }
 
-export default RoshanIcon;
+export default RoshanLogo;

@@ -43,8 +43,8 @@ const returnBasedOneDevice = (beforehandFunction) => {
 
 export default function Footer(props) {
     return (
-        <div>
+        <footer>
             {returnBasedOneDevice(props.beforehanadFunction)}
-        </div>
+        </footer>
     )
 };

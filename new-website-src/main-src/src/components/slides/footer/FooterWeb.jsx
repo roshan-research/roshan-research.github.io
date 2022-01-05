@@ -1,5 +1,5 @@
 import '../../../stylesheets/slides/footer-web.scss';
-import {ReactComponent as Logo} from "../../../assets/images/roshan-logosvg.svg";
+import {ReactComponent as Logo} from "../../../assets/images/روشن.svg";
 
 const FooterWeb = () => {
     return(

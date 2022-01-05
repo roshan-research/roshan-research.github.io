@@ -31,11 +31,11 @@ const returnBasedOneDevice = ({scrollQuantity}) => {
 
 function Kashf(props) {
     return (
-        <div>
+        <article>
             <div id={'kashf'}>
                 {returnBasedOneDevice(props)}
             </div>
-        </div>
+        </article>
     )
 }
 

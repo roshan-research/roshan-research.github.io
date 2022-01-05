@@ -8,7 +8,7 @@ import Footer from "./components/slides/footer/footer";
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
-const Header = lazy(() => import("./components/header/header"));
+const Header = lazy(() => import("./components/header/Header"));
 const Kashf = lazy(() => import("./components/slides/kashf/Kashf"));
 const Alefba = lazy(() => import("./components/slides/alefba/Alefba"));
 const Harf = lazy(() => import("./components/slides/harf/Harf"));

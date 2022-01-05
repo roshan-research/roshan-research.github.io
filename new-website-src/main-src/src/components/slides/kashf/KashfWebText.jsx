@@ -131,6 +131,7 @@ const KashfWebText = (props) => {
                     target="_blank"
                     href={'https://www.roshan-ai.ir/kashf/'}
                     id={'link-kashf'}
+                    title={'کشف'}
                 >
                     <motion.path
                         fill="#7000FF"

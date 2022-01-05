@@ -1,8 +1,8 @@
-import JoinUsButton from "./join-us-button";
-import ContactUsButton from "./contact-us-button";
+import JoinUsButton from "./JoinUsButton";
+import ContactUsButton from "./ContactUsButton";
 import '../../stylesheets/links-group.scss'
 
-function DoubleTextGroup() {
+function LinksGroup() {
     return (
         <div className='links-group'>
             <ContactUsButton/>
@@ -11,4 +11,4 @@ function DoubleTextGroup() {
     )
 }
 
-export default DoubleTextGroup;
+export default LinksGroup;

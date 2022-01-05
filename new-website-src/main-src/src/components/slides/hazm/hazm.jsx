@@ -29,11 +29,11 @@ const returnBasedOneDevice = (props) => {
 
 function Hazm(props) {
     return (
-        <div>
+        <article>
             <div id={'hazm'}>
                 {returnBasedOneDevice(props)}
             </div>
-        </div>
+        </article>
     )
 }
 
