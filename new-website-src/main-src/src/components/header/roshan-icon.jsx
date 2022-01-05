@@ -1,12 +1,12 @@
 import '../../stylesheets/roshan-icon.scss'
-import {ReactComponent as Logo} from "../../assets/images/roshan-logosvg.svg";
+import Logo from "../../assets/images/roshan-logosvg.svg";
 import React from "react";
 
 function RoshanIcon() {
     return (
         <div className='roshan-icon' title={'خانه'}>
             <a href={'https://www.roshan-ai.ir/'}>
-                <Logo className={'icon'}/>
+                <img className={'icon'} src={Logo} alt={'روشن'}/>
             </a>
         </div>
     )

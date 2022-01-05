@@ -46,16 +46,6 @@ class Header extends Component {
     render() {
         return(
             <div id={'all'}>
-                <Helmet>
-                    <meta
-                        name="description"
-                        content="روشن، ارايه کننده فناوری های مبتنی بر هوش مصنوعی به منظور پردازش تصویر و متن، تشخیص محتوا، ocr فارسی، یادگیری عمیق و … می باشد"
-                    />
-                    <meta
-                        name="keywords"
-                        content={`${keywords.header[0]}, ${keywords.header[1]}, ${keywords.header[2]}, ${keywords.header[3]}, ${keywords.header[4]}`}
-                    />
-                </Helmet>
                 <div className="header-wrapper">
                     <Navbar
                         toggle={this.toggle}

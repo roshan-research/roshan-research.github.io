@@ -3,9 +3,7 @@ import '../../../stylesheets/slides/alefba.scss'
 import AlefbaWebText from "./AlefbaWebText";
 import AlefbaWebImage from "./AlefbaWebImage";
 import {isMobile,isSafari,isTablet} from "react-device-detect";
-import {Helmet} from "react-helmet";
 import React from "react";
-import keywords from "../../../keywords";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){

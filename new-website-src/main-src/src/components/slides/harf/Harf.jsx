@@ -1,13 +1,11 @@
 import HarfMobile from "./HarfMobile";
-import '../../../stylesheets/slides/harf.scss'
+import '../../../stylesheets/slides/harf.scss';
 import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
 import HarfWebText from "./HarfWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
-import {Helmet} from "react-helmet";
-import keywords from "../../../keywords";
 
 const animationChooser = (scrollQuantity) => {
 

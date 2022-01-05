@@ -3,8 +3,6 @@ import '../../../stylesheets/slides/hazm.scss'
 import HazmWebImage from "./HazmWebImage";
 import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
-import {Helmet} from "react-helmet";
-import keywords from "../../../keywords";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){
