@@ -128,7 +128,7 @@ function HazmWebText(props) {
                     target="_blank"
                     href={'https://www.sobhe.ir/hazm'}
                     id={'link-hazm'}
-                    title={'هضم'}
+                    title={'درباره هضم و ریشه یابی واژه ها و تحلیل صرفی'}
                 >
                     <motion.rect
                         id="Hidden Layer"

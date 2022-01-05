@@ -134,7 +134,7 @@ function AlefbaWebText(props) {
                     target="_blank"
                     href={'https://www.roshan-ai.ir/alefba/'}
                     id={'link-alefba'}
-                    title={'الفبا'}
+                    title={'درباره الفبا و تدیل تصویر به نوشته ocr'}
                 >
                     <rect id="Hidden Layer" y="218" width="153" height="33" fill="black" fillOpacity="0.01"/>
                     <motion.path
