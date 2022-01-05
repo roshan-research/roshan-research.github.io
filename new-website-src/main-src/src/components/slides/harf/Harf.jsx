@@ -7,7 +7,7 @@ import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
 import {Helmet} from "react-helmet";
-import keywords from "../../keywords";
+import keywords from "../../../keywords";
 
 const animationChooser = (scrollQuantity) => {
 
@@ -49,16 +49,6 @@ const returnBasedOneDevice = (props) => {
 function Harf(props) {
     return (
         <div>
-            <Helmet>
-                <meta
-                    name={'description'}
-                    content={'تبدیل گفتار به متن'}
-                />
-                <meta
-                    name={'keywords'}
-                    content={`${keywords.harf[0]}`}
-                />
-            </Helmet>
             <div id={'harf'}>
                 {returnBasedOneDevice(props)}
             </div>

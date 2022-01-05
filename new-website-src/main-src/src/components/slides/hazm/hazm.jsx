@@ -4,7 +4,7 @@ import HazmWebImage from "./HazmWebImage";
 import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {Helmet} from "react-helmet";
-import keywords from "../../keywords";
+import keywords from "../../../keywords";
 
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){
@@ -32,16 +32,6 @@ const returnBasedOneDevice = (props) => {
 function Hazm(props) {
     return (
         <div>
-            <Helmet>
-                <meta
-                    name={'description'}
-                    content={'تحلیل متن های فارسی'}
-                />
-                <meta
-                    name={'keywords'}
-                    content={`${keywords.hazm[0]}, ${keywords.hazm[1]}, ${keywords.hazm[2]}`}
-                />
-            </Helmet>
             <div id={'hazm'}>
                 {returnBasedOneDevice(props)}
             </div>

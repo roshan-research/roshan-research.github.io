@@ -7,7 +7,7 @@ import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./join-us-button";
 import ContactUsButton from "./contact-us-button";
 import {Helmet} from "react-helmet";
-import keywords from "../keywords";
+import keywords from "../../keywords";
 
 class Header extends Component {
     state = {

@@ -5,7 +5,7 @@ import '../../../stylesheets/slides/kashf.scss'
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import {Helmet} from "react-helmet";
 import React from "react";
-import keywords from "../../keywords";
+import keywords from "../../../keywords";
 
 const returnBasedOneDevice = ({scrollQuantity}) => {
     if(isMobile || isTablet){
@@ -32,16 +32,6 @@ const returnBasedOneDevice = ({scrollQuantity}) => {
 function Kashf(props) {
     return (
         <div>
-            <Helmet>
-                <meta
-                    name="description"
-                    content={"پردازش تصویر و کشف محتوا"}
-                />
-                <meta
-                    name="keywords"
-                    content={`${keywords.kashf[0]}, ${keywords.kashf[1]}`}
-                />
-            </Helmet>
             <div id={'kashf'}>
                 {returnBasedOneDevice(props)}
             </div>
