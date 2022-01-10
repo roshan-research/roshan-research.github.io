@@ -1,7 +1,7 @@
 import React from 'react';
 import './contact-us-page.scss';
 import {motion} from 'framer-motion';
-import imageSource from '../../../assets/images/contact-us-image.png';
+import imageSource from '../../../assets/images/map.svg';
 import emailSource from '../../../assets/images/email-icon.svg';
 import phoneSource from '../../../assets/images/phone-icon.svg';
 import locationSource from '../../../assets/images/location-icon.svg';
@@ -34,9 +34,11 @@ export default function ContactUsPage(props) {
                     </p>
                     <div id={'email-row'}>
                         <img id={'email-icon'} src={emailSource} alt={''}/>
-                        <p>
-                            salam@roshan-ai.ir
-                        </p>
+                        <a href={'mailto:salam@roshan-ai.ir'}>
+                            <p id={'email-text'}>
+                                salam@roshan-ai.ir
+                            </p>
+                        </a>
                     </div>
                     <div id={'phone-row'}>
                         <img id={'phone-icon'} src={phoneSource} alt={''}/>
@@ -46,13 +48,17 @@ export default function ContactUsPage(props) {
                     </div>
                     <div id={'address-row'}>
                         <img id={'location-icon'} src={locationSource} alt={''}/>
-                        <p id={'address-text'}>
-                            میدان ولیعصر، خیابان کریم‌خان زند، خیابان به‌آفرین، پلاک 30، طبقه دوم
-                        </p>
+                        <a href={'https://www.google.com/maps/@35.7112824,51.4103303,19.52z'}>
+                            <p id={'address-text'}>
+                                میدان ولیعصر، خیابان کریم‌خان زند، خیابان به‌آفرین، پلاک 30، طبقه دوم
+                            </p>
+                        </a>
                     </div>
                 </div>
                 <div id={'contact-image'}>
-                    <img src={imageSource} id={'main-image'} alt={''}/>
+                    <a href={'https://www.google.com/maps/@35.7112824,51.4103303,19.52z'}>
+                        <img src={imageSource} id={'main-image'} alt={'موقعیت شرکت روشن'}/>
+                    </a>
                 </div>
             </div>
         </motion.div>
