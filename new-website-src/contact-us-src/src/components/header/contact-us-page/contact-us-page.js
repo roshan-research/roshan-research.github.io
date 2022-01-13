@@ -56,7 +56,7 @@ export default function ContactUsPage(props) {
                     </div>
                 </div>
                 <div id={'contact-image'}>
-                    <a href={'https://www.google.com/maps/@35.7112824,51.4103303,19.52z'}>
+                    <a href={'geo:37.786971,-122.399677;u=35'}>
                         <img src={imageSource} id={'main-image'} alt={'موقعیت شرکت روشن'}/>
                     </a>
                 </div>
