@@ -9,7 +9,6 @@
   align-items: center;
   flex-direction: column;
   width: 100vw;
-  box-sizing: border-box;
   height: 92vh;
 }
 
@@ -103,8 +102,7 @@ p{
   }
 
   .contact-us-page{
-    margin-top: 15vw;
-    height: auto;
+    overflow: scroll;
   }
 
   p{
@@ -154,6 +152,9 @@ p{
   #group {
     display: flex;
     flex-direction: column;
+    height: fit-content;
+    overflow: scroll;
+    margin-top: 10vw;
   }
 }
 

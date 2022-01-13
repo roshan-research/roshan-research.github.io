@@ -2,10 +2,10 @@
   "files": {
     "main.css": "/contact-us/static/css/main.65d9fcf8.chunk.css",
     "main.js": "/contact-us/static/js/main.f11aac81.chunk.js",
-    "runtime-main.js": "/contact-us/static/js/runtime-main.728fbfbd.js",
+    "runtime-main.js": "/contact-us/static/js/runtime-main.7843945a.js",
     "static/js/2.2a4c790e.chunk.js": "/contact-us/static/js/2.2a4c790e.chunk.js",
-    "static/css/3.a595edbd.chunk.css": "/contact-us/static/css/3.a595edbd.chunk.css",
-    "static/js/3.1b1d4356.chunk.js": "/contact-us/static/js/3.1b1d4356.chunk.js",
+    "static/css/3.370398fc.chunk.css": "/contact-us/static/css/3.370398fc.chunk.css",
+    "static/js/3.29aee6ff.chunk.js": "/contact-us/static/js/3.29aee6ff.chunk.js",
     "index.html": "/contact-us/index.html",
     "static/js/2.2a4c790e.chunk.js.LICENSE.txt": "/contact-us/static/js/2.2a4c790e.chunk.js.LICENSE.txt",
     "static/media/contact-us-page.scss": "/contact-us/static/media/IRANYekan.b916444e.ttf",
@@ -19,7 +19,7 @@
     "static/media/roshan-logosvg.23d13fdb.svg": "/contact-us/static/media/roshan-logosvg.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.728fbfbd.js",
+    "static/js/runtime-main.7843945a.js",
     "static/js/2.2a4c790e.chunk.js",
     "static/css/main.65d9fcf8.chunk.css",
     "static/js/main.f11aac81.chunk.js"

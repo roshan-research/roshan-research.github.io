@@ -48,7 +48,7 @@ export default function ContactusPage(props) {
                     </div>
                     <div id={'address-row'}>
                         <img id={'location-icon'} src={locationSource} alt={''}/>
-                        <a href={'https://www.google.com/maps/@35.7112824,51.4103303,19.52z'}>
+                        <a href={'geo:35.7113,51.4105;u=35'}>
                             <p id={'address-text'}>
                                 میدان ولیعصر، خیابان کریم‌خان زند، خیابان به‌آفرین، پلاک 30، طبقه دوم
                             </p>
@@ -56,9 +56,6 @@ export default function ContactusPage(props) {
                     </div>
                 </div>
                 <div id={'contact-image'}>
-                    <a href={'geo:35.7113,51.4105;u=35'}>
-
-                    </a>
                     <iframe
                         src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d202.47551006886061!2d51.41039480673782!3d35.711258957449914!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3f8e0163343e08c1%3A0x32c2addbe412d651!2z2KrZh9ix2KfZhiDYs9iq2YjYsdiy!5e0!3m2!1sen!2suk!4v1642054837750!5m2!1sen!2suk"
                         allowFullScreen="true"
