@@ -6,7 +6,7 @@ import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
 import ContactUsButton from "./navigation-bar/links-group/contact-us-button/contact-us-button";
 
-const ContactUsPage = lazy(() => import("./contact-us-page/contact-us-page"));
+const ContactUsPage = lazy(() => import("./contact-us-page/ContactusPage"));
 
 export default class Header extends Component {
     state = {
