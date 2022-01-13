@@ -94,9 +94,6 @@ p{
 }
 
 @media screen and (max-width: 500px){
-  #main-image{
-    display: none;
-  }
 
   .contact-us-page{
     margin-top: 15vw;
@@ -145,6 +142,11 @@ p{
 
   #address-text{
     margin-right: 7.5vw;
+  }
+
+  #group {
+    display: flex;
+    flex-direction: column;
   }
 }
 
