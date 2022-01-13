@@ -1,7 +1,6 @@
 import React from 'react';
 import './contact-us-page.scss';
 import {motion} from 'framer-motion';
-import imageSource from '../../../assets/images/map.svg';
 import emailSource from '../../../assets/images/email-icon.svg';
 import phoneSource from '../../../assets/images/phone-icon.svg';
 import locationSource from '../../../assets/images/location-icon.svg';
