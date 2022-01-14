@@ -18,3 +18,10 @@
   height: 93vh;
   position: relative;
 }
+
+@media screen and (max-width: 600px){
+  .web-background {
+    transform: scale(2.5);
+    z-index: 10;
+  }
+}
