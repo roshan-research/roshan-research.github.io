@@ -3,9 +3,7 @@ import KashfWebText from "./KashfWebText";
 import KashfWebImage from "./KashfWebImage";
 import '../../../stylesheets/slides/kashf.scss'
 import {isMobile,isSafari,isTablet} from "react-device-detect";
-import {Helmet} from "react-helmet";
 import React from "react";
-import keywords from "../../keywords";
 
 const returnBasedOneDevice = ({scrollQuantity}) => {
     if(isMobile || isTablet){

@@ -21,7 +21,7 @@
   "scripts": {
     "start": "react-scripts start",
     "normalBuild": "BUILD_PATH='../../join-us' react-scripts build",
-    "build": "set \"GENERATE_SOURCEMAP=false\" && set \"BUILD_PATH=../../join-us\"  && react-scripts build",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && set \"BUILD_PATH=../join-us\"  && react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
   },
