@@ -84,14 +84,14 @@ class Clients extends Component {
     render() {
         return isSafari || isOpera ? (
             <article>
-                <div id={'customers'}>
+                <div id={'clients'}>
                     {returnBasedOneDevice(this.props)}
                 </div>
             </article>
         ):(
             <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={80}>
                 <article>
-                    <div id={'customers'}>
+                    <div id={'clients'}>
                         {returnBasedOneDevice(this.props)}
                     </div>
                 </article>

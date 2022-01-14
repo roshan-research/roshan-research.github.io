@@ -13,7 +13,7 @@ const Kashf = lazy(() => import("./components/slides/kashf/Kashf"));
 const Alefba = lazy(() => import("./components/slides/alefba/Alefba"));
 const Harf = lazy(() => import("./components/slides/harf/Harf"));
 const Hazm = lazy(() => import("./components/slides/hazm/hazm"));
-const Customers = lazy(() => import("./components/slides/customers/Clients"));
+const Customers = lazy(() => import("./components/slides/clients/Clients"));
 
 let isFooterOpen = false;
 

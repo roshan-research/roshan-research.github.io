@@ -29,9 +29,14 @@ import {ClientsAnimationsDesktop} from "../../../animations/Clients";
 function ClientsDesktop({status}) {
     return (
         <div id={'clients-page-desktop'}>
-            <div id={'clients-title-desktop'}>
+            <motion.div
+                id={'clients-title-desktop'}
+                variants={ClientsAnimationsDesktop(status)}
+                initial={"hidden"}
+                animate={"visible"}
+            >
                 مشتریان ما
-            </div>
+            </motion.div>
             <div id={'clients-desktop'}>
                 <div className={'normal-clients-table'}>
                     <div className={'clients-row-desktop'}>

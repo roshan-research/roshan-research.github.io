@@ -43,7 +43,7 @@ function ClientsMobile(){
     })
 
     return(
-        <div id={'customers'}>
+        <div id={'clients'}>
             <div id={'text'}>
                 <Text/>
             </div>
