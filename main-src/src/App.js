@@ -145,21 +145,21 @@ class RoshanWebsite extends Component {
         };
 
         fullPageOptions.slides = [
-            <Slide>
-                <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
-            <Slide>
-                <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
-            </Slide>,
+            // <Slide>
+            //     <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            // </Slide>,
+            // <Slide>
+            //     <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            // </Slide>,
+            // <Slide>
+            //     <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            // </Slide>,
+            // <Slide>
+            //     <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            // </Slide>,
+            // <Slide>
+            //     <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+            // </Slide>,
             <Slide>
                 <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
             </Slide>,
