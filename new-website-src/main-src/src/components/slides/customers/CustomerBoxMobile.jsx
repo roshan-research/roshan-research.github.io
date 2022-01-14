@@ -2,7 +2,7 @@ import {motion,useAnimation} from "framer-motion";
 import '../../../stylesheets/slides/customers-mobile.scss';
 import {useEffect, useState} from "react";
 
-export default function CustomerBox({animationMan,animationWoman,boxID,manComponent,womanComponent}){
+export default function CustomerBoxMobile({animationMan,animationWoman,boxID,manComponent,womanComponent}){
 
     const [initialWoman,setInitialWoman] = useState(animationWoman.initial);
     const [initialMan,setInitialMan] = useState(animationMan.initial);

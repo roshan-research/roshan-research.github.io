@@ -2,7 +2,7 @@ import CustomersWeb from "./CustomersWeb";
 import '../../../stylesheets/slides/customers.scss'
 import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";
-import CustomersMobile from "./customers-mobile";
+import CustomersMobile from "./CustomersMobile";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
