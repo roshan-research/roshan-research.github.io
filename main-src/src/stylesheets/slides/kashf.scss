@@ -3,11 +3,11 @@
     font-family: iran-yekan;
 }
 
-#kashf #mobile{
+#kashf{
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    height: 88vh;
     width: 100vw;
 }
 
@@ -23,7 +23,6 @@
     flex-direction: row;
     margin-right: 17.96vw;
     margin-left: 13.6vw;
-    height: 88vh;
     justify-content: center;
     align-items: center;
     display: flex;
@@ -86,4 +85,10 @@
     margin-right: 3.9vw;
     margin-top: -0.85vw;
     height: 20vw;
+}
+
+@media screen and (max-width: 600px){
+    #kashf {
+        height: 100vh;
+    }
 }

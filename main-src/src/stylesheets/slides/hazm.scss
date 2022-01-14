@@ -1,8 +1,8 @@
-#hazm #mobile{
+#hazm{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 88vh;
   width: 100vw;
 }
 
@@ -81,4 +81,10 @@
   margin-right: 5vw;
   margin-top: -0.85vw;
   height: 20vw;
+}
+
+@media screen and (max-width: 600px){
+  #hazm {
+    height: 100vh;
+  }
 }

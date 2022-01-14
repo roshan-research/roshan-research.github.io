@@ -1,8 +1,8 @@
-#alefba #mobile{
+#alefba{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 88vh;
   width: 100vw;
 }
 
@@ -37,4 +37,10 @@
   box-sizing: border-box;
   height: 28vh;
   width: 15.79vw;
+}
+
+@media screen and (max-width: 600px){
+  #alefba {
+    height: 100vh;
+  }
 }

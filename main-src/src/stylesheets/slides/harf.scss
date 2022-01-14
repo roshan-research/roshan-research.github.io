@@ -1,8 +1,8 @@
-#harf #mobile{
+#harf{
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 100vh;
+  height: 88vh;
   width: 100vw;
 }
 
@@ -83,4 +83,10 @@
   margin-right: 3.9vw;
   margin-top: -0.85vw;
   height: 20vw;
+}
+
+@media screen and (max-width: 600px){
+  #harf {
+    height: 100vh;
+  }
 }

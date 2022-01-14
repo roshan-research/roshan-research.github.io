@@ -63,7 +63,7 @@ const clientsAnimationDesktop = (delay, duration, shouldAnimate) => {
 };
 
 export const ClientsAnimationsDesktop = (shouldAnimate) => {
-    let delay = Math.random() * 3;
+    let delay = Math.random() * 2 + 1;
     let duration = Math.random() * 2;
     return clientsAnimationDesktop(delay, duration,shouldAnimate);
 };
