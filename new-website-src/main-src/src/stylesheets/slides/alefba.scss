@@ -38,3 +38,61 @@
   height: 28vh;
   width: 15.79vw;
 }
+
+#clients-title-desktop {
+  color: white;
+  font-family: iran-yekan, serif;
+  font-weight: bold;
+  font-size: 1.5vw;
+}
+
+#clients-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#clients-page-desktop {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+}
+
+.client-desktop {
+  transition: 0.5s;
+  margin: 1vw;
+  width: 7vw;
+  cursor: pointer;
+  height: auto;
+}
+
+.client-desktop:hover, #aparat-desktop:hover {
+  transform: scale(1.2);
+  background-color: #1E252F;
+}
+
+.normal-clients-table {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.clients-row-desktop {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+#aparat-desktop {
+  width: 16vw;
+  height: auto;
+  margin: 1vw;
+  cursor: pointer;
+  transition: 0.5s;
+}

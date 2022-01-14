@@ -1,8 +1,8 @@
-import CustomersWeb from "./CustomersWeb";
-import '../../../stylesheets/slides/customers.scss'
+import ClientsDesktop from "./ClientsDesktop";
+import '../../../stylesheets/slides/clients.scss'
 import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
 import React, {Component} from "react";
-import CustomersMobile from "./CustomersMobile";
+import ClientsMobile from "./ClientsMobile";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
@@ -42,7 +42,7 @@ const returnBasedOneDevice = (props) => {
     if(isTablet){
         return(
             <div id={'web-all'}>
-                <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
+                <ClientsDesktop id={'web'} status={shouldRender(props.scrollQuantity)}/>
             </div>
         )
     } else if(isMobile){
@@ -52,19 +52,19 @@ const returnBasedOneDevice = (props) => {
                 initial={"hidden"}
                 animate={"visible"}
             >
-                <CustomersMobile id={isSafari ? 'mobile-safari' : 'mobile'}/>
+                <ClientsMobile id={isSafari ? 'clients-safari' : 'clients'}/>
             </motion.div>
         )
     } else {
         return(
             <div id={'web-all'}>
-                <CustomersWeb id={'web'} status={shouldRender(props.scrollQuantity)}/>
+                <ClientsDesktop id={'web'} status={shouldRender(props.scrollQuantity)}/>
             </div>
         )
     }
 };
 
-class Customers extends Component {
+class Clients extends Component {
 
     componentDidMount() {
         findDOMNode(this).addEventListener("wheel", (event) => {
@@ -100,4 +100,4 @@ class Customers extends Component {
     }
 }
 
-export default Customers;
+export default Clients;

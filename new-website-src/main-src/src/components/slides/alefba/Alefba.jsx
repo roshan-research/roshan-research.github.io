@@ -8,7 +8,7 @@ import React from "react";
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){
         return(
-            <div id={isSafari ? 'mobile-safari' : 'mobile'}>
+            <div id={isSafari ? 'clients-safari' : 'clients'}>
                 <AlefbaMobile status={props.scrollQuantity}/>
             </div>
         )

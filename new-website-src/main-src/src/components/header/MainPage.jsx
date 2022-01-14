@@ -1,7 +1,7 @@
 import '../../stylesheets/main-page.scss'
 import {isMobile, isTablet} from 'react-device-detect';
 import {ReactComponent as MobileBackground} from "../../assets/images/mobile-background.svg";
-import {ReactComponent as WebBackground} from "../../assets/images/web-background.svg";
+import {ReactComponent as WebBackground} from "../../assets/images/desktop-background.svg";
 import {motion} from "framer-motion";
 import {
     imageScrollDownAnimation,

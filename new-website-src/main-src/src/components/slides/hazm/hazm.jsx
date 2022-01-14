@@ -7,7 +7,7 @@ import {isMobile, isSafari, isTablet} from "react-device-detect";
 const returnBasedOneDevice = (props) => {
     if(isMobile || isTablet){
         return(
-            <div id={isSafari ? 'mobile-safari' :'mobile'}>
+            <div id={isSafari ? 'clients-safari' :'clients'}>
                 <HazmMobile status={props.scrollQuantity}/>
             </div>
         )
