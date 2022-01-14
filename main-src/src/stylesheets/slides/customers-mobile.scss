@@ -41,8 +41,8 @@
 
 #customers{
    display: flex;
-    justify-content: start;
-    align-content: start;
+    justify-content: flex-start;
+    align-content: flex-start;
     flex-direction: column;
 }
 

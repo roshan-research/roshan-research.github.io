@@ -68,7 +68,7 @@
   position: absolute;
   display: flex;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
   margin-top:3vh;
   margin-right:58.59375vw;
@@ -82,7 +82,7 @@
   margin-top:3.3vh;
   margin-left:10.546875vw;
   justify-content: space-between;
-  align-items: start;
+  align-items: flex-start;
   flex-direction: column;
 }
 

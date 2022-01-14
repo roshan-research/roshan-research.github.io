@@ -1,5 +1,5 @@
-import '../../../stylesheets/slides/customers-mobile.scss';
 import {ClientsMobileAnimations} from "../../../animations/Clients";
+import '../../../stylesheets/slides/customers-mobile.scss';
 import ClientMobile from "./ClientMobile";
 
 import {ReactComponent as Keshvar} from "../../../assets/images/clients/Keshvar.svg";

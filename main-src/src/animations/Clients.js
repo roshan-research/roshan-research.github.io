@@ -1,5 +1,3 @@
-import customersAnimation from "./customers";
-
 const clientsAnimationMobile = (delay,initialOpacity,targetOpacity) =>{
     return {
         initial: {
