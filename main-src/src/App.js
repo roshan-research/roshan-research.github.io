@@ -1,7 +1,6 @@
 import React, {Component} from 'react';
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
-import {motion} from "framer-motion";
 import {isOpera, isSafari} from "react-device-detect";
 import ReactTouchEvents from "react-touch-events";
 import Footer from "./components/slides/footer/footer";
@@ -11,7 +10,6 @@ import Alefba from "./components/slides/alefba/Alefba"
 import Harf from "./components/slides/harf/Harf"
 import Hazm from "./components/slides/hazm/hazm"
 import Customers from "./components/slides/clients/Clients"
-import {appAnimation} from "./animations/main-page";
 
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
@@ -177,12 +175,7 @@ class RoshanWebsite extends Component {
         };
 
         return (
-            <motion.div
-                id={'main'}
-                variants={appAnimation}
-                initial={"hidden"}
-                animate={"visible"}
-            >
+            <div id={'main'}>
                 {isSafari || isOpera? (
                     <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
                         <div style={generalStyle}>
@@ -202,7 +195,7 @@ class RoshanWebsite extends Component {
                         <Footer beforehanadFunction={shrink}/>
                     </div>
                 )}
-            </motion.div>
+            </div>
         )
     }
 }
