@@ -1,25 +1,11 @@
 {
   "files": {
-    "static/js/0.91ef479a.chunk.js": "/static/js/0.91ef479a.chunk.js",
-    "main.css": "/static/css/main.f3de3925.chunk.css",
-    "main.js": "/static/js/main.dda1d6ad.chunk.js",
-    "runtime-main.js": "/static/js/runtime-main.56a9b004.js",
-    "static/js/3.445e5c6f.chunk.js": "/static/js/3.445e5c6f.chunk.js",
-    "static/css/4.5d13c7f9.chunk.css": "/static/css/4.5d13c7f9.chunk.css",
-    "static/js/4.1b04a2e5.chunk.js": "/static/js/4.1b04a2e5.chunk.js",
-    "static/css/5.c33cc144.chunk.css": "/static/css/5.c33cc144.chunk.css",
-    "static/js/5.db5191a2.chunk.js": "/static/js/5.db5191a2.chunk.js",
-    "static/css/6.e3bf2ae1.chunk.css": "/static/css/6.e3bf2ae1.chunk.css",
-    "static/js/6.ddc36e7c.chunk.js": "/static/js/6.ddc36e7c.chunk.js",
-    "static/css/7.bf430ea6.chunk.css": "/static/css/7.bf430ea6.chunk.css",
-    "static/js/7.e21b10af.chunk.js": "/static/js/7.e21b10af.chunk.js",
-    "static/css/8.eeb69b98.chunk.css": "/static/css/8.eeb69b98.chunk.css",
-    "static/js/8.8aae5a17.chunk.js": "/static/js/8.8aae5a17.chunk.js",
-    "static/css/9.d7136bef.chunk.css": "/static/css/9.d7136bef.chunk.css",
-    "static/js/9.36ae184e.chunk.js": "/static/js/9.36ae184e.chunk.js",
+    "main.css": "/static/css/main.da67d66d.chunk.css",
+    "main.js": "/static/js/main.1f630ac4.chunk.js",
+    "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
+    "static/js/2.b86d2b22.chunk.js": "/static/js/2.b86d2b22.chunk.js",
     "index.html": "/index.html",
-    "static/js/0.91ef479a.chunk.js.LICENSE.txt": "/static/js/0.91ef479a.chunk.js.LICENSE.txt",
-    "static/js/3.445e5c6f.chunk.js.LICENSE.txt": "/static/js/3.445e5c6f.chunk.js.LICENSE.txt",
+    "static/js/2.b86d2b22.chunk.js.LICENSE.txt": "/static/js/2.b86d2b22.chunk.js.LICENSE.txt",
     "static/media/Amin.6854caad.svg": "/static/media/Amin.6854caad.svg",
     "static/media/Ammar.79433f63.svg": "/static/media/Ammar.79433f63.svg",
     "static/media/Aparat.2d7ab043.svg": "/static/media/Aparat.2d7ab043.svg",
@@ -32,7 +18,7 @@
     "static/media/Farabi.a08a2632.svg": "/static/media/Farabi.a08a2632.svg",
     "static/media/Fars.6a60b922.svg": "/static/media/Fars.6a60b922.svg",
     "static/media/Filimo.3c715fde.svg": "/static/media/Filimo.3c715fde.svg",
-    "static/media/kashf.scss": "/static/media/IRANYekan.b916444e.ttf",
+    "static/media/footer-web.scss": "/static/media/IRANYekan.b916444e.ttf",
     "static/media/Irandoc.ecb8883c.svg": "/static/media/Irandoc.ecb8883c.svg",
     "static/media/Jahad.067cc414.svg": "/static/media/Jahad.067cc414.svg",
     "static/media/Keshvar.bf58c882.svg": "/static/media/Keshvar.bf58c882.svg",
@@ -54,9 +40,9 @@
     "static/media/روشن.23d13fdb.svg": "/static/media/روشن.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.56a9b004.js",
-    "static/js/3.445e5c6f.chunk.js",
-    "static/css/main.f3de3925.chunk.css",
-    "static/js/main.dda1d6ad.chunk.js"
+    "static/js/runtime-main.109a8ec7.js",
+    "static/js/2.b86d2b22.chunk.js",
+    "static/css/main.da67d66d.chunk.css",
+    "static/js/main.1f630ac4.chunk.js"
   ]
 }

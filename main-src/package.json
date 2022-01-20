@@ -12,6 +12,7 @@
     "react-device-detect": "^1.17.0",
     "react-dom": "^17.0.2",
     "react-scripts": "4.0.3",
+    "react-snap": "^1.23.0",
     "react-touch-events": "^2.1.0"
   },
   "scripts": {
@@ -19,7 +20,8 @@
     "start": "react-scripts start",
     "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "postbuild": "react-snap"
   },
   "eslintConfig": {
     "extends": [
