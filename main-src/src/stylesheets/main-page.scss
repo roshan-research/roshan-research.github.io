@@ -8,6 +8,12 @@
   position: relative;
 }
 
+.all{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 .mobile-background #body-main{
   width: 100%;
   height: 80vh;
@@ -19,10 +25,31 @@
   position: relative;
 }
 
+.all {
+  p{
+    color: rgb(255, 255, 255);
+    position: absolute;
+    z-index: 20;
+    font-size: 1.9vw;
+    font-family: iran-yekan, serif;
+    text-align: center;
+    margin-top: -140px;
+    font-weight: 100;
+    letter-spacing: -0.01em;
+  }
+}
+
 @media screen and (max-width: 600px){
   .web-background {
     transform: scale(2.5);
     margin-top: -10vh;
     z-index: 10;
+  }
+
+  .all {
+    p{
+      font-size: 4.5vw;
+      margin-top: -200px;
+    }
   }
 }

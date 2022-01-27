@@ -1,5 +1,5 @@
 import '../../stylesheets/main-page.scss'
-import {ReactComponent as EarthImage} from "../../assets/images/desktop-background.svg";
+import EarthImage from "../../assets/images/wallpaper.png";
 import {motion} from "framer-motion";
 import {
     imageScrollDownAnimation,
@@ -43,7 +43,12 @@ function MainPage(props) {
             animate={imageAnimationChooser(props).animate}
             transition={imageAnimationChooser(props).transition}
         >
-            <EarthImage className='web-background'/>
+            <p>
+                ما ماشین را آموزش می ‌دهیم
+                <br/>
+                تا مانند انسان فکر کند
+            </p>
+            <img src={EarthImage} className='web-background' alt={''}/>
         </motion.div>
     )
 }
