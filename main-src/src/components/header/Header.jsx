@@ -6,6 +6,8 @@ import Navbar from "./Navbar.jsx";
 import MainPage from "./MainPage";
 import JoinUsButton from "./JoinUsButton";
 import ContactUsButton from "./ContactUsButton";
+import {loadingAnimation} from "../../animations/main-page";
+import {motion} from 'framer-motion'
 
 class Header extends Component {
     state = {

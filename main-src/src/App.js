@@ -10,6 +10,8 @@ import Alefba from "./components/slides/alefba/Alefba"
 import Harf from "./components/slides/harf/Harf"
 import Hazm from "./components/slides/hazm/hazm"
 import Customers from "./components/slides/clients/Clients"
+import {loadingAnimation} from "./animations/main-page";
+import {motion} from 'framer-motion'
 
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
@@ -175,7 +177,12 @@ class RoshanWebsite extends Component {
         };
 
         return (
-            <div id={'main'}>
+            <motion.div
+                id={'main'}
+                initial={loadingAnimation.initial}
+                animate={loadingAnimation.animate}
+                transition={loadingAnimation.transition}
+            >
                 {isSafari || isOpera? (
                     <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
                         <div style={generalStyle}>
@@ -195,7 +202,7 @@ class RoshanWebsite extends Component {
                         <Footer beforehanadFunction={shrink}/>
                     </div>
                 )}
-            </div>
+            </motion.div>
         )
     }
 }
