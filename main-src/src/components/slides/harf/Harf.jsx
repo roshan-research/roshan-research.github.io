@@ -1,6 +1,6 @@
 import HarfMobile from "./HarfMobile";
 import '../../../stylesheets/slides/harf.scss';
-import {ReactComponent as HarfWebImage} from "../../../assets/images/harf-image.svg";
+import HarfWebImage from "../../../assets/images/harf-web-image.png";
 import HarfWebText from "./HarfWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';
@@ -33,7 +33,7 @@ const returnBasedOneDevice = (props) => {
                     initial={"hidden"}
                     animate={"visible"}
                 >
-                    <HarfWebImage id={'image'} />
+                    <img src={HarfWebImage} id={'image'}  alt={'حرف'}/>
                 </motion.div>
                 <div id={'space-between'} />
                 <div id={'text'}>

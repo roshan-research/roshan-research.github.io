@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.2326b157.chunk.css",
-    "main.js": "/static/js/main.7cf1281e.chunk.js",
+    "main.css": "/static/css/main.dfabc901.chunk.css",
+    "main.js": "/static/js/main.32c832dc.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
     "static/js/2.b86d2b22.chunk.js": "/static/js/2.b86d2b22.chunk.js",
     "index.html": "/index.html",
@@ -32,7 +32,7 @@
     "static/media/Tamasha.766ecabc.svg": "/static/media/Tamasha.766ecabc.svg",
     "static/media/Varzesh.5926557d.svg": "/static/media/Varzesh.5926557d.svg",
     "static/media/close-icon.20012dc4.svg": "/static/media/close-icon.20012dc4.svg",
-    "static/media/harf-image.066dda98.svg": "/static/media/harf-image.066dda98.svg",
+    "static/media/kashf-web-image.7a0020e4.png": "/static/media/kashf-web-image.7a0020e4.png",
     "static/media/menu-icon.a0de4dbf.svg": "/static/media/menu-icon.a0de4dbf.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/title.810f1b1e.svg": "/static/media/title.810f1b1e.svg",
@@ -42,7 +42,7 @@
   "entrypoints": [
     "static/js/runtime-main.109a8ec7.js",
     "static/js/2.b86d2b22.chunk.js",
-    "static/css/main.2326b157.chunk.css",
-    "static/js/main.7cf1281e.chunk.js"
+    "static/css/main.dfabc901.chunk.css",
+    "static/js/main.32c832dc.chunk.js"
   ]
 }
