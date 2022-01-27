@@ -1,6 +1,6 @@
 .header-button{
-  width: 6vw;
-  height: 4vh;
+  width: 30%;
+  height: auto;
   text-decoration: none;
   color: #FFFFFF;
   font-family: iran-yekan, serif;
@@ -13,7 +13,17 @@
   color: #7AB8FF
 }
 
-@media screen and (max-width: 500px){
+#clients-button{
+  cursor: pointer;
+}
+
+@media screen and (max-width: 1000px){
+  #clients-button{
+    width: 35%;
+  }
+}
+
+@media screen and (max-width: 600px){
    .header-button{
     margin-top: 3.125vh;
     height: 5.46vh;
