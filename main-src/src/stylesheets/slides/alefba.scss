@@ -2,7 +2,7 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  height: 88vh;
+  height: 100vh;
   width: 100vw;
 }
 
@@ -24,8 +24,16 @@
   display: flex;
 }
 
+#web{
+  height: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 #alefba #web #text{
-  height: 34.73vh;
+  height: auto;
   width: 33.75vw;
 }
 
@@ -34,8 +42,7 @@
 }
 
 #alefba #web #image{
-  box-sizing: border-box;
-  height: 28vh;
+  height: auto;
   width: 15.79vw;
 }
 
