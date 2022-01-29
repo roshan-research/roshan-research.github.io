@@ -78,6 +78,6 @@ export const loadingAnimation = {
     },
     transition:{
         delay: 10,
-        default: { duration: 3.5 },
+        default: { duration: 5 },
     }
 };
