@@ -135,8 +135,8 @@ class RoshanWebsite extends Component {
             scrollsQuantity: this.state.scrollsQuantity + 1,
         });
     };
-    render() {
 
+    render() {
         const fullPageOptions = {
             scrollSensitivity: 1,
             touchSensitivity: 0.5,
