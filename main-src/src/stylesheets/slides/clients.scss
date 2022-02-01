@@ -133,10 +133,14 @@ button{
 
 .client-desktop {
   transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   margin: 0.9vw;
   width: 7vw;
+  height: 7vw;
   cursor: pointer;
-  height: auto;
+  border: 1px solid rgba(85, 162, 231, 0.6);
 }
 
 .client-desktop:hover{
@@ -169,4 +173,144 @@ button{
 #aparat-desktop:hover {
   transform: scale(1.15);
   background-color: #1E252F;
+}
+
+#desktop-ketabkhaneh {
+  width: 4vw;
+  height: 4vw;
+}
+
+#desktop-naft {
+  width: 5vw;
+  height: 4vw;
+}
+
+#desktop-keshvar {
+  width: 3.5vw;
+  height: 5vw;
+}
+
+#desktop-parsian {
+  width: 5.5vw;
+  height: 4.5vw;
+}
+
+#desktop-taghche {
+  width: 3vw;
+  height: 4vw;
+}
+
+#desktop-varzesh {
+  width: 3vw;
+  height: 5vw;
+}
+
+#desktop-jahad {
+  width: 6vw;
+  height: 4vw;
+}
+
+#desktop-farabi {
+  width: 3.5vw;
+  height: 3.5vw;
+}
+
+#desktop-ammar {
+  width: 6.5vw;
+  height: 3.2vw;
+}
+
+#desktop-barid {
+  width: 4vw;
+  height: 4vw;
+}
+
+#desktop-fars {
+  width: 5vw;
+  height: 2.7vw;
+}
+
+#desktop-savaneh {
+  width: 3.1vw;
+  height: 4vw;
+}
+
+#desktop-mokhaberat {
+  width: 4.1vw;
+  height: 4.1vw;
+}
+
+#desktop-astan {
+  width: 3.5vw;
+  height: 4vw;
+}
+
+#desktop-lenzor {
+  width: 3vw;
+  height: 4vw;
+}
+
+#desktop-vira {
+  width: 4.3vw;
+  height: 3.7vw;
+}
+
+#desktop-setad {
+  width: 4.6vw;
+  height: 4.5vw;
+}
+
+#desktop-azmoon {
+  width: 5vw;
+  height: 4vw;
+}
+
+#desktop-irandoc {
+  width: 5vw;
+  height: 4.1vw;
+}
+
+#desktop-filimo {
+  width: 5vw;
+  height: 2.2vw;
+}
+
+#desktop-nazdika {
+  width: 2.3vw;
+  height: 4vw;
+}
+
+#desktop-bimeh {
+  width: 2.8vw;
+  height: 4.4vw;
+}
+
+#desktop-tamasha {
+  width: 2.7vw;
+  height: 3.8vw;
+}
+
+#desktop-amin {
+  width: 3.5vw;
+  height: 4vw;
+}
+
+#desktop-bimarestan {
+  width: 5vw;
+  height: 3.5vw;
+}
+
+#desktop-iranrayaneh {
+  width: 5vw;
+  height: 2.2vw;
+}
+
+#desktop-bamdad {
+  width: 4.5vw;
+  height: 3.8vw;
+}
+
+#desktop-civilica {
+  width: 3.5vw;
+  height: 3vw;
 }
