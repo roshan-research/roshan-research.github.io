@@ -1,25 +1,46 @@
 import HazmMobile from "./HazmMobile.jsx";
 import '../../../stylesheets/slides/hazm.scss'
-import HazmWebImage from "./HazmWebImage";
+import HazmWebImage from "../../../assets/images/hazm-web-image.png";
 import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
+import {motion} from "framer-motion";
+import React from "react";
+import {flowerAnimation} from "../../../animations/kashf-image";
+import {noneAnimation} from "../../../animations/main-page";
 
-const returnBasedOneDevice = (props) => {
+
+const animationChooser = (scrollQuantity) => {
+    switch (scrollQuantity) {
+        case 4:
+            return flowerAnimation;
+        default:
+            return noneAnimation;
+    }
+};
+
+const returnBasedOneDevice = (scrollQuantity) => {
     if(isMobile || isTablet){
         return(
             <div id={isSafari ? 'clients-safari' :'clients'}>
-                <HazmMobile status={props.scrollQuantity}/>
+                <HazmMobile status={scrollQuantity}/>
             </div>
         )
     } else {
         return(
             <div id={'web'}>
                 <div id={'text'}>
-                    <HazmWebText status={props.scrollQuantity}/>
+                    <HazmWebText status={scrollQuantity}/>
                 </div>
                 <div id={'space-between'}/>
-                <div id={'image'}>
-                    <HazmWebImage status={props.scrollQuantity}/>
+                <div>
+                    <motion.img
+                        src={HazmWebImage}
+                        id={'image'}
+                        alt={' هضم'}
+                        variants={animationChooser(scrollQuantity)}
+                        initial={"hidden"}
+                        animate={"visible"}
+                    />
                 </div>
             </div>
         )
@@ -27,11 +48,11 @@ const returnBasedOneDevice = (props) => {
 };
 
 
-function Hazm(props) {
+function Hazm({scrollQuantity}) {
     return (
         <article>
             <div id={'hazm'}>
-                {returnBasedOneDevice(props)}
+                {returnBasedOneDevice(scrollQuantity)}
             </div>
         </article>
     )

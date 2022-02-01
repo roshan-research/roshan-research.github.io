@@ -1,7 +1,5 @@
 import '../../stylesheets/main-page.scss'
-import {isMobile, isTablet} from 'react-device-detect';
-import {ReactComponent as MobileBackground} from "../../assets/images/mobile-background.svg";
-import {ReactComponent as WebBackground} from "../../assets/images/desktop-background.svg";
+import EarthImage from "../../assets/images/wallpaper.png";
 import {motion} from "framer-motion";
 import {
     imageScrollDownAnimation,
@@ -21,20 +19,6 @@ const imageAnimationChooser = (props) => {
                 return noneAnimation;
         }
     }
-};
-
-const returnBasedOneDevice = () => {
-  if(isMobile || isTablet){
-        return(
-            <div className='mobile-background'>
-                <MobileBackground id={'body-main'}/>
-            </div>
-        )
-  } else {
-        return(
-            <WebBackground className='web-background'/>
-        )
-  }
 };
 
 function MainPage(props) {
@@ -59,7 +43,12 @@ function MainPage(props) {
             animate={imageAnimationChooser(props).animate}
             transition={imageAnimationChooser(props).transition}
         >
-            {returnBasedOneDevice()}
+            <p>
+                ما ماشین را آموزش می ‌دهیم
+                <br/>
+                تا مانند انسان فکر کند
+            </p>
+            <img src={EarthImage} className='web-background' alt={''}/>
         </motion.div>
     )
 }

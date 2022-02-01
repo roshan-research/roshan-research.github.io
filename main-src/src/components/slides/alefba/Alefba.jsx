@@ -1,26 +1,45 @@
 import AlefbaMobile from "./AlefbaMobile";
-import '../../../stylesheets/slides/alefba.scss'
+import '../../../stylesheets/slides/alefba.scss';
 import AlefbaWebText from "./AlefbaWebText";
-import AlefbaWebImage from "./AlefbaWebImage";
+import AlefbaWebImage from "../../../assets/images/alefba-web-image.png";
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import React from "react";
+import {motion} from "framer-motion";
+import {flowerAnimation} from "../../../animations/kashf-image";
+import {noneAnimation} from "../../../animations/main-page";
 
-const returnBasedOneDevice = (props) => {
+const animationChooser = (scrollQuantity) => {
+    switch (scrollQuantity) {
+        case 2:
+            return flowerAnimation;
+        default:
+            return noneAnimation;
+    }
+};
+
+const returnBasedOneDevice = ({scrollQuantity}) => {
     if(isMobile || isTablet){
         return(
             <div id={isSafari ? 'clients-safari' : 'clients'}>
-                <AlefbaMobile status={props.scrollQuantity}/>
+                <AlefbaMobile status={scrollQuantity}/>
             </div>
         )
     } else {
         return(
             <div id={'web'}>
                 <div id={'text'}>
-                    <AlefbaWebText status={props.scrollQuantity}/>
+                    <AlefbaWebText status={scrollQuantity}/>
                 </div>
                 <div id={'space-between'}/>
-                <div id={'image'}>
-                    <AlefbaWebImage status={props.scrollQuantity}/>
+                <div>
+                    <motion.img
+                        src={AlefbaWebImage}
+                        id={'image'}
+                        alt={'الفبا'}
+                        variants={animationChooser(scrollQuantity)}
+                        initial={"hidden"}
+                        animate={"visible"}
+                    />
                 </div>
             </div>
         )

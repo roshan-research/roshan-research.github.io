@@ -1,4 +1,4 @@
-#hazm #mobile{
+#hazm{
   display: flex;
   justify-content: center;
   align-items: center;
@@ -18,14 +18,14 @@
   flex-direction: row;
   margin-right: 14.77vw;
   margin-left: 16.71vw;
-  height: 88vh;
+  height: 100%;
   justify-content: center;
   align-items: center;
   display: flex;
 }
 
 #hazm #web #text{
-  height: 37.91vh;
+  height: auto;
   width: 32.9vw;
 }
 
@@ -34,8 +34,7 @@
 }
 
 #hazm #web #image{
-  box-sizing: border-box;
-  height: 13vh;
+  height: auto;
   width: 20vw;
 }
 
@@ -60,7 +59,7 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  align-items: start;
+  align-items: flex-start;
   width: 20vw;
   height: 10vw;
   margin-right: 10vw;
@@ -81,4 +80,10 @@
   margin-right: 5vw;
   margin-top: -0.85vw;
   height: 20vw;
+}
+
+@media screen and (max-width: 600px){
+  #hazm {
+    height: 100vh;
+  }
 }

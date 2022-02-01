@@ -1,14 +1,14 @@
 .links-group {
   display: flex;
-  height: 3.5vh;
-  width: 14.45vw;
+  height: auto;
+  width: 24vw;
   flex-direction: row;
   justify-content: space-between;
   margin-left: 7.82vw;
   order:1;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 600px){
   .links-group{
     display: none;
   }

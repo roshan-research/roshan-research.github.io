@@ -15,11 +15,11 @@ const returnBasedOneDevice = (beforehandFunction) => {
 
     if(isMobile || isTablet){
         return(
-            <div id={'footer-clients'} style={isSafari ? {} :{
+            <div id={'footer-mobile'} style={isSafari ? {} :{
                 position: 'absolute',
             }}>
                 <a role="button" style={{color:'transparent'}} href={'#!'}  onClick={goToTopAll}>
-                    <div id={'to-top-clients'}>
+                    <div id={'to-top-mobile'}>
                         &uarr;
                     </div>
                 </a>

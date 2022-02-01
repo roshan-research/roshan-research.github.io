@@ -52,7 +52,7 @@ const returnBasedOneDevice = (props) => {
                 initial={"hidden"}
                 animate={"visible"}
             >
-                <ClientsMobile id={isSafari ? 'clients-safari' : 'clients'}/>
+                <ClientsMobile id={isSafari ? 'customers-safari' : 'customers'}/>
             </motion.div>
         )
     } else {

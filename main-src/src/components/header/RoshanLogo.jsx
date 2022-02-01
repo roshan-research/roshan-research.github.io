@@ -4,7 +4,7 @@ import React from "react";
 
 function RoshanLogo() {
     return (
-        <div className='roshan-icon' title={'خانه'}>
+        <div className='roshan-icon' title={'خانه'} style={{marginTop: '0.3vw'}}>
             <a href={'https://www.roshan-ai.ir/'}>
                 <img className={'icon'} src={Logo} alt={'روشن'}/>
             </a>
