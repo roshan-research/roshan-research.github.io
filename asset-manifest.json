@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.eab1bc7e.chunk.css",
-    "main.js": "/static/js/main.c5eb4292.chunk.js",
+    "main.css": "/static/css/main.cad52bd1.chunk.css",
+    "main.js": "/static/js/main.b85c79c2.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
     "static/js/2.db76c2a3.chunk.js": "/static/js/2.db76c2a3.chunk.js",
     "index.html": "/index.html",
@@ -37,12 +37,12 @@
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/title.810f1b1e.svg": "/static/media/title.810f1b1e.svg",
     "static/media/wallpaper.e4312dfe.png": "/static/media/wallpaper.e4312dfe.png",
-    "static/media/روشن.23d13fdb.svg": "/static/media/روشن.23d13fdb.svg"
+    "static/media/روشن.8a28e744.svg": "/static/media/روشن.8a28e744.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.109a8ec7.js",
     "static/js/2.db76c2a3.chunk.js",
-    "static/css/main.eab1bc7e.chunk.css",
-    "static/js/main.c5eb4292.chunk.js"
+    "static/css/main.cad52bd1.chunk.css",
+    "static/js/main.b85c79c2.chunk.js"
   ]
 }
