@@ -121,6 +121,7 @@ button{
 }
 
 #clients-page-desktop {
+  margin-top: 5vh;
   display: flex;
   flex-direction: column;
   float: start;
@@ -138,8 +139,8 @@ button{
   height: auto;
 }
 
-.client-desktop:hover, #aparat-desktop:hover {
-  transform: scale(1.2);
+.client-desktop:hover{
+  transform: scale(1.4);
   background-color: #1E252F;
 }
 
@@ -165,3 +166,7 @@ button{
   transition: 0.5s;
 }
 
+#aparat-desktop:hover {
+  transform: scale(1.15);
+  background-color: #1E252F;
+}

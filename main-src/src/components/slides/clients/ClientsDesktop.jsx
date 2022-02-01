@@ -21,6 +21,12 @@ import {ReactComponent as Filimo} from "../../../assets/images/clients/Filimo.sv
 import {ReactComponent as Civilica} from "../../../assets/images/clients/Civilica.svg";
 import {ReactComponent as Bimarestan} from "../../../assets/images/clients/Bimarestan.svg";
 import {ReactComponent as AparatDesktop} from '../../../assets/images/clients/AparatDesktop.svg';
+import {ReactComponent as Barid} from '../../../assets/images/clients/Barid.svg';
+import {ReactComponent as Savaneh} from '../../../assets/images/clients/Savaneh.svg';
+import {ReactComponent as Lenzor} from '../../../assets/images/clients/Lenzor.svg';
+import {ReactComponent as Vira} from '../../../assets/images/clients/Vira.svg';
+import {ReactComponent as Bamdad} from '../../../assets/images/clients/Bamdad.svg';
+import {ReactComponent as IranRayaneh} from '../../../assets/images/clients/IranRayaneh.svg';
 
 import '../../../stylesheets/slides/clients.scss';
 import {motion} from 'framer-motion';
@@ -108,6 +114,29 @@ function ClientsDesktop({status}) {
                             <Ammar className={'client-desktop'}/>
                         </motion.div>
                     </div>
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <Barid className={'client-desktop'}/>
+                        </motion.div>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <Fars className={'client-desktop'}/>
+                        </motion.div>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <Savaneh className={'client-desktop'}/>
+                        </motion.div>
+                    </div>
                 </div>
                 <div className={'normal-clients-table'}>
                     <div  className={'clients-row-desktop'}>
@@ -139,14 +168,14 @@ function ClientsDesktop({status}) {
                             initial={"hidden"}
                             animate={"visible"}
                         >
-                            <Amin className={'client-desktop'}/>
+                            <Lenzor className={'client-desktop'}/>
                         </motion.div>
                         <motion.div
                             variants={ClientsAnimationsDesktop(status)}
                             initial={"hidden"}
                             animate={"visible"}
                         >
-                            <Civilica className={'client-desktop'}/>
+                            <Vira className={'client-desktop'}/>
                         </motion.div>
                     </div>
                 </div>
@@ -210,7 +239,7 @@ function ClientsDesktop({status}) {
                             initial={"hidden"}
                             animate={"visible"}
                         >
-                            <Fars className={'client-desktop'}/>
+                            <Amin className={'client-desktop'}/>
                         </motion.div>
                         <motion.div
                             variants={ClientsAnimationsDesktop(status)}
@@ -218,6 +247,29 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                         >
                             <Bimarestan className={'client-desktop'}/>
+                        </motion.div>
+                    </div>
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <IranRayaneh className={'client-desktop'}/>
+                        </motion.div>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <Bamdad className={'client-desktop'}/>
+                        </motion.div>
+                        <motion.div
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                        >
+                            <Civilica className={'client-desktop'}/>
                         </motion.div>
                     </div>
                 </div>
