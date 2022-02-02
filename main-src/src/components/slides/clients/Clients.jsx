@@ -39,13 +39,7 @@ const handleSwipe = (direction) => {
 }
 
 const returnBasedOneDevice = (props) => {
-    if(isTablet){
-        return(
-            <div id={'web-all'}>
-                <ClientsDesktop id={'web'} status={shouldRender(props.scrollQuantity)}/>
-            </div>
-        )
-    } else if(isMobile){
+    if(!isMobile){
         return(
             <motion.div
                 variants={flowerAnimation}
