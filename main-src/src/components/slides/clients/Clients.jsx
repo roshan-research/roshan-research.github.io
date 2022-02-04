@@ -1,10 +1,6 @@
 import ClientsDesktop from "./ClientsDesktop";
-import '../../../stylesheets/slides/clients.scss'
-import {isMobile, isOpera, isSafari, isTablet} from "react-device-detect";
+import '../../../stylesheets/slides/clients/clients.scss'
 import React, {Component} from "react";
-import ClientsMobile from "./ClientsMobile";
-import {flowerAnimation} from "../../../animations/kashf-image";
-import {motion} from 'framer-motion';
 import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
 import {Fullpage} from 'fullpage-react';
@@ -38,26 +34,6 @@ const handleSwipe = (direction) => {
     }
 }
 
-const returnBasedOneDevice = (props) => {
-    if(!isMobile){
-        return(
-            <motion.div
-                variants={flowerAnimation}
-                initial={"hidden"}
-                animate={"visible"}
-            >
-                <ClientsMobile id={isSafari ? 'customers-safari' : 'customers'}/>
-            </motion.div>
-        )
-    } else {
-        return(
-            <div id={'web-all'}>
-                <ClientsDesktop id={'web'} status={shouldRender(props.scrollQuantity)}/>
-            </div>
-        )
-    }
-};
-
 class Clients extends Component {
 
     componentDidMount() {
@@ -76,21 +52,15 @@ class Clients extends Component {
     }
 
     render() {
-        return isSafari || isOpera ? (
+        return <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={80}>
             <article>
                 <div id={'customers'}>
-                    {returnBasedOneDevice(this.props)}
+                    <div id={'web-all'}>
+                        <ClientsDesktop id={'web'} status={shouldRender(this.props.scrollQuantity)}/>
+                    </div>
                 </div>
             </article>
-        ):(
-            <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={80}>
-                <article>
-                    <div id={'customers'}>
-                        {returnBasedOneDevice(this.props)}
-                    </div>
-                </article>
-            </ReactTouchEvents>
-        )
+        </ReactTouchEvents>
     }
 }
 

@@ -27,8 +27,9 @@ import {ReactComponent as Lenzor} from '../../../assets/images/clients/Lenzor.sv
 import {ReactComponent as Vira} from '../../../assets/images/clients/Vira.svg';
 import {ReactComponent as Bamdad} from '../../../assets/images/clients/Bamdad.svg';
 import {ReactComponent as IranRayaneh} from '../../../assets/images/clients/IranRayaneh.svg';
+import {ReactComponent as AparatMobile} from '../../../assets/images/clients/Aparat.svg';
 
-import '../../../stylesheets/slides/clients.scss';
+import '../../../stylesheets/slides/clients/clients.scss';
 import {motion} from 'framer-motion';
 import {ClientsAnimationsDesktop} from "../../../animations/Clients";
 
@@ -44,7 +45,10 @@ function ClientsDesktop({status}) {
                 مشتریان ما
             </motion.div>
             <div id={'clients-desktop'}>
-                <div className={'normal-clients-table'}>
+                <div
+                    className={'normal-clients-table'}
+                    id={'primary-clients-table'}
+                >
                     <div className={'clients-row-desktop'}>
                         <motion.div
                             title={'سازمان اسناد و کتابخانه ملی'}
@@ -162,7 +166,132 @@ function ClientsDesktop({status}) {
                         </motion.div>
                     </div>
                 </div>
-                <div className={'normal-clients-table'}>
+                <div
+                    className={'normal-clients-table'}
+                    id={'secondary-clients-table'}
+                >
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            title={'شرکت مخابرات ایران'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Mokhaberat id={'desktop-mokhaberat'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'آستان قدس رضوی'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Astan id={'desktop-astan'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'آپارات'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <AparatMobile id={'desktop-keshvar'}/>
+                        </motion.div>
+                    </div>
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            title={'لنزور'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Lenzor id={'desktop-lenzor'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'ویرا ویراست'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Vira id={'desktop-vira'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'پژوهشکده فناوری اطلاعات و ارتباطات'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Jahad id={'desktop-jahad'}/>
+                        </motion.div>
+                    </div>
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            title={'بنیاد سینمایی فارابی'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Farabi id={'desktop-farabi'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'جشنواره مردمی فیلم عمار'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Ammar id={'desktop-ammar'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'برید سامانه نوین'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Barid id={'desktop-barid'}/>
+                        </motion.div>
+                    </div>
+                    <div className={'clients-row-desktop'}>
+                        <motion.div
+                            title={'فارس'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Fars id={'desktop-fars'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'پژوهشکده سوانح طبیعی'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <Savaneh id={'desktop-savaneh'}/>
+                        </motion.div>
+                        <motion.div
+                            title={'آپارات'}
+                            variants={ClientsAnimationsDesktop(status)}
+                            initial={"hidden"}
+                            animate={"visible"}
+                            className={'client-desktop'}
+                        >
+                            <AparatMobile id={'desktop-keshvar'}/>
+                        </motion.div>
+                    </div>
+                </div
+                >
+                <div
+                    className={'normal-clients-table'}
+                    id={'absurd-clients-table'}
+                >
                     <div  className={'clients-row-desktop'}>
                         <motion.div
                             title={'شرکت مخابرات ایران'}
@@ -211,8 +340,12 @@ function ClientsDesktop({status}) {
                             <Vira id={'desktop-vira'}/>
                         </motion.div>
                     </div>
-                </div>
-                <div className={'normal-clients-table'}>
+                </div
+                >
+                <div
+                    className={'normal-clients-table'}
+                    id={'tertiary-clients-table'}
+                >
                     <div className={'clients-row-desktop'}>
                         <motion.div
                             title={'ستاد اجرایی فرمان حضرت امام'}
@@ -329,7 +462,8 @@ function ClientsDesktop({status}) {
                             <Civilica id={'desktop-civilica'}/>
                         </motion.div>
                     </div>
-                </div>
+                </div
+                >
             </div>
         </div>
     )
