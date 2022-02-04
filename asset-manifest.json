@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/static/css/main.fd0e525b.chunk.css",
-    "main.js": "/static/js/main.99a18950.chunk.js",
+    "main.css": "/static/css/main.65bb2b3a.chunk.css",
+    "main.js": "/static/js/main.1689663a.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
-    "static/js/2.db76c2a3.chunk.js": "/static/js/2.db76c2a3.chunk.js",
+    "static/js/2.c3da7abf.chunk.js": "/static/js/2.c3da7abf.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.db76c2a3.chunk.js.LICENSE.txt": "/static/js/2.db76c2a3.chunk.js.LICENSE.txt",
+    "static/js/2.c3da7abf.chunk.js.LICENSE.txt": "/static/js/2.c3da7abf.chunk.js.LICENSE.txt",
     "static/media/Amin.bff2e560.svg": "/static/media/Amin.bff2e560.svg",
     "static/media/Ammar.77430be4.svg": "/static/media/Ammar.77430be4.svg",
-    "static/media/Aparat.2d7ab043.svg": "/static/media/Aparat.2d7ab043.svg",
+    "static/media/Aparat.e806b1b9.svg": "/static/media/Aparat.e806b1b9.svg",
     "static/media/AparatDesktop.1139c195.svg": "/static/media/AparatDesktop.1139c195.svg",
     "static/media/Astan.88889ade.svg": "/static/media/Astan.88889ade.svg",
     "static/media/Azmoon.527c57fc.svg": "/static/media/Azmoon.527c57fc.svg",
@@ -41,14 +41,13 @@
     "static/media/kashf-web-image.7a0020e4.png": "/static/media/kashf-web-image.7a0020e4.png",
     "static/media/menu-icon.a0de4dbf.svg": "/static/media/menu-icon.a0de4dbf.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
-    "static/media/title.810f1b1e.svg": "/static/media/title.810f1b1e.svg",
     "static/media/wallpaper.e4312dfe.png": "/static/media/wallpaper.e4312dfe.png",
     "static/media/روشن.8a28e744.svg": "/static/media/روشن.8a28e744.svg"
   },
   "entrypoints": [
     "static/js/runtime-main.109a8ec7.js",
-    "static/js/2.db76c2a3.chunk.js",
-    "static/css/main.fd0e525b.chunk.css",
-    "static/js/main.99a18950.chunk.js"
+    "static/js/2.c3da7abf.chunk.js",
+    "static/css/main.65bb2b3a.chunk.css",
+    "static/js/main.1689663a.chunk.js"
   ]
 }

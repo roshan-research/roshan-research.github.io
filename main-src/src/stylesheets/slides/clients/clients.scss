@@ -175,5 +175,9 @@ button{
   background-color: #1E252F;
 }
 
+#secondary-clients-table{
+  display: none;
+}
+
 @import "client-images-desktop";
 @import "clients-mobile";

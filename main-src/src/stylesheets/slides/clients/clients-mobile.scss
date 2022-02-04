@@ -1,43 +1,36 @@
 @media screen and (max-width: 600px){
+    #absurd-clients-table {
+        display: none;
+    }
 
-}
+    #tertiary-clients-table, #secondary-clients-table {
+        position: absolute;
+    }
 
-#absurd-clients-table {
-    display: none;
-}
+    #clients-page-desktop {
+        justify-content: space-around;
+        align-items: center;
+    }
 
-#tertiary-clients-table, #secondary-clients-table {
-    position: absolute;
-}
+    #clients-title-desktop {
+        font-size: 6vw;
+    }
 
-#clients-page-desktop {
-    justify-content: center;
-    align-items: center;
-}
+    #clients-desktop {
+        width: 88.5vw;
+    }
 
-#clients-title-desktop {
-    font-size: 6vw;
-}
+    .client-desktop{
+        width: 25vw;
+        height: 25vw;
+        margin: 2vw;
+    }
 
-#clients-desktop {
-    width: 88.5vw;
-}
+    @import "clients-images-mobile";
 
-.client-desktop{
-    width: 25vw;
-    height: 25vw;
-    margin: 2vw;
-}
+    .client-desktop:hover{
+        transform: scale(1.2);
+        background-color: #1E252F;
+    }
 
-@import "clients-images-mobile";
-
-//temporary
-#secondary-clients-table,#primary-clients-table,#clients-title-desktop{
-    display: none;
-}
-// end of temp
-
-.client-desktop:hover{
-    transform: scale(1.2);
-    background-color: #1E252F;
 }

@@ -178,7 +178,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Mokhaberat id={'desktop-mokhaberat'}/>
+                            <Mokhaberat className={'initially-hidden'}
+                                        id={'desktop-mokhaberat'}/>
                         </motion.div>
                         <motion.div
                             title={'آستان قدس رضوی'}
@@ -187,7 +188,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Astan id={'desktop-astan'}/>
+                            <Astan className={'initially-hidden'}
+                                   id={'desktop-astan'}/>
                         </motion.div>
                         <motion.div
                             title={'آپارات'}
@@ -196,7 +198,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <AparatMobile id={'desktop-keshvar'}/>
+                            <AparatMobile className={'initially-hidden'}
+                                          id={'desktop-aparat-3'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -207,7 +210,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Lenzor id={'desktop-lenzor'}/>
+                            <Lenzor className={'initially-hidden'}
+                                    id={'desktop-lenzor'}/>
                         </motion.div>
                         <motion.div
                             title={'ویرا ویراست'}
@@ -216,7 +220,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Vira id={'desktop-vira'}/>
+                            <Vira className={'initially-hidden'} id={'desktop-vira'}/>
                         </motion.div>
                         <motion.div
                             title={'پژوهشکده فناوری اطلاعات و ارتباطات'}
@@ -225,7 +229,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Jahad id={'desktop-jahad'}/>
+                            <Jahad className={'initially-hidden'} id={'desktop-jahad-6'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -236,7 +240,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Farabi id={'desktop-farabi'}/>
+                            <Farabi className={'initially-hidden'} id={'desktop-farabi-7'}/>
                         </motion.div>
                         <motion.div
                             title={'جشنواره مردمی فیلم عمار'}
@@ -245,7 +249,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Ammar id={'desktop-ammar'}/>
+                            <Ammar className={'initially-hidden'} id={'desktop-ammar-8'}/>
                         </motion.div>
                         <motion.div
                             title={'برید سامانه نوین'}
@@ -254,7 +258,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Barid id={'desktop-barid'}/>
+                            <Barid className={'initially-hidden'} id={'desktop-barid-9'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -265,7 +269,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Fars id={'desktop-fars'}/>
+                            <Fars className={'initially-hidden'} id={'desktop-fars-10'}/>
                         </motion.div>
                         <motion.div
                             title={'پژوهشکده سوانح طبیعی'}
@@ -274,7 +278,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Savaneh id={'desktop-savaneh'}/>
+                            <Savaneh className={'initially-hidden'} id={'desktop-savaneh-11'}/>
                         </motion.div>
                         <motion.div
                             title={'آپارات'}
@@ -283,7 +287,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <AparatMobile id={'desktop-keshvar'}/>
+                            <AparatMobile className={'initially-hidden'} id={'desktop-aparat-12'}/>
                         </motion.div>
                     </div>
                 </div
@@ -354,7 +358,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Setad id={'desktop-setad'}/>
+                            <Setad className={'initially-hidden'} id={'desktop-setad'}/>
                         </motion.div>
                         <motion.div
                             title={'آزمون استخدام بخش خصوصی'}
@@ -363,7 +367,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Azmoon id={'desktop-azmoon'}/>
+                            <Azmoon className={'initially-hidden'} id={'desktop-azmoon'}/>
                         </motion.div>
                         <motion.div
                             title={'ایرانداک'}
@@ -372,7 +376,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Irandoc id={'desktop-irandoc'}/>
+                            <Irandoc className={'initially-hidden'} id={'desktop-irandoc'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -383,7 +387,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Filimo id={'desktop-filimo'}/>
+                            <Filimo className={'initially-hidden'} id={'desktop-filimo'}/>
                         </motion.div>
                         <motion.div
                             title={'نزدیکا'}
@@ -392,7 +396,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Nazdika id={'desktop-nazdika'}/>
+                            <Nazdika className={'initially-hidden'} id={'desktop-nazdika'}/>
                         </motion.div>
                         <motion.div
                             title={'بیمه پارسیان'}
@@ -401,7 +405,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bimeh id={'desktop-bimeh'}/>
+                            <Bimeh className={'initially-hidden'} id={'desktop-bimeh'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -412,7 +416,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Tamasha id={'desktop-tamasha'}/>
+                            <Tamasha className={'initially-hidden'} id={'desktop-tamasha'}/>
                         </motion.div>
                         <motion.div
                             title={'نوآوران امین'}
@@ -421,7 +425,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Amin id={'desktop-amin'}/>
+                            <Amin className={'initially-hidden'} id={'desktop-amin'}/>
                         </motion.div>
                         <motion.div
                             title={'مجتمع بیمارستانی امام خمینی'}
@@ -430,7 +434,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bimarestan id={'desktop-bimarestan'}/>
+                            <Bimarestan className={'initially-hidden'} id={'desktop-bimarestan'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -441,7 +445,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <IranRayaneh id={'desktop-iranrayaneh'}/>
+                            <IranRayaneh className={'initially-hidden'} id={'desktop-iranrayaneh'}/>
                         </motion.div>
                         <motion.div
                             title={'بامداد عصر پردازش'}
@@ -450,7 +454,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bamdad id={'desktop-bamdad'}/>
+                            <Bamdad className={'initially-hidden'} id={'desktop-bamdad'}/>
                         </motion.div>
                         <motion.div
                             title={'CIVILICA'}
@@ -459,7 +463,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Civilica id={'desktop-civilica'}/>
+                            <Civilica className={'initially-hidden'} id={'desktop-civilica'}/>
                         </motion.div>
                     </div>
                 </div
