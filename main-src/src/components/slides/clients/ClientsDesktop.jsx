@@ -76,6 +76,7 @@ function ClientsDesktop({status}) {
                             className={'client-desktop'}
                         >
                             <Keshvar id={'desktop-keshvar'}/>
+                            <Astan className={'replacer-logo'} id={'astan-after-keshvar'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -105,6 +106,7 @@ function ClientsDesktop({status}) {
                             className={'client-desktop'}
                         >
                             <Varzesh id={'desktop-varzesh'}/>
+                            <Keshvar className={'replacer-logo'} id={'keshvar-after-varzesh'}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -305,6 +307,7 @@ function ClientsDesktop({status}) {
                             className={'client-desktop'}
                         >
                             <Mokhaberat id={'desktop-mokhaberat'}/>
+                            <Filimo className={'replacer-logo'} id={'filimo-after-mokhaberat'}/>
                         </motion.div>
                         <motion.div
                             title={'آستان قدس رضوی'}
@@ -314,6 +317,7 @@ function ClientsDesktop({status}) {
                             className={'client-desktop'}
                         >
                             <Astan id={'desktop-astan'}/>
+                            <Setad className={'replacer-logo'} id={'setad-after-astan'}/>
                         </motion.div>
                     </div>
                     <motion.div
@@ -385,6 +389,10 @@ function ClientsDesktop({status}) {
                             className={'client-desktop'}
                         >
                             <Setad className={'initially-hidden'} id={'desktop-setad'}/>
+                            <Mokhaberat
+                                id={'mokhaberat-after-setad'}
+                                className={'initially-hidden replacer-logo'}
+                            />
                         </motion.div>
                         <motion.div
                             title={'آزمون استخدام بخش خصوصی'}
@@ -418,7 +426,7 @@ function ClientsDesktop({status}) {
                                 id={'desktop-filimo'}
                             />
                             <AparatMobile
-                                className={'initially-hidden'}
+                                className={'initially-hidden replacer-logo'}
                                 id={'aparat-after-filimo'}
                             />
                         </motion.div>

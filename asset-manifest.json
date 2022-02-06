@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/static/css/main.1fd4cafb.chunk.css",
-    "main.js": "/static/js/main.1689663a.chunk.js",
+    "main.css": "/static/css/main.8e2ce8a5.chunk.css",
+    "main.js": "/static/js/main.e330f888.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
     "static/js/2.c3da7abf.chunk.js": "/static/js/2.c3da7abf.chunk.js",
     "index.html": "/index.html",
@@ -9,7 +9,7 @@
     "static/media/Amin.bff2e560.svg": "/static/media/Amin.bff2e560.svg",
     "static/media/Ammar.77430be4.svg": "/static/media/Ammar.77430be4.svg",
     "static/media/Aparat.e806b1b9.svg": "/static/media/Aparat.e806b1b9.svg",
-    "static/media/AparatDesktop.1139c195.svg": "/static/media/AparatDesktop.1139c195.svg",
+    "static/media/AparatDesktop.1a5561e4.svg": "/static/media/AparatDesktop.1a5561e4.svg",
     "static/media/Astan.88889ade.svg": "/static/media/Astan.88889ade.svg",
     "static/media/Azmoon.527c57fc.svg": "/static/media/Azmoon.527c57fc.svg",
     "static/media/Bamdad.afd9197b.svg": "/static/media/Bamdad.afd9197b.svg",
@@ -47,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.109a8ec7.js",
     "static/js/2.c3da7abf.chunk.js",
-    "static/css/main.1fd4cafb.chunk.css",
-    "static/js/main.1689663a.chunk.js"
+    "static/css/main.8e2ce8a5.chunk.css",
+    "static/js/main.e330f888.chunk.js"
   ]
 }

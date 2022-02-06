@@ -1,141 +1,192 @@
-@keyframes normal-fade-animation {
-  0% {
-    opacity: 0;
-  }
-  2.4% {
-    opacity: 1;
-  }
-  9.7% {
-    opacity: 1;
-  }
-  12.1% {
-    opacity: 0;
-  }
-  100%{
-    opacity: 0;
-  }
-}
-
-@keyframes tile1-fade-animation {
-  0% {
-    opacity: 0;
-  }
-  1.2% {
-    opacity: 1;
-  }
-  13.4% {
-    opacity: 1;
-  }
-  15.8% {
-    opacity: 0;
-  }
-  100% {
-    opacity: 0;
-  }
-}
-
-@keyframes tile2-fade-animation {
-  0% {
-    opacity: 1;
-  }
-  1.2% {
-    opacity: 0;
-  }
-  17% {
-    opacity: 0;
-  }
-  18.4% {
-    opacity: 1;
-  }
-  100% {
-    opacity: 1;
-  }
-}
-
-//center logo delays
-$delay1: 0s;
-$delay2: 6s;
-$delay3: 12s;
-$delay4: 18s;
-$delay5: 24s;
-$delay6: 30s;
-$delay7: 36s;
-
-//other tile delays
-$tile-delay0: 0s;
-$tile-delay1: 6s;
-$tile-delay2: 12s;
-$tile-delay3: 18s;
-$tile-delay4: 24s;
-$tile-delay5: 30s;
-$tile-delay6: 36s;
-$tile-delay7: 42s;
-
-@mixin animate-center($delay) {
-  animation-name: normal-fade-animation;
-  animation-duration: 41s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-delay: $delay;
-}
-
-@mixin animate-center-tile1($delay) {
-  animation-name: tile1-fade-animation;
-  animation-duration: 41s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-delay: $delay;
-}
-
-@mixin animate-center-tile2($delay) {
-  animation-name: tile2-fade-animation;
-  animation-duration: 41s;
-  animation-timing-function: ease-in;
-  animation-iteration-count: infinite;
-  animation-play-state: running;
-  animation-delay: $delay;
-}
-
-
-#aparat-center {
-  @include animate-center($delay1);
-}
-
-#filimo-center {
-  @include animate-center($delay2);
-}
-
-#mokhaberat-center {
-  @include animate-center($delay3);
-}
-
-#setad-center {
-  @include animate-center($delay4);
-}
-
-#astan-center {
-  @include animate-center($delay5);
-}
-
-#keshvar-center {
-  @include animate-center($delay6);
-}
-
-#varzesh-center {
-  @include animate-center($delay7);
-}
-
-#desktop-filimo {
-  @include animate-center-tile1($tile-delay0);
-}
-
-#aparat-after-filimo {
+.replacer-logo {
   position: absolute;
-  width: 2.5vw;
-  height: auto;
   opacity: 0;
-  @include animate-center-tile2($tile-delay0);
 }
 
+@media screen and (min-width: 600px){
+  @keyframes normal-fade-animation {
+    0% {
+      opacity: 0;
+    }
+    2.4% {
+      opacity: 1;
+    }
+    9.7% {
+      opacity: 1;
+    }
+    12.1% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes tile1-fade-animation {
+    0% {
+      opacity: 1;
+    }
+    12.2% {
+      opacity: 1;
+    }
+    14.6% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 0;
+    }
+  }
+
+  @keyframes tile2-fade-animation {
+    0% {
+      opacity: 0;
+    }
+    14.6% {
+      opacity: 0;
+    }
+    16.8% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 1;
+    }
+  }
+
+  //center logo delays
+  $delay1: 0s;
+  $delay2: 6s;
+  $delay3: 12s;
+  $delay4: 18s;
+  $delay5: 24s;
+  $delay6: 30s;
+  $delay7: 36s;
+
+  //other tile delays
+  $tile-delay0: 0s;
+  $tile-delay1: 6s;
+  $tile-delay2: 12s;
+  $tile-delay3: 18s;
+  $tile-delay4: 24s;
+  $tile-delay5: 30s;
+  $tile-delay6: 36s;
+  $tile-delay7: 42s;
+
+  @mixin animate-center($delay) {
+    animation-name: normal-fade-animation;
+    animation-duration: 41s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: $delay;
+  }
+
+  @mixin animate-center-tile1($delay) {
+    animation-name: tile1-fade-animation;
+    animation-duration: 41s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: $delay;
+    animation-fill-mode: backwards;
+  }
+
+  @mixin animate-center-tile2($delay) {
+    animation-name: tile2-fade-animation;
+    animation-duration: 41s;
+    animation-timing-function: ease-in;
+    animation-iteration-count: infinite;
+    animation-play-state: running;
+    animation-delay: $delay;
+    animation-fill-mode: backwards;
+  }
+
+  #aparat-center {
+    @include animate-center($delay1);
+  }
+
+  #filimo-center {
+    @include animate-center($delay2);
+  }
+
+  #mokhaberat-center {
+    @include animate-center($delay3);
+  }
+
+  #setad-center {
+    @include animate-center($delay4);
+  }
+
+  #astan-center {
+    @include animate-center($delay5);
+  }
+
+  #keshvar-center {
+    @include animate-center($delay6);
+  }
+
+  #varzesh-center {
+    @include animate-center($delay7);
+  }
+
+  #desktop-filimo {
+    @include animate-center-tile1($tile-delay0);
+  }
+
+  #aparat-after-filimo {
+    width: 2.5vw;
+    height: auto;
+    @include animate-center-tile2($tile-delay0);
+  }
+
+  #filimo-after-mokhaberat {
+    width: 5vw;
+    height: 2.2vw;
+    @include animate-center-tile2($tile-delay1);
+  }
+
+  #desktop-mokhaberat {
+    @include animate-center-tile1($tile-delay1);
+  }
+
+
+  #mokhaberat-after-setad {
+    width: 4.1vw;
+    height: 4.1vw;
+    @include animate-center-tile2($tile-delay2);
+  }
+
+  #desktop-setad {
+    @include animate-center-tile1($tile-delay2);
+  }
+
+  #setad-after-astan {
+    width: 4.6vw;
+    height: 4.5vw;
+    @include animate-center-tile2($tile-delay3);
+  }
+
+  #desktop-astan {
+    @include animate-center-tile1($tile-delay3);
+  }
+
+  #astan-after-keshvar {
+    width: 3.5vw;
+    height: 4vw;
+    @include animate-center-tile2($tile-delay4);
+  }
+
+  #desktop-keshvar {
+    @include animate-center-tile1($tile-delay4);
+  }
+
+  #keshvar-after-varzesh {
+    width: 3.5vw;
+    height: 5vw;
+    @include animate-center-tile2($tile-delay5);
+  }
+
+  #desktop-varzesh {
+    @include animate-center-tile1($tile-delay5);
+  }
+
+}
