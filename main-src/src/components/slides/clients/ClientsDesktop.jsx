@@ -317,12 +317,39 @@ function ClientsDesktop({status}) {
                         </motion.div>
                     </div>
                     <motion.div
-                        title={'آپارات'}
                         variants={ClientsAnimationsDesktop(status)}
                         initial={"hidden"}
                         animate={"visible"}
+                        id={'client-center'}
                     >
-                        <AparatDesktop id={'aparat-desktop'}/>
+                        <AparatDesktop
+                            className={'center-logo'}
+                            id={'aparat-center'}
+                        />
+                        <Filimo
+                            className={'center-logo'}
+                            id={'filimo-center'}
+                        />
+                        <Mokhaberat
+                            className={'center-logo'}
+                            id={'mokhaberat-center'}
+                        />
+                        <Astan
+                            className={'center-logo'}
+                            id={'astan-center'}
+                        />
+                        <Setad
+                            className={'center-logo'}
+                            id={'setad-center'}
+                        />
+                        <Keshvar
+                            className={'center-logo'}
+                            id={'keshvar-center'}
+                        />
+                        <Varzesh
+                            className={'center-logo'}
+                            id={'varzesh-center'}
+                        />
                     </motion.div>
                     <div  className={'clients-row-desktop'}>
                         <motion.div
@@ -344,8 +371,7 @@ function ClientsDesktop({status}) {
                             <Vira id={'desktop-vira'}/>
                         </motion.div>
                     </div>
-                </div
-                >
+                </div>
                 <div
                     className={'normal-clients-table'}
                     id={'tertiary-clients-table'}
@@ -387,7 +413,14 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Filimo className={'initially-hidden'} id={'desktop-filimo'}/>
+                            <Filimo
+                                className={'initially-hidden'}
+                                id={'desktop-filimo'}
+                            />
+                            <AparatMobile
+                                className={'initially-hidden'}
+                                id={'aparat-after-filimo'}
+                            />
                         </motion.div>
                         <motion.div
                             title={'نزدیکا'}

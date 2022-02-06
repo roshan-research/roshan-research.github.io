@@ -162,15 +162,16 @@ button{
   align-items: center;
 }
 
-#aparat-desktop {
-  width: 16vw;
+.center-logo {
+  width: 11vw;
   height: auto;
   margin: 1vw;
   cursor: pointer;
   transition: 0.5s;
+  position: absolute;
 }
 
-#aparat-desktop:hover {
+#client-center:hover {
   transform: scale(1.15);
   background-color: #1E252F;
 }
@@ -179,5 +180,30 @@ button{
   display: none;
 }
 
+#client-center {
+  transition: 0.5s;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 0.9vw;
+  width: 16vw;
+  height: 16vw;
+  cursor: pointer;
+  border: 1px solid rgba(85, 162, 231, 0.6);
+}
+
+#keshvar-center {
+  width: 9vw;
+}
+
+#varzesh-center {
+  width: 8vw;
+}
+
+.center-logo {
+  opacity: 0;
+}
+
+@import "center-animation";
 @import "client-images-desktop";
 @import "clients-mobile";
