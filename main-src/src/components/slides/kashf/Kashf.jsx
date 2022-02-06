@@ -1,6 +1,6 @@
 import KashfMobile from "./KashfMobile";
 import KashfWebText from "./KashfWebText";
-import KashfWebImage from "../../../assets/images/kashf-web-image.png";
+import KashfWebImage from "../../../assets/images/kashf-web-image.svg";
 import '../../../stylesheets/slides/kashf.scss'
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import React from "react";

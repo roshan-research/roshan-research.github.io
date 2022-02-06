@@ -1,6 +1,6 @@
 import HazmMobile from "./HazmMobile.jsx";
 import '../../../stylesheets/slides/hazm.scss'
-import HazmWebImage from "../../../assets/images/hazm-web-image.png";
+import HazmWebImage from "../../../assets/images/hazm-web-image.svg";
 import HazmWebText from "./HazmWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from "framer-motion";

@@ -1,7 +1,7 @@
 import AlefbaMobile from "./AlefbaMobile";
 import '../../../stylesheets/slides/alefba.scss';
 import AlefbaWebText from "./AlefbaWebText";
-import AlefbaWebImage from "../../../assets/images/alefba-web-image.png";
+import AlefbaWebImage from "../../../assets/images/alefba-web-image.svg";
 import {isMobile,isSafari,isTablet} from "react-device-detect";
 import React from "react";
 import {motion} from "framer-motion";

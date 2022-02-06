@@ -1,6 +1,6 @@
 import HarfMobile from "./HarfMobile";
 import '../../../stylesheets/slides/harf.scss';
-import HarfWebImage from "../../../assets/images/harf-web-image.png";
+import HarfWebImage from "../../../assets/images/harf-web-image.svg";
 import HarfWebText from "./HarfWebText";
 import {isMobile, isSafari, isTablet} from "react-device-detect";
 import {motion} from 'framer-motion';

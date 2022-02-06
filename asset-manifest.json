@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.8e2ce8a5.chunk.css",
-    "main.js": "/static/js/main.e330f888.chunk.js",
+    "main.js": "/static/js/main.a3db7bd9.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
     "static/js/2.c3da7abf.chunk.js": "/static/js/2.c3da7abf.chunk.js",
     "index.html": "/index.html",
@@ -37,8 +37,11 @@
     "static/media/Tamasha.3d953841.svg": "/static/media/Tamasha.3d953841.svg",
     "static/media/Varzesh.374b1da3.svg": "/static/media/Varzesh.374b1da3.svg",
     "static/media/Vira.fff449df.svg": "/static/media/Vira.fff449df.svg",
+    "static/media/alefba-web-image.17b6a139.svg": "/static/media/alefba-web-image.17b6a139.svg",
     "static/media/close-icon.20012dc4.svg": "/static/media/close-icon.20012dc4.svg",
-    "static/media/kashf-web-image.7a0020e4.png": "/static/media/kashf-web-image.7a0020e4.png",
+    "static/media/harf-web-image.982d25e8.svg": "/static/media/harf-web-image.982d25e8.svg",
+    "static/media/hazm-web-image.4a717afa.svg": "/static/media/hazm-web-image.4a717afa.svg",
+    "static/media/kashf-web-image.cffd473c.svg": "/static/media/kashf-web-image.cffd473c.svg",
     "static/media/menu-icon.a0de4dbf.svg": "/static/media/menu-icon.a0de4dbf.svg",
     "static/media/sherkat.4a561414.svg": "/static/media/sherkat.4a561414.svg",
     "static/media/wallpaper.e4312dfe.png": "/static/media/wallpaper.e4312dfe.png",
@@ -48,6 +51,6 @@
     "static/js/runtime-main.109a8ec7.js",
     "static/js/2.c3da7abf.chunk.js",
     "static/css/main.8e2ce8a5.chunk.css",
-    "static/js/main.e330f888.chunk.js"
+    "static/js/main.a3db7bd9.chunk.js"
   ]
 }
