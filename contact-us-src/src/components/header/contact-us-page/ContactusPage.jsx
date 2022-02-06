@@ -4,6 +4,7 @@ import {motion} from 'framer-motion';
 import emailSource from '../../../assets/images/email-icon.svg';
 import phoneSource from '../../../assets/images/phone-icon.svg';
 import locationSource from '../../../assets/images/location-icon.svg';
+import vector from '../../../assets/images/vector.svg';
 
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
 
@@ -47,11 +48,12 @@ export default function ContactusPage(props) {
                     </div>
                     <div id={'address-row'}>
                         <img id={'location-icon'} src={locationSource} alt={''}/>
-                        <a href={'geo:35.7113,51.4105;u=35'}>
+                        <a href={'geo:35.7113,51.4105;u=35'} id={'location-row'}>
                             <p id={'address-text'}>
-                                میدان ولیعصر، خیابان کریم‌خان زند، خیابان به‌آفرین، پلاک 30، طبقه دوم
+                                میدان ولیعصر، خیابان به‌آفرین، پلاک 30، طبقه دوم
                             </p>
                         </a>
+                        <img src={vector} alt={'vector'} id={'vector'}/>
                     </div>
                 </div>
                 <div id={'contact-image'}>

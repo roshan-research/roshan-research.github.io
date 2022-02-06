@@ -80,7 +80,7 @@ p{
 
 #address-row{
   height:auto;
-  width:33.3vw;
+  width:25vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -168,4 +168,9 @@ a {
 
 #email-text:hover {
   color: #7AB8FF;
+}
+
+#main-image {
+  background-color: transparent;
+  border: none;
 }
