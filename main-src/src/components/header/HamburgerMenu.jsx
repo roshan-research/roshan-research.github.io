@@ -51,7 +51,7 @@ function HamburgerMenu() {
                             salam@roshan-ai.ir
                         </p>
                     </a>
-                    <p id={'company'}>
+                    <p id={'company'} className={'comp-temp'}>
                         شرکت دانش بنیان «راهکار پردازش ژرف»
                     </p>
                 </div>
