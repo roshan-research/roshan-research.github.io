@@ -6,6 +6,7 @@ import Navbar from "./Navbar.jsx";
 import MainPage from "./MainPage";
 import JoinUsButton from "./JoinUsButton";
 import ContactUsButton from "./ContactUsButton";
+import HamburgerMenu from "./HamburgerMenu";
 
 class Header extends Component {
     state = {
@@ -21,6 +22,7 @@ class Header extends Component {
     };
 
     reactToToggles = () => {
+
         if (this.state.isOpen) {
             return (
                 <div id={'compact-menu'}>
@@ -46,6 +48,7 @@ class Header extends Component {
     render() {
         return(
             <div id={'all'}>
+                <HamburgerMenu/>
                 <div className="header-wrapper">
                     <Navbar
                         toggle={this.toggle}

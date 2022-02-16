@@ -6,7 +6,8 @@ import {
     noneAnimation,
     startingAnimation,
 } from "../../animations/main-page";
-import {useEffect} from "react";
+import React, {useEffect} from "react";
+import HamburgerMenu from "./HamburgerMenu";
 
 const imageAnimationChooser = (props) => {
     if(props.shouldRerender && props.scrollQuantity === 0){

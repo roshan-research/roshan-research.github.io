@@ -3,6 +3,7 @@ import ContactUsButton from "./ContactUsButton";
 import '../../stylesheets/links-group.scss'
 import {Fullpage} from 'fullpage-react';
 import '../../stylesheets/header-button.scss'
+import HamburgerMenu from "./HamburgerMenu";
 const { changeFullpageSlide} = Fullpage;
 
 const goToClients = changeFullpageSlide.bind(null, 5);

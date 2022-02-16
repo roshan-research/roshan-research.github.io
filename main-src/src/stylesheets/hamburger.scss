@@ -1,0 +1,25 @@
+#hamburger-menu {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0A0A0A;
+  z-index: 10;
+  float: left;
+  position: absolute;
+  transition: 1s;
+  transform: skew(-10deg);
+}
+
+#hamburger-button {
+  position: absolute;
+  margin-top: 2.1vw;
+  margin-right: 90vw;
+  z-index: 300;
+}
+
+.closed {
+  margin-right: 110vw;
+}
+
+.opened {
+  margin-right: 75vw;
+}
