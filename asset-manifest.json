@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/static/css/main.8e2ce8a5.chunk.css",
-    "main.js": "/static/js/main.23ed2d88.chunk.js",
+    "main.css": "/static/css/main.67ae37d7.chunk.css",
+    "main.js": "/static/js/main.b49f08fe.chunk.js",
     "runtime-main.js": "/static/js/runtime-main.109a8ec7.js",
-    "static/js/2.c3da7abf.chunk.js": "/static/js/2.c3da7abf.chunk.js",
+    "static/js/2.07d31f56.chunk.js": "/static/js/2.07d31f56.chunk.js",
     "index.html": "/index.html",
-    "static/js/2.c3da7abf.chunk.js.LICENSE.txt": "/static/js/2.c3da7abf.chunk.js.LICENSE.txt",
+    "static/js/2.07d31f56.chunk.js.LICENSE.txt": "/static/js/2.07d31f56.chunk.js.LICENSE.txt",
     "static/media/Amin.bff2e560.svg": "/static/media/Amin.bff2e560.svg",
     "static/media/Ammar.77430be4.svg": "/static/media/Ammar.77430be4.svg",
     "static/media/Aparat.e806b1b9.svg": "/static/media/Aparat.e806b1b9.svg",
@@ -49,8 +49,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.109a8ec7.js",
-    "static/js/2.c3da7abf.chunk.js",
-    "static/css/main.8e2ce8a5.chunk.css",
-    "static/js/main.23ed2d88.chunk.js"
+    "static/js/2.07d31f56.chunk.js",
+    "static/css/main.67ae37d7.chunk.css",
+    "static/js/main.b49f08fe.chunk.js"
   ]
 }

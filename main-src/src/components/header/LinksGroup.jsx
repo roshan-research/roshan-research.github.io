@@ -1,9 +1,8 @@
 import JoinUsButton from "./JoinUsButton";
 import ContactUsButton from "./ContactUsButton";
 import '../../stylesheets/links-group.scss'
-import {Fullpage} from 'fullpage-react';
 import '../../stylesheets/header-button.scss'
-import HamburgerMenu from "./HamburgerMenu";
+import {Fullpage} from 'fullpage-react';
 const { changeFullpageSlide} = Fullpage;
 
 const goToClients = changeFullpageSlide.bind(null, 5);
