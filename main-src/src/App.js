@@ -1,17 +1,19 @@
-import React, {Component} from 'react';
+import React, {Component, lazy, Suspense} from 'react';
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
 import ReactTouchEvents from "react-touch-events";
-import Footer from "./components/slides/footer/footer";
-import Header from "./components/header/Header"
-import Kashf from "./components/slides/kashf/Kashf"
-import Alefba from "./components/slides/alefba/Alefba"
-import Harf from "./components/slides/harf/Harf"
-import Hazm from "./components/slides/hazm/hazm"
-import Customers from "./components/slides/clients/Clients"
 import {loadingAnimation} from "./animations/main-page";
 import {motion} from 'framer-motion'
+import ProgressIndicator from "./components/ProgressIndicator";
+
+const Footer = lazy(() => import('./components/slides/footer/footer'));
+const Header = lazy(() => import('./components/header/Header'));
+const Kashf = lazy(() => import('./components/slides/kashf/Kashf'));
+const Alefba = lazy(() => import('./components/slides/alefba/Alefba'));
+const Harf = lazy(() => import('./components/slides/harf/Harf'));
+const Hazm = lazy(() => import('./components/slides/hazm/hazm'));
+const Customers = lazy(() => import('./components/slides/clients/Clients'));
 
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
@@ -177,14 +179,24 @@ class RoshanWebsite extends Component {
         };
 
         return (
-            <motion.div
-                id={'main'}
-                initial={loadingAnimation.initial}
-                animate={loadingAnimation.animate}
-                transition={loadingAnimation.transition}
-            >
-                {isSafari || isOpera? (
-                    <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
+            <Suspense fallback={<ProgressIndicator/>}>
+                <motion.div
+                    id={'main'}
+                    initial={loadingAnimation.initial}
+                    animate={loadingAnimation.animate}
+                    transition={loadingAnimation.transition}
+                >
+                    {isSafari || isOpera? (
+                        <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
+                            <div style={generalStyle}>
+                                <Fullpage
+                                    {...fullPageOptions}
+                                    onSlideChangeStart={this.onSlideChangeStart}
+                                />
+                                <Footer beforehanadFunction={shrink}/>
+                            </div>
+                        </ReactTouchEvents>
+                    ) : (
                         <div style={generalStyle}>
                             <Fullpage
                                 {...fullPageOptions}
@@ -192,17 +204,9 @@ class RoshanWebsite extends Component {
                             />
                             <Footer beforehanadFunction={shrink}/>
                         </div>
-                    </ReactTouchEvents>
-                ) : (
-                    <div style={generalStyle}>
-                        <Fullpage
-                            {...fullPageOptions}
-                            onSlideChangeStart={this.onSlideChangeStart}
-                        />
-                        <Footer beforehanadFunction={shrink}/>
-                    </div>
-                )}
-            </motion.div>
+                    )}
+                </motion.div>
+            </Suspense>
         )
     }
 }
