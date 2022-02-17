@@ -5,8 +5,7 @@
   z-index: 5;
   float: left;
   position: absolute;
-  transition: 1s;
-  transform: skew(-10deg);
+  transition: 0.8s ease-out;
 }
 
 #hamburger-button {
@@ -17,18 +16,20 @@
 }
 
 .closed {
-  margin-right: 110vw;
+  transform: skew(0deg);
+  margin-right: 100vw;
 }
 
 .opened {
-  margin-right: 80vw;
+  transform: skew(-10deg);
+  margin-right: 77vw;
 }
 
 .hamburger-menu-button{
   text-decoration: none;
   color: #FFFFFF;
   font-family: iran-yekan, serif;
-  font-size: 18px;
+  font-size: 1.2vw;
   transition: 0.5s;
   transform: skew(0deg);
 }
@@ -61,11 +62,11 @@
   height: 5vh;
   margin-right: 2vw;
   margin-top: 32vh;
-  font-size: 15px;
+  font-size: 1.1vw;
 }
 
 #company {
-  font-size: 12px;
+  font-size: 0.8vw;
 }
 
 .comp-temp {
@@ -73,7 +74,7 @@
 }
 
 #email {
-  font-size: 14px;
+  font-size: 0.9vw;
   transition: 0.5s;
 }
 

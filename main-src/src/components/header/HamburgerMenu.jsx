@@ -26,7 +26,7 @@ function HamburgerMenu() {
             <div id={'hamburger-menu'} className={isOpen ? 'opened' : 'closed'}>
                 <div id={'hamburger-links'}>
                     <a href={'https://www.roshan-ai.ir/'}
-                       className={'hamburger-menu-button'} style={{fontSize: '20px',marginLeft: '25px'}}>
+                       className={'hamburger-menu-button'} style={{fontSize: '1.3vw',marginLeft: '25px'}}>
                         روشن
                     </a>
                     <button onClick={goToClients}
