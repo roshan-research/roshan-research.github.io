@@ -1,33 +1,33 @@
-import {ReactComponent as Keshvar} from "../../../assets/images/clients/Keshvar.svg";
-import {ReactComponent as Naft} from "../../../assets/images/clients/Naft.svg";
-import {ReactComponent as Ketabkhaneh} from "../../../assets/images/clients/Ketabkhaneh.svg";
-import {ReactComponent as Setad} from "../../../assets/images/clients/Setad.svg";
-import {ReactComponent as Astan} from "../../../assets/images/clients/Astan.svg";
-import {ReactComponent as Mokhaberat} from "../../../assets/images/clients/Mokhaberat.svg";
-import {ReactComponent as Parsian} from "../../../assets/images/clients/Parsian.svg";
-import {ReactComponent as Irandoc} from "../../../assets/images/clients/Irandoc.svg";
-import {ReactComponent as Azmoon} from "../../../assets/images/clients/Azmoon.svg";
-import {ReactComponent as Tamasha} from "../../../assets/images/clients/Tamasha.svg";
-import {ReactComponent as Taghche} from "../../../assets/images/clients/Taghche.svg";
-import {ReactComponent as Varzesh} from "../../../assets/images/clients/Varzesh.svg";
-import {ReactComponent as Jahad} from "../../../assets/images/clients/Jahad.svg";
-import {ReactComponent as Bimeh} from "../../../assets/images/clients/Bimeh.svg";
-import {ReactComponent as Nazdika} from "../../../assets/images/clients/Nazdika.svg";
-import {ReactComponent as Amin} from "../../../assets/images/clients/Amin.svg";
-import {ReactComponent as Ammar} from "../../../assets/images/clients/Ammar.svg";
-import {ReactComponent as Farabi} from "../../../assets/images/clients/Farabi.svg";
-import {ReactComponent as Fars} from "../../../assets/images/clients/Fars.svg";
-import {ReactComponent as Filimo} from "../../../assets/images/clients/Filimo.svg";
-import {ReactComponent as Civilica} from "../../../assets/images/clients/Civilica.svg";
-import {ReactComponent as Bimarestan} from "../../../assets/images/clients/Bimarestan.svg";
-import {ReactComponent as AparatDesktop} from '../../../assets/images/clients/AparatDesktop.svg';
-import {ReactComponent as Barid} from '../../../assets/images/clients/Barid.svg';
-import {ReactComponent as Savaneh} from '../../../assets/images/clients/Savaneh.svg';
-import {ReactComponent as Lenzor} from '../../../assets/images/clients/Lenzor.svg';
-import {ReactComponent as Vira} from '../../../assets/images/clients/Vira.svg';
-import {ReactComponent as Bamdad} from '../../../assets/images/clients/Bamdad.svg';
-import {ReactComponent as IranRayaneh} from '../../../assets/images/clients/IranRayaneh.svg';
-import {ReactComponent as AparatMobile} from '../../../assets/images/clients/Aparat.svg';
+import Keshvar from "../../../assets/images/clients/Keshvar.svg";
+import Naft from "../../../assets/images/clients/Naft.svg";
+import Ketabkhaneh from "../../../assets/images/clients/Ketabkhaneh.svg";
+import Setad from "../../../assets/images/clients/Setad.svg";
+import Astan from "../../../assets/images/clients/Astan.svg";
+import Mokhaberat from "../../../assets/images/clients/Mokhaberat.svg";
+import Parsian from "../../../assets/images/clients/Parsian.svg";
+import Irandoc from "../../../assets/images/clients/Irandoc.svg";
+import Azmoon from "../../../assets/images/clients/Azmoon.svg";
+import Tamasha from "../../../assets/images/clients/Tamasha.svg";
+import Taghche from "../../../assets/images/clients/Taghche.svg";
+import Varzesh from "../../../assets/images/clients/Varzesh.svg";
+import Jahad from "../../../assets/images/clients/Jahad.svg";
+import Bimeh from "../../../assets/images/clients/Bimeh.svg";
+import Nazdika from "../../../assets/images/clients/Nazdika.svg";
+import Amin from "../../../assets/images/clients/Amin.svg";
+import Ammar from "../../../assets/images/clients/Ammar.svg";
+import Farabi from "../../../assets/images/clients/Farabi.svg";
+import Fars from "../../../assets/images/clients/Fars.svg";
+import Filimo from "../../../assets/images/clients/Filimo.svg";
+import Civilica from "../../../assets/images/clients/Civilica.svg";
+import Bimarestan from "../../../assets/images/clients/Bimarestan.svg";
+import AparatDesktop from '../../../assets/images/clients/AparatDesktop.svg';
+import Barid from '../../../assets/images/clients/Barid.svg';
+import Savaneh from '../../../assets/images/clients/Savaneh.svg';
+import Lenzor from '../../../assets/images/clients/Lenzor.svg';
+import Vira from '../../../assets/images/clients/Vira.svg';
+import Bamdad from '../../../assets/images/clients/Bamdad.svg';
+import IranRayaneh from '../../../assets/images/clients/IranRayaneh.svg';
+import AparatMobile from '../../../assets/images/clients/Aparat.svg';
 
 import '../../../stylesheets/slides/clients/clients.scss';
 import {motion} from 'framer-motion';
@@ -57,7 +57,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Ketabkhaneh id={'desktop-ketabkhaneh'}/>
+                            <img src={Ketabkhaneh} id={'desktop-ketabkhaneh'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'شرکت ملی پالایش نفت و فرآورده های نفتی ایران'}
@@ -66,7 +66,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Naft id={'desktop-naft'}/>
+                            <img src={Naft} id={'desktop-naft'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'وزارت کشور'}
@@ -75,8 +75,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Keshvar id={'desktop-keshvar'}/>
-                            <Astan className={'replacer-logo'} id={'astan-after-keshvar'}/>
+                            <img src={Keshvar} id={'desktop-keshvar'} alt={''}/>
+                            <img src={Astan} className={'replacer-logo'} id={'astan-after-keshvar'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -87,7 +87,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Parsian id={'desktop-parsian'}/>
+                            <img src={Parsian} id={'desktop-parsian'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'طاقچه'}
@@ -96,7 +96,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Taghche id={'desktop-taghche'}/>
+                            <img src={Taghche} id={'desktop-taghche'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'ورزش سه'}
@@ -105,8 +105,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Varzesh id={'desktop-varzesh'}/>
-                            <Keshvar className={'replacer-logo'} id={'keshvar-after-varzesh'}/>
+                            <img src={Varzesh} id={'desktop-varzesh'} alt={''}/>
+                            <img src={Keshvar} className={'replacer-logo'} id={'keshvar-after-varzesh'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -117,7 +117,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Jahad id={'desktop-jahad'}/>
+                            <img src={Jahad} id={'desktop-jahad'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'بنیاد سینمایی فارابی'}
@@ -126,7 +126,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Farabi id={'desktop-farabi'}/>
+                            <img src={Farabi} id={'desktop-farabi'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'جشنواره مردمی فیلم عمار'}
@@ -135,7 +135,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Ammar id={'desktop-ammar'}/>
+                            <img src={Ammar} id={'desktop-ammar'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -146,7 +146,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Barid id={'desktop-barid'}/>
+                            <img src={Barid} id={'desktop-barid'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'فارس'}
@@ -155,7 +155,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Fars id={'desktop-fars'}/>
+                            <img src={Fars} id={'desktop-fars'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'پژوهشکده سوانح طبیعی'}
@@ -164,7 +164,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Savaneh id={'desktop-savaneh'}/>
+                            <img src={Savaneh} id={'desktop-savaneh'} alt={''}/>
                         </motion.div>
                     </div>
                 </div>
@@ -180,8 +180,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Mokhaberat className={'initially-hidden'}
-                                        id={'desktop-mokhaberat'}/>
+                            <img src={Mokhaberat} className={'initially-hidden'}
+                                        id={'desktop-mokhaberat'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'آستان قدس رضوی'}
@@ -190,8 +190,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Astan className={'initially-hidden'}
-                                   id={'desktop-astan'}/>
+                            <img src={Astan} className={'initially-hidden'}
+                                   id={'desktop-astan'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'آپارات'}
@@ -200,8 +200,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <AparatMobile className={'initially-hidden'}
-                                          id={'desktop-aparat-3'}/>
+                            <img src={AparatMobile} className={'initially-hidden'}
+                                          id={'desktop-aparat-3'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -212,8 +212,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Lenzor className={'initially-hidden'}
-                                    id={'desktop-lenzor'}/>
+                            <img src={Lenzor} className={'initially-hidden'}
+                                    id={'desktop-lenzor'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'ویرا ویراست'}
@@ -222,7 +222,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Vira className={'initially-hidden'} id={'desktop-vira'}/>
+                            <img src={Vira} className={'initially-hidden'} id={'desktop-vira'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'پژوهشکده فناوری اطلاعات و ارتباطات'}
@@ -231,7 +231,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Jahad className={'initially-hidden'} id={'desktop-jahad-6'}/>
+                            <img src={Jahad} className={'initially-hidden'} id={'desktop-jahad-6'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -242,7 +242,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Farabi className={'initially-hidden'} id={'desktop-farabi-7'}/>
+                            <img src={Farabi} className={'initially-hidden'} id={'desktop-farabi-7'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'جشنواره مردمی فیلم عمار'}
@@ -251,7 +251,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Ammar className={'initially-hidden'} id={'desktop-ammar-8'}/>
+                            <img src={Ammar} className={'initially-hidden'} id={'desktop-ammar-8'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'برید سامانه نوین'}
@@ -260,7 +260,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Barid className={'initially-hidden'} id={'desktop-barid-9'}/>
+                            <img src={Barid} className={'initially-hidden'} id={'desktop-barid-9'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -271,7 +271,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Fars className={'initially-hidden'} id={'desktop-fars-10'}/>
+                            <img src={Fars} className={'initially-hidden'} id={'desktop-fars-10'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'پژوهشکده سوانح طبیعی'}
@@ -280,7 +280,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Savaneh className={'initially-hidden'} id={'desktop-savaneh-11'}/>
+                            <img src={Savaneh} className={'initially-hidden'} id={'desktop-savaneh-11'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'آپارات'}
@@ -289,7 +289,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <AparatMobile className={'initially-hidden'} id={'desktop-aparat-12'}/>
+                            <img src={AparatMobile} className={'initially-hidden'} id={'desktop-aparat-12'} alt={''}/>
                         </motion.div>
                     </div>
                 </div
@@ -306,8 +306,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Mokhaberat id={'desktop-mokhaberat'}/>
-                            <Filimo className={'replacer-logo'} id={'filimo-after-mokhaberat'}/>
+                            <img src={Mokhaberat} id={'desktop-mokhaberat'} alt={''}/>
+                            <img src={Filimo} className={'replacer-logo'} id={'filimo-after-mokhaberat'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'آستان قدس رضوی'}
@@ -316,8 +316,8 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Astan id={'desktop-astan'}/>
-                            <Setad className={'replacer-logo'} id={'setad-after-astan'}/>
+                            <img src={Astan} id={'desktop-astan'} alt={''}/>
+                            <img src={Setad} className={'replacer-logo'} id={'setad-after-astan'} alt={''}/>
                         </motion.div>
                     </div>
                     <motion.div
@@ -326,34 +326,27 @@ function ClientsDesktop({status}) {
                         animate={"visible"}
                         id={'client-center'}
                     >
-                        <AparatDesktop
+                        <img src={AparatDesktop}
                             className={'center-logo'}
-                            id={'aparat-center'}
-                        />
-                        <Filimo
+                            id={'aparat-center'} alt={''}/>
+                        <img src={Filimo}
                             className={'center-logo'}
-                            id={'filimo-center'}
-                        />
-                        <Mokhaberat
+                            id={'filimo-center'} alt={''}/>
+                        <img src={Mokhaberat}
                             className={'center-logo'}
-                            id={'mokhaberat-center'}
-                        />
-                        <Astan
+                            id={'mokhaberat-center'} alt={''}/>
+                        <img src={Astan}
                             className={'center-logo'}
-                            id={'astan-center'}
-                        />
-                        <Setad
+                            id={'astan-center'} alt={''}/>
+                        <img src={Setad}
                             className={'center-logo'}
-                            id={'setad-center'}
-                        />
-                        <Keshvar
+                            id={'setad-center'} alt={''}/>
+                        <img src={Keshvar}
                             className={'center-logo'}
-                            id={'keshvar-center'}
-                        />
-                        <Varzesh
+                            id={'keshvar-center'} alt={''}/>
+                        <img src={Varzesh}
                             className={'center-logo'}
-                            id={'varzesh-center'}
-                        />
+                            id={'varzesh-center'} alt={''}/>
                     </motion.div>
                     <div  className={'clients-row-desktop'}>
                         <motion.div
@@ -363,7 +356,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Lenzor id={'desktop-lenzor'}/>
+                            <img src={Lenzor} id={'desktop-lenzor'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'ویرا ویراست'}
@@ -372,7 +365,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Vira id={'desktop-vira'}/>
+                            <img src={Vira} id={'desktop-vira'} alt={''}/>
                         </motion.div>
                     </div>
                 </div>
@@ -388,11 +381,10 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Setad className={'initially-hidden'} id={'desktop-setad'}/>
-                            <Mokhaberat
+                            <img src={Setad} className={'initially-hidden'} id={'desktop-setad'} alt={''}/>
+                            <img src={Mokhaberat}
                                 id={'mokhaberat-after-setad'}
-                                className={'initially-hidden replacer-logo'}
-                            />
+                                className={'initially-hidden replacer-logo'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'آزمون استخدام بخش خصوصی'}
@@ -401,7 +393,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Azmoon className={'initially-hidden'} id={'desktop-azmoon'}/>
+                            <img src={Azmoon} className={'initially-hidden'} id={'desktop-azmoon'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'ایرانداک'}
@@ -410,7 +402,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Irandoc className={'initially-hidden'} id={'desktop-irandoc'}/>
+                            <img src={Irandoc} className={'initially-hidden'} id={'desktop-irandoc'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -421,14 +413,12 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Filimo
+                            <img src={Filimo}
                                 className={'initially-hidden'}
-                                id={'desktop-filimo'}
-                            />
-                            <AparatMobile
+                                id={'desktop-filimo'} alt={''}/>
+                            <img src={AparatMobile}
                                 className={'initially-hidden replacer-logo'}
-                                id={'aparat-after-filimo'}
-                            />
+                                id={'aparat-after-filimo'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'نزدیکا'}
@@ -437,7 +427,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Nazdika className={'initially-hidden'} id={'desktop-nazdika'}/>
+                            <img src={Nazdika} className={'initially-hidden'} id={'desktop-nazdika'}/>
                         </motion.div>
                         <motion.div
                             title={'بیمه پارسیان'}
@@ -446,7 +436,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bimeh className={'initially-hidden'} id={'desktop-bimeh'}/>
+                            <img src={Bimeh} className={'initially-hidden'} id={'desktop-bimeh'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -457,7 +447,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Tamasha className={'initially-hidden'} id={'desktop-tamasha'}/>
+                            <img src={Tamasha} className={'initially-hidden'} id={'desktop-tamasha'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'نوآوران امین'}
@@ -466,7 +456,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Amin className={'initially-hidden'} id={'desktop-amin'}/>
+                            <img src={Amin} className={'initially-hidden'} id={'desktop-amin'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'مجتمع بیمارستانی امام خمینی'}
@@ -475,7 +465,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bimarestan className={'initially-hidden'} id={'desktop-bimarestan'}/>
+                            <img src={Bimarestan} className={'initially-hidden'} id={'desktop-bimarestan'} alt={''}/>
                         </motion.div>
                     </div>
                     <div className={'clients-row-desktop'}>
@@ -486,7 +476,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <IranRayaneh className={'initially-hidden'} id={'desktop-iranrayaneh'}/>
+                            <img src={IranRayaneh} className={'initially-hidden'} id={'desktop-iranrayaneh'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'بامداد عصر پردازش'}
@@ -495,7 +485,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Bamdad className={'initially-hidden'} id={'desktop-bamdad'}/>
+                            <img src={Bamdad} className={'initially-hidden'} id={'desktop-bamdad'} alt={''}/>
                         </motion.div>
                         <motion.div
                             title={'CIVILICA'}
@@ -504,7 +494,7 @@ function ClientsDesktop({status}) {
                             animate={"visible"}
                             className={'client-desktop'}
                         >
-                            <Civilica className={'initially-hidden'} id={'desktop-civilica'}/>
+                            <img src={Civilica} className={'initially-hidden'} id={'desktop-civilica'} alt={''}/>
                         </motion.div>
                     </div>
                 </div
