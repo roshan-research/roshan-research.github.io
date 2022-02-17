@@ -1,11 +1,11 @@
 {
   "files": {
-    "main.css": "/join-us/static/css/main.ada740d3.chunk.css",
+    "main.css": "/join-us/static/css/main.58c07fc5.chunk.css",
     "main.js": "/join-us/static/js/main.b7f2c180.chunk.js",
-    "runtime-main.js": "/join-us/static/js/runtime-main.f7eae25f.js",
+    "runtime-main.js": "/join-us/static/js/runtime-main.12cc34ae.js",
     "static/js/2.33db84a7.chunk.js": "/join-us/static/js/2.33db84a7.chunk.js",
-    "static/css/3.65a7028a.chunk.css": "/join-us/static/css/3.65a7028a.chunk.css",
-    "static/js/3.b4082a7a.chunk.js": "/join-us/static/js/3.b4082a7a.chunk.js",
+    "static/css/3.02058b3e.chunk.css": "/join-us/static/css/3.02058b3e.chunk.css",
+    "static/js/3.5186ff7d.chunk.js": "/join-us/static/js/3.5186ff7d.chunk.js",
     "static/js/4.6b017048.chunk.js": "/join-us/static/js/4.6b017048.chunk.js",
     "index.html": "/join-us/index.html",
     "static/js/2.33db84a7.chunk.js.LICENSE.txt": "/join-us/static/js/2.33db84a7.chunk.js.LICENSE.txt",
@@ -13,18 +13,18 @@
     "static/media/close-icon.20012dc4.svg": "/join-us/static/media/close-icon.20012dc4.svg",
     "static/media/home-mobile.500ec8d7.svg": "/join-us/static/media/home-mobile.500ec8d7.svg",
     "static/media/jobinja.c554c467.svg": "/join-us/static/media/jobinja.c554c467.svg",
-    "static/media/join-us-text-group.c2692701.svg": "/join-us/static/media/join-us-text-group.c2692701.svg",
+    "static/media/join-us-text-group.359fab67.svg": "/join-us/static/media/join-us-text-group.359fab67.svg",
     "static/media/linkedin.a8e821f1.svg": "/join-us/static/media/linkedin.a8e821f1.svg",
     "static/media/mail.74e08128.svg": "/join-us/static/media/mail.74e08128.svg",
     "static/media/menu-icon.a0de4dbf.svg": "/join-us/static/media/menu-icon.a0de4dbf.svg",
     "static/media/mobile-join-us.b490f4fa.svg": "/join-us/static/media/mobile-join-us.b490f4fa.svg",
     "static/media/roshan-logosvg.23d13fdb.svg": "/join-us/static/media/roshan-logosvg.23d13fdb.svg",
-    "static/media/joinus-page.scss": "/join-us/static/media/web-join-us.e6cc01f5.png"
+    "static/media/header.scss": "/join-us/static/media/web-join-us.e6cc01f5.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.f7eae25f.js",
+    "static/js/runtime-main.12cc34ae.js",
     "static/js/2.33db84a7.chunk.js",
-    "static/css/main.ada740d3.chunk.css",
+    "static/css/main.58c07fc5.chunk.css",
     "static/js/main.b7f2c180.chunk.js"
   ]
 }

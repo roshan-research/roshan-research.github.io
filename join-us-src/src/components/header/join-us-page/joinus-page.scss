@@ -1,6 +1,5 @@
 #web {
-  background-image: url("../../../../src/assets/images/web-join-us.png");
-  background-repeat: no-repeat;
+
 }
 
 .join-us-page #mobile-j{
@@ -40,7 +39,7 @@
 }
 
 #button-row {
-  width: 22vw;
+  width: 23.5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -49,7 +48,7 @@
 }
 
 .join-us-link-button {
-  width: 6.5vw;
+  width: 6.8vw;
   height: auto;
 }
 
@@ -63,5 +62,5 @@
   justify-content: space-between;
   align-items: center;
   flex-direction: column;
-  margin-top: 40vh;
+  margin-top: 30vh;
 }
