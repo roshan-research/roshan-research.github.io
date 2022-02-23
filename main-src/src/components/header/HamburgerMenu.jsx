@@ -46,7 +46,7 @@ function HamburgerMenu() {
                     </a>
                 </div>
                 <div id={'hamburger-footer'}>
-                    <p id={'company'} className={'comp-temp'}>
+                    <p id={'company'} className={'comp-temp'} style={{fontSize: '0.8vw'}}>
                         شرکت دانش بنیان «راهکار پردازش ژرف»
                     </p>
                 </div>

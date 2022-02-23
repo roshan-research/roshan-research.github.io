@@ -111,6 +111,8 @@ button{
   font-family: iran-yekan, serif;
   font-weight: bold;
   font-size: 1.5vw;
+  position: absolute;
+  margin-top: -85vh;
 }
 
 #clients-desktop {
@@ -118,6 +120,7 @@ button{
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-top: 5vh;
 }
 
 #clients-page-desktop {
@@ -125,7 +128,7 @@ button{
   display: flex;
   flex-direction: column;
   float: start;
-  justify-content: space-around;
+  justify-content: center;
   align-items: center;
   width: 100vw;
   height: 90vh;

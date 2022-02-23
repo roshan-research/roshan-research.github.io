@@ -62,20 +62,11 @@
   font-size: 1.1vw;
 }
 
-#company {
-  font-size: 0.8vw;
-}
-
 .comp-temp {
   margin-top: 0;
   transform: skew(+10deg);
 }
 
-#email {
-  font-size: 0.9vw;
-  transition: 0.5s;
-
-}
 
 @media screen and (max-width: 600px){
   #hamburger-button{
