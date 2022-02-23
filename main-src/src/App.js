@@ -41,6 +41,7 @@ class RoshanWebsite extends Component {
             height : '100vh',
             transition : '1.5s',
         },
+        id: 'hide',
         handleSwipe: () => {}
     }
 
@@ -138,6 +139,12 @@ class RoshanWebsite extends Component {
         });
     };
 
+    componentDidMount() {
+        this.setState({
+            id: 'show'
+        })
+    }
+
     render() {
         const fullPageOptions = {
             scrollSensitivity: 1,
@@ -185,6 +192,7 @@ class RoshanWebsite extends Component {
                     initial={loadingAnimation.initial}
                     animate={loadingAnimation.animate}
                     transition={loadingAnimation.transition}
+                    className={this.state.id}
                 >
                     {isSafari || isOpera? (
                         <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
