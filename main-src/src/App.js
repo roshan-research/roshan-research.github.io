@@ -37,10 +37,6 @@ class RoshanWebsite extends Component {
     state = {
         fake:false,
         scrollsQuantity: 0,
-        style: {
-            height : '100vh',
-            transition : '1.5s',
-        },
         id: 'hide',
         handleSwipe: () => {}
     }
@@ -49,10 +45,10 @@ class RoshanWebsite extends Component {
         if(event.keyCode === 38 && isFooterOpen){
             isFooterOpen = false;
             setTimeout(() => {
-                goToCustomers()
+                goToCustomers();
             },1000);
         } else if(event.keyCode === 40){
-            scrollToFooter()
+            scrollToFooter();
             isFooterOpen = true;
         }
     }
@@ -61,77 +57,8 @@ class RoshanWebsite extends Component {
         const shouldAdd = newState.activeSlide === 5;
         if(shouldAdd) {
             document.addEventListener("keydown", this.toggleFooter);
-            if(isSafari || isOpera){
-                this.setState({
-                    handleSwipe: (direction) => {
-                        if (direction === "top") {
-                            isFooterOpen = true;
-                            this.setState({
-                                style: {
-                                    height: '140vh',
-                                    transition: '1.5s',
-                                }
-                            })
-                        } else if (direction === "bottom" && isFooterOpen) {
-                            isFooterOpen = false;
-                            this.setState({
-                                style: {
-                                    height: '100vh',
-                                    transition: '1.5s',
-                                }
-                            })
-                        }
-                    }
-                })
-                document.addEventListener("wheel", (event) => {
-                    const delta = Math.sign(event.deltaY);
-                    if (delta === 1) {
-                        this.setState({
-                            style: {
-                                height : '140vh',
-                                transition : '1.5s',
-                            }
-                        })
-                        isFooterOpen = true;
-                    } else if (delta === -1 && isFooterOpen) {
-                        isFooterOpen = false;
-                        this.setState({
-                            style: {
-                                height : '100vh',
-                                transition : '1.5s',
-                            }
-                        })
-                    }
-                });
-            }
         } else {
             document.removeEventListener("keydown",this.toggleFooter);
-            if(isSafari || isOpera){
-                this.setState({
-                    handleSwipe: () => {
-                    },
-                })
-                document.removeEventListener("wheel", (event) => {
-                    const delta = Math.sign(event.deltaY);
-                    if (delta === 1) {
-                        this.setState({
-                            style: {
-                                height : '140vh',
-                                transition : '1.5s',
-                            }
-                        })
-                        isFooterOpen = true;
-                    } else if (delta === -1 && isFooterOpen) {
-                        isFooterOpen = false;
-                        this.setState({
-                            style: {
-                                height : '100vh',
-                                transition : '1.5s',
-                            }
-                        })
-                    }
-                });
-            }
         }
         this.setState({
             fake: !this.state.fake,
@@ -143,6 +70,19 @@ class RoshanWebsite extends Component {
         this.setState({
             id: 'show'
         })
+    }
+
+    shouldHaveFooter(shouldHave) {
+        if (shouldHave) {
+            return(
+                <Footer/>
+            )
+        } else {
+            return(
+                <>
+                </>
+            )
+        }
     }
 
     render() {
@@ -175,44 +115,23 @@ class RoshanWebsite extends Component {
             </Slide>,
         ];
 
-        const generalStyle = isOpera || isSafari ? this.state.style : {};
-        const shrink = () => {
-            this.setState({
-                style: {
-                    height : '100vh',
-                    transition : '1.5s',
-                }
-            })
-        };
-
         return (
             <Suspense fallback={<ProgressIndicator/>}>
                 <motion.div
                     id={'main'}
+                    style={!isSafari && !isOpera ? {} : {height: '100vh'}}
                     initial={loadingAnimation.initial}
                     animate={loadingAnimation.animate}
                     transition={loadingAnimation.transition}
                     className={this.state.id}
                 >
-                    {isSafari || isOpera? (
-                        <ReactTouchEvents onSwipe={this.state.handleSwipe} swipeTolerance={80}>
-                            <div style={generalStyle}>
-                                <Fullpage
-                                    {...fullPageOptions}
-                                    onSlideChangeStart={this.onSlideChangeStart}
-                                />
-                                <Footer beforehanadFunction={shrink}/>
-                            </div>
-                        </ReactTouchEvents>
-                    ) : (
-                        <div style={generalStyle}>
-                            <Fullpage
-                                {...fullPageOptions}
-                                onSlideChangeStart={this.onSlideChangeStart}
-                            />
-                            <Footer beforehanadFunction={shrink}/>
-                        </div>
-                    )}
+                    <div>
+                        <Fullpage
+                            {...fullPageOptions}
+                            onSlideChangeStart={this.onSlideChangeStart}
+                        />
+                        {this.shouldHaveFooter(!isSafari && !isOpera)}
+                    </div>
                 </motion.div>
             </Suspense>
         )

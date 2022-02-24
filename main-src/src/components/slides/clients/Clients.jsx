@@ -44,9 +44,6 @@ class Clients extends Component {
                 isFooterOpen = true;
             } else if (delta === -1 && isFooterOpen) {
                 isFooterOpen = false;
-                setTimeout(() => {
-                    goToCustomers()
-                },1000);
             }
         });
     }
