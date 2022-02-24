@@ -69,6 +69,10 @@
 
 
 @media screen and (max-width: 600px){
+  #hamburger-menu {
+    display: none;
+  }
+
   #hamburger-button{
     display: none;
   }
