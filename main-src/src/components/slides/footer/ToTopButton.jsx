@@ -9,7 +9,7 @@ const goToTop = changeFullpageSlide.bind(null, 0);
 class ToTopButton extends Component {
     render() {
         return(
-            <div id={'to-top'} onClick={goToTop}>
+            <div id={'to-top'} onClick={goToTop} className={'to-top-clients'}>
                 &uarr;
             </div>
         )
