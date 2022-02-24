@@ -7,6 +7,7 @@ import {motion} from "framer-motion";
 import React from "react";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
+import ToTopButton from "../footer/ToTopButton";
 
 
 const animationChooser = (scrollQuantity) => {
@@ -42,6 +43,7 @@ const returnBasedOneDevice = (scrollQuantity) => {
                         animate={"visible"}
                     />
                 </div>
+                <ToTopButton/>
             </div>
         )
     }

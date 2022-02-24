@@ -125,7 +125,7 @@ class RoshanWebsite extends Component {
                     transition={loadingAnimation.transition}
                     className={this.state.id}
                 >
-                    <div>
+                    <div id={'all-page'}>
                         <Fullpage
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}

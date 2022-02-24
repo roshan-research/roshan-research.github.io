@@ -4,6 +4,7 @@ import React, {Component} from "react";
 import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
 import {Fullpage} from 'fullpage-react';
+import ToTopButton from "../footer/ToTopButton";
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
@@ -54,6 +55,7 @@ class Clients extends Component {
                 <div id={'customers'}>
                     <div id={'web-all'}>
                         <ClientsDesktop id={'web'} status={shouldRender(this.props.scrollQuantity)}/>
+                        <ToTopButton/>
                     </div>
                 </div>
             </article>
