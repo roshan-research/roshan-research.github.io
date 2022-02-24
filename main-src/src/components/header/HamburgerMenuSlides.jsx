@@ -1,5 +1,5 @@
 import '../../stylesheets/hamburger.scss';
-import { Cross as Hamburger } from 'hamburger-react';
+import { Squeeze as Hamburger } from 'hamburger-react';
 import {useState} from "react";
 import {Fullpage} from 'fullpage-react';
 const { changeFullpageSlide} = Fullpage;
