@@ -8,6 +8,7 @@ import React from "react";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
 import ToTopButton from "../footer/ToTopButton";
+import HamburgerMenuSlides from "../../header/HamburgerMenuSlides";
 
 
 const animationChooser = (scrollQuantity) => {
@@ -29,6 +30,7 @@ const returnBasedOneDevice = (scrollQuantity) => {
     } else {
         return(
             <div id={'web'}>
+                <HamburgerMenuSlides/>
                 <div id={'text'}>
                     <HazmWebText status={scrollQuantity}/>
                 </div>

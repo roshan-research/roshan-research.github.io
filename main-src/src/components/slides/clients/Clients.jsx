@@ -5,6 +5,7 @@ import ReactTouchEvents from "react-touch-events";
 import {findDOMNode} from "react-dom";
 import {Fullpage} from 'fullpage-react';
 import ToTopButton from "../footer/ToTopButton";
+import HamburgerMenuSlides from "../../header/HamburgerMenuSlides";
 const { changeFullpageSlide} = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
@@ -53,6 +54,7 @@ class Clients extends Component {
         return <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={80}>
             <article>
                 <div id={'customers'}>
+                    <HamburgerMenuSlides/>
                     <div id={'web-all'}>
                         <ClientsDesktop id={'web'} status={shouldRender(this.props.scrollQuantity)}/>
                         <ToTopButton/>

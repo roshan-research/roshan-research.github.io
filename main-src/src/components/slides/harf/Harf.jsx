@@ -7,6 +7,8 @@ import {motion} from 'framer-motion';
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
 import ToTopButton from "../footer/ToTopButton";
+import React from "react";
+import HamburgerMenuSlides from "../../header/HamburgerMenuSlides";
 
 const animationChooser = (scrollQuantity) => {
 
@@ -29,6 +31,7 @@ const returnBasedOneDevice = (props) => {
     } else {
         return(
             <div id={'web'}>
+                <HamburgerMenuSlides/>
                 <motion.div
                     variants={animationChooser(props.scrollQuantity)}
                     initial={"hidden"}

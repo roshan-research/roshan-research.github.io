@@ -67,9 +67,38 @@
   transform: skew(+10deg);
 }
 
+#hamburger-menu-slides {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0A0A0A;
+  z-index: 5;
+  float: left;
+  position: absolute;
+  transform: skew(-10deg);
+  transition: 0.5s linear;
+}
+
+.closed-slides {
+  margin-right: 140vw;
+}
+
+.opened-slides {
+  margin-right: 77vw;
+}
+
+#hamburger-button-slides {
+  position: absolute;
+  z-index: 300;
+  top: 5vh;
+  left: 7vw;
+}
 
 @media screen and (max-width: 600px){
   #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu-slides {
     display: none;
   }
 
