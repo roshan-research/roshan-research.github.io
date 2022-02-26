@@ -45,9 +45,9 @@ function MainPage(props) {
             transition={imageAnimationChooser(props).transition}
         >
             <p>
-                ما ماشین را آموزش می ‌دهیم
+                مـا ماشیــن را آمــوزش مــی دهیــم
                 <br/>
-                تا مانند انسان فکر کند
+                تا ماننــد انســان فکــر کنــد
             </p>
             <img src={EarthImage} className='web-background' alt={''}/>
         </motion.div>
