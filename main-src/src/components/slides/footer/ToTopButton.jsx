@@ -1,6 +1,8 @@
 import {Component} from 'react';
 import {Fullpage} from 'fullpage-react';
-import '../../../stylesheets/to-top.scss'
+import '../../../stylesheets/to-top.scss';
+import {flowerAnimation} from "../../../animations/kashf-image";
+import {motion} from "framer-motion";
 const { changeFullpageSlide} = Fullpage;
 
 const goToTop = changeFullpageSlide.bind(null, 0);
@@ -9,9 +11,16 @@ const goToTop = changeFullpageSlide.bind(null, 0);
 class ToTopButton extends Component {
     render() {
         return(
-            <div id={'to-top'} onClick={goToTop} className={'to-top-clients'}>
+            <motion.div
+                id={'to-top'}
+                onClick={goToTop}
+                className={'to-top-clients'}
+                variants={flowerAnimation}
+                initial={"hidden"}
+                animate={"visible"}
+            >
                 &uarr;
-            </div>
+            </motion.div>
         )
     }
 }

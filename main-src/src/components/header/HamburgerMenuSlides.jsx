@@ -1,7 +1,9 @@
 import '../../stylesheets/hamburger.scss';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import {useState} from "react";
+import {motion} from "framer-motion";
 import {Fullpage} from 'fullpage-react';
+import {flowerAnimation} from "../../animations/kashf-image";
 const { changeFullpageSlide} = Fullpage;
 
 const goToClients = changeFullpageSlide.bind(null, 5);
@@ -12,7 +14,12 @@ function HamburgerMenuSlides() {
     let height = (window.innerWidth / 70);
     return (
         <>
-            <div id={'hamburger-button-slides'}>
+            <motion.div
+                id={'hamburger-button-slides'}
+                variants={flowerAnimation}
+                initial={"hidden"}
+                animate={"visible"}
+            >
                 <Hamburger
                     toggled={isOpen}
                     color="white"
@@ -22,7 +29,7 @@ function HamburgerMenuSlides() {
                     direction="right"
                     duration={0.6}
                 />
-            </div>
+            </motion.div>
             <div id={'hamburger-menu-slides'} className={isOpen ? 'opened-slides' : 'closed-slides'}>
                 <div id={'hamburger-links'}>
                     <a href={'https://www.roshan-ai.ir/'}
