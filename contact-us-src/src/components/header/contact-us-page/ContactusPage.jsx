@@ -34,7 +34,7 @@ export default function ContactusPage(props) {
                     </p>
                     <div id={'email-row'}>
                         <img id={'email-icon'} src={emailSource} alt={''}/>
-                        <a href={'mailto:salam@roshan-ai.ir'}>
+                        <a href={'mailto:salam@roshan-ai.ir'} className={'link-content'}>
                             <p id={'email-text'}>
                                 salam@roshan-ai.ir
                             </p>
@@ -42,7 +42,7 @@ export default function ContactusPage(props) {
                     </div>
                     <div id={'phone-row'}>
                         <img id={'phone-icon'} src={phoneSource} alt={''}/>
-                        <p id={'phone-text'}>
+                        <p id={'phone-text'} className={'link-content'}>
                             <a href={'tel:+98 21 91003303'}>
                                 91003303 21  98+
                             </a>
@@ -55,7 +55,7 @@ export default function ContactusPage(props) {
                     <div id={'address-row'}>
                         <img id={'location-icon'} src={locationSource} alt={''}/>
                         <a href={'geo:35.7113,51.4105;u=35'} id={'location-row'}>
-                            <p id={'address-text'}>
+                            <p id={'address-text'} className={'link-content'}>
                                 میدان ولیعصر، خیابان به‌آفرین، پلاک 30، طبقه دوم
                             </p>
                         </a>
