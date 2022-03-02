@@ -6,9 +6,16 @@ const { changeFullpageSlide} = Fullpage;
 
 const goToClients = changeFullpageSlide.bind(null, 5);
 
-function HamburgerMenu() {
-    const onHamburgerMenuToggle = () => {};
-    const [isOpen, setOpen] = useState(false);
+function HamburgerMenu(props) {
+
+    let initialState = window.sessionStorage.getItem('isOpen') === 'true';
+
+    const [isOpen, setOpen] = useState(initialState);
+
+    const onHamburgerMenuToggle = () => {
+        window.sessionStorage.setItem('isOpen',!isOpen);
+    };
+
     let height = (window.innerWidth / 70);
     return (
         <>

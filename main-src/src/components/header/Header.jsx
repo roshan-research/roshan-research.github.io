@@ -9,6 +9,7 @@ import ContactUsButton from "./ContactUsButton";
 import HamburgerMenu from "./HamburgerMenu";
 
 class Header extends Component {
+
     state = {
         isOpen:false,
         timesRendered: 0,
@@ -48,7 +49,7 @@ class Header extends Component {
     render() {
         return(
             <div id={'all'}>
-                <HamburgerMenu/>
+                <HamburgerMenu isInitiallyOpen={true}/>
                 <div className="header-wrapper">
                     <Navbar
                         toggle={this.toggle}
