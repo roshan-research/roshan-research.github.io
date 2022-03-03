@@ -2,12 +2,12 @@ import '../../stylesheets/hamburger.scss';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import {useState} from "react";
 import {Fullpage} from 'fullpage-react';
+import {flowerAnimation} from "../../animations/kashf-image";
 const { changeFullpageSlide} = Fullpage;
 
 const goToClients = changeFullpageSlide.bind(null, 5);
 
 function HamburgerMenu(props) {
-
     let initialState = window.sessionStorage.getItem('isOpen') === 'true';
 
     const [isOpen, setOpen] = useState(initialState);
@@ -53,7 +53,12 @@ function HamburgerMenu(props) {
                     </a>
                 </div>
                 <div id={'hamburger-footer'}>
-                    <p id={'company'} className={'comp-temp'} style={{fontSize: '0.8vw'}}>
+                    <p
+                        id={'company'}
+                        className={initialState? 'comp-temp visible-company' : 'comp-temp hidden-company'}
+                        style={{fontSize: '0.8vw'}}
+                        key={isOpen}
+                    >
                         شرکت دانش بنیان «راهکار پردازش ژرف»
                     </p>
                 </div>

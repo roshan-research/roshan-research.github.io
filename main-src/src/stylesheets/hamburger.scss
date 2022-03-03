@@ -1,3 +1,24 @@
+@keyframes fade-in-company {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-company {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
 #hamburger-menu {
   width: 30vw;
   height: 100vh;
@@ -109,4 +130,22 @@
   #hamburger-button-slides {
     display: none;
   }
+}
+
+
+.hidden-company {
+  animation-name: fade-out-company;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.visible-company {
+  animation-name: fade-in-company;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-play-state: running;
 }
