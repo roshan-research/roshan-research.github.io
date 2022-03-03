@@ -33,22 +33,26 @@ function HamburgerMenu(props) {
             <div id={'hamburger-menu'} className={isOpen ? 'opened' : 'closed'}>
                 <div id={'hamburger-links'}>
                     <a href={'https://www.roshan-ai.ir/'}
-                       className={'hamburger-menu-button'} style={{fontSize: '1.3vw',marginLeft: '25px'}}>
+                       className={initialState? 'hamburger-menu-button roshan-in': 'hamburger-menu-button'}
+                       style={{fontSize: '1.3vw',marginLeft: '25px'}}
+                    >
                         روشن
                     </a>
                     <button onClick={goToClients}
-                            className={'hamburger-menu-button'}
+                            className={initialState? 'hamburger-menu-button client-in': 'hamburger-menu-button'}
                             id={'clients-button'}
                             title={'بخش مشتریان ما'}
                     >
-                        مشتریان ما
+                        مشتریان
                     </button>
                     <a href={'https://www.roshan-ai.ir/contact-us'}
-                       className={'hamburger-menu-button'}>
+                       className={initialState? 'hamburger-menu-button contact-in': 'hamburger-menu-button'}
+                    >
                         تماس با ما
                     </a>
                     <a href={'https://www.roshan-ai.ir/join-us'}
-                       className={'hamburger-menu-button'}>
+                       className={initialState? 'hamburger-menu-button join-in': 'hamburger-menu-button'}
+                    >
                         همکاری با ما
                     </a>
                 </div>
@@ -57,7 +61,6 @@ function HamburgerMenu(props) {
                         id={'company'}
                         className={initialState? 'comp-temp visible-company' : 'comp-temp hidden-company'}
                         style={{fontSize: '0.8vw'}}
-                        key={isOpen}
                     >
                         شرکت دانش بنیان «راهکار پردازش ژرف»
                     </p>

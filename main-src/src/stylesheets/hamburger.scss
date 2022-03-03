@@ -19,6 +19,43 @@
   }
 }
 
+
+@keyframes roshan-animation {
+  0% {
+    transform: translateX(-15vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes client-animation {
+  0% {
+    transform: translateX(-20vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes contact-animation {
+  0% {
+    transform: translateX(-25vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes join-animation {
+  0% {
+    transform: translateX(-30vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
 #hamburger-menu {
   width: 30vw;
   height: 100vh;
@@ -26,7 +63,6 @@
   z-index: 5;
   float: left;
   position: absolute;
-  transform: skew(-10deg);
   transition: 0.5s linear;
 }
 
@@ -38,11 +74,13 @@
 }
 
 .closed {
-  margin-right: 100vw;
+  transform: skew(-20deg);
+  margin-right: 110vw;
 }
 
 .opened {
-  margin-right: 77vw;
+  transform: skew(-10deg);
+  margin-right: 75vw;
 }
 
 .hamburger-menu-button{
@@ -95,16 +133,17 @@
   z-index: 5;
   float: left;
   position: absolute;
-  transform: skew(-10deg);
-  transition: 0.5s linear;
+  transition: 0.7s linear;
 }
 
 .closed-slides {
-  margin-right: 140vw;
+  transform: skew(-20deg);
+  margin-right: 150%;
 }
 
 .opened-slides {
-  margin-right: 77vw;
+  transform: skew(-10deg);
+  margin-right: 85%;
 }
 
 #hamburger-button-slides {
@@ -147,5 +186,37 @@
   animation-duration: 2s;
   animation-timing-function: linear;
   animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.roshan-in {
+  animation-name: roshan-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.client-in {
+  animation-name: client-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.contact-in {
+  animation-name: contact-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.join-in {
+  animation-name: join-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
   animation-play-state: running;
 }
