@@ -48,8 +48,23 @@
 }
 
 .join-us-link-button {
+
+  background-repeat: no-repeat;
+  background-size: 6.8vw 6.7vh;
   width: 6.8vw;
   height: 6.7vh;
+}
+
+#linkedin-button {
+  background-image: url("../../../../src/assets/images/linkedin.svg");
+}
+
+#jobinja-button {
+  background-image: url("../../../../src/assets/images/jobinja.svg");
+}
+
+#mail-button {
+  background-image: url("../../../../src/assets/images/mail.svg");
 }
 
 .join-us-link-button:hover {

@@ -22,14 +22,23 @@ const returnBasedOneDevice = () => {
                 <div id={'text-group'}>
                     <JoinUsText id={'inner'}/>
                     <div id={'button-row'}>
-                        <a href={'https://jobinja.ir/companies/roshan-ai/jobs'}>
-                            <img className={'join-us-link-button'} src={Jobinja} alt={''}/>
+                        <a
+                            className={'join-us-link-button'}
+                            href={'https://jobinja.ir/companies/roshan-ai/jobs'}
+                            id={'jobinja-button'}
+                        >
                         </a>
-                        <a className={'join-us-link-button'} href={'https://www.linkedin.com/company/roshan-ai/'}>
-                            <img className={'join-us-link-button'} src={Linkedin} alt={''}/>
+                        <a
+                            className={'join-us-link-button'}
+                           href={'https://www.linkedin.com/company/roshan-ai/'}
+                            id={'linkedin-button'}
+                        >
                         </a>
-                        <a href={'mailto:salam@roshan-ai.ir'}>
-                            <img className={'join-us-link-button'} src={Mail} alt={''}/>
+                        <a
+                            className={'join-us-link-button'}
+                            href={'mailto:salam@roshan-ai.ir'}
+                            id={'mail-button'}
+                        >
                         </a>
                     </div>
                 </div>
