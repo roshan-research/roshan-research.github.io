@@ -25,3 +25,8 @@ cp -r ../src/main-src/build/* ../
 echo "roshan updated"
 
 echo "updatings finished successfully"
+
+cd ../
+git add .
+git commit -m 'updated'
+git push origin main
