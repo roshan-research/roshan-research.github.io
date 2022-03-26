@@ -26,9 +26,6 @@
     <title>الفبا</title>
 
     <style>
-      #root {
-        opacity: 0;
-      }
       @keyframes in {
         0%{
           opacity: 0;
@@ -37,10 +34,11 @@
           opacity: 1;
         }
       }
-      #root {
+      html {
         animation-delay: 2s;
         animation-duration: 3s;
         animation-name: in;
+        animation-iteration-count: 1;
       }
     </style>
   </head>
