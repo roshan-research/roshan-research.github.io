@@ -30,3 +30,5 @@ cd ../
 git add .
 git commit -m 'updated'
 git push origin main
+
+echo "pushed to github"
