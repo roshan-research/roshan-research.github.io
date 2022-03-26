@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alefba/static/css/main.cbfc3085.chunk.css",
-    "main.js": "/alefba/static/js/main.8b71ebe6.chunk.js",
+    "main.js": "/alefba/static/js/main.73f4de82.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js": "/alefba/static/js/2.ebc5f8bc.chunk.js",
     "static/js/3.8a461e52.chunk.js": "/alefba/static/js/3.8a461e52.chunk.js",
@@ -9,7 +9,7 @@
     "static/js/2.ebc5f8bc.chunk.js.LICENSE.txt": "/alefba/static/js/2.ebc5f8bc.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/alefba/static/media/IRANYekan.b916444e.ttf",
     "static/media/Sher.6255042b.svg": "/alefba/static/media/Sher.6255042b.svg",
-    "static/media/TarazNameh.c1589746.svg": "/alefba/static/media/TarazNameh.c1589746.svg",
+    "static/media/TarazNameh.122d732b.svg": "/alefba/static/media/TarazNameh.122d732b.svg",
     "static/media/accuracy-mobile.a6b965ee.svg": "/alefba/static/media/accuracy-mobile.a6b965ee.svg",
     "static/media/businesses.f577862c.png": "/alefba/static/media/businesses.f577862c.png",
     "static/media/deep-mobile.82e534f6.svg": "/alefba/static/media/deep-mobile.82e534f6.svg",
@@ -44,6 +44,6 @@
     "static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js",
     "static/css/main.cbfc3085.chunk.css",
-    "static/js/main.8b71ebe6.chunk.js"
+    "static/js/main.73f4de82.chunk.js"
   ]
 }
