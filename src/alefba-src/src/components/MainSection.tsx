@@ -64,6 +64,8 @@ const MainSection = () => {
                 <a
                     href={'https://www.roshan-ai.ir/catalog.pdf/'}
                     className={'catalog-link'}
+                    target={"_blank"}
+                    rel="noreferrer"
                 >
                     <div id={'catalog-button'}>
                         <img src={downloadIcon} alt={''}/>
