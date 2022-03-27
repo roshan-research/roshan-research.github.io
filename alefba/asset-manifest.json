@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.cbfc3085.chunk.css",
-    "main.js": "/alefba/static/js/main.73f4de82.chunk.js",
+    "main.css": "/alefba/static/css/main.6a786c46.chunk.css",
+    "main.js": "/alefba/static/js/main.f72e0885.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js": "/alefba/static/js/2.ebc5f8bc.chunk.js",
     "static/js/3.8a461e52.chunk.js": "/alefba/static/js/3.8a461e52.chunk.js",
@@ -14,6 +14,7 @@
     "static/media/businesses.f577862c.png": "/alefba/static/media/businesses.f577862c.png",
     "static/media/deep-mobile.82e534f6.svg": "/alefba/static/media/deep-mobile.82e534f6.svg",
     "static/media/dot.5ee81e2f.svg": "/alefba/static/media/dot.5ee81e2f.svg",
+    "static/media/download-icon.9e940408.svg": "/alefba/static/media/download-icon.9e940408.svg",
     "static/media/kart-melli.049f8a5a.svg": "/alefba/static/media/kart-melli.049f8a5a.svg",
     "static/media/left-1.4da4f794.svg": "/alefba/static/media/left-1.4da4f794.svg",
     "static/media/left-1.b7d5c2d8.svg": "/alefba/static/media/left-1.b7d5c2d8.svg",
@@ -43,7 +44,7 @@
   "entrypoints": [
     "static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js",
-    "static/css/main.cbfc3085.chunk.css",
-    "static/js/main.73f4de82.chunk.js"
+    "static/css/main.6a786c46.chunk.css",
+    "static/js/main.f72e0885.chunk.js"
   ]
 }

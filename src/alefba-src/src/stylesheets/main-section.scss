@@ -48,7 +48,7 @@
   color: #FF6200;
   height:5.555555555555555vh;
   width:17.96875vw;
-  margin-top: 25vw;
+  margin-top: 20vw;
   margin-right:10.9375vw;
   margin-left:71.875vw;
   position: absolute;
@@ -68,7 +68,7 @@
 #white-text{
   color: white;
   position: absolute;
-  margin-top: 30vw;
+  margin-top: 25vw;
   margin-right:10.15vw;
   margin-left:70.5vw;
   font-style: normal;
@@ -100,7 +100,7 @@
 
 #papers{
   position: absolute;
-  margin-top: 15vw;
+  margin-top: 12vw;
   margin-left:10.9375vw;
   height:55.55555555555556vh;
   width:35.15625vw;
@@ -108,7 +108,7 @@
 
 #paper-image{
   height:auto;
-  width:90%;
+  width:85%;
 }
 
 #hamburger-button{
@@ -126,6 +126,40 @@
   margin-top: 4.5vh;
   position: absolute;
 }
+
+
+#catalog-button {
+  p {
+    color: white;
+    font-size: 1.1vw;
+    line-height: 1.5vw;
+  }
+
+  img {
+    width: 0.8vw;
+  }
+
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 11vw;
+  border-radius: 0;
+  border-style: solid;
+  border-color: #ff6200;
+  border-width: 1px;
+}
+
+#catalog-button:hover {
+  background-color: rgba(255, 98, 0, 0.6);
+}
+
+.catalog-link {
+  position: absolute;
+  margin-top: 30vw;
+  margin-left: 76vw;
+  z-index: 100;
+}
+
 
 @media screen and (max-width: 500px){
 
@@ -186,5 +220,9 @@
   #hamburger-icon-group{
     width: 85vw;
     margin-left: 7vw;
+  }
+
+  .catalog-link {
+    display: none;
   }
 }

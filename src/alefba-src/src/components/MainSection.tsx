@@ -4,6 +4,7 @@ import IconTitle from "./IconTitle";
 import '../stylesheets/main-section.scss';
 import { Cross as Hamburger } from 'hamburger-react'
 import {useState} from "react";
+import downloadIcon from '../assets/images/samples/download-icon.svg';
 
 const MainSection = () => {
 
@@ -50,13 +51,27 @@ const MainSection = () => {
                     </p>
                 </a>
             </div>
-            <div id={'main-screen'} style={isOpen ? displayNoneStyle : displayBlockStyle}>
+            <div
+                id={'main-screen'}
+                style={isOpen ? displayNoneStyle : displayBlockStyle}
+            >
                 <p id={'orange-text'}>
                     نويسه خوان الفبـا
                 </p>
                 <p id={'white-text'}>
                     بـرای تبدیـل تصویـر به نوشـته
                 </p>
+                <a
+                    href={'https://www.roshan-ai.ir/catalog.pdf/'}
+                    className={'catalog-link'}
+                >
+                    <div id={'catalog-button'}>
+                        <img src={downloadIcon} alt={''}/>
+                        <p>
+                            کاتالوگ الفبا
+                        </p>
+                    </div>
+                </a>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''}/>
                 </div>
