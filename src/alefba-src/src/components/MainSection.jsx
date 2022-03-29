@@ -12,15 +12,17 @@ const MainSection = () => {
 
     };
 
-    const [isOpen, setOpen] = useState<boolean>(false);
+    const [isOpen, setOpen] = useState(false);
 
-    let height: number = (window.innerWidth / 20);
-
+    let height = (window.innerWidth / 20);
     const displayNoneStyle = {
         opacity: 0,
+        pointerEvents: 'none'
     }
+
     const displayBlockStyle = {
         opacity: 1,
+        pointerEvents: 'auto'
     }
 
     return(

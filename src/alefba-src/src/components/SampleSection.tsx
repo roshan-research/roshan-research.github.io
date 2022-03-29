@@ -65,8 +65,7 @@ class SampleSection extends Component {
                 case Sample.KartMelli:
                     return <div className={'sample-alefbized'}>
                         <KartMelli/>
-                    </div>
-                        ;
+                    </div>;
                 case Sample.Sherr:
                     return <div className={'sample-alefbized'}>
                         <Sherr/>
