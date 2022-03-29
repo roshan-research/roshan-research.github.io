@@ -1,6 +1,6 @@
 p { margin: 0.8vw}
 
-#buttons .button{
+.button{
   background-color: transparent;
   border-color: transparent;
   width: 20vw;
@@ -19,6 +19,7 @@ p { margin: 0.8vw}
 }
 
 .sample-row{
+  margin-right: -2vw;
   display: flex;
   justify-content: end;
   align-items: center;
@@ -28,14 +29,14 @@ p { margin: 0.8vw}
 #buttons{
   height: 26vw;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
 .white-title-sample{
   color: white;
-  margin-right: 1.5vw;
+  margin-right: 2vw;
   transition: 1s ease-in-out;
   font-weight: bold;
   background-color: transparent;
@@ -56,7 +57,6 @@ p { margin: 0.8vw}
 }
 
 .dot{
-  margin-right: -1vw;
   width: 0.7vw;
 }
 
@@ -65,7 +65,7 @@ p { margin: 0.8vw}
 }
 
 .polygon{
-  margin-right: -2vw;
+  margin-right: -0.8vw;
   width: 1.5vw;
 }
 
@@ -95,7 +95,6 @@ p { margin: 0.8vw}
 #orange-border{
   position: absolute;
   margin-bottom: 24vw;
-  margin-right: -1vw;
 }
 
 #orange-border-main{
