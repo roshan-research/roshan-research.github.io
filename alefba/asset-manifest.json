@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/alefba/static/css/main.6a786c46.chunk.css",
-    "main.js": "/alefba/static/js/main.4ee4f3a2.chunk.js",
+    "main.js": "/alefba/static/js/main.da0ec8f2.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js": "/alefba/static/js/2.ebc5f8bc.chunk.js",
     "static/js/3.8a461e52.chunk.js": "/alefba/static/js/3.8a461e52.chunk.js",
@@ -16,11 +16,11 @@
     "static/media/dot.5ee81e2f.svg": "/alefba/static/media/dot.5ee81e2f.svg",
     "static/media/download-icon.9e940408.svg": "/alefba/static/media/download-icon.9e940408.svg",
     "static/media/kart-melli.049f8a5a.svg": "/alefba/static/media/kart-melli.049f8a5a.svg",
-    "static/media/left-1.4da4f794.svg": "/alefba/static/media/left-1.4da4f794.svg",
-    "static/media/left-1.b7d5c2d8.svg": "/alefba/static/media/left-1.b7d5c2d8.svg",
-    "static/media/left-2.887cc6be.svg": "/alefba/static/media/left-2.887cc6be.svg",
-    "static/media/left-2.d0e0c9bc.svg": "/alefba/static/media/left-2.d0e0c9bc.svg",
-    "static/media/left-3.101234a4.svg": "/alefba/static/media/left-3.101234a4.svg",
+    "static/media/left-1.7dbf4a6b.svg": "/alefba/static/media/left-1.7dbf4a6b.svg",
+    "static/media/left-1.a1b73bdb.svg": "/alefba/static/media/left-1.a1b73bdb.svg",
+    "static/media/left-2.88549b29.svg": "/alefba/static/media/left-2.88549b29.svg",
+    "static/media/left-2.e802ba57.svg": "/alefba/static/media/left-2.e802ba57.svg",
+    "static/media/left-3.682d84af.svg": "/alefba/static/media/left-3.682d84af.svg",
     "static/media/libraries.cd45f964.png": "/alefba/static/media/libraries.cd45f964.png",
     "static/media/logo.8ceb1e4a.svg": "/alefba/static/media/logo.8ceb1e4a.svg",
     "static/media/main-pattern.2e05d587.png": "/alefba/static/media/main-pattern.2e05d587.png",
@@ -29,11 +29,11 @@
     "static/media/papers.379ba068.png": "/alefba/static/media/papers.379ba068.png",
     "static/media/parallel-mobile.d5ed7a9c.svg": "/alefba/static/media/parallel-mobile.d5ed7a9c.svg",
     "static/media/polygon.cfc83543.svg": "/alefba/static/media/polygon.cfc83543.svg",
-    "static/media/right-1.3745b4b8.svg": "/alefba/static/media/right-1.3745b4b8.svg",
-    "static/media/right-1.a3b3b66a.svg": "/alefba/static/media/right-1.a3b3b66a.svg",
-    "static/media/right-2.621bcb2f.svg": "/alefba/static/media/right-2.621bcb2f.svg",
-    "static/media/right-2.6c9825b6.svg": "/alefba/static/media/right-2.6c9825b6.svg",
-    "static/media/right-3.7071ccc7.svg": "/alefba/static/media/right-3.7071ccc7.svg",
+    "static/media/right-1.2c2e4f30.svg": "/alefba/static/media/right-1.2c2e4f30.svg",
+    "static/media/right-1.51e9c62f.svg": "/alefba/static/media/right-1.51e9c62f.svg",
+    "static/media/right-2.3683b729.svg": "/alefba/static/media/right-2.3683b729.svg",
+    "static/media/right-2.a27c1735.svg": "/alefba/static/media/right-2.a27c1735.svg",
+    "static/media/right-3.b3f8969f.svg": "/alefba/static/media/right-3.b3f8969f.svg",
     "static/media/roshan-logo.ae7188f6.svg": "/alefba/static/media/roshan-logo.ae7188f6.svg",
     "static/media/sample-1-mobile.52d5628d.png": "/alefba/static/media/sample-1-mobile.52d5628d.png",
     "static/media/sample-2-mobile.38885d6f.png": "/alefba/static/media/sample-2-mobile.38885d6f.png",
@@ -45,6 +45,6 @@
     "static/js/runtime-main.3ea6920a.js",
     "static/js/2.ebc5f8bc.chunk.js",
     "static/css/main.6a786c46.chunk.css",
-    "static/js/main.4ee4f3a2.chunk.js"
+    "static/js/main.da0ec8f2.chunk.js"
   ]
 }
