@@ -21,6 +21,7 @@ p { margin: 0.8vw}
 .sample-row{
   margin-right: -2vw;
   display: flex;
+  height: 3vh;
   justify-content: end;
   align-items: center;
   flex-direction: row;
@@ -28,8 +29,9 @@ p { margin: 0.8vw}
 
 #buttons{
   height: 26vw;
+  margin-top: 2vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
   flex-direction: column;
 }
@@ -129,6 +131,10 @@ p { margin: 0.8vw}
 @media screen  and (max-width: 500px){
   #sample-title{
     font-size: 5.3vw;
+  }
+
+  .sample-alefbized {
+    display: none;
   }
 
   #image-sample{

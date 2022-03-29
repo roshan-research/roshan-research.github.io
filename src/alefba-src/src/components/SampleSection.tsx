@@ -63,11 +63,18 @@ class SampleSection extends Component {
         const whichSample = () => {
             switch (this.state.chosenSample) {
                 case Sample.KartMelli:
-                    return <KartMelli/>;
+                    return <div className={'sample-alefbized'}>
+                        <KartMelli/>
+                    </div>
+                        ;
                 case Sample.Sherr:
-                    return <Sherr/>;
+                    return <div className={'sample-alefbized'}>
+                        <Sherr/>
+                    </div>;
                 case Sample.Taraznameh:
-                    return <TarazNameh/>;
+                    return <div className={'sample-alefbized'}>
+                        <TarazNameh/>
+                    </div>;
             }
         }
 
