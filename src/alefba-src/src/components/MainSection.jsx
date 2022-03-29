@@ -15,6 +15,7 @@ const MainSection = () => {
     const [isOpen, setOpen] = useState(false);
 
     let height = (window.innerWidth / 20);
+
     const displayNoneStyle = {
         opacity: 0,
         pointerEvents: 'none'
