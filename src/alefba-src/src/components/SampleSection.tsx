@@ -29,6 +29,31 @@ class SampleSection extends Component {
         chosenSample: Sample.KartMelli
     }
 
+    constructor(props: any) {
+      super(props);
+        window.setInterval(() => {
+            let randomNumber:number = Math.floor((Math.random() * 3) + 1);
+            switch(randomNumber) {
+                case 1:
+                    this.setState({
+                        chosenSample: Sample.KartMelli
+                    })
+                    break;
+                case 2:
+                    this.setState({
+                        chosenSample: Sample.Sherr
+                    })
+                    break;
+                case 3:
+                    this.setState({
+                        chosenSample: Sample.Taraznameh
+                    })
+                    break;
+            }
+
+        },5000);
+    }
+
     render() {
 
         const onKartMelliClick = () => {
