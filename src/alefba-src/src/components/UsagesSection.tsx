@@ -24,7 +24,7 @@ const UsagesSection = () => {
     return(
         <div>
             <p id={'usages-title'}>
-                کاربرد های الفبا
+                کاربردهای الفبا
             </p>
             <div id={'space-4'}/>
             <div id={'usages-section'}>

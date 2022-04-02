@@ -105,7 +105,7 @@ class SampleSection extends Component {
         return (
             <div className={'sample'}>
                 <p id={'sample-title'}>
-                    نمونه های الفبا
+                    نمونه‌های الفبا
                 </p>
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>

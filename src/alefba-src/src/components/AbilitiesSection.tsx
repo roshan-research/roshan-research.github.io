@@ -38,7 +38,7 @@ const AbilitiesSection = () => {
     return(
         <div id={'abilities'}>
             <p id={'abilities-title'}>
-                قابلیت های الفبا
+                قابلیت‌های الفبا
             </p>
             <div id={'side'}>
                 <Side id={'side-main'}/>
@@ -79,10 +79,10 @@ const AbilitiesSection = () => {
                         <Left3 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left3InView? afterStyleText : beforeStyleText}>
-                                خواندن حرکت های حروف
+                                خواندن حرکت‌های حروف
                             </p>
                             <p className={'black-text-background'} ref={left3Ref} style={left3InView? afterStyle : beforeStyle}>
-                                خواندن حرکت های حروف
+                                خواندن حرکت‌های حروف
                             </p>
                         </div>
                         <p className={'white-text'}>
@@ -95,10 +95,10 @@ const AbilitiesSection = () => {
                         <Right1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right1InView? afterStyleText : beforeStyleText}>
-                                خواندن قلم های گوناگون
+                                خواندن قلم‌های گوناگون
                             </p>
                             <p className={'black-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
-                                خواندن قلم های گوناگون
+                                خواندن قلم‌های گوناگون
                             </p>
                         </div>
                         <p className={'white-text'}>

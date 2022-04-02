@@ -1,19 +1,14 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
+
+<head>
     <meta charset="utf-8" />
     <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta
-      name="description"
-      content="نویسه خوان الفبا"
-    />
+    <meta name="description" content="نویسه‌خوان الفبا" />
 
-    <meta
-            name="keywords"
-            content="ocr,او سی آر فارسی,تبدیل تصویر به متن"
-    />
+    <meta name="keywords" content="ocr,او سی آر فارسی,تبدیل تصویر به متن" />
     <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
@@ -31,23 +26,25 @@
     <title>الفبا</title>
 
     <style>
-      @keyframes in {
-        0%{
-          height: 0;
+        @keyframes in {
+            0% {
+                height: 0;
+            }
+            100% {
+                height: 100vh;
+            }
         }
-        100%{
-          height: 100vh;
+        
+        #root {
+            animation-delay: 2s;
+            animation-duration: 3s;
+            animation-name: in;
+            animation-iteration-count: 1;
         }
-      }
-      #root {
-        animation-delay: 2s;
-        animation-duration: 3s;
-        animation-name: in;
-        animation-iteration-count: 1;
-      }
     </style>
-  </head>
-  <body style="background-color:black">
+</head>
+
+<body style="background-color:black">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!--
@@ -60,5 +57,6 @@
       To begin the development, run `npm start` or `yarn start`.
       To create a production bundle, use `npm run build` or `yarn build`.
     -->
-  </body>
+</body>
+
 </html>
