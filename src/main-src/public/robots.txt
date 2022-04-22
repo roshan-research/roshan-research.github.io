@@ -1,3 +1,8 @@
 # https://www.robotstxt.org/robotstxt.html
 User-agent: *
-Disallow:
+Allow: /alefba
+Allow: /contact-us 
+Allow: /kashf
+Allow: /join-us
+Allow: /baaz
+
