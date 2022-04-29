@@ -2,7 +2,6 @@ import React, {Component, lazy, Suspense} from 'react';
 import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
-import ReactTouchEvents from "react-touch-events";
 import {loadingAnimation} from "./animations/main-page";
 import {motion} from 'framer-motion'
 import ProgressIndicator from "./components/ProgressIndicator";
