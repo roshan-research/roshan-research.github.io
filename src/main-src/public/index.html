@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="fa" dir="rtl">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="google-site-verification" content="5lP5AbmlkQNBWGZvF5LSTH5DyRTV7BtZMOoKzXhbWbc" />
+    <link rel="icon" href="%PUBLIC_URL%/logo.png" />
+    <meta name="viewport" content="width=device-width,initial-scale=1.0">
+    <meta
+      name="description"
+      content="شرکت روشن با تحقیق و توسعه فناوری هوش مصنوعی، سعی می‌کند در ساختن آینده سهیم باشد. پروژه متن‌باز هضم برای پردازش زبان فارسی یکی از دستاوردهای این شرکت است."
+    />
+    <meta name="theme-color" content="#000000" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <meta
+            name="keywords"
+            content="کشف, هضم, الفبا, حرف"
+    />
+
+    <link rel="canonical" href="https://www.roshan-ai.ir/kashf/">
+    <link rel="canonical" href="https://www.sobhe.ir/hazm/">
+    <link rel="canonical" href="https://www.roshan-ai.ir/alefba/">
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <title>روشن</title>
+    <style>
+      @keyframes in {
+        0%{
+          opacity: 0;
+        }
+        100%{
+          opacity: 1;
+        }
+      }
+      #root {
+        animation-duration: 5s;
+        animation-name: in;
+      }
+    </style>
+  </head>
+  <body style="background-color: #020202;overflow: hidden;">
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <!-- PWA Script -->
+    <script>
+      if ('serviceWorker' in navigator) {
+        window.addEventListener('load', () => {
+          navigator.serviceWorker
+                  .register('./serviceWorker.js')
+                  .then((reg) => console.log('Success: ', reg.scope))
+                  .catch((err) => console.log('Failure: ', err));
+        });
+      }
+    </script>
+  </body>
+  <script type="text/javascript">
+    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
+    ;r.type="text/javascript"
+    ;r.integrity="sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
+    ;r.crossOrigin="anonymous";r.async=true
+    ;r.src="https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js"
+    ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
+      console.log("[Amplitude] Error: could not load SDK")}}
+    ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
+    ;function s(e,t){e.prototype[t]=function(){
+      this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
+      var o=function(){this._q=[];return this}
+      ;var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"]
+      ;for(var c=0;c<a.length;c++){s(o,a[c])}n.Identify=o;var u=function(){this._q=[]
+              ;return this}
+      ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
+      ;for(var p=0;p<l.length;p++){s(u,l[p])}n.Revenue=u
+      ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
+      ;function v(e){function t(t){e[t]=function(){
+        e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
+        for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
+        e=(!e||e.length===0?"$default_instance":e).toLowerCase()
+        ;if(!Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])
+        }return n._iq[e]};e.amplitude=n})(window,document);
+
+    amplitude.getInstance().init("f0f30f297c9d6b363ee9285ba7b633f1");
+    amplitude.getInstance().logEvent('visited');
+  </script>
+</html>

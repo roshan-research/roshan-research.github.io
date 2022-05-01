@@ -1,0 +1,175 @@
+@font-face {
+  font-family: iranYekan;
+  src: url(../../../assets/IRANYekan.ttf);
+}
+
+.contact-us-page{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 92vh;
+}
+
+#group{
+  height:auto;
+  width:85vw;
+  flex-direction: row;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+#main-image{
+  height:33vw;
+  width:33vw;
+}
+
+#text-links{
+  height:47.22222222222222vh;
+  width:36.328125vw;
+}
+
+p{
+  color: white;
+  font-size: 1vw;
+  direction: rtl;
+  font-family: iranYekan, serif;
+}
+
+#body-text{
+  margin-top: 2vw;
+  height:auto;
+  width:36.71875vw;
+}
+
+#in-the-name{
+  height:3.4722222222222223vh;
+  width:11.71875vw;
+}
+
+#email-row{
+  margin-top: 3.5vw;
+  height:auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#email-icon{
+  width:1.6vw;
+  height: auto;
+}
+
+#phone-icon{
+  width:1.5vw;
+  height: auto;
+}
+
+#phone-row{
+  height:auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#address-row{
+  height:auto;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-direction: row;
+}
+
+#location-icon {
+  width:1.4vw;
+  height: auto;
+}
+
+.link-content {
+  margin-right: 20px;
+}
+
+@media screen and (max-width: 600px){
+
+  #main-image {
+    margin-top: 5vh;
+    width: 75vw;
+    height: 75vw;
+    margin-bottom: 5vh;
+  }
+
+  .contact-us-page{
+    overflow: scroll;
+  }
+
+  p{
+    font-size: 4vw;
+  }
+
+  #body-text{
+    margin-top: 6vw;
+    height:auto;
+    width:77vw;
+  }
+
+  #in-the-name{
+    width:75vw;
+  }
+
+  #email-row{
+    margin-top: 15vw;
+    height:auto;
+  }
+
+  #email-icon{
+    width:8vw;
+  }
+
+
+  #phone-icon{
+    width:7.5vw;
+  }
+
+  #location-icon{
+    width:10vw;
+  }
+
+
+  #group {
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+    overflow: scroll;
+    margin-top: 10vw;
+  }
+}
+
+#address-text:hover {
+  color: #7AB8FF;
+}
+
+a {
+  text-decoration: none;
+}
+
+#email-text:hover {
+  color: #7AB8FF;
+}
+
+#main-image {
+  background-color: transparent;
+  border: none;
+}
+
+a{
+  text-decoration: none;
+  color: white;
+}
+
+a:hover {
+  color: #7AB8FF;
+}
