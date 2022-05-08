@@ -4,7 +4,6 @@ import {motion} from 'framer-motion';
 import emailSource from '../../../assets/images/email-icon.svg';
 import phoneSource from '../../../assets/images/phone-icon.svg';
 import locationSource from '../../../assets/images/location-icon.svg';
-import vector from '../../../assets/images/vector.svg';
 
 import {noneAnimation, startingAnimation} from "../../../animations/main-page";
 
@@ -26,12 +25,12 @@ export default function ContactusPage(props) {
         >
             <div id={'group'}>
                 <div id={'texts-links'}>
-                    <p id={'in-the-name'}>
-                        به نام خداوند جان و خرد
-                    </p>
-                    <p id={'body-text'}>
-                        <span style={{color: '#0077FF'}}>روشن </span>از سال 1390 با همت جمعی از دانشجویان دانشگاه علم و صنعت ایران شروع به کار نموده است. این گروه هدف خود را تلاش در راستای تحقق تمدن نوین اسلامی میداند و در قالب شرکت دانش‌بنیان راهکار پردازش ژرف برای پاسخ به نیازهای کشور، محصولات نرم‌افزاری ارائه می‌کند.
-                    </p>
+                    {/*<p id={'in-the-name'}>*/}
+                    {/*    به نام خداوند جان و خرد*/}
+                    {/*</p>*/}
+                    {/*<p id={'body-text'}>*/}
+                    {/*    <span style={{color: '#0077FF'}}>روشن </span>از سال 1390 با همت جمعی از دانشجویان دانشگاه علم و صنعت ایران شروع به کار نموده است. این گروه هدف خود را تلاش در راستای تحقق تمدن نوین اسلامی میداند و در قالب شرکت دانش‌بنیان راهکار پردازش ژرف برای پاسخ به نیازهای کشور، محصولات نرم‌افزاری ارائه می‌کند.*/}
+                    {/*</p>*/}
                     <div id={'email-row'}>
                         <img id={'email-icon'} src={emailSource} alt={''}/>
                         <a href={'mailto:salam@roshan-ai.ir'} className={'link-content'}>
@@ -59,7 +58,6 @@ export default function ContactusPage(props) {
                                 میدان ولیعصر، خیابان به‌آفرین، پلاک 30، طبقه دوم
                             </p>
                         </a>
-                        <img src={vector} alt={'vector'} id={'vector'}/>
                     </div>
                 </div>
                 <div id={'contact-image'}>

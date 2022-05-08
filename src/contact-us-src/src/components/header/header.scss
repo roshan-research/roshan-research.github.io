@@ -26,3 +26,34 @@
   height: 100vh;
   position:absolute;
 }
+
+#navigation-button {
+  font-family: iranYekan, serif;
+  position: absolute;
+  z-index: 100;
+  width: 11.5vw;
+  margin-right: 82.5vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 2.5vw;
+  margin-top: 37vw;
+  font-size: 1vw;
+  background-color: #4286F5;
+}
+
+#map-image {
+  float: left;
+  z-index: -100;
+  position: absolute;
+  margin-right: 55vw;
+  width: 45vw;
+}
+
+@media screen and (max-width: 600px){
+  #map-image,#navigation-button {
+    display: none;
+  }
+
+}

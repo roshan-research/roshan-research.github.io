@@ -50,7 +50,6 @@ p{
 }
 
 #email-row{
-  margin-top: 3.5vw;
   height:auto;
   display: flex;
   justify-content: flex-start;
@@ -96,7 +95,6 @@ p{
 @media screen and (max-width: 600px){
 
   #main-image {
-    margin-top: 5vh;
     width: 75vw;
     height: 75vw;
     margin-bottom: 5vh;
@@ -111,7 +109,6 @@ p{
   }
 
   #body-text{
-    margin-top: 6vw;
     height:auto;
     width:77vw;
   }
@@ -121,7 +118,6 @@ p{
   }
 
   #email-row{
-    margin-top: 15vw;
     height:auto;
   }
 
@@ -173,3 +169,10 @@ a{
 a:hover {
   color: #7AB8FF;
 }
+
+@media screen and (min-width: 600px){
+  #contact-image {
+    display: none;
+  }
+}
+

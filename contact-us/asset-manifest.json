@@ -1,27 +1,27 @@
 {
   "files": {
-    "main.css": "/contact-us/static/css/main.ada740d3.chunk.css",
-    "main.js": "/contact-us/static/js/main.4dc954e9.chunk.js",
-    "runtime-main.js": "/contact-us/static/js/runtime-main.490b2b9d.js",
+    "main.css": "/contact-us/static/css/main.18ed7563.chunk.css",
+    "main.js": "/contact-us/static/js/main.1970f889.chunk.js",
+    "runtime-main.js": "/contact-us/static/js/runtime-main.d5ad9f46.js",
     "static/js/2.2a4c790e.chunk.js": "/contact-us/static/js/2.2a4c790e.chunk.js",
-    "static/css/3.e6e9fa2e.chunk.css": "/contact-us/static/css/3.e6e9fa2e.chunk.css",
-    "static/js/3.9e9cb9d2.chunk.js": "/contact-us/static/js/3.9e9cb9d2.chunk.js",
+    "static/css/3.f5871068.chunk.css": "/contact-us/static/css/3.f5871068.chunk.css",
+    "static/js/3.677278f3.chunk.js": "/contact-us/static/js/3.677278f3.chunk.js",
     "index.html": "/contact-us/index.html",
     "static/js/2.2a4c790e.chunk.js.LICENSE.txt": "/contact-us/static/js/2.2a4c790e.chunk.js.LICENSE.txt",
     "static/media/contact-us-page.scss": "/contact-us/static/media/IRANYekan.b916444e.ttf",
+    "static/media/Map.01cabdc9.svg": "/contact-us/static/media/Map.01cabdc9.svg",
     "static/media/close-icon.20012dc4.svg": "/contact-us/static/media/close-icon.20012dc4.svg",
     "static/media/email-icon.86cba96c.svg": "/contact-us/static/media/email-icon.86cba96c.svg",
     "static/media/home-mobile.500ec8d7.svg": "/contact-us/static/media/home-mobile.500ec8d7.svg",
     "static/media/location-icon.9307a44a.svg": "/contact-us/static/media/location-icon.9307a44a.svg",
     "static/media/menu-icon.a0de4dbf.svg": "/contact-us/static/media/menu-icon.a0de4dbf.svg",
     "static/media/phone-icon.387b13b5.svg": "/contact-us/static/media/phone-icon.387b13b5.svg",
-    "static/media/roshan-logosvg.23d13fdb.svg": "/contact-us/static/media/roshan-logosvg.23d13fdb.svg",
-    "static/media/vector.65ff9802.svg": "/contact-us/static/media/vector.65ff9802.svg"
+    "static/media/roshan-logosvg.23d13fdb.svg": "/contact-us/static/media/roshan-logosvg.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.490b2b9d.js",
+    "static/js/runtime-main.d5ad9f46.js",
     "static/js/2.2a4c790e.chunk.js",
-    "static/css/main.ada740d3.chunk.css",
-    "static/js/main.4dc954e9.chunk.js"
+    "static/css/main.18ed7563.chunk.css",
+    "static/js/main.1970f889.chunk.js"
   ]
 }
