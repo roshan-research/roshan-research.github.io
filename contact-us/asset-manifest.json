@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/contact-us/static/css/main.18ed7563.chunk.css",
-    "main.js": "/contact-us/static/js/main.63f52a0d.chunk.js",
-    "runtime-main.js": "/contact-us/static/js/runtime-main.d5ad9f46.js",
-    "static/js/2.2a4c790e.chunk.js": "/contact-us/static/js/2.2a4c790e.chunk.js",
+    "main.js": "/contact-us/static/js/main.7ef734f6.chunk.js",
+    "runtime-main.js": "/contact-us/static/js/runtime-main.47a619d5.js",
+    "static/js/2.e73618e6.chunk.js": "/contact-us/static/js/2.e73618e6.chunk.js",
     "static/css/3.f5871068.chunk.css": "/contact-us/static/css/3.f5871068.chunk.css",
-    "static/js/3.677278f3.chunk.js": "/contact-us/static/js/3.677278f3.chunk.js",
+    "static/js/3.cbedd8e2.chunk.js": "/contact-us/static/js/3.cbedd8e2.chunk.js",
     "index.html": "/contact-us/index.html",
-    "static/js/2.2a4c790e.chunk.js.LICENSE.txt": "/contact-us/static/js/2.2a4c790e.chunk.js.LICENSE.txt",
+    "static/js/2.e73618e6.chunk.js.LICENSE.txt": "/contact-us/static/js/2.e73618e6.chunk.js.LICENSE.txt",
     "static/media/contact-us-page.scss": "/contact-us/static/media/IRANYekan.b916444e.ttf",
     "static/media/Map.01cabdc9.svg": "/contact-us/static/media/Map.01cabdc9.svg",
     "static/media/close-icon.20012dc4.svg": "/contact-us/static/media/close-icon.20012dc4.svg",
@@ -19,9 +19,9 @@
     "static/media/roshan-logosvg.23d13fdb.svg": "/contact-us/static/media/roshan-logosvg.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.d5ad9f46.js",
-    "static/js/2.2a4c790e.chunk.js",
+    "static/js/runtime-main.47a619d5.js",
+    "static/js/2.e73618e6.chunk.js",
     "static/css/main.18ed7563.chunk.css",
-    "static/js/main.63f52a0d.chunk.js"
+    "static/js/main.7ef734f6.chunk.js"
   ]
 }
