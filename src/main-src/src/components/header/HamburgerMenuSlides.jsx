@@ -62,6 +62,11 @@ function HamburgerMenuSlides(props) {
                     >
                         همکاری با ما
                     </a>
+                    <a href={'https://www.roshan-ai.ir/about-us'}
+                       className={initialState? 'hamburger-menu-button about-in': 'hamburger-menu-button'}
+                    >
+                        درباره با ما
+                    </a>
                 </div>
                 <div id={'hamburger-footer'}>
                     <p
