@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/static/css/main.3227a9f7.css",
+    "main.js": "/static/js/main.7fd512da.js",
+    "static/js/787.b99d8c73.chunk.js": "/static/js/787.b99d8c73.chunk.js",
+    "static/media/pic2.png": "/static/media/pic2.a9ed9915b0531876241d.png",
+    "static/media/pic1.png": "/static/media/pic1.9a28ebcf20d720cd4c4f.png",
+    "static/media/pic3.png": "/static/media/pic3.f3f44912b04b5a694ff1.png",
+    "static/media/IRANYekan.ttf": "/static/media/IRANYekan.b916444ed97e6e3959f7.ttf",
+    "static/media/logo.svg": "/static/media/logo.1b0d0d5eacdf80704386e60689c9a06b.svg",
+    "index.html": "/index.html",
+    "main.3227a9f7.css.map": "/static/css/main.3227a9f7.css.map",
+    "main.7fd512da.js.map": "/static/js/main.7fd512da.js.map",
+    "787.b99d8c73.chunk.js.map": "/static/js/787.b99d8c73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3227a9f7.css",
+    "static/js/main.7fd512da.js"
+  ]
+}
