@@ -1,9 +1,10 @@
 import './App.scss';
 import { Carousel } from 'react-responsive-carousel';
-import pic1 from './assets/images/pic1.png';
-import pic2 from './assets/images/pic2.png';
-import pic3 from './assets/images/pic3.png';
+import pic1 from './assets/images/pic1.svg';
+import pic2 from './assets/images/pic2.svg';
+import pic3 from './assets/images/pic3.svg';
 import logo from './assets/images/logo.svg';
+import Footer from "./components/Footer";
 
 function App() {
   return (
@@ -30,6 +31,9 @@ function App() {
                 emulateTouch={true}
                 infiniteLoop={true}
                 width={'100%'}
+                showArrows={false}
+                showIndicators={false}
+                showStatus={false}
             >
                 <div>
                     <img src={pic1} alt={''}/>
@@ -41,6 +45,7 @@ function App() {
                     <img src={pic3} alt={''}/>
                 </div>
             </Carousel>
+            <Footer/>
         </div>
     </div>
   );
