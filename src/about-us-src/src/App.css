@@ -54,4 +54,26 @@
   border: 4px solid rgba(0, 0, 0, 0);
   background-clip: padding-box; }
 
+@media screen and (max-width: 600px) {
+  #about-us {
+    display: flex;
+    flex-direction: column; }
+
+  #texts {
+    margin-top: 15vw;
+    flex-direction: column-reverse; }
+
+  #title {
+    font-size: 5.5vw;
+    width: 70vw; }
+
+  #description {
+    width: 75vw;
+    font-size: 4.3vw; }
+
+  #logo {
+    margin-top: 10vw;
+    width: 16vw;
+    margin-left: 75vw; } }
+
 /*# sourceMappingURL=App.css.map */
