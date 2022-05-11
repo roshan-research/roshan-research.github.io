@@ -52,8 +52,24 @@
 }
 
 @media screen and (max-width: 600px){
-  #map-image,#navigation-button {
+  #map-image {
     display: none;
   }
 
+  #all {
+    overflow-y: hidden;
+    overflow-x: hidden;
+  }
+
+  .hidden-image{
+    display: none;
+  }
+
+  #navigation-button {
+    margin-top: 85vh;
+    width: 35vw;
+    height: 10vw;
+    margin-right: 55vw;
+    font-size: 4vw;
+  }
 }

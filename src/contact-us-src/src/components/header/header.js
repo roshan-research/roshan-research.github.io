@@ -49,7 +49,7 @@ export default class Header extends Component {
                         toggle={this.toggle}
                         isOpen={this.state.isOpen}
                     />
-                    <img src={mapImage} id={'map-image'} alt={''}/>
+                    <img src={mapImage} className={this.state.isOpen ? 'hidden-image': ''} id={'map-image'} alt={''}/>
                     <a
                         id={'navigation-button'}
                         href={isMobile? "geo:35.7113,51.4105;u=35" : "https://goo.gl/maps/ms3rUPvSMtsscEXr9"}

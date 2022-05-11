@@ -97,7 +97,6 @@ p{
   #main-image {
     width: 75vw;
     height: 75vw;
-    margin-bottom: 5vh;
   }
 
   .contact-us-page{
@@ -139,8 +138,19 @@ p{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    overflow: scroll;
-    margin-top: 10vw;
+    overflow: hidden;
+    width: 100vw;
+    justify-content: center;
+    background-color: black;
+    align-items: center;
+  }
+
+  #texts-links {
+    height: auto;
+    margin-top: 15vw;
+    background-color: black;
+    z-index: 1000;
+    width: 80vw;
   }
 }
 
@@ -170,9 +180,16 @@ a:hover {
   color: #7AB8FF;
 }
 
-@media screen and (min-width: 600px){
-  #contact-image {
-    display: none;
+
+@media screen and (max-width: 600px){
+  #image-wrapper {
+    width: 230vw;
+    height: 100vh;
+    display: flex;
+    margin-top: -35vh;
+    justify-content: center;
+    align-items: center;
+    transform: scale(1.1);
+    background-image: url("../../../assets/images/Map.svg");
   }
 }
-
