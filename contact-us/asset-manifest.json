@@ -1,15 +1,14 @@
 {
   "files": {
-    "main.css": "/contact-us/static/css/main.18ed7563.chunk.css",
-    "main.js": "/contact-us/static/js/main.7ef734f6.chunk.js",
-    "runtime-main.js": "/contact-us/static/js/runtime-main.47a619d5.js",
+    "main.css": "/contact-us/static/css/main.c6b29977.chunk.css",
+    "main.js": "/contact-us/static/js/main.0d8e4176.chunk.js",
+    "runtime-main.js": "/contact-us/static/js/runtime-main.4013221a.js",
     "static/js/2.e73618e6.chunk.js": "/contact-us/static/js/2.e73618e6.chunk.js",
-    "static/css/3.f5871068.chunk.css": "/contact-us/static/css/3.f5871068.chunk.css",
-    "static/js/3.cbedd8e2.chunk.js": "/contact-us/static/js/3.cbedd8e2.chunk.js",
+    "static/css/3.8790dc12.chunk.css": "/contact-us/static/css/3.8790dc12.chunk.css",
+    "static/js/3.08b14cbe.chunk.js": "/contact-us/static/js/3.08b14cbe.chunk.js",
     "index.html": "/contact-us/index.html",
     "static/js/2.e73618e6.chunk.js.LICENSE.txt": "/contact-us/static/js/2.e73618e6.chunk.js.LICENSE.txt",
-    "static/media/contact-us-page.scss": "/contact-us/static/media/IRANYekan.b916444e.ttf",
-    "static/media/Map.01cabdc9.svg": "/contact-us/static/media/Map.01cabdc9.svg",
+    "static/media/contact-us-page.scss": "/contact-us/static/media/Map.01cabdc9.svg",
     "static/media/close-icon.20012dc4.svg": "/contact-us/static/media/close-icon.20012dc4.svg",
     "static/media/email-icon.86cba96c.svg": "/contact-us/static/media/email-icon.86cba96c.svg",
     "static/media/home-mobile.500ec8d7.svg": "/contact-us/static/media/home-mobile.500ec8d7.svg",
@@ -19,9 +18,9 @@
     "static/media/roshan-logosvg.23d13fdb.svg": "/contact-us/static/media/roshan-logosvg.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.47a619d5.js",
+    "static/js/runtime-main.4013221a.js",
     "static/js/2.e73618e6.chunk.js",
-    "static/css/main.18ed7563.chunk.css",
-    "static/js/main.7ef734f6.chunk.js"
+    "static/css/main.c6b29977.chunk.css",
+    "static/js/main.0d8e4176.chunk.js"
   ]
 }
