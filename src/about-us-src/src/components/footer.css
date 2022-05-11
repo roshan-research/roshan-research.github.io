@@ -98,14 +98,16 @@ a {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end; }
+    align-items: end;
+    height: 5vw; }
 
   #email-footer {
     position: absolute;
     justify-content: space-between;
     align-items: end;
-    margin-bottom: 15vh;
-    margin-right: 5vw; }
+    margin-right: 5vw;
+    display: flex;
+    height: 0; }
 
   #icon-title-footer {
     margin-bottom: 37vh;
@@ -115,12 +117,12 @@ a {
 
   #footer-title {
     font-size: 5vw;
-    padding-right: 1.4vw; }
+    padding-right: 1.4vw;
+    height: auto;
+    width: auto; }
 
   #icon-footer {
-    height: 4vh;
-    margin-bottom: 8vh;
-    width: 15vw; }
+    display: none; }
 
   #email {
     font-size: 4vw;
