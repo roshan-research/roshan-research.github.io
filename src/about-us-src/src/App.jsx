@@ -11,6 +11,9 @@ function App() {
   return (
       <>
           <HamburgerMenu/>
+          <div id={'mobile-menu'}>
+
+          </div>
           <div id={"about-us"}>
               <img src={logo} id={'logo'} alt={''}/>
               <div id={'texts'}>

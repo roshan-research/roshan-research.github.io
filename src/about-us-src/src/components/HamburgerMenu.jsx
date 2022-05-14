@@ -1,17 +1,14 @@
 import './hamburger.scss';
 import { Squeeze as Hamburger } from 'hamburger-react';
 import {useState} from "react";
+import {isMobile} from "react-device-detect";
 
 function HamburgerMenu(props) {
     let initialState = window.sessionStorage.getItem('isOpen') === 'true';
 
     const [isOpen, setOpen] = useState(initialState);
 
-    const onHamburgerMenuToggle = () => {
-        window.sessionStorage.setItem('isOpen',!isOpen);
-    };
-
-    let height = (window.innerWidth / 70);
+    let height = (window.innerWidth / (isMobile? 15: 70));
     return (
         <>
             <div id={'hamburger-button'}>
@@ -20,7 +17,6 @@ function HamburgerMenu(props) {
                     color="white"
                     toggle={setOpen}
                     size={height}
-                    onToggle={onHamburgerMenuToggle}
                     direction="right"
                     duration={0.6}
                 />

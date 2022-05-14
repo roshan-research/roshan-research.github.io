@@ -145,14 +145,14 @@
 }
 
 @media screen and (max-width: 600px){
+  #hamburger-button{
+    margin-top: 6vw;
+    margin-left: 6vw;
+  }
+
   #hamburger-menu {
     display: none;
   }
-
-  #hamburger-button{
-    display: none;
-  }
-
 }
 
 .hidden-company {
