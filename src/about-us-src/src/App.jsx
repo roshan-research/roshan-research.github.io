@@ -4,17 +4,62 @@ import pic1 from './assets/images/pic1.svg';
 import pic2 from './assets/images/pic2.svg';
 import pic3 from './assets/images/pic3.svg';
 import logo from './assets/images/logo.svg';
+import { Squeeze as Hamburger } from 'hamburger-react';
 import Footer from "./components/Footer";
+import { slide as Menu } from 'react-burger-menu'
 import HamburgerMenu from "./components/HamburgerMenu";
+import {useState} from "react";
+import {isMobile} from "react-device-detect";
 
 function App() {
-  return (
-      <>
-          <HamburgerMenu/>
-          <div id={'mobile-menu'}>
 
-          </div>
-          <div id={"about-us"}>
+    const [isOpen, setOpen] = useState(true);
+
+    let height = (window.innerWidth / (isMobile? 15: 70));
+
+  return (
+      <div id={'all-container'}>
+          <Menu
+              menuClassName={ "menu" }
+              burgerButtonClassName={ "my-button" }
+              pageWrapId={ "about-us" }
+              itemListClassName={ "items" }
+              outerContainerId={ "all-container" }
+              onStateChange={() => {
+                  setOpen(!isOpen)
+              }}
+              customBurgerIcon={
+                  <Hamburger
+                  toggled={isOpen}
+                  color="white"
+                  toggle={setOpen}
+                  size={height}
+                  direction="right"
+                  duration={0.6}/>
+              }
+          >
+              <a href={'https://www.roshan-ai.ir/'}
+                 className={'hamburger-menu-button'}
+              >
+                  روشن
+              </a>
+              <a href={'https://www.roshan-ai.ir/contact-us'}
+                 className={'hamburger-menu-button'}
+              >
+                  تماس با ما
+              </a>
+              <a href={'https://www.roshan-ai.ir/join-us'}
+                 className={'hamburger-menu-button'}
+              >
+                  همکاری با ما
+              </a>
+              <a href={'https://www.roshan-ai.ir/about-us'}
+                 className={'hamburger-menu-button'}
+              >
+                  درباره با ما
+              </a>
+          </Menu>
+          <div id={"about-us"} style={{zIndex: '10000'}}>
               <img src={logo} id={'logo'} alt={''}/>
               <div id={'texts'}>
                   <p id={'description'}>
@@ -54,7 +99,7 @@ function App() {
                   <Footer/>
               </div>
           </div>
-      </>
+      </div>
   );
 }
 

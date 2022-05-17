@@ -67,7 +67,6 @@
   color: #FFFFFF;
   font-family: iranyekan, serif;
   font-size: 1.2vw;
-  transform: skew(10deg);
   transition: 0.5s; }
 
 .hamburger-menu-button:hover {

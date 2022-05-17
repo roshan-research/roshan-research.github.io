@@ -110,3 +110,23 @@
     display: none;
   }
 }
+
+.my-button {
+  position: absolute;
+  margin-top: 2vw;
+  z-index: 1000;
+  margin-left: 5vw;
+}
+
+.menu {
+  padding-top: 5vw;
+  background-color: #0A0A0A;
+  z-index: 5;
+}
+
+.items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
