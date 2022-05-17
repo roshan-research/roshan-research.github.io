@@ -1,0 +1,20 @@
+{
+  "files": {
+    "main.css": "/about-us/static/css/main.0df674d2.css",
+    "main.js": "/about-us/static/js/main.9e713b43.js",
+    "static/js/787.b99d8c73.chunk.js": "/about-us/static/js/787.b99d8c73.chunk.js",
+    "static/media/pic1.svg": "/about-us/static/media/pic1.284bdfb6ef792b9ec398c723de36e4c2.svg",
+    "static/media/pic2.svg": "/about-us/static/media/pic2.bff48a9ae0184d005a2bca331222fe32.svg",
+    "static/media/pic3.svg": "/about-us/static/media/pic3.92fd508de16d5c91c5cf6dea54288149.svg",
+    "static/media/IRANYekan.ttf": "/about-us/static/media/IRANYekan.b916444ed97e6e3959f7.ttf",
+    "static/media/logo.svg": "/about-us/static/media/logo.1b0d0d5eacdf80704386e60689c9a06b.svg",
+    "index.html": "/about-us/index.html",
+    "main.0df674d2.css.map": "/about-us/static/css/main.0df674d2.css.map",
+    "main.9e713b43.js.map": "/about-us/static/js/main.9e713b43.js.map",
+    "787.b99d8c73.chunk.js.map": "/about-us/static/js/787.b99d8c73.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.0df674d2.css",
+    "static/js/main.9e713b43.js"
+  ]
+}
