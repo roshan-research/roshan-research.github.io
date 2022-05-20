@@ -61,14 +61,13 @@
   margin-left: 6vw; }
 
 .menu {
-  padding-top: 5vw;
   background-color: #0A0A0A;
   z-index: 5; }
 
-.items {
+.menu-items {
   display: flex;
   justify-content: start;
-  align-items: center;
+  align-items: end;
   flex-direction: column; }
 
 @media screen and (max-width: 600px) {

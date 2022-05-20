@@ -9,6 +9,7 @@ import Footer from "./components/Footer";
 import { slide as Menu } from 'react-burger-menu'
 import {useState} from "react";
 import {isMobile} from "react-device-detect";
+import MenuLinks from "./components/MenuLinks";
 
 function App() {
 
@@ -22,7 +23,7 @@ function App() {
               menuClassName={ "menu" }
               burgerButtonClassName={ "my-button" }
               pageWrapId={ "about-us" }
-              itemListClassName={ "items" }
+              itemListClassName={ "menu-items" }
               outerContainerId={ "all-container" }
               onStateChange={() => {
                   setOpen(!isOpen)
@@ -37,26 +38,7 @@ function App() {
                   duration={0.6}/>
               }
           >
-              <a href={'https://www.roshan-ai.ir/'}
-                 className={'hamburger-menu-button'}
-              >
-                  روشن
-              </a>
-              <a href={'https://www.roshan-ai.ir/contact-us'}
-                 className={'hamburger-menu-button'}
-              >
-                  تماس با ما
-              </a>
-              <a href={'https://www.roshan-ai.ir/join-us'}
-                 className={'hamburger-menu-button'}
-              >
-                  همکاری با ما
-              </a>
-              <a href={'https://www.roshan-ai.ir/about-us'}
-                 className={'hamburger-menu-button'}
-              >
-                  درباره با ما
-              </a>
+              <MenuLinks/>
           </Menu>
           <div id={"about-us"} style={{zIndex: '10000'}}>
               <img src={logo} id={'logo'} alt={''}/>

@@ -1,0 +1,26 @@
+#menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  height: 30vh;
+  margin-top: 7vw; }
+
+#menu-contents {
+  padding-right: 2vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column; }
+
+.menu-link {
+  font-family: iranyekan, serif;
+  font-size: 1.3vw; }
+
+.menu-link:hover {
+  color: #4286F5; }
+
+#company-name {
+  margin-top: 50vh;
+  font-size: 0.8vw; }
+
+/*# sourceMappingURL=menu-links.css.map */
