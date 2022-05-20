@@ -4,18 +4,13 @@ import pic1 from './assets/images/pic1.svg';
 import pic2 from './assets/images/pic2.svg';
 import pic3 from './assets/images/pic3.svg';
 import logo from './assets/images/logo.svg';
-import { Squeeze as Hamburger } from 'hamburger-react';
 import Footer from "./components/Footer";
 import { slide as Menu } from 'react-burger-menu'
-import {useState} from "react";
-import {isMobile} from "react-device-detect";
+import closeIcon from './assets/images/close-icon.svg';
+import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
 
 function App() {
-
-    const [isOpen, setOpen] = useState(true);
-
-    let height = (window.innerWidth / (isMobile? 15: 70));
 
   return (
       <div id={'all-container'}>
@@ -24,18 +19,13 @@ function App() {
               burgerButtonClassName={ "my-button" }
               pageWrapId={ "about-us" }
               itemListClassName={ "menu-items" }
+              crossButtonClassName={ "my-cross" }
               outerContainerId={ "all-container" }
-              onStateChange={() => {
-                  setOpen(!isOpen)
-              }}
               customBurgerIcon={
-                  <Hamburger
-                  toggled={isOpen}
-                  color="white"
-                  toggle={setOpen}
-                  size={height}
-                  direction="right"
-                  duration={0.6}/>
+                  <img src={burgerIcon} alt={''}/>
+              }
+              customCrossIcon={
+                 <img src={closeIcon} alt={''}/>
               }
           >
               <MenuLinks/>
