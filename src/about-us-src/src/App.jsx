@@ -11,11 +11,12 @@ import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
 
 function App() {
-
   return (
       <div id={'all-container'}>
           <Menu
+
               menuClassName={ "menu" }
+              itemListElement="div"
               burgerButtonClassName={ "my-button" }
               pageWrapId={ "about-us" }
               itemListClassName={ "menu-items" }
@@ -25,7 +26,9 @@ function App() {
                   <img src={burgerIcon} alt={''}/>
               }
               customCrossIcon={
-                 <img src={closeIcon} alt={''}/>
+                  <div>
+                      <img src={closeIcon} alt={''}/>
+                  </div>
               }
           >
               <MenuLinks/>

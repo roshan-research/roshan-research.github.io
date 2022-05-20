@@ -71,9 +71,10 @@
   flex-direction: column; }
 
 .my-cross {
-  transform: scale(1.5);
+  transform: scale(1.2);
   margin-top: 1vw;
-  transition: 0.1s; }
+  transition: 0.1s;
+  margin-right: 1vw; }
 
 .my-cross:active {
   transform: scale(1); }
@@ -81,8 +82,8 @@
 .my-button {
   transition: 0.4s;
   position: absolute;
-  margin-top: 2.6vw;
-  margin-left: 8vw;
+  margin-top: 2.5vw;
+  margin-left: 6vw;
   width: 3vw; }
 
 .my-button:active {
@@ -111,8 +112,21 @@
     margin-left: 75vw; }
 
   .my-button {
-    margin-top: 6.5vw;
-    margin-left: 7vw; } }
+    margin-top: 8vw;
+    width: 10vw;
+    margin-left: 9vw; }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .menu {
+    width: 100vw; }
+
+  .my-cross {
+    margin-right: 0; } }
 #mobile-menu {
   background-color: black;
   justify-content: center;
