@@ -10,6 +10,7 @@ import closeIcon from './assets/images/close-icon.svg';
 import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
 import {useState} from "react";
+import Clients from "./components/Clients";
 
 function App() {
 
@@ -106,6 +107,7 @@ function App() {
                           <img src={pic3} alt={''}/>
                       </div>
                   </Carousel>
+                  <Clients/>
                   <Footer/>
               </div>
           </div>
