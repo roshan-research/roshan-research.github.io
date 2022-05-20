@@ -54,7 +54,6 @@ class Clients extends Component {
         return <ReactTouchEvents onSwipe={handleSwipe} swipeTolerance={80}>
             <article>
                 <div id={'customers'}>
-                    <HamburgerMenuSlides/>
                     <div id={'web-all'}>
                         <ClientsDesktop id={'web'} status={shouldRender(this.props.scrollQuantity)}/>
                         <ToTopButton/>
