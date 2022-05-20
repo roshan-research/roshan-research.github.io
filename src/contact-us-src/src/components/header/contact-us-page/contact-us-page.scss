@@ -3,6 +3,9 @@
   src: url(../../../assets/IRANYekan.ttf);
 }
 
+#address-text {
+  width: 20vw;
+}
 .contact-us-page{
   display: flex;
   justify-content: center;
@@ -149,6 +152,10 @@ p{
     z-index: 1000;
     width: 80vw;
   }
+
+  #address-text {
+    width: 70vw;
+  }
 }
 
 #address-text:hover {
@@ -177,8 +184,7 @@ a:hover {
   color: #7AB8FF;
 }
 
-
-@media screen and (max-width: 600px){
+@media screen and (max-width: 600px) {
   #image-wrapper {
     width: 100vw;
     height: 100vh;

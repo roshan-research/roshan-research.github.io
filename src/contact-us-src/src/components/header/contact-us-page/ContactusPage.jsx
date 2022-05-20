@@ -55,7 +55,9 @@ export default function ContactusPage(props) {
                         <img id={'location-icon'} src={locationSource} alt={''}/>
                         <a href={'geo:35.7113,51.4105;u=35'} id={'location-row'}>
                             <p id={'address-text'} className={'link-content'}>
-                                میدان ولیعصر، خیابان به‌آفرین، پلاک 30، طبقه دوم
+                                تهران، میدان ولیعصر،
+                                <br/>
+                                بلوار کریمخان، خیابان به‌آفرین، پلاک 30
                             </p>
                         </a>
                     </div>
