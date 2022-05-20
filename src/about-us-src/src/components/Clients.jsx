@@ -28,15 +28,17 @@ const Clients = () => {
                     <img className={'client-pic'} src={mokhaberat} alt={''}/>
                     <img className={'client-pic'} src={ketabkhone} alt={''}/>
                 </div>
-                <div id={'clients-row2'}>
-                    <img className={'client-pic'} src={tamasha} alt={''}/>
-                    <img className={'client-pic'} src={varzesh3} alt={''}/>
-                    <img className={'client-pic'} src={jahad} alt={''}/>
-                </div>
-                <div id={'clients-row3'}>
-                    <img className={'client-pic'} src={farabi} alt={''}/>
-                    <img className={'client-pic'} src={parsian} alt={''}/>
-                    <img className={'client-pic'} src={astan} alt={''}/>
+                <div id={'united-columns'}>
+                    <div id={'clients-row2'}>
+                        <img className={'client-pic'} src={tamasha} alt={''}/>
+                        <img className={'client-pic'} src={varzesh3} alt={''}/>
+                        <img className={'client-pic'} src={jahad} alt={''}/>
+                    </div>
+                    <div id={'clients-row3'}>
+                        <img className={'client-pic'} src={farabi} alt={''}/>
+                        <img className={'client-pic'} src={parsian} alt={''}/>
+                        <img className={'client-pic'} src={astan} alt={''}/>
+                    </div>
                 </div>
             </div>
         </div>

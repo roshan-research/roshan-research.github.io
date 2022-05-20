@@ -37,4 +37,48 @@
   align-items: center;
   width: 50vw; }
 
+@media screen and (max-width: 600px) {
+  #clients {
+    width: 90vw;
+    margin-left: 10vw;
+    flex-direction: column;
+    margin-top: 5vh; }
+
+  #clients-motto {
+    width: 45vw;
+    text-align: center;
+    font-size: 7vw; }
+
+  .client-pic {
+    width: 40vw; }
+
+  #clients-pics {
+    justify-content: center;
+    align-items: start;
+    flex-direction: row; }
+
+  #clients-row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  #clients-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  #clients-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column; }
+
+  #united-columns {
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column; } }
+
 /*# sourceMappingURL=clients.css.map */
