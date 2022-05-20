@@ -22,6 +22,9 @@
   text-align: right;
   direction: rtl; }
 
+#in-god {
+  font-size: 0.9vw; }
+
 #texts {
   padding-top: 15vw;
   display: flex;
@@ -111,10 +114,14 @@
     width: 16vw;
     margin-left: 75vw; }
 
+  #in-god {
+    font-size: 3.6vw; }
+
   .my-button {
     margin-top: 8vw;
     width: 10vw;
-    margin-left: 9vw; }
+    margin-left: 9vw;
+    display: none; }
 
   .menu-items {
     display: flex;
@@ -123,10 +130,10 @@
     flex-direction: column; }
 
   .menu {
-    width: 100vw; }
+    display: none; }
 
   .my-cross {
-    margin-right: 0; } }
+    display: none; } }
 #mobile-menu {
   background-color: black;
   justify-content: center;
@@ -134,10 +141,20 @@
   width: 100vw;
   height: 100vh;
   z-index: 5000;
+  flex-direction: column;
   display: none; }
 
-@media screen and (min-width: 600px) {
+#mobile-menu-button {
+  display: none;
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 6vw; }
+
+@media screen and (max-width: 600px) {
   #mobile-menu {
-    display: none; } }
+    display: flex; }
+
+  #mobile-menu-button {
+    display: flex; } }
 
 /*# sourceMappingURL=App.css.map */

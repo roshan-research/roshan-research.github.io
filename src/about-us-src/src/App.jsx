@@ -9,9 +9,13 @@ import { slide as Menu } from 'react-burger-menu'
 import closeIcon from './assets/images/close-icon.svg';
 import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
+import {useState} from "react";
 
 function App() {
-  return (
+
+    const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
+
+    return (
       <div id={'all-container'}>
           <Menu
 
@@ -33,11 +37,43 @@ function App() {
           >
               <MenuLinks/>
           </Menu>
+          <img
+              src={mobileMenuOpen? closeIcon : burgerIcon}
+              alt={''}
+              id={'mobile-menu-button'}
+              onClick={() => {
+                  setMobileMenuOpen(!mobileMenuOpen);
+              }}
+          />
+          <div id={'mobile-menu'} style={mobileMenuOpen?{}:{display: 'none'}}>
+              <div id={'menu-links'}>
+                  <a href={'https://www.roshan-ai.ir/'}
+                     className={'menu-link'}
+                  >
+                      روشن
+                  </a>
+                  <a href={'https://www.roshan-ai.ir/about-us'}
+                     className={'menu-link'}
+                  >
+                      درباره با ما
+                  </a>
+                  <a href={'https://www.roshan-ai.ir/contact-us'}
+                     className={'menu-link'}
+                  >
+                      تماس با ما
+                  </a>
+                  <a href={'https://www.roshan-ai.ir/join-us'}
+                     className={'menu-link'}
+                  >
+                      همکاری با ما
+                  </a>
+              </div>
+          </div>
           <div id={"about-us"} style={{zIndex: '10000'}}>
               <img src={logo} id={'logo'} alt={''}/>
               <div id={'texts'}>
                   <p id={'description'}>
-                      به نام خداوند جان و خرد
+                      <span id={'in-god'}>به نام خداوند جان و خرد</span>
                       <br/>
                       <br/>
                       روﺷــﻦ از ﺳﺎل ۱۳۹۰ ﺑﺎ ﻫﻤﺖ ﺟﻤﻌﯽ از داﻧﺸﺠﻮﯾﺎن داﻧﺸﮕﺎه ﻋﻠﻢ و ﺻﻨﻌﺖ اﯾﺮان ﺷﺮوع ﺑﻪ ﮐﺎر ﻧﻤﻮده اﺳﺖ. اﯾﻦ ﮔﺮوه ﻫﺪف ﺧﻮد را ﺗﻠﺎش در راﺳﺘﺎی ﺗﺤﻘﻖ ﺗﻤﺪن ﻧﻮﯾﻦ اﺳﻠﺎﻣﯽ ﻣﯽ‌داﻧﺪ و در ﻗﺎﻟﺐ ﺷﺮﮐﺖ داﻧﺶ‌ﺑﻨﯿﺎن راﻫﮑﺎر ﭘﺮدازش ژرف ﺑﺮای ﭘﺎﺳﺦ ﺑﻪ ﻧﯿﺎزﻫﺎی ﮐﺸﻮر، ﻣﺤﺼﻮﻟﺎت ﻧﺮم‌اﻓﺰاری اراﺋﻪ می کند.
