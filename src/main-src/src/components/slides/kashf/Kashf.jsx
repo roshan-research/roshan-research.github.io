@@ -7,7 +7,6 @@ import React from "react";
 import {motion} from 'framer-motion'
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
-import ToTopButton from "../footer/ToTopButton";
 
 const animationChooser = (scrollQuantity) => {
     switch (scrollQuantity) {
@@ -42,7 +41,6 @@ const returnBasedOneDevice = ({scrollQuantity}) => {
                 <div id={'text'}>
                     <KashfWebText status={scrollQuantity}/>
                 </div>
-                <ToTopButton/>
             </div>
         )
     }

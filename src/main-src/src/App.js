@@ -9,6 +9,7 @@ import ProgressIndicator from "./components/ProgressIndicator";
 import MenuLinks from "./components/MenuLinks";
 import burgerIcon from './assets/images/menu-icon.svg';
 import closeIcon from './assets/images/close-icon.svg';
+import ToTopButton from "./components/slides/footer/ToTopButton";
 
 const Footer = lazy(() => import('./components/slides/footer/footer'));
 const Header = lazy(() => import('./components/header/Header'));
@@ -148,6 +149,7 @@ class RoshanWebsite extends Component {
                         >
                             <MenuLinks/>
                         </Menu>
+                        <ToTopButton/>
                         <Fullpage
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}
