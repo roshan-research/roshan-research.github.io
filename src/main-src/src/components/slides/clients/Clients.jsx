@@ -56,7 +56,6 @@ class Clients extends Component {
                 <div id={'customers'}>
                     <div id={'web-all'}>
                         <ClientsDesktop id={'web'} status={shouldRender(this.props.scrollQuantity)}/>
-                        <ToTopButton/>
                     </div>
                 </div>
             </article>
