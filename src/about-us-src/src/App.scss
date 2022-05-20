@@ -67,6 +67,27 @@
 }
 
 
+.my-button {
+  position: absolute;
+  margin-top: 2.5vw;
+  z-index: 1000;
+  margin-left: 6vw;
+}
+
+.menu {
+  padding-top: 5vw;
+  background-color: #0A0A0A;
+  z-index: 5;
+}
+
+.items {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+  flex-direction: column;
+}
+
+
 @media screen and (max-width: 600px){
   #about-us {
     display: flex;
@@ -93,6 +114,11 @@
     width: 16vw;
     margin-left: 75vw;
   }
+
+  .my-button {
+    margin-top: 6.5vw;
+    margin-left: 7vw;
+  }
 }
 
 #mobile-menu {
@@ -109,24 +135,4 @@
   #mobile-menu {
     display: none;
   }
-}
-
-.my-button {
-  position: absolute;
-  margin-top: 2vw;
-  z-index: 1000;
-  margin-left: 5vw;
-}
-
-.menu {
-  padding-top: 5vw;
-  background-color: #0A0A0A;
-  z-index: 5;
-}
-
-.items {
-  display: flex;
-  justify-content: start;
-  align-items: center;
-  flex-direction: column;
 }
