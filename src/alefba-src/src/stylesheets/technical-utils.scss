@@ -9,6 +9,7 @@
   font-family: iran-yekan, serif;
 }
 
+
 #side-utils{
   margin-top: 50vh;
   position: absolute;
@@ -35,9 +36,10 @@
 
 #utils-wrapper{
   display: flex;
-  justify-content: space-between;
+  justify-content: space-around;
   flex-direction: row;
-  width:65vw;
+  width:70vw;
+  margin-right: 5vw;
 }
 
 .util-icon{
@@ -119,7 +121,40 @@
   display: none;
 }
 
+#right2-icon, #right1-icon, #left2-icon, #left1-icon {
+  position: absolute;
+}
+
+#right1-icon {
+  margin-top: -15vw;
+  margin-right: -13vw;
+  width: 15.6vw;
+}
+
+#right2-icon{
+  margin-top: -10vw;
+  margin-right: -12vw;
+  width: 13.2vw;
+}
+
+#left1-icon {
+  margin-top: -10vw;
+  margin-right: 10vw;
+  width: 15.6vw;
+}
+
+#left2-icon {
+  margin-top: -10vw;
+  margin-right: +10vw;
+  width: 15.6vw;
+}
+
 @media screen and (max-width: 500px){
+
+  #right2-icon, #right1-icon, #left2-icon, #left1-icon {
+    display: none;
+  }
+
   #utils-title{
     font-size: 5.1vw;
   }
@@ -202,6 +237,7 @@
 
   #accuracy{
     display: block;
+    position: absolute;
     height:29vh;
     width:40vw;
     margin-right:52vw;

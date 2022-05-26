@@ -20,7 +20,7 @@ function App() {
         <SampleSection/>
         <div id={'sample-footer-space'}/>
         <Catalog/>
-        <div id={'sample-footer-space'}/>
+        <div id={'catalog-footer-space'}/>
         <Footer/>
     </div>
   );
