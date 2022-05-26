@@ -1,6 +1,9 @@
 @font-face {
   font-family: iranyekan;
   src: url("./assets/fonts/IRANYekan.ttf"); }
+#all-container {
+  overflow: hidden; }
+
 * {
   font-family: iranyekan, serif;
   color: white;
