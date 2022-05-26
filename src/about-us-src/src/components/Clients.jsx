@@ -22,22 +22,22 @@ const Clients = () => {
             </p>
             <div id={'clients-pics'}>
                 <div id={'clients-row1'}>
-                    <img className={'client-pic'} src={filimo} alt={''}/>
-                    <img className={'client-pic'} src={aparat} alt={''}/>
-                    <img className={'client-pic'} src={naft} alt={''}/>
-                    <img className={'client-pic'} src={mokhaberat} alt={''}/>
-                    <img className={'client-pic'} src={ketabkhone} alt={''}/>
+                    <div className={'client-pic'}><img id={'filimo'} src={filimo} alt={''}/></div>
+                    <div className={'client-pic'}><img id={'aparat'} src={aparat} alt={''}/></div>
+                    <div className={'client-pic'}><img id={'naft'} src={naft} alt={''}/></div>
+                    <div className={'client-pic'}><img id={'mokhaberat'} src={mokhaberat} alt={''}/></div>
+                    <div className={'client-pic'}><img id={'ketabkhone'} src={ketabkhone} alt={''}/></div>
                 </div>
                 <div id={'united-columns'}>
                     <div id={'clients-row2'}>
-                        <img className={'client-pic'} src={tamasha} alt={''}/>
-                        <img className={'client-pic'} src={varzesh3} alt={''}/>
-                        <img className={'client-pic'} src={jahad} alt={''}/>
+                        <div className={'client-pic'}><img id={'tamasha'} src={tamasha} alt={''}/></div>
+                        <div className={'client-pic'}><img id={'varzesh3'} src={varzesh3} alt={''}/></div>
+                        <div className={'client-pic'}><img id={'jahad'} src={jahad} alt={''}/></div>
                     </div>
                     <div id={'clients-row3'}>
-                        <img className={'client-pic'} src={farabi} alt={''}/>
-                        <img className={'client-pic'} src={parsian} alt={''}/>
-                        <img className={'client-pic'} src={astan} alt={''}/>
+                        <div className={'client-pic'}><img id={'farabi'} src={farabi} alt={''}/></div>
+                        <div className={'client-pic'}><img id={'parsian'} src={parsian} alt={''}/></div>
+                        <div className={'client-pic'}><img id={'astan'} src={astan} alt={''}/></div>
                     </div>
                 </div>
             </div>

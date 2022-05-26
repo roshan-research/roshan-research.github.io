@@ -1,14 +1,15 @@
 #clients {
-  width: 80vw;
+  width: 85vw;
   margin-top: 20vh;
-  margin-left: 10vw;
+  margin-left: 7.5vw;
   display: flex;
   justify-content: space-around;
-  align-items: center; }
+  align-items: start; }
 
 #clients-motto {
-  font-size: 2.7vw;
+  font-size: 2.8vw;
   width: 15vw;
+  line-height: 3.5vw;
   text-align: right;
   font-weight: bolder; }
 
@@ -19,7 +20,12 @@
   flex-direction: column; }
 
 .client-pic {
-  width: 10vw; }
+  width: 10.9vw;
+  border: 1px solid #4A4E57;
+  height: 10.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center; }
 
 #clients-row1 {
   display: flex;
@@ -35,22 +41,92 @@
   display: flex;
   justify-content: end;
   align-items: center;
-  width: 50vw; }
+  width: 55.05vw; }
 
+#filimo {
+  width: 7vw; }
+
+#aparat {
+  width: 7vw; }
+
+#naft {
+  width: 5vw; }
+
+#mokhaberat {
+  width: 4.5vw; }
+
+#ketabkhone {
+  width: 4vw; }
+
+#tamasha {
+  width: 3.5vw; }
+
+#varzesh3 {
+  width: 3.1vw; }
+
+#jahad {
+  width: 6.3vw; }
+
+#farabi {
+  width: 3.5vw; }
+
+#parsian {
+  width: 3.5vw; }
+
+#astan {
+  width: 3.9vw; }
+
+@media screen and (max-width: 600px) {
+  #filimo {
+    width: 26vw; }
+
+  #aparat {
+    width: 26vw; }
+
+  #naft {
+    width: 18.5vw; }
+
+  #mokhaberat {
+    width: 16.5vw; }
+
+  #ketabkhone {
+    width: 14.7vw; }
+
+  #tamasha {
+    width: 13vw; }
+
+  #varzesh3 {
+    width: 11.4vw; }
+
+  #jahad {
+    width: 23.2vw; }
+
+  #farabi {
+    width: 12.8vw; }
+
+  #parsian {
+    width: 12.8vw; }
+
+  #astan {
+    width: 14.5vw; } }
 @media screen and (max-width: 600px) {
   #clients {
     width: 90vw;
-    margin-left: 10vw;
+    margin-left: 12.5vw;
     flex-direction: column;
-    margin-top: 5vh; }
+    margin-top: 5vh;
+    align-items: center; }
 
   #clients-motto {
-    width: 45vw;
+    width: 40vw;
     text-align: center;
-    font-size: 7vw; }
+    font-size: 7vw;
+    line-height: 10vw;
+    margin-right: 12vw; }
 
   .client-pic {
-    width: 40vw; }
+    width: 40vw;
+    height: 40vw; }
 
   #clients-pics {
     justify-content: center;
