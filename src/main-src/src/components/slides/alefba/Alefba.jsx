@@ -7,8 +7,6 @@ import React from "react";
 import {motion} from "framer-motion";
 import {flowerAnimation} from "../../../animations/kashf-image";
 import {noneAnimation} from "../../../animations/main-page";
-import ToTopButton from "../footer/ToTopButton";
-import HamburgerMenuSlides from "../../header/HamburgerMenuSlides";
 
 const animationChooser = (scrollQuantity) => {
     switch (scrollQuantity) {
@@ -29,7 +27,6 @@ const returnBasedOneDevice = ({scrollQuantity}) => {
     } else {
         return(
             <div id={'web'}>
-                <HamburgerMenuSlides/>
                 <div id={'text'}>
                     <AlefbaWebText status={scrollQuantity}/>
                 </div>
@@ -44,7 +41,6 @@ const returnBasedOneDevice = ({scrollQuantity}) => {
                         animate={"visible"}
                     />
                 </div>
-                <ToTopButton/>
             </div>
         )
     }

@@ -3,8 +3,13 @@ import {Fullpage,Slide} from 'fullpage-react';
 import './App.scss';
 import {isOpera, isSafari} from "react-device-detect";
 import {loadingAnimation} from "./animations/main-page";
+import { slide as Menu } from 'react-burger-menu';
 import {motion} from 'framer-motion'
 import ProgressIndicator from "./components/ProgressIndicator";
+import MenuLinks from "./components/MenuLinks";
+import burgerIcon from './assets/images/menu-icon.svg';
+import closeIcon from './assets/images/close-icon.svg';
+import ToTopButton from "./components/slides/footer/ToTopButton";
 
 const Footer = lazy(() => import('./components/slides/footer/footer'));
 const Header = lazy(() => import('./components/header/Header'));
@@ -125,6 +130,26 @@ class RoshanWebsite extends Component {
                     className={this.state.id}
                 >
                     <div id={'all-page'}>
+                        <Menu
+                            menuClassName={ "menu" }
+                            itemListElement="div"
+                            burgerButtonClassName={ "my-button" }
+                            pageWrapId={ "all-page" }
+                            itemListClassName={ "menu-items" }
+                            crossButtonClassName={ "my-cross" }
+                            outerContainerId={ "main" }
+                            customBurgerIcon={
+                                <img src={burgerIcon} alt={''}/>
+                            }
+                            customCrossIcon={
+                                <div>
+                                    <img src={closeIcon} alt={''}/>
+                                </div>
+                            }
+                        >
+                            <MenuLinks/>
+                        </Menu>
+                        <ToTopButton/>
                         <Fullpage
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}

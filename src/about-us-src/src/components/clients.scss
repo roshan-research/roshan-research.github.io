@@ -1,0 +1,110 @@
+#clients {
+  width: 85vw;
+  margin-top: 20vh;
+  margin-left: 7.5vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: start;
+}
+
+#clients-motto {
+  font-size: 2.8vw;
+  width: 15vw;
+  line-height: 3.5vw;
+  text-align: right;
+  font-weight: bolder;
+}
+
+#clients-pics {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.client-pic {
+  width: 10.9vw;
+  border: 1px solid #4A4E57;
+  height: 10.9vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients-row1 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients-row2 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#clients-row3 {
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  width: 55.05vw;
+}
+
+@import "icons.scss";
+
+@media screen and (max-width: 600px){
+  #clients {
+    width: 90vw;
+    margin-left: 12.5vw;
+    flex-direction: column;
+    margin-top: 5vh;
+    align-items: center;
+  }
+
+  #clients-motto {
+    width: 40vw;
+    text-align: center;
+    font-size: 7vw;
+    line-height: 10vw;
+    margin-right: 12vw;
+  }
+
+  .client-pic {
+    width: 40vw;
+    height: 40vw;
+  }
+
+  #clients-pics {
+    justify-content: center;
+    align-items: start;
+    flex-direction: row;
+  }
+
+  #clients-row1 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #clients-row2 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  #clients-row3 {
+    display: flex;
+    justify-content: center;
+    align-items: start;
+    flex-direction: column;
+  }
+
+  #united-columns {
+    justify-content: center;
+    align-items: start;
+    display: flex;
+    flex-direction: column;
+  }
+}

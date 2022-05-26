@@ -1,0 +1,99 @@
+#menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  height: 30vh;
+  margin-top: 7vw;
+}
+
+#menu-contents {
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-link {
+  transition: 1s;
+  color: white;
+  font-family: iran-yekan, serif;
+  font-size: 1.3vw;
+}
+
+.menu-link:hover {
+  color: #4286F5;
+}
+
+#company-name {
+  margin-top: 50vh;
+  font-family: iran-yekan, serif;
+  color: white;
+  font-size: 0.8vw;
+}
+
+.my-button {
+  width: 3vw;
+  position: fixed;
+  margin-top: 2.2vw;
+  transition: 0.2s;
+  margin-right: 88vw;
+}
+
+.my-button:active, .my-cross:active {
+  transform: scale(0.8);
+}
+
+.menu {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #0A0A0A;
+  position: absolute;
+  margin-right: 80vw;
+  width: 20vw;
+}
+
+.my-cross {
+  margin-right: 80vw;
+  margin-top: 1vw;
+  transition: 0.2s;
+}
+
+.menu-items {
+  display: flex;
+  margin-right: -3vw;
+  justify-content: center;
+  align-items: center;
+}
+
+@media screen and (max-width: 600px){
+  #company-name {
+    display: none;
+  }
+
+  #menu-links {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  #menu-contents {
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-link {
+    font-size: 6.5vw;
+  }
+
+  .my-button {
+    display: none;
+  }
+
+  .menu {
+    display: none;
+  }
+}

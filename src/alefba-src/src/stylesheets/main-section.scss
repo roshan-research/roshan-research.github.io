@@ -11,6 +11,7 @@
   align-items: center;
   height:4.166666666666666vh;
   width:5.46875vw;
+  margin-right: -6vw;
 }
 
 #title{
@@ -128,39 +129,6 @@
 }
 
 
-#catalog-button {
-  p {
-    color: white;
-    font-size: 1.1vw;
-    line-height: 1.5vw;
-  }
-
-  img {
-    width: 0.8vw;
-  }
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 11vw;
-  border-radius: 0;
-  border-style: solid;
-  border-color: #ff6200;
-  border-width: 1px;
-}
-
-#catalog-button:hover {
-  background-color: rgba(255, 98, 0, 0.6);
-}
-
-.catalog-link {
-  position: absolute;
-  margin-top: 30vw;
-  margin-left: 76vw;
-  z-index: 100;
-}
-
-
 @media screen and (max-width: 500px){
 
   #hamburger-button{
@@ -180,9 +148,10 @@
 
   #icon-title-group{
     width:20vw;
+    margin-right: 0;
   }
 
-  #pattern{
+  #pattern {
     margin-top: -20vh;
     width: auto;
     position: relative;

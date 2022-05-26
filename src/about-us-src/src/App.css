@@ -1,0 +1,163 @@
+@font-face {
+  font-family: iranyekan;
+  src: url("./assets/fonts/IRANYekan.ttf"); }
+#all-container {
+  overflow: hidden; }
+
+* {
+  font-family: iranyekan, serif;
+  color: white;
+  transition: 1s; }
+
+#about-us {
+  background-color: black; }
+
+#title {
+  font-weight: bold;
+  font-size: 2.9vw;
+  width: 19vw;
+  text-align: center;
+  line-height: 130%; }
+
+#description {
+  font-size: 1vw;
+  width: 33vw;
+  text-align: right;
+  direction: rtl; }
+
+#in-god {
+  font-size: 0.9vw; }
+
+#texts {
+  padding-top: 15vw;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding-bottom: 15vw; }
+
+#logo {
+  position: absolute;
+  margin-top: 3vw;
+  margin-left: 90vw;
+  width: 4.5vw; }
+
+::-webkit-scrollbar {
+  width: 15px;
+  height: 15px; }
+
+::-webkit-scrollbar-track {
+  box-shadow: inset 10 10 10px black;
+  background: black; }
+
+::-webkit-scrollbar-thumb {
+  background: #C4C4C4;
+  border-radius: 25px;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box; }
+
+::-webkit-scrollbar-thumb:hover {
+  background: #4286F5;
+  border: 4px solid rgba(0, 0, 0, 0);
+  background-clip: padding-box; }
+
+.my-button {
+  position: absolute;
+  margin-top: 2.5vw;
+  z-index: 1000;
+  margin-left: 6vw; }
+
+.menu {
+  background-color: #0A0A0A;
+  z-index: 5; }
+
+.menu-items {
+  display: flex;
+  justify-content: start;
+  align-items: end;
+  flex-direction: column; }
+
+.my-cross {
+  transform: scale(1.2);
+  margin-top: 1vw;
+  transition: 0.1s;
+  margin-right: 1vw; }
+
+.my-cross:active {
+  transform: scale(1); }
+
+.my-button {
+  transition: 0.4s;
+  position: absolute;
+  margin-top: 2.5vw;
+  margin-left: 6vw;
+  width: 3vw; }
+
+.my-button:active {
+  transform: scale(0.5); }
+
+@media screen and (max-width: 600px) {
+  #about-us {
+    display: flex;
+    flex-direction: column; }
+
+  #texts {
+    margin-top: 15vw;
+    flex-direction: column-reverse; }
+
+  #title {
+    font-size: 5.5vw;
+    width: 70vw; }
+
+  #description {
+    width: 75vw;
+    font-size: 4.3vw; }
+
+  #logo {
+    margin-top: 10vw;
+    width: 16vw;
+    margin-left: 75vw; }
+
+  #in-god {
+    font-size: 3.6vw; }
+
+  .my-button {
+    margin-top: 8vw;
+    width: 10vw;
+    margin-left: 9vw;
+    display: none; }
+
+  .menu-items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; }
+
+  .menu {
+    display: none; }
+
+  .my-cross {
+    display: none; } }
+#mobile-menu {
+  background-color: black;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  z-index: 5000;
+  flex-direction: column;
+  display: none; }
+
+#mobile-menu-button {
+  display: none;
+  position: absolute;
+  margin-left: 9vw;
+  margin-top: 6vw; }
+
+@media screen and (max-width: 600px) {
+  #mobile-menu {
+    display: flex; }
+
+  #mobile-menu-button {
+    display: flex; } }
+
+/*# sourceMappingURL=App.css.map */

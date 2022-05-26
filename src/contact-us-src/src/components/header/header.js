@@ -5,6 +5,8 @@ import Navbar from "./navigation-bar/navbar";
 import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
 import ContactUsButton from "./navigation-bar/links-group/contact-us-button/contact-us-button";
+import mapImage from "../../assets/images/Map.svg";
+import isMobile from 'react-device-detect'
 
 const ContactUsPage = lazy(() => import("./contact-us-page/ContactusPage"));
 
@@ -47,6 +49,15 @@ export default class Header extends Component {
                         toggle={this.toggle}
                         isOpen={this.state.isOpen}
                     />
+                    <img src={mapImage} className={this.state.isOpen ? 'hidden-image': ''} id={'map-image'} alt={''}/>
+                    <a
+                        id={'navigation-button'}
+                        href={isMobile? "geo:35.7113,51.4105;u=35" : "https://goo.gl/maps/ms3rUPvSMtsscEXr9"}
+                    >
+                        مسیریابی
+                        &nbsp;
+                        &#10095;
+                    </a>
                     {this.reactToToggles()}
                 </div>
             </div>

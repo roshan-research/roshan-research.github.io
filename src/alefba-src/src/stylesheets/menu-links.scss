@@ -1,0 +1,55 @@
+#menu-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  flex-direction: column;
+  height: 30vh;
+  margin-top: 7vw;
+}
+
+#menu-contents {
+  padding-right: 2vw;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.menu-link {
+  color: white;
+  font-family: iran-yekan, serif;
+  font-size: 1.3vw;
+}
+
+.menu-link:hover {
+  color: #ff6200;
+}
+
+#company-name {
+  margin-top: 50vh;
+  color: white;
+  font-size: 0.8vw;
+}
+
+@media screen and (max-width: 600px){
+  #company-name {
+    display: none;
+  }
+
+  #menu-links {
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    height: 40vh;
+  }
+
+  #menu-contents {
+    padding-right: 0;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+  }
+
+  .menu-link {
+    font-size: 6.5vw;
+  }
+}

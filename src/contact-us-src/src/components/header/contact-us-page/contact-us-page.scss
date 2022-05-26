@@ -3,6 +3,9 @@
   src: url(../../../assets/IRANYekan.ttf);
 }
 
+#address-text {
+  width: 20vw;
+}
 .contact-us-page{
   display: flex;
   justify-content: center;
@@ -50,7 +53,6 @@ p{
 }
 
 #email-row{
-  margin-top: 3.5vw;
   height:auto;
   display: flex;
   justify-content: flex-start;
@@ -96,10 +98,8 @@ p{
 @media screen and (max-width: 600px){
 
   #main-image {
-    margin-top: 5vh;
     width: 75vw;
     height: 75vw;
-    margin-bottom: 5vh;
   }
 
   .contact-us-page{
@@ -111,7 +111,6 @@ p{
   }
 
   #body-text{
-    margin-top: 6vw;
     height:auto;
     width:77vw;
   }
@@ -121,7 +120,6 @@ p{
   }
 
   #email-row{
-    margin-top: 15vw;
     height:auto;
   }
 
@@ -143,8 +141,20 @@ p{
     display: flex;
     flex-direction: column;
     height: fit-content;
-    overflow: scroll;
-    margin-top: 10vw;
+    overflow: hidden;
+    width: 100vw;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #texts-links {
+    height: auto;
+    z-index: 1000;
+    width: 80vw;
+  }
+
+  #address-text {
+    width: 70vw;
   }
 }
 
@@ -172,4 +182,18 @@ a{
 
 a:hover {
   color: #7AB8FF;
+}
+
+@media screen and (max-width: 600px) {
+  #image-wrapper {
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 60% 40%;
+    background-image: url("../../../assets/images/Map.svg");
+  }
 }
