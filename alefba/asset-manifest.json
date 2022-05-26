@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.ef279eac.chunk.css",
-    "main.js": "/alefba/static/js/main.ade2c134.chunk.js",
-    "runtime-main.js": "/alefba/static/js/runtime-main.3ea6920a.js",
-    "static/js/2.ebc5f8bc.chunk.js": "/alefba/static/js/2.ebc5f8bc.chunk.js",
-    "static/js/3.8a461e52.chunk.js": "/alefba/static/js/3.8a461e52.chunk.js",
+    "main.css": "/alefba/static/css/main.816f1fa5.chunk.css",
+    "main.js": "/alefba/static/js/main.0359eaeb.chunk.js",
+    "runtime-main.js": "/alefba/static/js/runtime-main.f7d8e51d.js",
+    "static/js/2.11ee4724.chunk.js": "/alefba/static/js/2.11ee4724.chunk.js",
+    "static/js/3.a38597c3.chunk.js": "/alefba/static/js/3.a38597c3.chunk.js",
     "index.html": "/alefba/index.html",
-    "static/js/2.ebc5f8bc.chunk.js.LICENSE.txt": "/alefba/static/js/2.ebc5f8bc.chunk.js.LICENSE.txt",
+    "static/js/2.11ee4724.chunk.js.LICENSE.txt": "/alefba/static/js/2.11ee4724.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/alefba/static/media/IRANYekan.b916444e.ttf",
     "static/media/Sher.6255042b.svg": "/alefba/static/media/Sher.6255042b.svg",
     "static/media/TarazNameh.122d732b.svg": "/alefba/static/media/TarazNameh.122d732b.svg",
@@ -14,7 +14,7 @@
     "static/media/businesses.f577862c.png": "/alefba/static/media/businesses.f577862c.png",
     "static/media/deep-mobile.82e534f6.svg": "/alefba/static/media/deep-mobile.82e534f6.svg",
     "static/media/dot.5ee81e2f.svg": "/alefba/static/media/dot.5ee81e2f.svg",
-    "static/media/download-icon.9e940408.svg": "/alefba/static/media/download-icon.9e940408.svg",
+    "static/media/download-icon.4f55bff8.svg": "/alefba/static/media/download-icon.4f55bff8.svg",
     "static/media/kart-melli.049f8a5a.svg": "/alefba/static/media/kart-melli.049f8a5a.svg",
     "static/media/left-1.7dbf4a6b.svg": "/alefba/static/media/left-1.7dbf4a6b.svg",
     "static/media/left-1.a1b73bdb.svg": "/alefba/static/media/left-1.a1b73bdb.svg",
@@ -42,9 +42,9 @@
     "static/media/side.9e3ce4f0.svg": "/alefba/static/media/side.9e3ce4f0.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.3ea6920a.js",
-    "static/js/2.ebc5f8bc.chunk.js",
-    "static/css/main.ef279eac.chunk.css",
-    "static/js/main.ade2c134.chunk.js"
+    "static/js/runtime-main.f7d8e51d.js",
+    "static/js/2.11ee4724.chunk.js",
+    "static/css/main.816f1fa5.chunk.css",
+    "static/js/main.0359eaeb.chunk.js"
   ]
 }

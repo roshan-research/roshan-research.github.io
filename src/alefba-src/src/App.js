@@ -5,6 +5,7 @@ import UsagesSection from "./components/UsagesSection";
 import TechnicalUtils from "./components/TechnicalUtils";
 import SampleSection from "./components/SampleSection";
 import Footer from "./components/Footer";
+import Catalog from "./components/Catalog";
 
 function App() {
   return (
@@ -17,6 +18,8 @@ function App() {
         <TechnicalUtils/>
         <div id={'utils-sample-space'}/>
         <SampleSection/>
+        <div id={'sample-footer-space'}/>
+        <Catalog/>
         <div id={'sample-footer-space'}/>
         <Footer/>
     </div>

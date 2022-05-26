@@ -19,7 +19,9 @@ function App() {
     return (
       <div id={'all-container'}>
           <Menu
-
+              onStateChange={(details) => {
+                  console.log(details);
+              }}
               menuClassName={ "menu" }
               itemListElement="div"
               burgerButtonClassName={ "my-button" }
