@@ -11,6 +11,7 @@
   align-items: center;
   height:4.166666666666666vh;
   width:5.46875vw;
+  margin-right: -6vw;
 }
 
 #title{
@@ -147,9 +148,10 @@
 
   #icon-title-group{
     width:20vw;
+    margin-right: 0;
   }
 
-  #pattern{
+  #pattern {
     margin-top: -20vh;
     width: auto;
     position: relative;
