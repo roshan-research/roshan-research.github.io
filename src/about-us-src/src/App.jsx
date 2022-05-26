@@ -1,8 +1,8 @@
 import './App.scss';
 import { Carousel } from 'react-responsive-carousel';
-import pic1 from './assets/images/pic1.svg';
-import pic2 from './assets/images/pic2.svg';
-import pic3 from './assets/images/pic3.svg';
+import pic1 from './assets/images/pic1.jpg';
+import pic2 from './assets/images/pic2.jpg';
+import pic3 from './assets/images/pic3.jpg';
 import logo from './assets/images/logo.svg';
 import Footer from "./components/Footer";
 import { slide as Menu } from 'react-burger-menu'
@@ -90,11 +90,14 @@ function App() {
                       id={'pics'}
                       autoPlay={true}
                       emulateTouch={true}
-                      infiniteLoop={true}
+                      infiniteLoop={false}
                       width={'100%'}
-                      showArrows={false}
-                      showIndicators={false}
+                      showArrows={true}
+                      showIndicators={true}
                       showStatus={false}
+                      transitionTime={1000}
+                      useKeyboardArrows={true}
+                      showThumbs={false}
                   >
                       <div>
                           <img src={pic1} alt={''}/>
