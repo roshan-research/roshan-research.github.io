@@ -1,6 +1,6 @@
 import downloadIcon from '../assets/images/samples/download-icon.svg';
 import '../stylesheets/catalog.scss';
-import catalogCover from '../assets/images/catalog-cover.png';
+import catalogCover from '../assets/images/catalog-cover.svg';
 
 const Catalog = () => {
     return (
