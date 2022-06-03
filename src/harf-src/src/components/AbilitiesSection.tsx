@@ -22,7 +22,7 @@ const AbilitiesSection = () => {
     };
 
     const beforeStyleText = {
-        color: '#FF6200'
+        color: '#26FF7B'
     };
     const afterStyleText = {
         color: 'black'
@@ -38,7 +38,7 @@ const AbilitiesSection = () => {
     return(
         <div id={'abilities'}>
             <p id={'abilities-title'}>
-                قابلیت‌های الفبا
+                قابلیت‌های حرف
             </p>
             <div id={'side'}>
                 <Side id={'side-main'}/>
@@ -75,20 +75,6 @@ const AbilitiesSection = () => {
                             اصلاح نویز، چرخش و سایه تصویر برای دقیق‌تر خواندن متن
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'left-3'}>
-                        <Left3 className={'ability-icon'}/>
-                        <div className={'title-stack'}>
-                            <p className={'black-text'} style={left3InView? afterStyleText : beforeStyleText}>
-                                خواندن حرکت‌های حروف
-                            </p>
-                            <p className={'black-text-background'} ref={left3Ref} style={left3InView? afterStyle : beforeStyle}>
-                                خواندن حرکت‌های حروف
-                            </p>
-                        </div>
-                        <p className={'white-text'}>
-                            خواندن نوشته‌ها و حذف حرکت‌ها از عبارت های فارسی یا عربی مثل آیات قرآن کریم
-                        </p>
-                    </div>
                 </div>
                 <div id={'right'}>
                     <div className={'ability-group'} id={'right-1'}>
@@ -117,20 +103,6 @@ const AbilitiesSection = () => {
                         </div>
                         <p className={'white-text'}>
                             چیدن عنوان، متن، تصویر و جدول در صفحه نتیجه، برای حفظ ساختار سند مورد تحلیل
-                        </p>
-                    </div>
-                    <div className={'ability-group'} id={'right-3'}>
-                        <Right3 className={'ability-icon'}/>
-                        <div className={'title-stack'}>
-                            <p className={'black-text'} style={right3InView? afterStyleText : beforeStyleText}>
-                                اطمینان از درستی
-                            </p>
-                            <p className={'black-text-background'} ref={right3Ref} style={right3InView? afterStyle : beforeStyle}>
-                                اطمینان از درستی
-                            </p>
-                        </div>
-                        <p className={'white-text'}>
-                            مشخص کردن بخش‌هایی از نوشته که با تردید خوانده شده‌اند برای بازنگری توسط انسان
                         </p>
                     </div>
                 </div>

@@ -30,7 +30,7 @@ const TechnicalUtils = () => {
     };
 
     const beforeStyleText = {
-        color: '#FF6200'
+        color: '#26FF7B'
     };
     const afterStyleText = {
         color: 'black'
