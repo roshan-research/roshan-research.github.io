@@ -7,9 +7,9 @@ const Catalog = () => {
         <div id={'catalog'}>
             <div id={'catalog-right'}>
                 <p id={'catalog-description'}>
-                    برای آشنایی بیشتر با امکانات الفبا،
+                    برای آشنایی بیشتر با امکانات حرف،
                     <br/>
-                    کاتالوگ الفبا را دریافت فرمایید
+                    کاتالوگ حرف را دریافت فرمایید
                 </p>
                 <a
                     href={'https://www.roshan-ai.ir/catalog.pdf/'}
@@ -20,7 +20,7 @@ const Catalog = () => {
                     <div id={'catalog-button'}>
                         <img src={downloadIcon} alt={''}/>
                         <p>
-                            کاتالوگ الفبا
+                            کاتالوگ حرف
                         </p>
                     </div>
                 </a>

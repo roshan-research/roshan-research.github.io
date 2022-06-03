@@ -2,6 +2,7 @@ import '../stylesheets/usages-section.scss';
 import BusinessImage from '../assets/images/usages/businesses.png';
 import OrganizationsImage from '../assets/images/usages/organizations.png';
 import LibrariesImage from '../assets/images/usages/libraries.png';
+import Archive from '../assets/images/usages/archive.png';
 import { useInView } from 'react-intersection-observer';
 import {isMobile} from 'react-device-detect';
 
@@ -20,11 +21,12 @@ const UsagesSection = () => {
     const [businessesRef,businessesInView] = useInView(observerOptions);
     const [organizationsRef,organizationsInView] = useInView(observerOptions);
     const [librariesRef,librariesInView] = useInView(observerOptions);
+    const [archiveRef,archiveInView] = useInView(observerOptions);
 
     return(
         <div>
             <p id={'usages-title'}>
-                کاربردهای الفبا
+                کاربردهای حرف
             </p>
             <div id={'space-4'}/>
             <div id={'usages-section'}>
@@ -32,10 +34,10 @@ const UsagesSection = () => {
                 <div id={'in-businesses'} ref={businessesRef} style={businessesInView? afterFade : beforeFade}>
                     <img src={BusinessImage} id={'business-image'} alt={''}/>
                     <p className={'orange-text-usages'}>
-                        در کسب‌و‌کار‌ها
+                        تایپ گفتاری
                     </p>
                     <p className={'white-text-usages'}>
-                        فایل‌های PDF فارسی، سال‌ها درست حروف‌چینی نشده‌اند و برای امکان جستجو در آنها، باید مجدد دیجیتال شوند.
+                        تایپ کردن متن با استفاده از دکمه‌های فراوان صفحه کلید، سخت است. در دنیای جدید با خواندن متن آن را دیجیتال می‌کنیم.
                     </p>
                 </div>
                 <div>
@@ -43,10 +45,10 @@ const UsagesSection = () => {
                     <div id={'in-organizations'} ref={organizationsRef}  style={organizationsInView? afterFade : beforeFade}>
                         <img src={OrganizationsImage} id={'organization-image'} alt={''}/>
                         <p className={'orange-text-usages'}>
-                            در سازمان ها
+                            تعامل گفتاری
                         </p>
                         <p className={'white-text-usages'}>
-                            روزی فرا می‌رسد که «دولت الکترونیک» محقق شده است و نامه‌ها و پرونده‌های دیجیتال به آسانی بازیابی می‌شوند.
+                            ابزارهای هوشمند در شکل‌ها و اندازه‌های مختلف وارد زندگی ما می‌شوند. ارتباط کلامی با این ابزارها، راحت‌ترین راه تعامل است.
                         </p>
                     </div>
                 </div>
@@ -55,12 +57,22 @@ const UsagesSection = () => {
                     <div id={'in-libraries'} ref={librariesRef}  style={librariesInView? afterFade : beforeFade}>
                         <img src={LibrariesImage} id={'library-image'} alt={''}/>
                         <p className={'orange-text-usages'}>
-                            در کتابخانه
+                            پیاده‌سازی جلسات
                         </p>
                         <p className={'white-text-usages'}>
-                            صفحه‌های کتاب، لا‌به‌لای قفسه‌های کتابخانه منتظر ورود به دنیای نو هستند تا مخاطب به راحتی آنها را بخواند.
+                            صحبت‌هایی که در جلسه‌های حضوری یا مجازی، رد و بدل می‌شوند، مهم هستند و برای رجوع به آنها لازم است متن هر جلسه را داشته باشیم.
                         </p>
                     </div>
+                </div>
+                <div id={'space-5'}/>
+                <div id={'in-archives'} ref={archiveRef} style={archiveInView? afterFade : beforeFade}>
+                    <img src={Archive} id={'business-image'} alt={''}/>
+                    <p className={'orange-text-usages'}>
+                        جستجو در آرشیو
+                    </p>
+                    <p className={'white-text-usages'}>
+                        داده‌های ویدئویی با سرعت بسیار بالا در حال زیاد شدن هستند. پیاده‌سازی متن ویدئوها می‌تواند پیدا کردن یک محتوای خاص را آسان کند.
+                    </p>
                 </div>
             </div>
         </div>
