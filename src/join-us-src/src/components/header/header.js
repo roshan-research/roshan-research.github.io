@@ -29,11 +29,18 @@ class Header extends Component {
         if (this.state.isOpen) {
             return (
                 <div id={'compact-menu'}>
-                    <a href={'https://www.roshan-ai.ir/'}>
-                        <HomeButton id={'home'}/>
+                    <a href={'https://www.roshan-ai.ir/'} id={'mobile-menu-link'}>
+                        روشن
                     </a>
-                    <ContactUsButton />
-                    <JoinUsButton />
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        درباره ما
+                    </a>
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        تماس با ما
+                    </a>
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        همکاری با ما
+                    </a>
                 </div>
             )
         } else {

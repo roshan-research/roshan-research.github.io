@@ -25,24 +25,23 @@
   width:2.34375vw;
 }
 
-#contact-link{
-  text-decoration: none;
-  color: white;
-  font-size: 6vw;
+#mobile-links-wrapper {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 30vw;
   width: 40vw;
-  height: 10vh;
-  margin-left: 17.5vw;
-  font-family: iran-yekan, serif;
+  flex-direction: column;
 }
 
-#join-link{
+.mobile-menu-link{
   text-decoration: none;
   color: white;
-  font-family: iran-yekan, serif;
+  text-align: center;
   font-size: 6vw;
   width: 40vw;
   height: 10vh;
-  margin-left: 15vw;
+  font-family: iran-yekan, serif;
 }
 
 #orange-text{
@@ -93,9 +92,6 @@
   justify-content: center;
   align-items: center;
   height: 100vh;
-  margin-top: -5vh;
-  margin-left: 20vw;
-  margin-right: 20vw;
   position: absolute;
 }
 

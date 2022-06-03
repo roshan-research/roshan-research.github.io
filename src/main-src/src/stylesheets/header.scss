@@ -5,14 +5,23 @@
   justify-content: center;
 }
 
+#mobile-menu-link {
+  font-family: iran-yekan, serif;
+  color: white;
+  text-decoration: none;
+  font-size: 6.2vw;
+  width: 40vw;
+  text-align: center;
+}
+
 #compact-menu{
-  height: 22.66vh;
+  margin-top: 20vh;
+  height: 45.66vh;
   width: 28.61vw;
-  margin-top: 27.34vh;
   margin-right: 36.11vw;
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  justify-content: space-around;
   align-items: center;
 }
 
