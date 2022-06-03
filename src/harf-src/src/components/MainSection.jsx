@@ -42,16 +42,28 @@ const MainSection = () => {
                 <IconTitle/>
             </div>
             <div id={'menu-screen'} style={isOpen ? displayBlockStyle : displayNoneStyle}>
-                <a href='https://www.roshan-ai.ir/contact-us/'>
-                    <p id={'contact-link'}>
-                        تماس با ما
-                    </p>
-                </a>
-                <a href='https://www.roshan-ai.ir/join-us/'>
-                    <p id={'join-link'}>
-                        همکاری با ما
-                    </p>
-                </a>
+                <div id={'mobile-links-wrapper'}>
+                    <a href='https://www.roshan-ai.ir/'>
+                        <p className={'mobile-menu-link'}>
+                            روشن
+                        </p>
+                    </a>
+                    <a href='https://www.roshan-ai.ir/contact-us/'>
+                        <p className={'mobile-menu-link'}>
+                            تماس با ما
+                        </p>
+                    </a>
+                    <a href='https://www.roshan-ai.ir/join-us/'>
+                        <p className={'mobile-menu-link'}>
+                            همکاری با ما
+                        </p>
+                    </a>
+                    <a href='https://www.roshan-ai.ir/about-us/'>
+                        <p className={'mobile-menu-link'}>
+                            درباره ما
+                        </p>
+                    </a>
+                </div>
             </div>
             <div
                 id={'main-screen'}
