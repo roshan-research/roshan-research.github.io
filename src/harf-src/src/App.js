@@ -35,7 +35,6 @@ function App() {
               <MenuLinks/>
           </Menu>
           <div className={'alefba'}>
-              <WaveForm url={"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"}/>
               <MainSection/>
               <div id={'main-abilities-space'}/>
               <AbilitiesSection/>
