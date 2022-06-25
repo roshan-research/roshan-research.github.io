@@ -54,6 +54,9 @@ class SampleSection extends Component {
         },5000);
     }
 
+    componentDidMount() {
+    }
+
     render() {
 
         const onKartMelliClick = () => {
@@ -105,21 +108,12 @@ class SampleSection extends Component {
         return (
             <div className={'sample'}>
                 <p id={'sample-title'}>
-                    نمونه‌های الفبا
+                    نمونه‌های حرف
                 </p>
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
-                        ({whichSample()})
-                        <motion.img
-                            variants={ImageAnimation}
-                            initial={"hidden"}
-                            animate={"visible"}
-                            src={whichImage()}
-                            key={this.state.chosenSample}
-                            alt={''}
-                            className={'sample-image'}
-                        />
+
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>

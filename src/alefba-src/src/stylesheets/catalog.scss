@@ -64,3 +64,44 @@
   z-index: 100;
   margin-right: 1vw;
 }
+
+@media screen and (max-width: 600px){
+  #catalog {
+    flex-direction: column-reverse;
+    height: 50vh;
+  }
+
+  #catalog-cover {
+    width: 60vw;
+  }
+
+  #catalog-description {
+    font-size: 4vw;
+    text-align: center;
+    width: 60vw;
+  }
+
+  #catalog-button {
+    p {
+      font-size: 4vw;
+      line-height: 7vw;
+      letter-spacing: 0.03em;
+    }
+
+    img {
+      width: 3vw;
+    }
+
+    width: 35vw;
+  }
+
+
+  .catalog-link {
+    margin-top: 7vw;
+  }
+
+  #catalog-right {
+    justify-content: space-between;
+    align-items: center;
+  }
+}

@@ -10,6 +10,7 @@ import { slide as Menu } from 'react-burger-menu'
 import closeIcon from './assets/images/close-icon.svg';
 import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
+import WaveForm from "./components/samples/WaveForm";
 
 function App() {
   return (
@@ -34,6 +35,7 @@ function App() {
               <MenuLinks/>
           </Menu>
           <div className={'alefba'}>
+              <WaveForm url={"https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"}/>
               <MainSection/>
               <div id={'main-abilities-space'}/>
               <AbilitiesSection/>
