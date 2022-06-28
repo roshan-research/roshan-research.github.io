@@ -1,4 +1,3 @@
-import KartMelli from "./samples/KartMelli";
 import Sherr from "./samples/Sherr";
 import TarazNameh from "./samples/TarazNameh";
 import Sample1Mobile from '../assets/images/samples/sample-1-mobile.png';
@@ -16,6 +15,7 @@ import {motion} from 'framer-motion';
 
 import {Component} from "react";
 import FishHoghoghi from "./newsamples/FishHoghoghi";
+import KartMelli from "./newsamples/KartMelli";
 
 enum Sample {
     KartMelli,
@@ -121,6 +121,7 @@ class SampleSection extends Component {
                         {/*    className={'sample-image'}*/}
                         {/*/>*/}
                         <FishHoghoghi/>
+                        <KartMelli/>
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
