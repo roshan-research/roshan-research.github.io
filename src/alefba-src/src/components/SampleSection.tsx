@@ -15,7 +15,7 @@ import '../stylesheets/sample-section.scss';
 import {motion} from 'framer-motion';
 
 import {Component} from "react";
-import {ImageAnimation} from "../animations/typingAnimation";
+import FishHoghoghi from "./newsamples/FishHoghoghi";
 
 enum Sample {
     KartMelli,
@@ -110,16 +110,17 @@ class SampleSection extends Component {
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
-                        ({whichSample()})
-                        <motion.img
-                            variants={ImageAnimation}
-                            initial={"hidden"}
-                            animate={"visible"}
-                            src={whichImage()}
-                            key={this.state.chosenSample}
-                            alt={''}
-                            className={'sample-image'}
-                        />
+                        {/*({whichSample()})*/}
+                        {/*<motion.img*/}
+                        {/*    variants={ImageAnimation}*/}
+                        {/*    initial={"hidden"}*/}
+                        {/*    animate={"visible"}*/}
+                        {/*    src={whichImage()}*/}
+                        {/*    key={this.state.chosenSample}*/}
+                        {/*    alt={''}*/}
+                        {/*    className={'sample-image'}*/}
+                        {/*/>*/}
+                        <FishHoghoghi/>
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
