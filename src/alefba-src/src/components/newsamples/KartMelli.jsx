@@ -1,4 +1,7 @@
 import kart from "../../assets/images/samples/kart.jpg";
+import "../../stylesheets/fish.scss";
+import {motion} from 'framer-motion';
+import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
 
 const KartMelli = () => {
     return(
@@ -39,11 +42,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line"
                 width={372}
                 height={96}
+                variants={BackgroundAnimation(0)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 2026,
                     top: 223,
@@ -52,10 +58,16 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 49 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 49 }}
+                  variants={TypingAnimation(0.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 جمهوری اسلامی ایران
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -69,11 +81,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line"
                 width={633}
                 height={225}
+                variants={BackgroundAnimation(1)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 910,
                     top: 66,
@@ -82,10 +97,16 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 193 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 193 }}
+                  variants={TypingAnimation(1.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 کارت ملی
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -99,11 +120,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line_bold"
                 width={1036}
                 height={127}
+                variants={BackgroundAnimation(2)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 1369,
                     top: 409,
@@ -112,15 +136,24 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 106 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 106 }}
+                  variants={TypingAnimation(2.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 شماره ملی، ۰۰۴۰۳۱۶۲۸۵
-              </span>
-            </span>{" "}
-              <span
+              </motion.span>
+            </motion.span>{" "}
+              <motion.span
                   dir="auto"
                   className="line"
                   width={376}
                   height={129}
+                  variants={BackgroundAnimation(4)}
+                  initial={"hidden"}
+                  animate={"visible"}
                   style={{
                       left: 1592,
                       top: 550,
@@ -129,15 +162,24 @@ const KartMelli = () => {
                       textAlign: "auto"
                   }}
               >
-              <span className="words" style={{ fontSize: 112 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 112 }}
+                  variants={TypingAnimation(4.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 حمید رضا
-              </span>
-            </span>{" "}
-              <span
+              </motion.span>
+            </motion.span>{" "}
+              <motion.span
                   dir="auto"
                   className="line"
                   width={259}
                   height={131}
+                  variants={BackgroundAnimation(6)}
+                  initial={"hidden"}
+                  animate={"visible"}
                   style={{
                       left: 1721,
                       top: 694,
@@ -146,10 +188,16 @@ const KartMelli = () => {
                       textAlign: "auto"
                   }}
               >
-              <span className="words" style={{ fontSize: 127 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 127 }}
+                  variants={TypingAnimation(6.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 نکویی
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -163,11 +211,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line"
                 width={142}
                 height={87}
+                variants={BackgroundAnimation(3)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 1980,
                     top: 591,
@@ -176,10 +227,16 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 85 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 85 }}
+                  variants={TypingAnimation(3.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 نام :
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -193,11 +250,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line"
                 width={341}
                 height={104}
+                variants={BackgroundAnimation(5)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 2004,
                     top: 743,
@@ -206,15 +266,24 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 74 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 74 }}
+                  variants={TypingAnimation(5.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 نام خانوادگی :
-              </span>
-            </span>{" "}
-              <span
+              </motion.span>
+            </motion.span>{" "}
+              <motion.span
                   dir="auto"
                   className="line"
                   width={264}
                   height={95}
+                  variants={BackgroundAnimation(7)}
+                  initial={"hidden"}
+                  animate={"visible"}
                   style={{
                       left: 2019,
                       top: 901,
@@ -223,15 +292,24 @@ const KartMelli = () => {
                       textAlign: "auto"
                   }}
               >
-              <span className="words" style={{ fontSize: 69 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 69 }}
+                  variants={TypingAnimation(7.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 تاریخ تولد :
-              </span>
-            </span>{" "}
-              <span
+              </motion.span>
+            </motion.span>{" "}
+              <motion.span
                   dir="auto"
                   className="line"
                   width={220}
                   height={96}
+                  variants={BackgroundAnimation(9)}
+                  initial={"hidden"}
+                  animate={"visible"}
                   style={{
                       left: 2008,
                       top: 1057,
@@ -240,10 +318,16 @@ const KartMelli = () => {
                       textAlign: "auto"
                   }}
               >
-              <span className="words" style={{ fontSize: 81 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 81 }}
+                  variants={TypingAnimation(9.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 نام پدر :
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -257,11 +341,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line"
                 width={292}
                 height={96}
+                variants={BackgroundAnimation(11)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 2015,
                     top: 1207,
@@ -270,10 +357,16 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 68 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 68 }}
+                  variants={TypingAnimation(11.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 پایان اعتبار :
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <div
@@ -293,11 +386,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line_bold"
                 width={569}
                 height={133}
+                variants={BackgroundAnimation(8)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 1391,
                     top: 858,
@@ -306,15 +402,24 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 111 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 111 }}
+                  variants={TypingAnimation(8.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 ۱۳۶۷/۰۲/۲۶
-              </span>
-            </span>{" "}
-              <span
+              </motion.span>
+            </motion.span>{" "}
+              <motion.span
                   dir="auto"
                   className="line"
                   width={213}
                   height={113}
+                  variants={BackgroundAnimation(10)}
+                  initial={"hidden"}
+                  animate={"visible"}
                   style={{
                       left: 1737,
                       top: 1029,
@@ -323,10 +428,16 @@ const KartMelli = () => {
                       textAlign: "auto"
                   }}
               >
-              <span className="words" style={{ fontSize: 111 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 111 }}
+                  variants={TypingAnimation(10.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 محمد
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <p
@@ -340,11 +451,14 @@ const KartMelli = () => {
                             dir="auto"
                         >
           <span className="lines">
-            <span
+            <motion.span
                 dir="auto"
                 className="line_bold"
                 width={579}
                 height={113}
+                variants={BackgroundAnimation(12)}
+                initial={"hidden"}
+                animate={"visible"}
                 style={{
                     left: 1400,
                     top: 1195,
@@ -353,10 +467,16 @@ const KartMelli = () => {
                     textAlign: "auto"
                 }}
             >
-              <span className="words" style={{ fontSize: 111 }}>
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 111 }}
+                  variants={TypingAnimation(12.5)}
+                  initial={"hidden"}
+                  animate={"visible"}
+              >
                 ۱۴۰۳/۰۸/۱۲
-              </span>
-            </span>
+              </motion.span>
+            </motion.span>
           </span>
                         </p>
                         <div
