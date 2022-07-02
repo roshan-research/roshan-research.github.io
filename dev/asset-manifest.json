@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/dev/static/css/main.e2e89ce2.chunk.css",
-    "main.js": "/dev/static/js/main.a795b1e6.chunk.js",
+    "main.js": "/dev/static/js/main.fbbbbea9.chunk.js",
     "runtime-main.js": "/dev/static/js/runtime-main.f61455a4.js",
-    "static/js/2.f9fc5863.chunk.js": "/dev/static/js/2.f9fc5863.chunk.js",
+    "static/js/2.4a5479d1.chunk.js": "/dev/static/js/2.4a5479d1.chunk.js",
     "static/js/3.769bafde.chunk.js": "/dev/static/js/3.769bafde.chunk.js",
     "index.html": "/dev/index.html",
-    "static/js/2.f9fc5863.chunk.js.LICENSE.txt": "/dev/static/js/2.f9fc5863.chunk.js.LICENSE.txt",
+    "static/js/2.4a5479d1.chunk.js.LICENSE.txt": "/dev/static/js/2.4a5479d1.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/dev/static/media/IRANYekan.b916444e.ttf",
     "static/media/Sher.6255042b.svg": "/dev/static/media/Sher.6255042b.svg",
     "static/media/TarazNameh.122d732b.svg": "/dev/static/media/TarazNameh.122d732b.svg",
@@ -19,6 +19,7 @@
     "static/media/download-icon.4f55bff8.svg": "/dev/static/media/download-icon.4f55bff8.svg",
     "static/media/fish.6dc5f35b.jpg": "/dev/static/media/fish.6dc5f35b.jpg",
     "static/media/kart-melli.049f8a5a.svg": "/dev/static/media/kart-melli.049f8a5a.svg",
+    "static/media/kart.4787a03b.jpg": "/dev/static/media/kart.4787a03b.jpg",
     "static/media/left-1.7bb0036a.svg": "/dev/static/media/left-1.7bb0036a.svg",
     "static/media/left-1.7dbf4a6b.svg": "/dev/static/media/left-1.7dbf4a6b.svg",
     "static/media/left-2.c7cc94e9.svg": "/dev/static/media/left-2.c7cc94e9.svg",
@@ -39,6 +40,7 @@
     "static/media/right-2.a27c1735.svg": "/dev/static/media/right-2.a27c1735.svg",
     "static/media/right-3.b3f8969f.svg": "/dev/static/media/right-3.b3f8969f.svg",
     "static/media/roshan-logo.ae7188f6.svg": "/dev/static/media/roshan-logo.ae7188f6.svg",
+    "static/media/roznameh.61a1c992.jpg": "/dev/static/media/roznameh.61a1c992.jpg",
     "static/media/sample-1-mobile.52d5628d.png": "/dev/static/media/sample-1-mobile.52d5628d.png",
     "static/media/sample-2-mobile.38885d6f.png": "/dev/static/media/sample-2-mobile.38885d6f.png",
     "static/media/sample-3-mobile.58b044bb.png": "/dev/static/media/sample-3-mobile.58b044bb.png",
@@ -46,8 +48,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.f61455a4.js",
-    "static/js/2.f9fc5863.chunk.js",
+    "static/js/2.4a5479d1.chunk.js",
     "static/css/main.e2e89ce2.chunk.css",
-    "static/js/main.a795b1e6.chunk.js"
+    "static/js/main.fbbbbea9.chunk.js"
   ]
 }
