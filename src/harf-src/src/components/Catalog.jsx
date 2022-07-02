@@ -12,7 +12,7 @@ const Catalog = () => {
                     کاتالوگ حرف را دریافت فرمایید
                 </p>
                 <a
-                    href={'https://www.roshan-ai.ir/catalog.pdf/'}
+                    href={'https://www.roshan-ai.ir/harf-catalog.pdf/'}
                     className={'catalog-link'}
                     target={"_blank"}
                     rel="noreferrer"
