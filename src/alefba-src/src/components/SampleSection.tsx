@@ -16,6 +16,7 @@ import {motion} from 'framer-motion';
 import {Component} from "react";
 import FishHoghoghi from "./newsamples/FishHoghoghi";
 import KartMelli from "./newsamples/KartMelli";
+import RoozNameh from "./newsamples/RoozNameh";
 
 enum Sample {
     KartMelli,
@@ -122,6 +123,7 @@ class SampleSection extends Component {
                         {/*/>*/}
                         <FishHoghoghi/>
                         <KartMelli/>
+                        <RoozNameh/>
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
