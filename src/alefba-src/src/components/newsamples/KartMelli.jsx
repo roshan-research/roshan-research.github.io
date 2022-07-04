@@ -2,6 +2,7 @@ import kart from "../../assets/images/samples/kart.jpg";
 import "../../stylesheets/fish.scss";
 import {motion} from 'framer-motion';
 import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
+import TextGroup from "./TextGroup";
 
 const KartMelli = () => {
     return(
@@ -41,34 +42,16 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={372}
-                height={96}
-                variants={BackgroundAnimation(0)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 2026,
-                    top: 223,
-                    width: 371,
-                    height: 95,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 49 }}
-                  variants={TypingAnimation(0.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                جمهوری اسلامی ایران
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={0}
+                                fontSize={49}
+                                text={"جمهوری اسلامی ایران"}
+                                left={2026}
+                                top={223}
+                                width={371}
+                                translationX={371}
+                                height={95}
+                            />
                         </p>
                         <p
                             style={{
@@ -80,34 +63,16 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={633}
-                height={225}
-                variants={BackgroundAnimation(1)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 910,
-                    top: 66,
-                    width: 632,
-                    height: 224,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 193 }}
-                  variants={TypingAnimation(1.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                کارت ملی
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={1}
+                                fontSize={193}
+                                text={"کارت ملی"}
+                                left={910}
+                                top={66}
+                                width={632}
+                                translationX={632}
+                                height={224}
+                            />
                         </p>
                         <p
                             style={{
@@ -119,86 +84,36 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={1036}
-                height={127}
-                variants={BackgroundAnimation(2)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1369,
-                    top: 409,
-                    width: 1035,
-                    height: 126,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 106 }}
-                  variants={TypingAnimation(2.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                شماره ملی، ۰۰۴۰۳۱۶۲۸۵
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={376}
-                  height={129}
-                  variants={BackgroundAnimation(4)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 1592,
-                      top: 550,
-                      width: 375,
-                      height: 128,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 112 }}
-                  variants={TypingAnimation(4.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                حمید رضا
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={259}
-                  height={131}
-                  variants={BackgroundAnimation(6)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 1721,
-                      top: 694,
-                      width: 258,
-                      height: 130,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 127 }}
-                  variants={TypingAnimation(6.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                نکویی
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={2}
+                                fontSize={106}
+                                text={"شماره ملی، ۰۰۴۰۳۱۶۲۸۵"}
+                                left={1369}
+                                top={409}
+                                width={1035}
+                                translationX={1035}
+                                height={126}
+                            />
+                            <TextGroup
+                                animationDelay={4}
+                                fontSize={112}
+                                text={"حمید رضا"}
+                                left={1592}
+                                top={550}
+                                width={375}
+                                translationX={375}
+                                height={128}
+                            />
+                            <TextGroup
+                                animationDelay={6}
+                                fontSize={127}
+                                text={"نکویی"}
+                                left={1721}
+                                top={694}
+                                width={270}
+                                translationX={270}
+                                height={130}
+                            />
                         </p>
                         <p
                             style={{
@@ -210,34 +125,16 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={142}
-                height={87}
-                variants={BackgroundAnimation(3)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1980,
-                    top: 591,
-                    width: 141,
-                    height: 86,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 85 }}
-                  variants={TypingAnimation(3.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                نام :
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={3}
+                                fontSize={85}
+                                text={"نام :"}
+                                left={1980}
+                                top={591}
+                                width={141}
+                                translationX={141}
+                                height={86}
+                            />
                         </p>
                         <p
                             style={{
@@ -249,86 +146,36 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={341}
-                height={104}
-                variants={BackgroundAnimation(5)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 2004,
-                    top: 743,
-                    width: 340,
-                    height: 103,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 74 }}
-                  variants={TypingAnimation(5.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                نام خانوادگی :
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={264}
-                  height={95}
-                  variants={BackgroundAnimation(7)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 2019,
-                      top: 901,
-                      width: 263,
-                      height: 94,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 69 }}
-                  variants={TypingAnimation(7.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                تاریخ تولد :
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={220}
-                  height={96}
-                  variants={BackgroundAnimation(9)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 2008,
-                      top: 1057,
-                      width: 219,
-                      height: 95,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 81 }}
-                  variants={TypingAnimation(9.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                نام پدر :
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={5}
+                                fontSize={74}
+                                text={"نام خانوادگی :"}
+                                left={2004}
+                                top={743}
+                                width={340}
+                                translationX={340}
+                                height={103}
+                            />
+                            <TextGroup
+                                animationDelay={7}
+                                fontSize={69}
+                                text={"تاریخ تولد :"}
+                                left={2019}
+                                top={901}
+                                width={263}
+                                translationX={263}
+                                height={94}
+                            />
+                            <TextGroup
+                                animationDelay={9}
+                                fontSize={81}
+                                text={"نام پدر :"}
+                                left={2008}
+                                top={1057}
+                                width={219}
+                                translationX={219}
+                                height={95}
+                            />
                         </p>
                         <p
                             style={{
@@ -340,34 +187,16 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={292}
-                height={96}
-                variants={BackgroundAnimation(11)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 2015,
-                    top: 1207,
-                    width: 291,
-                    height: 95,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 68 }}
-                  variants={TypingAnimation(11.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                پایان اعتبار :
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={11}
+                                fontSize={68}
+                                text={"پایان اعتبار :"}
+                                left={2015}
+                                top={1207}
+                                width={291}
+                                translationX={291}
+                                height={95}
+                            />
                         </p>
                         <div
                             className="image"
@@ -385,60 +214,26 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={569}
-                height={133}
-                variants={BackgroundAnimation(8)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1391,
-                    top: 858,
-                    width: 568,
-                    height: 132,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 111 }}
-                  variants={TypingAnimation(8.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۱۳۶۷/۰۲/۲۶
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={213}
-                  height={113}
-                  variants={BackgroundAnimation(10)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 1737,
-                      top: 1029,
-                      width: 212,
-                      height: 112,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 111 }}
-                  variants={TypingAnimation(10.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                محمد
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={8}
+                                fontSize={111}
+                                text={"۱۳۶۷/۰۲/۲۶"}
+                                left={1391}
+                                top={858}
+                                width={568}
+                                translationX={568}
+                                height={132}
+                            />
+                            <TextGroup
+                                animationDelay={10}
+                                fontSize={111}
+                                text={"محمد"}
+                                left={1737}
+                                top={1029}
+                                width={212}
+                                translationX={212}
+                                height={112}
+                            />
                         </p>
                         <p
                             style={{
@@ -450,34 +245,16 @@ const KartMelli = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={579}
-                height={113}
-                variants={BackgroundAnimation(12)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1400,
-                    top: 1195,
-                    width: 578,
-                    height: 112,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 111 }}
-                  variants={TypingAnimation(12.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۱۴۰۳/۰۸/۱۲
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={12}
+                                fontSize={111}
+                                text={"۱۴۰۳/۰۸/۱۲"}
+                                left={1400}
+                                top={1195}
+                                width={578}
+                                translationX={578}
+                                height={112}
+                            />
                         </p>
                         <div
                             className="image"
