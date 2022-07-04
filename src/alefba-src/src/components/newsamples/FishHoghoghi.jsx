@@ -65,7 +65,7 @@ const FishHoghoghi = () => {
                               height={45}
                               width={214}
                               left={964}
-                              top={280}
+                              top={285}
                           />
                       </p>
                       <p
@@ -84,8 +84,8 @@ const FishHoghoghi = () => {
                               text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
                               translationX={600}
                               height={53}
-                              width={592}
-                              left={586}
+                              width={600}
+                              left={580}
                               top={344}
                           />
                           <TextGroup
@@ -95,8 +95,8 @@ const FishHoghoghi = () => {
                               translationX={480}
                               height={45}
                               width={480}
-                              left={708}
-                              top={410}
+                              left={700}
+                              top={415}
                           />
                       </p>
                       <p
@@ -116,7 +116,7 @@ const FishHoghoghi = () => {
                               translationX={560}
                               height={46}
                               width={560}
-                              left={630}
+                              left={622}
                               top={472}
                           />
                           <TextGroup
@@ -126,7 +126,7 @@ const FishHoghoghi = () => {
                               translationX={180}
                               height={46}
                               width={180}
-                              left={996}
+                              left={1002}
                               top={531}
                           />
                       </p>
@@ -185,10 +185,10 @@ const FishHoghoghi = () => {
                               animationDelay={29}
                               fontSize={39}
                               text={"پس انداز سهم کارفرما"}
-                              translationX={300}
+                              translationX={310}
                               height={51}
-                              width={300}
-                              left={876}
+                              width={310}
+                              left={879}
                               top={775}
                           />
                       </p>
