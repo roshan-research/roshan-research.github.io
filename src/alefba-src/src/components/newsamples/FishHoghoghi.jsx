@@ -43,8 +43,8 @@ const FishHoghoghi = () => {
                               translationX={201}
                               height={49}
                               width={201}
-                              left={151}
-                              top={15}
+                              left={200}
+                              top={35}
                           />
                       </p>
                       <p
@@ -96,7 +96,7 @@ const FishHoghoghi = () => {
                               height={45}
                               width={480}
                               left={700}
-                              top={415}
+                              top={410}
                           />
                       </p>
                       <p
@@ -117,7 +117,7 @@ const FishHoghoghi = () => {
                               height={46}
                               width={560}
                               left={622}
-                              top={472}
+                              top={465}
                           />
                           <TextGroup
                               animationDelay={17}
@@ -127,7 +127,7 @@ const FishHoghoghi = () => {
                               height={46}
                               width={180}
                               left={1002}
-                              top={531}
+                              top={520}
                           />
                       </p>
                       <p
@@ -148,7 +148,7 @@ const FishHoghoghi = () => {
                               height={51}
                               width={290}
                               left={893}
-                              top={588}
+                              top={573}
                           />
                       </p>
                       <p
@@ -169,7 +169,7 @@ const FishHoghoghi = () => {
                               height={49}
                               width={420}
                               left={767}
-                              top={647}
+                              top={630}
                           />
                           <TextGroup
                               animationDelay={26}
@@ -179,7 +179,7 @@ const FishHoghoghi = () => {
                               height={48}
                               width={390}
                               left={798}
-                              top={710}
+                              top={685}
                           />
                           <TextGroup
                               animationDelay={29}
@@ -189,7 +189,7 @@ const FishHoghoghi = () => {
                               height={51}
                               width={310}
                               left={879}
-                              top={775}
+                              top={740}
                           />
                       </p>
                       <p
@@ -209,8 +209,8 @@ const FishHoghoghi = () => {
                               translationX={165}
                               height={44}
                               width={165}
-                              left={308}
-                              top={159}
+                              left={330}
+                              top={170}
                           />
                           <TextGroup
                               animationDelay={3}
@@ -219,8 +219,8 @@ const FishHoghoghi = () => {
                               translationX={131}
                               height={44}
                               width={131}
-                              left={318}
-                              top={215}
+                              left={360}
+                              top={220}
                           />
                       </p>
                       <p
@@ -250,7 +250,7 @@ const FishHoghoghi = () => {
                               translationX={185}
                               height={43}
                               width={180}
-                              left={339}
+                              left={352}
                               top={351}
                           />
                           <TextGroup
@@ -260,8 +260,8 @@ const FishHoghoghi = () => {
                               translationX={185}
                               height={45}
                               width={180}
-                              left={339}
-                              top={411}
+                              left={350}
+                              top={405}
                           />
                           <TextGroup
                               animationDelay={15}
@@ -270,8 +270,8 @@ const FishHoghoghi = () => {
                               translationX={185}
                               height={45}
                               width={185}
-                              left={342}
-                              top={472}
+                              left={350}
+                              top={460}
                           />
                           <TextGroup
                               animationDelay={18}
@@ -280,16 +280,16 @@ const FishHoghoghi = () => {
                               translationX={185}
                               height={45}
                               width={185}
-                              left={340}
-                              top={530}
+                              left={350}
+                              top={515}
                           />
                           <TextGroup
                               animationDelay={21}
                               fontSize={43}
                               text={"۱۲,۳۰۵,۶۷۸"}
                               left={325}
-                              top={593}
-                              width={220}
+                              top={570}
+                              width={210}
                               translationX={220}
                               height={46}
                           />
@@ -297,8 +297,8 @@ const FishHoghoghi = () => {
                               animationDelay={24}
                               fontSize={42}
                               text={"۵,۹۷۳,۷۷۸"}
-                              left={340}
-                              top={652}
+                              left={345}
+                              top={625}
                               width={185}
                               translationX={185}
                               height={47}
@@ -307,8 +307,8 @@ const FishHoghoghi = () => {
                               animationDelay={27}
                               fontSize={42}
                               text={"۲۴۷,۳۲۰"}
-                              left={371}
-                              top={712}
+                              left={375}
+                              top={680}
                               width={150}
                               translationX={150}
                               height={44}
@@ -329,7 +329,7 @@ const FishHoghoghi = () => {
                               fontSize={42}
                               text={"۱,۳۵۸,۷۷۷"}
                               left={345}
-                              top={773}
+                              top={735}
                               width={185}
                               translationX={185}
                               height={45}
@@ -360,8 +360,8 @@ const FishHoghoghi = () => {
                               animationDelay={2}
                               fontSize={42}
                               text={"سال ۱۳۸۹"}
-                              left={58}
-                              top={160}
+                              left={100}
+                              top={170}
                               width={165}
                               translationX={165}
                               height={43}
@@ -381,8 +381,8 @@ const FishHoghoghi = () => {
                               animationDelay={4}
                               fontSize={43}
                               text={"هزار ریال"}
-                              left={68}
-                              top={215}
+                              left={115}
+                              top={225}
                               width={140}
                               translationX={140}
                               height={44}
@@ -402,7 +402,7 @@ const FishHoghoghi = () => {
                               animationDelay={7}
                               fontSize={42}
                               text={"۲۶,۳۲۵,۸۳۳"}
-                              left={71}
+                              left={100}
                               top={282}
                               width={205}
                               translationX={205}
@@ -412,8 +412,8 @@ const FishHoghoghi = () => {
                               animationDelay={10}
                               fontSize={44}
                               text={"۴,۸۲۱,۸۹۶"}
-                              left={87}
-                              top={349}
+                              left={105}
+                              top={340}
                               width={190}
                               translationX={190}
                               height={46}
@@ -422,8 +422,8 @@ const FishHoghoghi = () => {
                               animationDelay={13}
                               fontSize={43}
                               text={"۳,۶۶۷,۴۳۱"}
-                              left={88}
-                              top={410}
+                              left={100}
+                              top={400}
                               width={190}
                               translationX={190}
                               height={46}
@@ -432,8 +432,8 @@ const FishHoghoghi = () => {
                               animationDelay={16}
                               fontSize={45}
                               text={"۲,۰۳۷,۱۲۷"}
-                              left={89}
-                              top={472}
+                              left={100}
+                              top={460}
                               width={195}
                               translationX={195}
                               height={46}
@@ -442,8 +442,8 @@ const FishHoghoghi = () => {
                               animationDelay={19}
                               fontSize={44}
                               text={"۸,۲۰۴,۹۷۷"}
-                              left={88}
-                              top={533}
+                              left={100}
+                              top={517}
                               width={190}
                               translationX={190}
                               height={46}
@@ -452,8 +452,8 @@ const FishHoghoghi = () => {
                               animationDelay={22}
                               fontSize={43}
                               text={"۹,۳۷۰,۶۲۰"}
-                              left={90}
-                              top={592}
+                              left={100}
+                              top={570}
                               width={190}
                               translationX={190}
                               height={46}
@@ -462,8 +462,8 @@ const FishHoghoghi = () => {
                               animationDelay={25}
                               fontSize={42}
                               text={"۶,۳۴۹,۵۶۸"}
-                              left={89}
-                              top={653}
+                              left={102}
+                              top={625}
                               width={190}
                               translationX={190}
                               height={43}
@@ -472,9 +472,9 @@ const FishHoghoghi = () => {
                               animationDelay={28}
                               fontSize={44}
                               text={"۲۱۷,۱۵۳"}
-                              left={118}
-                              top={713}
-                              width={170}
+                              left={135}
+                              top={675}
+                              width={160}
                               translationX={170}
                               height={45}
                           />
@@ -493,8 +493,8 @@ const FishHoghoghi = () => {
                               animationDelay={31}
                               fontSize={44}
                               text={"۱,۵۴۰,۲۹۱"}
-                              left={92}
-                              top={773}
+                              left={100}
+                              top={730}
                               width={195}
                               translationX={195}
                               height={45}
