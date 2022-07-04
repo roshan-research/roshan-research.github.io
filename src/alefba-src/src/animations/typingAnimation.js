@@ -1,11 +1,10 @@
-export const TypingAnimation = (delay) => {
+export const TypingAnimation = (delay,translationX = 0) => {
     return {
         hidden: {
-            x: 201,
+            x: translationX,
         },
         visible: {
             x: 0,
-            width: 201,
             transition: {
                 delay: delay,
                 duration: 0.5,

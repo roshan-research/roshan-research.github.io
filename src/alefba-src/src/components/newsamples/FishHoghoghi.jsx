@@ -2,6 +2,7 @@ import fish from "../../assets/images/samples/fish.jpg";
 import "../../stylesheets/fish.scss";
 import {motion} from 'framer-motion';
 import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
+import TextGroup from "./TextGroup";
 
 const FishHoghoghi = () => {
   return(
@@ -35,52 +36,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={202}
-                height={50}
-                variants={BackgroundAnimation(0)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    transformOrigin: "right",
-                    left: 151,
-                    top: 15,
-                    width: 201,
-                    height: 49,
-                    textAlign: "auto"
-                }}
-            >
-            </motion.span>
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={202}
-                  height={50}
-                  style={{
-                      transformOrigin: "right",
-                      left: 151,
-                      top: 15,
-                      width: 201,
-                      height: 49,
-                      textAlign: "auto",
-                      backgroundColor: "transparent",
-                      overflow: "hidden"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 38,transformOrigin: "right"}}
-                  variants={TypingAnimation(0)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                دستمزد مستقیم
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={0}
+                              fontSize={38}
+                              text={"دستمزد مستقیم"}
+                              translationX={201}
+                              height={49}
+                              width={201}
+                              left={151}
+                              top={15}
+                          />
                       </p>
                       <p
                           style={{
@@ -92,35 +57,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                variants={BackgroundAnimation(5)}
-                initial={"hidden"}
-                animate={"visible"}
-                className="line_bold"
-                width={215}
-                height={46}
-                style={{
-                    left: 964,
-                    top: 280,
-                    width: 214,
-                    height: 45,
-                    textAlign: "auto",
-                    transformOrigin: "right"
-                }}
-            >
-              <motion.span
-                  variants={TypingAnimation(5.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  className="words"
-                  style={{ fontSize: 41 ,transformOrigin: "right"}}
-              >
-                حقوق و دستمزد
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={5}
+                              fontSize={41}
+                              text={"حقوق و دستمزد"}
+                              translationX={214}
+                              height={45}
+                              width={214}
+                              left={964}
+                              top={280}
+                          />
                       </p>
                       <p
                           style={{
@@ -132,62 +78,26 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={593}
-                variants={BackgroundAnimation(8)}
-                initial={"hidden"}
-                animate={"visible"}
-                height={54}
-                style={{
-                    transformOrigin: "right",
-                    left: 586,
-                    top: 344,
-                    width: 592,
-                    height: 53,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 39,transformOrigin: "right" }}
-                  variants={TypingAnimation(8.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                اضافه کاري - نوبتکاري - شبکاري وحق کشیك
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={472}
-                  height={46}
-                  variants={BackgroundAnimation(11)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 708,
-                      top: 410,
-                      transformOrigin: "right",
-                      width: 471,
-                      height: 45,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 41,transformOrigin: "right"  }}
-                  variants={TypingAnimation(11.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                حق اولاد و سایر هزینه های کارکنان
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={8}
+                              fontSize={39}
+                              text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
+                              translationX={600}
+                              height={53}
+                              width={592}
+                              left={586}
+                              top={344}
+                          />
+                          <TextGroup
+                              animationDelay={11}
+                              fontSize={41}
+                              text={"حق اولاد و سایر هزینه های کارکنان"}
+                              translationX={480}
+                              height={45}
+                              width={480}
+                              left={708}
+                              top={410}
+                          />
                       </p>
                       <p
                           style={{
@@ -199,60 +109,26 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={550}
-                height={47}
-                variants={BackgroundAnimation(14)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 630,
-                    top: 472,
-                    width: 549,
-                    height: 46,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 40 }}
-                  variants={TypingAnimation(14.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                بن - حق مسکن - خوارباروناهاری کارکنان
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={181}
-                  height={47}
-                  variants={BackgroundAnimation(17)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 996,
-                      top: 531,
-                      width: 180,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 38 }}
-                  variants={TypingAnimation(17.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                عیدي وپاداش
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={14}
+                              fontSize={40}
+                              text={"بن - حق مسکن - خوارباروناهاری کارکنان"}
+                              translationX={560}
+                              height={46}
+                              width={560}
+                              left={630}
+                              top={472}
+                          />
+                          <TextGroup
+                              animationDelay={17}
+                              fontSize={38}
+                              text={"عیدي وپاداش"}
+                              translationX={180}
+                              height={46}
+                              width={180}
+                              left={996}
+                              top={531}
+                          />
                       </p>
                       <p
                           style={{
@@ -264,34 +140,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={288}
-                height={52}
-                variants={BackgroundAnimation(20)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 893,
-                    top: 588,
-                    width: 287,
-                    height: 51,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 40 }}
-                  variants={TypingAnimation(20.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                حق بیمه سهم کارفرما
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={20}
+                              fontSize={40}
+                              text={"حق بیمه سهم کارفرما"}
+                              translationX={290}
+                              height={51}
+                              width={290}
+                              left={893}
+                              top={588}
+                          />
                       </p>
                       <p
                           style={{
@@ -303,86 +161,36 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={414}
-                height={50}
-                variants={BackgroundAnimation(23)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 767,
-                    top: 647,
-                    width: 413,
-                    height: 49,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 40 }}
-                  variants={TypingAnimation(23.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                باز خرید و ذخیره سنوات خدمت
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={383}
-                  height={49}
-                  variants={BackgroundAnimation(26)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 798,
-                      top: 710,
-                      width: 382,
-                      height: 48,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 39 }}
-                  variants={TypingAnimation(26.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                بیمه حوادث - هزینه بهداشتی
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={294}
-                  height={52}
-                  variants={BackgroundAnimation(29)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 876,
-                      top: 767,
-                      width: 293,
-                      height: 51,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 39 }}
-                  variants={TypingAnimation(29.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                پس انداز سهم کارفرما
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={23}
+                              fontSize={40}
+                              text={"باز خرید و ذخیره سنوات خدمت"}
+                              translationX={420}
+                              height={49}
+                              width={420}
+                              left={767}
+                              top={647}
+                          />
+                          <TextGroup
+                              animationDelay={26}
+                              fontSize={39}
+                              text={"بیمه حوادث - هزینه بهداشتی"}
+                              translationX={390}
+                              height={48}
+                              width={390}
+                              left={798}
+                              top={710}
+                          />
+                          <TextGroup
+                              animationDelay={29}
+                              fontSize={39}
+                              text={"پس انداز سهم کارفرما"}
+                              translationX={300}
+                              height={51}
+                              width={300}
+                              left={876}
+                              top={775}
+                          />
                       </p>
                       <p
                           style={{
@@ -394,60 +202,26 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={163}
-                height={45}
-                variants={BackgroundAnimation(1)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 308,
-                    top: 159,
-                    width: 162,
-                    height: 44,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  variants={TypingAnimation(1.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{ fontSize: 43,}}
-              >
-                سال ۱۳۹۰
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={132}
-                  height={45}
-                  variants={BackgroundAnimation(3)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 318,
-                      top: 215,
-                      width: 131,
-                      height: 44,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(3.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                هزار ریال
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={1}
+                              fontSize={43}
+                              text={"سال ۱۳۹۰"}
+                              translationX={165}
+                              height={44}
+                              width={165}
+                              left={308}
+                              top={159}
+                          />
+                          <TextGroup
+                              animationDelay={3}
+                              fontSize={43}
+                              text={"هزار ریال"}
+                              translationX={131}
+                              height={44}
+                              width={131}
+                              left={318}
+                              top={215}
+                          />
                       </p>
                       <p
                           style={{
@@ -459,217 +233,86 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={184}
-                height={46}
-                variants={BackgroundAnimation(6)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 319,
-                    top: 282,
-                    width: 183,
-                    height: 45,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(6.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-
-              >
-                ۳۰,۶۷۲,۵۴۵
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={44}
-                  variants={BackgroundAnimation(9)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 339,
-                      top: 351,
-                      width: 163,
-                      height: 43,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(9.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۵,۸۲۲,۸۵۸
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={46}
-                  variants={BackgroundAnimation(12)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 339,
-                      top: 411,
-                      width: 163,
-                      height: 45,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(12.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۳,۵۶۴,۳۳۸
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={159}
-                  height={46}
-                  variants={BackgroundAnimation(15)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 342,
-                      top: 472,
-                      width: 158,
-                      height: 45,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(15.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۲,۳۲۹,۶۲۹
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={46}
-                  variants={BackgroundAnimation(18)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 340,
-                      top: 533,
-                      width: 163,
-                      height: 45,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(18.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۷,۵۹۷,۴۸۷
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={178}
-                  height={47}
-                  variants={BackgroundAnimation(21)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 325,
-                      top: 593,
-                      width: 177,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(21.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۱۲,۳۰۵,۶۷۸
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={163}
-                  height={48}
-                  variants={BackgroundAnimation(24)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 340,
-                      top: 652,
-                      width: 162,
-                      height: 47,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(24.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۵,۹۷۳,۷۷۸
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={127}
-                  height={45}
-                  variants={BackgroundAnimation(27)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 371,
-                      top: 712,
-                      width: 126,
-                      height: 44,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(27.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۲۴۷,۳۲۰
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={6}
+                              fontSize={43}
+                              text={"۳۰,۶۷۲,۵۴۵"}
+                              translationX={215}
+                              height={45}
+                              width={210}
+                              left={319}
+                              top={282}
+                          />
+                          <TextGroup
+                              animationDelay={9}
+                              fontSize={42}
+                              text={"۵,۸۲۲,۸۵۸"}
+                              translationX={185}
+                              height={43}
+                              width={180}
+                              left={339}
+                              top={351}
+                          />
+                          <TextGroup
+                              animationDelay={12}
+                              fontSize={42}
+                              text={"۳,۵۶۴,۳۳۸"}
+                              translationX={185}
+                              height={45}
+                              width={180}
+                              left={339}
+                              top={411}
+                          />
+                          <TextGroup
+                              animationDelay={15}
+                              fontSize={42}
+                              text={"۲,۳۲۹,۶۲۹"}
+                              translationX={185}
+                              height={45}
+                              width={185}
+                              left={342}
+                              top={472}
+                          />
+                          <TextGroup
+                              animationDelay={18}
+                              fontSize={42}
+                              text={"۷,۵۹۷,۴۸۷"}
+                              translationX={185}
+                              height={45}
+                              width={185}
+                              left={340}
+                              top={530}
+                          />
+                          <TextGroup
+                              animationDelay={21}
+                              fontSize={43}
+                              text={"۱۲,۳۰۵,۶۷۸"}
+                              left={325}
+                              top={593}
+                              width={220}
+                              translationX={220}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={24}
+                              fontSize={42}
+                              text={"۵,۹۷۳,۷۷۸"}
+                              left={340}
+                              top={652}
+                              width={185}
+                              translationX={185}
+                              height={47}
+                          />
+                          <TextGroup
+                              animationDelay={27}
+                              fontSize={42}
+                              text={"۲۴۷,۳۲۰"}
+                              left={371}
+                              top={712}
+                              width={150}
+                              translationX={150}
+                              height={44}
+                          />
                       </p>
                       <p
                           style={{
@@ -681,34 +324,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={158}
-                height={46}
-                variants={BackgroundAnimation(30)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 345,
-                    top: 773,
-                    width: 157,
-                    height: 45,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(30.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۱,۳۵۸,۷۷۷
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={30}
+                              fontSize={42}
+                              text={"۱,۳۵۸,۷۷۷"}
+                              left={345}
+                              top={773}
+                              width={185}
+                              translationX={185}
+                              height={45}
+                          />
                       </p>
                       <p
                           style={{
@@ -731,34 +356,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={86}
-                height={44}
-                variants={BackgroundAnimation(2)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 58,
-                    top: 160,
-                    width: 85,
-                    height: 43,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  variants={TypingAnimation(2.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  className="words"
-                  style={{ fontSize: 42 }}
-              >
-                سال ۱۳۸۹
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={2}
+                              fontSize={42}
+                              text={"سال ۱۳۸۹"}
+                              left={58}
+                              top={160}
+                              width={165}
+                              translationX={165}
+                              height={43}
+                          />
                       </p>
                       <p
                           style={{
@@ -770,34 +377,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={134}
-                height={45}
-                variants={BackgroundAnimation(4)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 68,
-                    top: 215,
-                    width: 133,
-                    height: 44,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(4.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                هزار ریال
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={4}
+                              fontSize={43}
+                              text={"هزار ریال"}
+                              left={68}
+                              top={215}
+                              width={140}
+                              translationX={140}
+                              height={44}
+                          />
                       </p>
                       <p
                           style={{
@@ -809,216 +398,86 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={181}
-                height={46}
-                variants={BackgroundAnimation(7)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 71,
-                    top: 282,
-                    width: 180,
-                    height: 45,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(7.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۲۶,۳۲۵,۸۳۳
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={47}
-                  variants={BackgroundAnimation(10)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 87,
-                      top: 349,
-                      width: 163,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 44 }}
-                  variants={TypingAnimation(10.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۴,۸۲۱,۸۹۶
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={160}
-                  height={47}
-                  variants={BackgroundAnimation(13)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 88,
-                      top: 410,
-                      width: 159,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(13.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۳,۶۶۷,۴۳۱
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={163}
-                  height={47}
-                  variants={BackgroundAnimation(16)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 89,
-                      top: 472,
-                      width: 162,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 45 }}
-                  variants={TypingAnimation(16.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۲,۰۳۷,۱۲۷
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={47}
-                  variants={BackgroundAnimation(19)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 88,
-                      top: 533,
-                      width: 163,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 44 }}
-                  variants={TypingAnimation(19.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۸,۲۰۴,۹۷۷
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={157}
-                  height={47}
-                  variants={BackgroundAnimation(22)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 90,
-                      top: 592,
-                      width: 156,
-                      height: 46,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(22.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۹,۳۷۰,۶۲۰
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={164}
-                  height={44}
-                  variants={BackgroundAnimation(25)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 89,
-                      top: 653,
-                      width: 163,
-                      height: 43,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 42 }}
-                  variants={TypingAnimation(25.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۶,۳۴۹,۵۶۸
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={135}
-                  height={46}
-                  variants={BackgroundAnimation(28)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 118,
-                      top: 713,
-                      width: 134,
-                      height: 45,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 44 }}
-                  variants={TypingAnimation(28.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۲۱۷,۱۵۳
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={7}
+                              fontSize={42}
+                              text={"۲۶,۳۲۵,۸۳۳"}
+                              left={71}
+                              top={282}
+                              width={205}
+                              translationX={205}
+                              height={45}
+                          />
+                          <TextGroup
+                              animationDelay={10}
+                              fontSize={44}
+                              text={"۴,۸۲۱,۸۹۶"}
+                              left={87}
+                              top={349}
+                              width={190}
+                              translationX={190}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={13}
+                              fontSize={43}
+                              text={"۳,۶۶۷,۴۳۱"}
+                              left={88}
+                              top={410}
+                              width={190}
+                              translationX={190}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={16}
+                              fontSize={45}
+                              text={"۲,۰۳۷,۱۲۷"}
+                              left={89}
+                              top={472}
+                              width={195}
+                              translationX={195}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={19}
+                              fontSize={44}
+                              text={"۸,۲۰۴,۹۷۷"}
+                              left={88}
+                              top={533}
+                              width={190}
+                              translationX={190}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={22}
+                              fontSize={43}
+                              text={"۹,۳۷۰,۶۲۰"}
+                              left={90}
+                              top={592}
+                              width={190}
+                              translationX={190}
+                              height={46}
+                          />
+                          <TextGroup
+                              animationDelay={25}
+                              fontSize={42}
+                              text={"۶,۳۴۹,۵۶۸"}
+                              left={89}
+                              top={653}
+                              width={190}
+                              translationX={190}
+                              height={43}
+                          />
+                          <TextGroup
+                              animationDelay={28}
+                              fontSize={44}
+                              text={"۲۱۷,۱۵۳"}
+                              left={118}
+                              top={713}
+                              width={170}
+                              translationX={170}
+                              height={45}
+                          />
                       </p>
                       <p
                           style={{
@@ -1030,34 +489,16 @@ const FishHoghoghi = () => {
                           }}
                           dir="auto"
                       >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={156}
-                height={46}
-                variants={BackgroundAnimation(31)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 92,
-                    top: 773,
-                    width: 155,
-                    height: 45,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 44 }}
-                  variants={TypingAnimation(31.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ۱,۵۴۰,۲۹۱
-              </motion.span>
-            </motion.span>
-          </span>
+                          <TextGroup
+                              animationDelay={31}
+                              fontSize={44}
+                              text={"۱,۵۴۰,۲۹۱"}
+                              left={92}
+                              top={773}
+                              width={195}
+                              translationX={195}
+                              height={45}
+                          />
                       </p>
                   </div>
               </page>
