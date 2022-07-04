@@ -1,7 +1,5 @@
-import kart from "../../assets/images/samples/kart.jpg";
+import kart from "../../assets/images/samples/kart.png";
 import "../../stylesheets/fish.scss";
-import {motion} from 'framer-motion';
-import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
 import TextGroup from "./TextGroup";
 
 const KartMelli = () => {
@@ -19,7 +17,7 @@ const KartMelli = () => {
                 style={{ position: "relative", transform: "scale(0.21)" }}
             >
                 <img
-                    style={{ position: "absolute", left: 0 }}
+                    style={{ position: "absolute", left: 0 , width: 2500, height: "1576.4750093949642px"}}
                     id="raw"
                     src={kart}
                     alt={''}

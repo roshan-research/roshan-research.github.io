@@ -19,7 +19,7 @@ const FishHoghoghi = () => {
               style={{ position: "relative", transform: "scale(0.4)" }}
           >
               <img
-                  style={{ position: "absolute", left: 0 }}
+                  style={{ position: "absolute", left: 0, width: 1320, height: 843}}
                   id="raw"
                   src={fish}
                   alt={''}

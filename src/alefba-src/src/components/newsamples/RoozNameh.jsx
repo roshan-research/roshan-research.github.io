@@ -1,6 +1,7 @@
 import rooznameh from "../../assets/images/samples/roznameh.jpg";
 import {motion} from 'framer-motion';
 import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
+import TextGroup from "./TextGroup";
 
 const RoozNameh = () => {
     return(
@@ -26,7 +27,7 @@ const RoozNameh = () => {
                 }}
             >
                 <img
-                    style={{ position: "absolute", left: 0 }}
+                    style={{ position: "absolute", left: 0, width: 2226, height: 1296 }}
                     id="raw"
                     src={rooznameh}
                     alt={''}
@@ -43,71 +44,41 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                variants={BackgroundAnimation(0)}
-                initial={"hidden"}
-                animate={"visible"}
-                dir="auto"
-                className="line_bold"
-                width={2120}
-                height={214}
-                style={{
-                    left: 50,
-                    top: 10,
-                    width: 2150,
-                    height: 190,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 169 }}
-                  variants={TypingAnimation(0.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                دور تازه مذاکرات در مسکو و بروکسل
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={549}
-                  height={53}
-                  variants={BackgroundAnimation(1)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 1645,
-                      top: 214,
-                      width: 548,
-                      height: 205,
-                      textAlign: "right",
-                      lineHeight: '0.55em'
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 26 }}
-                  variants={TypingAnimation(1.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت
-                  <br/>
-                خارجه و سازمان انرژی اتمی تشکیل می‌دهد
-                  <br/>
-                همزمان با مذاکرات مسکو، دور جدید گفت وگوهای هسته‌ای
-                  <br/>
-                  ایران و اروپا با حضور متکی و وعیدی در بروکسل آغاز می‌شود
-                  <br/>
-                  وعیدی: موقعیت مناسبی برای دو طرف (اروپا و ایران) در مسیر
-                  <br/>
-                  مذاکره و تفاهم فراهم شده است
-              </motion.span>
-            </motion.span>{" "}
-          </span>
+                            <TextGroup
+                                animationDelay={0}
+                                fontSize={169}
+                                text={"دور تازه مذاکرات در مسکو و بروکسل"}
+                                left={50}
+                                top={10}
+                                width={2150}
+                                translationX={2150}
+                                height={190}
+                            />
+                            <TextGroup
+                                animationDelay={1}
+                                fontSize={26}
+                                text={(<>
+                                    هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت
+                                    <br/>
+                                    خارجه و سازمان انرژی اتمی تشکیل می‌دهد
+                                    <br/>
+                                    همزمان با مذاکرات مسکو، دور جدید گفت وگوهای هسته‌ای
+                                    <br/>
+                                    ایران و اروپا با حضور متکی و وعیدی در بروکسل آغاز می‌شود
+                                    <br/>
+                                    وعیدی: موقعیت مناسبی برای دو طرف (اروپا و ایران) در مسیر
+                                    <br/>
+                                    مذاکره و تفاهم فراهم شده است
+                                </>)}
+                                left={1645}
+                                top={214}
+                                width={548}
+                                translationX={548}
+                                height={205}
+                                textAlign={"right"}
+                                lineHeight={"0.55em"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -130,8 +101,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -143,46 +112,31 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={497}
-                height={46}
-                variants={BackgroundAnimation(2)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1120,
-                    top: 218,
-                    width: 496,
-                    height: 200,
-                    textAlign: "right",
-                    lineHeight: "1em",
-                    zIndex: '100'
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 25 }}
-                  variants={TypingAnimation(2.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                قصد داریم از اقداماتی که مسیر تعامل و گفت‌وگو را تخریب
-                  <br/>
-                  می‌کند پرهیز کنیم
-                  <br/>
-                  سید علی حسینی تاش، معاون لاریجانی ریاست تیم
-                  <br/>
-                  مذاکره را برعهده دارد و جعفری معاون دیگر لاریجانی او را
-                  <br/>
-                  همراهی می‌کند
-                  <br/>
-                  حسینی تاش: مذاکرات با روسیه مشروط نیست و ما از
-              </motion.span>
-            </motion.span>{" "}
-          </span>
+                            <TextGroup
+                                animationDelay={2}
+                                fontSize={25}
+                                text={(<>
+                                    قصد داریم از اقداماتی که مسیر تعامل و گفت‌وگو را تخریب
+                                    <br/>
+                                    می‌کند پرهیز کنیم
+                                    <br/>
+                                    سید علی حسینی تاش، معاون لاریجانی ریاست تیم
+                                    <br/>
+                                    مذاکره را برعهده دارد و جعفری معاون دیگر لاریجانی او را
+                                    <br/>
+                                    همراهی می‌کند
+                                    <br/>
+                                    حسینی تاش: مذاکرات با روسیه مشروط نیست و ما از
+                                </>)}
+                                left={1120}
+                                top={218}
+                                width={496}
+                                translationX={496}
+                                height={200}
+                                textAlign={"right"}
+                                lineHeight={"1em"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -194,9 +148,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-
-          </span>
                         </p>
                         <p
                             style={{
@@ -208,8 +159,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -221,45 +170,31 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={315}
-                height={45}
-                variants={BackgroundAnimation(3)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 600,
-                    top: 220,
-                    width: 500,
-                    height: 200,
-                    textAlign: "right",
-                    lineHeight: "1.2em"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 26 }}
-                  variants={TypingAnimation(3.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                حقوق خود عقب نشینی نخواهیم کرد
-                  <br/>
-                  سرگئی کرینکو، رئیس سازمان انرژی اتمی روسیه بزودی
-                  <br/>
-                  برای بررسی مراحل تکمیلی بوشهر به ایران می‌آید
-                  <br/>
-                  وزیر خارجه آلمان از ایران خواست پیشنهاد روسیه را بپذیرد
-                  <br/>
-                  یک دیپلمات اروپایی: ایران و اتحادیه اروپا درباره موضوع
-                  <br/>
-                  هسته‌ای به توافق می‌رسند
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={3}
+                                fontSize={26}
+                                text={(<>
+                                    حقوق خود عقب نشینی نخواهیم کرد
+                                    <br/>
+                                    سرگئی کرینکو، رئیس سازمان انرژی اتمی روسیه بزودی
+                                    <br/>
+                                    برای بررسی مراحل تکمیلی بوشهر به ایران می‌آید
+                                    <br/>
+                                    وزیر خارجه آلمان از ایران خواست پیشنهاد روسیه را بپذیرد
+                                    <br/>
+                                    یک دیپلمات اروپایی: ایران و اتحادیه اروپا درباره موضوع
+                                    <br/>
+                                    هسته‌ای به توافق می‌رسند
+                                </>)}
+                                left={600}
+                                top={220}
+                                width={500}
+                                translationX={500}
+                                height={200}
+                                textAlign={"right"}
+                                lineHeight={"1.2em"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -271,8 +206,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -284,8 +217,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -297,8 +228,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <div
                             className="image"
@@ -316,34 +245,18 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={218}
-                height={56}
-                variants={BackgroundAnimation(13)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1821,
-                    top: 1181,
-                    width: 217,
-                    height: 55,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 43 }}
-                  variants={TypingAnimation(13.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                سیلاب و طغیان
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={13}
+                                fontSize={43}
+                                text={"سیلاب و طغیان"}
+                                left={1821}
+                                top={1181}
+                                width={217}
+                                translationX={217}
+                                height={55}
+                                textAlign={"auto"}
+                                lineType={"line_bold"}
+                            />
                         </p>
                         <p
                             style={{
@@ -355,35 +268,19 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={817}
-                height={47}
-                variants={BackgroundAnimation(13)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 988,
-                    top: 1196,
-                    width: 816,
-                    height: 46,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 25 }}
-                  variants={TypingAnimation(13.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                سیلاب در شهرهای شوشتر، شادگان، گتوند، بستان، اندیمشک و اهواز
-                خساراتی بر جای گذاشت
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={13}
+                                fontSize={25}
+                                text={"سیلاب در شهرهای شوشتر، شادگان، گتوند، بستان، اندیمشک و اهواز\n" +
+                                "                خساراتی بر جای گذاشت"}
+                                left={988}
+                                top={1196}
+                                width={816}
+                                translationX={816}
+                                height={46}
+                                textAlign={"auto"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -395,35 +292,19 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={1102}
-                height={55}
-                variants={BackgroundAnimation(14)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 1050,
-                    top: 1235,
-                    width: 1101,
-                    height: 54,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 29 }}
-                  variants={TypingAnimation(14.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                رودخانه‌ها در خوزستان افزایش حجم آب کارون به حدی بود که سواحل
-                حاشیه رودخانه و اهواز نیز مملو از آب شد
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={14}
+                                fontSize={29}
+                                text={"رودخانه‌ها در خوزستان افزایش حجم آب کارون به حدی بود که سواحل\n" +
+                                "                حاشیه رودخانه و اهواز نیز مملو از آب شد"}
+                                left={1050}
+                                top={1235}
+                                width={1101}
+                                translationX={1101}
+                                height={54}
+                                textAlign={"auto"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -435,43 +316,29 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={495}
-                height={46}
-                variants={BackgroundAnimation(4)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 71,
-                    top: 219,
-                    width: 494,
-                    height: 140,
-                    textAlign: "right",
-                    lineHeight: "1.2em"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 25 }}
-                  variants={TypingAnimation(4.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ایران و روسیه به هم اعتماد دارند و قصد فریب یکدیگر را
-                  <br/>
-                  ندارند و اینها زمینه خوبی برای به نتیجه رسیدن مذاکرات است
-                  <br/>
-                  عوامل امیدوارکننده در این مذاکرات وجود دارد
-                  <br/>
-                  وزارت خارجه روسیه: در این مذاکرات راههای خروج مسأله
-                  <br/>
-                  هسته‌ای از بن بست بررسی می‌شود
-              </motion.span>
-            </motion.span>{" "}
-          </span>
+                            <TextGroup
+                                animationDelay={4}
+                                fontSize={25}
+                                text={(<>
+                                    ایران و روسیه به هم اعتماد دارند و قصد فریب یکدیگر را
+                                    <br/>
+                                    ندارند و اینها زمینه خوبی برای به نتیجه رسیدن مذاکرات است
+                                    <br/>
+                                    عوامل امیدوارکننده در این مذاکرات وجود دارد
+                                    <br/>
+                                    وزارت خارجه روسیه: در این مذاکرات راههای خروج مسأله
+                                    <br/>
+                                    هسته‌ای از بن بست بررسی می‌شود
+                                </>)}
+                                left={71}
+                                top={219}
+                                width={494}
+                                translationX={494}
+                                height={165}
+                                textAlign={"right"}
+                                lineHeight={"1.25em"}
+                                lineType={"line"}
+                            />
                         </p>
                         <p
                             style={{
@@ -483,34 +350,18 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={78}
-                  height={36}
-                  variants={BackgroundAnimation(5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 73,
-                      top: 381,
-                      width: 77,
-                      height: 35,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 26 }}
-                  variants={TypingAnimation(5.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                صفحه ۲
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={5}
+                                fontSize={26}
+                                text={"صفحه ۲"}
+                                left={73}
+                                top={381}
+                                width={77}
+                                translationX={77}
+                                height={35}
+                                textAlign={"auto"}
+                                lineType={"line_bold"}
+                            />
                         </p>
                         <p
                             style={{
@@ -522,63 +373,35 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line_bold"
-                width={739}
-                height={50}
-                variants={BackgroundAnimation(6)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 135,
-                    top: 436,
-                    width: 738,
-                    height: 49,
-                    textAlign: "auto"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 34 }}
-                  variants={TypingAnimation(6.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                رئیس جمهوری در دیدار مسؤولان آموزش و پرورش اعلام کرد
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={470}
-                  height={96}
-                  variants={BackgroundAnimation(7)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 100,
-                      top: 494,
-                      width: 469,
-                      height: 130,
-                      textAlign: "center",
-                      lineHeight: '2.3em'
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 88 }}
-                  variants={TypingAnimation(7.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                بیشترین افزایش
-                  <br/>
-                در بودجه آموزش و پرورش
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={6}
+                                fontSize={34}
+                                text={"رئیس جمهوری در دیدار مسؤولان آموزش و پرورش اعلام کرد"}
+                                left={135}
+                                top={436}
+                                width={738}
+                                translationX={738}
+                                height={49}
+                                textAlign={"auto"}
+                                lineType={"line_bold"}
+                            />
+                            <TextGroup
+                                animationDelay={7}
+                                fontSize={88}
+                                text={(<>
+                                    بیشترین افزایش
+                                    <br/>
+                                    در بودجه آموزش و پرورش
+                                </>)}
+                                left={100}
+                                top={494}
+                                width={810}
+                                translationX={810}
+                                height={210}
+                                textAlign={"center"}
+                                lineType={"line_bold"}
+                                lineHeight={"2.3em"}
+                            />
                         </p>
                         <p
                             style={{
@@ -590,37 +413,23 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={643}
-                  height={60}
-                  variants={BackgroundAnimation(8)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 183,
-                      top: 709,
-                      width: 642,
-                      height: 90,
-                      textAlign: "center",
-                      lineHeight: "0.8em"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 38 }}
-                  variants={TypingAnimation(8.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                باید با ایجاد کانون‌هایی در مدارس دانش آموزان را
-                  <br/>
-                در اداره امور سهیم کرد
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={8}
+                                fontSize={38}
+                                text={(<>
+                                    باید با ایجاد کانون‌هایی در مدارس دانش آموزان را
+                                    <br/>
+                                    در اداره امور سهیم کرد
+                                </>)}
+                                left={183}
+                                top={709}
+                                width={642}
+                                translationX={642}
+                                height={90}
+                                textAlign={"center"}
+                                lineType={"line_bold"}
+                                lineHeight={"0.8em"}
+                            />
                         </p>
                         <p
                             style={{
@@ -632,8 +441,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -645,88 +452,62 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={390}
-                height={49}
-                variants={BackgroundAnimation(9)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 500,
-                    top: 806,
-                    width: 370,
-                    height: 48,
-                    textAlign: "right",
-                    lineHeight: "1.12em"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 27 }}
-                  variants={TypingAnimation(9.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                گروه سیاسی: «محمود احمدی نژاد» رئیس
-                  <br/>
-                  جمهوری در دیدار مسؤولان آموزش و پرورش گفت:
-                  <br/>
-                  ملت بزرگ ایران حرکتی نوین را آغاز کرده است و
-                  <br/>
-                  قصد دارد با ایجاد جامعه ای نمونه، الگویی اسلامی
-                  <br/>
-                  را با پیام خداخواهی و عدالتخواهی به جهانیان
-                  <br/>
-                  عرضه کند.
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={408}
-                  height={53}
-                  variants={BackgroundAnimation(10)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 500,
-                      top: 1010,
-                      width: 370,
-                      height: 50,
-                      textAlign: "right",
-                      lineHeight: "1.0em"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 27 }}
-                  variants={TypingAnimation(10.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                به گزارش دفتر امور رسانه های ریاست
-                  <br/>
-                  جمهوری،احمدی نژاد افزود: برای دستیابی به این
-                  <br/>
-                  هدف باید چند ویژگی وجود داشته باشد که
-                  <br/>
-                  مهمترین آنها خودباوری و آرمانخواهی است زیرا
-                  <br/>
-                  خودباوری و احساس هویت، پایه حرکت انسان است
-                  <br/>
-                  وآرمانها نیز مانند قله هایی هستند که مسیر وجهت
-                  <br/>
-                  را مشخص می‌کنند.
-                  <br/>
-                  رئیس‌جمهوری در دیدار وزیر، معاونان، رؤسای
-                  <br/>
-                  سازمان‌های آموزش وپرورش سراسر کشور ومدیران
-              </motion.span>
-            </motion.span>{" "}
-          </span>
+                            <TextGroup
+                                animationDelay={9}
+                                fontSize={27}
+                                text={(<>
+                                    گروه سیاسی: «محمود احمدی نژاد» رئیس
+                                    <br/>
+                                    جمهوری در دیدار مسؤولان آموزش و پرورش گفت:
+                                    <br/>
+                                    ملت بزرگ ایران حرکتی نوین را آغاز کرده است و
+                                    <br/>
+                                    قصد دارد با ایجاد جامعه ای نمونه، الگویی اسلامی
+                                    <br/>
+                                    را با پیام خداخواهی و عدالتخواهی به جهانیان
+                                    <br/>
+                                    عرضه کند.
+                                </>)}
+                                left={500}
+                                top={806}
+                                width={460}
+                                translationX={460}
+                                height={200}
+                                textAlign={"right"}
+                                lineType={"line"}
+                                lineHeight={"1.1em"}
+                            />
+                            <TextGroup
+                                animationDelay={10}
+                                fontSize={27}
+                                text={(<>
+                                    به گزارش دفتر امور رسانه های ریاست
+                                    <br/>
+                                    جمهوری،احمدی نژاد افزود: برای دستیابی به این
+                                    <br/>
+                                    هدف باید چند ویژگی وجود داشته باشد که
+                                    <br/>
+                                    مهمترین آنها خودباوری و آرمانخواهی است زیرا
+                                    <br/>
+                                    خودباوری و احساس هویت، پایه حرکت انسان است
+                                    <br/>
+                                    وآرمانها نیز مانند قله هایی هستند که مسیر وجهت
+                                    <br/>
+                                    را مشخص می‌کنند.
+                                    <br/>
+                                    رئیس‌جمهوری در دیدار وزیر، معاونان، رؤسای
+                                    <br/>
+                                    سازمان‌های آموزش وپرورش سراسر کشور ومدیران
+                                </>)}
+                                left={500}
+                                top={997}
+                                width={460}
+                                translationX={460}
+                                height={280}
+                                textAlign={"right"}
+                                lineType={"line"}
+                                lineHeight={"0.95em"}
+                            />
                         </p>
                         <p
                             style={{
@@ -738,8 +519,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -751,8 +530,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -764,8 +541,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                         <p
                             style={{
@@ -777,112 +552,72 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-            <motion.span
-                dir="auto"
-                className="line"
-                width={422}
-                height={51}
-                variants={BackgroundAnimation(11)}
-                initial={"hidden"}
-                animate={"visible"}
-                style={{
-                    left: 20,
-                    top: 804,
-                    width: 421,
-                    height: 50,
-                    textAlign: "right",
-                    lineHeight: "1.2em"
-                }}
-            >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 27 }}
-                  variants={TypingAnimation(11.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                ستادی وزارت آموزش و پرورش، جنس و ذات انقلاب
-                  <br/>
-                  اسلامی را فرهنگی دانست وگفت: انقلاب ما اهداف
-                  <br/>
-                  و مسؤولیت های بزرگی دارد که برای تحقق آنها باید
-                  <br/>
-                  به آموزش و پرورش به عنوان مرکز ثقل نگریست.
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line"
-                  width={385}
-                  height={52}
-                  variants={BackgroundAnimation(12)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 20,
-                      top: 945,
-                      width: 384,
-                      height: 51,
-                      textAlign: "right",
-                      lineHeight: "1.1em"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 27 }}
-                  variants={TypingAnimation(12.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                  احمدی نژاد، آموزش وپرورش راکانون بی بدیل
-                  <br/>
-                  تربیت نیروی انسانی برای اداره کشور معرفی کرد و
-                  <br/>
-                  گفت: باید با تربیت نوجوانان و جوانان مؤمن، شجاع،
-                  <br/>
-                  آرمانخواه و خلاق آنان را برای اداره کشور در سالهای
-                  <br/>
-                  آینده آماده کرد، چرا که این ظرفیت بخوبی در نسل
-                  <br/>
-                  نوجوان وجوان ایرانی وجود دارد. رئیس جمهوری
-                  <br/>
-                  ایجاد رابطه عاطفی میان معلمان و دانش آموزان را
-                  <br/>
-                  بسیارمهم دانست و گفت: باید با ایجاد کانون هایی
-                  <br/>
-                  درمدارس به دانش آموزان اجازه اظهارنظر داد وآنان
-                  <br/>
-                  را در اداره امور سهیم کرد.
-              </motion.span>
-            </motion.span>{" "}
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={145}
-                  height={33}
-                  variants={BackgroundAnimation(15)}
-                  initial={"hidden"}
-                  animate={"visible"}
-                  style={{
-                      left: 71,
-                      top: 1265,
-                      width: 144,
-                      height: 32,
-                      textAlign: "auto"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: 25 }}
-                  variants={TypingAnimation(15.5)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                بقیه در صفحه ۳
-              </motion.span>
-            </motion.span>
-          </span>
+                            <TextGroup
+                                animationDelay={11}
+                                fontSize={27}
+                                text={(<>
+                                    ستادی وزارت آموزش و پرورش، جنس و ذات انقلاب
+                                    <br/>
+                                    اسلامی را فرهنگی دانست وگفت: انقلاب ما اهداف
+                                    <br/>
+                                    و مسؤولیت های بزرگی دارد که برای تحقق آنها باید
+                                    <br/>
+                                    به آموزش و پرورش به عنوان مرکز ثقل نگریست.
+                                </>)}
+                                left={20}
+                                top={804}
+                                width={470}
+                                translationX={470}
+                                height={130}
+                                textAlign={"right"}
+                                lineType={"line"}
+                                lineHeight={"1.1em"}
+                            />
+                            <TextGroup
+                                animationDelay={12}
+                                fontSize={27}
+                                text={(<>
+                                    احمدی نژاد، آموزش وپرورش راکانون بی بدیل
+                                    <br/>
+                                    تربیت نیروی انسانی برای اداره کشور معرفی کرد و
+                                    <br/>
+                                    گفت: باید با تربیت نوجوانان و جوانان مؤمن، شجاع،
+                                    <br/>
+                                    آرمانخواه و خلاق آنان را برای اداره کشور در سالهای
+                                    <br/>
+                                    آینده آماده کرد، چرا که این ظرفیت بخوبی در نسل
+                                    <br/>
+                                    نوجوان وجوان ایرانی وجود دارد. رئیس جمهوری
+                                    <br/>
+                                    ایجاد رابطه عاطفی میان معلمان و دانش آموزان را
+                                    <br/>
+                                    بسیارمهم دانست و گفت: باید با ایجاد کانون هایی
+                                    <br/>
+                                    درمدارس به دانش آموزان اجازه اظهارنظر داد وآنان
+                                    <br/>
+                                    را در اداره امور سهیم کرد.
+                                </>)}
+                                left={20}
+                                top={938}
+                                width={470}
+                                translationX={470}
+                                height={305}
+                                textAlign={"right"}
+                                lineType={"line"}
+                                lineHeight={"1.05em"}
+                            />
+                            <TextGroup
+                                animationDelay={15}
+                                fontSize={25}
+                                text={"بقیه در صفحه ۳"}
+                                left={71}
+                                top={1245}
+                                width={144}
+                                translationX={144}
+                                height={32}
+                                textAlign={"auto"}
+                                lineType={"line_bold"}
+                            />
                         </p>
                         <p
                             style={{
@@ -894,8 +629,6 @@ const RoozNameh = () => {
                             }}
                             dir="auto"
                         >
-          <span className="lines">
-          </span>
                         </p>
                     </div>
                 </page>

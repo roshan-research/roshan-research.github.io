@@ -9,15 +9,16 @@ const TextGroup = ({
    height,
    left,
    top,
-   width
+   width,
+   textAlign = "auto",
+   lineHeight,
+   lineType = "line_bold",
 }) => {
     return(
         <span className="lines">
             <motion.span
                 dir="auto"
                 className="line_bold"
-                width={202}
-                height={50}
                 variants={BackgroundAnimation(animationDelay)}
                 initial={"hidden"}
                 animate={"visible"}
@@ -27,24 +28,24 @@ const TextGroup = ({
                     top: top,
                     width: width,
                     height: height,
-                    textAlign: "auto"
+                    textAlign: textAlign,
+                    lineHeight: lineHeight
                 }}
             >
             </motion.span>
               <motion.span
                   dir="auto"
-                  className="line_bold"
-                  width={202}
-                  height={50}
+                  className={lineType}
                   style={{
                       transformOrigin: "right",
                       left: left,
                       top: top,
                       width: width,
                       height: height,
-                      textAlign: "auto",
+                      textAlign: textAlign,
                       overflow: "hidden",
-                      backgroundColor: "transparent"
+                      backgroundColor: "transparent",
+                      lineHeight: lineHeight
                   }}
               >
               <motion.span
