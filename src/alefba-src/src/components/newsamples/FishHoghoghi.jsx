@@ -53,12 +53,29 @@ const FishHoghoghi = () => {
                     textAlign: "auto"
                 }}
             >
+            </motion.span>
               <motion.span
-                  variants={TypingAnimation(0.5)}
+                  dir="auto"
+                  className="line_bold"
+                  width={202}
+                  height={50}
+                  style={{
+                      transformOrigin: "right",
+                      left: 151,
+                      top: 15,
+                      width: 201,
+                      height: 49,
+                      textAlign: "auto",
+                      backgroundColor: "transparent",
+                      overflow: "hidden"
+                  }}
+              >
+              <motion.span
+                  className="words"
+                  style={{ fontSize: 38,transformOrigin: "right"}}
+                  variants={TypingAnimation(0)}
                   initial={"hidden"}
                   animate={"visible"}
-                  className="words"
-                  style={{ fontSize: 38,transformOrigin: "right", }}
               >
                 دستمزد مستقیم
               </motion.span>

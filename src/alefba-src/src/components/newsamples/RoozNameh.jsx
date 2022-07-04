@@ -4,7 +4,13 @@ import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnima
 
 const RoozNameh = () => {
     return(
-        <div className="container" style={{zIndex: '1000', marginTop: '-60vh', marginLeft: '30vw'}}>
+        <div className="container"
+             style={{
+                 zIndex: '1000',
+                 marginTop: '-60vh',
+                 marginLeft: '30vw',
+             }}
+        >
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -14,7 +20,10 @@ const RoozNameh = () => {
             />
             <div
                 id="document"
-                style={{ position: "relative", transform: "scale(0.35)" }}
+                style={{
+                    position: "relative",
+                    transform: "scale(0.35)",
+                }}
             >
                 <img
                     style={{ position: "absolute", left: 0 }}
