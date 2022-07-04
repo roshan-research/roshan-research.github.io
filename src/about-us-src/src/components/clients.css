@@ -20,28 +20,34 @@
   flex-direction: column; }
 
 .client-pic {
-  width: 10.9vw;
-  border: 1px solid #4A4E57;
-  height: 10.9vw;
+  width: 11vw;
+  outline: 1px solid #4A4E57;
+  height: 11vw;
   display: flex;
   justify-content: center;
   align-items: center; }
 
-#clients-row1 {
+#clients-row1, #clients-row2, #clients-row3 {
   display: flex;
-  justify-content: center;
-  align-items: center; }
-
-#clients-row2 {
-  display: flex;
+  width: 55vw;
   justify-content: center;
   align-items: center; }
 
 #clients-row3 {
-  display: flex;
-  justify-content: end;
-  align-items: center;
-  width: 55.05vw; }
+  justify-content: end; }
+
+#filimo-div {
+  border-right: none; }
+
+#aparat-div, #naft-div, #mokhaberat-div, #varzesh3-div {
+  border-bottom: none;
+  border-right: none; }
+
+#tamasha-div, #farabi-div, #parsian-div {
+  border-right: none; }
+
+#jahad-div {
+  border-bottom: none; }
 
 #filimo {
   width: 7vw; }
@@ -111,10 +117,10 @@
     width: 14.5vw; } }
 @media screen and (max-width: 600px) {
   #clients {
-    width: 90vw;
-    margin-left: 12.5vw;
+    margin-left: 15.3vw;
     flex-direction: column;
     margin-top: 5vh;
+    justify-content: center;
     align-items: center; }
 
   #clients-motto {
@@ -131,6 +137,7 @@
   #clients-pics {
     justify-content: center;
     align-items: start;
+    width: 55vw;
     flex-direction: row; }
 
   #clients-row1 {
@@ -142,7 +149,7 @@
   #clients-row2 {
     display: flex;
     justify-content: center;
-    align-items: center;
+    align-items: start;
     flex-direction: column; }
 
   #clients-row3 {

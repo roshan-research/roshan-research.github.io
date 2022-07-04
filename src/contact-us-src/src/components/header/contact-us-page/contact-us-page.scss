@@ -151,6 +151,7 @@ p{
     height: auto;
     z-index: 1000;
     width: 80vw;
+    margin-top: 5vh;
   }
 
   #address-text {
@@ -191,9 +192,8 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    background-size: cover;
     background-repeat: no-repeat;
-    background-position: 60% 40%;
+    background-position: 70% 40%;
     background-image: url("../../../assets/images/Map.svg");
   }
 }

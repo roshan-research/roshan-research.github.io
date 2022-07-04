@@ -10,6 +10,7 @@
     "framer-motion": "^4.1.17",
     "lottie-react": "^2.1.0",
     "react": "^17.0.2",
+    "react-burger-menu": "^3.0.8",
     "react-device-detect": "^1.17.0",
     "react-div-100vh": "^0.6.0",
     "react-dom": "^17.0.2",
@@ -23,8 +24,7 @@
     "normalBuild": "BUILD_PATH='../../join-us' react-scripts build",
     "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject",
-    "postbuild": "sh ../../shell-scripts/update.sh"
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [

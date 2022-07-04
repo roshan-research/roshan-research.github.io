@@ -22,22 +22,22 @@ const Clients = () => {
             </p>
             <div id={'clients-pics'}>
                 <div id={'clients-row1'}>
-                    <div className={'client-pic'}><img id={'filimo'} src={filimo} alt={''}/></div>
-                    <div className={'client-pic'}><img id={'aparat'} src={aparat} alt={''}/></div>
-                    <div className={'client-pic'}><img id={'naft'} src={naft} alt={''}/></div>
-                    <div className={'client-pic'}><img id={'mokhaberat'} src={mokhaberat} alt={''}/></div>
-                    <div className={'client-pic'}><img id={'ketabkhone'} src={ketabkhone} alt={''}/></div>
+                    <div className={'client-pic'} id={'filimo-div'}><img id={'filimo'} src={filimo} alt={''}/></div>
+                    <div className={'client-pic'} id={'aparat-div'}><img id={'aparat'} src={aparat} alt={''}/></div>
+                    <div className={'client-pic'} id={'naft-div'}><img id={'naft'} src={naft} alt={''}/></div>
+                    <div className={'client-pic'} id={'mokhaberat-div'}><img id={'mokhaberat'} src={mokhaberat} alt={''}/></div>
+                    <div className={'client-pic'} id={'ketabkhone-div'}><img id={'ketabkhone'} src={ketabkhone} alt={''}/></div>
                 </div>
                 <div id={'united-columns'}>
                     <div id={'clients-row2'}>
-                        <div className={'client-pic'}><img id={'tamasha'} src={tamasha} alt={''}/></div>
-                        <div className={'client-pic'}><img id={'varzesh3'} src={varzesh3} alt={''}/></div>
-                        <div className={'client-pic'}><img id={'jahad'} src={jahad} alt={''}/></div>
+                        <div className={'client-pic'} id={'tamasha-div'}><img id={'tamasha'} src={tamasha} alt={''}/></div>
+                        <div className={'client-pic'} id={'varzesh3-div'}><img id={'varzesh3'} src={varzesh3} alt={''}/></div>
+                        <div className={'client-pic'} id={'jahad-div'}><img id={'jahad'} src={jahad} alt={''}/></div>
                     </div>
                     <div id={'clients-row3'}>
-                        <div className={'client-pic'}><img id={'farabi'} src={farabi} alt={''}/></div>
-                        <div className={'client-pic'}><img id={'parsian'} src={parsian} alt={''}/></div>
-                        <div className={'client-pic'}><img id={'astan'} src={astan} alt={''}/></div>
+                        <div className={'client-pic'} id={'farabi-div'}><img id={'farabi'} src={farabi} alt={''}/></div>
+                        <div className={'client-pic'} id={'parsian-div'}><img id={'parsian'} src={parsian} alt={''}/></div>
+                        <div className={'client-pic'} id={'astan-div'}><img id={'astan'} src={astan} alt={''}/></div>
                     </div>
                 </div>
             </div>

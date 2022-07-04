@@ -6,7 +6,11 @@ import {ReactComponent as HomeButton} from '../../assets/images/home-mobile.svg'
 import JoinUsButton from "./navigation-bar/links-group/join-us-button/join-us-button";
 import ContactUsButton from "./navigation-bar/links-group/contact-us-button/contact-us-button";
 import mapImage from "../../assets/images/Map.svg";
+import { slide as Menu } from 'react-burger-menu';
 import isMobile from 'react-device-detect'
+import closeIcon from '../../assets/images/close-icon.svg';
+import burgerIcon from '../../assets/images/menu-icon.svg';
+import MenuLinks from "../MenuLinks";
 
 const ContactUsPage = lazy(() => import("./contact-us-page/ContactusPage"));
 
@@ -27,11 +31,18 @@ export default class Header extends Component {
         if (this.state.isOpen) {
             return (
                 <div id={'compact-menu'}>
-                    <a href={'https://www.roshan-ai.ir/'}>
-                        <HomeButton id={'home'}/>
+                    <a href={'https://www.roshan-ai.ir/'} id={'mobile-menu-link'}>
+                        روشن
                     </a>
-                    <ContactUsButton />
-                    <JoinUsButton />
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        درباره ما
+                    </a>
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        تماس با ما
+                    </a>
+                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                        همکاری با ما
+                    </a>
                 </div>
             )
         } else {
@@ -44,7 +55,26 @@ export default class Header extends Component {
     render() {
         return(
             <div id={'all'}>
-                <div className="header-wrapper">
+                <Menu
+                    menuClassName={ "menu" }
+                    itemListElement="div"
+                    burgerButtonClassName={ "my-button" }
+                    pageWrapId={ "header-wrapper" }
+                    itemListClassName={ "menu-items" }
+                    crossButtonClassName={ "my-cross" }
+                    outerContainerId={ "all" }
+                    customBurgerIcon={
+                        <img src={burgerIcon} alt={''}/>
+                    }
+                    customCrossIcon={
+                        <div>
+                            <img src={closeIcon} alt={''}/>
+                        </div>
+                    }
+                >
+                    <MenuLinks/>
+                </Menu>
+                <div className="header-wrapper" id={'header-wrapper'}>
                     <Navbar
                         toggle={this.toggle}
                         isOpen={this.state.isOpen}

@@ -1,0 +1,254 @@
+#utils-title{
+  color: #26FF7B;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.8vw;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: iran-yekan, serif;
+}
+
+
+#side-utils{
+  margin-top: 50vh;
+  position: absolute;
+  height:80.55555555555556vh;
+  width:99.5vw;
+  display: flex;
+  justify-content: start;
+  flex-direction: row;
+  align-items: end;
+}
+
+#side-utils-main{
+  height:80.55555555555556vh;
+  width:20vw;
+}
+
+#tech-utils{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#utils-wrapper{
+  display: flex;
+  justify-content: space-around;
+  flex-direction: row;
+  width:70vw;
+  margin-right: 5vw;
+}
+
+.util-icon{
+  height:6vh;
+  width:3vw;
+  margin-right: -5vw;
+}
+
+.black-util-text{
+  direction: rtl;
+  color: #26FF7B;
+  background-color: transparent;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1vw;
+  transition: 0.1s ease-in-out;
+  transform: scaleX(1);
+  z-index: 1;
+}
+
+.black-util-text-background{
+  direction: rtl;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1vw;
+  color: transparent;
+  transition: 1s ease-in-out;
+  transform: scaleX(1);
+  background-color: #26FF7B;
+  transform-origin: right;
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.title-stack-utils{
+  display: flex;
+  position: relative;
+  flex-direction: column;
+}
+
+
+.white-util-text{
+  color: white;
+  direction: rtl;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 1vw;
+}
+
+
+.util-row{
+  width: 15vw;
+  display: flex;
+  justify-content: end;
+  align-items: center;
+  flex-direction: row;
+}
+
+.util-group{
+  display: flex;
+  justify-content: center;
+  align-items: end;
+  flex-direction: column;
+  height:33vh;
+  width:20vw;
+}
+
+#right-space{
+  height: 15vh;
+}
+
+#deep,#nlp,#accuracy,#parallel{
+  position: absolute;
+  display: none;
+}
+
+#right2-icon, #right1-icon, #left2-icon, #left1-icon {
+  position: absolute;
+}
+
+#right1-icon {
+  margin-top: -15vw;
+  margin-right: -13vw;
+  width: 15.6vw;
+}
+
+#right2-icon{
+  margin-top: -10vw;
+  margin-right: -12vw;
+  width: 13.2vw;
+}
+
+#left1-icon {
+  margin-top: -10vw;
+  margin-right: 10vw;
+  width: 15.6vw;
+}
+
+#left2-icon {
+  margin-top: -10vw;
+  margin-right: +10vw;
+  width: 15.6vw;
+}
+
+@media screen and (max-width: 500px){
+
+  #right2-icon, #right1-icon, #left2-icon, #left1-icon {
+    display: none;
+  }
+
+  #utils-title{
+    font-size: 5.1vw;
+  }
+
+  #side-utils{
+    display: none;
+    margin-top: -240vh;
+    height:100vh;
+    width:99.5vw;
+  }
+  #side-utils-main{
+    height:100vh;
+    width:70vw;
+  }
+
+  #utils-wrapper{
+    align-items: center;
+    flex-direction: column;
+    width:70vw;
+  }
+
+  .util-group{
+    margin-top: 30vh;
+    height:26.408450704225352vh;
+    width:77.77777777777779vw;
+  }
+
+  .black-util-text,.black-util-text-background{
+    font-size: 5vw;
+    margin-right: -1vw;
+    margin-bottom: 3vh;
+  }
+
+  .white-util-text{
+    font-size: 4vw;
+  }
+
+  .util-row{
+    width: 50vw;
+  }
+
+  .util-icon{
+    display: none;
+  }
+
+  #right-space{
+    height: 0;
+  }
+
+  .left-to-right{
+    align-items: start;
+    direction: ltr;
+    text-align: left;
+    float: left;
+  }
+
+  .left-to-right-row1{
+    width: 44vw;
+  }
+
+  .left-to-right-row2{
+    width: 32vw;
+  }
+
+  #deep{
+    display: block;
+    height:31.690140845070424vh;
+    width:44.44444444444444vw;
+    margin-left:47vw;
+    margin-top: -25vh;
+  }
+
+  #nlp{
+    display: block;
+    height:29vh;
+    width:40vw;
+    margin-left:50vw;
+    margin-top: -20vh;
+  }
+
+  #accuracy{
+    display: block;
+    position: absolute;
+    height:29vh;
+    width:40vw;
+    margin-right:52vw;
+    margin-top: -20vh;
+  }
+
+  #parallel{
+    display: block;
+    height:29vh;
+    width:40vw;
+    margin-right:52vw;
+    margin-top: -25vh;
+  }
+}
