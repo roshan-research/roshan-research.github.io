@@ -19,6 +19,7 @@ const Charkhesh = () => {
                     style={{ position: "absolute", left: 0,width: 1512, height: 2016 }}
                     id="raw"
                     src={charkhesh}
+                    alt={''}
                 />
                 <page style={{ width: 1512, height: 2016 }}>
                     <div className="document line-view" style={{}}>

@@ -18,6 +18,7 @@ import FishHoghoghi from "./newsamples/FishHoghoghi";
 import KartMelli from "./newsamples/KartMelli";
 import RoozNameh from "./newsamples/RoozNameh";
 import Charkhesh from "./newsamples/Charkhesh";
+import Tahrir from "./newsamples/Tahrir";
 
 enum Sample {
     KartMelli,
@@ -126,6 +127,7 @@ class SampleSection extends Component {
                         <KartMelli/>
                         <RoozNameh/>
                         <Charkhesh/>
+                        <Tahrir/>
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
