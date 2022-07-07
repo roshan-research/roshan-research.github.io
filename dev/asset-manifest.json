@@ -1,15 +1,13 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.e2e89ce2.chunk.css",
-    "main.js": "/dev/static/js/main.ebd34638.chunk.js",
-    "runtime-main.js": "/dev/static/js/runtime-main.f61455a4.js",
-    "static/js/2.feb4848f.chunk.js": "/dev/static/js/2.feb4848f.chunk.js",
-    "static/js/3.769bafde.chunk.js": "/dev/static/js/3.769bafde.chunk.js",
+    "main.css": "/dev/static/css/main.d105db8c.chunk.css",
+    "main.js": "/dev/static/js/main.ea637f76.chunk.js",
+    "runtime-main.js": "/dev/static/js/runtime-main.fa6034de.js",
+    "static/js/2.0b167bee.chunk.js": "/dev/static/js/2.0b167bee.chunk.js",
+    "static/js/3.12fd86af.chunk.js": "/dev/static/js/3.12fd86af.chunk.js",
     "index.html": "/dev/index.html",
-    "static/js/2.feb4848f.chunk.js.LICENSE.txt": "/dev/static/js/2.feb4848f.chunk.js.LICENSE.txt",
+    "static/js/2.0b167bee.chunk.js.LICENSE.txt": "/dev/static/js/2.0b167bee.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/dev/static/media/IRANYekan.b916444e.ttf",
-    "static/media/Sher.6255042b.svg": "/dev/static/media/Sher.6255042b.svg",
-    "static/media/TarazNameh.122d732b.svg": "/dev/static/media/TarazNameh.122d732b.svg",
     "static/media/accuracy-mobile.a6b965ee.svg": "/dev/static/media/accuracy-mobile.a6b965ee.svg",
     "static/media/bikeifyat.154fa1d7.jpg": "/dev/static/media/bikeifyat.154fa1d7.jpg",
     "static/media/businesses.f577862c.png": "/dev/static/media/businesses.f577862c.png",
@@ -20,7 +18,6 @@
     "static/media/dot.5ee81e2f.svg": "/dev/static/media/dot.5ee81e2f.svg",
     "static/media/download-icon.4f55bff8.svg": "/dev/static/media/download-icon.4f55bff8.svg",
     "static/media/fish.1639ad4a.jpg": "/dev/static/media/fish.1639ad4a.jpg",
-    "static/media/kart-melli.049f8a5a.svg": "/dev/static/media/kart-melli.049f8a5a.svg",
     "static/media/kart.8cce93cf.png": "/dev/static/media/kart.8cce93cf.png",
     "static/media/left-1.7bb0036a.svg": "/dev/static/media/left-1.7bb0036a.svg",
     "static/media/left-1.7dbf4a6b.svg": "/dev/static/media/left-1.7dbf4a6b.svg",
@@ -43,16 +40,13 @@
     "static/media/right-3.b3f8969f.svg": "/dev/static/media/right-3.b3f8969f.svg",
     "static/media/roshan-logo.ae7188f6.svg": "/dev/static/media/roshan-logo.ae7188f6.svg",
     "static/media/roznameh.61a1c992.jpg": "/dev/static/media/roznameh.61a1c992.jpg",
-    "static/media/sample-1-mobile.52d5628d.png": "/dev/static/media/sample-1-mobile.52d5628d.png",
-    "static/media/sample-2-mobile.38885d6f.png": "/dev/static/media/sample-2-mobile.38885d6f.png",
-    "static/media/sample-3-mobile.58b044bb.png": "/dev/static/media/sample-3-mobile.58b044bb.png",
     "static/media/side.9e3ce4f0.svg": "/dev/static/media/side.9e3ce4f0.svg",
     "static/media/tahrir.a94522c2.jpg": "/dev/static/media/tahrir.a94522c2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.f61455a4.js",
-    "static/js/2.feb4848f.chunk.js",
-    "static/css/main.e2e89ce2.chunk.css",
-    "static/js/main.ebd34638.chunk.js"
+    "static/js/runtime-main.fa6034de.js",
+    "static/js/2.0b167bee.chunk.js",
+    "static/css/main.d105db8c.chunk.css",
+    "static/js/main.ea637f76.chunk.js"
   ]
 }
