@@ -1,10 +1,23 @@
-import style from "./style";
+import style, {getScale} from "./style";
 import tahrir from "../../assets/images/samples/tahrir.jpg";
 import TextGroup from "./TextGroup";
+import {useEffect, useState} from "react";
 
 const Tahrir = () => {
+
+    const[scaleCoefficient,setScaleCoefficient] = useState({});
+
+    useEffect(() => {
+        setScaleCoefficient(getScale(window.innerWidth,1887));
+    }, [])
+
+
+    window.onresize = () => {
+        setScaleCoefficient(getScale(window.innerWidth,1887));
+    };
+
     return(
-        <div className="container" style={{marginTop: "+80vh",zIndex: 200}}>
+        <div className="container">
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -13,7 +26,7 @@ const Tahrir = () => {
             />
             <div
                 id="document"
-                style={{ position: "relative", transform: "scale(0.304134)" }}
+                style={{ position: "relative", transform:  `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}
             >
                 <img
                     style={{ position: "absolute", left: 0,width: 1887, height: 1262 }}

@@ -1,16 +1,23 @@
 import rooznameh from "../../assets/images/samples/roznameh.jpg";
-import style from "./style";
+import style, {getScale} from "./style";
 import TextGroup from "./TextGroup";
+import {useEffect, useState} from "react";
 
 const RoozNameh = () => {
+
+    const[scaleCoefficient,setScaleCoefficient] = useState({});
+
+    useEffect(() => {
+        setScaleCoefficient(getScale(window.innerWidth,2226));
+    }, [])
+
+
+    window.onresize = () => {
+        setScaleCoefficient(getScale(window.innerWidth,2226));
+    };
+
     return(
-        <div className="container"
-             style={{
-                 zIndex: '1000',
-                 marginTop: '-60vh',
-                 marginLeft: '30vw',
-             }}
-        >
+        <div className="container">
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -21,7 +28,8 @@ const RoozNameh = () => {
                 id="document"
                 style={{
                     position: "relative",
-                    transform: "scale(0.35)",
+                    transform: `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,
+                    transition: "0s"
                 }}
             >
                 <img

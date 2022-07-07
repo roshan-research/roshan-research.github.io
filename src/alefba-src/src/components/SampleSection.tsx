@@ -1,17 +1,6 @@
-import Sherr from "./samples/Sherr";
-import TarazNameh from "./samples/TarazNameh";
-import Sample1Mobile from '../assets/images/samples/sample-1-mobile.png';
-import Sample2Mobile from '../assets/images/samples/sample-2-mobile.png';
-import Sample3Mobile from '../assets/images/samples/sample-3-mobile.png';
-
-import kartmelli from '../assets/images/samples/kart-melli.svg';
-import sherr from '../assets/images/samples/Sher.svg';
-import taraznameh from '../assets/images/samples/TarazNameh.svg';
-
 import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
 import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
 import '../stylesheets/sample-section.scss';
-import {motion} from 'framer-motion';
 
 import {Component} from "react";
 import FishHoghoghi from "./newsamples/FishHoghoghi";
@@ -23,86 +12,124 @@ import BiKeifyat from "./newsamples/BiKeifyat";
 
 enum Sample {
     KartMelli,
-    Taraznameh,
-    Sherr
+    Fish,
+    Charkhesh,
+    RoozNameh,
+    Tahrir,
+    BiKeifyat
 }
 
 class SampleSection extends Component {
 
     state = {
-        chosenSample: Sample.KartMelli
+        chosenSample: Sample.KartMelli,
+        timeOut: 12500
     }
 
     constructor(props: any) {
       super(props);
         window.setInterval(() => {
-            let randomNumber:number = Math.floor((Math.random() * 3) + 1);
+            let randomNumber:number = Math.floor((Math.random() * 6) + 1);
             switch(randomNumber) {
                 case 1:
                     this.setState({
-                        chosenSample: Sample.KartMelli
+                        chosenSample: Sample.KartMelli,
+                        timeOut: 12500
                     })
                     break;
                 case 2:
                     this.setState({
-                        chosenSample: Sample.Sherr
+                        chosenSample: Sample.Fish,
+                        timeOut: 31500
                     })
                     break;
                 case 3:
                     this.setState({
-                        chosenSample: Sample.Taraznameh
+                        chosenSample: Sample.Charkhesh,
+                        timeOut: 7500
+                    })
+                    break;
+                case 4:
+                    this.setState({
+                        chosenSample: Sample.RoozNameh,
+                        timeOut: 15500
+                    })
+                    break;
+                case 5:
+                    this.setState({
+                        chosenSample: Sample.Tahrir,
+                        timeOut: 8500
+                    })
+                    break;
+                case 6:
+                    this.setState({
+                        chosenSample: Sample.BiKeifyat,
+                        timeOut: 7500
                     })
                     break;
             }
 
-        },5000);
+        },31500);
     }
 
     render() {
 
         const onKartMelliClick = () => {
             this.setState({
-                chosenSample: Sample.KartMelli
+                chosenSample: Sample.KartMelli,
+                timeOut: 12500
             })
         }
 
-        const onTarazNamehClick = () => {
+        const onFishClick = () => {
             this.setState({
-                chosenSample: Sample.Taraznameh
+                chosenSample: Sample.Fish,
+                timeOut: 31500
             })
         }
 
-        const onSherClick = () => {
+        const onCharkheshClick = () => {
             this.setState({
-                chosenSample: Sample.Sherr
+                chosenSample: Sample.Charkhesh,
+                timeOut: 7500
             })
         }
 
-        const whichImage = () => {
-            switch (this.state.chosenSample) {
-                case Sample.KartMelli:
-                    return kartmelli;
-                case Sample.Sherr:
-                    return sherr;
-                case Sample.Taraznameh:
-                    return taraznameh;
-            }
+        const onRooznamehClick = () => {
+            this.setState({
+                chosenSample: Sample.RoozNameh,
+                timeOut: 15500
+            })
+        }
+
+        const onTahrirClick = () => {
+            this.setState({
+                chosenSample: Sample.Tahrir,
+                timeOut: 8500
+            })
+        }
+
+        const onBikeifyatClick = () => {
+            this.setState({
+                chosenSample: Sample.BiKeifyat,
+                timeOut: 7500
+            })
         }
 
         const whichSample = () => {
             switch (this.state.chosenSample) {
                 case Sample.KartMelli:
-                    return <div className={'sample-alefbized'}>
-                        <KartMelli/>
-                    </div>;
-                case Sample.Sherr:
-                    return <div className={'sample-alefbized'}>
-                        <Sherr/>
-                    </div>;
-                case Sample.Taraznameh:
-                    return <div className={'sample-alefbized'}>
-                        <TarazNameh/>
-                    </div>;
+                    return <KartMelli/>;
+                case Sample.Fish:
+                    return <FishHoghoghi/>;
+                case Sample.Charkhesh:
+                    return <Charkhesh/>;
+                case Sample.RoozNameh:
+                    return <RoozNameh/>;
+                case Sample.Tahrir:
+                    return <Tahrir/>;
+                case Sample.BiKeifyat:
+                    return <BiKeifyat/>;
             }
         }
 
@@ -114,72 +141,69 @@ class SampleSection extends Component {
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
-                        {/*({whichSample()})*/}
-                        {/*<motion.img*/}
-                        {/*    variants={ImageAnimation}*/}
-                        {/*    initial={"hidden"}*/}
-                        {/*    animate={"visible"}*/}
-                        {/*    src={whichImage()}*/}
-                        {/*    key={this.state.chosenSample}*/}
-                        {/*    alt={''}*/}
-                        {/*    className={'sample-image'}*/}
-                        {/*/>*/}
-                        <FishHoghoghi/>
-                        <KartMelli/>
-                        <RoozNameh/>
-                        <Charkhesh/>
-                        <Tahrir/>
-                        <BiKeifyat/>
+                        ({whichSample()})
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
                         <div className={'button'} onClick={onKartMelliClick}>
-                            <img src={Sample1Mobile} className={'mobile-image float-right'} id={'sample-1-mobile'}
-                                 alt={''}/>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-title' : ''}>
-                                    حفظ ساختار متن
+                                    مدارک شناسایی
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.KartMelli ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.KartMelli ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample'}
-                               id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-description' : ''}>
-                                خطوط نوشته در قالب پاراگراف‌های متن به مخاطب ارائه می‌شوند.
-                            </p>
                         </div>
-                        <div className={'button'} onClick={onTarazNamehClick}>
-                            <img src={Sample2Mobile} className={'mobile-image float-left'} id={'sample-2-mobile'}
-                                 alt={''}/>
+                        <div className={'button'} onClick={onFishClick}>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample text-left-title'}
-                                   id={this.state.chosenSample === Sample.Taraznameh ? 'active-orange-title' : ''}>
-                                    حفظ ساختار سند
+                                   id={this.state.chosenSample === Sample.Fish ? 'active-orange-title' : ''}>
+                                    جدول های مالی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Taraznameh ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Taraznameh ? 'polygon' : 'no-dot'}/>
+                                <Dot className={this.state.chosenSample === Sample.Fish ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Fish ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample text-left'}
-                               id={this.state.chosenSample === Sample.Taraznameh ? 'active-orange-description' : ''}>
-                                جدول درون سند، درست با همان قالب ردیف‌ها و ستون‌ها تحلیل می‌شود.
-                            </p>
                         </div>
-                        <div className={'button'} onClick={onSherClick}>
-                            <img src={Sample3Mobile} className={'mobile-image float-right'} id={'sample-3-mobile'}
-                                 alt={''}/>
+                        <div className={'button'} onClick={onCharkheshClick}>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.Sherr ? 'active-orange-title' : ''}>
-                                    اصلاح تصویر
+                                   id={this.state.chosenSample === Sample.Charkhesh ? 'active-orange-title' : ''}>
+                                    اسناد چرخیده
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Sherr ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Sherr ? 'polygon' : 'no-dot'}/>
+                                <Dot className={this.state.chosenSample === Sample.Charkhesh ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Charkhesh ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample'}
-                               id={this.state.chosenSample === Sample.Sherr ? 'active-orange-description' : ''}>
-                                پس‌زمینه نوشته اگر تمیز هم نباشد، الفبا می‌تواند آن را بخواند.
-                            </p>
+                        </div>
+                        <div className={'button'} onClick={onRooznamehClick}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.RoozNameh ? 'active-orange-title' : ''}>
+                                    روزنامه
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.RoozNameh ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.RoozNameh ? 'polygon' : 'no-dot'}/>
+                            </div>
+                        </div>
+                        <div className={'button'} onClick={onTahrirClick}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.Tahrir ? 'active-orange-title' : ''}>
+                                    اسناد ماشین تحریر
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.Tahrir ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Tahrir ? 'polygon' : 'no-dot'}/>
+                            </div>
+                        </div>
+                        <div className={'button'} onClick={onBikeifyatClick}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.BiKeifyat ? 'active-orange-title' : ''}>
+                                    اسناد بی کیفیت
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.BiKeifyat ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.BiKeifyat ? 'polygon' : 'no-dot'}/>
+                            </div>
                         </div>
                     </div>
                 </div>

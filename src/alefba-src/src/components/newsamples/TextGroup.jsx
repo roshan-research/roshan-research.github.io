@@ -15,7 +15,7 @@ const TextGroup = ({
    lineType = "line_bold",
 }) => {
     return(
-        <span className="lines">
+        <>
             <motion.span
                 dir="auto"
                 className="line_bold"
@@ -58,7 +58,7 @@ const TextGroup = ({
                 {text}
               </motion.span>
             </motion.span>
-          </span>
+          </>
     );
 };
 

@@ -1,10 +1,23 @@
-import style from "./style";
+import style, {getScale} from "./style";
 import bikeifyat from "../../assets/images/samples/bikeifyat.jpg";
 import TextGroup from "./TextGroup";
+import {useEffect, useState} from "react";
 
 const BiKeifyat = () => {
+
+    const[scaleCoefficient,setScaleCoefficient] = useState({});
+
+    useEffect(() => {
+        setScaleCoefficient(getScale(window.innerWidth,2298));
+    }, [])
+
+
+    window.onresize = () => {
+        setScaleCoefficient(getScale(window.innerWidth,2298));
+    };
+
     return(
-        <div className="container" style={{marginTop: "-400vh", zIndex: 300}}>
+        <div className="container">
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -13,7 +26,8 @@ const BiKeifyat = () => {
             />
             <div
                 id="document"
-                style={{ position: "relative", transform: "scale(0.3)" }}
+                style={{ position: "relative", transform:
+                        `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}
             >
                 <img
                     style={{ position: "absolute", left: 0,width: 2298, height: 1414 }}

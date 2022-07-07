@@ -1,11 +1,24 @@
 import kart from "../../assets/images/samples/kart.png";
 import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
-import style from "./style";
+import style, {getScale} from "./style";
+import {useEffect, useState} from "react";
 
 const KartMelli = () => {
+
+    const[scaleCoefficient,setScaleCoefficient] = useState({});
+
+    useEffect(() => {
+        setScaleCoefficient(getScale(window.innerWidth,2500));
+    }, [])
+
+
+    window.onresize = () => {
+        setScaleCoefficient(getScale(window.innerWidth,2500));
+    };
+
     return(
-        <div className="container sample-image" style={{marginTop: '-105vh'}}>
+        <div className="container">
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -14,7 +27,10 @@ const KartMelli = () => {
             />
             <div
                 id="document"
-                style={{ position: "relative", transform: "scale(0.21)" }}
+                style={{ position: "relative",transform:
+                        `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,
+                    transition: "0s"
+                }}
             >
                 <img
                     style={{ position: "absolute", left: 0 , width: 2500, height: "1576.4750093949642px"}}

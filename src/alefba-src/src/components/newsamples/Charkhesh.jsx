@@ -1,10 +1,23 @@
 import charkhesh from "../../assets/images/samples/charkhesh.jpg";
-import style from "./style";
+import style, {getScale} from "./style";
 import TextGroup from "./TextGroup";
+import {useEffect, useState} from "react";
 
 const Charkhesh = () => {
+
+    const[scaleCoefficient,setScaleCoefficient] = useState({});
+
+    useEffect(() => {
+        setScaleCoefficient(getScale(window.innerWidth,1512));
+    }, [])
+
+
+    window.onresize = () => {
+        setScaleCoefficient(getScale(window.innerWidth,1512));
+    };
+
     return(
-        <div className="container" style={{marginTop: "-250vh",zIndex: 200}}>
+        <div className="container" style={{zIndex: 200}}>
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{
@@ -13,7 +26,8 @@ const Charkhesh = () => {
             />
             <div
                 id="document"
-                style={{ position: "relative", transform: "scale(0.3)" }}
+                style={{ position: "relative", transform:
+                    `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}
             >
                 <img
                     style={{ position: "absolute", left: 0,width: 1512, height: 2016 }}
