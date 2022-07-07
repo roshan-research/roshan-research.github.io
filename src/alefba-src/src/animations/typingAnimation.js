@@ -7,7 +7,7 @@ export const TypingAnimation = (delay,translationX = 0) => {
             x: 0,
             transition: {
                 delay: delay,
-                duration: 0.5,
+                duration: 0.75,
             }
         },
     }
@@ -23,7 +23,7 @@ export const BackgroundAnimation = (delay) => {
             scaleX: 1,
             transition: {
                 delay: delay,
-                duration: 0.5,
+                duration: 0.75,
             }
         },
     }

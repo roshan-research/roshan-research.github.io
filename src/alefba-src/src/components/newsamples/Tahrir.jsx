@@ -68,7 +68,7 @@ const Tahrir = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={1}
+                                animationDelay={0.5}
                                 fontSize={48}
                                 text={"اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید\n" +
                                 "                و باقیمانده را"}
@@ -79,7 +79,7 @@ const Tahrir = () => {
                                 height={60}
                             />
                             <TextGroup
-                                animationDelay={2}
+                                animationDelay={1}
                                 fontSize={45}
                                 text={"با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید\n" +
                                 "                و به مایع صاف شده"}
@@ -90,7 +90,7 @@ const Tahrir = () => {
                                 height={62}
                             />
                             <TextGroup
-                                animationDelay={3}
+                                animationDelay={1.5}
                                 fontSize={46}
                                 text={"و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا\n" +
                                 "                وزن ثابت تکلیس"}
@@ -101,7 +101,7 @@ const Tahrir = () => {
                                 height={53}
                             />
                             <TextGroup
-                                animationDelay={4}
+                                animationDelay={2}
                                 fontSize={48}
                                 text={"کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"}
                                 left={647}
@@ -134,7 +134,7 @@ const Tahrir = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={5}
+                                animationDelay={2.5}
                                 fontSize={48}
                                 text={"مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R\n" +
                                 "                زیریك کندانسور رفلو"}
@@ -145,7 +145,7 @@ const Tahrir = () => {
                                 height={62}
                             />
                             <TextGroup
-                                animationDelay={6}
+                                animationDelay={3}
                                 fontSize={50}
                                 text={"مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی\n" +
                                 "                حمام آبجوش"}
@@ -156,7 +156,7 @@ const Tahrir = () => {
                                 height={60}
                             />
                             <TextGroup
-                                animationDelay={7}
+                                animationDelay={3.5}
                                 fontSize={48}
                                 text={"تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و\n" +
                                 "                وزن‌باقیماند، بیش‌از"}
@@ -167,7 +167,7 @@ const Tahrir = () => {
                                 height={55}
                             />
                             <TextGroup
-                                animationDelay={8}
+                                animationDelay={4}
                                 fontSize={46}
                                 text={" ۲ میلی‌گرم نیست ( ۰/۲۶)."}
                                 left={1180}

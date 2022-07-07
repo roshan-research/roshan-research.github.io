@@ -50,7 +50,7 @@ const FishHoghoghi = () => {
                           top={35}
                       />
                       <TextGroup
-                          animationDelay={5}
+                          animationDelay={2.5}
                           fontSize={41}
                           text={"حقوق و دستمزد"}
                           translationX={214}
@@ -60,7 +60,7 @@ const FishHoghoghi = () => {
                           top={285}
                       />
                       <TextGroup
-                          animationDelay={8}
+                          animationDelay={4}
                           fontSize={39}
                           text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
                           translationX={600}
@@ -70,7 +70,7 @@ const FishHoghoghi = () => {
                           top={344}
                       />
                       <TextGroup
-                          animationDelay={11}
+                          animationDelay={5.5}
                           fontSize={41}
                           text={"حق اولاد و سایر هزینه های کارکنان"}
                           translationX={480}
@@ -80,7 +80,7 @@ const FishHoghoghi = () => {
                           top={410}
                       />
                       <TextGroup
-                          animationDelay={14}
+                          animationDelay={7}
                           fontSize={40}
                           text={"بن - حق مسکن - خوارباروناهاری کارکنان"}
                           translationX={560}
@@ -90,7 +90,7 @@ const FishHoghoghi = () => {
                           top={465}
                       />
                       <TextGroup
-                          animationDelay={17}
+                          animationDelay={8.5}
                           fontSize={38}
                           text={"عیدي وپاداش"}
                           translationX={180}
@@ -100,7 +100,7 @@ const FishHoghoghi = () => {
                           top={520}
                       />
                       <TextGroup
-                          animationDelay={20}
+                          animationDelay={10}
                           fontSize={40}
                           text={"حق بیمه سهم کارفرما"}
                           translationX={290}
@@ -110,7 +110,7 @@ const FishHoghoghi = () => {
                           top={573}
                       />
                       <TextGroup
-                          animationDelay={23}
+                          animationDelay={11.5}
                           fontSize={40}
                           text={"باز خرید و ذخیره سنوات خدمت"}
                           translationX={420}
@@ -120,7 +120,7 @@ const FishHoghoghi = () => {
                           top={630}
                       />
                       <TextGroup
-                          animationDelay={26}
+                          animationDelay={13}
                           fontSize={39}
                           text={"بیمه حوادث - هزینه بهداشتی"}
                           translationX={390}
@@ -130,7 +130,7 @@ const FishHoghoghi = () => {
                           top={685}
                       />
                       <TextGroup
-                          animationDelay={29}
+                          animationDelay={14.5}
                           fontSize={39}
                           text={"پس انداز سهم کارفرما"}
                           translationX={310}
@@ -140,7 +140,7 @@ const FishHoghoghi = () => {
                           top={740}
                       />
                       <TextGroup
-                          animationDelay={1}
+                          animationDelay={0.5}
                           fontSize={43}
                           text={"سال ۱۳۹۰"}
                           translationX={165}
@@ -150,7 +150,7 @@ const FishHoghoghi = () => {
                           top={170}
                       />
                       <TextGroup
-                          animationDelay={3}
+                          animationDelay={1.5}
                           fontSize={43}
                           text={"هزار ریال"}
                           translationX={131}
@@ -160,7 +160,7 @@ const FishHoghoghi = () => {
                           top={220}
                       />
                       <TextGroup
-                          animationDelay={6}
+                          animationDelay={3}
                           fontSize={43}
                           text={"۳۰,۶۷۲,۵۴۵"}
                           translationX={215}
@@ -170,7 +170,7 @@ const FishHoghoghi = () => {
                           top={282}
                       />
                       <TextGroup
-                          animationDelay={9}
+                          animationDelay={4.5}
                           fontSize={42}
                           text={"۵,۸۲۲,۸۵۸"}
                           translationX={185}
@@ -180,7 +180,7 @@ const FishHoghoghi = () => {
                           top={351}
                       />
                       <TextGroup
-                          animationDelay={12}
+                          animationDelay={6}
                           fontSize={42}
                           text={"۳,۵۶۴,۳۳۸"}
                           translationX={185}
@@ -190,7 +190,7 @@ const FishHoghoghi = () => {
                           top={405}
                       />
                       <TextGroup
-                          animationDelay={15}
+                          animationDelay={7.5}
                           fontSize={42}
                           text={"۲,۳۲۹,۶۲۹"}
                           translationX={185}
@@ -200,7 +200,7 @@ const FishHoghoghi = () => {
                           top={460}
                       />
                       <TextGroup
-                          animationDelay={18}
+                          animationDelay={9}
                           fontSize={42}
                           text={"۷,۵۹۷,۴۸۷"}
                           translationX={185}
@@ -210,7 +210,7 @@ const FishHoghoghi = () => {
                           top={515}
                       />
                       <TextGroup
-                          animationDelay={21}
+                          animationDelay={10.5}
                           fontSize={43}
                           text={"۱۲,۳۰۵,۶۷۸"}
                           left={325}
@@ -220,7 +220,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={24}
+                          animationDelay={12}
                           fontSize={42}
                           text={"۵,۹۷۳,۷۷۸"}
                           left={345}
@@ -230,7 +230,7 @@ const FishHoghoghi = () => {
                           height={47}
                       />
                       <TextGroup
-                          animationDelay={27}
+                          animationDelay={13.5}
                           fontSize={42}
                           text={"۲۴۷,۳۲۰"}
                           left={375}
@@ -240,7 +240,7 @@ const FishHoghoghi = () => {
                           height={44}
                       />
                       <TextGroup
-                          animationDelay={30}
+                          animationDelay={15}
                           fontSize={42}
                           text={"۱,۳۵۸,۷۷۷"}
                           left={345}
@@ -250,7 +250,7 @@ const FishHoghoghi = () => {
                           height={45}
                       />
                       <TextGroup
-                          animationDelay={2}
+                          animationDelay={1}
                           fontSize={42}
                           text={"سال ۱۳۸۹"}
                           left={100}
@@ -260,7 +260,7 @@ const FishHoghoghi = () => {
                           height={43}
                       />
                       <TextGroup
-                          animationDelay={4}
+                          animationDelay={2}
                           fontSize={43}
                           text={"هزار ریال"}
                           left={115}
@@ -270,7 +270,7 @@ const FishHoghoghi = () => {
                           height={44}
                       />
                       <TextGroup
-                          animationDelay={7}
+                          animationDelay={3.5}
                           fontSize={42}
                           text={"۲۶,۳۲۵,۸۳۳"}
                           left={100}
@@ -280,7 +280,7 @@ const FishHoghoghi = () => {
                           height={45}
                       />
                       <TextGroup
-                          animationDelay={10}
+                          animationDelay={5}
                           fontSize={44}
                           text={"۴,۸۲۱,۸۹۶"}
                           left={105}
@@ -290,7 +290,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={13}
+                          animationDelay={6.5}
                           fontSize={43}
                           text={"۳,۶۶۷,۴۳۱"}
                           left={100}
@@ -300,7 +300,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={16}
+                          animationDelay={8}
                           fontSize={45}
                           text={"۲,۰۳۷,۱۲۷"}
                           left={100}
@@ -310,7 +310,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={19}
+                          animationDelay={9.5}
                           fontSize={44}
                           text={"۸,۲۰۴,۹۷۷"}
                           left={100}
@@ -320,7 +320,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={22}
+                          animationDelay={11}
                           fontSize={43}
                           text={"۹,۳۷۰,۶۲۰"}
                           left={100}
@@ -330,7 +330,7 @@ const FishHoghoghi = () => {
                           height={46}
                       />
                       <TextGroup
-                          animationDelay={25}
+                          animationDelay={12.5}
                           fontSize={42}
                           text={"۶,۳۴۹,۵۶۸"}
                           left={102}
@@ -340,7 +340,7 @@ const FishHoghoghi = () => {
                           height={43}
                       />
                       <TextGroup
-                          animationDelay={28}
+                          animationDelay={14}
                           fontSize={44}
                           text={"۲۱۷,۱۵۳"}
                           left={135}
@@ -350,7 +350,7 @@ const FishHoghoghi = () => {
                           height={45}
                       />
                       <TextGroup
-                          animationDelay={31}
+                          animationDelay={15.5}
                           fontSize={44}
                           text={"۱,۵۴۰,۲۹۱"}
                           left={100}

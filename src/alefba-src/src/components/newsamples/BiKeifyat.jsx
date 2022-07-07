@@ -70,7 +70,7 @@ const BiKeifyat = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={1}
+                                animationDelay={0.5}
                                 fontSize={85}
                                 text={"- یتعرف الی بعض الکواشف (محلول قشر الفجل، محلول الملفوف\n" +
                                 "                البنفسجي،"}
@@ -82,7 +82,7 @@ const BiKeifyat = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={2}
+                                animationDelay={1}
                                 fontSize={83}
                                 text={"محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط\n" +
                                 "                الکیمیائي."}
@@ -94,7 +94,7 @@ const BiKeifyat = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={3}
+                                animationDelay={1.5}
                                 fontSize={84}
                                 text={"- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام\n" +
                                 "                أحد الکواشف."}
@@ -106,7 +106,7 @@ const BiKeifyat = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={4}
+                                animationDelay={2}
                                 fontSize={86}
                                 text={"یعطي أمثلة عن بعض الأملاح الشائعة."}
                                 left={1170}
@@ -128,7 +128,7 @@ const BiKeifyat = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={5}
+                                animationDelay={2.5}
                                 fontSize={85}
                                 text={"- یعطي أمثلة عن التفاعل الکیمیائي: الاحتراق، تکون الصدأ، تفاعل\n" +
                                 "                الحمض مع"}
@@ -140,7 +140,7 @@ const BiKeifyat = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={6}
+                                animationDelay={3}
                                 fontSize={77}
                                 text={"مواد کلسیة ومع بعض الفلزات."}
                                 left={1350}
@@ -162,7 +162,7 @@ const BiKeifyat = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={7}
+                                animationDelay={3.5}
                                 fontSize={83}
                                 text={"- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد\n" +
                                 "                جدیدة."}

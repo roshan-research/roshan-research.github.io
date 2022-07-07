@@ -61,7 +61,7 @@ const RoozNameh = () => {
                                 height={190}
                             />
                             <TextGroup
-                                animationDelay={1}
+                                animationDelay={0.5}
                                 fontSize={26}
                                 text={(<>
                                     هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت
@@ -119,7 +119,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={2}
+                                animationDelay={1}
                                 fontSize={25}
                                 text={(<>
                                     قصد داریم از اقداماتی که مسیر تعامل و گفت‌وگو را تخریب
@@ -177,7 +177,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={3}
+                                animationDelay={1.5}
                                 fontSize={26}
                                 text={(<>
                                     حقوق خود عقب نشینی نخواهیم کرد
@@ -252,7 +252,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={13}
+                                animationDelay={6.5}
                                 fontSize={43}
                                 text={"سیلاب و طغیان"}
                                 left={1821}
@@ -275,7 +275,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={13}
+                                animationDelay={6.5}
                                 fontSize={25}
                                 text={"سیلاب در شهرهای شوشتر، شادگان، گتوند، بستان، اندیمشک و اهواز\n" +
                                 "                خساراتی بر جای گذاشت"}
@@ -299,7 +299,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={14}
+                                animationDelay={7}
                                 fontSize={29}
                                 text={"رودخانه‌ها در خوزستان افزایش حجم آب کارون به حدی بود که سواحل\n" +
                                 "                حاشیه رودخانه و اهواز نیز مملو از آب شد"}
@@ -323,7 +323,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={4}
+                                animationDelay={2}
                                 fontSize={25}
                                 text={(<>
                                     ایران و روسیه به هم اعتماد دارند و قصد فریب یکدیگر را
@@ -357,7 +357,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={5}
+                                animationDelay={2.5}
                                 fontSize={26}
                                 text={"صفحه ۲"}
                                 left={73}
@@ -380,7 +380,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={6}
+                                animationDelay={3}
                                 fontSize={34}
                                 text={"رئیس جمهوری در دیدار مسؤولان آموزش و پرورش اعلام کرد"}
                                 left={135}
@@ -392,7 +392,7 @@ const RoozNameh = () => {
                                 lineType={"line_bold"}
                             />
                             <TextGroup
-                                animationDelay={7}
+                                animationDelay={3.5}
                                 fontSize={88}
                                 text={(<>
                                     بیشترین افزایش
@@ -420,7 +420,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={8}
+                                animationDelay={4}
                                 fontSize={38}
                                 text={(<>
                                     باید با ایجاد کانون‌هایی در مدارس دانش آموزان را
@@ -459,7 +459,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={9}
+                                animationDelay={4.5}
                                 fontSize={27}
                                 text={(<>
                                     گروه سیاسی: «محمود احمدی نژاد» رئیس
@@ -484,7 +484,7 @@ const RoozNameh = () => {
                                 lineHeight={"1.1em"}
                             />
                             <TextGroup
-                                animationDelay={10}
+                                animationDelay={5}
                                 fontSize={27}
                                 text={(<>
                                     به گزارش دفتر امور رسانه های ریاست
@@ -559,7 +559,7 @@ const RoozNameh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={11}
+                                animationDelay={5.5}
                                 fontSize={27}
                                 text={(<>
                                     ستادی وزارت آموزش و پرورش، جنس و ذات انقلاب
@@ -580,7 +580,7 @@ const RoozNameh = () => {
                                 lineHeight={"1.1em"}
                             />
                             <TextGroup
-                                animationDelay={12}
+                                animationDelay={6}
                                 fontSize={27}
                                 text={(<>
                                     احمدی نژاد، آموزش وپرورش راکانون بی بدیل
@@ -613,7 +613,7 @@ const RoozNameh = () => {
                                 lineHeight={"1.05em"}
                             />
                             <TextGroup
-                                animationDelay={15}
+                                animationDelay={7.5}
                                 fontSize={25}
                                 text={"بقیه در صفحه ۳"}
                                 left={71}

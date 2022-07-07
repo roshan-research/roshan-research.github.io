@@ -69,7 +69,7 @@ class SampleSection extends Component {
                     break;
             }
 
-        },31500);
+        },16000);
     }
 
     render() {
@@ -143,7 +143,6 @@ class SampleSection extends Component {
                     <div className={'sample-container'}>
                         ({whichSample()})
                     </div>
-                    <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
                         <div className={'button'} onClick={onKartMelliClick}>
                             <div className={'sample-row'}>

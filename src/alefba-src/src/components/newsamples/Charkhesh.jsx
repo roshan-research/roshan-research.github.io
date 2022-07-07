@@ -125,7 +125,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={1}
+                                animationDelay={0.5}
                                 fontSize={83}
                                 text={"دل بریدن گاه تنها راه عاشق ماندن است"}
                                 left={250}
@@ -136,7 +136,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={2}
+                                animationDelay={1}
                                 fontSize={85}
                                 text={"خود به چاه انداختم خود را مگر باور کنی"}
                                 left={205}
@@ -147,7 +147,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={3}
+                                animationDelay={1.5}
                                 fontSize={84}
                                 text={"آنچه باقیمانده از یوسف همین پیراهن است"}
                                 left={205}
@@ -158,7 +158,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={4}
+                                animationDelay={2}
                                 fontSize={81}
                                 text={"گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"}
                                 left={150}
@@ -169,7 +169,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={5}
+                                animationDelay={2.5}
                                 fontSize={83}
                                 text={"سرنوشت شمع جانسوز است اما روشن است"}
                                 left={160}
@@ -180,7 +180,7 @@ const Charkhesh = () => {
                                 lineType={"line"}
                             />
                             <TextGroup
-                                animationDelay={6}
+                                animationDelay={3}
                                 fontSize={83}
                                 text={"هرکسی از عشق با خود یادگاری می‌برد"}
                                 left={270}
@@ -208,7 +208,7 @@ const Charkhesh = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={7}
+                                animationDelay={3.5}
                                 fontSize={82}
                                 text={"آنچه من بردم تنی بی‌روح و روحی بی‌تن است"}
                                 left={140}

@@ -78,7 +78,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={1}
+                                animationDelay={0.5}
                                 fontSize={193}
                                 text={"کارت ملی"}
                                 left={910}
@@ -99,7 +99,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={2}
+                                animationDelay={1}
                                 fontSize={106}
                                 text={"شماره ملی، ۰۰۴۰۳۱۶۲۸۵"}
                                 left={1369}
@@ -109,7 +109,7 @@ const KartMelli = () => {
                                 height={126}
                             />
                             <TextGroup
-                                animationDelay={4}
+                                animationDelay={2}
                                 fontSize={112}
                                 text={"حمید رضا"}
                                 left={1592}
@@ -119,7 +119,7 @@ const KartMelli = () => {
                                 height={128}
                             />
                             <TextGroup
-                                animationDelay={6}
+                                animationDelay={3}
                                 fontSize={127}
                                 text={"نکویی"}
                                 left={1721}
@@ -140,7 +140,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={3}
+                                animationDelay={1.5}
                                 fontSize={85}
                                 text={"نام :"}
                                 left={1980}
@@ -161,7 +161,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={5}
+                                animationDelay={2.5}
                                 fontSize={74}
                                 text={"نام خانوادگی :"}
                                 left={2004}
@@ -171,7 +171,7 @@ const KartMelli = () => {
                                 height={103}
                             />
                             <TextGroup
-                                animationDelay={7}
+                                animationDelay={3.5}
                                 fontSize={69}
                                 text={"تاریخ تولد :"}
                                 left={2019}
@@ -181,7 +181,7 @@ const KartMelli = () => {
                                 height={94}
                             />
                             <TextGroup
-                                animationDelay={9}
+                                animationDelay={4.5}
                                 fontSize={81}
                                 text={"نام پدر :"}
                                 left={2008}
@@ -202,7 +202,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={11}
+                                animationDelay={5.5}
                                 fontSize={68}
                                 text={"پایان اعتبار :"}
                                 left={2015}
@@ -229,7 +229,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={8}
+                                animationDelay={4}
                                 fontSize={111}
                                 text={"۱۳۶۷/۰۲/۲۶"}
                                 left={1391}
@@ -239,7 +239,7 @@ const KartMelli = () => {
                                 height={132}
                             />
                             <TextGroup
-                                animationDelay={10}
+                                animationDelay={5}
                                 fontSize={111}
                                 text={"محمد"}
                                 left={1737}
@@ -260,7 +260,7 @@ const KartMelli = () => {
                             dir="auto"
                         >
                             <TextGroup
-                                animationDelay={12}
+                                animationDelay={6}
                                 fontSize={111}
                                 text={"۱۴۰۳/۰۸/۱۲"}
                                 left={1400}
