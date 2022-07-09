@@ -107,8 +107,8 @@ const getScale = (innerWidth,originalWidth) => {
     let newDimensions = resizer(innerWidth);
     let scaleXCoefficient = (newDimensions / originalWidth) - 0.1;
     return {
-        scaleX: scaleXCoefficient,
-        scaleY: scaleXCoefficient,
+        scaleX: 1,
+        scaleY: 1,
     }
 };
 

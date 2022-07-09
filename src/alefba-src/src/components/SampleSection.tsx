@@ -146,6 +146,9 @@ class SampleSection extends Component {
                     <div id={'buttons'}>
                         <div className={'button'} onClick={onKartMelliClick}>
                             <div className={'sample-row'}>
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <KartMelli/>
+                                </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-title' : ''}>
                                     مدارک شناسایی
@@ -156,7 +159,10 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={onFishClick}>
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample text-left-title'}
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <FishHoghoghi/>
+                                </div>
+                                <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Fish ? 'active-orange-title' : ''}>
                                     جدول های مالی
                                 </p>
@@ -166,6 +172,9 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={onCharkheshClick}>
                             <div className={'sample-row'}>
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <Charkhesh/>
+                                </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Charkhesh ? 'active-orange-title' : ''}>
                                     اسناد چرخیده
@@ -176,6 +185,9 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={onRooznamehClick}>
                             <div className={'sample-row'}>
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <RoozNameh/>
+                                </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.RoozNameh ? 'active-orange-title' : ''}>
                                     روزنامه
@@ -186,6 +198,9 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={onTahrirClick}>
                             <div className={'sample-row'}>
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <Tahrir/>
+                                </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Tahrir ? 'active-orange-title' : ''}>
                                     اسناد ماشین تحریر
@@ -196,6 +211,9 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={onBikeifyatClick}>
                             <div className={'sample-row'}>
+                                <div className={'sample-container mobile-sample-container'}>
+                                    <BiKeifyat/>
+                                </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.BiKeifyat ? 'active-orange-title' : ''}>
                                     اسناد بی کیفیت
