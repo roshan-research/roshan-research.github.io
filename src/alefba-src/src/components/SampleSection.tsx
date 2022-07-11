@@ -1,14 +1,17 @@
+// eslint-disable-next-line @typescript-eslint/ban-ts-comment
+// @ts-nocheck
 import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
 import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
 import '../stylesheets/sample-section.scss';
 
-import {Component} from "react";
+import React, {Component} from "react";
 import FishHoghoghi from "./newsamples/FishHoghoghi";
 import KartMelli from "./newsamples/KartMelli";
 import RoozNameh from "./newsamples/RoozNameh";
 import Charkhesh from "./newsamples/Charkhesh";
 import Tahrir from "./newsamples/Tahrir";
 import BiKeifyat from "./newsamples/BiKeifyat";
+import {isMobile} from "react-device-detect";
 
 enum Sample {
     KartMelli,
@@ -23,48 +26,54 @@ class SampleSection extends Component {
 
     state = {
         chosenSample: Sample.KartMelli,
-        timeOut: 12500
+        kartMelliKey: "kartMelli",
+        fishKey: "fish",
+        charkheshKey: "charkhesh",
+        rooznamehKey: "rooznameh",
+        tahrirKey: "tahrir",
+        bikeifyatKey: "biKeifyat"
     }
 
     constructor(props: any) {
       super(props);
+      this.kartMelli = React.createRef();
+        this.fish = React.createRef();
+        this.charkhesh = React.createRef();
+        this.rooznameh = React.createRef();
+        this.tahrir = React.createRef();
+        this.bikeifyat = React.createRef();
+
         window.setInterval(() => {
             let randomNumber:number = Math.floor((Math.random() * 6) + 1);
             switch(randomNumber) {
                 case 1:
                     this.setState({
                         chosenSample: Sample.KartMelli,
-                        timeOut: 12500
                     })
                     break;
                 case 2:
                     this.setState({
                         chosenSample: Sample.Fish,
-                        timeOut: 31500
                     })
                     break;
                 case 3:
                     this.setState({
                         chosenSample: Sample.Charkhesh,
-                        timeOut: 7500
                     })
                     break;
                 case 4:
                     this.setState({
                         chosenSample: Sample.RoozNameh,
-                        timeOut: 15500
                     })
                     break;
                 case 5:
                     this.setState({
                         chosenSample: Sample.Tahrir,
-                        timeOut: 8500
                     })
                     break;
                 case 6:
                     this.setState({
                         chosenSample: Sample.BiKeifyat,
-                        timeOut: 7500
                     })
                     break;
             }
@@ -72,49 +81,77 @@ class SampleSection extends Component {
         },16000);
     }
 
+    onSampleClick = (sampleName: Sample) => {
+        switch (sampleName) {
+            case Sample.KartMelli:
+                if(isMobile) {
+                    this.setState({
+                        kartMelliKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.KartMelli,
+                    });
+                }
+                break;
+            case Sample.Fish:
+                if(isMobile) {
+                    this.setState({
+                        fishKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.Fish,
+                    });
+                }
+                break;
+            case Sample.Charkhesh:
+                if(isMobile) {
+                    this.setState({
+                        charkheshKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.Charkhesh,
+                    });
+                }
+                break;
+            case Sample.RoozNameh:
+                if(isMobile) {
+                    this.setState({
+                        roozNamehKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.RoozNameh,
+                    });
+                }
+                break;
+            case Sample.Tahrir:
+                if(isMobile) {
+                    this.setState({
+                        tahrirKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.Tahrir,
+                    });
+                }
+                break;
+            case Sample.BiKeifyat:
+                if(isMobile) {
+                    this.setState({
+                        bikeifyatKey: Math.random(),
+                    });
+                } else {
+                    this.setState({
+                        chosenSample: Sample.BiKeifyat,
+                    });
+                }
+                break;
+        }
+    }
     render() {
-
-        const onKartMelliClick = () => {
-            this.setState({
-                chosenSample: Sample.KartMelli,
-                timeOut: 12500
-            })
-        }
-
-        const onFishClick = () => {
-            this.setState({
-                chosenSample: Sample.Fish,
-                timeOut: 31500
-            })
-        }
-
-        const onCharkheshClick = () => {
-            this.setState({
-                chosenSample: Sample.Charkhesh,
-                timeOut: 7500
-            })
-        }
-
-        const onRooznamehClick = () => {
-            this.setState({
-                chosenSample: Sample.RoozNameh,
-                timeOut: 15500
-            })
-        }
-
-        const onTahrirClick = () => {
-            this.setState({
-                chosenSample: Sample.Tahrir,
-                timeOut: 8500
-            })
-        }
-
-        const onBikeifyatClick = () => {
-            this.setState({
-                chosenSample: Sample.BiKeifyat,
-                timeOut: 7500
-            })
-        }
 
         const whichSample = () => {
             switch (this.state.chosenSample) {
@@ -133,6 +170,7 @@ class SampleSection extends Component {
             }
         }
 
+
         return (
             <div className={'sample'}>
                 <p id={'sample-title'}>
@@ -144,9 +182,13 @@ class SampleSection extends Component {
                         ({whichSample()})
                     </div>
                     <div id={'buttons'}>
-                        <div className={'button'} onClick={onKartMelliClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.KartMelli)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.kartMelli}
+                                     key={this.state.kartMelliKey}
+                                >
                                     <KartMelli/>
                                 </div>
                                 <p className={'white-title-sample'}
@@ -157,9 +199,13 @@ class SampleSection extends Component {
                                 <Polygon className={this.state.chosenSample === Sample.KartMelli ? 'polygon' : 'no-dot'}/>
                             </div>
                         </div>
-                        <div className={'button'} onClick={onFishClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.Fish)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.fish}
+                                     key={this.state.fishKey}
+                                >
                                     <FishHoghoghi/>
                                 </div>
                                 <p className={'white-title-sample'}
@@ -170,9 +216,13 @@ class SampleSection extends Component {
                                 <Polygon className={this.state.chosenSample === Sample.Fish ? 'polygon' : 'no-dot'}/>
                             </div>
                         </div>
-                        <div className={'button'} onClick={onCharkheshClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.Charkhesh)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.charkhesh}
+                                     key={this.state.charkheshKey}
+                                >
                                     <Charkhesh/>
                                 </div>
                                 <p className={'white-title-sample'}
@@ -183,9 +233,13 @@ class SampleSection extends Component {
                                 <Polygon className={this.state.chosenSample === Sample.Charkhesh ? 'polygon' : 'no-dot'}/>
                             </div>
                         </div>
-                        <div className={'button'} onClick={onRooznamehClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.RoozNameh)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.rooznameh }
+                                     key={this.state.rooznamehKey}
+                                >
                                     <RoozNameh/>
                                 </div>
                                 <p className={'white-title-sample'}
@@ -196,9 +250,13 @@ class SampleSection extends Component {
                                 <Polygon className={this.state.chosenSample === Sample.RoozNameh ? 'polygon' : 'no-dot'}/>
                             </div>
                         </div>
-                        <div className={'button'} onClick={onTahrirClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.Tahrir)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.tahrir}
+                                     key={this.state.tahrirKey}
+                                >
                                     <Tahrir/>
                                 </div>
                                 <p className={'white-title-sample'}
@@ -209,9 +267,13 @@ class SampleSection extends Component {
                                 <Polygon className={this.state.chosenSample === Sample.Tahrir ? 'polygon' : 'no-dot'}/>
                             </div>
                         </div>
-                        <div className={'button'} onClick={onBikeifyatClick}>
+                        <div className={'button'}
+                             onClick={this.onSampleClick.bind(this,Sample.BiKeifyat)}>
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}>
+                                <div className={'sample-container mobile-sample-container'}
+                                     ref={this.bikeifyat}
+                                     key={this.state.bikeifyatKey}
+                                >
                                     <BiKeifyat/>
                                 </div>
                                 <p className={'white-title-sample'}

@@ -1,3 +1,5 @@
+import {isMobile} from "react-device-detect";
+
 const style = {
     css: ".container {\n" +
         "    width: 1170px;\n" +
@@ -107,8 +109,8 @@ const getScale = (innerWidth,originalWidth) => {
     let newDimensions = resizer(innerWidth);
     let scaleXCoefficient = (newDimensions / originalWidth) - 0.1;
     return {
-        scaleX: 1,
-        scaleY: 1,
+        scaleX: isMobile ? 1: scaleXCoefficient,
+        scaleY:  isMobile ? 1: scaleXCoefficient,
     }
 };
 
