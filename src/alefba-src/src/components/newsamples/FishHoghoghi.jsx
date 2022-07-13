@@ -141,222 +141,222 @@ const FishHoghoghi = () => {
                       />
                       <TextGroup
                           animationDelay={0.5}
-                          fontSize={43}
+                          fontSize={48}
                           text={"سال ۱۳۹۰"}
-                          translationX={165}
+                          translationX={150}
                           height={44}
-                          width={165}
-                          left={330}
-                          top={170}
+                          width={150}
+                          left={335}
+                          top={165}
                       />
                       <TextGroup
                           animationDelay={1.5}
-                          fontSize={43}
+                          fontSize={48}
                           text={"هزار ریال"}
-                          translationX={131}
-                          height={44}
-                          width={131}
-                          left={360}
+                          translationX={125}
+                          height={48}
+                          width={125}
+                          left={350}
                           top={220}
                       />
                       <TextGroup
                           animationDelay={3}
-                          fontSize={43}
+                          fontSize={48}
                           text={"۳۰,۶۷۲,۵۴۵"}
-                          translationX={215}
+                          translationX={185}
                           height={45}
-                          width={210}
-                          left={319}
-                          top={282}
+                          width={185}
+                          left={327}
+                          top={280}
                       />
                       <TextGroup
                           animationDelay={4.5}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۵,۸۲۲,۸۵۸"}
-                          translationX={185}
+                          translationX={170}
                           height={43}
-                          width={180}
-                          left={352}
-                          top={351}
+                          width={170}
+                          left={340}
+                          top={345}
                       />
                       <TextGroup
                           animationDelay={6}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۳,۵۶۴,۳۳۸"}
-                          translationX={185}
+                          translationX={170}
                           height={45}
-                          width={180}
-                          left={350}
+                          width={170}
+                          left={340}
                           top={405}
                       />
                       <TextGroup
                           animationDelay={7.5}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۲,۳۲۹,۶۲۹"}
-                          translationX={185}
+                          translationX={170}
                           height={45}
-                          width={185}
-                          left={350}
+                          width={170}
+                          left={340}
                           top={460}
                       />
                       <TextGroup
                           animationDelay={9}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۷,۵۹۷,۴۸۷"}
-                          translationX={185}
+                          translationX={170}
                           height={45}
-                          width={185}
-                          left={350}
+                          width={170}
+                          left={340}
                           top={515}
                       />
                       <TextGroup
                           animationDelay={10.5}
-                          fontSize={43}
+                          fontSize={48}
                           text={"۱۲,۳۰۵,۶۷۸"}
-                          left={325}
-                          top={570}
-                          width={210}
-                          translationX={220}
+                          left={335}
+                          top={565}
+                          width={180}
+                          translationX={180}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={12}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۵,۹۷۳,۷۷۸"}
                           left={345}
-                          top={625}
-                          width={185}
-                          translationX={185}
+                          top={620}
+                          width={170}
+                          translationX={170}
                           height={47}
                       />
                       <TextGroup
                           animationDelay={13.5}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۲۴۷,۳۲۰"}
                           left={375}
                           top={680}
-                          width={150}
-                          translationX={150}
-                          height={44}
-                      />
-                      <TextGroup
-                          animationDelay={15}
-                          fontSize={42}
-                          text={"۱,۳۵۸,۷۷۷"}
-                          left={345}
-                          top={735}
-                          width={185}
-                          translationX={185}
-                          height={45}
-                      />
-                      <TextGroup
-                          animationDelay={1}
-                          fontSize={42}
-                          text={"سال ۱۳۸۹"}
-                          left={100}
-                          top={170}
-                          width={165}
-                          translationX={165}
-                          height={43}
-                      />
-                      <TextGroup
-                          animationDelay={2}
-                          fontSize={43}
-                          text={"هزار ریال"}
-                          left={115}
-                          top={225}
                           width={140}
                           translationX={140}
                           height={44}
                       />
                       <TextGroup
+                          animationDelay={15}
+                          fontSize={48}
+                          text={"۱,۳۵۸,۷۷۷"}
+                          left={350}
+                          top={735}
+                          width={165}
+                          translationX={165}
+                          height={45}
+                      />
+                      <TextGroup
+                          animationDelay={1}
+                          fontSize={48}
+                          text={"سال ۱۳۸۹"}
+                          left={100}
+                          top={165}
+                          width={150}
+                          translationX={150}
+                          height={45}
+                      />
+                      <TextGroup
+                          animationDelay={2}
+                          fontSize={48}
+                          text={"هزار ریال"}
+                          left={115}
+                          top={220}
+                          width={135}
+                          translationX={135}
+                          height={48}
+                      />
+                      <TextGroup
                           animationDelay={3.5}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۲۶,۳۲۵,۸۳۳"}
                           left={100}
-                          top={282}
-                          width={205}
-                          translationX={205}
+                          top={280}
+                          width={185}
+                          translationX={185}
                           height={45}
                       />
                       <TextGroup
                           animationDelay={5}
-                          fontSize={44}
+                          fontSize={49}
                           text={"۴,۸۲۱,۸۹۶"}
-                          left={105}
+                          left={115}
                           top={340}
-                          width={190}
-                          translationX={190}
+                          width={170}
+                          translationX={170}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={6.5}
-                          fontSize={43}
+                          fontSize={49}
                           text={"۳,۶۶۷,۴۳۱"}
-                          left={100}
+                          left={115}
                           top={400}
-                          width={190}
-                          translationX={190}
+                          width={170}
+                          translationX={170}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={8}
-                          fontSize={45}
+                          fontSize={50}
                           text={"۲,۰۳۷,۱۲۷"}
-                          left={100}
-                          top={460}
-                          width={195}
-                          translationX={195}
+                          left={115}
+                          top={455}
+                          width={170}
+                          translationX={170}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={9.5}
-                          fontSize={44}
+                          fontSize={49}
                           text={"۸,۲۰۴,۹۷۷"}
-                          left={100}
-                          top={517}
-                          width={190}
-                          translationX={190}
+                          left={115}
+                          top={510}
+                          width={170}
+                          translationX={170}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={11}
-                          fontSize={43}
+                          fontSize={48}
                           text={"۹,۳۷۰,۶۲۰"}
-                          left={100}
-                          top={570}
-                          width={190}
-                          translationX={190}
+                          left={115}
+                          top={565}
+                          width={170}
+                          translationX={170}
                           height={46}
                       />
                       <TextGroup
                           animationDelay={12.5}
-                          fontSize={42}
+                          fontSize={48}
                           text={"۶,۳۴۹,۵۶۸"}
-                          left={102}
-                          top={625}
-                          width={190}
-                          translationX={190}
+                          left={115}
+                          top={620}
+                          width={170}
+                          translationX={170}
                           height={43}
                       />
                       <TextGroup
                           animationDelay={14}
-                          fontSize={44}
+                          fontSize={50}
                           text={"۲۱۷,۱۵۳"}
-                          left={135}
-                          top={675}
-                          width={160}
-                          translationX={170}
+                          left={145}
+                          top={670}
+                          width={140}
+                          translationX={140}
                           height={45}
                       />
                       <TextGroup
                           animationDelay={15.5}
-                          fontSize={44}
+                          fontSize={50}
                           text={"۱,۵۴۰,۲۹۱"}
-                          left={100}
-                          top={730}
-                          width={195}
-                          translationX={195}
+                          left={115}
+                          top={725}
+                          width={170}
+                          translationX={170}
                           height={45}
                       />
                   </div>
