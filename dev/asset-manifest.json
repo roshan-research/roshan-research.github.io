@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/dev/static/css/main.c78dcd18.chunk.css",
-    "main.js": "/dev/static/js/main.efee2cbf.chunk.js",
+    "main.css": "/dev/static/css/main.9fc30b61.chunk.css",
+    "main.js": "/dev/static/js/main.f1513158.chunk.js",
     "runtime-main.js": "/dev/static/js/runtime-main.fa6034de.js",
     "static/js/2.cc37baaa.chunk.js": "/dev/static/js/2.cc37baaa.chunk.js",
     "static/js/3.12fd86af.chunk.js": "/dev/static/js/3.12fd86af.chunk.js",
     "index.html": "/dev/index.html",
     "static/js/2.cc37baaa.chunk.js.LICENSE.txt": "/dev/static/js/2.cc37baaa.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/dev/static/media/IRANYekan.b916444e.ttf",
+    "static/media/main-section.scss": "/dev/static/media/Mitra.1c5e12f5.ttf",
     "static/media/accuracy-mobile.a6b965ee.svg": "/dev/static/media/accuracy-mobile.a6b965ee.svg",
     "static/media/bikeifyat.154fa1d7.jpg": "/dev/static/media/bikeifyat.154fa1d7.jpg",
     "static/media/businesses.f577862c.png": "/dev/static/media/businesses.f577862c.png",
@@ -46,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.fa6034de.js",
     "static/js/2.cc37baaa.chunk.js",
-    "static/css/main.c78dcd18.chunk.css",
-    "static/js/main.efee2cbf.chunk.js"
+    "static/css/main.9fc30b61.chunk.css",
+    "static/js/main.f1513158.chunk.js"
   ]
 }
