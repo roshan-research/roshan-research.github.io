@@ -18,6 +18,10 @@
   background: #ffffff;
 }
 
+::-webkit-scrollbar-corner {
+  background: rgba(0,0,0,0);
+}
+
 #sample-footer-space, #catalog-footer-space{
   height: 27vh;
 }

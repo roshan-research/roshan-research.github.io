@@ -32,7 +32,7 @@ const FishHoghoghi = () => {
                       `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s"}}
           >
               <img
-                  style={{ position: "absolute", left: 0, width: 1320, height: 843}}
+                  style={{ position: "absolute", left: 0, width: 1264, height: 843}}
                   id="raw"
                   src={fish}
                   alt={''}
@@ -41,7 +41,7 @@ const FishHoghoghi = () => {
                   <div className="document line-view">
                       <TextGroup
                           animationDelay={0}
-                          fontSize={38}
+                          fontSize={46}
                           text={"دستمزد مستقیم"}
                           translationX={201}
                           height={49}
@@ -51,93 +51,93 @@ const FishHoghoghi = () => {
                       />
                       <TextGroup
                           animationDelay={2.5}
-                          fontSize={41}
+                          fontSize={49}
                           text={"حقوق و دستمزد"}
                           translationX={214}
-                          height={45}
+                          height={50}
                           width={214}
-                          left={964}
+                          left={910}
                           top={285}
                       />
                       <TextGroup
                           animationDelay={4}
-                          fontSize={39}
+                          fontSize={41}
                           text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
-                          translationX={600}
+                          translationX={550}
                           height={53}
-                          width={600}
-                          left={580}
+                          width={550}
+                          left={575}
                           top={344}
                       />
                       <TextGroup
                           animationDelay={5.5}
-                          fontSize={41}
+                          fontSize={42}
                           text={"حق اولاد و سایر هزینه های کارکنان"}
-                          translationX={480}
+                          translationX={430}
                           height={45}
-                          width={480}
-                          left={700}
-                          top={410}
+                          width={430}
+                          left={695}
+                          top={405}
                       />
                       <TextGroup
                           animationDelay={7}
-                          fontSize={40}
+                          fontSize={42}
                           text={"بن - حق مسکن - خوارباروناهاری کارکنان"}
-                          translationX={560}
+                          translationX={505}
                           height={46}
-                          width={560}
-                          left={622}
-                          top={465}
+                          width={505}
+                          left={620}
+                          top={460}
                       />
                       <TextGroup
                           animationDelay={8.5}
-                          fontSize={38}
+                          fontSize={45}
                           text={"عیدي وپاداش"}
                           translationX={180}
                           height={46}
                           width={180}
-                          left={1002}
-                          top={520}
+                          left={945}
+                          top={515}
                       />
                       <TextGroup
                           animationDelay={10}
-                          fontSize={40}
+                          fontSize={43}
                           text={"حق بیمه سهم کارفرما"}
-                          translationX={290}
+                          translationX={270}
                           height={51}
-                          width={290}
-                          left={893}
-                          top={573}
+                          width={270}
+                          left={855}
+                          top={565}
                       />
                       <TextGroup
                           animationDelay={11.5}
-                          fontSize={40}
+                          fontSize={43}
                           text={"باز خرید و ذخیره سنوات خدمت"}
-                          translationX={420}
+                          translationX={375}
                           height={49}
-                          width={420}
-                          left={767}
-                          top={630}
+                          width={375}
+                          left={750}
+                          top={623}
                       />
                       <TextGroup
                           animationDelay={13}
-                          fontSize={39}
+                          fontSize={43}
                           text={"بیمه حوادث - هزینه بهداشتی"}
-                          translationX={390}
+                          translationX={355}
                           height={48}
-                          width={390}
-                          left={798}
-                          top={685}
+                          width={355}
+                          left={770}
+                          top={680}
                       />
                       <TextGroup
                           animationDelay={14.5}
-                          fontSize={39}
+                          fontSize={43}
                           text={"پس انداز سهم کارفرما"}
-                          translationX={310}
-                          height={51}
-                          width={310}
-                          left={879}
-                          top={740}
+                          translationX={275}
+                          height={45}
+                          width={275}
+                          left={850}
+                          top={735}
                       />
                       <TextGroup
                           animationDelay={0.5}

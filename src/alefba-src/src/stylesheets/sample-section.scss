@@ -112,7 +112,7 @@ p { margin: 0.8vw}
 
 .sample-container {
   width: 43vw;
-  height: 48vh;
+  height:44vh;
   display: flex;
   justify-content: center;
   align-items: start;
@@ -257,6 +257,7 @@ p { margin: 0.8vw}
 
   .white-title-sample, #active-orange-title {
     text-align: center;
+    z-index: 10000;
   }
 
   #sample-section {

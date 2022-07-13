@@ -17,7 +17,7 @@ const Charkhesh = () => {
     };
 
     return(
-        <div className="container" style={{zIndex: 200}}>
+        <div className="container" >
             <style
                 type="text/css"
                 dangerouslySetInnerHTML={{

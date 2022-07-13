@@ -43,42 +43,42 @@ class SampleSection extends Component {
         this.tahrir = React.createRef();
         this.bikeifyat = React.createRef();
 
-        window.setInterval(() => {
-            let randomNumber:number = Math.floor((Math.random() * 6) + 1);
-            switch(randomNumber) {
-                case 1:
-                    this.setState({
-                        chosenSample: Sample.KartMelli,
-                    })
-                    break;
-                case 2:
-                    this.setState({
-                        chosenSample: Sample.Fish,
-                    })
-                    break;
-                case 3:
-                    this.setState({
-                        chosenSample: Sample.Charkhesh,
-                    })
-                    break;
-                case 4:
-                    this.setState({
-                        chosenSample: Sample.RoozNameh,
-                    })
-                    break;
-                case 5:
-                    this.setState({
-                        chosenSample: Sample.Tahrir,
-                    })
-                    break;
-                case 6:
-                    this.setState({
-                        chosenSample: Sample.BiKeifyat,
-                    })
-                    break;
-            }
-
-        },16000);
+        // window.setInterval(() => {
+        //     let randomNumber:number = Math.floor((Math.random() * 6) + 1);
+        //     switch(randomNumber) {
+        //         case 1:
+        //             this.setState({
+        //                 chosenSample: Sample.KartMelli,
+        //             })
+        //             break;
+        //         case 2:
+        //             this.setState({
+        //                 chosenSample: Sample.Fish,
+        //             })
+        //             break;
+        //         case 3:
+        //             this.setState({
+        //                 chosenSample: Sample.Charkhesh,
+        //             })
+        //             break;
+        //         case 4:
+        //             this.setState({
+        //                 chosenSample: Sample.RoozNameh,
+        //             })
+        //             break;
+        //         case 5:
+        //             this.setState({
+        //                 chosenSample: Sample.Tahrir,
+        //             })
+        //             break;
+        //         case 6:
+        //             this.setState({
+        //                 chosenSample: Sample.BiKeifyat,
+        //             })
+        //             break;
+        //     }
+        //
+        // },16000);
     }
 
     onSampleClick = (sampleName: Sample) => {
@@ -88,66 +88,60 @@ class SampleSection extends Component {
                     this.setState({
                         kartMelliKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.KartMelli,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.KartMelli,
+                });
                 break;
             case Sample.Fish:
                 if(isMobile) {
                     this.setState({
                         fishKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.Fish,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.Fish,
+                });
                 break;
             case Sample.Charkhesh:
                 if(isMobile) {
                     this.setState({
                         charkheshKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.Charkhesh,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.Charkhesh,
+                });
                 break;
             case Sample.RoozNameh:
                 if(isMobile) {
                     this.setState({
                         roozNamehKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.RoozNameh,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.RoozNameh,
+                });
                 break;
             case Sample.Tahrir:
                 if(isMobile) {
                     this.setState({
                         tahrirKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.Tahrir,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.Tahrir,
+                });
                 break;
             case Sample.BiKeifyat:
                 if(isMobile) {
                     this.setState({
                         bikeifyatKey: Math.random(),
                     });
-                } else {
-                    this.setState({
-                        chosenSample: Sample.BiKeifyat,
-                    });
                 }
+                this.setState({
+                    chosenSample: Sample.BiKeifyat,
+                });
                 break;
         }
     }
@@ -179,7 +173,7 @@ class SampleSection extends Component {
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
-                        ({whichSample()})
+                        {whichSample()}
                     </div>
                     <div id={'buttons'}>
                         <div className={'button'}
