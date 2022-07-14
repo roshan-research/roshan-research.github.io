@@ -35,33 +35,33 @@ const FishHoghoghi = () => {
                   <div className="document line-view">
                       <TextGroup
                           animationDelay={0}
-                          fontSize={46}
+                          fontSize={43}
                           text={"دستمزد مستقیم"}
                           translationX={201}
                           height={49}
-                          width={201}
-                          left={200}
-                          top={35}
+                          width={185}
+                          left={195}
+                          top={40}
                       />
                       <TextGroup
                           animationDelay={2.5}
-                          fontSize={49}
+                          fontSize={45}
                           text={"حقوق و دستمزد"}
                           translationX={214}
                           height={50}
-                          width={214}
-                          left={910}
+                          width={195}
+                          left={930}
                           top={285}
                       />
                       <TextGroup
                           animationDelay={4}
-                          fontSize={41}
+                          fontSize={40}
                           text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
                           translationX={550}
                           height={53}
-                          width={550}
-                          left={575}
-                          top={344}
+                          width={537}
+                          left={585}
+                          top={350}
                       />
                       <TextGroup
                           animationDelay={5.5}
@@ -69,28 +69,28 @@ const FishHoghoghi = () => {
                           text={"حق اولاد و سایر هزینه های کارکنان"}
                           translationX={430}
                           height={45}
-                          width={430}
+                          width={426}
                           left={695}
                           top={405}
                       />
                       <TextGroup
                           animationDelay={7}
-                          fontSize={42}
+                          fontSize={41}
                           text={"بن - حق مسکن - خوارباروناهاری کارکنان"}
                           translationX={505}
                           height={46}
-                          width={505}
-                          left={620}
+                          width={495}
+                          left={630}
                           top={460}
                       />
                       <TextGroup
                           animationDelay={8.5}
-                          fontSize={45}
+                          fontSize={43}
                           text={"عیدي وپاداش"}
                           translationX={180}
                           height={46}
-                          width={180}
-                          left={945}
+                          width={165}
+                          left={955}
                           top={515}
                       />
                       <TextGroup
@@ -101,7 +101,7 @@ const FishHoghoghi = () => {
                           height={51}
                           width={270}
                           left={855}
-                          top={565}
+                          top={570}
                       />
                       <TextGroup
                           animationDelay={11.5}
