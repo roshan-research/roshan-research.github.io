@@ -18,12 +18,6 @@ const Tahrir = () => {
 
     return(
         <div className="container">
-            <style
-                type="text/css"
-                dangerouslySetInnerHTML={{
-                    __html: style.css
-                }}
-            />
             <div
                 id="document"
                 style={{ position: "relative", transform:  `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}

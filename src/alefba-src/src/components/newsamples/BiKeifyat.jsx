@@ -18,12 +18,6 @@ const BiKeifyat = () => {
 
     return(
         <div className="container">
-            <style
-                type="text/css"
-                dangerouslySetInnerHTML={{
-                    __html: style.css
-                }}
-            />
             <div
                 id="document"
                 style={{ position: "relative", transform:

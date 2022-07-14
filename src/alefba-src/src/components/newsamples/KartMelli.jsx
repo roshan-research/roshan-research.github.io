@@ -1,7 +1,7 @@
 import kart from "../../assets/images/samples/kart.png";
 import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
-import style, {getScale} from "./style";
+import {getScale} from "./style";
 import {useEffect, useState} from "react";
 
 const KartMelli = () => {
@@ -19,12 +19,6 @@ const KartMelli = () => {
 
     return(
         <div className="container">
-            <style
-                type="text/css"
-                dangerouslySetInnerHTML={{
-                    __html: style.css
-                }}
-            />
             <div
                 id="document"
                 style={{ position: "relative",transform:

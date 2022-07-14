@@ -18,10 +18,10 @@ const style = {
         ".document.line-view .line, .document.paragraph-view p, .document.paragraph-view table {\n" +
         "    font-family: IRMitra;\n" +
         "    /*background: rgba(255, 98, 0, 0.9);*/\n" +
-        "    background: rgba(255, 98, 0, 0.95);\n" +
-        "    color: black;\n" +
+        "    mask: rgba(255, 98, 0, 0.95);\n" +
+        "    -webkit-mask: rgba(255, 98, 0, 0.95);\n" +
+        "    color: red;\n" +
         "    border-radius: 3px;\n" +
-        "    color: #333;\n" +
         "    line-height: 1;\n" +
         "    /* box-shadow: 0px 2px 2px #777; */\n" +
         "    /* text-shadow: 0px 1px 1px #999; */\n" +
@@ -30,10 +30,10 @@ const style = {
         ".document.line-view .line_bold, .document.paragraph-view p, .document.paragraph-view table {\n" +
         "    font-family: IRMitra;\n" +
         "    /*background: rgba(255, 98, 0, 0.9);*/\n" +
-        "    background: rgba(255, 98, 0, 0.95);\n" +
-        "    color: black;\n" +
+        "    mask: rgba(255, 98, 0, 0.95);\n" +
+        "    -webkit-mask: rgba(255, 98, 0, 0.95);\n" +
+        "    color: red;\n" +
         "    border-radius: 3px;\n" +
-        "    color: #333;\n" +
         "    line-height: 1;\n" +
         "    /* box-shadow: 0px 2px 2px #777; */\n" +
         "    /* text-shadow: 0px 1px 1px #999; */\n" +
