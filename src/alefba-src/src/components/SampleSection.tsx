@@ -43,6 +43,8 @@ class SampleSection extends Component {
         this.tahrir = React.createRef();
         this.bikeifyat = React.createRef();
 
+        //**** dont forget to uncomment this later on
+
         // window.setInterval(() => {
         //     let randomNumber:number = Math.floor((Math.random() * 6) + 1);
         //     switch(randomNumber) {

@@ -9,7 +9,7 @@ const TextGroup = ({
                        width,
                        textAlign = "auto",
                        lineHeight,
-                       lineType = "line_bold",
+                       lineType = "line_bold"
                    }) => {
     return(
         <>
