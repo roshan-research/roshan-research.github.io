@@ -1,12 +1,8 @@
-import {motion} from "framer-motion";
-import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
-import "./new-sample-style.scss";
+import "../../stylesheets/new-sample-style.scss";
 
 const TextGroup = ({
-                       animationDelay,
                        fontSize,
                        text,
-                       translationX,
                        height,
                        left,
                        top,
@@ -17,13 +13,10 @@ const TextGroup = ({
                    }) => {
     return(
         <>
-            <motion.span
+            <span
                 dir="auto"
                 id={"bg-orange"}
                 className="line_bold"
-                variants={BackgroundAnimation(animationDelay)}
-                initial={"hidden"}
-                animate={"visible"}
                 style={{
                     left: left,
                     top: top,
@@ -33,8 +26,8 @@ const TextGroup = ({
                     lineHeight: lineHeight
                 }}
             >
-            </motion.span>
-            <motion.span
+            </span>
+            <span
                 dir="auto"
                 className={lineType}
                 id={"text-black-sample"}
@@ -49,16 +42,14 @@ const TextGroup = ({
                     lineHeight: lineHeight
                 }}
             >
-                <motion.span
+                <span
                     className="words"
+                    data-text={text}
                     style={{ fontSize: fontSize}}
-                    variants={TypingAnimation(animationDelay,translationX)}
-                    initial={"hidden"}
-                    animate={"visible"}
                 >
                     {text}
-                </motion.span>
-            </motion.span>
+                </span>
+            </span>
         </>
     );
 };

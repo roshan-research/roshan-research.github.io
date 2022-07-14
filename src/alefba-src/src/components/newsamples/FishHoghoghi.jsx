@@ -3,7 +3,7 @@ import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
 import {getScale} from "./style";
 import {useEffect, useState} from "react";
-import "./new-sample-style.scss";
+import "../../stylesheets/new-sample-style.scss";
 
 const FishHoghoghi = () => {
 
