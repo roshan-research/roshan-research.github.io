@@ -1,63 +1,56 @@
-import {motion} from "framer-motion";
-import {BackgroundAnimation, TypingAnimation} from "../../animations/typingAnimation";
+import "../../stylesheets/new-sample-style.scss";
 
 const TextGroup = ({
-   animationDelay,
-   fontSize,
-   text,
-   translationX,
-   height,
-   left,
-   top,
-   width
-}) => {
+                       fontSize,
+                       text,
+                       height,
+                       left,
+                       top,
+                       width,
+                       textAlign = "auto",
+                       lineHeight,
+                       lineType = "line_bold"
+                   }) => {
     return(
-        <span className="lines">
-            <motion.span
+        <>
+            <span
                 dir="auto"
+                id={"bg-orange"}
                 className="line_bold"
-                width={202}
-                height={50}
-                variants={BackgroundAnimation(animationDelay)}
-                initial={"hidden"}
-                animate={"visible"}
                 style={{
-                    transformOrigin: "right",
                     left: left,
                     top: top,
                     width: width,
                     height: height,
-                    textAlign: "auto"
+                    textAlign: textAlign,
+                    lineHeight: lineHeight
                 }}
             >
-            </motion.span>
-              <motion.span
-                  dir="auto"
-                  className="line_bold"
-                  width={202}
-                  height={50}
-                  style={{
-                      transformOrigin: "right",
-                      left: left,
-                      top: top,
-                      width: width,
-                      height: height,
-                      textAlign: "auto",
-                      overflow: "hidden",
-                      backgroundColor: "transparent"
-                  }}
-              >
-              <motion.span
-                  className="words"
-                  style={{ fontSize: fontSize,transformOrigin: "right"}}
-                  variants={TypingAnimation(animationDelay,translationX)}
-                  initial={"hidden"}
-                  animate={"visible"}
-              >
-                {text}
-              </motion.span>
-            </motion.span>
-          </span>
+            </span>
+            <span
+                dir="auto"
+                className={lineType}
+                id={"text-black-sample"}
+                style={{
+                    left: left,
+                    top: top,
+                    width: width,
+                    height: height,
+                    textAlign: textAlign,
+                    overflow: "hidden",
+                    backgroundColor: "transparent",
+                    lineHeight: lineHeight
+                }}
+            >
+                <span
+                    className="words"
+                    data-text={text}
+                    style={{ fontSize: fontSize}}
+                >
+                    {text}
+                </span>
+            </span>
+        </>
     );
 };
 
