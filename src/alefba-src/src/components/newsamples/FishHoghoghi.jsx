@@ -1,47 +1,50 @@
 import fish from "../../assets/images/samples/fish.jpg";
 import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
-import {getScale} from "./style";
 import {useEffect, useState} from "react";
 import "../../stylesheets/new-sample-style.scss";
 
 const FishHoghoghi = () => {
-
-    const[scaleCoefficient,setScaleCoefficient] = useState({});
+    let tempHeight;
+    const[width,setWidth] = useState();
+    const[height,setHeight] = useState();
 
     useEffect(() => {
-        setScaleCoefficient(getScale(window.innerWidth,1320));
-    }, [])
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.5);
+        setHeight(tempHeight);
+    }, []);
 
 
     window.onresize = () => {
-        setScaleCoefficient(getScale(window.innerWidth,1320));
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.5);
+        setHeight(tempHeight);
     };
 
   return(
       <div className="container">
           <div
               id="document"
-              style={{ position: "relative",transform:
-                      `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s"}}
+              style={{ position: "relative",transition: "0s"}}
           >
               <img
-                  style={{ position: "absolute", left: 0, width: 1264, height: 843}}
+                  style={{ position: "absolute", left: 0, width: width, height: height}}
                   id="raw"
                   src={fish}
                   alt={''}
               />
-              <page style={{ width: 1264, height: 843 }}>
+              <page style={{ width: width, height: height }}>
                   <div className="document line-view">
                       <TextGroup
                           animationDelay={0}
-                          fontSize={43}
+                          fontSize={`${0.034 * width}px`}
                           text={"دستمزد مستقیم"}
                           translationX={201}
-                          height={49}
-                          width={185}
-                          left={195}
-                          top={40}
+                          height={`${0.058 * height}px`}
+                          width={`${0.146 * width}px`}
+                          left={`${0.154 * width}px`}
+                          top={`${0.054 * height}px`}
                       />
                       <TextGroup
                           animationDelay={2.5}
