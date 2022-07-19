@@ -2,8 +2,7 @@
 this script is in charge of making the jsx ready to be parsed via DOM parsers
  */
 
-let jsxString = "<div className=\"document line-view\">\n" +
-    "                      <TextGroup\n" +
+let jsxString = "<TextGroup\n" +
     "                          fontSize={43}\n" +
     "                          text={\"دستمزد مستقیم\"}\n" +
     "                          height={49}\n" +
@@ -258,8 +257,7 @@ let jsxString = "<div className=\"document line-view\">\n" +
     "                          top={725}\n" +
     "                          width={170}\n" +
     "                          height={45}\n" +
-    "                      />\n" +
-    "                  </div>"
+    "                      />"
 
 let htmlparsableJSX = jsxString
     .replaceAll("TextGroup","div")

@@ -5,22 +5,25 @@ import {useEffect, useState} from "react";
 import "../../stylesheets/new-sample-style.scss";
 
 const FishHoghoghi = () => {
-    let tempHeight;
-    const[width,setWidth] = useState();
-    const[height,setHeight] = useState();
+    // let tempHeight;
+    // const[width,setWidth] = useState();
+    // const[height,setHeight] = useState();
+    //
+    // useEffect(() => {
+    //     tempHeight = 0.5 * window.innerHeight;
+    //     setWidth(tempHeight * 1.5);
+    //     setHeight(tempHeight);
+    // }, []);
+    //
+    //
+    // window.onresize = () => {
+    //     tempHeight = 0.5 * window.innerHeight;
+    //     setWidth(tempHeight * 1.5);
+    //     setHeight(tempHeight);
+    // };
 
-    useEffect(() => {
-        tempHeight = 0.5 * window.innerHeight;
-        setWidth(tempHeight * 1.5);
-        setHeight(tempHeight);
-    }, []);
-
-
-    window.onresize = () => {
-        tempHeight = 0.5 * window.innerHeight;
-        setWidth(tempHeight * 1.5);
-        setHeight(tempHeight);
-    };
+    let width = 1264
+    let height = 843
 
   return(
       <div className="container">
@@ -37,260 +40,236 @@ const FishHoghoghi = () => {
               <page style={{ width: width, height: height }}>
                   <div className="document line-view">
                       <TextGroup
-                          fontSize={43}
-                          text={"دستمزد مستقیم"}
-                          height={49}
-                          width={185}
-                          left={195}
-                          top={40}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="دستمزد مستقیم"
+                          height={`${0.05812574139976275 * height}`}
+                          width={`${0.1463607594936709 * width}`}
+                          left={`${0.15427215189873417 * width}`}
+                          top={`${0.04744958481613286 * height}`}
                       />
                       <TextGroup
-                          fontSize={45}
-                          text={"حقوق و دستمزد"}
-                          height={50}
-                          width={195}
-                          left={930}
-                          top={285}
+                          fontSize={`${0.03560126582278481 * width}`}
+                          text="حقوق و دستمزد"
+                          height={`${0.05931198102016608 * height}`}
+                          width={`${0.15427215189873417 * width}`}
+                          left={`${0.7357594936708861 * width}`}
+                          top={`${0.33807829181494664 * height}`}
                       />
                       <TextGroup
-                          fontSize={40}
-                          text={"اضافه کاري - نوبتکاري - شبکاري وحق کشیك"}
-                          height={53}
-                          width={537}
-                          left={585}
-                          top={350}
+                          fontSize={`${0.03164556962025317 * width}`}
+                          text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
+                          height={`${0.06287069988137604 * height}`}
+                          width={`${0.4248417721518987 * width}`}
+                          left={`${0.46281645569620256 * width}`}
+                          top={`${0.4151838671411625 * height}`}
                       />
                       <TextGroup
-                          fontSize={42}
-                          text={"حق اولاد و سایر هزینه های کارکنان"}
-                          height={45}
-                          width={426}
-                          left={695}
-                          top={405}
+                          fontSize={`${0.03322784810126582 * width}`}
+                          text="حق اولاد و سایر هزینه های کارکنان"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.3370253164556962 * width}`}
+                          left={`${0.5498417721518988 * width}`}
+                          top={`${0.4804270462633452 * height}`}
                       />
                       <TextGroup
-                          fontSize={41}
-                          text={"بن - حق مسکن - خوارباروناهاری کارکنان"}
-                          height={46}
-                          width={495}
-                          left={630}
-                          top={460}
+                          fontSize={`${0.03243670886075949 * width}`}
+                          text="بن - حق مسکن - خوارباروناهاری کارکنان"
+                          height={`${0.054567022538552785 * height}`}
+                          width={`${0.3916139240506329 * width}`}
+                          left={`${0.49841772151898733 * width}`}
+                          top={`${0.5456702253855279 * height}`}
                       />
                       <TextGroup
-                          fontSize={43}
-                          text={"عیدي وپاداش"}
-                          height={46}
-                          width={165}
-                          left={955}
-                          top={515}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="عیدي وپاداش"
+                          height={`${0.054567022538552785 * height}`}
+                          width={`${0.1305379746835443 * width}`}
+                          left={`${0.7555379746835443 * width}`}
+                          top={`${0.6109134045077106 * height}`}
                       />
                       <TextGroup
-                          fontSize={43}
-                          text={"حق بیمه سهم کارفرما"}
-                          height={51}
-                          width={270}
-                          left={855}
-                          top={570}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="حق بیمه سهم کارفرما"
+                          height={`${0.060498220640569395 * height}`}
+                          width={`${0.21360759493670886 * width}`}
+                          left={`${0.6764240506329114 * width}`}
+                          top={`${0.6761565836298933 * height}`}
                       />
                       <TextGroup
-                          fontSize={43}
-                          text={"باز خرید و ذخیره سنوات خدمت"}
-                          height={49}
-                          width={375}
-                          left={750}
-                          top={623}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="باز خرید و ذخیره سنوات خدمت"
+                          height={`${0.05812574139976275 * height}`}
+                          width={`${0.29667721518987344 * width}`}
+                          left={`${0.5933544303797469 * width}`}
+                          top={`${0.7390272835112692 * height}`}
                       />
                       <TextGroup
-                          fontSize={43}
-                          text={"بیمه حوادث - هزینه بهداشتی"}
-                          height={48}
-                          width={355}
-                          left={770}
-                          top={680}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="بیمه حوادث - هزینه بهداشتی"
+                          height={`${0.05693950177935943 * height}`}
+                          width={`${0.28085443037974683 * width}`}
+                          left={`${0.6091772151898734 * width}`}
+                          top={`${0.8066429418742586 * height}`}
                       />
                       <TextGroup
-                          fontSize={43}
-                          text={"پس انداز سهم کارفرما"}
-                          height={45}
-                          width={275}
-                          left={850}
-                          top={735}
+                          fontSize={`${0.03401898734177215 * width}`}
+                          text="پس انداز سهم کارفرما"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.2175632911392405 * width}`}
+                          left={`${0.6724683544303798 * width}`}
+                          top={`${0.8718861209964412 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"سال ۱۳۹۰"}
-                          height={44}
-                          width={150}
-                          left={335}
-                          top={165}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="سال ۱۳۹۰"
+                          height={`${0.05219454329774614 * height}`}
+                          width={`${0.11867088607594936 * width}`}
+                          left={`${0.2650316455696203 * width}`}
+                          top={`${0.19572953736654805 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"هزار ریال"}
-                          height={48}
-                          width={125}
-                          left={350}
-                          top={220}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="هزار ریال"
+                          height={`${0.05693950177935943 * height}`}
+                          width={`${0.09889240506329114 * width}`}
+                          left={`${0.27689873417721517 * width}`}
+                          top={`${0.2609727164887307 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۳۰,۶۷۲,۵۴۵"}
-                          height={45}
-                          width={185}
-                          left={327}
-                          top={280}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۳۰,۶۷۲,۵۴۵"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.1463607594936709 * width}`}
+                          left={`${0.2587025316455696 * width}`}
+                          top={`${0.33214709371293 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۵,۸۲۲,۸۵۸"}
-                          height={43}
-                          width={170}
-                          left={340}
-                          top={345}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۵,۸۲۲,۸۵۸"
+                          height={`${0.051008303677342826 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          left={`${0.2689873417721519 * width}`}
+                          top={`${0.4092526690391459 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۳,۵۶۴,۳۳۸"}
-                          height={45}
-                          width={170}
-                          left={340}
-                          top={405}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۳,۵۶۴,۳۳۸"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          left={`${0.2689873417721519 * width}`}
+                          top={`${0.4804270462633452 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۲,۳۲۹,۶۲۹"}
-                          height={45}
-                          width={170}
-                          left={340}
-                          top={460}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۲,۳۲۹,۶۲۹"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          left={`${0.2689873417721519 * width}`}
+                          top={`${0.5456702253855279 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۷,۵۹۷,۴۸۷"}
-                          height={45}
-                          width={170}
-                          left={340}
-                          top={515}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۷,۵۹۷,۴۸۷"
+                          height={`${0.05338078291814947 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          left={`${0.2689873417721519 * width}`}
+                          top={`${0.6109134045077106 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۱۲,۳۰۵,۶۷۸"}
-                          left={335}
-                          top={565}
-                          width={180}
-                          height={46}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۱۲,۳۰۵,۶۷۸"
+                          left={`${0.2650316455696203 * width}`}
+                          top={`${0.6702253855278766 * height}`}
+                          width={`${0.14240506329113925 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۵,۹۷۳,۷۷۸"}
-                          left={345}
-                          top={620}
-                          width={170}
-                          height={47}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۵,۹۷۳,۷۷۸"
+                          left={`${0.27294303797468356 * width}`}
+                          top={`${0.7354685646500593 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.05575326215895611 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۲۴۷,۳۲۰"}
-                          left={375}
-                          top={680}
-                          width={140}
-                          height={44}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۲۴۷,۳۲۰"
+                          left={`${0.29667721518987344 * width}`}
+                          top={`${0.8066429418742586 * height}`}
+                          width={`${0.11075949367088607 * width}`}
+                          height={`${0.05219454329774614 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۱,۳۵۸,۷۷۷"}
-                          left={350}
-                          top={735}
-                          width={165}
-                          height={45}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۱,۳۵۸,۷۷۷"
+                          left={`${0.27689873417721517 * width}`}
+                          top={`${0.8718861209964412 * height}`}
+                          width={`${0.1305379746835443 * width}`}
+                          height={`${0.05338078291814947 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"سال ۱۳۸۹"}
-                          left={100}
-                          top={165}
-                          width={150}
-                          height={45}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="سال ۱۳۸۹"
+                          left={`${0.07911392405063292 * width}`}
+                          top={`${0.19572953736654805 * height}`}
+                          width={`${0.11867088607594936 * width}`}
+                          height={`${0.05338078291814947 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"هزار ریال"}
-                          left={115}
-                          top={220}
-                          width={135}
-                          height={48}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="هزار ریال"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.2609727164887307 * height}`}
+                          width={`${0.10680379746835443 * width}`}
+                          height={`${0.05693950177935943 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۲۶,۳۲۵,۸۳۳"}
-                          left={100}
-                          top={280}
-                          width={185}
-                          height={45}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۲۶,۳۲۵,۸۳۳"
+                          left={`${0.07911392405063292 * width}`}
+                          top={`${0.33214709371293 * height}`}
+                          width={`${0.1463607594936709 * width}`}
+                          height={`${0.05338078291814947 * height}`}
                       />
                       <TextGroup
-                          fontSize={49}
-                          text={"۴,۸۲۱,۸۹۶"}
-                          left={115}
-                          top={340}
-                          width={170}
-                          height={46}
+                          fontSize={`${0.038765822784810125 * width}`}
+                          text="۴,۸۲۱,۸۹۶"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.4033214709371293 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                       <TextGroup
-                          fontSize={49}
-                          text={"۳,۶۶۷,۴۳۱"}
-                          left={115}
-                          top={400}
-                          width={170}
-                          height={46}
+                          fontSize={`${0.038765822784810125 * width}`}
+                          text="۳,۶۶۷,۴۳۱"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.4744958481613286 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                       <TextGroup
-                          fontSize={50}
-                          text={"۲,۰۳۷,۱۲۷"}
-                          left={115}
-                          top={455}
-                          width={170}
-                          height={46}
+                          fontSize={`${0.03955696202531646 * width}`}
+                          text="۲,۰۳۷,۱۲۷"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.5397390272835113 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                       <TextGroup
-                          fontSize={49}
-                          text={"۸,۲۰۴,۹۷۷"}
-                          left={115}
-                          top={510}
-                          width={170}
-                          height={46}
+                          fontSize={`${0.038765822784810125 * width}`}
+                          text="۸,۲۰۴,۹۷۷"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.604982206405694 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                       <TextGroup
-                          fontSize={48}
-                          text={"۹,۳۷۰,۶۲۰"}
-                          left={115}
-                          top={565}
-                          width={170}
-                          height={46}
-                      />
-                      <TextGroup
-                          fontSize={48}
-                          text={"۶,۳۴۹,۵۶۸"}
-                          left={115}
-                          top={620}
-                          width={170}
-                          height={43}
-                      />
-                      <TextGroup
-                          fontSize={50}
-                          text={"۲۱۷,۱۵۳"}
-                          left={145}
-                          top={670}
-                          width={140}
-                          height={45}
-                      />
-                      <TextGroup
-                          fontSize={50}
-                          text={"۱,۵۴۰,۲۹۱"}
-                          left={115}
-                          top={725}
-                          width={170}
-                          height={45}
+                          fontSize={`${0.0379746835443038 * width}`}
+                          text="۹,۳۷۰,۶۲۰"
+                          left={`${0.09098101265822785 * width}`}
+                          top={`${0.6702253855278766 * height}`}
+                          width={`${0.13449367088607594 * width}`}
+                          height={`${0.054567022538552785 * height}`}
                       />
                   </div>
               </page>
