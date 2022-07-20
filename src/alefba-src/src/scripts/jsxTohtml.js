@@ -3,79 +3,77 @@ this script is in charge of making the jsx ready to be parsed via DOM parsers
  */
 
 let jsxString = "<TextGroup\n" +
-    "                            fontSize={43}\n" +
-    "                            text={\"۶۳\"}\n" +
-    "                            left={920}\n" +
-    "                            top={190}\n" +
-    "                            width={50}\n" +
-    "                            height={45}\n" +
+    "                            fontSize={87}\n" +
+    "                            text={\"- یعطي أمثلة عن مرکبات کیمیائیة شائعة الاستعمال في محیطه.\"}\n" +
+    "                            left={620}\n" +
+    "                            top={275}\n" +
+    "                            width={1530}\n" +
+    "                            height={90}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            animationDelay={0.5}\n" +
-    "                            fontSize={56}\n" +
-    "                            text={\"اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید\\nو باقیمانده را\"}\n" +
-    "                            left={245}\n" +
-    "                            top={285}\n" +
-    "                            width={1350}\n" +
-    "                            translationX={1350}\n" +
-    "                            height={60}\n" +
-    "                        />\n" +
-    "                        <TextGroup\n" +
-    "                            fontSize={54}\n" +
-    "                            text={\"با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید\\nو به مایع صاف شده\"}\n" +
-    "                            left={250}\n" +
+    "                            fontSize={95}\n" +
+    "                            text={\"- یتعرف الی بعض الکواشف (محلول قشر الفجل، محلول الملفوف البنفسجي،\"}\n" +
+    "                            left={170}\n" +
     "                            top={390}\n" +
-    "                            width={1350}\n" +
-    "                            height={62}\n" +
+    "                            width={1985}\n" +
+    "                            height={90}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            fontSize={53}\n" +
-    "                            text={\"و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا\\nوزن ثابت تکلیس\"}\n" +
-    "                            left={250}\n" +
-    "                            top={490}\n" +
-    "                            width={1350}\n" +
-    "                            height={53}\n" +
+    "                            fontSize={87}\n" +
+    "                            text={\"محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي.\"}\n" +
+    "                            left={290}\n" +
+    "                            top={505}\n" +
+    "                            width={1800}\n" +
+    "                            height={88}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            fontSize={59}\n" +
-    "                            text={\"کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )\"}\n" +
-    "                            left={647}\n" +
-    "                            top={588}\n" +
+    "                            fontSize={90}\n" +
+    "                            text={\"- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام أحد الکواشف.\"}\n" +
+    "                            left={260}\n" +
+    "                            top={620}\n" +
+    "                            width={1900}\n" +
+    "                            height={90}\n" +
+    "                            lineType={\"line\"}\n" +
+    "                        />\n" +
+    "                        <TextGroup\n" +
+    "                            fontSize={87}\n" +
+    "                            text={\"یعطي أمثلة عن بعض الأملاح الشائعة.\"}\n" +
+    "                            left={1170}\n" +
+    "                            top={745}\n" +
     "                            width={950}\n" +
-    "                            height={61}\n" +
+    "                            height={92}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            fontSize={53}\n" +
-    "                            text={\"مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R\\nزیریك کندانسور رفلو\"}\n" +
-    "                            left={255}\n" +
-    "                            top={690}\n" +
-    "                            width={1230}\n" +
-    "                            height={62}\n" +
+    "                            fontSize={95}\n" +
+    "                            text={\"- یعطي أمثلة عن التفاعل الکیمیائي: الاحتراق، تکون الصدأ، تفاعل الحمض مع\"}\n" +
+    "                            left={120}\n" +
+    "                            top={854}\n" +
+    "                            width={2040}\n" +
+    "                            height={90}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            fontSize={56}\n" +
-    "                            text={\"مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی\\nحمام آبجوش\"}\n" +
-    "                            left={265}\n" +
-    "                            top={789}\n" +
-    "                            width={1330}\n" +
-    "                            height={60}\n" +
+    "                            fontSize={87}\n" +
+    "                            text={\"مواد کلسیة ومع بعض الفلزات.\"}\n" +
+    "                            left={1350}\n" +
+    "                            top={970}\n" +
+    "                            width={750}\n" +
+    "                            height={80}\n" +
+    "                            lineType={\"line\"}\n" +
     "                        />\n" +
     "                        <TextGroup\n" +
-    "                            fontSize={55}\n" +
-    "                            text={\"تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و\\nوزن‌باقیماند، بیش‌از\"}\n" +
-    "                            left={245}\n" +
-    "                            top={890}\n" +
-    "                            width={1350}\n" +
-    "                            height={55}\n" +
-    "                        />\n" +
-    "                        <TextGroup\n" +
-    "                            fontSize={53}\n" +
-    "                            text={\"۲ میلی‌گرم نیست ( ۰/۲۶).\"}\n" +
-    "                            left={1180}\n" +
-    "                            top={992}\n" +
-    "                            width={410}\n" +
-    "                            height={63}\n" +
-    "                        />";
+    "                            fontSize={87}\n" +
+    "                            text={\"- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة.\"}\n" +
+    "                            left={340}\n" +
+    "                            top={1090}\n" +
+    "                            width={1830}\n" +
+    "                            height={86}\n" +
+    "                            lineType={\"line\"}\n" +
+    "                        />"
 
 let htmlparsableJSX = jsxString
     .replaceAll("TextGroup","div")
