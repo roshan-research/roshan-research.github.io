@@ -1,19 +1,24 @@
 import rooznameh from "../../assets/images/samples/roznameh.jpg";
-import style, {getScale} from "./style";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 
 const RoozNameh = () => {
 
-    const[scaleCoefficient,setScaleCoefficient] = useState({});
+    let tempHeight;
+    const[width,setWidth] = useState();
+    const[height,setHeight] = useState();
 
     useEffect(() => {
-        setScaleCoefficient(getScale(window.innerWidth,2226));
-    }, [])
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.72);
+        setHeight(tempHeight);
+    }, []);
 
 
     window.onresize = () => {
-        setScaleCoefficient(getScale(window.innerWidth,2226));
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.72);
+        setHeight(tempHeight);
     };
 
     return(
@@ -22,17 +27,16 @@ const RoozNameh = () => {
                 id="document"
                 style={{
                     position: "relative",
-                    transform: `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,
                     transition: "0s"
                 }}
             >
                 <img
-                    style={{ position: "absolute", left: 0, width: 2226, height: 1296 }}
+                    style={{ position: "absolute", left: 0, width: width, height: height }}
                     id="raw"
                     src={rooznameh}
                     alt={''}
                 />
-                <page style={{ width: 2226, height: 1296 }}>
+                <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
                             fontSize={203}

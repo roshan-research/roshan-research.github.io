@@ -1,34 +1,39 @@
-import style, {getScale} from "./style";
 import tahrir from "../../assets/images/samples/tahrir.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 
 const Tahrir = () => {
 
-    const[scaleCoefficient,setScaleCoefficient] = useState({});
+    let tempHeight;
+    const[width,setWidth] = useState();
+    const[height,setHeight] = useState();
 
     useEffect(() => {
-        setScaleCoefficient(getScale(window.innerWidth,1887));
-    }, [])
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.5);
+        setHeight(tempHeight);
+    }, []);
 
 
     window.onresize = () => {
-        setScaleCoefficient(getScale(window.innerWidth,1887));
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.5);
+        setHeight(tempHeight);
     };
 
     return(
         <div className="container">
             <div
                 id="document"
-                style={{ position: "relative", transform:  `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}
+                style={{ position: "relative",transition: "0s" }}
             >
                 <img
-                    style={{ position: "absolute", left: 0,width: 1887, height: 1262 }}
+                    style={{ position: "absolute", left: 0,width: width, height: height }}
                     id="raw"
                     src={tahrir}
                     alt={''}
                 />
-                <page style={{ width: 1887, height: 1262 }}>
+                <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
                             animationDelay={0}

@@ -1,36 +1,39 @@
-import style, {getScale} from "./style";
 import bikeifyat from "../../assets/images/samples/bikeifyat.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 
 const BiKeifyat = () => {
-
-    const[scaleCoefficient,setScaleCoefficient] = useState({});
+    let tempHeight;
+    const[width,setWidth] = useState();
+    const[height,setHeight] = useState();
 
     useEffect(() => {
-        setScaleCoefficient(getScale(window.innerWidth,2298));
-    }, [])
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.62);
+        setHeight(tempHeight);
+    }, []);
 
 
     window.onresize = () => {
-        setScaleCoefficient(getScale(window.innerWidth,2298));
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.62);
+        setHeight(tempHeight);
     };
 
     return(
         <div className="container">
             <div
                 id="document"
-                style={{ position: "relative", transform:
-                        `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,transition: "0s" }}
+                style={{ position: "relative",transition: "0s" }}
             >
                 <img
-                    style={{ position: "absolute", left: 0,width: 2298, height: 1414 }}
+                    style={{ position: "absolute", left: 0,width: width, height: height }}
                     id="raw"
                     src={bikeifyat}
                     alt={''}
                 />
-                <page style={{ width: 2298, height: 1414 }}>
-                    <div className="document line-view" style={{}}>
+                <page style={{ width: width, height: height }}>
+                    <div className="document line-view">
                         <TextGroup
                             animationDelay={0}
                             fontSize={87}

@@ -1,45 +1,43 @@
 import kart from "../../assets/images/samples/kart.png";
 import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
-import {getScale} from "./style";
 import {useEffect, useState} from "react";
 
 const KartMelli = () => {
 
-    const[scaleCoefficient,setScaleCoefficient] = useState({});
+    let tempHeight;
+    const[width,setWidth] = useState();
+    const[height,setHeight] = useState();
 
     useEffect(() => {
-        setScaleCoefficient(getScale(window.innerWidth,2500));
-    }, [])
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.58);
+        setHeight(tempHeight);
+    }, []);
 
 
     window.onresize = () => {
-        setScaleCoefficient(getScale(window.innerWidth,2500));
+        tempHeight = 0.5 * window.innerHeight;
+        setWidth(tempHeight * 1.58);
+        setHeight(tempHeight);
     };
 
     return(
         <div className="container">
             <div
                 id="document"
-                style={{ position: "relative",transform:
-                        `scaleY(${scaleCoefficient.scaleY}) scaleX(${scaleCoefficient.scaleX})`,
+                style={{ position: "relative",
                     transition: "0s"
                 }}
             >
                 <img
-                    style={{ position: "absolute", left: 0 , width: 2500, height: "1576.4750093949642px"}}
+                    style={{ position: "absolute", left: 0 , width: width, height: height}}
                     id="raw"
                     src={kart}
                     alt={''}
                 />
-                <page style={{ width: 2500, height: "1576.4750093949642px" }}>
+                <page style={{ width: width, height: height }}>
                     <div className="document line-view">
-                        <div
-                            className="image"
-                            style={{ left: "-2px", top: "-2px", width: 2500, height: "1576.4750093949642px" }}
-                        >
-                            <div className="image-wrapper" />
-                        </div>
                         <TextGroup
                             animationDelay={0}
                             fontSize={57}
