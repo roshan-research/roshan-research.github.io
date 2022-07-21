@@ -8,7 +8,7 @@ const Charkhesh = () => {
     const[height,setHeight] = useState();
 
     let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.9 : 0.27;
+    let scaleH = isMobile? 0.9 : 0.45;
     let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
 
     useEffect(() => {
