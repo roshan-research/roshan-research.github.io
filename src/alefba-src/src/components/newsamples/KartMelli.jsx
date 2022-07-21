@@ -39,15 +39,15 @@ const KartMelli = () => {
                 <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
-                            fontSize={`${0.0228 * width}px`}
+                            fontSize={`${0.024 * width}px`}
                             text="جمهوری اسلامی ایران"
                             left={`${0.8104 * width}px`}
-                            top={`${0.14901712111604312 * height}px`}
-                            width={`${0.1484 * width}px`}
-                            height={`${0.053899809765377296 * height}px`}
+                            top={`${0.15901712111604312 * height}px`}
+                            width={`${0.15 * width}px`}
+                            height={`${0.043899809765377296 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.084 * width}px`}
+                            fontSize={`${0.092 * width}px`}
                             text="کارت ملی"
                             left={`${0.368 * width}px`}
                             top={`${0.04185161699429296 * height}px`}
@@ -57,13 +57,13 @@ const KartMelli = () => {
                         <TextGroup
                             fontSize={`${0.056 * width}px`}
                             text="شماره ملی، ۰۰۴۰۳۱۶۲۸۵"
-                            left={`${0.5476 * width}px`}
+                            left={`${0.555 * width}px`}
                             top={`${0.2593532022828155 * height}px`}
-                            width={`${0.414 * width}px`}
+                            width={`${0.41 * width}px`}
                             height={`${0.08560558021559923 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.052 * width}px`}
+                            fontSize={`${0.056 * width}px`}
                             text="حمید رضا"
                             left={`${0.6368 * width}px`}
                             top={`${0.34876347495244137 * height}px`}
@@ -71,19 +71,19 @@ const KartMelli = () => {
                             height={`${0.08116677235256817 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.056 * width}px`}
+                            fontSize={`${0.058 * width}px`}
                             text="نکویی"
                             left={`${0.6884 * width}px`}
                             top={`${0.4438807863031072 * height}px`}
-                            width={`${0.108 * width}px`}
+                            width={`${0.1 * width}px`}
                             height={`${0.08877615726062144 * height}px`}
                         />
                         <TextGroup
                             fontSize={`${0.04 * width}px`}
                             text="نام :"
-                            left={`${0.792 * width}px`}
+                            left={`${0.81 * width}px`}
                             top={`${0.37476220672162336 * height}px`}
-                            width={`${0.0564 * width}px`}
+                            width={`${0.045 * width}px`}
                             height={`${0.054533925174381735 * height}px`}
                         />
                         <TextGroup
@@ -95,7 +95,7 @@ const KartMelli = () => {
                             height={`${0.0653138871274572 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.032 * width}px`}
+                            fontSize={`${0.034 * width}px`}
                             text="تاریخ تولد :"
                             left={`${0.8076 * width}px`}
                             top={`${0.5713379835129994 * height}px`}
@@ -119,27 +119,27 @@ const KartMelli = () => {
                             height={`${0.060240963855421686 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.056 * width}px`}
+                            fontSize={`${0.06 * width}px`}
                             text="۱۳۶۷/۰۲/۲۶"
-                            left={`${0.5564 * width}px`}
+                            left={`${0.56 * width}px`}
                             top={`${0.5440710209258085 * height}px`}
-                            width={`${0.2272 * width}px`}
+                            width={`${0.221 * width}px`}
                             height={`${0.08370323398858592 * height}px`}
                         />
                         <TextGroup
                             fontSize={`${0.052 * width}px`}
                             text="محمد"
-                            left={`${0.6948 * width}px`}
+                            left={`${0.7 * width}px`}
                             top={`${0.6525047558655676 * height}px`}
-                            width={`${0.0848 * width}px`}
+                            width={`${0.0840 * width}px`}
                             height={`${0.07102092580849714 * height}px`}
                         />
                         <TextGroup
-                            fontSize={`${0.056 * width}px`}
+                            fontSize={`${0.062 * width}px`}
                             text="۱۴۰۳/۰۸/۱۲"
                             left={`${0.56 * width}px`}
                             top={`${0.7577679137603044 * height}px`}
-                            width={`${0.2312 * width}px`}
+                            width={`${0.230 * width}px`}
                             height={`${0.07102092580849714 * height}px`}
                         />
                     </div>
