@@ -3,23 +3,24 @@ import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import "../../stylesheets/new-sample-style.scss";
+import {isMobile} from "react-device-detect";
 
 const FishHoghoghi = () => {
-    let tempWidth;
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
 
+    let scaleW = isMobile? 0.85 : 0.4;
+    let scaleH = isMobile? 0.58 : 0.27;
+
     useEffect(() => {
-        tempWidth = 0.3 * window.innerWidth;
-        setWidth(tempWidth);
-        setHeight(tempWidth * 0.66);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     }, []);
 
 
     window.onresize = () => {
-        tempWidth = 0.3 * window.innerWidth;
-        setWidth(tempWidth);
-        setHeight(tempWidth * 0.66);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     };
 
 

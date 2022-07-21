@@ -1,27 +1,28 @@
 import charkhesh from "../../assets/images/samples/charkhesh.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
+import {isMobile} from "react-device-detect";
 
 const Charkhesh = () => {
-    let tempWidth;
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
 
+    let scaleW = isMobile? 0.85 : 0.4;
+    let scaleH = isMobile? 0.9 : 0.27;
+    let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
+
     useEffect(() => {
-        tempWidth = 0.3 * window.innerWidth;
-        setWidth(tempWidth);
-        setHeight(tempWidth);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     }, []);
 
 
     window.onresize = () => {
-        tempWidth = 0.3 * window.innerWidth;
-        setWidth(tempWidth);
-        setHeight(tempWidth);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     };
-
     return(
-        <div className="container" >
+        <div className="container" style={containerStyle}>
             <div
                 id="document"
                 style={{ position: "relative",transition: "0s" }}
