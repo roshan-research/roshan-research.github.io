@@ -72,7 +72,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            fontSize={`${0.05341005291005291 * width}px`}
                             text="گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"
                             left={`${0.13227513227513227 * width}px`}
                             top={`${0.5158730158730159 * height}px`}

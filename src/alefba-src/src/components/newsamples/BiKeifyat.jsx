@@ -55,7 +55,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.037859007832898174 * width}px`}
+                            fontSize={`${0.038199007832898174 * width}px`}
                             text="محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي."
                             left={`${0.12619669277632725 * width}px`}
                             top={`${0.35714285714285715 * height}px`}
@@ -64,7 +64,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.0391644908616188 * width}px`}
+                            fontSize={`${0.0400544908616188 * width}px`}
                             text="- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام أحد الکواشف."
                             left={`${0.11314186248912098 * width}px`}
                             top={`${0.43847241867043846 * height}px`}
@@ -73,7 +73,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.037859007832898174 * width}px`}
+                            fontSize={`${0.039559007832898174 * width}px`}
                             text="یعطي أمثلة عن بعض الأملاح الشائعة."
                             left={`${0.5091383812010444 * width}px`}
                             top={`${0.5268741159830269 * height}px`}
@@ -91,7 +91,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.037859007832898174 * width}px`}
+                            fontSize={`${0.039859007832898174 * width}px`}
                             text="مواد کلسیة ومع بعض الفلزات."
                             left={`${0.587467362924282 * width}px`}
                             top={`${0.685997171145686 * height}px`}
@@ -100,7 +100,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.037859007832898174 * width}px`}
+                            fontSize={`${0.038859007832898174 * width}px`}
                             text="- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة."
                             left={`${0.14795474325500435 * width}px`}
                             top={`${0.7708628005657708 * height}px`}

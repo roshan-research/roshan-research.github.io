@@ -40,7 +40,7 @@ const RoozNameh = () => {
                 <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
-                            fontSize={`${0.09119496855345911 * width}px`}
+                            fontSize={`${0.09219496855345911 * width}px`}
                             text="دور تازه مذاکرات در مسکو و بروکسل"
                             height={`${0.16435185185185186 * height}px`}
                             width={`${0.9433962264150944 * width}px`}
