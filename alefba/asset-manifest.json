@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.821c819d.chunk.css",
-    "main.js": "/alefba/static/js/main.0bb4af7d.chunk.js",
+    "main.css": "/alefba/static/css/main.3c900c14.chunk.css",
+    "main.js": "/alefba/static/js/main.874dcbf3.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.25306428.js",
     "static/js/2.26d2adef.chunk.js": "/alefba/static/js/2.26d2adef.chunk.js",
     "static/js/3.96ad9140.chunk.js": "/alefba/static/js/3.96ad9140.chunk.js",
@@ -47,7 +47,7 @@
   "entrypoints": [
     "static/js/runtime-main.25306428.js",
     "static/js/2.26d2adef.chunk.js",
-    "static/css/main.821c819d.chunk.css",
-    "static/js/main.0bb4af7d.chunk.js"
+    "static/css/main.3c900c14.chunk.css",
+    "static/js/main.874dcbf3.chunk.js"
   ]
 }
