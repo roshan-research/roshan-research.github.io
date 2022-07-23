@@ -9,7 +9,8 @@ const TextGroup = ({
                        width,
                        textAlign = "auto",
                        lineHeight,
-                       lineType = "line_bold"
+                       lineType = "line_bold",
+                       delay = "0s"
                    }) => {
     return(
         <>
@@ -23,7 +24,8 @@ const TextGroup = ({
                     width: width,
                     height: height,
                     textAlign: textAlign,
-                    lineHeight: lineHeight
+                    lineHeight: lineHeight,
+                    animationDelay: delay
                 }}
             >
             </span>
@@ -45,7 +47,10 @@ const TextGroup = ({
                 <span
                     className="words"
                     data-text={text}
-                    style={{ fontSize: fontSize}}
+                    style={{
+                        fontSize: fontSize,
+                        animationDelay: delay
+                    }}
                 >
                     {text}
                 </span>

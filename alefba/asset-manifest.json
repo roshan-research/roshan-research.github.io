@@ -1,23 +1,25 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.62c4520e.chunk.css",
-    "main.js": "/alefba/static/js/main.d50cac9a.chunk.js",
-    "runtime-main.js": "/alefba/static/js/runtime-main.363b9390.js",
-    "static/js/2.7ca3d921.chunk.js": "/alefba/static/js/2.7ca3d921.chunk.js",
-    "static/js/3.12fd86af.chunk.js": "/alefba/static/js/3.12fd86af.chunk.js",
+    "main.css": "/alefba/static/css/main.3c900c14.chunk.css",
+    "main.js": "/alefba/static/js/main.874dcbf3.chunk.js",
+    "runtime-main.js": "/alefba/static/js/runtime-main.25306428.js",
+    "static/js/2.26d2adef.chunk.js": "/alefba/static/js/2.26d2adef.chunk.js",
+    "static/js/3.96ad9140.chunk.js": "/alefba/static/js/3.96ad9140.chunk.js",
     "index.html": "/alefba/index.html",
-    "static/js/2.7ca3d921.chunk.js.LICENSE.txt": "/alefba/static/js/2.7ca3d921.chunk.js.LICENSE.txt",
+    "static/js/2.26d2adef.chunk.js.LICENSE.txt": "/alefba/static/js/2.26d2adef.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/alefba/static/media/IRANYekan.b916444e.ttf",
-    "static/media/Sher.6255042b.svg": "/alefba/static/media/Sher.6255042b.svg",
-    "static/media/TarazNameh.122d732b.svg": "/alefba/static/media/TarazNameh.122d732b.svg",
+    "static/media/main-section.scss": "/alefba/static/media/Mitra.1c5e12f5.ttf",
     "static/media/accuracy-mobile.a6b965ee.svg": "/alefba/static/media/accuracy-mobile.a6b965ee.svg",
+    "static/media/bikeifyat.154fa1d7.jpg": "/alefba/static/media/bikeifyat.154fa1d7.jpg",
     "static/media/businesses.f577862c.png": "/alefba/static/media/businesses.f577862c.png",
-    "static/media/catalog-cover.e3264289.svg": "/alefba/static/media/catalog-cover.e3264289.svg",
+    "static/media/catalog-cover.a993b086.svg": "/alefba/static/media/catalog-cover.a993b086.svg",
+    "static/media/charkhesh.cc69454d.jpg": "/alefba/static/media/charkhesh.cc69454d.jpg",
     "static/media/close-icon.20012dc4.svg": "/alefba/static/media/close-icon.20012dc4.svg",
     "static/media/deep-mobile.82e534f6.svg": "/alefba/static/media/deep-mobile.82e534f6.svg",
     "static/media/dot.5ee81e2f.svg": "/alefba/static/media/dot.5ee81e2f.svg",
     "static/media/download-icon.4f55bff8.svg": "/alefba/static/media/download-icon.4f55bff8.svg",
-    "static/media/kart-melli.049f8a5a.svg": "/alefba/static/media/kart-melli.049f8a5a.svg",
+    "static/media/fish.1639ad4a.jpg": "/alefba/static/media/fish.1639ad4a.jpg",
+    "static/media/kart.8cce93cf.png": "/alefba/static/media/kart.8cce93cf.png",
     "static/media/left-1.7bb0036a.svg": "/alefba/static/media/left-1.7bb0036a.svg",
     "static/media/left-1.7dbf4a6b.svg": "/alefba/static/media/left-1.7dbf4a6b.svg",
     "static/media/left-2.c7cc94e9.svg": "/alefba/static/media/left-2.c7cc94e9.svg",
@@ -38,15 +40,14 @@
     "static/media/right-2.a27c1735.svg": "/alefba/static/media/right-2.a27c1735.svg",
     "static/media/right-3.b3f8969f.svg": "/alefba/static/media/right-3.b3f8969f.svg",
     "static/media/roshan-logo.ae7188f6.svg": "/alefba/static/media/roshan-logo.ae7188f6.svg",
-    "static/media/sample-1-mobile.52d5628d.png": "/alefba/static/media/sample-1-mobile.52d5628d.png",
-    "static/media/sample-2-mobile.38885d6f.png": "/alefba/static/media/sample-2-mobile.38885d6f.png",
-    "static/media/sample-3-mobile.58b044bb.png": "/alefba/static/media/sample-3-mobile.58b044bb.png",
-    "static/media/side.9e3ce4f0.svg": "/alefba/static/media/side.9e3ce4f0.svg"
+    "static/media/roznameh.77c7c5d8.jpg": "/alefba/static/media/roznameh.77c7c5d8.jpg",
+    "static/media/side.9e3ce4f0.svg": "/alefba/static/media/side.9e3ce4f0.svg",
+    "static/media/tahrir.a94522c2.jpg": "/alefba/static/media/tahrir.a94522c2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.363b9390.js",
-    "static/js/2.7ca3d921.chunk.js",
-    "static/css/main.62c4520e.chunk.css",
-    "static/js/main.d50cac9a.chunk.js"
+    "static/js/runtime-main.25306428.js",
+    "static/js/2.26d2adef.chunk.js",
+    "static/css/main.3c900c14.chunk.css",
+    "static/js/main.874dcbf3.chunk.js"
   ]
 }

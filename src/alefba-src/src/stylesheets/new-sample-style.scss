@@ -12,9 +12,11 @@ $transitions-duration: 3s;
 }
 @keyframes moveBg {
     0% {
+        background: rgba(255, 98, 0, 1.0);
         transform: scaleX(0);
     }
     100% {
+        background: rgba(255, 98, 0, 1.0);
         transform: scaleX(1);
     }
 }
@@ -23,7 +25,7 @@ $transitions-duration: 3s;
     width: 1170px;
 }
 #document {
-    margin: 50px 0;
+    margin: 0 0;
     transform-origin: top left;
     -moz-transform-origin: top left;
 }
@@ -38,8 +40,6 @@ $transitions-duration: 3s;
 .document.paragraph-view table ,
 .document.line-view .line_bold {
     font-family: IRMitra, serif;
-    background: rgba(255, 98, 0, 1);
-    border-radius: 3px;
     color: transparent;
     line-height: 1;
     overflow: hidden;
@@ -62,16 +62,18 @@ $transitions-duration: 3s;
     height: 100%;
     direction: rtl;
     overflow: hidden;
-    animation: moveText $transitions-duration linear 1;
-    -webkit-animation: moveText $transitions-duration linear 1;
+    animation: moveText $transitions-duration linear;
+    -webkit-animation: moveText $transitions-duration;
+    animation-delay: inherit;
     line-height: 1;
     animation-fill-mode: forwards;
 }
 
 #bg-orange {
-    animation: moveBg $transitions-duration linear 1;
-    -webkit-animation: moveBg $transitions-duration linear 1;
+    animation: moveBg $transitions-duration linear;
+    -webkit-animation: moveBg $transitions-duration;
     animation-fill-mode: forwards;
+    animation-delay: inherit;
 }
 #text-black-sample {
     float: right;

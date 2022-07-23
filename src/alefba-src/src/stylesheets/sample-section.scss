@@ -111,14 +111,15 @@ p { margin: 0.8vw}
 }
 
 .sample-container {
-  width: 43vw;
-  height:44vh;
+  width: 40vw;
+  height: 27vw;
   display: flex;
   justify-content: center;
   align-items: start;
   flex-direction: row;
   //change it later on
-  overflow: visible;
+  border-radius: 20px;
+  overflow: hidden;
 }
 
 .mobile-sample-container {
@@ -229,7 +230,8 @@ p { margin: 0.8vw}
 
   .mobile-sample-container {
     display: flex;
-    width: 80vw;
+    width: 85vw;
+    height: 75vw;
     border-radius: 15px;
   }
 

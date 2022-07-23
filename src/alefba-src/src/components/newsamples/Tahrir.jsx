@@ -1,24 +1,25 @@
 import tahrir from "../../assets/images/samples/tahrir.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
+import {isMobile} from "react-device-detect";
 
 const Tahrir = () => {
 
-    let tempHeight;
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
 
+    let scaleW = isMobile? 0.85 : 0.4;
+    let scaleH = isMobile? 0.58 : 0.27;
+
     useEffect(() => {
-        tempHeight = 0.5 * window.innerHeight;
-        setWidth(tempHeight * 1.5);
-        setHeight(tempHeight);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     }, []);
 
 
     window.onresize = () => {
-        tempHeight = 0.5 * window.innerHeight;
-        setWidth(tempHeight * 1.5);
-        setHeight(tempHeight);
+        setWidth(scaleW * window.innerWidth);
+        setHeight(scaleH * window.innerWidth);
     };
 
     return(
@@ -36,100 +37,85 @@ const Tahrir = () => {
                 <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
-                            animationDelay={0}
-                            fontSize={43}
-                            text={"۶۳"}
-                            left={920}
-                            top={190}
-                            width={50}
-                            translationX={60}
-                            height={45}
+                            delay={"0s"}
+                            fontSize={`${0.02278749337572867 * width}px`}
+                            text="۶۳"
+                            left={`${0.48754636989931105 * width}px`}
+                            top={`${0.15055467511885895 * height}px`}
+                            width={`${0.026497085320614733 * width}px`}
+                            height={`${0.03565768621236133 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={0.5}
-                            fontSize={56}
-                            text={"اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید\n" +
-                            "                و باقیمانده را"}
-                            left={245}
-                            top={285}
-                            width={1350}
-                            translationX={1350}
-                            height={60}
+                            delay={"3s"}
+                            fontSize={`${0.0299767355590885 * width}px`}
+                            text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
+                            left={`${0.12983571807101218 * width}px`}
+                            top={`${0.22583201267828842 * height}px`}
+                            width={`${0.7154213036565977 * width}px`}
+                            height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={1}
-                            fontSize={54}
-                            text={"با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید\n" +
-                            "                و به مایع صاف شده"}
-                            left={250}
-                            top={390}
-                            width={1350}
-                            translationX={1350}
-                            height={62}
+                            delay={"6s"}
+                            fontSize={`${0.028916852146263912 * width}px`}
+                            text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
+                            left={`${0.13248542660307366 * width}px`}
+                            top={`${0.3090332805071315 * height}px`}
+                            width={`${0.7154213036565977 * width}px`}
+                            height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={1.5}
-                            fontSize={53}
-                            text={"و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا\n" +
-                            "                وزن ثابت تکلیس"}
-                            left={250}
-                            top={490}
-                            width={1350}
-                            translationX={1350}
-                            height={53}
+                            delay={"9s"}
+                            fontSize={`${0.028486910439851617 * width}px`}
+                            text="و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا وزن ثابت تکلیس"
+                            left={`${0.13248542660307366 * width}px`}
+                            top={`${0.38827258320126784 * height}px`}
+                            width={`${0.7154213036565977 * width}px`}
+                            height={`${0.041996830427892234 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={2}
-                            fontSize={59}
-                            text={"کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"}
-                            left={647}
-                            top={588}
-                            width={950}
-                            translationX={950}
-                            height={61}
+                            delay={"12s"}
+                            fontSize={`${0.03126656067832538 * width}px`}
+                            text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
+                            left={`${0.34287228404875464 * width}px`}
+                            top={`${0.4659270998415214 * height}px`}
+                            width={`${0.5034446210916799 * width}px`}
+                            height={`${0.04833597464342314 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={2.5}
-                            fontSize={53}
-                            text={"مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R\n" +
-                            "                زیریك کندانسور رفلو"}
-                            left={255}
-                            top={690}
-                            width={1230}
-                            translationX={1350}
-                            height={62}
+                            delay={"15s"}
+                            fontSize={`${0.028586910439851617 * width}px`}
+                            text="مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R زیریك کندانسور رفلو"
+                            left={`${0.13513513513513514 * width}px`}
+                            top={`${0.5467511885895404 * height}px`}
+                            width={`${0.6518282988871225 * width}px`}
+                            height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={3}
-                            fontSize={56}
-                            text={"مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی\n" +
-                            "                حمام آبجوش"}
-                            left={265}
-                            top={789}
-                            width={1330}
-                            translationX={1400}
-                            height={60}
+                            delay={"18s"}
+                            fontSize={`${0.0296767355590885 * width}px`}
+                            text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
+                            left={`${0.14043455219925807 * width}px`}
+                            top={`${0.6251980982567353 * height}px`}
+                            width={`${0.7048224695283519 * width}px`}
+                            height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={3.5}
-                            fontSize={55}
-                            text={"تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و\n" +
-                            "                وزن‌باقیماند، بیش‌از"}
-                            left={245}
-                            top={890}
-                            width={1350}
-                            translationX={1400}
-                            height={55}
+                            delay={"21s"}
+                            fontSize={`${0.029146793852676205 * width}px`}
+                            text="تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و وزن‌باقیماند، بیش‌از"
+                            left={`${0.12983571807101218 * width}px`}
+                            top={`${0.705229793977813 * height}px`}
+                            width={`${0.7154213036565977 * width}px`}
+                            height={`${0.043581616481774964 * height}px`}
                         />
                         <TextGroup
-                            animationDelay={4}
-                            fontSize={53}
-                            text={" ۲ میلی‌گرم نیست ( ۰/۲۶)."}
-                            left={1180}
-                            top={992}
-                            width={410}
-                            translationX={410}
-                            height={63}
+                            delay={"24s"}
+                            fontSize={`${0.028086910439851617 * width}px`}
+                            text="۲ میلی‌گرم نیست ( ۰/۲۶)."
+                            left={`${0.6253312135665077 * width}px`}
+                            top={`${0.786053882725832 * height}px`}
+                            width={`${0.2172760996290408 * width}px`}
+                            height={`${0.04992076069730586 * height}px`}
                         />
                     </div>
                 </page>
