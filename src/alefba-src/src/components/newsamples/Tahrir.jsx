@@ -37,6 +37,7 @@ const Tahrir = () => {
                 <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
+                            delay={"0s"}
                             fontSize={`${0.02278749337572867 * width}px`}
                             text="۶۳"
                             left={`${0.48754636989931105 * width}px`}
@@ -45,16 +46,16 @@ const Tahrir = () => {
                             height={`${0.03565768621236133 * height}px`}
                         />
                         <TextGroup
-                            animationdelay="0.5"
+                            delay={"3s"}
                             fontSize={`${0.0299767355590885 * width}px`}
                             text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.22583201267828842 * height}px`}
                             width={`${0.7154213036565977 * width}px`}
-                            translationx="1350"
                             height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.028916852146263912 * width}px`}
                             text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
                             left={`${0.13248542660307366 * width}px`}
@@ -63,6 +64,7 @@ const Tahrir = () => {
                             height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.028486910439851617 * width}px`}
                             text="و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا وزن ثابت تکلیس"
                             left={`${0.13248542660307366 * width}px`}
@@ -71,6 +73,7 @@ const Tahrir = () => {
                             height={`${0.041996830427892234 * height}px`}
                         />
                         <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.03126656067832538 * width}px`}
                             text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
                             left={`${0.34287228404875464 * width}px`}
@@ -79,6 +82,7 @@ const Tahrir = () => {
                             height={`${0.04833597464342314 * height}px`}
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.028586910439851617 * width}px`}
                             text="مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R زیریك کندانسور رفلو"
                             left={`${0.13513513513513514 * width}px`}
@@ -87,6 +91,7 @@ const Tahrir = () => {
                             height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.0296767355590885 * width}px`}
                             text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
                             left={`${0.14043455219925807 * width}px`}
@@ -95,6 +100,7 @@ const Tahrir = () => {
                             height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.029146793852676205 * width}px`}
                             text="تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و وزن‌باقیماند، بیش‌از"
                             left={`${0.12983571807101218 * width}px`}
@@ -103,6 +109,7 @@ const Tahrir = () => {
                             height={`${0.043581616481774964 * height}px`}
                         />
                         <TextGroup
+                            delay={"24s"}
                             fontSize={`${0.028086910439851617 * width}px`}
                             text="۲ میلی‌گرم نیست ( ۰/۲۶)."
                             left={`${0.6253312135665077 * width}px`}

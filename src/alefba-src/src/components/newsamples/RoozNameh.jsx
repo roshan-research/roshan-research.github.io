@@ -40,6 +40,7 @@ const RoozNameh = () => {
                 <page style={{ width: width, height: height }}>
                     <div className="document line-view">
                         <TextGroup
+                            delay={"0s"}
                             fontSize={`${0.09219496855345911 * width}px`}
                             text="دور تازه مذاکرات در مسکو و بروکسل"
                             height={`${0.16435185185185186 * height}px`}
@@ -49,6 +50,7 @@ const RoozNameh = () => {
                             linetype="line_bold"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.014824797843665768 * width}px`}
                             text="هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت"
                             height={`${0.02700617283950617 * height}px`}
@@ -58,6 +60,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="خارجه و سازمان انرژی اتمی تشکیل می‌دهد"
                             height={`${0.023148148148148147 * height}px`}
@@ -67,6 +70,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="همزمان با مذاکرات مسکو، دور جدید گفت وگوهای هسته‌ای"
                             height={`${0.023148148148148147 * height}px`}
@@ -76,6 +80,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="ایران و اروپا با حضور متکی و وعیدی در بروکسل آغاز می‌شود"
                             height={`${0.023148148148148147 * height}px`}
@@ -85,6 +90,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="وعیدی: موقعیت مناسبی برای دو طرف (اروپا و ایران) در مسیر"
                             height={`${0.023148148148148147 * height}px`}
@@ -94,6 +100,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"3s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="مذاکره و تفاهم فراهم شده است"
                             height={`${0.023148148148148147 * height}px`}
@@ -103,6 +110,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="قصد داریم از اقداماتی که مسیر تعامل و گفت‌وگو را تخریب"
                             height={`${0.023148148148148147 * height}px`}
@@ -112,6 +120,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="می‌کند پرهیز کنیم"
                             height={`${0.023148148148148147 * height}px`}
@@ -121,6 +130,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.015723270440251572 * width}px`}
                             text="سید علی حسینی تاش، معاون لاریجانی ریاست تیم"
                             height={`${0.02700617283950617 * height}px`}
@@ -130,6 +140,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="مذاکره را برعهده دارد و جعفری معاون دیگر لاریجانی او را"
                             height={`${0.02700617283950617 * height}px`}
@@ -139,6 +150,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="همراهی می‌کند"
                             height={`${0.02700617283950617 * height}px`}
@@ -148,6 +160,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"6s"}
                             fontSize={`${0.014824797843665768 * width}px`}
                             text="حسینی تاش: مذاکرات با روسیه مشروط نیست و ما از"
                             height={`${0.02700617283950617 * height}px`}
@@ -157,6 +170,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="حقوق خود عقب نشینی نخواهیم کرد"
                             height={`${0.02700617283950617 * height}px`}
@@ -166,6 +180,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="سرگئی کرینکو، رئیس سازمان انرژی اتمی روسیه بزودی"
                             height={`${0.02700617283950617 * height}px`}
@@ -175,6 +190,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="برای بررسی مراحل تکمیلی بوشهر به ایران می‌آید"
                             height={`${0.02700617283950617 * height}px`}
@@ -184,6 +200,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="وزیر خارجه آلمان از ایران خواست پیشنهاد روسیه را بپذیرد"
                             height={`${0.02700617283950617 * height}px`}
@@ -193,6 +210,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="یک دیپلمات اروپایی: ایران و اتحادیه اروپا درباره موضوع"
                             height={`${0.02700617283950617 * height}px`}
@@ -202,6 +220,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"9s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="هسته‌ای به توافق می‌رسند"
                             height={`${0.02700617283950617 * height}px`}
@@ -211,33 +230,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            fontSize={`${0.02021563342318059 * width}px`}
-                            text="سیلاب و طغیان"
-                            height={`${0.034722222222222224 * height}px`}
-                            width={`${0.08984725965858041 * width}px`}
-                            left={`${0.8176100628930818 * width}px`}
-                            top={`${0.9066358024691358 * height}px`}
-                            linetype="line_bold"
-                        />
-                        <TextGroup
-                            fontSize={`${0.014375561545372867 * width}px`}
-                            text={"سیلاب در شهرهای شوشتر، شادگان، گتوند، بستان، اندیمشک و اهواز\n" + "خساراتی بر جای گذاشت"}
-                            height={`${0.02700617283950617 * height}px`}
-                            width={`${0.3728661275831087 * width}px`}
-                            left={`${0.431266846361186 * width}px`}
-                            top={`${0.9182098765432098 * height}px`}
-                            linetype="line"
-                        />
-                        <TextGroup
-                            fontSize={`${0.016621743036837375 * width}px`}
-                            text={"رودخانه‌ها در خوزستان افزایش حجم آب کارون به حدی بود که سواحل\n" + "حاشیه رودخانه و اهواز نیز مملو از آب شد"}
-                            height={`${0.02700617283950617 * height}px`}
-                            width={`${0.5166217430368374 * width}px`}
-                            left={`${0.44923629829290207 * width}px`}
-                            top={`${0.941358024691358 * height}px`}
-                            linetype="line"
-                        />
-                        <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="ایران و روسیه به هم اعتماد دارند و قصد فریب یکدیگر را"
                             height={`${0.023148148148148147 * height}px`}
@@ -247,6 +240,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="ندارند و اینها زمینه خوبی برای به نتیجه رسیدن مذاکرات است"
                             height={`${0.023148148148148147 * height}px`}
@@ -256,6 +250,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="عوامل امیدوارکننده در این مذاکرات وجود دارد"
                             height={`${0.024691358024691357 * height}px`}
@@ -265,6 +260,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="وزارت خارجه روسیه: در این مذاکرات راههای خروج مسأله"
                             height={`${0.024691358024691357 * height}px`}
@@ -274,6 +270,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"12s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="هسته‌ای از بن بست بررسی می‌شود"
                             height={`${0.024691358024691357 * height}px`}
@@ -283,6 +280,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="صفحه ۲"
                             height={`${0.024691358024691357 * height}px`}
@@ -292,6 +290,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.018867924528301886 * width}px`}
                             text="رئیس جمهوری در دیدار مسؤولان آموزش و پرورش اعلام کرد"
                             height={`${0.038580246913580245 * height}px`}
@@ -301,6 +300,7 @@ const RoozNameh = () => {
                             linetype="line_bold"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.044923629829290206 * width}px`}
                             text="بیشترین افزایش"
                             height={`${0.07716049382716049 * height}px`}
@@ -310,6 +310,7 @@ const RoozNameh = () => {
                             linetype="line_bold"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.047619047619047616 * width}px`}
                             text="در بودجه آموزش و پرورش"
                             height={`${0.07716049382716049 * height}px`}
@@ -319,6 +320,7 @@ const RoozNameh = () => {
                             linetype="line_bold"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.021114106019766397 * width}px`}
                             text="باید با ایجاد کانون‌هایی در مدارس دانش آموزان را"
                             height={`${0.038580246913580245 * height}px`}
@@ -328,6 +330,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"15s"}
                             fontSize={`${0.021114106019766397 * width}px`}
                             text="در اداره امور سهیم کرد"
                             height={`${0.030864197530864196 * height}px`}
@@ -337,6 +340,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.014824797843665768 * width}px`}
                             text="گروه سیاسی: «محمود احمدی نژاد» رئیس"
                             height={`${0.023148148148148147 * height}px`}
@@ -346,6 +350,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="جمهوری در دیدار مسؤولان آموزش و پرورش گفت:"
                             height={`${0.023148148148148147 * height}px`}
@@ -355,6 +360,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="ملت بزرگ ایران حرکتی نوین را آغاز کرده است و"
                             height={`${0.023148148148148147 * height}px`}
@@ -364,6 +370,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="قصد دارد با ایجاد جامعه ای نمونه، الگویی اسلامی"
                             height={`${0.023148148148148147 * height}px`}
@@ -373,6 +380,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.014824797843665768 * width}px`}
                             text="را با پیام خداخواهی و عدالتخواهی به جهانیان"
                             height={`${0.02700617283950617 * height}px`}
@@ -382,6 +390,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"18s"}
                             fontSize={`${0.014824797843665768 * width}px`}
                             text="عرضه کند."
                             height={`${0.023148148148148147 * height}px`}
@@ -391,6 +400,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.015723270440251572 * width}px`}
                             text="به گزارش دفتر امور رسانه های ریاست"
                             height={`${0.023148148148148147 * height}px`}
@@ -400,6 +410,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="جمهوری،احمدی نژاد افزود: برای دستیابی به این"
                             height={`${0.023148148148148147 * height}px`}
@@ -409,6 +420,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.015723270440251572 * width}px`}
                             text="هدف باید چند ویژگی وجود داشته باشد که"
                             height={`${0.02546296296296296 * height}px`}
@@ -418,6 +430,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.014375561545372867 * width}px`}
                             text="مهمترین آنها خودباوری و آرمانخواهی است زیرا"
                             height={`${0.02546296296296296 * height}px`}
@@ -427,6 +440,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="خودباوری و احساس هویت، پایه حرکت انسان است"
                             height={`${0.023148148148148147 * height}px`}
@@ -436,6 +450,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="وآرمانها نیز مانند قله هایی هستند که مسیر وجهت"
                             height={`${0.023148148148148147 * height}px`}
@@ -445,6 +460,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"21s"}
                             fontSize={`${0.013926325247079964 * width}px`}
                             text="را مشخص می‌کنند."
                             height={`${0.023148148148148147 * height}px`}
@@ -454,6 +470,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"24s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="رئیس‌جمهوری در دیدار وزیر، معاونان، رؤسای"
                             height={`${0.023148148148148147 * height}px`}
@@ -463,6 +480,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"24s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="سازمان‌های آموزش وپرورش سراسر کشور ومدیران"
                             height={`${0.023148148148148147 * height}px`}
@@ -472,6 +490,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"27s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="ستادی وزارت آموزش و پرورش، جنس و ذات انقلاب"
                             height={`${0.023148148148148147 * height}px`}
@@ -481,6 +500,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"27s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="اسلامی را فرهنگی دانست وگفت: انقلاب ما اهداف"
                             height={`${0.023148148148148147 * height}px`}
@@ -490,6 +510,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"27s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="و مسؤولیت های بزرگی دارد که برای تحقق آنها باید"
                             height={`${0.023148148148148147 * height}px`}
@@ -499,6 +520,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"27s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="به آموزش و پرورش به عنوان مرکز ثقل نگریست."
                             height={`${0.023148148148148147 * height}px`}
@@ -508,6 +530,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"27s"}
                             fontSize={`${0.013477088948787063 * width}px`}
                             text="احمدی نژاد، آموزش وپرورش راکانون بی بدیل"
                             height={`${0.023148148148148147 * height}px`}
@@ -517,6 +540,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="تربیت نیروی انسانی برای اداره کشور معرفی کرد و"
                             height={`${0.023148148148148147 * height}px`}
@@ -526,6 +550,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="گفت: باید با تربیت نوجوانان و جوانان مؤمن، شجاع،"
                             height={`${0.023148148148148147 * height}px`}
@@ -535,6 +560,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="آرمانخواه و خلاق آنان را برای اداره کشور در سالهای"
                             height={`${0.023148148148148147 * height}px`}
@@ -544,6 +570,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="آینده آماده کرد، چرا که این ظرفیت بخوبی در نسل"
                             height={`${0.023148148148148147 * height}px`}
@@ -553,6 +580,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="نوجوان وجوان ایرانی وجود دارد. رئیس جمهوری"
                             height={`${0.023148148148148147 * height}px`}
@@ -562,6 +590,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="ایجاد رابطه عاطفی میان معلمان و دانش آموزان را"
                             height={`${0.023148148148148147 * height}px`}
@@ -571,6 +600,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="بسیارمهم دانست و گفت: باید با ایجاد کانون هایی"
                             height={`${0.023148148148148147 * height}px`}
@@ -580,6 +610,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="درمدارس به دانش آموزان اجازه اظهارنظر داد وآنان"
                             height={`${0.023148148148148147 * height}px`}
@@ -589,6 +620,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"30s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="را در اداره امور سهیم کرد."
                             height={`${0.023148148148148147 * height}px`}
@@ -598,6 +630,37 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         <TextGroup
+                            delay={"33s"}
+                            fontSize={`${0.02021563342318059 * width}px`}
+                            text="سیلاب و طغیان"
+                            height={`${0.034722222222222224 * height}px`}
+                            width={`${0.08984725965858041 * width}px`}
+                            left={`${0.8176100628930818 * width}px`}
+                            top={`${0.9066358024691358 * height}px`}
+                            linetype="line_bold"
+                        />
+                        <TextGroup
+                            delay={"36s"}
+                            fontSize={`${0.014375561545372867 * width}px`}
+                            text={"سیلاب در شهرهای شوشتر، شادگان، گتوند، بستان، اندیمشک و اهواز\n" + "خساراتی بر جای گذاشت"}
+                            height={`${0.02700617283950617 * height}px`}
+                            width={`${0.3728661275831087 * width}px`}
+                            left={`${0.431266846361186 * width}px`}
+                            top={`${0.9182098765432098 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            delay={"36s"}
+                            fontSize={`${0.016621743036837375 * width}px`}
+                            text={"رودخانه‌ها در خوزستان افزایش حجم آب کارون به حدی بود که سواحل\n" + "حاشیه رودخانه و اهواز نیز مملو از آب شد"}
+                            height={`${0.02700617283950617 * height}px`}
+                            width={`${0.5166217430368374 * width}px`}
+                            left={`${0.44923629829290207 * width}px`}
+                            top={`${0.941358024691358 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            delay={"39s"}
                             fontSize={`${0.01302785265049416 * width}px`}
                             text="بقیه در صفحه ۳"
                             height={`${0.023148148148148147 * height}px`}
