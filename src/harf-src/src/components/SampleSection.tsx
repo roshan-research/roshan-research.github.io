@@ -4,11 +4,10 @@ import TarazNameh from "./samples/TarazNameh";
 import Sample1Mobile from '../assets/images/samples/sample-1-mobile.png';
 import Sample2Mobile from '../assets/images/samples/sample-2-mobile.png';
 import Sample3Mobile from '../assets/images/samples/sample-3-mobile.png';
-
 import kartmelli from '../assets/images/samples/kart-melli.svg';
 import sherr from '../assets/images/samples/Sher.svg';
 import taraznameh from '../assets/images/samples/TarazNameh.svg';
-
+import Player from "./samples/Player";
 import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
 import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
 import '../stylesheets/sample-section.scss';
@@ -53,6 +52,7 @@ class SampleSection extends Component {
 
         },5000);
     }
+
 
     componentDidMount() {
     }
@@ -113,7 +113,7 @@ class SampleSection extends Component {
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
-
+                        <Player/>
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>

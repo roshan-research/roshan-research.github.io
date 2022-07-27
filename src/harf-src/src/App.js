@@ -10,7 +10,6 @@ import { slide as Menu } from 'react-burger-menu'
 import closeIcon from './assets/images/close-icon.svg';
 import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
-import WaveForm from "./components/samples/WaveForm";
 
 function App() {
   return (
