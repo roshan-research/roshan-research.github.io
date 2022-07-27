@@ -8,22 +8,27 @@ const Player = () => {
     const waveformRef = useRef(null);
     const wavesurfer = useRef(null);
     const [isActive,setIsActive] = useState(false);
+    const [progress,setProgress] = useState(0);
 
     useEffect(() => {
         wavesurfer.current = WaveSurfer.create({
             container: waveformRef.current,
             barGap: 1,
-            waveColor: "gray",
-            barHeight: 0.5,
+            waveColor: ["#8f8f8f","#8f8f8f","#8f8f8f","#d7d7d7"],
+            barHeight: 0.7,
             barRadius: 1,
-            barWidth: 5,
+            barWidth: 4,
             cursorColor: "transparent",
-            progressColor: "#26FF7B"
+            progressColor: ["#24806f","#24806f","#34bda3","#3bee95"]
         });
         wavesurfer.current.load(music);
         wavesurfer.current.on('ready', () => {
             wavesurfer.current.play();
         });
+
+        window.setInterval(() => {
+            setProgress(wavesurfer.current.getCurrentTime())
+        },1000)
     },[])
 
     const buttonAction = () => {
@@ -32,6 +37,7 @@ const Player = () => {
         } else {
             wavesurfer.current.play();
         }
+        console.log(wavesurfer.current.getCurrentTime());
         setIsActive(!isActive);
     };
 
@@ -45,7 +51,12 @@ const Player = () => {
                 </div>
                 <div className="puntero"></div>
             </div>
-            <div ref={waveformRef} style={{width: "33vw"}}>
+            <div id={"timer-progress"}>
+                <div id={"timer"}>
+                    {new Date(progress * 1000).toISOString().slice(14, 19)}
+                </div>
+                <div ref={waveformRef} style={{width: "33vw"}}>
+                </div>
             </div>
         </div>
     )

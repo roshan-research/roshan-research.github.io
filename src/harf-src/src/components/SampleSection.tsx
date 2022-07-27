@@ -1,12 +1,3 @@
-import KartMelli from "./samples/KartMelli";
-import Sherr from "./samples/Sherr";
-import TarazNameh from "./samples/TarazNameh";
-import Sample1Mobile from '../assets/images/samples/sample-1-mobile.png';
-import Sample2Mobile from '../assets/images/samples/sample-2-mobile.png';
-import Sample3Mobile from '../assets/images/samples/sample-3-mobile.png';
-import kartmelli from '../assets/images/samples/kart-melli.svg';
-import sherr from '../assets/images/samples/Sher.svg';
-import taraznameh from '../assets/images/samples/TarazNameh.svg';
 import Player from "./samples/Player";
 import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
 import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
@@ -17,35 +8,59 @@ import {Component} from "react";
 import {ImageAnimation} from "../animations/typingAnimation";
 
 enum Sample {
-    KartMelli,
-    Taraznameh,
-    Sherr
+    Rasmi,
+    Mohavereh,
+    Telephoni,
+    BaMusic,
+    Ghadimi,
+    Lahje,
+    Englisi
 }
 
 class SampleSection extends Component {
 
     state = {
-        chosenSample: Sample.KartMelli
+        chosenSample: Sample.Rasmi
     }
 
     constructor(props: any) {
       super(props);
         window.setInterval(() => {
-            let randomNumber:number = Math.floor((Math.random() * 3) + 1);
+            let randomNumber:number = Math.floor((Math.random() * 7) + 1);
             switch(randomNumber) {
                 case 1:
                     this.setState({
-                        chosenSample: Sample.KartMelli
+                        chosenSample: Sample.Rasmi
                     })
                     break;
                 case 2:
                     this.setState({
-                        chosenSample: Sample.Sherr
+                        chosenSample: Sample.Mohavereh
                     })
                     break;
                 case 3:
                     this.setState({
-                        chosenSample: Sample.Taraznameh
+                        chosenSample: Sample.Telephoni
+                    })
+                    break;
+                case 4:
+                    this.setState({
+                        chosenSample: Sample.BaMusic
+                    })
+                    break;
+                case 5:
+                    this.setState({
+                        chosenSample: Sample.Ghadimi
+                    })
+                    break;
+                case 6:
+                    this.setState({
+                        chosenSample: Sample.Lahje
+                    })
+                    break;
+                case 7:
+                    this.setState({
+                        chosenSample: Sample.Englisi
                     })
                     break;
             }
@@ -57,53 +72,53 @@ class SampleSection extends Component {
     componentDidMount() {
     }
 
+    onSampleClick = (sampleName: Sample) => {
+        switch (sampleName) {
+            case Sample.Rasmi:
+                this.setState({
+                    chosenSample: Sample.Rasmi,
+                });
+                break;
+            case Sample.Mohavereh:
+                this.setState({
+                    chosenSample: Sample.Mohavereh,
+                });
+                break;
+            case Sample.Telephoni:
+                this.setState({
+                    chosenSample: Sample.Telephoni,
+                });
+                break;
+            case Sample.BaMusic:
+                this.setState({
+                    chosenSample: Sample.BaMusic,
+                });
+                break;
+            case Sample.Ghadimi:
+                this.setState({
+                    chosenSample: Sample.Ghadimi,
+                });
+                break;
+            case Sample.Lahje:
+                this.setState({
+                    chosenSample: Sample.Lahje,
+                });
+                break;
+            case Sample.Englisi:
+                this.setState({
+                    chosenSample: Sample.Englisi,
+                });
+                break;
+        }
+    }
+
+    whichSample = () => {
+        switch (this.state.chosenSample) {
+
+        }
+    }
+
     render() {
-
-        const onKartMelliClick = () => {
-            this.setState({
-                chosenSample: Sample.KartMelli
-            })
-        }
-
-        const onTarazNamehClick = () => {
-            this.setState({
-                chosenSample: Sample.Taraznameh
-            })
-        }
-
-        const onSherClick = () => {
-            this.setState({
-                chosenSample: Sample.Sherr
-            })
-        }
-
-        const whichImage = () => {
-            switch (this.state.chosenSample) {
-                case Sample.KartMelli:
-                    return kartmelli;
-                case Sample.Sherr:
-                    return sherr;
-                case Sample.Taraznameh:
-                    return taraznameh;
-            }
-        }
-
-        const whichSample = () => {
-            switch (this.state.chosenSample) {
-                case Sample.KartMelli:
-                    return <div className={'sample-alefbized'}>
-                        <KartMelli/>
-                    </div>;
-                case Sample.Sherr:
-                    return <div className={'sample-alefbized'}>
-                        <Sherr/>
-                    </div>;
-                case Sample.Taraznameh:
-                    return <div className={'sample-alefbized'}>
-                        <TarazNameh/>
-                    </div>;
-            }
-        }
 
         return (
             <div className={'sample'}>
@@ -117,53 +132,75 @@ class SampleSection extends Component {
                     </div>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
-                        <div className={'button'} onClick={onKartMelliClick}>
-                            <img src={Sample1Mobile} className={'mobile-image float-right'} id={'sample-1-mobile'}
-                                 alt={''}/>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Rasmi)}>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-title' : ''}>
-                                    حفظ ساختار متن
+                                   id={this.state.chosenSample === Sample.Rasmi ? 'active-orange-title' : ''}>
+                                    گفتار رسمی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.KartMelli ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.KartMelli ? 'polygon' : 'no-dot'}/>
+                                <Dot className={this.state.chosenSample === Sample.Rasmi ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Rasmi ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample'}
-                               id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-description' : ''}>
-                                خطوط نوشته در قالب پاراگراف‌های متن به مخاطب ارائه می‌شوند.
-                            </p>
                         </div>
-                        <div className={'button'} onClick={onTarazNamehClick}>
-                            <img src={Sample2Mobile} className={'mobile-image float-left'} id={'sample-2-mobile'}
-                                 alt={''}/>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Mohavereh)}>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample text-left-title'}
-                                   id={this.state.chosenSample === Sample.Taraznameh ? 'active-orange-title' : ''}>
-                                    حفظ ساختار سند
+                                   id={this.state.chosenSample === Sample.Mohavereh ? 'active-orange-title' : ''}>
+                                    گفتار محاوره
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Taraznameh ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Taraznameh ? 'polygon' : 'no-dot'}/>
+                                <Dot className={this.state.chosenSample === Sample.Mohavereh ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Mohavereh ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample text-left'}
-                               id={this.state.chosenSample === Sample.Taraznameh ? 'active-orange-description' : ''}>
-                                جدول درون سند، درست با همان قالب ردیف‌ها و ستون‌ها تحلیل می‌شود.
-                            </p>
                         </div>
-                        <div className={'button'} onClick={onSherClick}>
-                            <img src={Sample3Mobile} className={'mobile-image float-right'} id={'sample-3-mobile'}
-                                 alt={''}/>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Telephoni)}>
                             <div className={'sample-row'}>
                                 <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.Sherr ? 'active-orange-title' : ''}>
-                                    اصلاح تصویر
+                                   id={this.state.chosenSample === Sample.Telephoni ? 'active-orange-title' : ''}>
+                                    صحبت تلفنی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Sherr ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Sherr ? 'polygon' : 'no-dot'}/>
+                                <Dot className={this.state.chosenSample === Sample.Telephoni ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Telephoni ? 'polygon' : 'no-dot'}/>
                             </div>
-                            <p className={'description-sample'}
-                               id={this.state.chosenSample === Sample.Sherr ? 'active-orange-description' : ''}>
-                                پس‌زمینه نوشته اگر تمیز هم نباشد، الفبا می‌تواند آن را بخواند.
-                            </p>
+                        </div>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.BaMusic)}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.BaMusic ? 'active-orange-title' : ''}>
+                                    گفتار با موسیقی در حال پخش
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.BaMusic ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.BaMusic ? 'polygon' : 'no-dot'}/>
+                            </div>
+                        </div>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Ghadimi)}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.Ghadimi ? 'active-orange-title' : ''}>
+                                    قدیمی
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.Ghadimi ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Ghadimi ? 'polygon' : 'no-dot'}/>
+                            </div>
+                        </div>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Lahje)}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.Lahje ? 'active-orange-title' : ''}>
+                                    لهجه
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.Lahje ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Lahje ? 'polygon' : 'no-dot'}/>
+                            </div>
+                        </div>
+                        <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Englisi)}>
+                            <div className={'sample-row'}>
+                                <p className={'white-title-sample'}
+                                   id={this.state.chosenSample === Sample.Englisi ? 'active-orange-title' : ''}>
+                                    انگلیسی
+                                </p>
+                                <Dot className={this.state.chosenSample === Sample.Englisi ? 'no-dot' : 'dot'}/>
+                                <Polygon className={this.state.chosenSample === Sample.Englisi ? 'polygon' : 'no-dot'}/>
+                            </div>
                         </div>
                     </div>
                 </div>
