@@ -3,6 +3,8 @@
   justify-content: center;
   align-items: center;
   flex-direction: row;
+  width: 35vw;
+
 }
 
 #timer-progress {
@@ -10,11 +12,18 @@
   justify-content: start;
   align-items: center;
   flex-direction: row;
+  width: 36vw;
+  overflow: hidden;
+}
+
+#player-bar {
+  width: 35vw;
 }
 
 #timer {
   font-family: iran-yekan, serif;
   z-index: 100;
+  font-size: 0.9vw;
   font-weight: bold;
   background-color: black;
   color: #26FF7B;
@@ -33,24 +42,24 @@
   0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
   0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 100px;
+  height: 3vw;
   position: absolute;
-  width: 100px;
+  width: 3vw;
 }
 .botón:active .fondo {
   background: #26FF7B;
 }
 .icono {
-  height: 200px;
+  height: 6vw;
   transform: rotate(-120deg);
   transition: transform 100ms;
-  width: 200px;
+  width: 6vw;
 }
 .parte {
   background: black;
-  height: 200px;
+  height: 6vw;
   position: absolute;
-  width: 200px;
+  width: 6vw;
 }
 .izquierda {
   clip-path: polygon(
@@ -193,10 +202,10 @@
 .puntero {
   border-radius: 50%;
   cursor: pointer;
-  height: 100px;
+  height: 6vw;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 100px;
+  width: 6vw;
 }
 .active .icono {
   transform: rotate(-90deg);

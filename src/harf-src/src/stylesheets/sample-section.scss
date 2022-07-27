@@ -111,9 +111,22 @@ p { margin: 0.8vw}
 
 .sample-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
   align-items: center;
+  background-color: #181818;
+  width: 43vw;
+  height: 30vw;
+  border-radius: 20px;
+}
+
+#harf-text-container {
+  width: 32vw;
+  font-size: 1.1vw;
+  text-align: center;
+  height: 10vw;
+  color: white;
+  font-family: iran-yekan, serif;
 }
 
 @media screen and (min-width: 500px) {

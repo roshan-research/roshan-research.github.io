@@ -15,9 +15,10 @@ const Player = () => {
             container: waveformRef.current,
             barGap: 1,
             waveColor: ["#8f8f8f","#8f8f8f","#8f8f8f","#d7d7d7"],
-            barHeight: 0.7,
+            barHeight: 0.4,
             barRadius: 1,
             barWidth: 4,
+            responsive: true,
             cursorColor: "transparent",
             progressColor: ["#24806f","#24806f","#34bda3","#3bee95"]
         });
@@ -55,7 +56,7 @@ const Player = () => {
                 <div id={"timer"}>
                     {new Date(progress * 1000).toISOString().slice(14, 19)}
                 </div>
-                <div ref={waveformRef} style={{width: "33vw"}}>
+                <div ref={waveformRef} id={"player-bar"}>
                 </div>
             </div>
         </div>
