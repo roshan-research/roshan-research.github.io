@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/harf/static/css/main.581e4452.chunk.css",
-    "main.js": "/harf/static/js/main.38e108a0.chunk.js",
+    "main.css": "/harf/static/css/main.f671f45e.chunk.css",
+    "main.js": "/harf/static/js/main.8d6d9f09.chunk.js",
     "runtime-main.js": "/harf/static/js/runtime-main.4ac9a610.js",
     "static/js/2.5d98d2fb.chunk.js": "/harf/static/js/2.5d98d2fb.chunk.js",
     "static/js/3.9ee94fc8.chunk.js": "/harf/static/js/3.9ee94fc8.chunk.js",
@@ -9,7 +9,6 @@
     "static/js/2.5d98d2fb.chunk.js.LICENSE.txt": "/harf/static/js/2.5d98d2fb.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/harf/static/media/IRANYekan.b916444e.ttf",
     "static/media/accuracy-mobile.6bbbe743.svg": "/harf/static/media/accuracy-mobile.6bbbe743.svg",
-    "static/media/air.9180a50e.mp3": "/harf/static/media/air.9180a50e.mp3",
     "static/media/archive.39a61215.png": "/harf/static/media/archive.39a61215.png",
     "static/media/businesses.bbc2ed46.png": "/harf/static/media/businesses.bbc2ed46.png",
     "static/media/catalog-cover.32c997d5.svg": "/harf/static/media/catalog-cover.32c997d5.svg",
@@ -35,12 +34,13 @@
     "static/media/right-2.7e93460a.svg": "/harf/static/media/right-2.7e93460a.svg",
     "static/media/right-2.f9f41d7f.svg": "/harf/static/media/right-2.f9f41d7f.svg",
     "static/media/roshan-logo.ae7188f6.svg": "/harf/static/media/roshan-logo.ae7188f6.svg",
-    "static/media/side.56013137.svg": "/harf/static/media/side.56013137.svg"
+    "static/media/side.56013137.svg": "/harf/static/media/side.56013137.svg",
+    "static/media/temp.5c2352c3.mp3": "/harf/static/media/temp.5c2352c3.mp3"
   },
   "entrypoints": [
     "static/js/runtime-main.4ac9a610.js",
     "static/js/2.5d98d2fb.chunk.js",
-    "static/css/main.581e4452.chunk.css",
-    "static/js/main.38e108a0.chunk.js"
+    "static/css/main.f671f45e.chunk.css",
+    "static/js/main.8d6d9f09.chunk.js"
   ]
 }

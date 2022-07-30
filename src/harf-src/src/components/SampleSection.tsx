@@ -127,12 +127,7 @@ class SampleSection extends Component {
                 </p>
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
-                    <div className={'sample-container'}>
-                        <div id={"harf-text-container"}>
-                            لورم ایپسوم متن ساختگی با [تولید سادگی] نامفهوم از صنعت چاپ، و با استفاده از طراحان گرافیک است، چاپگرها و متون بلکه روزنامه و مجله در ستون و [سطرآنچنان] که لازم است
-                        </div>
-                        <Player/>
-                    </div>
+                    <Player/>
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
                         <div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Rasmi)}>
