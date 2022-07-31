@@ -1,34 +1,32 @@
 import React from "react";
 import WaveSurfer from "wavesurfer.js";
 import {useEffect,useRef,useState} from "react";
-import music from "./temp.mp3"
 import "../../stylesheets/player.scss";
-import {segments} from "./segments.js"
 
 let currentText = "";
 let tempCurrentTime;
 
-const convertHHMMSStoSeconds = (hhmmss) => {
-    let parsedHHMMSS = hhmmss.split(":");
-    let seconds = (parsedHHMMSS[0] * 3600) + (parsedHHMMSS[1] * 60) + (parsedHHMMSS[2] * 1);
-    return seconds;
-};
-
-const changeText = (currentTime) => {
-    for (let i = 0; i < segments[0].length; i++) {
-        let start = convertHHMMSStoSeconds(segments[0][i].start);
-        let end = convertHHMMSStoSeconds(segments[0][i].end);
-        if(currentTime >= start && currentTime <= end) {
-            currentText = segments[0][i].text;
-        }
-    }
-};
-
-const Player = () => {
+const Player = ({music,segments}) => {
     const waveformRef = useRef(null);
     const wavesurfer = useRef(null);
     const [isActive,setIsActive] = useState(false);
     const [progress,setProgress] = useState(0);
+
+    const convertHHMMSStoSeconds = (hhmmss) => {
+        let parsedHHMMSS = hhmmss.split(":");
+        let seconds = (parsedHHMMSS[0] * 3600) + (parsedHHMMSS[1] * 60) + (parsedHHMMSS[2] * 1);
+        return seconds;
+    };
+
+    const changeText = (currentTime) => {
+        for (let i = 0; i < segments.length; i++) {
+            let start = convertHHMMSStoSeconds(segments[i].start);
+            let end = convertHHMMSStoSeconds(segments[i].end);
+            if(currentTime >= start && currentTime <= end) {
+                currentText = segments[i].text;
+            }
+        }
+    };
 
     useEffect(() => {
         console.log(segments)
