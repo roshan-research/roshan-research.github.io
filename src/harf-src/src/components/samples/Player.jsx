@@ -52,7 +52,7 @@ const Player = () => {
             tempCurrentTime = wavesurfer.current.getCurrentTime();
             changeText(tempCurrentTime)
             setProgress(tempCurrentTime);
-        },500)
+        },1000)
     },[])
 
     const buttonAction = () => {
