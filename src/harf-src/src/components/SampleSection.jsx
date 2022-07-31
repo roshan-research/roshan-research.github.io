@@ -14,7 +14,7 @@ import {ImageAnimation} from "../animations/typingAnimation";
 class SampleSection extends Component {
 
     state = {
-        chosenSample: 2
+        chosenSample: 0
     }
 
     voices = [rasmi,mohavereh,telephone];

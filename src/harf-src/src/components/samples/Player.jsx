@@ -3,7 +3,6 @@ import WaveSurfer from "wavesurfer.js";
 import {useEffect,useRef,useState} from "react";
 import "../../stylesheets/player.scss";
 
-let currentText = "";
 let tempCurrentTime;
 
 const Player = ({music,segments}) => {
@@ -11,6 +10,7 @@ const Player = ({music,segments}) => {
     const wavesurfer = useRef(null);
     const [isActive,setIsActive] = useState(false);
     const [progress,setProgress] = useState(0);
+    const [currentText,setCurrentText] = useState("");
 
     const convertHHMMSStoSeconds = (hhmmss) => {
         let parsedHHMMSS = hhmmss.split(":");
@@ -23,18 +23,18 @@ const Player = ({music,segments}) => {
             let start = convertHHMMSStoSeconds(segments[i].start);
             let end = convertHHMMSStoSeconds(segments[i].end);
             if(currentTime >= start && currentTime <= end) {
-                currentText = segments[i].text;
+                setCurrentText(segments[i].text);
             }
         }
     };
 
     useEffect(() => {
-        console.log(segments)
+        setIsActive(false);
         wavesurfer.current = WaveSurfer.create({
             container: waveformRef.current,
             barGap: 1,
             waveColor: ["#8f8f8f","#8f8f8f","#8f8f8f","#d7d7d7"],
-            barHeight: 0.4,
+            barHeight: 1,
             barRadius: 1,
             barWidth: 4,
             responsive: true,
@@ -42,15 +42,16 @@ const Player = ({music,segments}) => {
             progressColor: ["#24806f","#24806f","#34bda3","#3bee95"]
         });
         wavesurfer.current.load(music);
-        wavesurfer.current.on('ready', () => {
-            wavesurfer.current.play();
-        });
 
         window.setInterval(() => {
             tempCurrentTime = wavesurfer.current.getCurrentTime();
             changeText(tempCurrentTime)
             setProgress(tempCurrentTime);
-        },1000)
+        },1000);
+        return () => {
+            wavesurfer.current.empty();
+        };
+
     },[])
 
     const buttonAction = () => {
