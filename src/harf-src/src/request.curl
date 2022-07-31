@@ -1,0 +1,11 @@
+curl
+--request POST
+--header "Content-Type: application/json"
+--header "Authorization: Token a85fe4b097b01c4e5e34893ac92de6b20a72bed6"
+--data-binary
+'{"media_urls":[
+    "https://github.com/sobhe/sobhe.github.io/raw/main/src/harf-src/src/assets/audios/rasmi.mp3",
+    "https://github.com/sobhe/sobhe.github.io/raw/main/src/harf-src/src/assets/audios/mohavereh.mp3",
+    "https://github.com/sobhe/sobhe.github.io/raw/main/src/harf-src/src/assets/audios/telephone.mp3",
+]}'
+https://harf.roshan-ai.ir/api/transcribe_files/
