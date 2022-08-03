@@ -65,8 +65,7 @@ const Player = ({music,segments}) => {
 
     return (
         <div className={'sample-container'}>
-            <div id={"harf-text-container"}>
-                {currentText}
+            <div id={"harf-text-container"} dangerouslySetInnerHTML={{__html: currentText}}>
             </div>
             <div id={"player-container"}>
                 <div className={`botón ${isActive? "active": ""}`} onClick={buttonAction}>

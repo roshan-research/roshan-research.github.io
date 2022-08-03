@@ -172,6 +172,25 @@ const segments = [
     //ghadimi
     //lahje
     //englisi
-]
+];
 
-export {segments};
+const segmentFixer = (falseSegments) => {
+    let segments = [];
+    for (let i = 0; i < falseSegments.length; i++) {
+        let sample = [];
+        for (let j = 0; j < falseSegments[i].length; j++) {
+            let paragraph = {};
+            paragraph.text = falseSegments[i][j].text
+                .replaceAll("[","<span style='color: #7c7c7c;'>[")
+                .replaceAll("]","]</span>");
+            sample.push(paragraph);
+            paragraph.start = falseSegments[i][j].start;
+            paragraph.end = falseSegments[i][j].end;
+        }
+        segments.push(sample);
+    }
+    console.log(segments)
+    return segments;
+};
+
+export {segments,segmentFixer};

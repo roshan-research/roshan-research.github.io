@@ -3,13 +3,16 @@ import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
 import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
 import '../stylesheets/sample-section.scss';
 import {motion} from 'framer-motion';
-import {segments} from "./samples/segments.js";
+import {segments,segmentFixer} from "./samples/segments.js";
 import rasmi from "../assets/voices/rasmi.mp3";
 import mohavereh from "../assets/voices/mohavereh.mp3";
 import telephone from "../assets/voices/telephone.mp3";
 
 import {Component} from "react";
 import {ImageAnimation} from "../animations/typingAnimation";
+
+
+let sampleSegments = segmentFixer(segments);
 
 class SampleSection extends Component {
 
@@ -47,7 +50,7 @@ class SampleSection extends Component {
                 <div style={{height: '10vw'}}/>
                 <div id={'sample-section'}>
                     <Player
-                        segments={segments[this.state.chosenSample]}
+                        segments={sampleSegments[this.state.chosenSample]}
                         music={this.voices[this.state.chosenSample]}
                         key={this.state.chosenSample}
                     />
