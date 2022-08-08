@@ -11,7 +11,8 @@ import { useInView } from 'react-intersection-observer';
 const AbilitiesSection = () => {
 
     const observerOptions = {
-        delay: 1000
+        delay: 1000,
+        triggerOnce: true
     };
 
     const beforeStyle = {

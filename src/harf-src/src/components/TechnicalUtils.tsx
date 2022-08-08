@@ -14,7 +14,8 @@ import {useInView} from "react-intersection-observer";
 const TechnicalUtils = () => {
 
     const observerOptions = {
-        delay: 1000
+        delay: 1000,
+        triggerOnce: true
     };
 
     const [right1Ref,right1InView] = useInView(observerOptions);

@@ -9,7 +9,8 @@ import {isMobile} from 'react-device-detect';
 const UsagesSection = () => {
 
     const observerOptions = {
-        delay: 1000
+        delay: 1000,
+        triggerOnce: true
     };
 
     const beforeFade = isMobile? {opacity: 1}: {opacity: 0};
