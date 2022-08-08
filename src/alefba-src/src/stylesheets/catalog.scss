@@ -33,6 +33,7 @@
 }
 
 #catalog-button {
+  transition: 1s;
   p {
     color: #ff6200;
     font-size: 1vw;
@@ -55,7 +56,11 @@
 }
 
 #catalog-button:hover {
-  background-color: rgba(255, 255, 255, 0.8);
+  background-color: #FF6200;
+
+  p {
+    color: black;
+  }
 }
 
 .catalog-link {

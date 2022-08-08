@@ -1,8 +1,13 @@
 import downloadIcon from '../assets/images/samples/download-icon.svg';
+import blackDLicon from '../assets/images/samples/black_dl_icon.svg';
 import '../stylesheets/catalog.scss';
 import catalogCover from '../assets/images/catalog-cover.svg';
+import {useState} from "react";
 
 const Catalog = () => {
+
+    const[isHovered,setIsHovered] = useState(false);
+
     return (
         <div id={'catalog'}>
             <div id={'catalog-right'}>
@@ -17,8 +22,11 @@ const Catalog = () => {
                     target={"_blank"}
                     rel="noreferrer"
                 >
-                    <div id={'catalog-button'}>
-                        <img src={downloadIcon} alt={''}/>
+                    <div id={'catalog-button'}
+                         onMouseEnter={() => setIsHovered(true)}
+                         onMouseLeave={() => setIsHovered(false)}
+                    >
+                        <img src={isHovered? blackDLicon : downloadIcon} alt={''}/>
                         <p>
                             کاتالوگ الفبا
                         </p>
