@@ -99,6 +99,8 @@
   #usages-section{
     display: flex;
     overflow-x: auto;
+    direction: rtl;
+    text-align: right;
     max-height: 60vh;
   }
 
@@ -114,6 +116,7 @@
     width:75vw;
     margin-top: 0;
     margin-left: 0;
+    direction: ltr;
     margin-right: 20vw;
     justify-content: start;
     align-items: end;
