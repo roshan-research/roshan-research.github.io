@@ -42,7 +42,6 @@ const TechnicalUtils = () => {
             <p id={'utils-title'}>
                 امکانات فنی الفبا
             </p>
-            <div style={{height: '15vh'}}/>
             <div id={'utils-wrapper'}>
                 <div id={'left-utils'}>
                     <div className={'util-group right-to-left'} id={'left-1'}>

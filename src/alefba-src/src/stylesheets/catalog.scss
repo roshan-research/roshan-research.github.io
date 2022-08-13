@@ -76,6 +76,7 @@
   #catalog {
     flex-direction: column-reverse;
     height: 50vh;
+    justify-content: space-around;
   }
 
   #catalog-cover {
@@ -114,5 +115,13 @@
 
   #catalog {
     margin-top: 80vh;
+  }
+
+  #catalog-right {
+    padding-right: 0;
+  }
+  
+  #catalog-cover {
+    padding-left: 0;
   }
 }
