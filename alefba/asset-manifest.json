@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.3c900c14.chunk.css",
-    "main.js": "/alefba/static/js/main.874dcbf3.chunk.js",
+    "main.css": "/alefba/static/css/main.864de8ce.chunk.css",
+    "main.js": "/alefba/static/js/main.f8c9e11f.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.25306428.js",
     "static/js/2.26d2adef.chunk.js": "/alefba/static/js/2.26d2adef.chunk.js",
     "static/js/3.96ad9140.chunk.js": "/alefba/static/js/3.96ad9140.chunk.js",
@@ -11,6 +11,7 @@
     "static/media/main-section.scss": "/alefba/static/media/Mitra.1c5e12f5.ttf",
     "static/media/accuracy-mobile.a6b965ee.svg": "/alefba/static/media/accuracy-mobile.a6b965ee.svg",
     "static/media/bikeifyat.154fa1d7.jpg": "/alefba/static/media/bikeifyat.154fa1d7.jpg",
+    "static/media/black_dl_icon.0d4077b9.svg": "/alefba/static/media/black_dl_icon.0d4077b9.svg",
     "static/media/businesses.f577862c.png": "/alefba/static/media/businesses.f577862c.png",
     "static/media/catalog-cover.a993b086.svg": "/alefba/static/media/catalog-cover.a993b086.svg",
     "static/media/charkhesh.cc69454d.jpg": "/alefba/static/media/charkhesh.cc69454d.jpg",
@@ -47,7 +48,7 @@
   "entrypoints": [
     "static/js/runtime-main.25306428.js",
     "static/js/2.26d2adef.chunk.js",
-    "static/css/main.3c900c14.chunk.css",
-    "static/js/main.874dcbf3.chunk.js"
+    "static/css/main.864de8ce.chunk.css",
+    "static/js/main.f8c9e11f.chunk.js"
   ]
 }

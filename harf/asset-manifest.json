@@ -1,21 +1,24 @@
 {
   "files": {
-    "main.css": "/harf/static/css/main.f671f45e.chunk.css",
-    "main.js": "/harf/static/js/main.db5ec672.chunk.js",
-    "runtime-main.js": "/harf/static/js/runtime-main.9645c276.js",
-    "static/js/2.284ac11a.chunk.js": "/harf/static/js/2.284ac11a.chunk.js",
-    "static/js/3.3db0ffba.chunk.js": "/harf/static/js/3.3db0ffba.chunk.js",
+    "main.css": "/harf/static/css/main.ce705f51.chunk.css",
+    "main.js": "/harf/static/js/main.4af99525.chunk.js",
+    "runtime-main.js": "/harf/static/js/runtime-main.4ac9a610.js",
+    "static/js/2.5d98d2fb.chunk.js": "/harf/static/js/2.5d98d2fb.chunk.js",
+    "static/js/3.9ee94fc8.chunk.js": "/harf/static/js/3.9ee94fc8.chunk.js",
     "index.html": "/harf/index.html",
-    "static/js/2.284ac11a.chunk.js.LICENSE.txt": "/harf/static/js/2.284ac11a.chunk.js.LICENSE.txt",
+    "static/js/2.5d98d2fb.chunk.js.LICENSE.txt": "/harf/static/js/2.5d98d2fb.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/harf/static/media/IRANYekan.b916444e.ttf",
     "static/media/accuracy-mobile.6bbbe743.svg": "/harf/static/media/accuracy-mobile.6bbbe743.svg",
     "static/media/archive.39a61215.png": "/harf/static/media/archive.39a61215.png",
+    "static/media/bamusic.524fc363.mp3": "/harf/static/media/bamusic.524fc363.mp3",
+    "static/media/black_dl_icon.0d4077b9.svg": "/harf/static/media/black_dl_icon.0d4077b9.svg",
     "static/media/businesses.bbc2ed46.png": "/harf/static/media/businesses.bbc2ed46.png",
     "static/media/catalog-cover.32c997d5.svg": "/harf/static/media/catalog-cover.32c997d5.svg",
     "static/media/close-icon.20012dc4.svg": "/harf/static/media/close-icon.20012dc4.svg",
     "static/media/deep-mobile.e50aea2d.svg": "/harf/static/media/deep-mobile.e50aea2d.svg",
     "static/media/dot.5ee81e2f.svg": "/harf/static/media/dot.5ee81e2f.svg",
     "static/media/download-icon.e32ecd95.svg": "/harf/static/media/download-icon.e32ecd95.svg",
+    "static/media/ghadimi.060895e5.mp3": "/harf/static/media/ghadimi.060895e5.mp3",
     "static/media/left-1.5e05b89d.svg": "/harf/static/media/left-1.5e05b89d.svg",
     "static/media/left-1.7d25531d.svg": "/harf/static/media/left-1.7d25531d.svg",
     "static/media/left-2.a0a2652b.svg": "/harf/static/media/left-2.a0a2652b.svg",
@@ -40,9 +43,9 @@
     "static/media/telephone.a1dafb5c.mp3": "/harf/static/media/telephone.a1dafb5c.mp3"
   },
   "entrypoints": [
-    "static/js/runtime-main.9645c276.js",
-    "static/js/2.284ac11a.chunk.js",
-    "static/css/main.f671f45e.chunk.css",
-    "static/js/main.db5ec672.chunk.js"
+    "static/js/runtime-main.4ac9a610.js",
+    "static/js/2.5d98d2fb.chunk.js",
+    "static/css/main.ce705f51.chunk.css",
+    "static/js/main.4af99525.chunk.js"
   ]
 }
