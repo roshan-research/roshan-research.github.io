@@ -59,7 +59,7 @@ const KartMelli = () => {
                         <TextGroup
                             delay={"3s"}
                             fontSize={`${0.056 * width}px`}
-                            text="شماره ملی، ۰۰۴۰۳۱۶۲۸۵"
+                            text="شماره ملی: ۰۰۴۰۳۱۶۲۸۵"
                             left={`${0.555 * width}px`}
                             top={`${0.2593532022828155 * height}px`}
                             width={`${0.41 * width}px`}

@@ -29,7 +29,7 @@ p { margin: 0.8vw}
 }
 
 #buttons{
-  height: 26vw;
+  height: 19vw;
   margin-top: 2vw;
   display: flex;
   justify-content: space-between;
@@ -68,7 +68,7 @@ p { margin: 0.8vw}
 }
 
 .polygon{
-  margin-right: -0.35vw;
+ margin-right: -0.35vw;
   width: 1.5vw;
 }
 
@@ -117,7 +117,6 @@ p { margin: 0.8vw}
   justify-content: center;
   align-items: start;
   flex-direction: row;
-  //change it later on
   border-radius: 20px;
   overflow: hidden;
 }
