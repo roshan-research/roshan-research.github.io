@@ -12,9 +12,7 @@ const Catalog = () => {
         <div id={'catalog'}>
             <div id={'catalog-right'}>
                 <p id={'catalog-description'}>
-                    برای آشنایی بیشتر با امکانات الفبا،
-                    <br/>
-                    کاتالوگ الفبا را دریافت فرمایید
+                کاتالوگ الفبا اطلاعات بیشتری در اختیار شما قرار می‌دهد
                 </p>
                 <a
                     href={'https://www.roshan-ai.ir/catalog.pdf/'}
@@ -28,7 +26,7 @@ const Catalog = () => {
                     >
                         <img src={isHovered? blackDLicon : downloadIcon} alt={''}/>
                         <p>
-                            کاتالوگ الفبا
+                             دانلود کاتالوگ الفبا 
                         </p>
                     </div>
                 </a>
