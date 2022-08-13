@@ -62,26 +62,6 @@ const TechnicalUtils = () => {
                         </p>
                     </div>
                     <div id={'right-space'}/>
-                    <div className={'util-group right-to-left'} id={'left-2'}>
-                        <Parallel id={'parallel'}/>
-                        <div className={'util-row'}>
-                            <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={left2InView? afterStyleText : beforeStyleText}>
-                                    پردازش موازی
-                                </p>
-                                <p className={'black-util-text-background'} ref={left2Ref} style={left2InView? afterStyle : beforeStyle}>
-                                    پردازش موازی
-                                </p>
-                            </div>
-                        </div>
-                        <img src={Left2} id={'left2-icon'} alt={''}/>
-                        <p className={'white-util-text'}>
-                            الفبا می‌تواند با استفاده از پردازنده گرافیکی (کارت گرافیک)، اسناد را چند برابر سریع‌تر پردازش کند. همچنین قابلیت استفاده از چند ماشین برای پردازش توزیع‌شده اسناد را فراهم می‌کند.
-                        </p>
-                    </div>
-                </div>
-                <div id={'right-utils'}>
-                    <div id={'right-space'}/>
                     <div className={'util-group left-to-right'} id={'right-1'}>
                         <NLP id={'nlp'}/>
                         <div className={'util-row left-to-right-row1'}>
@@ -97,6 +77,26 @@ const TechnicalUtils = () => {
                         <img src={Right1} id={'right1-icon'} alt={''}/>
                         <p className={'white-util-text left-to-right'}>
                         الفبا، زبان فارسی را می‌فهمد و هرجایی به تردید بیافتد عبارتی متناسب با بافت و معنای متن انتخاب می‌کند.
+                        </p>
+                    </div>
+                </div>
+                <div id={'right-utils'}>
+                    <div id={'right-space'}/>
+                    <div className={'util-group right-to-left'} id={'left-2'}>
+                        <Parallel id={'parallel'}/>
+                        <div className={'util-row'}>
+                            <div className={'title-stack-utils'}>
+                                <p className={'black-util-text'} style={left2InView? afterStyleText : beforeStyleText}>
+                                    پردازش موازی
+                                </p>
+                                <p className={'black-util-text-background'} ref={left2Ref} style={left2InView? afterStyle : beforeStyle}>
+                                    پردازش موازی
+                                </p>
+                            </div>
+                        </div>
+                        <img src={Left2} id={'left2-icon'} alt={''}/>
+                        <p className={'white-util-text'}>
+                            الفبا می‌تواند با استفاده از پردازنده گرافیکی (کارت گرافیک)، اسناد را چند برابر سریع‌تر پردازش کند. همچنین قابلیت استفاده از چند ماشین برای پردازش توزیع‌شده اسناد را فراهم می‌کند.
                         </p>
                     </div>
                     <div id={'right-space'}/>

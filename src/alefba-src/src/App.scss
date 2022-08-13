@@ -23,8 +23,12 @@
 }
 
 #sample-footer-space, #catalog-footer-space, #main-abilities-space,#abilities-usage-space
-#usage-utils-space, #utils-sample-space {
+ #utils-sample-space {
   height: 25vh;
+}
+
+#usage-utils-space {
+  height: 85vh;
 }
 
 .my-button {
