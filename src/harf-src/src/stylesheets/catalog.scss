@@ -1,6 +1,6 @@
 #catalog {
   width: 75vw;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
   display: flex;
   height: 30vh;
@@ -15,6 +15,7 @@
   justify-content: center;
   align-items: end;
   flex-direction: column;
+  padding-right: 4vw;
 }
 
 #catalog-description {
@@ -29,6 +30,7 @@
 }
 
 #catalog-cover {
+  padding-left: 4vw;
   width: 19vw;
 }
 
