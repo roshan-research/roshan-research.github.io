@@ -52,14 +52,14 @@ const AbilitiesSection = () => {
                         <Left1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left1InView? afterStyleText : beforeStyleText}>
-                                خواندن متون فارسی و انگلیسی
+                            تشخیص چند زبان
                             </p>
                             <p className={'black-text-background'}  ref={left1Ref} style={left1InView? afterStyle : beforeStyle}>
-                                خواندن متون فارسی و انگلیسی
+                            تشخیص چند زبان
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن نویسه های فارسی، انگلیسی و البته زبان های مشابه مثل عربی و دری، همه در کنار هم در یک تصویر
+                        تشخیص زبان فارسی، انگلیسی و زبان‌های مشابه فارسی، مثل عربی و دری
                         </p>
                     </div>
                     <div className={'ability-group'} id={'left-2'}>
@@ -87,7 +87,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن نوشته‌ها و حذف حرکت‌ها از عبارت های فارسی یا عربی مثل آیات قرآن کریم
+                        خواندن نوشته ها و حذف حرکت ها از کلمات فارسی و عربی
                         </p>
                     </div>
                 </div>
@@ -103,7 +103,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن متون نوشته‌شده با قلم‌های مختلف، در اندازه‌های متفاوت، مثل عنوان، متن یا پاورقی‌ها
+                        خواندن متن‌‌ با فونت ها و اندازه‌های گوناگو‌ن؛ مثل عنوان، متن یا پاورقی
                         </p>
                     </div>
                     <div className={'ability-group'} id={'right-2'}>
@@ -117,21 +117,21 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            چیدن عنوان، متن، تصویر و جدول در صفحه نتیجه، برای حفظ ساختار سند مورد تحلیل
+                        حفظ طول جملات، پاراگراف‌ها، جداول، فواصل و موقعیت تصاویر
                         </p>
                     </div>
                     <div className={'ability-group'} id={'right-3'}>
                         <Right3 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right3InView? afterStyleText : beforeStyleText}>
-                                اطمینان از درستی
+                            تعیین خطاهای احتمالی
                             </p>
                             <p className={'black-text-background'} ref={right3Ref} style={right3InView? afterStyle : beforeStyle}>
-                                اطمینان از درستی
+                            تعیین خطاهای احتمالی
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            مشخص کردن بخش‌هایی از نوشته که با تردید خوانده شده‌اند برای بازنگری توسط انسان
+                        مشخص کردن بخش‌هایی از نوشته که با «تردید» خوانده شده‌اند، برای بازنگری توسط انسان
                         </p>
                     </div>
                 </div>
