@@ -61,7 +61,7 @@ const AbilitiesSection = () => {
                         تشخیص زبان فارسی، انگلیسی و زبان‌های مشابه فارسی، مثل عربی و دری
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'left-2'}>
+                    <div className={'ability-group on-left'} id={'left-2'}>
                         <Left2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left2InView? afterStyleText : beforeStyleText}>
@@ -91,7 +91,7 @@ const AbilitiesSection = () => {
                     </div>
                 </div>
                 <div id={'right'}>
-                    <div className={'ability-group'} id={'right-1'}>
+                    <div className={'ability-group on-left'} id={'right-1'}>
                         <Right1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right1InView? afterStyleText : beforeStyleText}>
@@ -119,7 +119,7 @@ const AbilitiesSection = () => {
                         حفظ طول جملات، پاراگراف‌ها، جداول، فواصل و موقعیت تصاویر
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'right-3'}>
+                    <div className={'ability-group on-left'} id={'right-3'}>
                         <Right3 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right3InView? afterStyleText : beforeStyleText}>
