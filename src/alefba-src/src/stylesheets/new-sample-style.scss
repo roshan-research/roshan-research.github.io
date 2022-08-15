@@ -133,3 +133,12 @@ $transitions-duration: 3s;
 .document.paragraph-view table th, .document.paragraph-view table td {
     border: 6px dashed #fff;
 }
+
+@media screen and (max-width: 500px) {
+    #bg-orange, .document.line-view .line ::before,
+    .document.paragraph-view p ::before,
+    .document.paragraph-view table ::before,
+    .document.line-view .line_bold ::before {
+        animation-play-state: paused;
+    }
+}

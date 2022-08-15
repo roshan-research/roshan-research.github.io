@@ -9,7 +9,7 @@ const BiKeifyat = () => {
     const[height,setHeight] = useState();
 
     let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.58 : 0.27;
+    let scaleH = isMobile? 0.61 : 0.27;
 
     const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);

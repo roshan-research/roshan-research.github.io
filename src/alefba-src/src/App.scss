@@ -22,13 +22,24 @@
   background: rgba(0,0,0,0);
 }
 
-#sample-footer-space, #catalog-footer-space, #main-abilities-space,#abilities-usage-space 
-,#utils-sample-space {
-  height: 40vh;
+#sample-footer-space, #catalog-footer-space{
+  height: 27vh;
 }
 
-#usage-utils-space {
+#utils-sample-space{
+  height: 27vh;
+}
+
+#usage-utils-space{
   height: 85vh;
+}
+
+#abilities-usage-space{
+  height: 27vh;
+}
+
+#main-abilities-space{
+  height: 25vh;
 }
 
 .my-button {
@@ -75,13 +86,28 @@
 
 @media screen and (max-width: 500px){
   
-  #sample-footer-space, #catalog-footer-space, #main-abilities-space,#abilities-usage-space
-  #utils-sample-space {
-    height: 45vw;
+  #sample-footer-space{
+    height: 140vh;
   }
 
-  #usage-utils-space {
-    height: 340vw;
+  #catalog-footer-space {
+    height: 50vh;
+  }
+
+  #utils-sample-space{
+    height: 40vh;
+  }
+
+  #usage-utils-space{
+    height: 25vh;
+  }
+
+  #abilities-usage-space{
+    height: 35vh;
+  }
+
+  #main-abilities-space{
+    height: 25vh;
   }
 
   .my-button {
