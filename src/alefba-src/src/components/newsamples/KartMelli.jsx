@@ -46,9 +46,10 @@ const KartMelli = () => {
                 />
                 <page 
                     ref={kartMelli}
-                    style={{ width: width, height: height}}>
+                    style={kartInview? {height: height,width: width,animationPlayState: "running"}
+                            : {height: height,width: width,animationPlayState: "paused"}}>
                     <div className="document line-view" 
-                        style={kartInview? {animationPlayState: "running"}:{animationPlayState: "paused"}}
+                        style={{animationPlayState: "inherit"}}
                     >
                         <TextGroup
                             delay={"0s"}

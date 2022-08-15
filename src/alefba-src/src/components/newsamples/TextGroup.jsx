@@ -41,7 +41,8 @@ const TextGroup = ({
                     textAlign: textAlign,
                     overflow: "hidden",
                     backgroundColor: "transparent",
-                    lineHeight: lineHeight
+                    lineHeight: lineHeight,
+                    animationPlayState: "inherit"
                 }}
             >
                 <span
@@ -49,7 +50,8 @@ const TextGroup = ({
                     data-text={text}
                     style={{
                         fontSize: fontSize,
-                        animationDelay: delay
+                        animationDelay: delay,
+                        animationPlayState: "inherit"
                     }}
                 >
                     {text}
