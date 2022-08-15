@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.f5c6b6f2.chunk.css",
-    "main.js": "/alefba/static/js/main.c758b14c.chunk.js",
+    "main.css": "/alefba/static/css/main.17cb7623.chunk.css",
+    "main.js": "/alefba/static/js/main.9ef87d86.chunk.js",
     "runtime-main.js": "/alefba/static/js/runtime-main.25306428.js",
-    "static/js/2.26d2adef.chunk.js": "/alefba/static/js/2.26d2adef.chunk.js",
+    "static/js/2.1bb1d173.chunk.js": "/alefba/static/js/2.1bb1d173.chunk.js",
     "static/js/3.96ad9140.chunk.js": "/alefba/static/js/3.96ad9140.chunk.js",
     "index.html": "/alefba/index.html",
-    "static/js/2.26d2adef.chunk.js.LICENSE.txt": "/alefba/static/js/2.26d2adef.chunk.js.LICENSE.txt",
+    "static/js/2.1bb1d173.chunk.js.LICENSE.txt": "/alefba/static/js/2.1bb1d173.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/alefba/static/media/IRANYekan.b916444e.ttf",
     "static/media/main-section.scss": "/alefba/static/media/Mitra.1c5e12f5.ttf",
     "static/media/accuracy-mobile.a6b965ee.svg": "/alefba/static/media/accuracy-mobile.a6b965ee.svg",
@@ -47,8 +47,8 @@
   },
   "entrypoints": [
     "static/js/runtime-main.25306428.js",
-    "static/js/2.26d2adef.chunk.js",
-    "static/css/main.f5c6b6f2.chunk.css",
-    "static/js/main.c758b14c.chunk.js"
+    "static/js/2.1bb1d173.chunk.js",
+    "static/css/main.17cb7623.chunk.css",
+    "static/js/main.9ef87d86.chunk.js"
   ]
 }
