@@ -12,16 +12,16 @@ const FishHoghoghi = () => {
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.58 : 0.27;
 
-    useEffect(() => {
-        setWidth(scaleW * window.innerWidth);
-        setHeight(scaleH * window.innerWidth);
-    }, []);
-
-
-    window.onresize = () => {
+    const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
+
+    window.addEventListener("resize", resizeHandler);
+
+    useEffect(() => {
+        resizeHandler();
+    }, []);
 
 
   return(

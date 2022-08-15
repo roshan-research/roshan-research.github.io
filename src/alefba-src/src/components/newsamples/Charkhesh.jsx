@@ -11,16 +11,17 @@ const Charkhesh = () => {
     let scaleH = isMobile? 0.9 : 0.45;
     let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
 
-    useEffect(() => {
-        setWidth(scaleW * window.innerWidth);
-        setHeight(scaleH * window.innerWidth);
-    }, []);
-
-
-    window.onresize = () => {
+    const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
+
+    window.addEventListener("resize", resizeHandler);
+
+    useEffect(() => {
+        resizeHandler();
+    }, []);
+    
     return(
         <div className="container" style={containerStyle}>
             <div
