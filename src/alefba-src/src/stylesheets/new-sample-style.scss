@@ -139,6 +139,6 @@ $transitions-duration: 3s;
     .document.paragraph-view p ::before,
     .document.paragraph-view table ::before,
     .document.line-view .line_bold ::before {
-        animation-play-state: paused;
+        animation-play-state: inherit;
     }
 }

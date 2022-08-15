@@ -3,10 +3,18 @@ import "../../stylesheets/fish.scss";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import {isMobile} from "react-device-detect";
+import { useInView } from 'react-intersection-observer';
 
 const KartMelli = () => {
+
+    const observerOptions = {
+        delay: 1000,
+        triggerOnce: true
+    };
+
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
+    const[kartMelli,kartInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.61 : 0.27;
@@ -36,8 +44,12 @@ const KartMelli = () => {
                     src={kart}
                     alt={''}
                 />
-                <page style={{ width: width, height: height }}>
-                    <div className="document line-view">
+                <page 
+                    ref={kartMelli}
+                    style={{ width: width, height: height}}>
+                    <div className="document line-view" 
+                        style={kartInview? {animationPlayState: "running"}:{animationPlayState: "paused"}}
+                    >
                         <TextGroup
                             delay={"0s"}
                             fontSize={`${0.024 * width}px`}
