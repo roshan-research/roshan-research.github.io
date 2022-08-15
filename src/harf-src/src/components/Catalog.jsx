@@ -12,9 +12,7 @@ const Catalog = () => {
         <div id={'catalog'}>
             <div id={'catalog-right'}>
                 <p id={'catalog-description'}>
-                    برای آشنایی بیشتر با امکانات حرف،
-                    <br/>
-                    کاتالوگ حرف را دریافت فرمایید
+                کاتالوگ حرف اطلاعات بیشتری در اختیار شما قرار می‌دهد.
                 </p>
                 <a
                     href={'https://www.roshan-ai.ir/harf-catalog.pdf/'}
@@ -28,7 +26,7 @@ const Catalog = () => {
                     >
                         <img src={isHovered? blackDLicon : downloadIcon} alt={''}/>
                         <p>
-                            کاتالوگ حرف
+                        دانلود کاتالوگ حرف
                         </p>
                     </div>
                 </a>
