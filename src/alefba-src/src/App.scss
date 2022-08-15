@@ -24,11 +24,11 @@
 
 #sample-footer-space, #catalog-footer-space, #main-abilities-space,#abilities-usage-space
  #utils-sample-space {
-  height: 45vw;
+  height: 25vh;
 }
 
 #usage-utils-space {
-  height: 340vw;
+  height: 85vh;
 }
 
 .my-button {
@@ -74,28 +74,14 @@
 }
 
 @media screen and (max-width: 500px){
-  #sample-footer-space{
-    height: 140vh;
+  
+  #sample-footer-space, #catalog-footer-space, #main-abilities-space,#abilities-usage-space
+  #utils-sample-space {
+    height: 45vw;
   }
 
-  #catalog-footer-space {
-    height: 50vh;
-  }
-
-  #utils-sample-space{
-    height: 40vh;
-  }
-
-  #usage-utils-space{
-    height: 25vh;
-  }
-
-  #abilities-usage-space{
-    height: 35vh;
-  }
-
-  #main-abilities-space{
-    height: 25vh;
+  #usage-utils-space {
+    height: 340vw;
   }
 
   .my-button {

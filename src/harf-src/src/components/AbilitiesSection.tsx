@@ -62,7 +62,7 @@ const AbilitiesSection = () => {
                             مشخص کردن بخش‌هایی از خروجی که با تردید نوشته شده‌اند برای بازنگری توسط انسان
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'left-2'}>
+                    <div className={'ability-group on-left'} id={'left-2'}>
                         <Left2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left2InView? afterStyleText : beforeStyleText}>
@@ -92,7 +92,7 @@ const AbilitiesSection = () => {
                             تبدیل گفتار محاوره‌ای به متن محاوره‌ای
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'right-2'}>
+                    <div className={'ability-group on-left'} id={'right-2'}>
                         <Right2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right2InView? afterStyleText : beforeStyleText}>
