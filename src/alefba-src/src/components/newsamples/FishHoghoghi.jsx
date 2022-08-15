@@ -4,10 +4,19 @@ import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import "../../stylesheets/new-sample-style.scss";
 import {isMobile} from "react-device-detect";
+import { useInView } from 'react-intersection-observer';
 
 const FishHoghoghi = () => {
+
+    const observerOptions = {
+        delay: 1000,
+        triggerOnce: true
+    };
+
+
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
+    const[fishHoghoghi,fishInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.61 : 0.27;
@@ -36,8 +45,13 @@ const FishHoghoghi = () => {
                   src={fish}
                   alt={''}
               />
-              <page style={{ width: width, height: height }}>
-                  <div className="document line-view">
+                <page 
+                    ref={fishHoghoghi}
+                    style={fishInview? {height: height,width: width,animationPlayState: "running"}
+                            : {height: height,width: width,animationPlayState: "paused"}}>
+                    <div className="document line-view" 
+                        style={{animationPlayState: "inherit"}}
+                    >
                       <TextGroup
                           delay={"0s"}
                           fontSize={`${0.03401898734177215 * width}px`}

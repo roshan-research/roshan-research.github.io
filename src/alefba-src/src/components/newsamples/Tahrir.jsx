@@ -2,11 +2,18 @@ import tahrir from "../../assets/images/samples/tahrir.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import {isMobile} from "react-device-detect";
+import { useInView } from 'react-intersection-observer';
 
 const Tahrir = () => {
 
+    const observerOptions = {
+        delay: 1000,
+        triggerOnce: true
+    };
+
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
+    const[tah,tahInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.61 : 0.27;
@@ -34,8 +41,13 @@ const Tahrir = () => {
                     src={tahrir}
                     alt={''}
                 />
-                <page style={{ width: width, height: height }}>
-                    <div className="document line-view">
+                <page 
+                    ref={tah}
+                    style={tahInview? {height: height,width: width,animationPlayState: "running"}
+                            : {height: height,width: width,animationPlayState: "paused"}}>
+                    <div className="document line-view" 
+                        style={{animationPlayState: "inherit"}}
+                    >
                         <TextGroup
                             delay={"0s"}
                             fontSize={`${0.02278749337572867 * width}px`}
