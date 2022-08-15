@@ -13,10 +13,15 @@ const Charkhesh = () => {
 
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
-    const[charkh,charkhInview] = useInView(observerOptions);
+    const[charkhRef,charkheshInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.9 : 0.45;
+    /*
+    this it the reason that intersection observer 
+    doesn't work as it should in Charkhesh.
+    find the solution and fix it up
+    */
     let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
 
     const resizeHandler = () => {
@@ -43,8 +48,8 @@ const Charkhesh = () => {
                     alt={''}
                 />
                 <page 
-                    ref={charkh}
-                    style={charkhInview? {height: height,width: width,animationPlayState: "running"}
+                    ref={charkhRef}
+                    style={charkheshInview? {height: height,width: width,animationPlayState: "running"}
                             : {height: height,width: width,animationPlayState: "paused"}}>
                     <div className="document line-view" 
                         style={{animationPlayState: "inherit"}}

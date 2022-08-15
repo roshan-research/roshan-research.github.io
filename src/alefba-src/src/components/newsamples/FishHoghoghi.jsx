@@ -13,7 +13,6 @@ const FishHoghoghi = () => {
         triggerOnce: true
     };
 
-
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
     const[fishHoghoghi,fishInview] = useInView(observerOptions);
