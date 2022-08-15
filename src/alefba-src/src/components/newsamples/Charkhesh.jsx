@@ -2,25 +2,39 @@ import charkhesh from "../../assets/images/samples/charkhesh.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import {isMobile} from "react-device-detect";
+import { useInView } from 'react-intersection-observer';
 
 const Charkhesh = () => {
+
+    const observerOptions = {
+        delay: 1000,
+        triggerOnce: true
+    };
+
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
+    const[charkhRef,charkheshInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
     let scaleH = isMobile? 0.9 : 0.45;
+    /*
+    this it the reason that intersection observer 
+    doesn't work as it should in Charkhesh.
+    find the solution and fix it up
+    */
     let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
 
-    useEffect(() => {
-        setWidth(scaleW * window.innerWidth);
-        setHeight(scaleH * window.innerWidth);
-    }, []);
-
-
-    window.onresize = () => {
+    const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
+
+    window.addEventListener("resize", resizeHandler);
+
+    useEffect(() => {
+        resizeHandler();
+    }, []);
+    
     return(
         <div className="container" style={containerStyle}>
             <div
@@ -33,8 +47,13 @@ const Charkhesh = () => {
                     src={charkhesh}
                     alt={''}
                 />
-                <page style={{ width: width, height: height }}>
-                    <div className="document line-view" >
+                <page 
+                    ref={charkhRef}
+                    style={charkheshInview? {height: height,width: width,animationPlayState: "running"}
+                            : {height: height,width: width,animationPlayState: "paused"}}>
+                    <div className="document line-view" 
+                        style={{animationPlayState: "inherit"}}
+                    >
                         <TextGroup
                             delay={"0s"}
                             fontSize={`${0.05291005291005291 * width}px`}

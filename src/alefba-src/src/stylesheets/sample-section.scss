@@ -29,7 +29,7 @@ p { margin: 0.8vw}
 }
 
 #buttons{
-  height: 26vw;
+  height: 19vw;
   margin-top: 2vw;
   display: flex;
   justify-content: space-between;
@@ -68,7 +68,7 @@ p { margin: 0.8vw}
 }
 
 .polygon{
-  margin-right: -0.8vw;
+ margin-right: -0.35vw;
   width: 1.5vw;
 }
 
@@ -117,7 +117,6 @@ p { margin: 0.8vw}
   justify-content: center;
   align-items: start;
   flex-direction: row;
-  //change it later on
   border-radius: 20px;
   overflow: hidden;
 }
@@ -169,8 +168,8 @@ p { margin: 0.8vw}
   .white-title-sample{
     color: #FF6200;
     font-size: 5.1vw;
-    height:8.80281690140845vh;
-    width:40vw;
+    height:auto;
+    width:auto;
     text-align: right;
   }
 
@@ -232,6 +231,7 @@ p { margin: 0.8vw}
     display: flex;
     width: 85vw;
     height: 75vw;
+    border: #FF6200 solid;
     border-radius: 15px;
   }
 

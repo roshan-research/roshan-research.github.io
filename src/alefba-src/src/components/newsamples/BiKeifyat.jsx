@@ -2,25 +2,32 @@ import bikeifyat from "../../assets/images/samples/bikeifyat.jpg";
 import TextGroup from "./TextGroup";
 import {useEffect, useState} from "react";
 import {isMobile} from "react-device-detect";
+import { useInView } from 'react-intersection-observer';
 
 const BiKeifyat = () => {
 
+    const observerOptions = {
+        delay: 1000,
+        triggerOnce: true
+    };
+
     const[width,setWidth] = useState();
     const[height,setHeight] = useState();
+    const[bi,biInview] = useInView(observerOptions);
 
     let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.58 : 0.27;
+    let scaleH = isMobile? 0.61 : 0.27;
 
-    useEffect(() => {
-        setWidth(scaleW * window.innerWidth);
-        setHeight(scaleH * window.innerWidth);
-    }, []);
-
-
-    window.onresize = () => {
+    const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
+
+    window.addEventListener("resize", resizeHandler);
+
+    useEffect(() => {
+        resizeHandler();
+    }, []);
 
     return(
         <div className="container">
@@ -34,8 +41,13 @@ const BiKeifyat = () => {
                     src={bikeifyat}
                     alt={''}
                 />
-                <page style={{ width: width, height: height }}>
-                    <div className="document line-view">
+                <page 
+                    ref={bi}
+                    style={biInview? {height: height,width: width,animationPlayState: "running"}
+                            : {height: height,width: width,animationPlayState: "paused"}}>
+                    <div className="document line-view" 
+                        style={{animationPlayState: "inherit"}}
+                    >
                         <TextGroup
                             delay={"0s"}
                             fontSize={`${0.037859007832898174 * width}px`}

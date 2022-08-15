@@ -11,7 +11,8 @@ import { useInView } from 'react-intersection-observer';
 const AbilitiesSection = () => {
 
     const observerOptions = {
-        delay: 1000
+        delay: 1000,
+        triggerOnce: true
     };
 
     const beforeStyle = {
@@ -51,28 +52,28 @@ const AbilitiesSection = () => {
                         <Left1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left1InView? afterStyleText : beforeStyleText}>
-                                خواندن متون فارسی و انگلیسی
+                                نمایش خطاهای احتمالی
                             </p>
                             <p className={'black-text-background'}  ref={left1Ref} style={left1InView? afterStyle : beforeStyle}>
-                                خواندن متون فارسی و انگلیسی
+                                نمایش خطاهای احتمالی
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن نویسه های فارسی، انگلیسی و البته زبان های مشابه مثل عربی و دری، همه در کنار هم در یک تصویر
+                            مشخص کردن بخش‌هایی از خروجی که با تردید نوشته شده‌اند برای بازنگری توسط انسان
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'left-2'}>
+                    <div className={'ability-group on-left'} id={'left-2'}>
                         <Left2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left2InView? afterStyleText : beforeStyleText}>
-                                اصلاح تصویر
+                                امکان شخصی‌سازی
                             </p>
                             <p className={'black-text-background'}  ref={left2Ref} style={left2InView? afterStyle : beforeStyle}>
-                                اصلاح تصویر
+                                امکان شخصی‌سازی
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            اصلاح نویز، چرخش و سایه تصویر برای دقیق‌تر خواندن متن
+                            افزایش دقت تبدیل از طریق آموزش سیستم با انبوهِ داده‌های خام به درخواست مشتری
                         </p>
                     </div>
                 </div>
@@ -81,28 +82,28 @@ const AbilitiesSection = () => {
                         <Right1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right1InView? afterStyleText : beforeStyleText}>
-                                خواندن قلم‌های گوناگون
+                                فهم گفتار محاوره
                             </p>
                             <p className={'black-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
-                                خواندن قلم‌های گوناگون
+                                فهم گفتار محاوره
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن متون نوشته‌شده با قلم‌های مختلف، در اندازه‌های متفاوت، مثل عنوان، متن یا پاورقی‌ها
+                            تبدیل گفتار محاوره‌ای به متن محاوره‌ای
                         </p>
                     </div>
-                    <div className={'ability-group'} id={'right-2'}>
+                    <div className={'ability-group on-left'} id={'right-2'}>
                         <Right2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={right2InView? afterStyleText : beforeStyleText}>
-                                حفظ ساختار سند
+                                تحلیل برخط
                             </p>
                             <p className={'black-text-background'} ref={right2Ref} style={right2InView? afterStyle : beforeStyle}>
-                                حفظ ساختار سند
+                                تحلیل برخط
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            چیدن عنوان، متن، تصویر و جدول در صفحه نتیجه، برای حفظ ساختار سند مورد تحلیل
+                            تبدیل آنی گفتار در حال پخش (استریم، پخش زنده) به متن
                         </p>
                     </div>
                 </div>

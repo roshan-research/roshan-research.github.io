@@ -3,14 +3,13 @@ import MainSection from "./components/MainSection";
 import AbilitiesSection from "./components/AbilitiesSection";
 import UsagesSection from "./components/UsagesSection";
 import TechnicalUtils from "./components/TechnicalUtils";
-import SampleSection from "./components/SampleSection";
+import SampleSection from "./components/SampleSection.jsx";
 import Footer from "./components/Footer";
 import Catalog from "./components/Catalog";
 import { slide as Menu } from 'react-burger-menu'
 import closeIcon from './assets/images/close-icon.svg';
 import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from "./components/MenuLinks";
-import WaveForm from "./components/samples/WaveForm";
 
 function App() {
   return (

@@ -116,6 +116,7 @@
   #usages-section{
     display: flex;
     overflow-x: auto;
+    direction: rtl;
     max-height: 60vh;
   }
 
@@ -133,6 +134,7 @@
     margin-left: 0;
     margin-right: 20vw;
     justify-content: start;
+    direction: ltr;
     align-items: end;
   }
 

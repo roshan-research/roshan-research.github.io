@@ -28,7 +28,7 @@ p { margin: 0.8vw}
 }
 
 #buttons{
-  height: 26vw;
+  height: 17vw;
   margin-top: 2vw;
   display: flex;
   justify-content: space-between;
@@ -67,7 +67,7 @@ p { margin: 0.8vw}
 }
 
 .polygon{
-  margin-right: -0.8vw;
+  margin-right: -0.35vw;
   width: 1.5vw;
 }
 
@@ -111,9 +111,22 @@ p { margin: 0.8vw}
 
 .sample-container {
   display: flex;
-  flex-direction: row;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: end;
   align-items: center;
+  background-color: #181818;
+  width: 43vw;
+  height: 30vw;
+  border-radius: 20px;
+}
+
+#harf-text-container {
+  width: 35vw;
+  font-size: 1.2vw;
+  text-align: center;
+  height: 10vw;
+  color: white;
+  font-family: iran-yekan, serif;
 }
 
 @media screen and (min-width: 500px) {

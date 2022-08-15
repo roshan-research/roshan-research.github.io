@@ -70,7 +70,7 @@ const MainSection = () => {
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
                 <p id={'orange-text'}>
-                    تبدیل گفتار به متن حرفـــــــ
+                    حرف ، تبدیل گفتار به نوشتار
                 </p>
                 <p id={'white-text'}>
                     حرف با استفاده از هوش مصنوعی، گفتار را به نوشته قابل ویرایش تبدیل می کند.

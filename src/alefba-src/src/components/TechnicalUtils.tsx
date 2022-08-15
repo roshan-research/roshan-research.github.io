@@ -14,7 +14,8 @@ import {useInView} from "react-intersection-observer";
 const TechnicalUtils = () => {
 
     const observerOptions = {
-        delay: 1000
+        delay: 1000,
+        triggerOnce: true
     };
 
     const [right1Ref,right1InView] = useInView(observerOptions);
@@ -41,7 +42,6 @@ const TechnicalUtils = () => {
             <p id={'utils-title'}>
                 امکانات فنی الفبا
             </p>
-            <div style={{height: '15vh'}}/>
             <div id={'utils-wrapper'}>
                 <div id={'left-utils'}>
                     <div className={'util-group right-to-left'} id={'left-1'}>
@@ -58,9 +58,29 @@ const TechnicalUtils = () => {
                         </div>
                         <img src={Left1} id={'left1-icon'} alt={''}/>
                         <p className={'white-util-text'}>
-                            الفبا با دقت 97% نوشته‌های اسناد را می‌خواند و با سخت‌افزار مناسب میتواند 60 صفحه را در هر دقیقه تحلیل کند. البته دقت نویسه‌خوان به کیفیت اسناد ورودی هم ربط دارد.
+                        الفبا با دقتی نزدیک به ۹۷٪ نوشته‌ها را در تصاویر تشخیص می‌دهد و با یک سخت‌افزار نه‌چندان قوی می‌تواند در هر دقیقه ۶۰ صفحه را پردازش کند.
                         </p>
                     </div>
+                    <div id={'right-space'}/>
+                    <div className={'util-group left-to-right'} id={'right-1'}>
+                        <NLP id={'nlp'}/>
+                        <div className={'util-row left-to-right-row1'}>
+                            <div className={'title-stack-utils'}>
+                                <p className={'black-util-text'} style={right1InView? afterStyleText : beforeStyleText}>
+                                    پردازش زبان طبیعی
+                                </p>
+                                <p className={'black-util-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
+                                    پردازش زبان طبیعی
+                                </p>
+                            </div>
+                        </div>
+                        <img src={Right1} id={'right1-icon'} alt={''}/>
+                        <p className={'white-util-text left-to-right'}>
+                        الفبا، زبان فارسی را می‌فهمد و هرجایی به تردید بیافتد عبارتی متناسب با بافت و معنای متن انتخاب می‌کند.
+                        </p>
+                    </div>
+                </div>
+                <div id={'right-utils'}>
                     <div id={'right-space'}/>
                     <div className={'util-group right-to-left'} id={'left-2'}>
                         <Parallel id={'parallel'}/>
@@ -77,26 +97,6 @@ const TechnicalUtils = () => {
                         <img src={Left2} id={'left2-icon'} alt={''}/>
                         <p className={'white-util-text'}>
                             الفبا می‌تواند با استفاده از پردازنده گرافیکی (کارت گرافیک)، اسناد را چند برابر سریع‌تر پردازش کند. همچنین قابلیت استفاده از چند ماشین برای پردازش توزیع‌شده اسناد را فراهم می‌کند.
-                        </p>
-                    </div>
-                </div>
-                <div id={'right-utils'}>
-                    <div id={'right-space'}/>
-                    <div className={'util-group left-to-right'} id={'right-1'}>
-                        <NLP id={'nlp'}/>
-                        <div className={'util-row left-to-right-row1'}>
-                            <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={right1InView? afterStyleText : beforeStyleText}>
-                                    پردازش زبان طبیعی
-                                </p>
-                                <p className={'black-util-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
-                                    پردازش زبان طبیعی
-                                </p>
-                            </div>
-                        </div>
-                        <img src={Right1} id={'right1-icon'} alt={''}/>
-                        <p className={'white-util-text left-to-right'}>
-                            الفبا جمله‌های فارسی را می‌شناسد. یعنی گاهی وقت‌ها که میان دو شکل مختلف یک عبارت تردید دارد، هر دو را در میان دیگر کلمات خط نوشته قرار می‌دهد، تا ببیند کدام یک از جملات را بهتر کامل می‌کند.
                         </p>
                     </div>
                     <div id={'right-space'}/>

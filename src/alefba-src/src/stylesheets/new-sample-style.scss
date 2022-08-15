@@ -12,11 +12,11 @@ $transitions-duration: 3s;
 }
 @keyframes moveBg {
     0% {
-        background: rgba(255, 98, 0, 1.0);
+        background: #FEAD6C;
         transform: scaleX(0);
     }
     100% {
-        background: rgba(255, 98, 0, 1.0);
+        background: #FEAD6C;
         transform: scaleX(1);
     }
 }
@@ -132,4 +132,13 @@ $transitions-duration: 3s;
 }
 .document.paragraph-view table th, .document.paragraph-view table td {
     border: 6px dashed #fff;
+}
+
+@media screen and (max-width: 500px) {
+    #bg-orange, .document.line-view .line ::before,
+    .document.paragraph-view p ::before,
+    .document.paragraph-view table ::before,
+    .document.line-view .line_bold ::before {
+        animation-play-state: inherit;
+    }
 }
