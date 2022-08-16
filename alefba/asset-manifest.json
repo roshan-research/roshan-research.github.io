@@ -1,12 +1,12 @@
 {
   "files": {
-    "main.css": "/alefba/static/css/main.17cb7623.chunk.css",
-    "main.js": "/alefba/static/js/main.9ef87d86.chunk.js",
-    "runtime-main.js": "/alefba/static/js/runtime-main.25306428.js",
-    "static/js/2.1bb1d173.chunk.js": "/alefba/static/js/2.1bb1d173.chunk.js",
-    "static/js/3.96ad9140.chunk.js": "/alefba/static/js/3.96ad9140.chunk.js",
+    "main.css": "/alefba/static/css/main.fb6008c6.chunk.css",
+    "main.js": "/alefba/static/js/main.74436fab.chunk.js",
+    "runtime-main.js": "/alefba/static/js/runtime-main.a6e31ac6.js",
+    "static/js/2.722f8f23.chunk.js": "/alefba/static/js/2.722f8f23.chunk.js",
+    "static/js/3.af7ed399.chunk.js": "/alefba/static/js/3.af7ed399.chunk.js",
     "index.html": "/alefba/index.html",
-    "static/js/2.1bb1d173.chunk.js.LICENSE.txt": "/alefba/static/js/2.1bb1d173.chunk.js.LICENSE.txt",
+    "static/js/2.722f8f23.chunk.js.LICENSE.txt": "/alefba/static/js/2.722f8f23.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/alefba/static/media/IRANYekan.b916444e.ttf",
     "static/media/main-section.scss": "/alefba/static/media/Mitra.1c5e12f5.ttf",
     "static/media/accuracy-mobile.a6b965ee.svg": "/alefba/static/media/accuracy-mobile.a6b965ee.svg",
@@ -46,9 +46,9 @@
     "static/media/tahrir.a94522c2.jpg": "/alefba/static/media/tahrir.a94522c2.jpg"
   },
   "entrypoints": [
-    "static/js/runtime-main.25306428.js",
-    "static/js/2.1bb1d173.chunk.js",
-    "static/css/main.17cb7623.chunk.css",
-    "static/js/main.9ef87d86.chunk.js"
+    "static/js/runtime-main.a6e31ac6.js",
+    "static/js/2.722f8f23.chunk.js",
+    "static/css/main.fb6008c6.chunk.css",
+    "static/js/main.74436fab.chunk.js"
   ]
 }
