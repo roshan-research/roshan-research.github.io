@@ -36,10 +36,13 @@ const Charkhesh = () => {
     }, []);
     
     return(
-        <div className="container" style={containerStyle}>
+        <div className="container" ref={charkhRef}
+                style={charkheshInview? {height: height,width: width,animationPlayState: "running",...containerStyle}
+                : {height: height,width: width,animationPlayState: "paused",...containerStyle}}
+        >
             <div
                 id="document"
-                style={{ position: "relative",transition: "0s" }}
+                style={{ position: "relative",transition: "0s",animationPlayState: "inherit" }}
             >
                 <img
                     style={{ position: "absolute", left: 0,width: width, height: height }}
@@ -47,10 +50,7 @@ const Charkhesh = () => {
                     src={charkhesh}
                     alt={''}
                 />
-                <page 
-                    ref={charkhRef}
-                    style={charkheshInview? {height: height,width: width,animationPlayState: "running"}
-                            : {height: height,width: width,animationPlayState: "paused"}}>
+                <page style={{animationPlayState: "inherit"}}>
                     <div className="document line-view" 
                         style={{animationPlayState: "inherit"}}
                     >
