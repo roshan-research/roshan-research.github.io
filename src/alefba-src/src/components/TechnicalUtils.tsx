@@ -56,7 +56,7 @@ const TechnicalUtils = () => {
                                 </p>
                             </div>
                         </div>
-                        <img src={Left1} id={'left1-icon'} alt={''}/>
+                        <img src={Left1} id={'left1-icon'} style={{float: "right"}} alt={''}/>
                         <p className={'white-util-text'}>
                         الفبا با دقتی نزدیک به ۹۷٪ نوشته‌ها را در تصاویر تشخیص می‌دهد و با یک سخت‌افزار نه‌چندان قوی می‌تواند در هر دقیقه ۶۰ صفحه را پردازش کند.
                         </p>

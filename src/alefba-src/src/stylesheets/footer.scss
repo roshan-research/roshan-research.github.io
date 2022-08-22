@@ -82,7 +82,7 @@
   margin-top:5vh;
   margin-left:10.546875vw;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -115,13 +115,13 @@ a{
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: flex-end;
   }
 
   #email-footer{
     position: absolute;
     justify-content: space-between;
-    align-items: end;
+    align-items: flex-end;
     margin-bottom: 15vh;
     margin-right: 5vw;
   }

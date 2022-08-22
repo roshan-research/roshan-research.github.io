@@ -73,7 +73,7 @@ const MainSection = () => {
                     نويسه خوان الفبـا
                 </p>
                 <p id={'white-text'}>
-                (OCR فارسی) تبدیل تصویر به نوشته
+                    (OCR فارسی)تبدیل تصویر به نوشته
                 </p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''}/>

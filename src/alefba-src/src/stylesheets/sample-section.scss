@@ -8,7 +8,7 @@ p { margin: 0.8vw}
   display: flex;
   justify-content: center;
   flex-direction: column;
-  align-items: end;
+  align-items: flex-end;
   cursor: pointer;
 }
 
@@ -23,7 +23,7 @@ p { margin: 0.8vw}
   margin-right: -2vw;
   display: flex;
   height: 3vh;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
 }
@@ -159,8 +159,8 @@ p { margin: 0.8vw}
   #sample-section{
     margin-top: 50vh;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     height:65.14084507042254vh;
     width: 80vw;
   }

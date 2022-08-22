@@ -175,7 +175,7 @@ class SampleSection extends Component {
                     <div className={'sample-container'}>
                         {whichSample()}
                     </div>
-                    <div id={'buttons'}>
+                    <div id={'buttons'} style={{direction: "rtl"}}>
                         <div className={'button'}
                              onClick={this.onSampleClick.bind(this,Sample.KartMelli)}>
                             <div className={'sample-row'}>

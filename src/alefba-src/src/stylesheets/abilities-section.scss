@@ -32,9 +32,9 @@
   height:80.55555555555556vh;
   width:99.5vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
 }
 
 #side-main{
@@ -45,7 +45,7 @@
 .ability-group{
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:33vh;
   width:20vw;
