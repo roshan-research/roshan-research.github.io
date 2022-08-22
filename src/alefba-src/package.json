@@ -14,7 +14,6 @@
     "framer-motion": "^4.1.17",
     "hamburger-react": "^2.4.1",
     "lottie-react": "^2.1.0",
-    "node-sass": "^6.0.1",
     "react": "^17.0.2",
     "react-burger-menu": "^3.0.8",
     "react-device-detect": "^2.2.2",
@@ -23,6 +22,7 @@
     "react-router-dom": "^6.3.0",
     "react-scripts": "4.0.3",
     "react-snap": "^1.23.0",
+    "sass": "^1.54.5",
     "typescript": "^4.4.4",
     "web-vitals": "^1.1.2"
   },

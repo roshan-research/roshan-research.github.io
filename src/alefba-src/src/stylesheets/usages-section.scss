@@ -32,7 +32,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:41.66666666666667vh;
   width:19.00vw;
@@ -50,7 +50,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:63.888888888888886vh;
   width:22.265625vw;
@@ -68,7 +68,7 @@
   position: absolute;
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:51.388888888888886vh;
   width:21.09375vw;
@@ -118,8 +118,8 @@
     margin-left: 0;
     direction: ltr;
     margin-right: 20vw;
-    justify-content: start;
-    align-items: end;
+    justify-content: flex-start;
+    align-items: flex-end;
   }
 
   #library-image,#business-image,#organization-image{
