@@ -1,8 +1,8 @@
 import './App.scss';
 import { Carousel } from 'react-responsive-carousel';
-import pic1 from './assets/images/pic1.jpg';
+import pic3 from './assets/images/pic1.jpg';
 import pic2 from './assets/images/pic2.jpg';
-import pic3 from './assets/images/pic3.jpg';
+import pic1 from './assets/images/pic3.jpg';
 import logo from './assets/images/logo.svg';
 import Footer from "./components/Footer";
 import { slide as Menu } from 'react-burger-menu'
@@ -100,13 +100,13 @@ function App() {
                       showThumbs={false}
                   >
                       <div>
-                          <img src={pic1} alt={''}/>
+                          <img src={pic3} alt={''}/>
                       </div>
                       <div>
                           <img src={pic2} alt={''}/>
                       </div>
                       <div>
-                          <img src={pic3} alt={''}/>
+                          <img src={pic1} alt={''}/>
                       </div>
                   </Carousel>
                   <Clients/>
