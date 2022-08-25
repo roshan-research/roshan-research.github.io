@@ -114,8 +114,11 @@ p { margin: 0.8vw}
   flex-direction: column;
   justify-content: end;
   align-items: center;
-  background-color: #181818;
+  background-image: url(../assets/images/samples/Pattern.svg);
+  background-color: white;
   width: 43vw;
+  background-repeat: no-repeat;
+  background-size: contain;
   height: 30vw;
   border-radius: 20px;
 }
@@ -125,7 +128,7 @@ p { margin: 0.8vw}
   font-size: 1.2vw;
   text-align: center;
   height: 10vw;
-  color: white;
+  color: black;
   font-family: iran-yekan, serif;
 }
 
