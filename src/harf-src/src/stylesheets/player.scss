@@ -1,22 +1,22 @@
 #player-container {
   display: flex;
-  justify-content: center;
+  justify-content: start;
   align-items: center;
   flex-direction: row;
-  width: 35vw;
+  width: 40vw;
 }
 
 #timer-progress {
   display: flex;
-  justify-content: start;
+  justify-content: end;
   align-items: center;
   flex-direction: row;
-  width: 36vw;
+  width: 40vw;
   overflow: hidden;
 }
 
 #player-bar {
-  width: 35vw;
+  width: 40vw;
 }
 
 #timer {
@@ -34,6 +34,7 @@
   display: flex;
   justify-content: center;
 }
+
 .fondo {
   background: #26FF7B;
   border-radius: 50%;
@@ -42,24 +43,24 @@
   0 7.8px 17.9px rgba(0, 0, 0, 0.059), 0 14.6px 33.4px rgba(0, 0, 0, 0.059),
   0 35px 80px rgba(0, 0, 0, 0.07);
   cursor: pointer;
-  height: 3vw;
+  height: 4vw;
   position: absolute;
-  width: 3vw;
+  width: 4vw;
 }
 .botón:active .fondo {
   background: #26FF7B;
 }
 .icono {
-  height: 6vw;
+  height: 8vw;
   transform: rotate(-120deg);
   transition: transform 100ms;
-  width: 6vw;
+  width: 8vw;
 }
 .parte {
   background: black;
-  height: 6vw;
+  height: 8vw;
   position: absolute;
-  width: 6vw;
+  width: 8vw;
 }
 .izquierda {
   clip-path: polygon(
@@ -202,10 +203,10 @@
 .puntero {
   border-radius: 50%;
   cursor: pointer;
-  height: 6vw;
+  height: 8vw;
   position: absolute;
   -webkit-tap-highlight-color: transparent;
-  width: 6vw;
+  width: 8vw;
 }
 .active .icono {
   transform: rotate(-90deg);
@@ -347,9 +348,16 @@
   );
 }
 
+#audio-title {
+  font-size: 1.4vw;
+  font-weight: 700;
+  justify-content: center;
+  align-items: center;
+  font-family: iran-yekan, serif;
+  display: flex;
+}
 
-@media screen  and (max-width: 500px){
-
+@media screen and (max-width: 500px){
   #player-container, #timer-progress, #player-bar {
     width: 70vw;
   }

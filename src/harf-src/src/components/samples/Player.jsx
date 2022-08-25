@@ -6,7 +6,7 @@ import { isMobile } from "react-device-detect";
 
 let tempCurrentTime;
 
-const Player = ({music,segments}) => {
+const Player = ({music,segments,title}) => {
     const waveformRef = useRef(null);
     const wavesurfer = useRef(null);
     const [isActive,setIsActive] = useState(false);
@@ -34,13 +34,13 @@ const Player = ({music,segments}) => {
         wavesurfer.current = WaveSurfer.create({
             container: waveformRef.current,
             barGap: 1,
-            waveColor: ["#8f8f8f","#8f8f8f","#8f8f8f","#d7d7d7"],
-            barHeight: isMobile? 0.8 : 1,
+            waveColor: ["#AAAAAA","#AAAAAA","#AAAAAA","#E6E6E6","#E6E6E6"],
+            barHeight: isMobile? 0.8 : 2,
             barRadius: 1,
             barWidth: isMobile? 2 : 4,
             responsive: true,
             cursorColor: "transparent",
-            progressColor: ["#24806f","#24806f","#34bda3","#3bee95"]
+            progressColor: ["#00DA55","#00DA55","#00DA55","#C0EED2","#C0EED2"]
         });
         wavesurfer.current.load(music);
 
@@ -66,8 +66,6 @@ const Player = ({music,segments}) => {
 
     return (
         <div className={'sample-container'}>
-            <div id={"harf-text-container"} dangerouslySetInnerHTML={{__html: currentText}}>
-            </div>
             <div id={"player-container"}>
                 <div className={`botón ${isActive? "active": ""}`} onClick={buttonAction}>
                     <div className="fondo" x="0" y="0" width="200" height="200"></div>
@@ -77,12 +75,17 @@ const Player = ({music,segments}) => {
                     </div>
                     <div className="puntero"></div>
                 </div>
-                <div id={"timer-progress"}>
-                    <div id={"timer"}>
-                        {new Date(progress * 1000).toISOString().slice(14, 19)}
-                    </div>
-                    <div ref={waveformRef} id={"player-bar"}>
-                    </div>
+                <p id={"audio-title"}>
+                    {title}
+                </p>
+            </div>
+            <div id={"harf-text-container"} dangerouslySetInnerHTML={{__html: currentText}}>
+            </div>
+            <div id={"timer-progress"}>
+                <div id={"timer"}>
+                    {new Date(progress * 1000).toISOString().slice(14, 19)}
+                </div>
+                <div ref={waveformRef} id={"player-bar"}>
                 </div>
             </div>
         </div>
