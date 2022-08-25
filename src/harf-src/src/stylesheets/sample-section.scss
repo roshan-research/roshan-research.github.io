@@ -129,17 +129,14 @@ p { margin: 0.8vw}
   font-family: iran-yekan, serif;
 }
 
-@media screen and (min-width: 500px) {
-  #active-orange-title{
-    background-color: #26FF7B;
-    color: black;
-  }
-
-  #active-orange-description{
-    color: #26FF7B;
-  }
+#active-orange-title{
+  background-color: #26FF7B;
+  color: black;
 }
 
+#active-orange-description{
+  color: #26FF7B;
+}
 
 @media screen  and (max-width: 500px){
   #sample-title{
@@ -247,8 +244,7 @@ p { margin: 0.8vw}
 
   .button {
     width: fit-content;
-    margin-top: 0;
-    margin-right: 5vw;
+    margin: 0 5vw;
   }
 
   #buttons {
@@ -273,7 +269,7 @@ p { margin: 0.8vw}
   }
 
   #sample-section {
-    margin-top: 50vw;
+    margin-top: 0vw;
     width: 100vw;
   }
 
