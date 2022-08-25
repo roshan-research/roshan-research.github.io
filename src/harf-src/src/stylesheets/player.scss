@@ -4,7 +4,6 @@
   align-items: center;
   flex-direction: row;
   width: 35vw;
-
 }
 
 #timer-progress {
@@ -29,6 +28,7 @@
   color: #26FF7B;
   position: absolute;
 }
+
 .botón {
   align-items: center;
   display: flex;
@@ -345,4 +345,36 @@
                   57.20925% 42.53029%,
                   56.87342% 42.46916%
   );
+}
+
+
+@media screen  and (max-width: 500px){
+
+  #player-container, #timer-progress, #player-bar {
+    width: 70vw;
+  }
+
+  #timer-progress,.botón {
+    height: 10vw;
+    margin-top: 20vw;
+    margin-bottom: 5vw;
+  }
+
+  .fondo {
+    height: 10vw;
+    width: 10vw;
+  }
+
+  .icono, .parte, .puntero{
+    height: 20vw;
+    width: 20vw;
+  }
+
+  #timer {
+    font-size: 2.5vw;
+  }
+
+  #player-container {
+    margin-right: 6vw;
+  }
 }

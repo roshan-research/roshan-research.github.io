@@ -2,6 +2,7 @@ import React from "react";
 import WaveSurfer from "wavesurfer.js";
 import {useEffect,useRef,useState} from "react";
 import "../../stylesheets/player.scss";
+import { isMobile } from "react-device-detect";
 
 let tempCurrentTime;
 
@@ -34,9 +35,9 @@ const Player = ({music,segments}) => {
             container: waveformRef.current,
             barGap: 1,
             waveColor: ["#8f8f8f","#8f8f8f","#8f8f8f","#d7d7d7"],
-            barHeight: 1,
+            barHeight: isMobile? 0.8 : 1,
             barRadius: 1,
-            barWidth: 4,
+            barWidth: isMobile? 2 : 4,
             responsive: true,
             cursorColor: "transparent",
             progressColor: ["#24806f","#24806f","#34bda3","#3bee95"]

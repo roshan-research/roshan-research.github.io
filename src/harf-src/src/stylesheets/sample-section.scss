@@ -228,10 +228,20 @@ p { margin: 0.8vw}
   }
 
   .sample-container {
-    display: none;
-    width: 85vw;
-    height: 75vw;
-    border-radius: 15px;
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center; 
+    height: fit-content;
+    margin: 0 10vw;
+    border-radius: 20px;
+  }
+
+  #harf-text-container {
+    width: 70vw;
+    font-size: 3.3vw;
+    margin-top: 10vw;
+    height: 10vw;
   }
 
   .sample-row {
@@ -259,6 +269,7 @@ p { margin: 0.8vw}
     white-space: nowrap;
     width: 100vw;
     margin: 0;
+    margin-top: 5vw;
     overflow-y: hidden;
   }
 
@@ -272,7 +283,7 @@ p { margin: 0.8vw}
   }
 
   #sample-section {
-    margin-top: 0vw;
+    margin-top: -45vw;
     width: 100vw;
   }
 
