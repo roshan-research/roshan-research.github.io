@@ -67,7 +67,7 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={this.onSampleClick.bind(this,1)}>
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample text-left-title'}
+                                <p className={'white-title-sample'}
                                    id={this.state.chosenSample === 1 ? 'active-orange-title' : ''}>
                                     گفتار محاوره
                                 </p>

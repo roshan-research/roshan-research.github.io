@@ -166,8 +166,8 @@ p { margin: 0.8vw}
   #sample-section{
     margin-top: 50vh;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     height:65.14084507042254vh;
     width: 80vw;
   }
@@ -175,8 +175,8 @@ p { margin: 0.8vw}
   .white-title-sample{
     color: #26FF7B;
     font-size: 5.1vw;
-    height:8.80281690140845vh;
-    width:40vw;
+    height:auto;
+    width:auto;
     text-align: right;
   }
 
@@ -232,5 +232,57 @@ p { margin: 0.8vw}
 
   .sample-container {
     display: none;
+    width: 85vw;
+    height: 75vw;
+    border-radius: 15px;
+  }
+
+  .sample-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: auto;
+  }
+
+  .button {
+    width: fit-content;
+    margin-top: 0;
+    margin-right: 5vw;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100vw;
+    margin: 0;
+    overflow-y: hidden;
+  }
+
+  .sample {
+    margin-top: 50vh;
+  }
+
+  .white-title-sample, #active-orange-title {
+    text-align: center;
+    z-index: 10000;
+  }
+
+  #sample-section {
+    margin-top: 50vw;
+    width: 100vw;
+  }
+
+  #buttons::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+  }
+
+  #sample {
+    width: 100vw;
   }
 }
