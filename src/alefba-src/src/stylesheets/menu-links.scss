@@ -8,9 +8,9 @@
 }
 
 #menu-contents {
-  padding-right: 2vw;
+  display: flex;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -26,8 +26,11 @@
 
 #company-name {
   margin-top: 50vh;
+  margin-right: 0;
   color: white;
+  font-family: iran-yekan, serif;
   font-size: 0.8vw;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px){
