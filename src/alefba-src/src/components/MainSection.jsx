@@ -73,7 +73,7 @@ const MainSection = () => {
                     نويسه خوان الفبـا
                 </p>
                 <p id={'white-text'}>
-                    (OCR فارسی)تبدیل تصویر به نوشته
+                    (فارسی OCR) تبدیل تصویر به نوشته
                 </p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''}/>
@@ -83,5 +83,6 @@ const MainSection = () => {
         </div>
     )
 }
+
 
 export default MainSection;
