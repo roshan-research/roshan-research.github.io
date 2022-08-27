@@ -48,9 +48,10 @@
   margin-right: -5vw;
 }
 
-.black-util-text{
+.black-util-text {
   direction: rtl;
   color: #FF6200;
+  white-space: nowrap;
   background-color: transparent;
   font-family: iran-yekan, serif;
   font-style: normal;
@@ -61,7 +62,8 @@
   z-index: 1;
 }
 
-.black-util-text-background{
+.black-util-text-background {
+  white-space: nowrap;
   direction: rtl;
   font-family: iran-yekan, serif;
   font-style: normal;
