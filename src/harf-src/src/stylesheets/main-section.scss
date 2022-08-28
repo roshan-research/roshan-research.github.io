@@ -4,7 +4,7 @@
 }
 
 
-#icon-title-group{
+#icon-title-group {
   display: flex;
   flex-direction: row;
   justify-content: center;
@@ -128,9 +128,12 @@
 
 
 @media screen and (max-width: 500px){
-
   #hamburger-button{
     opacity: 1;
+  }
+
+  #papers {
+    overflow-x: hidden;
   }
 
 
@@ -179,11 +182,11 @@
     margin-top:60.45774647887324vh;
     margin-left:16.666666666666664vw;
     height:35.2112676056338vh;
-    width:66.66666666666666vw;
+    width:83.66666666666666vw;
   }
 
   #paper-image{
-    width:100%;
+    width:125%;
   }
 
   #hamburger-icon-group{
