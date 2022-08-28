@@ -47,6 +47,7 @@
 
 .menu {
   background-color: #0A0A0A;
+  margin-top: -1vw;
   z-index: 5;
 }
 
@@ -59,7 +60,6 @@
 
 .my-cross {
   transform: scale(1.2);
-  margin-top: 1vw;
   transition: 0.1s;
   margin-right: 1vw;
 }
