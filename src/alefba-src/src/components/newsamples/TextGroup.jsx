@@ -10,7 +10,8 @@ const TextGroup = ({
                        textAlign = "auto",
                        lineHeight,
                        lineType = "line_bold",
-                       delay = "0s"
+                       delay = "0s",
+                       isRooznameh = false
                    }) => {
     return(
         <div style={{animationPlayState: "inherit"}}>
@@ -26,6 +27,7 @@ const TextGroup = ({
                     textAlign: textAlign,
                     lineHeight: lineHeight,
                     animationDelay: delay,
+                    animationPlayState: isRooznameh? "paused" : "unset"
                 }}
             >
             </span>
