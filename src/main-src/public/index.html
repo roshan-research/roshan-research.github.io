@@ -22,21 +22,25 @@
     <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
     <title>روشن</title>
     <style>
-      @keyframes in {
-        0%{
-          opacity: 0;
+         @keyframes in {
+            0% {
+                opacity: 0;
+            }
+            100% {
+                opacity: 1;
+            }
         }
-        100%{
-          opacity: 1;
+
+        #root {
+            animation-duration: 5s;
+            animation-name: in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-play-state: paused;
         }
-      }
-      #root {
-        animation-duration: 5s;
-        animation-name: in;
-      }
     </style>
   </head>
-  <body style="background-color: #020202;overflow: hidden;">
+  <body style="background-color: #020202;overflow: hidden;" onload="loader()">
     <noscript>You need to enable JavaScript to run this app.</noscript>
     <div id="root"></div>
     <!-- PWA Script -->
@@ -51,6 +55,12 @@
       }
     </script>
   </body>
+  <script type="text/javascript">
+    let rootTag = document.querySelector("#root");
+    function loader() {
+        rootTag.style.animationPlayState = "running";
+    }
+  </script>
   <script type="text/javascript">
     (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
     ;r.type="text/javascript"
