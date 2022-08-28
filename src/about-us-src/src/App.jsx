@@ -1,8 +1,8 @@
 import './App.scss';
 import { Carousel } from 'react-responsive-carousel';
-import pic1 from './assets/images/pic1.jpg';
+import pic3 from './assets/images/pic1.jpg';
 import pic2 from './assets/images/pic2.jpg';
-import pic3 from './assets/images/pic3.jpg';
+import pic1 from './assets/images/pic3.jpg';
 import logo from './assets/images/logo.svg';
 import Footer from "./components/Footer";
 import { slide as Menu } from 'react-burger-menu'
@@ -73,19 +73,13 @@ function App() {
               <img src={logo} id={'logo'} alt={''}/>
               <div id={'texts'}>
                   <p id={'description'}>
-                      <span id={'in-god'}>به نام خداوند جان و خرد</span>
-                      <br/>
-                      <br/>
-                      روﺷــﻦ از ﺳﺎل ۱۳۹۰ ﺑﺎ ﻫﻤﺖ ﺟﻤﻌﯽ از داﻧﺸﺠﻮﯾﺎن داﻧﺸﮕﺎه ﻋﻠﻢ و ﺻﻨﻌﺖ اﯾﺮان ﺷﺮوع ﺑﻪ ﮐﺎر ﻧﻤﻮده اﺳﺖ. اﯾﻦ ﮔﺮوه ﻫﺪف ﺧﻮد را ﺗﻠﺎش در راﺳﺘﺎی ﺗﺤﻘﻖ ﺗﻤﺪن ﻧﻮﯾﻦ اﺳﻠﺎﻣﯽ ﻣﯽ‌داﻧﺪ و در ﻗﺎﻟﺐ ﺷﺮﮐﺖ داﻧﺶ‌ﺑﻨﯿﺎن راﻫﮑﺎر ﭘﺮدازش ژرف ﺑﺮای ﭘﺎﺳﺦ ﺑﻪ ﻧﯿﺎزﻫﺎی ﮐﺸﻮر، ﻣﺤﺼﻮﻟﺎت ﻧﺮم‌اﻓﺰاری اراﺋﻪ می کند.
-                      <br/>
-                      <br/>
-                      محصولات روشن در زمینه ی هوش مصنوعی و یادگیری ماشین، شامل پردازش تصویر، صوت و متن می باشد و مشتریان آن در حوزه های گوناگون خصوصی، دولتی و با زمینه های کاری گوناگون می باشند.
+                    شرکت دانش‌بنیان «راهکار پردازش ژرف» در سال ۱۳۹۵ با تمرکز بر موضوع هوش مصنوعی و با همت گروهی از پژوهشگران و متخصصان جوان، فعالیت خود را آغاز کرد. این شرکت در سال‌های بعد با نام تجاری «روشن» دایرهٔ فعالیت‌هایی خود را گسترش داد و توانست اعتماد بسیاری از کسب‌وکارها و سازمان‌ها را به دست آورد. باعث افتخار است که مجموعه‌هایی نام‌آور و خوش‌نام، محصولات این شرکت را انتخاب کرده‌اند و امید می‌رود که با روی آوردن هرچه بیشتر متخصصان و کسب‌وکارها به فناوری هوش مصنوعی، دامنهٔ خدمت‌رسانی «روشن» بیش از پیش گسترش یابد.
                   </p>
                   <p id={'title'}>
                       مجموعـه ای از استــــعدادهای جــوان و خــلاق
                   </p>
               </div>
-              <div>
+              <div style={{marginTop: "5vw"}}>
                   <Carousel
                       id={'pics'}
                       autoPlay={true}
@@ -100,13 +94,13 @@ function App() {
                       showThumbs={false}
                   >
                       <div>
-                          <img src={pic1} alt={''}/>
+                          <img src={pic3} alt={''}/>
                       </div>
                       <div>
                           <img src={pic2} alt={''}/>
                       </div>
                       <div>
-                          <img src={pic3} alt={''}/>
+                          <img src={pic1} alt={''}/>
                       </div>
                   </Carousel>
                   <Clients/>

@@ -313,7 +313,6 @@ const segmentFixer = (falseSegments) => {
         }
         segments.push(sample);
     }
-    console.log(segments)
     return segments;
 };
 

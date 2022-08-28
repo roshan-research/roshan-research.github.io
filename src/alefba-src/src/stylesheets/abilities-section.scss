@@ -32,9 +32,9 @@
   height:80.55555555555556vh;
   width:99.5vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
 }
 
 #side-main{
@@ -45,22 +45,24 @@
 .ability-group{
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:33vh;
   width:20vw;
 }
 
+//style for titles
 .black-text{
+  white-space: nowrap;
   direction: rtl;
   color: #FF6200;
   transition: 0.1s ease-in-out;
   transform: scaleX(1);
   background-color: transparent;
-  transform-origin: right;
   left: 0;
   font-family: iran-yekan, serif;
   font-style: normal;
+  text-align: right;
   font-weight: bold;
   z-index: 1;
   font-size: 1.1vw;
@@ -68,6 +70,7 @@
 
 .black-text-background{
   direction: rtl;
+  white-space: nowrap;
   color: transparent;
   transition: 1s ease-in-out;
   transform: scaleX(1);

@@ -1,16 +1,20 @@
 #menu-links {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height: 30vh;
   margin-top: 7vw;
 }
 
 #menu-contents {
+  display: flex;
+  /*
+    the next line is there to provide compatiblity with chrome. It has no effect on safari
+  */
   padding-right: 2vw;
   justify-content: center;
-  align-items: center;
+  align-items: flex-end;
   flex-direction: column;
 }
 
@@ -18,6 +22,7 @@
   color: white;
   font-family: iran-yekan, serif;
   font-size: 1.3vw;
+  transition: 1s;
 }
 
 .menu-link:hover {
@@ -26,8 +31,11 @@
 
 #company-name {
   margin-top: 50vh;
+  margin-right: 0;
   color: white;
+  font-family: iran-yekan, serif;
   font-size: 0.8vw;
+  text-align: right;
 }
 
 @media screen and (max-width: 600px){

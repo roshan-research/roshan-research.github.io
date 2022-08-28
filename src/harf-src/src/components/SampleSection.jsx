@@ -21,6 +21,7 @@ class SampleSection extends Component {
     }
 
     voices = [rasmi,mohavereh,telephone,ghadimi,bamusic];
+    titles = ['گفتار رسمی','گفتار محاوره','صحبت تلفنی','قدیمی','گفتار با موسیقی در حال پخش']
 
     constructor(props) {
       super(props);
@@ -52,6 +53,7 @@ class SampleSection extends Component {
                         segments={sampleSegments[this.state.chosenSample]}
                         music={this.voices[this.state.chosenSample]}
                         key={this.state.chosenSample}
+                        title={this.titles[this.state.chosenSample]}
                     />
                     <div style={{width: '20vw'}}/>
                     <div id={'buttons'}>
@@ -67,7 +69,7 @@ class SampleSection extends Component {
                         </div>
                         <div className={'button'} onClick={this.onSampleClick.bind(this,1)}>
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample text-left-title'}
+                                <p className={'white-title-sample'}
                                    id={this.state.chosenSample === 1 ? 'active-orange-title' : ''}>
                                     گفتار محاوره
                                 </p>

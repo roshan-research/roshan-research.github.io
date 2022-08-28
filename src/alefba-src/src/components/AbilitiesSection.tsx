@@ -51,14 +51,14 @@ const AbilitiesSection = () => {
                         <Left1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
                             <p className={'black-text'} style={left1InView? afterStyleText : beforeStyleText}>
-                            تشخیص چند زبان
+                                تشخیص چند زبان
                             </p>
                             <p className={'black-text-background'}  ref={left1Ref} style={left1InView? afterStyle : beforeStyle}>
-                            تشخیص چند زبان
+                                تشخیص چند زبان
                             </p>
                         </div>
                         <p className={'white-text'}>
-                        تشخیص زبان فارسی، انگلیسی و زبان‌های مشابه فارسی، مثل عربی و دری
+                            تشخیص زبان فارسی، انگلیسی و زبان‌های مشابه فارسی، مثل عربی و دری
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'left-2'}>

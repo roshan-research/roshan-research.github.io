@@ -16,9 +16,9 @@
   height:80.55555555555556vh;
   width:99.5vw;
   display: flex;
-  justify-content: start;
+  justify-content: flex-start;
   flex-direction: row;
-  align-items: end;
+  align-items: flex-end;
 }
 
 #side-utils-main{
@@ -48,9 +48,10 @@
   margin-right: -5vw;
 }
 
-.black-util-text{
+.black-util-text {
   direction: rtl;
   color: #FF6200;
+  white-space: nowrap;
   background-color: transparent;
   font-family: iran-yekan, serif;
   font-style: normal;
@@ -61,7 +62,8 @@
   z-index: 1;
 }
 
-.black-util-text-background{
+.black-util-text-background {
+  white-space: nowrap;
   direction: rtl;
   font-family: iran-yekan, serif;
   font-style: normal;
@@ -98,7 +100,7 @@
 .util-row{
   width: 15vw;
   display: flex;
-  justify-content: end;
+  justify-content: flex-end;
   align-items: center;
   flex-direction: row;
 }
@@ -106,7 +108,7 @@
 .util-group{
   display: flex;
   justify-content: center;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height:33vh;
   width:20vw;
@@ -205,7 +207,7 @@
   }
 
   .left-to-right{
-    align-items: start;
+    align-items: flex-start;
     direction: ltr;
     text-align: left;
     float: left;

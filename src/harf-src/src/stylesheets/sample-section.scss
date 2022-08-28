@@ -112,10 +112,13 @@ p { margin: 0.8vw}
 .sample-container {
   display: flex;
   flex-direction: column;
-  justify-content: end;
+  justify-content: space-around;
   align-items: center;
-  background-color: #181818;
+  background-image: url(../assets/images/samples/Pattern.svg);
+  background-color: white;
   width: 43vw;
+  background-repeat: no-repeat;
+  background-size: cover;
   height: 30vw;
   border-radius: 20px;
 }
@@ -124,22 +127,24 @@ p { margin: 0.8vw}
   width: 35vw;
   font-size: 1.2vw;
   text-align: center;
-  height: 10vw;
-  color: white;
+  height: 20vw;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color: black;
   font-family: iran-yekan, serif;
 }
 
-@media screen and (min-width: 500px) {
-  #active-orange-title{
-    background-color: #26FF7B;
-    color: black;
-  }
-
-  #active-orange-description{
-    color: #26FF7B;
-  }
+#active-orange-title{
+  background-color: #26FF7B;
+  color: black;
 }
 
+#active-orange-description{
+  color: #26FF7B;
+}
 
 @media screen  and (max-width: 500px){
   #sample-title{
@@ -166,8 +171,8 @@ p { margin: 0.8vw}
   #sample-section{
     margin-top: 50vh;
     flex-direction: column;
-    justify-content: end;
-    align-items: end;
+    justify-content: flex-end;
+    align-items: flex-end;
     height:65.14084507042254vh;
     width: 80vw;
   }
@@ -175,8 +180,8 @@ p { margin: 0.8vw}
   .white-title-sample{
     color: #26FF7B;
     font-size: 5.1vw;
-    height:8.80281690140845vh;
-    width:40vw;
+    height:auto;
+    width:auto;
     text-align: right;
   }
 
@@ -231,6 +236,71 @@ p { margin: 0.8vw}
   }
 
   .sample-container {
-    display: none;
+    display: flex;
+    width: 80vw;
+    justify-content: space-around;
+    align-items: center; 
+    height: fit-content;
+    margin: 0 10vw;
+    border-radius: 20px;
+  }
+
+  #harf-text-container {
+    width: 70vw;
+    font-size: 3.3vw;
+    margin-top: 10vw;
+    height: 10vw;
+  }
+
+  .sample-row {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: inherit;
+    height: auto;
+  }
+
+  /*
+  this section and the next one provides the horizontall scrolling in mobile
+  */
+  .button {
+    width: fit-content;
+    margin: 0 5vw;
+  }
+
+  #buttons {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: row-reverse;
+    overflow-x: auto;
+    white-space: nowrap;
+    width: 100vw;
+    margin: 0;
+    margin-top: 5vw;
+    overflow-y: hidden;
+  }
+
+  .sample {
+    margin-top: 50vh;
+  }
+
+  .white-title-sample, #active-orange-title {
+    text-align: center;
+    z-index: 10000;
+  }
+
+  #sample-section {
+    margin-top: -45vw;
+    width: 100vw;
+  }
+
+  #buttons::-webkit-scrollbar{
+    width: 0px;
+    height: 0px;
+  }
+
+  #sample {
+    width: 100vw;
   }
 }
