@@ -35,7 +35,7 @@ const Player = ({music,segments,title}) => {
             container: waveformRef.current,
             barGap: 1,
             waveColor: ["#AAAAAA","#AAAAAA","#AAAAAA","#E6E6E6","#E6E6E6"],
-            barHeight: isMobile? 0.8 : 2,
+            barHeight: isMobile? 0.8 : 1.5,
             barRadius: 1,
             barWidth: isMobile? 2 : 4,
             responsive: true,

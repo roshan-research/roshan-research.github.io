@@ -1,13 +1,14 @@
 {
   "files": {
-    "main.css": "/harf/static/css/main.7b70dc79.chunk.css",
-    "main.js": "/harf/static/js/main.63ac53b4.chunk.js",
+    "main.css": "/harf/static/css/main.40d8142f.chunk.css",
+    "main.js": "/harf/static/js/main.2b00d16b.chunk.js",
     "runtime-main.js": "/harf/static/js/runtime-main.4ac9a610.js",
     "static/js/2.98c08d8f.chunk.js": "/harf/static/js/2.98c08d8f.chunk.js",
     "static/js/3.9ee94fc8.chunk.js": "/harf/static/js/3.9ee94fc8.chunk.js",
     "index.html": "/harf/index.html",
     "static/js/2.98c08d8f.chunk.js.LICENSE.txt": "/harf/static/js/2.98c08d8f.chunk.js.LICENSE.txt",
     "static/media/abilities-section.scss": "/harf/static/media/IRANYekan.b916444e.ttf",
+    "static/media/sample-section.scss": "/harf/static/media/Pattern.460c5410.svg",
     "static/media/accuracy-mobile.6bbbe743.svg": "/harf/static/media/accuracy-mobile.6bbbe743.svg",
     "static/media/archive.39a61215.png": "/harf/static/media/archive.39a61215.png",
     "static/media/bamusic.524fc363.mp3": "/harf/static/media/bamusic.524fc363.mp3",
@@ -45,7 +46,7 @@
   "entrypoints": [
     "static/js/runtime-main.4ac9a610.js",
     "static/js/2.98c08d8f.chunk.js",
-    "static/css/main.7b70dc79.chunk.css",
-    "static/js/main.63ac53b4.chunk.js"
+    "static/css/main.40d8142f.chunk.css",
+    "static/js/main.2b00d16b.chunk.js"
   ]
 }
