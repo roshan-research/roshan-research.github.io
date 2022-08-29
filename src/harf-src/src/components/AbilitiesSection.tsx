@@ -42,6 +42,15 @@ const AbilitiesSection = () => {
                             >
                                 نمایش خطاهای احتمالی
                             </p>
+
+                            <p 
+                                className={left1InView? "black-text-background in-view-bg" : 
+                                "black-text-background"}
+                                ref={left1Ref}
+                                data-title={"نمایش خطاهای احتمالی"}
+                            >
+                                نمایش خطاهای احتمالی
+                            </p>
                         </div>
                         <p className={'white-text'}>
                             مشخص کردن بخش‌هایی از خروجی که با تردید نوشته شده‌اند برای بازنگری توسط انسان

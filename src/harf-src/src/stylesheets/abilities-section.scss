@@ -88,16 +88,45 @@
   transition: width 1s linear;
 }
 
-.black-text:hover::before {
+.in-view::before {
   width: 100%;
 }
 
-// .in-view {
-//   box-shadow: inset -300px 0 0 0 #26FF7B;
-// }
+.black-text-background{
+  direction: rtl;
+  color: transparent;
+  transition: 1s linear;
+  background-color: black;
+  transform-origin: right;
+  z-index: 1;
+  position: absolute;
+  top: 0;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 1.1vw;
+}
 
-.black-text:hover {
-  box-shadow: inset -205px 0 0 0 #26FF7B;
+
+.black-text-background::before{
+  direction: rtl;
+  white-space: nowrap;
+  content: attr(data-title);
+  color: transparent;
+  transition: 1s linear;
+  background-color: #26FF7B;
+  transform-origin: right;
+  position: absolute;
+  top: 0;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  width: 0;
+  font-size: 1.1vw;
+}
+
+.in-view-bg::before {
+  width: 100%;
 }
 
 .title-stack{
