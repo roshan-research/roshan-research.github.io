@@ -187,12 +187,10 @@
     width:72.22222222222221vw;
   }
 
-  .black-text{
+  .black-text, .black-text-background,
+  .black-text::before, .black-text-background::before
+  {
     font-size: 4.1vw;
-  }
-
-  .black-text-background{
-      font-size: 4.1vw;
   }
 
   .white-text{
