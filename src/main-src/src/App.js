@@ -1,15 +1,15 @@
-import React, {Component, lazy, Suspense} from 'react';
-import {Fullpage,Slide} from 'fullpage-react';
+import React, { Component, lazy, Suspense } from 'react';
+import { Fullpage, Slide } from 'fullpage-react';
 import './App.scss';
-import {isOpera, isSafari} from "react-device-detect";
-import {loadingAnimation} from "./animations/main-page";
+import { isOpera, isSafari } from 'react-device-detect';
+import { loadingAnimation } from './animations/main-page';
 import { slide as Menu } from 'react-burger-menu';
-import {motion} from 'framer-motion'
-import ProgressIndicator from "./components/ProgressIndicator";
-import MenuLinks from "./components/MenuLinks";
+import { motion } from 'framer-motion';
+import ProgressIndicator from './components/ProgressIndicator';
+import MenuLinks from './components/MenuLinks';
 import burgerIcon from './assets/images/menu-icon.svg';
 import closeIcon from './assets/images/close-icon.svg';
-import ToTopButton from "./components/slides/footer/ToTopButton";
+import ToTopButton from './components/slides/footer/ToTopButton';
 
 const Footer = lazy(() => import('./components/slides/footer/footer'));
 const Header = lazy(() => import('./components/header/Header'));
@@ -19,7 +19,7 @@ const Harf = lazy(() => import('./components/slides/harf/Harf'));
 const Hazm = lazy(() => import('./components/slides/hazm/hazm'));
 const Customers = lazy(() => import('./components/slides/clients/Clients'));
 
-const { changeFullpageSlide} = Fullpage;
+const { changeFullpageSlide } = Fullpage;
 const goToCustomers = changeFullpageSlide.bind(null, 5);
 
 let isFooterOpen = false;
@@ -30,8 +30,8 @@ const scrollToFooter = () => {
     window.scrollTo({
         top: totalHeight,
         behavior: 'smooth',
-    })
-}
+    });
+};
 
 class RoshanWebsite extends Component {
     constructor(props) {
@@ -39,53 +39,50 @@ class RoshanWebsite extends Component {
         this.onSlideChangeStart = this.onSlideChangeStart.bind(this);
     }
     state = {
-        fake:false,
+        fake: false,
         scrollsQuantity: 0,
+        showToTopButton: false,
         id: 'hide',
-        handleSwipe: () => {}
-    }
+        handleSwipe: () => {},
+    };
 
-    toggleFooter(event){
-        if(event.keyCode === 38 && isFooterOpen){
+    toggleFooter(event) {
+        if (event.keyCode === 38 && isFooterOpen) {
             isFooterOpen = false;
             setTimeout(() => {
                 goToCustomers();
-            },1000);
-        } else if(event.keyCode === 40){
+            }, 1000);
+        } else if (event.keyCode === 40) {
             scrollToFooter();
             isFooterOpen = true;
         }
     }
 
-    onSlideChangeStart = (name,props,state,newState) => {
+    onSlideChangeStart = (name, props, state, newState) => {
         const shouldAdd = newState.activeSlide === 5;
-        if(shouldAdd) {
-            document.addEventListener("keydown", this.toggleFooter);
+        if (shouldAdd) {
+            document.addEventListener('keydown', this.toggleFooter);
         } else {
-            document.removeEventListener("keydown",this.toggleFooter);
+            document.removeEventListener('keydown', this.toggleFooter);
         }
         this.setState({
             fake: !this.state.fake,
             scrollsQuantity: this.state.scrollsQuantity + 1,
+            showToTopButton: newState.activeSlide !== 0,
         });
     };
 
     componentDidMount() {
         this.setState({
-            id: 'show'
-        })
+            id: 'show',
+        });
     }
 
     shouldHaveFooter(shouldHave) {
         if (shouldHave) {
-            return(
-                <Footer/>
-            )
+            return <Footer />;
         } else {
-            return (
-                <>
-                </>
-            )
+            return <></>;
         }
     }
 
@@ -100,30 +97,49 @@ class RoshanWebsite extends Component {
 
         fullPageOptions.slides = [
             <Slide>
-                <Header type={'main'} key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Header
+                    type={'main'}
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
             <Slide>
-                <Kashf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Kashf
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
             <Slide>
-                <Alefba key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Alefba
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
             <Slide>
-                <Harf key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Harf
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
             <Slide>
-                <Hazm key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Hazm
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
             <Slide>
-                <Customers key={this.state.fake} scrollQuantity={this.state.scrollsQuantity}/>
+                <Customers
+                    key={this.state.fake}
+                    scrollQuantity={this.state.scrollsQuantity}
+                />
             </Slide>,
         ];
 
         return (
-            <Suspense fallback={<ProgressIndicator/>}>
+            <Suspense fallback={<ProgressIndicator />}>
                 <motion.div
                     id={'main'}
-                    style={!isSafari && !isOpera ? {} : {height: '100vh'}}
+                    style={!isSafari && !isOpera ? {} : { height: '100vh' }}
                     initial={loadingAnimation.initial}
                     animate={loadingAnimation.animate}
                     transition={loadingAnimation.transition}
@@ -131,25 +147,23 @@ class RoshanWebsite extends Component {
                 >
                     <div id={'all-page'}>
                         <Menu
-                            menuClassName={ "menu" }
+                            menuClassName={'menu'}
                             itemListElement="div"
-                            burgerButtonClassName={ "my-button" }
-                            pageWrapId={ "all-page" }
-                            itemListClassName={ "menu-items" }
-                            crossButtonClassName={ "my-cross" }
-                            outerContainerId={ "main" }
-                            customBurgerIcon={
-                                <img src={burgerIcon} alt={''}/>
-                            }
+                            burgerButtonClassName={'my-button'}
+                            pageWrapId={'all-page'}
+                            itemListClassName={'menu-items'}
+                            crossButtonClassName={'my-cross'}
+                            outerContainerId={'main'}
+                            customBurgerIcon={<img src={burgerIcon} alt={''} />}
                             customCrossIcon={
                                 <div>
-                                    <img src={closeIcon} alt={''}/>
+                                    <img src={closeIcon} alt={''} />
                                 </div>
                             }
                         >
-                            <MenuLinks/>
+                            <MenuLinks />
                         </Menu>
-                        <ToTopButton/>
+                        {this.state.showToTopButton && <ToTopButton />}
                         <Fullpage
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}
@@ -158,7 +172,7 @@ class RoshanWebsite extends Component {
                     </div>
                 </motion.div>
             </Suspense>
-        )
+        );
     }
 }
 
