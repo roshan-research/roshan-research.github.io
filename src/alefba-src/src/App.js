@@ -35,6 +35,7 @@ function App() {
           </Menu>
           <div className={'alefba'}>
               <MainSection/>
+              <div id={'main-abilities-space'}/>
               <AbilitiesSection/>
               <div id={'abilities-usage-space'}/>
               <UsagesSection/>

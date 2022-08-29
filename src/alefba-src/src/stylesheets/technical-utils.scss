@@ -48,36 +48,82 @@
   margin-right: -5vw;
 }
 
-.black-util-text {
+.black-util-text{
   direction: rtl;
-  color: #FF6200;
   white-space: nowrap;
-  background-color: transparent;
+  background-color: #FF6200;
+  color: transparent;
+  transition: box-shadow 1s linear;
+  left: 0;
   font-family: iran-yekan, serif;
-  font-style: normal;
   font-weight: bold;
+  z-index: 3;
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0 #FF6200;
   font-size: 1.1vw;
-  transition: 0.1s ease-in-out;
-  transform: scaleX(1);
-  z-index: 1;
+  position: relative;
+  background-clip: text;
 }
 
-.black-util-text-background {
-  white-space: nowrap;
+.black-util-text::before {
   direction: rtl;
+  white-space: nowrap;
+  font-family: iran-yekan, serif;
+  font-weight: bold;
+  font-size: 1.1vw;
+  content: attr(data-title);
+  background: black;
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  color: transparent;
+  background-clip: text;
+  left: 0;
+  right: 0;
+  transition: width 1.5s linear;
+}
+
+.util-in-view::before {
+  width: 100%;
+}
+
+.black-util-text-background{
+  direction: rtl;
+  color: transparent;
+  transition: 1s linear;
+  background-color: black;
+  transform-origin: right;
+  z-index: 1;
+  position: absolute;
+  top: 0;
   font-family: iran-yekan, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.1vw;
+}
+
+
+.black-util-text-background::before{
+  direction: rtl;
+  white-space: nowrap;
+  content: attr(data-title);
   color: transparent;
-  transition: 1s ease-in-out;
-  transform: scaleX(1);
+  transition: 1.5s linear;
   background-color: #FF6200;
   transform-origin: right;
-  z-index: -1;
   position: absolute;
   top: 0;
-  left: 0;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  width: 0;
+  font-size: 1.1vw;
+}
+
+.util-in-view-bg::before {
+  width: 100%;
 }
 
 .title-stack-utils{
@@ -93,6 +139,7 @@
   font-family: iran-yekan, serif;
   font-style: normal;
   font-weight: normal;
+  margin-top: -0.25vw;
   font-size: 1vw;
 }
 
@@ -184,10 +231,10 @@
     width:77.77777777777779vw;
   }
 
-  .black-util-text,.black-util-text-background{
+  .black-util-text,.black-util-text-background,
+  .black-util-text::before,.black-util-text-background::before
+  {
     font-size: 5vw;
-    margin-right: -1vw;
-    margin-bottom: 3vh;
   }
 
   .white-util-text{

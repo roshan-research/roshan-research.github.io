@@ -15,26 +15,10 @@ const AbilitiesSection = () => {
         triggerOnce: true
     };
 
-    const beforeStyle = {
-        transform: 'scaleX(0)'
-    };
-    const afterStyle = {
-        transform: 'scaleX(1)'
-    };
-
-    const beforeStyleText = {
-        color: '#26FF7B'
-    };
-    const afterStyleText = {
-        color: 'black'
-    };
-
     const [right1Ref,right1InView] = useInView(observerOptions);
     const [right2Ref,right2InView] = useInView(observerOptions);
-    const [right3Ref,right3InView] = useInView(observerOptions);
     const [left1Ref,left1InView] = useInView(observerOptions);
     const [left2Ref,left2InView] = useInView(observerOptions);
-    const [left3Ref,left3InView] = useInView(observerOptions);
 
     return(
         <div id={'abilities'}>
@@ -51,10 +35,19 @@ const AbilitiesSection = () => {
                     <div className={'ability-group'} id={'left-1'}>
                         <Left1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
-                            <p className={'black-text'} style={left1InView? afterStyleText : beforeStyleText}>
+                            <p 
+                                className={left1InView? "black-text in-view" : "black-text"}
+                                ref={left1Ref}
+                                data-title={"نمایش خطاهای احتمالی"}
+                            >
                                 نمایش خطاهای احتمالی
                             </p>
-                            <p className={'black-text-background'}  ref={left1Ref} style={left1InView? afterStyle : beforeStyle}>
+                            <p 
+                                className={left1InView? "black-text-background in-view-bg" : 
+                                "black-text-background"}
+                                ref={left1Ref}
+                                data-title={"نمایش خطاهای احتمالی"}
+                            >
                                 نمایش خطاهای احتمالی
                             </p>
                         </div>
@@ -65,10 +58,18 @@ const AbilitiesSection = () => {
                     <div className={'ability-group on-left'} id={'left-2'}>
                         <Left2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
-                            <p className={'black-text'} style={left2InView? afterStyleText : beforeStyleText}>
+                            <p 
+                                className={left2InView? "black-text in-view" : "black-text"}
+                                ref={left2Ref}
+                                data-title={"امکان شخصی‌سازی"}
+                            >
                                 امکان شخصی‌سازی
                             </p>
-                            <p className={'black-text-background'}  ref={left2Ref} style={left2InView? afterStyle : beforeStyle}>
+                            <p 
+                                className={left2InView? "black-text-background in-view-bg" : "black-text-background"}
+                                ref={left2Ref}
+                                data-title={"امکان شخصی‌سازی"}
+                            >
                                 امکان شخصی‌سازی
                             </p>
                         </div>
@@ -81,10 +82,18 @@ const AbilitiesSection = () => {
                     <div className={'ability-group'} id={'right-1'}>
                         <Right1 className={'ability-icon'}/>
                         <div className={'title-stack'}>
-                            <p className={'black-text'} style={right1InView? afterStyleText : beforeStyleText}>
+                            <p 
+                                className={right1InView? "black-text in-view":"black-text"}
+                                ref={right1Ref}
+                                data-title={"فهم گفتار محاوره"}
+                            >
                                 فهم گفتار محاوره
                             </p>
-                            <p className={'black-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
+                            <p 
+                                className={right1InView? "black-text-background in-view-bg":"black-text-background"}
+                                ref={right1Ref}
+                                data-title={"فهم گفتار محاوره"}
+                            >
                                 فهم گفتار محاوره
                             </p>
                         </div>
@@ -95,10 +104,18 @@ const AbilitiesSection = () => {
                     <div className={'ability-group on-left'} id={'right-2'}>
                         <Right2 className={'ability-icon'}/>
                         <div className={'title-stack'}>
-                            <p className={'black-text'} style={right2InView? afterStyleText : beforeStyleText}>
+                            <p
+                                className={right2InView? "black-text in-view":"black-text"}
+                                ref={right2Ref}
+                                data-title={"تحلیل برخط"}
+                            >
                                 تحلیل برخط
                             </p>
-                            <p className={'black-text-background'} ref={right2Ref} style={right2InView? afterStyle : beforeStyle}>
+                            <p
+                                className={right2InView? "black-text-background in-view-bg":"black-text-background"}
+                                ref={right2Ref}
+                                data-title={"تحلیل برخط"}
+                            >
                                 تحلیل برخط
                             </p>
                         </div>

@@ -53,34 +53,80 @@
 
 .black-text{
   direction: rtl;
-  color: #26FF7B;
-  transition: 0.1s ease-in-out;
-  transform: scaleX(1);
-  background-color: transparent;
-  transform-origin: right;
+  white-space: nowrap;
+  background-color: #26FF7B;
+  color: transparent;
+  transition: box-shadow 1s linear;
   left: 0;
   font-family: iran-yekan, serif;
-  font-style: normal;
   font-weight: bold;
-  z-index: 1;
+  z-index: 3;
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0 #26FF7B;
   font-size: 1.1vw;
+  position: relative;
+  background-clip: text;
+}
+
+.black-text::before {
+  direction: rtl;
+  white-space: nowrap;
+  font-family: iran-yekan, serif;
+  font-weight: bold;
+  font-size: 1.1vw;
+  content: attr(data-title);
+  background: black;
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  color: transparent;
+  background-clip: text;
+  left: 0;
+  right: 0;
+  transition: width 1.5s linear;
+}
+
+.in-view::before {
+  width: 100%;
 }
 
 .black-text-background{
   direction: rtl;
   color: transparent;
-  transition: 1s ease-in-out;
-  transform: scaleX(1);
-  background-color: #26FF7B;
+  transition: 1s linear;
+  background-color: black;
   transform-origin: right;
-  z-index: -1;
+  z-index: 1;
   position: absolute;
   top: 0;
-  left: 0;
   font-family: iran-yekan, serif;
   font-style: normal;
   font-weight: bold;
   font-size: 1.1vw;
+}
+
+
+.black-text-background::before{
+  direction: rtl;
+  white-space: nowrap;
+  content: attr(data-title);
+  color: transparent;
+  transition: 1.5s linear;
+  background-color: #26FF7B;
+  transform-origin: right;
+  position: absolute;
+  top: 0;
+  font-family: iran-yekan, serif;
+  font-style: normal;
+  font-weight: bold;
+  width: 0;
+  font-size: 1.1vw;
+}
+
+.in-view-bg::before {
+  width: 100%;
 }
 
 .title-stack{
@@ -96,6 +142,7 @@
   font-style: normal;
   font-weight: normal;
   font-size: 1vw;
+  margin-top: -0.25vw;
   width: 19vw;
 }
 
@@ -140,12 +187,10 @@
     width:72.22222222222221vw;
   }
 
-  .black-text{
+  .black-text, .black-text-background,
+  .black-text::before, .black-text-background::before
+  {
     font-size: 4.1vw;
-  }
-
-  .black-text-background{
-      font-size: 4.1vw;
   }
 
   .white-text{
