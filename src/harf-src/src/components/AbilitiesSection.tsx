@@ -66,6 +66,13 @@ const AbilitiesSection = () => {
                             >
                                 امکان شخصی‌سازی
                             </p>
+                            <p 
+                                className={left2InView? "black-text-background in-view-bg" : "black-text-background"}
+                                ref={left2Ref}
+                                data-title={"امکان شخصی‌سازی"}
+                            >
+                                امکان شخصی‌سازی
+                            </p>
                         </div>
                         <p className={'white-text'}>
                             افزایش دقت تبدیل از طریق آموزش سیستم با انبوهِ داده‌های خام به درخواست مشتری
@@ -83,6 +90,13 @@ const AbilitiesSection = () => {
                             >
                                 فهم گفتار محاوره
                             </p>
+                            <p 
+                                className={right1InView? "black-text-background in-view-bg":"black-text-background"}
+                                ref={right1Ref}
+                                data-title={"فهم گفتار محاوره"}
+                            >
+                                فهم گفتار محاوره
+                            </p>
                         </div>
                         <p className={'white-text'}>
                             تبدیل گفتار محاوره‌ای به متن محاوره‌ای
@@ -93,6 +107,13 @@ const AbilitiesSection = () => {
                         <div className={'title-stack'}>
                             <p
                                 className={right2InView? "black-text in-view":"black-text"}
+                                ref={right2Ref}
+                                data-title={"تحلیل برخط"}
+                            >
+                                تحلیل برخط
+                            </p>
+                            <p
+                                className={right2InView? "black-text-background in-view-bg":"black-text-background"}
                                 ref={right2Ref}
                                 data-title={"تحلیل برخط"}
                             >

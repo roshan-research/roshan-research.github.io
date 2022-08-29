@@ -85,7 +85,7 @@
   background-clip: text;
   left: 0;
   right: 0;
-  transition: width 1s linear;
+  transition: width 1.5s linear;
 }
 
 .in-view::before {
@@ -113,7 +113,7 @@
   white-space: nowrap;
   content: attr(data-title);
   color: transparent;
-  transition: 1s linear;
+  transition: 1.5s linear;
   background-color: #26FF7B;
   transform-origin: right;
   position: absolute;
