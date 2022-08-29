@@ -22,20 +22,6 @@ const TechnicalUtils = () => {
     const [left1Ref,left1InView] = useInView(observerOptions);
     const [left2Ref,left2InView] = useInView(observerOptions);
 
-    const beforeStyle = {
-        transform: 'scaleX(0)'
-    };
-    const afterStyle = {
-        transform: 'scaleX(1)'
-    };
-
-    const beforeStyleText = {
-        color: '#26FF7B'
-    };
-    const afterStyleText = {
-        color: 'black'
-    };
-
     return(
         <div id={'tech-utils'}>
             <p id={'utils-title'}>
@@ -48,10 +34,17 @@ const TechnicalUtils = () => {
                         <Accuracy id={'accuracy'}/>
                         <div className={'util-row'}>
                             <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={left1InView? afterStyleText : beforeStyleText}>
+                                <p 
+                                    className={left1InView? "black-util-text util-in-view" : "black-util-text"}
+                                    ref={left1Ref}
+                                    data-title={"دقت و سرعت"}
+                                >
                                     دقت و سرعت
                                 </p>
-                                <p className={'black-util-text-background'} ref={left1Ref} style={left1InView? afterStyle : beforeStyle}>
+                                <p 
+                                    className={left1InView? "black-util-text-background util-in-view-bg" : "black-util-text-background"}
+                                    data-title={"دقت و سرعت"}
+                                >
                                     دقت و سرعت
                                 </p>
                             </div>
@@ -66,10 +59,17 @@ const TechnicalUtils = () => {
                         <NLP id={'nlp'}/>
                         <div className={'util-row left-to-right-row1'}>
                             <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={right1InView? afterStyleText : beforeStyleText}>
+                                <p 
+                                    className={right1InView? "black-util-text util-in-view" : "black-util-text"}
+                                    ref={right1Ref}
+                                    data-title={"فهم زبان فارسی"}
+                                >
                                     فهم زبان فارسی
                                 </p>
-                                <p className={'black-util-text-background'} ref={right1Ref} style={right1InView? afterStyle : beforeStyle}>
+                                <p 
+                                    className={right1InView? "black-util-text-background util-in-view-bg" : "black-util-text-background"}
+                                    data-title={"فهم زبان فارسی"}
+                                >
                                     فهم زبان فارسی
                                 </p>
                             </div>
@@ -86,10 +86,17 @@ const TechnicalUtils = () => {
                         <Parallel id={'parallel'}/>
                         <div className={'util-row'}>
                             <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={left2InView? afterStyleText : beforeStyleText}>
+                                <p 
+                                    className={left2InView? "black-util-text util-in-view" : "black-util-text"}
+                                    ref={left2Ref}
+                                    data-title={"پردازش موازی"}
+                                >
                                     پردازش موازی
                                 </p>
-                                <p className={'black-util-text-background'} ref={left2Ref} style={left2InView? afterStyle : beforeStyle}>
+                                <p 
+                                    className={left2InView? "black-util-text-background util-in-view-bg" : "black-util-text-background"}
+                                    data-title={"پردازش موازی"}
+                                >
                                     پردازش موازی
                                 </p>
                             </div>
@@ -104,10 +111,17 @@ const TechnicalUtils = () => {
                         <Deep id={'deep'}/>
                         <div className={'util-row left-to-right-row2'}>
                             <div className={'title-stack-utils'}>
-                                <p className={'black-util-text'} style={right2InView? afterStyleText : beforeStyleText}>
+                                <p 
+                                    className={right2InView? "black-util-text util-in-view" : "black-util-text"}
+                                    ref={right2Ref}
+                                    data-title={"یادگیری عمیق"}
+                                >
                                     یادگیری عمیق
                                 </p>
-                                <p className={'black-util-text-background'} ref={right2Ref} style={right2InView? afterStyle : beforeStyle}>
+                                <p 
+                                    className={right2InView? "black-util-text-background util-in-view-bg" : "black-util-text-background"}
+                                    data-title={"یادگیری عمیق"}
+                                >
                                     یادگیری عمیق
                                 </p>
                             </div>

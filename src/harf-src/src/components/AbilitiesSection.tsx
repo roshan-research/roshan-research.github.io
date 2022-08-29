@@ -42,7 +42,6 @@ const AbilitiesSection = () => {
                             >
                                 نمایش خطاهای احتمالی
                             </p>
-
                             <p 
                                 className={left1InView? "black-text-background in-view-bg" : 
                                 "black-text-background"}
