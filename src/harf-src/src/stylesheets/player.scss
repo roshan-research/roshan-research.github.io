@@ -357,12 +357,18 @@
   display: flex;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 500px) {
+
+  #audio-title {
+    white-space: nowrap;
+    font-size: 4.2vw;
+  }
+
   #player-container, #timer-progress, #player-bar {
     width: 70vw;
   }
 
-  #timer-progress,.botón {
+  #timer-progress {
     height: 10vw;
     margin-top: 20vw;
     margin-bottom: 5vw;
