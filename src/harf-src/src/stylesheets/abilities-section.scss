@@ -53,34 +53,51 @@
 
 .black-text{
   direction: rtl;
-  color: #26FF7B;
-  transition: 0.1s ease-in-out;
-  transform: scaleX(1);
-  background-color: transparent;
-  transform-origin: right;
+  white-space: nowrap;
+  background-color: #26FF7B;
+  color: transparent;
+  transition: box-shadow 1s linear;
   left: 0;
   font-family: iran-yekan, serif;
-  font-style: normal;
   font-weight: bold;
-  z-index: 1;
+  z-index: 3;
+  width: fit-content;
+  overflow: hidden;
+  box-shadow: inset 0 0 0 0 #26FF7B;
   font-size: 1.1vw;
+  position: relative;
+  background-clip: text;
 }
 
-.black-text-background{
+.black-text::before {
   direction: rtl;
-  color: transparent;
-  transition: 1s ease-in-out;
-  transform: scaleX(1);
-  background-color: #26FF7B;
-  transform-origin: right;
-  z-index: -1;
-  position: absolute;
-  top: 0;
-  left: 0;
+  white-space: nowrap;
   font-family: iran-yekan, serif;
-  font-style: normal;
   font-weight: bold;
   font-size: 1.1vw;
+  content: attr(data-title);
+  background: black;
+  position: absolute;
+  width: 0;
+  top: 0;
+  bottom: 0;
+  color: transparent;
+  background-clip: text;
+  left: 0;
+  right: 0;
+  transition: width 1s linear;
+}
+
+.black-text:hover::before {
+  width: 100%;
+}
+
+// .in-view {
+//   box-shadow: inset -300px 0 0 0 #26FF7B;
+// }
+
+.black-text:hover {
+  box-shadow: inset -205px 0 0 0 #26FF7B;
 }
 
 .title-stack{
