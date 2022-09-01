@@ -1,4 +1,4 @@
-$transitions-duration: 3s;
+$transitions-duration: 5s;
 
 @keyframes moveText {
     0% {
@@ -62,7 +62,7 @@ $transitions-duration: 3s;
     height: 100%;
     direction: rtl;
     overflow: hidden;
-    animation: moveText $transitions-duration linear;
+    animation: moveText $transitions-duration ease-out;
     -webkit-animation: moveText $transitions-duration;
     animation-delay: inherit;
     line-height: 1;
@@ -70,7 +70,7 @@ $transitions-duration: 3s;
 }
 
 #bg-orange {
-    animation: moveBg $transitions-duration linear;
+    animation: moveBg $transitions-duration ease-out;
     -webkit-animation: moveBg $transitions-duration;
     animation-fill-mode: forwards;
     animation-delay: inherit;
