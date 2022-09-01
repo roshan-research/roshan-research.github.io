@@ -8,7 +8,7 @@
 
 #timer-progress {
   display: flex;
-  justify-content: end;
+  justify-content: space-between;
   align-items: center;
   flex-direction: row;
   width: 40vw;
@@ -19,7 +19,16 @@
   width: 40vw;
 }
 
-#timer {
+#time-left{
+  margin-left: 38.5vw;
+  color: #AAAAAA;
+}
+
+#time-elapsed {
+  color: #26FF7B;
+}
+
+.timer {
   font-family: iran-yekan, serif;
   z-index: 100;
   font-size: 0.9vw;
@@ -384,11 +393,15 @@
     width: 20vw;
   }
 
-  #timer {
+  .timer {
     font-size: 2.5vw;
   }
 
   #player-container {
     margin-right: 6vw;
+  }
+
+  #time-left {
+    margin-left: 65vw;
   }
 }
