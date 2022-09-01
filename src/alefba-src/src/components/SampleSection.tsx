@@ -170,7 +170,7 @@ class SampleSection extends Component {
                 <p id={'sample-title'}>
                     نمونه‌های الفبا
                 </p>
-                <div style={{height: '10vw'}}/>
+                <div style={{height: '6.6vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
                         {whichSample()}
