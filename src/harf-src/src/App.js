@@ -13,7 +13,7 @@ import MenuLinks from "./components/MenuLinks";
 
 function App() {
   return (
-      <div id={'all-other'}>
+      <div id={'all-other'} style={{marginTop: "-22px"}}>
           <Menu
               menuClassName={ "menu" }
               itemListElement="div"
