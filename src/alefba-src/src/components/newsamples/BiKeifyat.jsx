@@ -59,7 +59,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"3s"}
+                            delay={"1s"}
                             fontSize={`${0.04134029590948651 * width}px`}
                             text="- یتعرف الی بعض الکواشف (محلول قشر الفجل، محلول الملفوف البنفسجي،"
                             left={`${0.07397737162750218 * width}px`}
@@ -69,7 +69,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"6s"}
+                            delay={"1.5s"}
                             fontSize={`${0.038199007832898174 * width}px`}
                             text="محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي."
                             left={`${0.12619669277632725 * width}px`}
@@ -79,7 +79,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"9s"}
+                            delay={"2s"}
                             fontSize={`${0.0400544908616188 * width}px`}
                             text="- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام أحد الکواشف."
                             left={`${0.11314186248912098 * width}px`}
@@ -89,7 +89,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"12s"}
+                            delay={"2s"}
                             fontSize={`${0.039559007832898174 * width}px`}
                             text="یعطي أمثلة عن بعض الأملاح الشائعة."
                             left={`${0.5091383812010444 * width}px`}
@@ -99,7 +99,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"15s"}
+                            delay={"3.5s"}
                             fontSize={`${0.04134029590948651 * width}px`}
                             text="- یعطي أمثلة عن التفاعل الکیمیائي: الاحتراق، تکون الصدأ، تفاعل الحمض مع"
                             left={`${0.05221932114882506 * width}px`}
@@ -109,7 +109,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"18s"}
+                            delay={"4s"}
                             fontSize={`${0.039859007832898174 * width}px`}
                             text="مواد کلسیة ومع بعض الفلزات."
                             left={`${0.587467362924282 * width}px`}
@@ -119,7 +119,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"21s"}
+                            delay={"5s"}
                             fontSize={`${0.038859007832898174 * width}px`}
                             text="- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة."
                             left={`${0.14795474325500435 * width}px`}

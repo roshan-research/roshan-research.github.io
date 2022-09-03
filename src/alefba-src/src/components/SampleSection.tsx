@@ -43,42 +43,42 @@ class SampleSection extends Component {
         this.tahrir = React.createRef();
         this.bikeifyat = React.createRef();
 
-        window.setInterval(() => {
-            let randomNumber:number = Math.floor((Math.random() * 6) + 1);
-            switch(randomNumber) {
-                case 1:
-                    this.setState({
-                        chosenSample: Sample.KartMelli,
-                    })
-                    break;
-                case 2:
-                    this.setState({
-                        chosenSample: Sample.Fish,
-                    })
-                    break;
-                case 3:
-                    this.setState({
-                        chosenSample: Sample.Charkhesh,
-                    })
-                    break;
-                case 4:
-                    this.setState({
-                        chosenSample: Sample.RoozNameh,
-                    })
-                    break;
-                case 5:
-                    this.setState({
-                        chosenSample: Sample.Tahrir,
-                    })
-                    break;
-                case 6:
-                    this.setState({
-                        chosenSample: Sample.BiKeifyat,
-                    })
-                    break;
-            }
+        // window.setInterval(() => {
+        //     let randomNumber:number = Math.floor((Math.random() * 6) + 1);
+        //     switch(randomNumber) {
+        //         case 1:
+        //             this.setState({
+        //                 chosenSample: Sample.KartMelli,
+        //             })
+        //             break;
+        //         case 2:
+        //             this.setState({
+        //                 chosenSample: Sample.Fish,
+        //             })
+        //             break;
+        //         case 3:
+        //             this.setState({
+        //                 chosenSample: Sample.Charkhesh,
+        //             })
+        //             break;
+        //         case 4:
+        //             this.setState({
+        //                 chosenSample: Sample.RoozNameh,
+        //             })
+        //             break;
+        //         case 5:
+        //             this.setState({
+        //                 chosenSample: Sample.Tahrir,
+        //             })
+        //             break;
+        //         case 6:
+        //             this.setState({
+        //                 chosenSample: Sample.BiKeifyat,
+        //             })
+        //             break;
+        //     }
 
-        },25000);
+        // },25000);
     }
 
     onSampleClick = (sampleName: Sample) => {
@@ -170,7 +170,7 @@ class SampleSection extends Component {
                 <p id={'sample-title'}>
                     نمونه‌های الفبا
                 </p>
-                <div style={{height: '10vw'}}/>
+                <div style={{height: '6.6vw'}}/>
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>
                         {whichSample()}

@@ -29,7 +29,6 @@ const UsagesSection = () => {
             <p id={'usages-title'}>
                 کاربردهای حرف
             </p>
-            <div id={'space-4'}/>
             <div id={'usages-section'}>
                 <div id={'space-1'}/>
                 <div id={'in-businesses'} ref={businessesRef} style={businessesInView? afterFade : beforeFade}>
