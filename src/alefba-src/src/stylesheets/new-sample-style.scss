@@ -62,16 +62,16 @@ $transitions-duration: 3s;
     height: 100%;
     direction: rtl;
     overflow: hidden;
-    animation: moveText $transitions-duration ease-out;
-    -webkit-animation: moveText $transitions-duration;
+    animation: moveText $transitions-duration linear;
+    -webkit-animation: moveText $transitions-duration linear;
     animation-delay: inherit;
     line-height: 1;
     animation-fill-mode: forwards;
 }
 
 #bg-orange {
-    animation: moveBg $transitions-duration ease-out;
-    -webkit-animation: moveBg $transitions-duration;
+    animation: moveBg $transitions-duration linear;
+    -webkit-animation: moveBg $transitions-duration linear;
     animation-fill-mode: forwards;
     animation-delay: inherit;
 }
