@@ -55,9 +55,11 @@ export const dotAnimation = {
 
 export const mainLineAnimation = {
     hidden: {
+        opacity: 0,
         pathLength:0,
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:2.9,
@@ -68,9 +70,11 @@ export const mainLineAnimation = {
 
 export const subLineAnimation = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:3.2,
@@ -81,9 +85,11 @@ export const subLineAnimation = {
 
 export const polygonAnimation = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:2.7,
@@ -109,9 +115,11 @@ export const textAnimation = {
 
 export const bottomLineAnimation = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:3.4,
@@ -122,9 +130,11 @@ export const bottomLineAnimation = {
 
 export const boxAnimation = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:3.7,
