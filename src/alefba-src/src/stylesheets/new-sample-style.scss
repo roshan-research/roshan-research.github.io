@@ -63,7 +63,7 @@ $transitions-duration: 3s;
     direction: rtl;
     overflow: hidden;
     animation: moveText $transitions-duration linear;
-    -webkit-animation: moveText $transitions-duration;
+    -webkit-animation: moveText $transitions-duration linear;
     animation-delay: inherit;
     line-height: 1;
     animation-fill-mode: forwards;
@@ -71,7 +71,7 @@ $transitions-duration: 3s;
 
 #bg-orange {
     animation: moveBg $transitions-duration linear;
-    -webkit-animation: moveBg $transitions-duration;
+    -webkit-animation: moveBg $transitions-duration linear;
     animation-fill-mode: forwards;
     animation-delay: inherit;
 }
@@ -141,4 +141,8 @@ $transitions-duration: 3s;
     .document.line-view .line_bold ::before {
         animation-play-state: inherit;
     }
+}
+
+.rooznameh-paragraph-box {
+    
 }
