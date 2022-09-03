@@ -119,7 +119,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"4.5s"}
+                            delay={"5s"}
                             fontSize={`${0.038859007832898174 * width}px`}
                             text="- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة."
                             left={`${0.14795474325500435 * width}px`}
