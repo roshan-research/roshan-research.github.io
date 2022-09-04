@@ -1,13 +1,22 @@
-#fullpage-footer{
-  display: flex;
-  margin-top: 35vh;
-  justify-content: center;
+#fullpage-footer {
+    display: flex;
+    margin-top: 35vh;
+    justify-content: center;
 }
 
 .hide {
-  display: none;
+    display: none;
 }
 
 .show {
-  display: block;
+    display: block;
+}
+
+.with-footer,
+.without-footer {
+    height: 100vh;
+}
+
+.with-footer .FullPage {
+    height: calc(100vh - 50);
 }

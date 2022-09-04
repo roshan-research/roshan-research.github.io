@@ -42,6 +42,7 @@ class RoshanWebsite extends Component {
         fake: false,
         scrollsQuantity: 0,
         showToTopButton: false,
+        showFooter: false,
         id: 'hide',
         handleSwipe: () => {},
     };
@@ -69,6 +70,7 @@ class RoshanWebsite extends Component {
             fake: !this.state.fake,
             scrollsQuantity: this.state.scrollsQuantity + 1,
             showToTopButton: newState.activeSlide !== 0,
+            showFooter: shouldAdd,
         });
     };
 
@@ -139,11 +141,16 @@ class RoshanWebsite extends Component {
             <Suspense fallback={<ProgressIndicator />}>
                 <motion.div
                     id={'main'}
-                    style={!isSafari && !isOpera ? {} : { height: '100vh' }}
+                    className={`${this.state.id} ${
+                        isSafari || isOpera
+                            ? this.state.showFooter
+                                ? 'with-footer'
+                                : 'without-footer'
+                            : ''
+                    }`}
                     initial={loadingAnimation.initial}
                     animate={loadingAnimation.animate}
                     transition={loadingAnimation.transition}
-                    className={this.state.id}
                 >
                     <div id={'all-page'}>
                         <Menu
@@ -168,7 +175,7 @@ class RoshanWebsite extends Component {
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}
                         />
-                        {this.shouldHaveFooter(!isSafari && !isOpera)}
+                        {this.shouldHaveFooter(this.state.showFooter)}
                     </div>
                 </motion.div>
             </Suspense>
