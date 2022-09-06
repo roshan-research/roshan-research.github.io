@@ -6,8 +6,8 @@ import {segments,segmentFixer} from "./samples/segments.js";
 import rasmi from "../assets/voices/rasmi.mp3";
 import mohavereh from "../assets/voices/mohavereh.mp3";
 import telephone from "../assets/voices/telephone.mp3";
-import ghadimi from "../assets/voices/ghadimi.mp3";
-import bamusic from "../assets/voices/bamusic.mp3";
+import ghadimi from "../assets/voices/old.mp3";
+import bamusic from "../assets/voices/musicover.mp3";
 
 import {Component} from "react";
 
