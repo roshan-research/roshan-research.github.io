@@ -47,7 +47,7 @@ class SampleSection extends Component {
                 <p id={'sample-title'}>
                     نمونه‌های حرف
                 </p>
-                <div style={{height: '10vw'}}/>
+                <div style={{height: '6.6vw'}}/>
                 <div id={'sample-section'}>
                     <Player
                         segments={sampleSegments[this.state.chosenSample]}

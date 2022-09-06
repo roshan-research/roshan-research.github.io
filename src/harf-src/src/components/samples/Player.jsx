@@ -35,7 +35,7 @@ const Player = ({music,segments,title}) => {
             container: waveformRef.current,
             barGap: 1,
             waveColor: ["#AAAAAA","#AAAAAA","#AAAAAA","#E6E6E6","#E6E6E6"],
-            barHeight: isMobile? 0.8 : 1.5,
+            barHeight: isMobile? 0.8 : 2,
             barRadius: 1,
             barWidth: isMobile? 2 : 4,
             responsive: true,
@@ -84,8 +84,11 @@ const Player = ({music,segments,title}) => {
             >
             </div>
             <div id={"timer-progress"}>
-                <div id={"timer"}>
+                <div className={"timer"} id={"time-elapsed"}>
                     {new Date(progress * 1000).toISOString().slice(14, 19)}
+                </div>
+                <div className={"timer"} id={"time-left"}>
+                    {new Date((60 - progress) * 1000).toISOString().slice(14, 19)}
                 </div>
                 <div ref={waveformRef} id={"player-bar"}>
                 </div>

@@ -1,8 +1,10 @@
 export const bottomLineAnimationHarf = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:3.1,
@@ -13,9 +15,11 @@ export const bottomLineAnimationHarf = {
 
 export const boxAnimationHarf = {
     hidden: {
+        opacity: 0,
         pathLength:0
     },
     visible: {
+        opacity: 1,
         pathLength:1,
         transition: {
             delay:4,

@@ -65,7 +65,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"3s"}
+                            delay={"0.5s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="دل بریدن گاه تنها راه عاشق ماندن است"
                             left={`${0.21164021164021163 * width}px`}
@@ -75,7 +75,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"6s"}
+                            delay={"1s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="خود به چاه انداختم خود را مگر باور کنی"
                             left={`${0.21164021164021163 * width}px`}
@@ -85,7 +85,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"9s"}
+                            delay={"2s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="آنچه باقیمانده از یوسف همین پیراهن است"
                             left={`${0.17195767195767195 * width}px`}
@@ -95,7 +95,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"12s"}
+                            delay={"3s"}
                             fontSize={`${0.05341005291005291 * width}px`}
                             text="گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"
                             left={`${0.13227513227513227 * width}px`}
@@ -105,7 +105,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"15s"}
+                            delay={"4s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="سرنوشت شمع جانسوز است اما روشن است"
                             left={`${0.16534391534391535 * width}px`}
@@ -115,7 +115,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"18s"}
+                            delay={"5s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="من غمم! جای مرا با شادمانی پر مکن"
                             left={`${0.2447089947089947 * width}px`}
@@ -125,7 +125,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"21s"}
+                            delay={"6s"}
                             fontSize={`${0.05291005291005291 * width}px`}
                             text="هرکجا چشمی بگردانی نشانی از من است"
                             left={`${0.1984126984126984 * width}px`}
