@@ -82,7 +82,7 @@ const Charkhesh = () => {
                     >
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.046 * width}px`}
+                            fontSize={`${0.045 * width}px`}
                             text="دل بریدم تا نبینم دوست با من دشمن است"
                             left={`${0.16534391534391535 * width}px`}
                             top={`${0.24553571428571427 * height}px`}
@@ -92,7 +92,7 @@ const Charkhesh = () => {
                         />
                         <TextGroup
                             delay={'0.5s'}
-                            fontSize={`${0.046 * width}px`}
+                            fontSize={`${0.045 * width}px`}
                             text="دل بریدن گاه تنها راه عاشق ماندن است"
                             left={`${0.21164021164021163 * width}px`}
                             top={`${0.2976190476190476 * height}px`}
@@ -102,7 +102,7 @@ const Charkhesh = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.046 * width}px`}
+                            fontSize={`${0.0455 * width}px`}
                             text="خود به چاه انداختم خود را مگر باور کنی"
                             left={`${0.21164021164021163 * width}px`}
                             top={`${0.3794642857142857 * height}px`}
@@ -122,7 +122,7 @@ const Charkhesh = () => {
                         />
                         <TextGroup
                             delay={'3s'}
-                            fontSize={`${0.046 * width}px`}
+                            fontSize={`${0.045 * width}px`}
                             text="گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"
                             left={`${0.13227513227513227 * width}px`}
                             top={`${0.5158730158730159 * height}px`}
@@ -152,7 +152,7 @@ const Charkhesh = () => {
                         />
                         <TextGroup
                             delay={'6s'}
-                            fontSize={`${0.046 * width}px`}
+                            fontSize={`${0.045 * width}px`}
                             text="هرکجا چشمی بگردانی نشانی از من است"
                             left={`${0.1984126984126984 * width}px`}
                             top={`${0.7043650793650794 * height}px`}

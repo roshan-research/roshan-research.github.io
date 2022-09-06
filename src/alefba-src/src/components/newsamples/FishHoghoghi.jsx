@@ -87,7 +87,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'0.5s'}
-                            fontSize={`${0.0288 * width}px`}
+                            fontSize={`${0.0283 * width}px`}
                             text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
                             height={`${0.06287069988137604 * height}px`}
                             width={`${0.4248417721518987 * width}px`}
@@ -96,7 +96,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.0305 * width}px`}
+                            fontSize={`${0.0299 * width}px`}
                             text="حق اولاد و سایر هزینه های کارکنان"
                             height={`${0.05338078291814947 * height}px`}
                             width={`${0.3370253164556962 * width}px`}
@@ -123,7 +123,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'2.5s'}
-                            fontSize={`${0.0305 * width}px`}
+                            fontSize={`${0.0299 * width}px`}
                             text="حق بیمه سهم کارفرما"
                             height={`${0.060498220640569395 * height}px`}
                             width={`${0.21360759493670886 * width}px`}

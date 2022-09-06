@@ -76,7 +76,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.0264 * width}px`}
+                            fontSize={`${0.026 * width}px`}
                             text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.22583201267828842 * height}px`}
@@ -103,7 +103,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.0266 * width}px`}
+                            fontSize={`${0.026 * width}px`}
                             text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
                             left={`${0.34287228404875464 * width}px`}
                             top={`${0.4659270998415214 * height}px`}
