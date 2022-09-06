@@ -129,10 +129,7 @@ p { margin: 0.8vw}
   text-align: center;
   height: 20vw;
   text-align: center;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+  display: table;
   color: black;
   font-family: iran-yekan, serif;
 }
