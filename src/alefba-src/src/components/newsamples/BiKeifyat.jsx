@@ -1,66 +1,83 @@
-import bikeifyat from "../../assets/images/samples/bikeifyat.jpg";
-import TextGroup from "./TextGroup";
-import {useEffect, useState} from "react";
-import {isMobile} from "react-device-detect";
+import bikeifyat from '../../assets/images/samples/bikeifyat.jpg';
+import TextGroup from './TextGroup';
+import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import { useInView } from 'react-intersection-observer';
 
 const BiKeifyat = () => {
-
     const observerOptions = {
         delay: 1000,
-        triggerOnce: true
+        triggerOnce: true,
     };
 
-    const[width,setWidth] = useState();
-    const[height,setHeight] = useState();
-    const[bi,biInview] = useInView(observerOptions);
+    const [width, setWidth] = useState();
+    const [height, setHeight] = useState();
+    const [bi, biInview] = useInView(observerOptions);
 
-    let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.61 : 0.27;
+    let scaleW = isMobile ? 0.85 : 0.4;
+    let scaleH = isMobile ? 0.61 : 0.27;
 
     const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
 
-    window.addEventListener("resize", resizeHandler);
+    window.addEventListener('resize', resizeHandler);
 
     useEffect(() => {
         resizeHandler();
     }, []);
 
-    return(
+    return (
         <div className="container">
             <div
                 id="document"
-                style={{ position: "relative",transition: "0s" }}
+                style={{ position: 'relative', transition: '0s' }}
             >
                 <img
-                    style={{ position: "absolute", left: 0,width: width, height: height }}
+                    style={{
+                        position: 'absolute',
+                        left: 0,
+                        width: width,
+                        height: height,
+                    }}
                     id="raw"
                     src={bikeifyat}
                     alt={''}
                 />
-                <page 
+                <page
                     ref={bi}
-                    style={biInview? {height: height,width: width,animationPlayState: "running"}
-                            : {height: height,width: width,animationPlayState: "paused"}}>
-                    <div className="document line-view" 
-                        style={{animationPlayState: "inherit"}}
+                    style={
+                        biInview
+                            ? {
+                                  height: height,
+                                  width: width,
+                                  animationPlayState: 'running',
+                              }
+                            : {
+                                  height: height,
+                                  width: width,
+                                  animationPlayState: 'paused',
+                              }
+                    }
+                >
+                    <div
+                        className="document line-view"
+                        style={{ animationPlayState: 'inherit' }}
                     >
                         <TextGroup
-                            delay={"0s"}
-                            fontSize={`${0.037859007832898174 * width}px`}
+                            delay={'0s'}
+                            fontSize={`${0.0336 * width}px`}
                             text="- یعطي أمثلة عن مرکبات کیمیائیة شائعة الاستعمال في محیطه."
                             left={`${0.26979982593559615 * width}px`}
                             top={`${0.19448373408769448 * height}px`}
-                            width={`${0.6657963446475196 * width}px`}
+                            width={`${0.669 * width}px`}
                             height={`${0.06364922206506365 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"1s"}
-                            fontSize={`${0.04134029590948651 * width}px`}
+                            delay={'1s'}
+                            fontSize={`${0.0356 * width}px`}
                             text="- یتعرف الی بعض الکواشف (محلول قشر الفجل، محلول الملفوف البنفسجي،"
                             left={`${0.07397737162750218 * width}px`}
                             top={`${0.2758132956152758 * height}px`}
@@ -69,18 +86,18 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"1.5s"}
-                            fontSize={`${0.038199007832898174 * width}px`}
+                            delay={'1.5s'}
+                            fontSize={`${0.0325 * width}px`}
                             text="محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي."
                             left={`${0.12619669277632725 * width}px`}
                             top={`${0.35714285714285715 * height}px`}
-                            width={`${0.783289817232376 * width}px`}
+                            width={`${0.786 * width}px`}
                             height={`${0.06223479490806223 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"2s"}
-                            fontSize={`${0.0400544908616188 * width}px`}
+                            delay={'2s'}
+                            fontSize={`${0.0338 * width}px`}
                             text="- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام أحد الکواشف."
                             left={`${0.11314186248912098 * width}px`}
                             top={`${0.43847241867043846 * height}px`}
@@ -89,8 +106,8 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"2s"}
-                            fontSize={`${0.039559007832898174 * width}px`}
+                            delay={'2s'}
+                            fontSize={`${0.0345 * width}px`}
                             text="یعطي أمثلة عن بعض الأملاح الشائعة."
                             left={`${0.5091383812010444 * width}px`}
                             top={`${0.5268741159830269 * height}px`}
@@ -99,8 +116,8 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"3.5s"}
-                            fontSize={`${0.04134029590948651 * width}px`}
+                            delay={'3.5s'}
+                            fontSize={`${0.036 * width}px`}
                             text="- یعطي أمثلة عن التفاعل الکیمیائي: الاحتراق، تکون الصدأ، تفاعل الحمض مع"
                             left={`${0.05221932114882506 * width}px`}
                             top={`${0.6039603960396039 * height}px`}
@@ -109,8 +126,8 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"4s"}
-                            fontSize={`${0.039859007832898174 * width}px`}
+                            delay={'4s'}
+                            fontSize={`${0.0335 * width}px`}
                             text="مواد کلسیة ومع بعض الفلزات."
                             left={`${0.587467362924282 * width}px`}
                             top={`${0.685997171145686 * height}px`}
@@ -119,8 +136,8 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"5s"}
-                            fontSize={`${0.038859007832898174 * width}px`}
+                            delay={'5s'}
+                            fontSize={`${0.0346 * width}px`}
                             text="- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة."
                             left={`${0.14795474325500435 * width}px`}
                             top={`${0.7708628005657708 * height}px`}
@@ -132,7 +149,6 @@ const BiKeifyat = () => {
                 </page>
             </div>
         </div>
-
     );
 };
 

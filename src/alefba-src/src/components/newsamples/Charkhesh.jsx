@@ -1,62 +1,88 @@
-import charkhesh from "../../assets/images/samples/charkhesh.jpg";
-import TextGroup from "./TextGroup";
-import {useEffect, useState} from "react";
-import {isMobile} from "react-device-detect";
+import charkhesh from '../../assets/images/samples/charkhesh.jpg';
+import TextGroup from './TextGroup';
+import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import { useInView } from 'react-intersection-observer';
 
 const Charkhesh = () => {
-
     const observerOptions = {
         delay: 1000,
-        triggerOnce: true
+        triggerOnce: true,
     };
 
-    const[width,setWidth] = useState();
-    const[height,setHeight] = useState();
-    const[charkhRef,charkheshInview] = useInView(observerOptions);
+    const [width, setWidth] = useState();
+    const [height, setHeight] = useState();
+    const [charkhRef, charkheshInview] = useInView(observerOptions);
 
-    let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.9 : 0.45;
+    let scaleW = isMobile ? 0.85 : 0.4;
+    let scaleH = isMobile ? 0.9 : 0.45;
     /*
     this it the reason that intersection observer 
     doesn't work as it should in Charkhesh.
     find the solution and fix it up
     */
-    let containerStyle = isMobile? {marginTop: "-15vw"} : {marginTop: "-8.5vw"};
+    let containerStyle = isMobile
+        ? { marginTop: '-15vw' }
+        : { marginTop: '-8.5vw' };
 
     const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
 
-    window.addEventListener("resize", resizeHandler);
+    window.addEventListener('resize', resizeHandler);
 
     useEffect(() => {
         resizeHandler();
     }, []);
-    
-    return(
-        <div className="container" ref={charkhRef}
-                style={charkheshInview? {height: height,width: width,animationPlayState: "running",...containerStyle}
-                : {height: height,width: width,animationPlayState: "paused",...containerStyle}}
+
+    return (
+        <div
+            className="container"
+            ref={charkhRef}
+            style={
+                charkheshInview
+                    ? {
+                          height: height,
+                          width: width,
+                          animationPlayState: 'running',
+                          ...containerStyle,
+                      }
+                    : {
+                          height: height,
+                          width: width,
+                          animationPlayState: 'paused',
+                          ...containerStyle,
+                      }
+            }
         >
             <div
                 id="document"
-                style={{ position: "relative",transition: "0s",animationPlayState: "inherit" }}
+                style={{
+                    position: 'relative',
+                    transition: '0s',
+                    animationPlayState: 'inherit',
+                }}
             >
                 <img
-                    style={{ position: "absolute", left: 0,width: width, height: height }}
+                    style={{
+                        position: 'absolute',
+                        left: 0,
+                        width: width,
+                        height: height,
+                    }}
                     id="raw"
                     src={charkhesh}
                     alt={''}
                 />
-                <page style={{animationPlayState: "inherit"}}>
-                    <div className="document line-view" 
-                        style={{animationPlayState: "inherit"}}
+                <page style={{ animationPlayState: 'inherit' }}>
+                    <div
+                        className="document line-view"
+                        style={{ animationPlayState: 'inherit' }}
                     >
                         <TextGroup
-                            delay={"0s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'0s'}
+                            fontSize={`${0.046 * width}px`}
                             text="دل بریدم تا نبینم دوست با من دشمن است"
                             left={`${0.16534391534391535 * width}px`}
                             top={`${0.24553571428571427 * height}px`}
@@ -65,8 +91,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"0.5s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'0.5s'}
+                            fontSize={`${0.046 * width}px`}
                             text="دل بریدن گاه تنها راه عاشق ماندن است"
                             left={`${0.21164021164021163 * width}px`}
                             top={`${0.2976190476190476 * height}px`}
@@ -75,8 +101,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"1s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'1s'}
+                            fontSize={`${0.046 * width}px`}
                             text="خود به چاه انداختم خود را مگر باور کنی"
                             left={`${0.21164021164021163 * width}px`}
                             top={`${0.3794642857142857 * height}px`}
@@ -85,8 +111,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"2s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'2s'}
+                            fontSize={`${0.045 * width}px`}
                             text="آنچه باقیمانده از یوسف همین پیراهن است"
                             left={`${0.17195767195767195 * width}px`}
                             top={`${0.4365079365079365 * height}px`}
@@ -95,8 +121,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"3s"}
-                            fontSize={`${0.05341005291005291 * width}px`}
+                            delay={'3s'}
+                            fontSize={`${0.046 * width}px`}
                             text="گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"
                             left={`${0.13227513227513227 * width}px`}
                             top={`${0.5158730158730159 * height}px`}
@@ -105,8 +131,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"4s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'4s'}
+                            fontSize={`${0.0438 * width}px`}
                             text="سرنوشت شمع جانسوز است اما روشن است"
                             left={`${0.16534391534391535 * width}px`}
                             top={`${0.5729166666666666 * height}px`}
@@ -115,8 +141,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"5s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'5s'}
+                            fontSize={`${0.0468 * width}px`}
                             text="من غمم! جای مرا با شادمانی پر مکن"
                             left={`${0.2447089947089947 * width}px`}
                             top={`${0.6498015873015873 * height}px`}
@@ -125,8 +151,8 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                         <TextGroup
-                            delay={"6s"}
-                            fontSize={`${0.05291005291005291 * width}px`}
+                            delay={'6s'}
+                            fontSize={`${0.046 * width}px`}
                             text="هرکجا چشمی بگردانی نشانی از من است"
                             left={`${0.1984126984126984 * width}px`}
                             top={`${0.7043650793650794 * height}px`}
@@ -138,7 +164,6 @@ const Charkhesh = () => {
                 </page>
             </div>
         </div>
-
     );
 };
 
