@@ -1,23 +1,23 @@
-import "../../stylesheets/new-sample-style.scss";
+import '../../stylesheets/new-sample-style.scss';
 
 const TextGroup = ({
-                       fontSize,
-                       text,
-                       height,
-                       left,
-                       top,
-                       width,
-                       textAlign = "auto",
-                       lineHeight,
-                       lineType = "line_bold",
-                       delay = "0s",
-                       isRooznameh = false
-                   }) => {
-    return(
-        <div style={{animationPlayState: "inherit"}}>
+    fontSize,
+    text,
+    height,
+    left,
+    top,
+    width,
+    textAlign = 'auto',
+    lineHeight,
+    lineType = 'line_bold',
+    delay = '0s',
+    isRooznameh = false,
+}) => {
+    return (
+        <div style={{ animationPlayState: 'inherit' }}>
             <span
                 dir="auto"
-                id={"bg-orange"}
+                id={'bg-orange'}
                 className="line_bold"
                 style={{
                     left: left,
@@ -27,24 +27,23 @@ const TextGroup = ({
                     textAlign: textAlign,
                     lineHeight: lineHeight,
                     animationDelay: delay,
-                    animationPlayState: isRooznameh? "paused" : "unset"
+                    animationPlayState: isRooznameh ? 'paused' : 'unset',
                 }}
-            >
-            </span>
+            ></span>
             <span
                 dir="auto"
                 className={lineType}
-                id={"text-black-sample"}
+                id={'text-black-sample'}
                 style={{
                     left: left,
                     top: top,
                     width: width,
                     height: height,
                     textAlign: textAlign,
-                    overflow: "hidden",
-                    backgroundColor: "transparent",
+                    overflow: 'hidden',
+                    backgroundColor: 'transparent',
                     lineHeight: lineHeight,
-                    animationPlayState: "inherit"
+                    animationPlayState: 'inherit',
                 }}
             >
                 <span
@@ -53,7 +52,7 @@ const TextGroup = ({
                     style={{
                         fontSize: fontSize,
                         animationDelay: delay,
-                        animationPlayState: "inherit"
+                        animationPlayState: 'inherit',
                     }}
                 >
                     {text}

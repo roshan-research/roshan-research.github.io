@@ -1,56 +1,73 @@
-import tahrir from "../../assets/images/samples/tahrir.jpg";
-import TextGroup from "./TextGroup";
-import {useEffect, useState} from "react";
-import {isMobile} from "react-device-detect";
+import tahrir from '../../assets/images/samples/tahrir.jpg';
+import TextGroup from './TextGroup';
+import { useEffect, useState } from 'react';
+import { isMobile } from 'react-device-detect';
 import { useInView } from 'react-intersection-observer';
 
 const Tahrir = () => {
-
     const observerOptions = {
         delay: 1000,
-        triggerOnce: true
+        triggerOnce: true,
     };
 
-    const[width,setWidth] = useState();
-    const[height,setHeight] = useState();
-    const[tah,tahInview] = useInView(observerOptions);
+    const [width, setWidth] = useState();
+    const [height, setHeight] = useState();
+    const [tah, tahInview] = useInView(observerOptions);
 
-    let scaleW = isMobile? 0.85 : 0.4;
-    let scaleH = isMobile? 0.61 : 0.27;
+    let scaleW = isMobile ? 0.85 : 0.4;
+    let scaleH = isMobile ? 0.61 : 0.27;
 
     const resizeHandler = () => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
     };
 
-    window.addEventListener("resize", resizeHandler);
+    window.addEventListener('resize', resizeHandler);
 
     useEffect(() => {
         resizeHandler();
     }, []);
 
-    return(
+    return (
         <div className="container">
             <div
                 id="document"
-                style={{ position: "relative",transition: "0s" }}
+                style={{ position: 'relative', transition: '0s' }}
             >
                 <img
-                    style={{ position: "absolute", left: 0,width: width, height: height }}
+                    style={{
+                        position: 'absolute',
+                        left: 0,
+                        width: width,
+                        height: height,
+                    }}
                     id="raw"
                     src={tahrir}
                     alt={''}
                 />
-                <page 
+                <page
                     ref={tah}
-                    style={tahInview? {height: height,width: width,animationPlayState: "running"}
-                            : {height: height,width: width,animationPlayState: "paused"}}>
-                    <div className="document line-view" 
-                        style={{animationPlayState: "inherit"}}
+                    style={
+                        tahInview
+                            ? {
+                                  height: height,
+                                  width: width,
+                                  animationPlayState: 'running',
+                              }
+                            : {
+                                  height: height,
+                                  width: width,
+                                  animationPlayState: 'paused',
+                              }
+                    }
+                >
+                    <div
+                        className="document line-view"
+                        style={{ animationPlayState: 'inherit' }}
                     >
                         <TextGroup
-                            delay={"0s"}
-                            fontSize={`${0.02278749337572867 * width}px`}
+                            delay={'0s'}
+                            fontSize={`${0.025 * width}px`}
                             text="۶۳"
                             left={`${0.48754636989931105 * width}px`}
                             top={`${0.15055467511885895 * height}px`}
@@ -58,8 +75,8 @@ const Tahrir = () => {
                             height={`${0.03565768621236133 * height}px`}
                         />
                         <TextGroup
-                            delay={"0s"}
-                            fontSize={`${0.0299767355590885 * width}px`}
+                            delay={'0s'}
+                            fontSize={`${0.026 * width}px`}
                             text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.22583201267828842 * height}px`}
@@ -67,8 +84,8 @@ const Tahrir = () => {
                             height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
-                            delay={"0.5s"}
-                            fontSize={`${0.028916852146263912 * width}px`}
+                            delay={'0.5s'}
+                            fontSize={`${0.0254 * width}px`}
                             text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
                             left={`${0.13248542660307366 * width}px`}
                             top={`${0.3090332805071315 * height}px`}
@@ -76,8 +93,8 @@ const Tahrir = () => {
                             height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
-                            delay={"1s"}
-                            fontSize={`${0.028486910439851617 * width}px`}
+                            delay={'1s'}
+                            fontSize={`${0.0254 * width}px`}
                             text="و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا وزن ثابت تکلیس"
                             left={`${0.13248542660307366 * width}px`}
                             top={`${0.38827258320126784 * height}px`}
@@ -85,8 +102,8 @@ const Tahrir = () => {
                             height={`${0.041996830427892234 * height}px`}
                         />
                         <TextGroup
-                            delay={"1.5s"}
-                            fontSize={`${0.03126656067832538 * width}px`}
+                            delay={'1.5s'}
+                            fontSize={`${0.026 * width}px`}
                             text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
                             left={`${0.34287228404875464 * width}px`}
                             top={`${0.4659270998415214 * height}px`}
@@ -94,8 +111,8 @@ const Tahrir = () => {
                             height={`${0.04833597464342314 * height}px`}
                         />
                         <TextGroup
-                            delay={"2s"}
-                            fontSize={`${0.028586910439851617 * width}px`}
+                            delay={'2s'}
+                            fontSize={`${0.0257 * width}px`}
                             text="مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R زیریك کندانسور رفلو"
                             left={`${0.13513513513513514 * width}px`}
                             top={`${0.5467511885895404 * height}px`}
@@ -103,8 +120,8 @@ const Tahrir = () => {
                             height={`${0.0491283676703645 * height}px`}
                         />
                         <TextGroup
-                            delay={"2.5s"}
-                            fontSize={`${0.0296767355590885 * width}px`}
+                            delay={'2.5s'}
+                            fontSize={`${0.0263 * width}px`}
                             text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
                             left={`${0.14043455219925807 * width}px`}
                             top={`${0.6251980982567353 * height}px`}
@@ -112,8 +129,8 @@ const Tahrir = () => {
                             height={`${0.04754358161648178 * height}px`}
                         />
                         <TextGroup
-                            delay={"3s"}
-                            fontSize={`${0.029146793852676205 * width}px`}
+                            delay={'3s'}
+                            fontSize={`${0.0256 * width}px`}
                             text="تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و وزن‌باقیماند، بیش‌از"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.705229793977813 * height}px`}
@@ -121,8 +138,8 @@ const Tahrir = () => {
                             height={`${0.043581616481774964 * height}px`}
                         />
                         <TextGroup
-                            delay={"3.5s"}
-                            fontSize={`${0.028086910439851617 * width}px`}
+                            delay={'3.5s'}
+                            fontSize={`${0.0256 * width}px`}
                             text="۲ میلی‌گرم نیست ( ۰/۲۶)."
                             left={`${0.6253312135665077 * width}px`}
                             top={`${0.786053882725832 * height}px`}
@@ -133,7 +150,6 @@ const Tahrir = () => {
                 </page>
             </div>
         </div>
-
     );
 };
 
