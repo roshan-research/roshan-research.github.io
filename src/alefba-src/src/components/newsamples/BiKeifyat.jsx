@@ -87,7 +87,7 @@ const BiKeifyat = () => {
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.025 * width}px`}
+                            fontSize={`${0.0322 * width}px`}
                             text="محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي."
                             left={`${0.12619669277632725 * width}px`}
                             top={`${0.35714285714285715 * height}px`}
