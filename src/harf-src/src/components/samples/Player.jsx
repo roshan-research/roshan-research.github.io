@@ -79,7 +79,9 @@ const Player = ({music,segments,title}) => {
                     {title}
                 </p>
             </div>
-            <div id={"harf-text-container"} dangerouslySetInnerHTML={{__html: currentText}}>
+            <div id={"harf-text-container"} dangerouslySetInnerHTML={{__html: 
+                `<div style="display:table-cell;vertical-align:middle;">${currentText}</div>`}}
+            >
             </div>
             <div id={"timer-progress"}>
                 <div id={"timer"}>
