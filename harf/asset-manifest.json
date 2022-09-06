@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/harf/static/css/main.61349fab.chunk.css",
-    "main.js": "/harf/static/js/main.dd2657ff.chunk.js",
+    "main.js": "/harf/static/js/main.ef24640c.chunk.js",
     "runtime-main.js": "/harf/static/js/runtime-main.4ac9a610.js",
     "static/js/2.98c08d8f.chunk.js": "/harf/static/js/2.98c08d8f.chunk.js",
     "static/js/3.9ee94fc8.chunk.js": "/harf/static/js/3.9ee94fc8.chunk.js",
@@ -11,7 +11,6 @@
     "static/media/sample-section.scss": "/harf/static/media/Pattern.460c5410.svg",
     "static/media/accuracy-mobile.6bbbe743.svg": "/harf/static/media/accuracy-mobile.6bbbe743.svg",
     "static/media/archive.39a61215.png": "/harf/static/media/archive.39a61215.png",
-    "static/media/bamusic.465fd00c.mp3": "/harf/static/media/bamusic.465fd00c.mp3",
     "static/media/black_dl_icon.0d4077b9.svg": "/harf/static/media/black_dl_icon.0d4077b9.svg",
     "static/media/businesses.bbc2ed46.png": "/harf/static/media/businesses.bbc2ed46.png",
     "static/media/catalog-cover.32c997d5.svg": "/harf/static/media/catalog-cover.32c997d5.svg",
@@ -19,7 +18,6 @@
     "static/media/deep-mobile.e50aea2d.svg": "/harf/static/media/deep-mobile.e50aea2d.svg",
     "static/media/dot.5ee81e2f.svg": "/harf/static/media/dot.5ee81e2f.svg",
     "static/media/download-icon.e32ecd95.svg": "/harf/static/media/download-icon.e32ecd95.svg",
-    "static/media/ghadimi.a4a9e42e.mp3": "/harf/static/media/ghadimi.a4a9e42e.mp3",
     "static/media/left-1.5e05b89d.svg": "/harf/static/media/left-1.5e05b89d.svg",
     "static/media/left-1.7d25531d.svg": "/harf/static/media/left-1.7d25531d.svg",
     "static/media/left-2.4a297446.svg": "/harf/static/media/left-2.4a297446.svg",
@@ -29,7 +27,9 @@
     "static/media/main-pattern.2e05d587.png": "/harf/static/media/main-pattern.2e05d587.png",
     "static/media/menu-icon.a0de4dbf.svg": "/harf/static/media/menu-icon.a0de4dbf.svg",
     "static/media/mohavereh.1ef0575d.mp3": "/harf/static/media/mohavereh.1ef0575d.mp3",
+    "static/media/musicover.465fd00c.mp3": "/harf/static/media/musicover.465fd00c.mp3",
     "static/media/nlp-mobile.b2846cb6.svg": "/harf/static/media/nlp-mobile.b2846cb6.svg",
+    "static/media/old.a4a9e42e.mp3": "/harf/static/media/old.a4a9e42e.mp3",
     "static/media/organizations.bd802bda.png": "/harf/static/media/organizations.bd802bda.png",
     "static/media/papers.2d4b7e10.png": "/harf/static/media/papers.2d4b7e10.png",
     "static/media/parallel-mobile.cdc39d5f.svg": "/harf/static/media/parallel-mobile.cdc39d5f.svg",
@@ -47,6 +47,6 @@
     "static/js/runtime-main.4ac9a610.js",
     "static/js/2.98c08d8f.chunk.js",
     "static/css/main.61349fab.chunk.css",
-    "static/js/main.dd2657ff.chunk.js"
+    "static/js/main.ef24640c.chunk.js"
   ]
 }
