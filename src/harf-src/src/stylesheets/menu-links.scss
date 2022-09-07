@@ -1,63 +1,64 @@
 #menu-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: flex-end;
-  flex-direction: column;
-  height: 30vh;
-  margin-top: 7vw;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 30vh;
+    margin-top: 7vw;
 }
 
 #menu-contents {
-  display: flex;
-  /*
+    display: flex;
+    /*
     the next line is there to provide compatiblity with chrome. It has no effect on safari
   */
-  padding-right: 2vw;
-  justify-content: center;
-  align-items: flex-end;
-  flex-direction: column;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
 }
 
 .menu-link {
-  color: white;
-  font-family: iran-yekan, serif;
-  font-size: 1.3vw;
-  transition: 1s;
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: clamp(12px, 1.3vw, 50px);
+    transition: 1s;
 }
 
 .menu-link:hover {
-  color: #26FF7B;
+    color: #26ff7b;
 }
 
 #company-name {
-  margin-top: 50vh;
-  margin-right: 0;
-  color: white;
-  font-family: iran-yekan, serif;
-  font-size: 0.8vw;
-  text-align: right;
+    margin-top: 50vh;
+    margin-right: 0;
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: 0.8vw;
+    text-align: right;
 }
 
-@media screen and (max-width: 600px){
-  #company-name {
-    display: none;
-  }
+@media screen and (max-width: 600px) {
+    #company-name {
+        display: none;
+    }
 
-  #menu-links {
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    height: 40vh;
-  }
+    #menu-links {
+        padding: 16px;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+        height: 40vh;
+    }
 
-  #menu-contents {
-    padding-right: 0;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    #menu-contents {
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-  .menu-link {
-    font-size: 6.5vw;
-  }
+    .menu-link {
+        font-size: 3vw;
+    }
 }
