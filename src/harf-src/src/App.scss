@@ -1,137 +1,137 @@
 /* width */
 ::-webkit-scrollbar {
-  width: 5px;
+    width: 5px;
 }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black;
+    background: black;
 }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #26FF7B;
+    background: #26ff7b;
 }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: #ffffff;
+    background: #ffffff;
 }
 
-#sample-footer-space, #catalog-footer-space{
-  height: 27vh;
+#sample-footer-space,
+#catalog-footer-space {
+    height: 27vh;
 }
 
-#utils-sample-space{
-  height: 27vh;
+#utils-sample-space {
+    height: 27vh;
 }
 
-#usage-utils-space{
-  height: 85vh;
+#usage-utils-space {
+    height: 85vh;
 }
 
-#abilities-usage-space{
-  height: 27vh;
+#abilities-usage-space {
+    height: 27vh;
 }
 
-#main-abilities-space{
-  height: 120vh;
+#main-abilities-space {
+    height: 50vw;
 }
 
 .my-button {
-  position: absolute;
-  margin-top: 2.5vw;
-  z-index: 1000;
-  margin-left: 6vw;
+    position: absolute;
+    margin-top: 2.5vw;
+    z-index: 1000;
+    margin-left: 6vw;
 }
 
 .menu {
-  background-color: #0A0A0A;
-  z-index: 5;
+    background-color: #0a0a0a;
+    z-index: 5;
 }
 
 .menu-items {
-  display: flex;
-  justify-content: start;
-  align-items: end;
-  flex-direction: column;
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
 }
 
 .my-cross {
-  transform: scale(1.2);
-  transition: 0.1s;
-  margin-right: 1vw;
+    transform: scale(1.2);
+    transition: 0.1s;
+    margin-right: 1vw;
 }
 
 .my-cross:active {
-  transform: scale(1);
+    transform: scale(1);
 }
 
 .my-button {
-  transition: 0.4s;
-  position: absolute;
-  margin-top: 2.4vw;
-  margin-left: 5.5vw;
-  width: 3vw;
+    transition: 0.4s;
+    position: absolute;
+    margin-top: 2.4vw;
+    margin-left: 5.5vw;
+    width: 3vw;
 }
 
 .my-button:active {
-  transform: scale(0.5);
+    transform: scale(0.5);
 }
 
-@media screen and (max-width: 500px){
-  #sample-footer-space{
-    height: 50vh;
-  }
+@media screen and (max-width: 500px) {
+    #sample-footer-space {
+        height: 42.6vw;
+    }
 
-  #catalog-footer-space {
-    height: 50vh;
-  }
+    #catalog-footer-space {
+        height: 50vh;
+    }
 
-  #utils-sample-space{
-    height: 40vh;
-  }
+    #utils-sample-space {
+        height: 42.6vw;
+    }
 
-  #usage-utils-space{
-    height: 25vh;
-  }
+    #usage-utils-space {
+        height: 42.6vw;
+    }
 
-  #abilities-usage-space{
-    height: 35vh;
-  }
+    #abilities-usage-space {
+        height: 42.6vw;
+    }
 
-  #main-abilities-space{
-    height: 100vh;
-  }
+    #main-abilities-space {
+        height: 100vh;
+    }
 
-  .my-button {
-    margin-top: 8vw;
-    width: 10vw;
-    margin-left: 9vw;
-    display: none;
-  }
+    .my-button {
+        margin-top: 8vw;
+        width: 10vw;
+        margin-left: 9vw;
+        display: none;
+    }
 
-  .menu-items {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+    .menu-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-  .menu {
-    display: none;
-  }
+    .menu {
+        display: none;
+    }
 
-  .my-cross {
-    display: none;
-  }
-
+    .my-cross {
+        display: none;
+    }
 }
 
-.alefba{
-  overflow-x: hidden;
+.alefba {
+    overflow-x: hidden;
 }
 
-*{
-  transition: 1s;
+* {
+    transition: 1s;
 }
