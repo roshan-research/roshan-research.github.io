@@ -126,3 +126,9 @@
         padding-left: 0;
     }
 }
+
+@media screen and (max-width: 500px) {
+    #catalog {
+        margin-top: max(380px, 100vw);
+    }
+}
