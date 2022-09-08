@@ -29,15 +29,15 @@
 
 #sample-footer-space,
 #catalog-footer-space {
-    height: 27vh;
+    height: clamp(0px, 20vw, 200px);
 }
 
 #utils-sample-space {
-    height: 27vh;
+    height: clamp(0px, 20vw, 115px);
 }
 
 #usage-utils-space {
-    height: 85vh;
+    height: clamp(0px, 104vw, 428px);
 }
 
 #abilities-usage-space {

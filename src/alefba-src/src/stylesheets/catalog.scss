@@ -1,129 +1,128 @@
 #catalog {
-  width: 75vw;
-  justify-content: space-between;
-  align-items: center;
-  display: flex;
-  height: 30vh;
-  margin-left: 12.5vw;
-  background-color: #181818;
-  border-radius: 20px;
-  flex-direction: row-reverse;
+    width: 75vw;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    height: 30vh;
+    margin-left: 12.5vw;
+    background-color: #181818;
+    border-radius: 20px;
+    flex-direction: row-reverse;
 }
 
 #catalog-right {
-  display: flex;
-  justify-content: center;
-  align-items: flex-end;
-  padding-right: 4vw;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    padding-right: 4vw;
+    flex-direction: column;
 }
 
 #catalog-description {
-  color: rgb(255, 255, 255);
-  letter-spacing: 0.02em;
-  text-align: right;
-  direction: rtl;
-  width: 20vw;
-  font-family: iran-yekan, serif;
-  font-size: 1.1vw;
-  font-weight: 400;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.02em;
+    text-align: right;
+    direction: rtl;
+    width: 20vw;
+    font-family: iran-yekan, serif;
+    font-size: 1.1vw;
+    font-weight: 400;
 }
 
 #catalog-cover {
-  width: 19vw;
-  padding-left: 4vw;
+    width: 19vw;
+    padding-left: 4vw;
 }
 
 #catalog-button {
-  transition: 1s;
-  p {
-    color: #ff6200;
-    font-size: 1vw;
-    line-height: 1.5vw;
-    letter-spacing: 0.03em;
-    font-family: iran-yekan, serif;
-  }
-
-  img {
-    width: 0.9vw;
-    padding-left: 1vw;
-  }
-
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  width: 13vw;
-  border-radius: 0;
-  border-style: solid;
-  border-color: #ff6200;
-  border-width: 1px;
-}
-
-#catalog-button:hover {
-  background-color: #FF6200;
-
-  p {
-    color: black;
-  }
-}
-
-.catalog-link {
-  margin-top: 0.5vw;
-  position: relative;
-  z-index: 100;
-  margin-right: 1vw;
-}
-
-@media screen and (max-width: 600px){
-  #catalog {
-    flex-direction: column-reverse;
-    height: 50vh;
-    justify-content: space-around;
-  }
-
-  #catalog-cover {
-    width: 60vw;
-  }
-
-  #catalog-description {
-    font-size: 4vw;
-    text-align: center;
-    width: 60vw;
-  }
-
-  #catalog-button {
+    transition: 1s;
     p {
-      font-size: 4vw;
-      line-height: 7vw;
-      letter-spacing: 0.03em;
+        color: #ff6200;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        letter-spacing: 0.03em;
+        font-family: iran-yekan, serif;
     }
 
     img {
-      width: 3vw;
+        width: 0.9vw;
+        padding-left: 1vw;
     }
 
-    width: 50vw;
-  }
-
-
-  .catalog-link {
-    margin-top: 7vw;
-  }
-
-  #catalog-right {
-    justify-content: space-between;
+    display: flex;
+    justify-content: space-around;
     align-items: center;
-  }
+    width: 13vw;
+    border-radius: 0;
+    border-style: solid;
+    border-color: #ff6200;
+    border-width: 1px;
+}
 
-  #catalog {
-    margin-top: 80vh;
-  }
+#catalog-button:hover {
+    background-color: #ff6200;
 
-  #catalog-right {
-    padding-right: 0;
-  }
-  
-  #catalog-cover {
-    padding-left: 0;
-  }
+    p {
+        color: black;
+    }
+}
+
+.catalog-link {
+    margin-top: 0.5vw;
+    position: relative;
+    z-index: 100;
+    margin-right: 1vw;
+}
+
+@media screen and (max-width: 600px) {
+    #catalog {
+        flex-direction: column-reverse;
+        height: 50vh;
+        justify-content: space-around;
+    }
+
+    #catalog-cover {
+        width: 60vw;
+    }
+
+    #catalog-description {
+        font-size: 4vw;
+        text-align: center;
+        width: 60vw;
+    }
+
+    #catalog-button {
+        p {
+            font-size: 4vw;
+            line-height: 7vw;
+            letter-spacing: 0.03em;
+        }
+
+        img {
+            width: 3vw;
+        }
+
+        width: 50vw;
+    }
+
+    .catalog-link {
+        margin-top: 7vw;
+    }
+
+    #catalog-right {
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    #catalog {
+        margin-top: 20vw;
+    }
+
+    #catalog-right {
+        padding-right: 0;
+    }
+
+    #catalog-cover {
+        padding-left: 0;
+    }
 }
