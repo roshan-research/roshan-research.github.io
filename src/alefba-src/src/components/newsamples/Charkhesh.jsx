@@ -126,27 +126,27 @@ const Charkhesh = () => {
                             text="گریه‌ها کردم ز شوق آن شب که سوزاندی مرا"
                             left={`${0.13227513227513227 * width}px`}
                             top={`${0.5158730158730159 * height}px`}
-                            width={`${0.6613756613756614 * width}px`}
+                            width={`${0.663 * width}px`}
                             height={`${0.04712301587301587 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'4s'}
-                            fontSize={`${0.0438 * width}px`}
+                            fontSize={`${0.043 * width}px`}
                             text="سرنوشت شمع جانسوز است اما روشن است"
                             left={`${0.16534391534391535 * width}px`}
                             top={`${0.5729166666666666 * height}px`}
-                            width={`${0.6216931216931217 * width}px`}
+                            width={`${0.626 * width}px`}
                             height={`${0.04712301587301587 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'5s'}
-                            fontSize={`${0.0468 * width}px`}
+                            fontSize={`${0.045 * width}px`}
                             text="من غمم! جای مرا با شادمانی پر مکن"
                             left={`${0.2447089947089947 * width}px`}
                             top={`${0.6498015873015873 * height}px`}
-                            width={`${0.5443121693121693 * width}px`}
+                            width={`${0.547 * width}px`}
                             height={`${0.04861111111111111 * height}px`}
                             linetype="line"
                         />

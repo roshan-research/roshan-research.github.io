@@ -67,7 +67,7 @@ const KartMelli = () => {
                     >
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.02 * width}px`}
+                            fontSize={`${0.0195 * width}px`}
                             text="جمهوری اسلامی ایران"
                             left={`${0.8104 * width}px`}
                             top={`${0.15901712111604312 * height}px`}
@@ -85,7 +85,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'2.5s'}
-                            fontSize={`${0.0507 * width}px`}
+                            fontSize={`${0.05 * width}px`}
                             text="شماره ملی: ۰۰۴۰۳۱۶۲۸۵"
                             left={`${0.555 * width}px`}
                             top={`${0.2593532022828155 * height}px`}
@@ -94,7 +94,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'3s'}
-                            fontSize={`${0.032 * width}px`}
+                            fontSize={`${0.03 * width}px`}
                             text="نام :"
                             left={`${0.81 * width}px`}
                             top={`${0.37476220672162336 * height}px`}
@@ -112,7 +112,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'4s'}
-                            fontSize={`${0.03 * width}px`}
+                            fontSize={`${0.0283 * width}px`}
                             text="نام خانوادگی :"
                             left={`${0.8016 * width}px`}
                             top={`${0.47114774889029803 * height}px`}
@@ -130,7 +130,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'5.5s'}
-                            fontSize={`${0.03 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="تاریخ تولد :"
                             left={`${0.8076 * width}px`}
                             top={`${0.5713379835129994 * height}px`}
@@ -148,7 +148,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'8s'}
-                            fontSize={`${0.0335 * width}px`}
+                            fontSize={`${0.032 * width}px`}
                             text="نام پدر :"
                             left={`${0.8032 * width}px`}
                             top={`${0.6702599873176919 * height}px`}
@@ -166,7 +166,7 @@ const KartMelli = () => {
                         />
                         <TextGroup
                             delay={'10.5s'}
-                            fontSize={`${0.029 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="پایان اعتبار :"
                             left={`${0.806 * width}px`}
                             top={`${0.7653772986683577 * height}px`}

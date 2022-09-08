@@ -78,7 +78,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.03 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="حقوق و دستمزد"
                             height={`${0.05931198102016608 * height}px`}
                             width={`${0.15427215189873417 * width}px`}
@@ -87,7 +87,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'0.5s'}
-                            fontSize={`${0.0283 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
                             height={`${0.06287069988137604 * height}px`}
                             width={`${0.4248417721518987 * width}px`}
@@ -96,16 +96,16 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.0299 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="حق اولاد و سایر هزینه های کارکنان"
                             height={`${0.05338078291814947 * height}px`}
-                            width={`${0.3370253164556962 * width}px`}
+                            width={`${0.34 * width}px`}
                             left={`${0.5498417721518988 * width}px`}
                             top={`${0.4804270462633452 * height}px`}
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.0293 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="بن - حق مسکن - خوارباروناهاری کارکنان"
                             height={`${0.054567022538552785 * height}px`}
                             width={`${0.3916139240506329 * width}px`}
@@ -114,7 +114,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'2s'}
-                            fontSize={`${0.029 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="عیدي وپاداش"
                             height={`${0.054567022538552785 * height}px`}
                             width={`${0.1305379746835443 * width}px`}
@@ -123,7 +123,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'2.5s'}
-                            fontSize={`${0.0299 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="حق بیمه سهم کارفرما"
                             height={`${0.060498220640569395 * height}px`}
                             width={`${0.21360759493670886 * width}px`}
@@ -132,7 +132,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'3s'}
-                            fontSize={`${0.0297 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="باز خرید و ذخیره سنوات خدمت"
                             height={`${0.05812574139976275 * height}px`}
                             width={`${0.29557721518987344 * width}px`}
@@ -141,7 +141,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'3.5s'}
-                            fontSize={`${0.0294 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="بیمه حوادث - هزینه بهداشتی"
                             height={`${0.05693950177935943 * height}px`}
                             width={`${0.28085443037974683 * width}px`}
@@ -150,7 +150,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'4s'}
-                            fontSize={`${0.0296 * width}px`}
+                            fontSize={`${0.028 * width}px`}
                             text="پس انداز سهم کارفرما"
                             height={`${0.05338078291814947 * height}px`}
                             width={`${0.2175632911392405 * width}px`}

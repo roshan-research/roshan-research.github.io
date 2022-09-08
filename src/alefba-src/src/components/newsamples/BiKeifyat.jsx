@@ -67,7 +67,7 @@ const BiKeifyat = () => {
                     >
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.0336 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="- یعطي أمثلة عن مرکبات کیمیائیة شائعة الاستعمال في محیطه."
                             left={`${0.26979982593559615 * width}px`}
                             top={`${0.19448373408769448 * height}px`}
@@ -77,37 +77,37 @@ const BiKeifyat = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.0356 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="- یتعرف الی بعض الکواشف (محلول قشر الفجل، محلول الملفوف البنفسجي،"
                             left={`${0.07397737162750218 * width}px`}
                             top={`${0.2758132956152758 * height}px`}
                             width={`${0.8637946040034813 * width}px`}
-                            height={`${0.06364922206506365 * height}px`}
+                            height={`${0.068 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.0322 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="محلول عباد الشمس)، ویستدل علي أنها تغیر ألوانها حسب الوسط الکیمیائي."
                             left={`${0.12619669277632725 * width}px`}
                             top={`${0.35714285714285715 * height}px`}
                             width={`${0.786 * width}px`}
-                            height={`${0.06223479490806223 * height}px`}
+                            height={`${0.067 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'2s'}
-                            fontSize={`${0.0338 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="- یمیز بین المواد الحمضیة والمواد القلویة (القاعدیة) باستخدام أحد الکواشف."
                             left={`${0.11314186248912098 * width}px`}
                             top={`${0.43847241867043846 * height}px`}
                             width={`${0.8268059181897301 * width}px`}
-                            height={`${0.06364922206506365 * height}px`}
+                            height={`${0.066 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'2s'}
-                            fontSize={`${0.034 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="یعطي أمثلة عن بعض الأملاح الشائعة."
                             left={`${0.5091383812010444 * width}px`}
                             top={`${0.5268741159830269 * height}px`}
@@ -117,17 +117,17 @@ const BiKeifyat = () => {
                         />
                         <TextGroup
                             delay={'3.5s'}
-                            fontSize={`${0.036 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="- یعطي أمثلة عن التفاعل الکیمیائي: الاحتراق، تکون الصدأ، تفاعل الحمض مع"
                             left={`${0.05221932114882506 * width}px`}
                             top={`${0.6039603960396039 * height}px`}
                             width={`${0.8877284595300261 * width}px`}
-                            height={`${0.06364922206506365 * height}px`}
+                            height={`${0.067 * height}px`}
                             linetype="line"
                         />
                         <TextGroup
                             delay={'4s'}
-                            fontSize={`${0.0335 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="مواد کلسیة ومع بعض الفلزات."
                             left={`${0.587467362924282 * width}px`}
                             top={`${0.685997171145686 * height}px`}
@@ -137,7 +137,7 @@ const BiKeifyat = () => {
                         />
                         <TextGroup
                             delay={'5s'}
-                            fontSize={`${0.034 * width}px`}
+                            fontSize={`${0.0326 * width}px`}
                             text="- یستدل علي حدوث تفاعل کیمیائي من ملاحظة انتاج مادة أو مواد جدیدة."
                             left={`${0.14795474325500435 * width}px`}
                             top={`${0.7708628005657708 * height}px`}
