@@ -20,3 +20,22 @@
 .with-footer .Fullpage {
     height: calc(100vh - 20px);
 }
+
+.menu-btn-new{
+    cursor : pointer;
+    z-index: 1000000;
+    position:fixed;
+    top: 30px;
+    margin-right: 88vw;
+}
+
+.menu-btn-new img {
+    height: 42px;
+    width: 42px;
+}
+
+@media screen and (max-width: 600px) {
+    .menu-btn-new{
+        display: none;
+    }
+}
