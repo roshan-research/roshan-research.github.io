@@ -45,7 +45,12 @@ class RoshanWebsite extends Component {
         showFooter: false,
         id: 'hide',
         handleSwipe: () => {},
+        isMenuOpen : false
     };
+
+    handleMenuState(){
+        this.setState({isMenuOpen:!this.state.isMenuOpen})
+    }
 
     toggleFooter(event) {
         if (event.keyCode === 38 && isFooterOpen) {
@@ -153,7 +158,16 @@ class RoshanWebsite extends Component {
                     transition={loadingAnimation.transition}
                 >
                     <div id={'all-page'}>
+                        <button className='menu-btn-new' onClick={()=>this.handleMenuState()}>
+                        {
+                            this.state.isMenuOpen ?
+                            <img src={closeIcon} alt={''} /> :
+                            <img src={burgerIcon} alt={''} />
+                        }
+                        </button>
                         <Menu
+                            onClose={()=>this.handleMenuState()}
+                            isOpen = {this.state.isMenuOpen}
                             menuClassName={'menu'}
                             itemListElement="div"
                             burgerButtonClassName={'my-button'}
@@ -161,12 +175,14 @@ class RoshanWebsite extends Component {
                             itemListClassName={'menu-items'}
                             crossButtonClassName={'my-cross'}
                             outerContainerId={'main'}
-                            customBurgerIcon={<img src={burgerIcon} alt={''} />}
-                            customCrossIcon={
-                                <div>
-                                    <img src={closeIcon} alt={''} />
-                                </div>
-                            }
+                            // customBurgerIcon={<img src={burgerIcon} alt={''} />}
+                            // customCrossIcon={
+                            //     <div>
+                            //         <img src={closeIcon} alt={''} />
+                            //     </div>
+                            // }
+                            customBurgerIcon = {false}
+                            customCrossIcon = {false}
                         >
                             <MenuLinks />
                         </Menu>
