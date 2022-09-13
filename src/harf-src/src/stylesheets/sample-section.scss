@@ -148,6 +148,8 @@ p {
 @media screen and (max-width: 500px) {
     #sample-title {
         font-size: 5.3vw;
+        z-index: 100;
+        padding-bottom: 35vw;
     }
 
     .sample-alefbized {

@@ -140,6 +140,12 @@ p {
         font-size: 5.3vw;
     }
 
+    #active-orange-title {
+        background-color: black;
+        color: #ff6200;
+        font-weight: 700;
+    }
+
     .sample-alefbized {
         display: none;
     }
@@ -195,6 +201,7 @@ p {
     .button {
         width: 80vw;
         margin-top: 25vh;
+        pointer-events: none;
     }
 
     .float-right {
