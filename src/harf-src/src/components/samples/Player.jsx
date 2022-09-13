@@ -37,7 +37,7 @@ const Player = ({music,segments,title}) => {
             waveColor: ["#AAAAAA","#AAAAAA","#AAAAAA","#E6E6E6","#E6E6E6"],
             barHeight: isMobile? 0.8 : 2,
             barRadius: 1,
-            barWidth: isMobile? 2 : 4,
+            barWidth: 2,
             responsive: true,
             cursorColor: "transparent",
             progressColor: ["#00DA55","#00DA55","#00DA55","#C0EED2","#C0EED2"]
