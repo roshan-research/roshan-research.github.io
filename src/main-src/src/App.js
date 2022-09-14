@@ -66,11 +66,11 @@ class RoshanWebsite extends Component {
 
     onSlideChangeStart = (name, props, state, newState) => {
         const shouldAdd = newState.activeSlide === 5;
-        if (shouldAdd) {
-            document.addEventListener('keydown', this.toggleFooter);
-        } else {
-            document.removeEventListener('keydown', this.toggleFooter);
-        }
+        // if (shouldAdd) {
+        //     document.addEventListener('keydown', this.toggleFooter);
+        // } else {
+        //     document.removeEventListener('keydown', this.toggleFooter);
+        // }
         this.setState({
             fake: !this.state.fake,
             scrollsQuantity: this.state.scrollsQuantity + 1,
@@ -140,6 +140,9 @@ class RoshanWebsite extends Component {
                     scrollQuantity={this.state.scrollsQuantity}
                 />
             </Slide>,
+            <Slide style={{height:window.innerHeight/4+50}}>
+                <Footer/>
+            </Slide>
         ];
 
         return (
@@ -191,7 +194,7 @@ class RoshanWebsite extends Component {
                             {...fullPageOptions}
                             onSlideChangeStart={this.onSlideChangeStart}
                         />
-                        {this.shouldHaveFooter(this.state.showFooter)}
+                        {/* {this.shouldHaveFooter(this.state.showFooter)} */}
                     </div>
                 </motion.div>
             </Suspense>
@@ -200,3 +203,4 @@ class RoshanWebsite extends Component {
 }
 
 export default RoshanWebsite;
+
