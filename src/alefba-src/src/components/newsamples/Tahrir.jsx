@@ -76,7 +76,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.026 * width}px`}
                             text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.22583201267828842 * height}px`}
@@ -85,7 +85,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'0.5s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0254 * width}px`}
                             text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
                             left={`${0.13248542660307366 * width}px`}
                             top={`${0.3090332805071315 * height}px`}
@@ -94,7 +94,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0254 * width}px`}
                             text="و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا وزن ثابت تکلیس"
                             left={`${0.13248542660307366 * width}px`}
                             top={`${0.38827258320126784 * height}px`}
@@ -103,7 +103,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.026 * width}px`}
                             text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
                             left={`${0.344 * width}px`}
                             top={`${0.4659270998415214 * height}px`}
@@ -112,7 +112,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'2s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0257 * width}px`}
                             text="مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R زیریك کندانسور رفلو"
                             left={`${0.13513513513513514 * width}px`}
                             top={`${0.5467511885895404 * height}px`}
@@ -121,7 +121,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'2.5s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0263 * width}px`}
                             text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
                             left={`${0.14043455219925807 * width}px`}
                             top={`${0.6251980982567353 * height}px`}
@@ -130,7 +130,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'3s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0256 * width}px`}
                             text="تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و وزن‌باقیماند، بیش‌از"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.705229793977813 * height}px`}
@@ -139,7 +139,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'3.5s'}
-                            fontSize={`${0.0239 * width}px`}
+                            fontSize={`${0.0256 * width}px`}
                             text="۲ میلی‌گرم نیست ( ۰/۲۶)."
                             left={`${0.6253312135665077 * width}px`}
                             top={`${0.786053882725832 * height}px`}
