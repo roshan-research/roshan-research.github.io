@@ -12,19 +12,14 @@
     display: block;
 }
 
-.with-footer,
-.without-footer {
+.fullscreen {
     height: 100vh;
 }
 
-.with-footer .Fullpage {
-    height: calc(100vh - 20px);
-}
-
-.menu-btn-new{
-    cursor : pointer;
+.menu-btn-new {
+    cursor: pointer;
     z-index: 1000000;
-    position:fixed;
+    position: fixed;
     top: 30px;
     margin-right: 88vw;
 }
@@ -35,7 +30,7 @@
 }
 
 @media screen and (max-width: 600px) {
-    .menu-btn-new{
+    .menu-btn-new {
         display: none;
     }
 }

@@ -45,11 +45,11 @@ class RoshanWebsite extends Component {
         showFooter: false,
         id: 'hide',
         handleSwipe: () => {},
-        isMenuOpen : false
+        isMenuOpen: false,
     };
 
-    handleMenuState(){
-        this.setState({isMenuOpen:!this.state.isMenuOpen})
+    handleMenuState() {
+        this.setState({ isMenuOpen: !this.state.isMenuOpen });
     }
 
     toggleFooter(event) {
@@ -140,9 +140,9 @@ class RoshanWebsite extends Component {
                     scrollQuantity={this.state.scrollsQuantity}
                 />
             </Slide>,
-            <Slide style={{height:window.innerHeight/4+50}}>
-                <Footer/>
-            </Slide>
+            <Slide style={{ height: window.innerHeight / 4 + 50 }}>
+                <Footer />
+            </Slide>,
         ];
 
         return (
@@ -150,27 +150,26 @@ class RoshanWebsite extends Component {
                 <motion.div
                     id={'main'}
                     className={`${this.state.id} ${
-                        isSafari || isOpera
-                            ? this.state.showFooter
-                                ? 'with-footer'
-                                : 'without-footer'
-                            : ''
+                        isSafari || isOpera ? 'fullscreen' : ''
                     }`}
                     initial={loadingAnimation.initial}
                     animate={loadingAnimation.animate}
                     transition={loadingAnimation.transition}
                 >
                     <div id={'all-page'}>
-                        <button className='menu-btn-new' onClick={()=>this.handleMenuState()}>
-                        {
-                            this.state.isMenuOpen ?
-                            <img src={closeIcon} alt={''} /> :
-                            <img src={burgerIcon} alt={''} />
-                        }
+                        <button
+                            className="menu-btn-new"
+                            onClick={() => this.handleMenuState()}
+                        >
+                            {this.state.isMenuOpen ? (
+                                <img src={closeIcon} alt={''} />
+                            ) : (
+                                <img src={burgerIcon} alt={''} />
+                            )}
                         </button>
                         <Menu
-                            onClose={()=>this.handleMenuState()}
-                            isOpen = {this.state.isMenuOpen}
+                            onClose={() => this.handleMenuState()}
+                            isOpen={this.state.isMenuOpen}
                             menuClassName={'menu'}
                             itemListElement="div"
                             burgerButtonClassName={'my-button'}
@@ -184,8 +183,8 @@ class RoshanWebsite extends Component {
                             //         <img src={closeIcon} alt={''} />
                             //     </div>
                             // }
-                            customBurgerIcon = {false}
-                            customCrossIcon = {false}
+                            customBurgerIcon={false}
+                            customCrossIcon={false}
                         >
                             <MenuLinks />
                         </Menu>
@@ -203,4 +202,3 @@ class RoshanWebsite extends Component {
 }
 
 export default RoshanWebsite;
-
