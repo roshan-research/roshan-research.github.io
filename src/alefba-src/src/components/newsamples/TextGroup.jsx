@@ -41,6 +41,7 @@ const TextGroup = ({
                     height: height,
                     textAlign: textAlign,
                     overflow: 'hidden',
+                    display: 'inline-block',
                     backgroundColor: 'transparent',
                     lineHeight: lineHeight,
                     animationPlayState: 'inherit',
