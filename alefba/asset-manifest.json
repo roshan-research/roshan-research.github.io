@@ -1,8 +1,8 @@
 {
   "files": {
     "main.css": "/alefba/static/css/main.4b799ebf.chunk.css",
-    "main.js": "/alefba/static/js/main.fb45c4ef.chunk.js",
-    "main.js.map": "/alefba/static/js/main.fb45c4ef.chunk.js.map",
+    "main.js": "/alefba/static/js/main.784fcc10.chunk.js",
+    "main.js.map": "/alefba/static/js/main.784fcc10.chunk.js.map",
     "runtime-main.js": "/alefba/static/js/runtime-main.a6e31ac6.js",
     "runtime-main.js.map": "/alefba/static/js/runtime-main.a6e31ac6.js.map",
     "static/js/2.5a03b890.chunk.js": "/alefba/static/js/2.5a03b890.chunk.js",
@@ -54,6 +54,6 @@
     "static/js/runtime-main.a6e31ac6.js",
     "static/js/2.5a03b890.chunk.js",
     "static/css/main.4b799ebf.chunk.css",
-    "static/js/main.fb45c4ef.chunk.js"
+    "static/js/main.784fcc10.chunk.js"
   ]
 }
