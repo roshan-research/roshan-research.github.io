@@ -1,4 +1,7 @@
-$transitions-duration: 3s;
+:root {
+    --animation-duration: 3s;
+    --animation-delay: 0s;
+}
 
 @keyframes moveText {
     0% {
@@ -12,11 +15,11 @@ $transitions-duration: 3s;
 }
 @keyframes moveBg {
     0% {
-        background: #FEAD6C;
+        background: #fead6c;
         transform: scaleX(0);
     }
     100% {
-        background: #FEAD6C;
+        background: #fead6c;
         transform: scaleX(1);
     }
 }
@@ -37,7 +40,7 @@ $transitions-duration: 3s;
 }
 .document.line-view .line,
 .document.paragraph-view p,
-.document.paragraph-view table ,
+.document.paragraph-view table,
 .document.line-view .line_bold {
     font-family: IRMitra, serif;
     color: transparent;
@@ -62,18 +65,18 @@ $transitions-duration: 3s;
     height: 100%;
     direction: rtl;
     overflow: hidden;
-    animation: moveText $transitions-duration linear;
-    -webkit-animation: moveText $transitions-duration linear;
-    animation-delay: inherit;
+    animation: moveText var(--animation-duration) linear;
+    -webkit-animation: moveText var(--animation-duration) linear;
+    animation-delay: var(--animation-delay);
     line-height: 1;
     animation-fill-mode: forwards;
 }
 
 #bg-orange {
-    animation: moveBg $transitions-duration linear;
-    -webkit-animation: moveBg $transitions-duration linear;
+    animation: moveBg var(--animation-duration) linear;
+    -webkit-animation: moveBg var(--animation-duration) linear;
     animation-fill-mode: forwards;
-    animation-delay: inherit;
+    animation-delay: var(--animation-delay);
 }
 #text-black-sample {
     float: right;
@@ -90,17 +93,19 @@ $transitions-duration: 3s;
     display: table;
     position: absolute;
     text-align: center;
-    font-weight: bold
+    font-weight: bold;
 }
 .document.line-view .words {
     display: table-cell;
     vertical-align: middle;
 }
-.document.line-view p, .document.line-view table {
+.document.line-view p,
+.document.line-view table {
     height: initial !important;
     width: initial !important;
 }
-.document.paragraph-view p, .document.paragraph-view table {
+.document.paragraph-view p,
+.document.paragraph-view table {
     position: absolute;
     padding: 5px 30px;
     display: table;
@@ -124,18 +129,20 @@ $transitions-duration: 3s;
     margin-top: 0;
     background: rgba(255, 98, 0, 0);
 }
-.document .image div.image-wrapper{
+.document .image div.image-wrapper {
     height: 100%;
     max-width: 128px;
     margin: auto;
     background-size: contain;
 }
-.document.paragraph-view table th, .document.paragraph-view table td {
+.document.paragraph-view table th,
+.document.paragraph-view table td {
     border: 6px dashed #fff;
 }
 
 @media screen and (max-width: 500px) {
-    #bg-orange, .document.line-view .line ::before,
+    #bg-orange,
+    .document.line-view .line ::before,
     .document.paragraph-view p ::before,
     .document.paragraph-view table ::before,
     .document.line-view .line_bold ::before {
@@ -144,5 +151,4 @@ $transitions-duration: 3s;
 }
 
 .rooznameh-paragraph-box {
-    
 }

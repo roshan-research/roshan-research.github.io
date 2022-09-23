@@ -77,7 +77,7 @@ const FishHoghoghi = () => {
                             top={`${0.04744958481613286 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'4s'}
                             fontSize={`${0.028 * width}px`}
                             text="حقوق و دستمزد"
                             height={`${0.05931198102016608 * height}px`}
@@ -86,7 +86,7 @@ const FishHoghoghi = () => {
                             top={`${0.33807829181494664 * height}px`}
                         />
                         <TextGroup
-                            delay={'0.5s'}
+                            delay={'6s'}
                             fontSize={`${0.028 * width}px`}
                             text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
                             height={`${0.06287069988137604 * height}px`}
@@ -95,7 +95,7 @@ const FishHoghoghi = () => {
                             top={`${0.4151838671411625 * height}px`}
                         />
                         <TextGroup
-                            delay={'1s'}
+                            delay={'7s'}
                             fontSize={`${0.028 * width}px`}
                             text="حق اولاد و سایر هزینه های کارکنان"
                             height={`${0.05338078291814947 * height}px`}
@@ -104,7 +104,7 @@ const FishHoghoghi = () => {
                             top={`${0.4804270462633452 * height}px`}
                         />
                         <TextGroup
-                            delay={'1.5s'}
+                            delay={'8s'}
                             fontSize={`${0.028 * width}px`}
                             text="بن - حق مسکن - خوارباروناهاری کارکنان"
                             height={`${0.054567022538552785 * height}px`}
@@ -113,7 +113,7 @@ const FishHoghoghi = () => {
                             top={`${0.5456702253855279 * height}px`}
                         />
                         <TextGroup
-                            delay={'2s'}
+                            delay={'9s'}
                             fontSize={`${0.028 * width}px`}
                             text="عیدي وپاداش"
                             height={`${0.054567022538552785 * height}px`}
@@ -122,7 +122,7 @@ const FishHoghoghi = () => {
                             top={`${0.6109134045077106 * height}px`}
                         />
                         <TextGroup
-                            delay={'2.5s'}
+                            delay={'10s'}
                             fontSize={`${0.028 * width}px`}
                             text="حق بیمه سهم کارفرما"
                             height={`${0.060498220640569395 * height}px`}
@@ -131,7 +131,7 @@ const FishHoghoghi = () => {
                             top={`${0.6761565836298933 * height}px`}
                         />
                         <TextGroup
-                            delay={'3s'}
+                            delay={'11s'}
                             fontSize={`${0.028 * width}px`}
                             text="باز خرید و ذخیره سنوات خدمت"
                             height={`${0.05812574139976275 * height}px`}
@@ -140,7 +140,7 @@ const FishHoghoghi = () => {
                             top={`${0.7390272835112692 * height}px`}
                         />
                         <TextGroup
-                            delay={'3.5s'}
+                            delay={'12s'}
                             fontSize={`${0.028 * width}px`}
                             text="بیمه حوادث - هزینه بهداشتی"
                             height={`${0.05693950177935943 * height}px`}
@@ -149,7 +149,7 @@ const FishHoghoghi = () => {
                             top={`${0.8066429418742586 * height}px`}
                         />
                         <TextGroup
-                            delay={'4s'}
+                            delay={'13s'}
                             fontSize={`${0.028 * width}px`}
                             text="پس انداز سهم کارفرما"
                             height={`${0.05338078291814947 * height}px`}
@@ -158,7 +158,7 @@ const FishHoghoghi = () => {
                             top={`${0.8718861209964412 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'1s'}
                             fontSize={`${0.036 * width}px`}
                             text="سال ۱۳۹۰"
                             height={`${0.05759454329774614 * height}px`}
@@ -167,7 +167,7 @@ const FishHoghoghi = () => {
                             top={`${0.19572953736654805 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'2s'}
                             fontSize={`${0.033 * width}px`}
                             text="هزار ریال"
                             height={`${0.05693950177935943 * height}px`}
@@ -176,7 +176,7 @@ const FishHoghoghi = () => {
                             top={`${0.2609727164887307 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'6.9s'}
                             fontSize={`${0.0345 * width}px`}
                             text="۳۰,۶۷۲,۵۴۵"
                             height={`${0.05338078291814947 * height}px`}
@@ -185,7 +185,7 @@ const FishHoghoghi = () => {
                             top={`${0.33214709371293 * height}px`}
                         />
                         <TextGroup
-                            delay={'0.5s'}
+                            delay={'9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۵,۸۲۲,۸۵۸"
                             height={`${0.052008303677342826 * height}px`}
@@ -194,7 +194,7 @@ const FishHoghoghi = () => {
                             top={`${0.4092526690391459 * height}px`}
                         />
                         <TextGroup
-                            delay={'1s'}
+                            delay={'9.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۳,۵۶۴,۳۳۸"
                             height={`${0.05338078291814947 * height}px`}
@@ -203,7 +203,7 @@ const FishHoghoghi = () => {
                             top={`${0.4804270462633452 * height}px`}
                         />
                         <TextGroup
-                            delay={'1.5s'}
+                            delay={'10.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۲,۳۲۹,۶۲۹"
                             height={`${0.05338078291814947 * height}px`}
@@ -212,7 +212,7 @@ const FishHoghoghi = () => {
                             top={`${0.5456702253855279 * height}px`}
                         />
                         <TextGroup
-                            delay={'2s'}
+                            delay={'11.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۷,۵۹۷,۴۸۷"
                             height={`${0.05338078291814947 * height}px`}
@@ -221,7 +221,7 @@ const FishHoghoghi = () => {
                             top={`${0.6109134045077106 * height}px`}
                         />
                         <TextGroup
-                            delay={'2.5s'}
+                            delay={'12.9s'}
                             fontSize={`${0.0357 * width}px`}
                             text="۱۲,۳۰۵,۶۷۸"
                             left={`${0.2650316455696203 * width}px`}
@@ -230,7 +230,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'3s'}
+                            delay={'13.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۵,۹۷۳,۷۷۸"
                             left={`${0.27294303797468356 * width}px`}
@@ -239,7 +239,7 @@ const FishHoghoghi = () => {
                             height={`${0.05575326215895611 * height}px`}
                         />
                         <TextGroup
-                            delay={'3.5s'}
+                            delay={'14.9s'}
                             fontSize={`${0.038 * width}px`}
                             text="۲۴۷,۳۲۰"
                             left={`${0.29667721518987344 * width}px`}
@@ -248,7 +248,7 @@ const FishHoghoghi = () => {
                             height={`${0.05219454329774614 * height}px`}
                         />
                         <TextGroup
-                            delay={'4s'}
+                            delay={'15.9s'}
                             fontSize={`${0.035 * width}px`}
                             text="۱,۳۵۸,۷۷۷"
                             left={`${0.27689873417721517 * width}px`}
@@ -257,7 +257,7 @@ const FishHoghoghi = () => {
                             height={`${0.05338078291814947 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'3.9s'}
                             fontSize={`${0.035 * width}px`}
                             text="سال ۱۳۸۹"
                             left={`${0.07911392405063292 * width}px`}
@@ -266,7 +266,7 @@ const FishHoghoghi = () => {
                             height={`${0.05538078291814947 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'5s'}
                             fontSize={`${0.034 * width}px`}
                             text="هزار ریال"
                             left={`${0.09098101265822785 * width}px`}
@@ -275,7 +275,7 @@ const FishHoghoghi = () => {
                             height={`${0.05693950177935943 * height}px`}
                         />
                         <TextGroup
-                            delay={'0s'}
+                            delay={'10s'}
                             fontSize={`${0.0325 * width}px`}
                             text="۲۶,۳۲۵,۸۳۳"
                             left={`${0.08681392405063292 * width}px`}
@@ -284,7 +284,7 @@ const FishHoghoghi = () => {
                             height={`${0.05338078291814947 * height}px`}
                         />
                         <TextGroup
-                            delay={'0.5s'}
+                            delay={'12s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۴,۸۲۱,۸۹۶"
                             left={`${0.09098101265822785 * width}px`}
@@ -293,7 +293,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'1s'}
+                            delay={'12.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۳,۶۶۷,۴۳۱"
                             left={`${0.09098101265822785 * width}px`}
@@ -302,7 +302,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'1.5s'}
+                            delay={'13.9s'}
                             fontSize={`${0.037 * width}px`}
                             text="۲,۰۳۷,۱۲۷"
                             left={`${0.09098101265822785 * width}px`}
@@ -311,7 +311,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'2s'}
+                            delay={'14.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۸,۲۰۴,۹۷۷"
                             left={`${0.09098101265822785 * width}px`}
@@ -320,7 +320,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'2.5s'}
+                            delay={'15.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۹,۳۷۰,۶۲۰"
                             left={`${0.09098101265822785 * width}px`}
@@ -329,7 +329,7 @@ const FishHoghoghi = () => {
                             height={`${0.054567022538552785 * height}px`}
                         />
                         <TextGroup
-                            delay={'3s'}
+                            delay={'16.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۶,۳۴۹,۵۶۸"
                             left={`${0.09098101265822785 * width}px`}
@@ -338,7 +338,7 @@ const FishHoghoghi = () => {
                             height={`${0.051008303677342826 * height}px`}
                         />
                         <TextGroup
-                            delay={'3.5s'}
+                            delay={'17.9s'}
                             fontSize={`${0.0355 * width}px`}
                             text="۲۱۷,۱۵۳"
                             left={`${0.11471518987341772 * width}px`}
@@ -347,7 +347,7 @@ const FishHoghoghi = () => {
                             height={`${0.05338078291814947 * height}px`}
                         />
                         <TextGroup
-                            delay={'4s'}
+                            delay={'18.9s'}
                             fontSize={`${0.037 * width}px`}
                             text="۱,۵۴۰,۲۹۱"
                             left={`${0.09098101265822785 * width}px`}

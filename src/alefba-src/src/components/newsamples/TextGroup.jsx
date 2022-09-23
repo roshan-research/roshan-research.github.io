@@ -11,6 +11,7 @@ const TextGroup = ({
     lineHeight,
     lineType = 'line_bold',
     delay = '0s',
+    duration = '3000ms',
     isRooznameh = false,
 }) => {
     return (
@@ -26,7 +27,8 @@ const TextGroup = ({
                     height: height,
                     textAlign: textAlign,
                     lineHeight: lineHeight,
-                    animationDelay: delay,
+                    '--animation-delay': delay,
+                    '--animation-duration': duration,
                     animationPlayState: isRooznameh ? 'paused' : 'unset',
                 }}
             ></span>
@@ -44,6 +46,8 @@ const TextGroup = ({
                     display: 'inline-block',
                     backgroundColor: 'transparent',
                     lineHeight: lineHeight,
+                    '--animation-delay': delay,
+                    '--animation-duration': duration,
                     animationPlayState: 'inherit',
                 }}
             >
@@ -52,7 +56,8 @@ const TextGroup = ({
                     data-text={text}
                     style={{
                         fontSize: fontSize,
-                        animationDelay: delay,
+                        '--animation-delay': delay,
+                        '--animation-duration': duration,
                         animationPlayState: 'inherit',
                     }}
                 >
