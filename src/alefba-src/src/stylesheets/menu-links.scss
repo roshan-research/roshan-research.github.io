@@ -1,9 +1,13 @@
+.bm-cross-button.my-cross {
+    right: 1px !important;
+    margin-right: 2vw !important;
+}
+
 #menu-links {
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
     flex-direction: column;
-    height: 30vh;
     margin-top: 7vw;
 }
 
@@ -13,6 +17,7 @@
     justify-content: center;
     align-items: flex-end;
     flex-direction: column;
+    height: 100%;
 }
 
 .menu-link {
@@ -27,7 +32,7 @@
 }
 
 #company-name {
-    margin-top: 50vh;
+    margin-top: auto;
     margin-right: 0;
     color: white;
     font-family: iran-yekan, serif;
@@ -45,7 +50,10 @@
         justify-content: space-between;
         align-items: flex-end;
         flex-direction: column;
-        height: 40vh;
+    }
+
+    .bm-cross-button.my-cross {
+        margin-right: 16px !important;
     }
 
     #menu-contents {
