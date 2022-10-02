@@ -20,6 +20,10 @@ p {
     flex-direction: row;
 }
 
+.sample-title-space {
+    height: #{'min(8vw, 75px)'};
+}
+
 .sample-row {
     margin-right: -2vw;
     display: flex;
@@ -149,7 +153,10 @@ p {
     #sample-title {
         font-size: 5.3vw;
         z-index: 100;
-        padding-bottom: 35vw;
+    }
+
+    .sample-title-space {
+        height: 11vw;
     }
 
     .sample-alefbized {
@@ -170,11 +177,9 @@ p {
     }
 
     #sample-section {
-        margin-top: 50vh;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        height: 65.14084507042254vh;
         width: 80vw;
     }
 
@@ -293,7 +298,6 @@ p {
     }
 
     #sample-section {
-        margin-top: -45vw;
         width: 100vw;
     }
 

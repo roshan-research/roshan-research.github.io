@@ -8,10 +8,10 @@
 #menu-links {
     display: flex;
     justify-content: space-between;
-    gap: clamp(4px, 12vw, 12px);
+    gap: clamp(24px, 12vw, 32px);
     align-items: flex-end;
     flex-direction: column;
-    margin-top: #{'max(7vw, 64px)'};
+    margin-top: #{'max(7vw, 100px)'};
 }
 
 #menu-contents {

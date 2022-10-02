@@ -18,9 +18,12 @@
     background: #ffffff;
 }
 
-#sample-footer-space,
+#sample-footer-space {
+    height: #{'min(20vw, 200px)'};
+}
+
 #catalog-footer-space {
-    height: 27vh;
+    height: #{'min(10vw, 100px)'};
 }
 
 #utils-sample-space {
@@ -81,16 +84,16 @@
 }
 
 @media screen and (max-width: 500px) {
-    #sample-footer-space {
-        height: 42.6vw;
+    #catalog-footer-space {
+        height: 47vw;
     }
 
-    #catalog-footer-space {
-        height: 50vh;
+    #sample-footer-space {
+        height: #{'min(32vw, 135px)'};
     }
 
     #utils-sample-space {
-        height: 55vw;
+        height: 32vw;
     }
 
     #usage-utils-space {

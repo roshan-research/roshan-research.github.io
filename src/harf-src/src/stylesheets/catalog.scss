@@ -1,9 +1,10 @@
 #catalog {
+    padding-block: 3.5vw;
+    padding-inline: 5vw;
     width: 83vw;
     justify-content: space-between;
     align-items: center;
     display: flex;
-    height: 30vh;
     margin-right: auto;
     margin-left: auto;
     background-color: #181818;
@@ -13,18 +14,19 @@
 
 #catalog-right {
     display: flex;
+    gap: 1.25rem;
     justify-content: center;
-    align-items: end;
-    padding-right: 4vw;
+    align-items: flex-end;
     flex-direction: column;
 }
 
 #catalog-description {
+    margin: 0;
     color: rgb(255, 255, 255);
     letter-spacing: 0.02em;
     text-align: right;
     direction: rtl;
-    width: 20vw;
+    width: 15vw;
     font-family: iran-yekan, serif;
     font-size: 1.1vw;
     font-weight: 400;
@@ -32,7 +34,6 @@
 
 #catalog-cover {
     width: 19vw;
-    padding-left: 4vw;
 }
 
 #catalog-button {
@@ -47,7 +48,6 @@
 
     img {
         width: 0.9vw;
-        padding-left: 1vw;
     }
 
     display: flex;
@@ -69,17 +69,17 @@
 }
 
 .catalog-link {
-    margin-top: 0.5vw;
     position: relative;
     z-index: 100;
-    margin-right: 1vw;
 }
 
 @media screen and (max-width: 600px) {
     #catalog {
         flex-direction: column-reverse;
-        height: 50vh;
         justify-content: space-around;
+        gap: 2rem;
+        padding-block: 6vw;
+        padding-inline: 0.4vw;
     }
 
     #catalog-cover {
@@ -106,13 +106,10 @@
         width: 50vw;
     }
 
-    .catalog-link {
-        margin-top: 7vw;
-    }
-
     #catalog-right {
         justify-content: space-between;
         align-items: center;
+        gap: 1.5rem;
     }
 
     #catalog-right {

@@ -29,15 +29,15 @@
 
 #sample-footer-space,
 #catalog-footer-space {
-    height: min(20vw, 200px);
+    height: #{'min(20vw, 200px)'};
 }
 
 #utils-sample-space {
-    height: min(20vw, 115px);
+    height: #{'min(20vw, 115px)'};
 }
 
 #usage-utils-space {
-    height: max(40vw, 310px);
+    height: #{'max(40vw, 310px)'};
 }
 
 #abilities-usage-space {
