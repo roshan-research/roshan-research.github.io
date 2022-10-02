@@ -118,12 +118,16 @@ a {
         position: absolute;
         justify-content: space-between;
         align-items: flex-end;
-        margin-bottom: 15vh;
+        gap: 3vw;
+        margin-bottom: 24vw;
         margin-right: 5vw;
     }
 
     #icon-title-footer {
-        margin-bottom: 37vh;
+        margin-bottom: 28vw;
+        margin-right: 6vw;
+        margin-top: unset;
+        margin-left: unset;
         position: relative;
         display: flex;
         flex-direction: row;
@@ -135,12 +139,13 @@ a {
     }
 
     #icon-footer {
-        height: 4vh;
+        height: auto;
         margin-bottom: 8vh;
         width: 15vw;
     }
 
     #email {
+        text-align: right;
         font-size: 4vw;
         height: 3.5211267605633805vh;
         width: 35vw;
