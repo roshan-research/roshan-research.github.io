@@ -1,99 +1,99 @@
+.bm-cross-button.my-cross {
+    right: 79vw !important;
+    top: 19px !important;
+    margin-right: 2vw !important;
+    transform: scale(1.2);
+}
+
 #menu-links {
-  display: flex;
-  justify-content: space-between;
-  align-items: start;
-  flex-direction: column;
-  height: 30vh;
-  margin-top: 7vw;
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(24px, 12vw, 32px);
+    align-items: flex-start;
+    flex-direction: column;
+    margin-top: #{'max(7vw, 100px)'};
 }
 
 #menu-contents {
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    height: 100%;
 }
 
 .menu-link {
-  transition: 1s;
-  color: white;
-  font-family: iran-yekan, serif;
-  font-size: 1.3vw;
+    transition: 1s;
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: clamp(12px, 1.3vw, 50px);
 }
 
 .menu-link:hover {
-  color: #4286F5;
+    color: #4286f5;
 }
 
 #company-name {
-  margin-top: 50vh;
-  font-family: iran-yekan, serif;
-  color: white;
-  font-size: 0.8vw;
+    margin-top: auto;
+    margin-right: 0;
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: 0.8vw;
+    text-align: right;
 }
 
 .my-button {
-  width: 3vw;
-  position: fixed;
-  margin-top: 2.2vw;
-  transition: 0.2s;
-  margin-right: 88vw;
+    width: 3vw;
+    position: fixed;
+    margin-top: 2.2vw;
+    transition: 0.2s;
+    margin-right: 88vw;
 }
 
-.my-button:active, .my-cross:active {
-  transform: scale(0.8);
+.my-button:active,
+.my-cross:active {
+    transform: scale(0.8);
 }
 
 .menu {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background-color: #0A0A0A;
-  position: absolute;
-  margin-right: 80vw;
-  width: 20vw;
-}
-
-.my-cross {
-  margin-right: 80vw;
-  margin-top: 1vw;
-  transition: 0.2s;
-}
-
-.menu-items {
-  display: flex;
-  margin-right: -3vw;
-  justify-content: center;
-  align-items: center;
-}
-
-@media screen and (max-width: 600px){
-  #company-name {
-    display: none;
-  }
-
-  #menu-links {
-    justify-content: space-between;
+    display: flex;
+    justify-content: flex-start;
     align-items: center;
-    flex-direction: column;
-    height: 40vh;
-  }
+    background-color: #0a0a0a;
+    position: absolute;
+    margin-right: 80vw;
+    width: 20vw;
+}
 
-  #menu-contents {
-    padding-right: 0;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-  }
+@media screen and (max-width: 600px) {
+    #company-name {
+        display: none;
+    }
 
-  .menu-link {
-    font-size: 6.5vw;
-  }
+    #menu-links {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 40vh;
+    }
 
-  .my-button {
-    display: none;
-  }
+    #menu-contents {
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
 
-  .menu {
-    display: none;
-  }
+    .menu-link {
+        font-size: 6.5vw;
+    }
+
+    .my-button {
+        display: none;
+    }
+
+    .menu {
+        display: none;
+    }
 }
