@@ -78,7 +78,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'4s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.03 * width}px`}
                             text="حقوق و دستمزد"
                             height={`${0.05931198102016608 * height}px`}
                             width={`${0.15427215189873417 * width}px`}
@@ -87,7 +87,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'6s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0287 * width}px`}
                             text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
                             height={`${0.06287069988137604 * height}px`}
                             width={`${0.4248417721518987 * width}px`}
@@ -96,7 +96,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'7s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0306 * width}px`}
                             text="حق اولاد و سایر هزینه های کارکنان"
                             height={`${0.05338078291814947 * height}px`}
                             width={`${0.34 * width}px`}
@@ -105,7 +105,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'8s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0293 * width}px`}
                             text="بن - حق مسکن - خوارباروناهاری کارکنان"
                             height={`${0.054567022538552785 * height}px`}
                             width={`${0.3916139240506329 * width}px`}
@@ -114,7 +114,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'9s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0289 * width}px`}
                             text="عیدي وپاداش"
                             height={`${0.054567022538552785 * height}px`}
                             width={`${0.1305379746835443 * width}px`}
@@ -123,7 +123,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'10s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0305 * width}px`}
                             text="حق بیمه سهم کارفرما"
                             height={`${0.060498220640569395 * height}px`}
                             width={`${0.21360759493670886 * width}px`}
@@ -132,7 +132,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'11s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0295 * width}px`}
                             text="باز خرید و ذخیره سنوات خدمت"
                             height={`${0.05812574139976275 * height}px`}
                             width={`${0.29557721518987344 * width}px`}
@@ -141,7 +141,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'12s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0294 * width}px`}
                             text="بیمه حوادث - هزینه بهداشتی"
                             height={`${0.05693950177935943 * height}px`}
                             width={`${0.28085443037974683 * width}px`}
@@ -150,7 +150,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'13s'}
-                            fontSize={`${0.028 * width}px`}
+                            fontSize={`${0.0299 * width}px`}
                             text="پس انداز سهم کارفرما"
                             height={`${0.05338078291814947 * height}px`}
                             width={`${0.2175632911392405 * width}px`}
@@ -159,7 +159,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'1s'}
-                            fontSize={`${0.036 * width}px`}
+                            fontSize={`${0.0368 * width}px`}
                             text="سال ۱۳۹۰"
                             height={`${0.05759454329774614 * height}px`}
                             width={`${0.11867088607594936 * width}px`}
@@ -186,7 +186,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.0365 * width}px`}
                             text="۵,۸۲۲,۸۵۸"
                             height={`${0.052008303677342826 * height}px`}
                             width={`${0.13449367088607594 * width}px`}
@@ -204,7 +204,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'10.9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.0365 * width}px`}
                             text="۲,۳۲۹,۶۲۹"
                             height={`${0.05338078291814947 * height}px`}
                             width={`${0.13449367088607594 * width}px`}
@@ -249,7 +249,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'15.9s'}
-                            fontSize={`${0.035 * width}px`}
+                            fontSize={`${0.036 * width}px`}
                             text="۱,۳۵۸,۷۷۷"
                             left={`${0.27689873417721517 * width}px`}
                             top={`${0.8718861209964412 * height}px`}
@@ -258,7 +258,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'3.9s'}
-                            fontSize={`${0.035 * width}px`}
+                            fontSize={`${0.0355 * width}px`}
                             text="سال ۱۳۸۹"
                             left={`${0.07911392405063292 * width}px`}
                             top={`${0.19572953736654805 * height}px`}
@@ -276,7 +276,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'10s'}
-                            fontSize={`${0.0325 * width}px`}
+                            fontSize={`${0.0328 * width}px`}
                             text="۲۶,۳۲۵,۸۳۳"
                             left={`${0.08681392405063292 * width}px`}
                             top={`${0.33214709371293 * height}px`}
@@ -285,7 +285,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'12s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.0375 * width}px`}
                             text="۴,۸۲۱,۸۹۶"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.4033214709371293 * height}px`}
@@ -294,7 +294,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'12.9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.037 * width}px`}
                             text="۳,۶۶۷,۴۳۱"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.4744958481613286 * height}px`}
@@ -303,7 +303,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'13.9s'}
-                            fontSize={`${0.037 * width}px`}
+                            fontSize={`${0.0385 * width}px`}
                             text="۲,۰۳۷,۱۲۷"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.5397390272835113 * height}px`}
@@ -312,7 +312,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'14.9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.037 * width}px`}
                             text="۸,۲۰۴,۹۷۷"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.604982206405694 * height}px`}
@@ -321,7 +321,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'15.9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.0379 * width}px`}
                             text="۹,۳۷۰,۶۲۰"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.6702253855278766 * height}px`}
@@ -339,7 +339,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'17.9s'}
-                            fontSize={`${0.0355 * width}px`}
+                            fontSize={`${0.0397 * width}px`}
                             text="۲۱۷,۱۵۳"
                             left={`${0.11471518987341772 * width}px`}
                             top={`${0.7947805456702254 * height}px`}
@@ -348,7 +348,7 @@ const FishHoghoghi = () => {
                         />
                         <TextGroup
                             delay={'18.9s'}
-                            fontSize={`${0.037 * width}px`}
+                            fontSize={`${0.0399 * width}px`}
                             text="۱,۵۴۰,۲۹۱"
                             left={`${0.09098101265822785 * width}px`}
                             top={`${0.8600237247924081 * height}px`}

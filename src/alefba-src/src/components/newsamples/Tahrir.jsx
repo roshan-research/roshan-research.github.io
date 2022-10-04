@@ -76,7 +76,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'0s'}
-                            fontSize={`${0.026 * width}px`}
+                            fontSize={`${0.0271 * width}px`}
                             text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
                             left={`${0.12983571807101218 * width}px`}
                             top={`${0.22583201267828842 * height}px`}
@@ -85,7 +85,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'0.5s'}
-                            fontSize={`${0.0254 * width}px`}
+                            fontSize={`${0.0255 * width}px`}
                             text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
                             left={`${0.13248542660307366 * width}px`}
                             top={`${0.3090332805071315 * height}px`}
@@ -103,7 +103,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'1.5s'}
-                            fontSize={`${0.026 * width}px`}
+                            fontSize={`${0.0266 * width}px`}
                             text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
                             left={`${0.344 * width}px`}
                             top={`${0.4659270998415214 * height}px`}
@@ -121,7 +121,7 @@ const Tahrir = () => {
                         />
                         <TextGroup
                             delay={'2.5s'}
-                            fontSize={`${0.0263 * width}px`}
+                            fontSize={`${0.0262 * width}px`}
                             text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
                             left={`${0.14043455219925807 * width}px`}
                             top={`${0.6251980982567353 * height}px`}

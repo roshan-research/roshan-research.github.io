@@ -7,7 +7,7 @@ const TextGroup = ({
     left,
     top,
     width,
-    textAlign = 'auto',
+    textAlign = 'right',
     lineHeight,
     lineType = 'line_bold',
     delay = '0s',
