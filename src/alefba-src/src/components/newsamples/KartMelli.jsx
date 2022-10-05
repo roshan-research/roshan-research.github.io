@@ -67,6 +67,7 @@ const KartMelli = () => {
                     >
                         <TextGroup
                             delay={'0s'}
+                            duration="500ms"
                             fontSize={`${0.0195 * width}px`}
                             text="جمهوری اسلامی ایران"
                             left={`${0.8104 * width}px`}
@@ -75,7 +76,8 @@ const KartMelli = () => {
                             height={`${0.043899809765377296 * height}px`}
                         />
                         <TextGroup
-                            delay={'2.8s'}
+                            delay={'500ms'}
+                            duration="500ms"
                             fontSize={`${0.082 * width}px`}
                             text="کارت ملی"
                             left={`${0.368 * width}px`}
@@ -84,7 +86,8 @@ const KartMelli = () => {
                             height={`${0.14204185161699429 * height}px`}
                         />
                         <TextGroup
-                            delay={'3s'}
+                            delay={'100ms'}
+                            duration="1s"
                             fontSize={`${0.05 * width}px`}
                             text="شماره ملی: ۰۰۴۰۳۱۶۲۸۵"
                             left={`${0.555 * width}px`}
@@ -93,7 +96,8 @@ const KartMelli = () => {
                             height={`${0.08560558021559923 * height}px`}
                         />
                         <TextGroup
-                            delay={'3.5s'}
+                            delay={'200ms'}
+                            duration="500ms"
                             fontSize={`${0.03 * width}px`}
                             text="نام :"
                             left={`${0.81 * width}px`}
@@ -102,7 +106,8 @@ const KartMelli = () => {
                             height={`${0.054533925174381735 * height}px`}
                         />
                         <TextGroup
-                            delay={'6s'}
+                            delay={'700ms'}
+                            duration="500ms"
                             fontSize={`${0.05 * width}px`}
                             text="حمید رضا"
                             left={`${0.6368 * width}px`}
@@ -111,7 +116,8 @@ const KartMelli = () => {
                             height={`${0.08116677235256817 * height}px`}
                         />
                         <TextGroup
-                            delay={'4.5s'}
+                            delay={'300ms'}
+                            duration="500ms"
                             fontSize={`${0.0283 * width}px`}
                             text="نام خانوادگی :"
                             left={`${0.8016 * width}px`}
@@ -120,7 +126,8 @@ const KartMelli = () => {
                             height={`${0.0653138871274572 * height}px`}
                         />
                         <TextGroup
-                            delay={'7.2s'}
+                            delay={'800ms'}
+                            duration="500ms"
                             fontSize={`${0.05 * width}px`}
                             text="نکویی"
                             left={`${0.6884 * width}px`}
@@ -129,7 +136,8 @@ const KartMelli = () => {
                             height={`${0.08877615726062144 * height}px`}
                         />
                         <TextGroup
-                            delay={'6s'}
+                            delay={'400ms'}
+                            duration="500ms"
                             fontSize={`${0.028 * width}px`}
                             text="تاریخ تولد :"
                             left={`${0.8076 * width}px`}
@@ -138,7 +146,8 @@ const KartMelli = () => {
                             height={`${0.05960684844641725 * height}px`}
                         />
                         <TextGroup
-                            delay={'8.8s'}
+                            delay={'900ms'}
+                            duration="500ms"
                             fontSize={`${0.051 * width}px`}
                             text="۱۳۶۷/۰۲/۲۶"
                             left={`${0.56 * width}px`}
@@ -147,7 +156,8 @@ const KartMelli = () => {
                             height={`${0.08370323398858592 * height}px`}
                         />
                         <TextGroup
-                            delay={'8.5s'}
+                            delay={'500ms'}
+                            duration="500ms"
                             fontSize={`${0.032 * width}px`}
                             text="نام پدر :"
                             left={`${0.8032 * width}px`}
@@ -156,7 +166,8 @@ const KartMelli = () => {
                             height={`${0.060240963855421686 * height}px`}
                         />
                         <TextGroup
-                            delay={'11.2s'}
+                            delay={'1s'}
+                            duration="500ms"
                             fontSize={`${0.045 * width}px`}
                             text="محمد"
                             left={`${0.7 * width}px`}
@@ -165,7 +176,8 @@ const KartMelli = () => {
                             height={`${0.07102092580849714 * height}px`}
                         />
                         <TextGroup
-                            delay={'11s'}
+                            delay={'600ms'}
+                            duration="500ms"
                             fontSize={`${0.028 * width}px`}
                             text="پایان اعتبار :"
                             left={`${0.806 * width}px`}
@@ -174,7 +186,8 @@ const KartMelli = () => {
                             height={`${0.060240963855421686 * height}px`}
                         />
                         <TextGroup
-                            delay={'13.8s'}
+                            delay={'1.1s'}
+                            duration="500ms"
                             fontSize={`${0.0555 * width}px`}
                             text="۱۴۰۳/۰۸/۱۲"
                             left={`${0.56 * width}px`}

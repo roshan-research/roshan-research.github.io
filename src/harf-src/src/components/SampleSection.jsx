@@ -27,16 +27,6 @@ class SampleSection extends Component {
         'گفتار با موسیقی در حال پخش',
     ];
 
-    constructor(props) {
-        super(props);
-        window.setInterval(() => {
-            let randomNumber = Math.floor(Math.random() * 2 + 0);
-            this.setState({ chosenSample: randomNumber });
-        }, 60000);
-    }
-
-    componentDidMount() {}
-
     onSampleClick = (sampleName) => {
         this.setState({ chosenSample: sampleName });
     };
