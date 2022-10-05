@@ -1,31 +1,28 @@
-import Pattern from "../assets/images/main/main-pattern.png";
-import Papers from "../assets/images/main/papers.png";
-import IconTitle from "./IconTitle";
+import Pattern from '../assets/images/main/main-pattern.png';
+import Papers from '../assets/images/main/papers.png';
+import IconTitle from './IconTitle';
 import '../stylesheets/main-section.scss';
-import { Cross as Hamburger } from 'hamburger-react'
-import {useState} from "react";
+import { Cross as Hamburger } from 'hamburger-react';
+import { useState } from 'react';
 
 const MainSection = () => {
-
-    const onHamburgerMenuToggle = () => {
-
-    };
+    const onHamburgerMenuToggle = () => {};
 
     const [isOpen, setOpen] = useState(false);
 
-    let height = (window.innerWidth / 20);
+    let height = window.innerWidth / 20;
 
     const displayNoneStyle = {
         opacity: 0,
-        pointerEvents: 'none'
-    }
+        pointerEvents: 'none',
+    };
 
     const displayBlockStyle = {
         opacity: 1,
-        pointerEvents: 'auto'
-    }
+        pointerEvents: 'auto',
+    };
 
-    return(
+    return (
         <div id={'main-wrapper'}>
             <div id={'hamburger-icon-group'}>
                 <div id={'hamburger-button'}>
@@ -39,29 +36,24 @@ const MainSection = () => {
                         duration={0.6}
                     />
                 </div>
-                <IconTitle/>
+                <IconTitle />
             </div>
-            <div id={'menu-screen'} style={isOpen ? displayBlockStyle : displayNoneStyle}>
+            <div
+                id={'menu-screen'}
+                style={isOpen ? displayBlockStyle : displayNoneStyle}
+            >
                 <div id={'mobile-links-wrapper'}>
-                    <a href='https://www.roshan-ai.ir/'>
-                        <p className={'mobile-menu-link'}>
-                            روشن
-                        </p>
+                    <a href="https://www.roshan-ai.ir/">
+                        <p className={'mobile-menu-link'}>روشن</p>
                     </a>
-                    <a href='https://www.roshan-ai.ir/contact-us/'>
-                        <p className={'mobile-menu-link'}>
-                            تماس با ما
-                        </p>
+                    <a href="https://www.roshan-ai.ir/contact-us/">
+                        <p className={'mobile-menu-link'}>تماس با ما</p>
                     </a>
-                    <a href='https://www.roshan-ai.ir/join-us/'>
-                        <p className={'mobile-menu-link'}>
-                            همکاری با ما
-                        </p>
+                    <a href="https://www.roshan-ai.ir/join-us/">
+                        <p className={'mobile-menu-link'}>همکاری با ما</p>
                     </a>
-                    <a href='https://www.roshan-ai.ir/about-us/'>
-                        <p className={'mobile-menu-link'}>
-                            درباره ما
-                        </p>
+                    <a href="https://www.roshan-ai.ir/about-us/">
+                        <p className={'mobile-menu-link'}>درباره ما</p>
                     </a>
                 </div>
             </div>
@@ -69,19 +61,18 @@ const MainSection = () => {
                 id={'main-screen'}
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
-                <p id={'orange-text'}>
-                    حرف ، تبدیل گفتار به نوشتار
-                </p>
+                <p id={'orange-text'}>حرف ، تبدیل گفتار به نوشتار</p>
                 <p id={'white-text'}>
-                    حرف با استفاده از هوش مصنوعی، گفتار را به نوشته قابل ویرایش تبدیل می کند.
+                    تایپ کردن متن با استفاده از دکمه‌های فراوان صفحه کلید، سخت
+                    است. در دنیای جدید با خواندن متن، آن را دیجیتال می‌کنیم.
                 </p>
                 <div id={'papers'}>
-                    <img src={Papers} id={'paper-image'} alt={''}/>
+                    <img src={Papers} id={'paper-image'} alt={''} />
                 </div>
                 {/*<img src={Pattern} id={'pattern'} alt={''}/>*/}
             </div>
         </div>
-    )
-}
+    );
+};
 
 export default MainSection;

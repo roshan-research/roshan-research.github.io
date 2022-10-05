@@ -5,7 +5,6 @@ p {
 .button {
     background-color: transparent;
     border-color: transparent;
-    width: 20vw;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -25,20 +24,17 @@ p {
 }
 
 .sample-row {
-    margin-right: -2vw;
     display: flex;
-    height: 3vh;
     justify-content: end;
     align-items: center;
     flex-direction: row;
 }
 
 #buttons {
-    height: 17vw;
     margin-top: 2vw;
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-end;
     flex-direction: column;
 }
 
