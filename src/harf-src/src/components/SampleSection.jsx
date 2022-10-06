@@ -1,53 +1,51 @@
-import Player from "./samples/Player";
-import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
-import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
+import Player from './samples/Player';
+import { ReactComponent as Dot } from '../assets/images/samples/dot.svg';
+import { ReactComponent as Polygon } from '../assets/images/samples/polygon.svg';
 import '../stylesheets/sample-section.scss';
-import {segments,segmentFixer} from "./samples/segments.js";
-import rasmi from "../assets/voices/rasmi.mp3";
-import mohavereh from "../assets/voices/mohavereh.mp3";
-import telephone from "../assets/voices/telephone.mp3";
-import ghadimi from "../assets/voices/ghadimi.mp3";
-import bamusic from "../assets/voices/bamusic.mp3";
+import { segments, segmentFixer } from './samples/segments.js';
+import rasmi from '../assets/voices/rasmi.mp3';
+import mohavereh from '../assets/voices/mohavereh.mp3';
+import telephone from '../assets/voices/telephone.mp3';
+import ghadimi from '../assets/voices/ghadimi.mp3';
+import bamusic from '../assets/voices/bamusic.mp3';
 
-import {Component} from "react";
-
+import { Component } from 'react';
 
 let sampleSegments = segmentFixer(segments);
 
 class SampleSection extends Component {
-
     state = {
-        chosenSample: 0
-    }
+        chosenSample: 0,
+    };
 
-    voices = [rasmi,mohavereh,telephone,ghadimi,bamusic];
-    titles = ['گفتار رسمی','گفتار محاوره','صحبت تلفنی','قدیمی','گفتار با موسیقی در حال پخش']
+    voices = [rasmi, mohavereh, telephone, ghadimi, bamusic];
+    titles = [
+        'گفتار رسمی',
+        'گفتار محاوره‌ای',
+        'گفتگوی تلفنی',
+        'گفتار با لحن فارسی قدیم',
+        'گفتار با موسیقی زمینه',
+    ];
 
     constructor(props) {
-      super(props);
+        super(props);
         window.setInterval(() => {
-            let randomNumber = Math.floor((Math.random() * 2) + 0);
-            this.setState({chosenSample:randomNumber});
-
-        },60000);
+            let randomNumber = Math.floor(Math.random() * 2 + 0);
+            this.setState({ chosenSample: randomNumber });
+        }, 60000);
     }
 
-
-    componentDidMount() {
-    }
+    componentDidMount() {}
 
     onSampleClick = (sampleName) => {
-        this.setState({chosenSample: sampleName})
-    }
+        this.setState({ chosenSample: sampleName });
+    };
 
     render() {
-
         return (
             <div className={'sample'}>
-                <p id={'sample-title'}>
-                    نمونه‌های حرف
-                </p>
-                <div style={{height: '6.6vw'}}/>
+                <p id={'sample-title'}>به عمل کار برآید</p>
+                <div style={{ height: '6.6vw' }} />
                 <div id={'sample-section'}>
                     <Player
                         segments={sampleSegments[this.state.chosenSample]}
@@ -55,57 +53,162 @@ class SampleSection extends Component {
                         key={this.state.chosenSample}
                         title={this.titles[this.state.chosenSample]}
                     />
-                    <div style={{width: '20vw'}}/>
+                    <div style={{ width: '20vw' }} />
                     <div id={'buttons'}>
-                        <div className={'button'} onClick={this.onSampleClick.bind(this,0)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, 0)}
+                        >
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === 0 ? 'active-orange-title' : ''}>
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === 0
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
                                     گفتار رسمی
                                 </p>
-                                <Dot className={this.state.chosenSample === 0 ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === 0 ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === 0
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === 0
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'} onClick={this.onSampleClick.bind(this,1)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, 1)}
+                        >
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === 1 ? 'active-orange-title' : ''}>
-                                    گفتار محاوره
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === 1
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    گفتار محاوره‌ای
                                 </p>
-                                <Dot className={this.state.chosenSample === 1 ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === 1 ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === 1
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === 1
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'} onClick={this.onSampleClick.bind(this,2)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, 2)}
+                        >
                             <div className={'sample-row'}>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === 2 ? 'active-orange-title' : ''}>
-                                    صحبت تلفنی
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === 2
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    گفتگوی تلفنی
                                 </p>
-                                <Dot className={this.state.chosenSample === 2 ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === 2 ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === 2
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === 2
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'} onClick={this.onSampleClick.bind(this,3)}>
-                           <div className={'sample-row'}>
-                               <p className={'white-title-sample'}
-                                  id={this.state.chosenSample === 3 ? 'active-orange-title' : ''}>
-                                   قدیمی
-                               </p>
-                                <Dot className={this.state.chosenSample === 3 ? 'no-dot' : 'dot'}/>
-                               <Polygon className={this.state.chosenSample === 3 ? 'polygon' : 'no-dot'}/>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, 3)}
+                        >
+                            <div className={'sample-row'}>
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === 3
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    گفتار با لحن فارسی قدیم
+                                </p>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === 3
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === 3
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'} onClick={this.onSampleClick.bind(this,4)}>
-                           <div className={'sample-row'}>
-                               <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === 4 ? 'active-orange-title' : ''}>
-                                    گفتار با موسیقی در حال پخش
-                               </p>
-                               <Dot className={this.state.chosenSample === 4 ? 'no-dot' : 'dot'}/>
-                               <Polygon className={this.state.chosenSample === 4 ? 'polygon' : 'no-dot'}/>
-                           </div>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, 4)}
+                        >
+                            <div className={'sample-row'}>
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === 4
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    گفتار با موسیقی زمینه
+                                </p>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === 4
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === 4
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
+                            </div>
                         </div>
                         {/*<div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Lahje)}>*/}
                         {/*    <div className={'sample-row'}>*/}
@@ -130,7 +233,7 @@ class SampleSection extends Component {
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

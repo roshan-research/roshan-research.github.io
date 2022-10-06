@@ -25,7 +25,7 @@ const AbilitiesSection = () => {
     return(
         <div id={'abilities'}>
             <p id={'abilities-title'}>
-                قابلیت‌های الفبا
+                امکانات الفبا
             </p>
             <div id={'side'}>
                 <Side id={'side-main'}/>
@@ -39,20 +39,20 @@ const AbilitiesSection = () => {
                             <p 
                                 className={left1InView? "black-text in-view" : "black-text"}
                                 ref={left1Ref}
-                                data-title={"تشخیص چند زبان"}
+                                data-title={"چند زبانه"}
                             >
-                                تشخیص چند زبان
+                                چند زبانه
                             </p>
                             <p 
                                 className={left1InView? "black-text-background in-view-bg" : 
                                 "black-text-background"}
-                                data-title={"تشخیص چند زبان"}
+                                data-title={"چند زبانه"}
                             >
-                                تشخیص چند زبان
+                                چند زبانه
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            تشخیص زبان فارسی، انگلیسی و زبان‌های مشابه فارسی، مثل عربی و دری
+                            تشخیص متن‌های انگلیسی، فارسی و مشابه فارسی؛ مثل عربی و دری
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'left-2'}>
@@ -73,7 +73,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            اصلاح نویز، چرخش و سایه تصویر برای دقیق‌تر خواندن متن
+                            اصلاح نویز، چرخش و سایهٔ تصاویر برای دقیق‌تر خواندن متن
                         </p>
                     </div>
                     <div className={'ability-group'} id={'left-3'}>
@@ -82,20 +82,20 @@ const AbilitiesSection = () => {
                             <p 
                                 className={left3InView? "black-text in-view" : "black-text"}
                                 ref={left3Ref}
-                                data-title={"خواندن حرکت‌های حروف"}
+                                data-title={"حذف اِعراب"}
                             >
-                                خواندن حرکت‌های حروف
+                                حذف اِعرابِ حروف
                             </p>
                             <p 
                                 className={left3InView? "black-text-background in-view-bg" : "black-text-background"}
                                 ref={left3Ref}
-                                data-title={"خواندن حرکت‌های حروف"}
+                                data-title={"حذف اِعراب"}
                             >
-                                خواندن حرکت‌های حروف
+                                حذف اِعرابِ حروف
                             </p>
                         </div>
                         <p className={'white-text'}>
-                        خواندن نوشته ها و حذف حرکت ها از کلمات فارسی و عربی
+                        حذف اعراب در نوشته‌های فارسی و عربی؛ مثل فتحه، کسره، ضمه
                         </p>
                     </div>
                 </div>
@@ -106,19 +106,19 @@ const AbilitiesSection = () => {
                             <p 
                                 className={right1InView? "black-text in-view":"black-text"}
                                 ref={right1Ref}
-                                data-title={"خواندن قلم‌های گوناگون"}
+                                data-title={"تشخیص انواع فونت‌ها"}
                             >
-                                خواندن قلم‌های گوناگون
+                                تشخیص انواع فونت‌ها
                             </p>
                             <p 
                                 className={right1InView? "black-text-background in-view-bg":"black-text-background"}
-                                data-title={"خواندن قلم‌های گوناگون"}
+                                data-title={"تشخیص انواع فونت‌ها"}
                             >
-                                خواندن قلم‌های گوناگون
+                                تشخیص انواع فونت‌ها
                             </p>
                         </div>
                         <p className={'white-text'}>
-                        خواندن متن‌‌ با فونت ها و اندازه‌های گوناگو‌ن؛ مثل عنوان، متن یا پاورقی
+                        تشخیص متن با هر فونت و اندازه‌ای؛ مثلاً عناوین و پاورقی‌ها
                         </p>
                     </div>
                     <div className={'ability-group'} id={'right-2'}>
@@ -160,7 +160,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                        مشخص کردن بخش‌هایی از نوشته که با «تردید» خوانده شده‌اند، برای بازنگری توسط انسان
+                        درج خطاهای احتمالی در داخل کروشه برای بازبینی توسط انسان
                         </p>
                     </div>
                 </div>

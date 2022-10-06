@@ -18,7 +18,7 @@ const Clients = () => {
     return(
         <div id={'clients'}>
             <p id={'clients-motto'}>
-                کسب اعتماد بهتــــــرین ها
+                کسب اعتماد بهتــــــرین‌ها
             </p>
             <div id={'clients-pics'}>
                 <div id={'clients-row1'}>

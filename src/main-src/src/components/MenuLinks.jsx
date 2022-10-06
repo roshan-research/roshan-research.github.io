@@ -7,12 +7,12 @@ const MenuLinks = () => {
                 <a href={'https://www.roshan-ai.ir/'}
                    className={'menu-link'}
                 >
-                    روشن
+                    صفحهٔ اصلی
                 </a>
                 <a href={'https://www.roshan-ai.ir/about-us'}
                    className={'menu-link'}
                 >
-                    درباره ما
+                    معرفی روشن
                 </a>
                 <a href={'https://www.roshan-ai.ir/contact-us'}
                    className={'menu-link'}
@@ -26,7 +26,7 @@ const MenuLinks = () => {
                 </a>
             </div>
             <p id={'company-name'}>
-                شرکت دانش بنیان راهکار پردازش ژرف
+                راهکار پردازش ژرف
             </p>
         </div>
     )

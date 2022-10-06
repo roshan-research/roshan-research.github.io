@@ -1,17 +1,17 @@
 // eslint-disable-next-line @typescript-eslint/ban-ts-comment
 // @ts-nocheck
-import {ReactComponent as Dot} from "../assets/images/samples/dot.svg";
-import {ReactComponent as Polygon} from "../assets/images/samples/polygon.svg";
+import { ReactComponent as Dot } from '../assets/images/samples/dot.svg';
+import { ReactComponent as Polygon } from '../assets/images/samples/polygon.svg';
 import '../stylesheets/sample-section.scss';
 
-import React, {Component} from "react";
-import FishHoghoghi from "./newsamples/FishHoghoghi";
-import KartMelli from "./newsamples/KartMelli";
-import RoozNameh from "./newsamples/RoozNameh";
-import Charkhesh from "./newsamples/Charkhesh";
-import Tahrir from "./newsamples/Tahrir";
-import BiKeifyat from "./newsamples/BiKeifyat";
-import {isMobile} from "react-device-detect";
+import React, { Component } from 'react';
+import FishHoghoghi from './newsamples/FishHoghoghi';
+import KartMelli from './newsamples/KartMelli';
+import RoozNameh from './newsamples/RoozNameh';
+import Charkhesh from './newsamples/Charkhesh';
+import Tahrir from './newsamples/Tahrir';
+import BiKeifyat from './newsamples/BiKeifyat';
+import { isMobile } from 'react-device-detect';
 
 enum Sample {
     KartMelli,
@@ -19,24 +19,23 @@ enum Sample {
     Charkhesh,
     RoozNameh,
     Tahrir,
-    BiKeifyat
+    BiKeifyat,
 }
 
 class SampleSection extends Component {
-
     state = {
         chosenSample: Sample.KartMelli,
-        kartMelliKey: "kartMelli",
-        fishKey: "fish",
-        charkheshKey: "charkhesh",
-        rooznamehKey: "rooznameh",
-        tahrirKey: "tahrir",
-        bikeifyatKey: "biKeifyat"
-    }
+        kartMelliKey: 'kartMelli',
+        fishKey: 'fish',
+        charkheshKey: 'charkhesh',
+        rooznamehKey: 'rooznameh',
+        tahrirKey: 'tahrir',
+        bikeifyatKey: 'biKeifyat',
+    };
 
     constructor(props: any) {
-      super(props);
-      this.kartMelli = React.createRef();
+        super(props);
+        this.kartMelli = React.createRef();
         this.fish = React.createRef();
         this.charkhesh = React.createRef();
         this.rooznameh = React.createRef();
@@ -84,7 +83,7 @@ class SampleSection extends Component {
     onSampleClick = (sampleName: Sample) => {
         switch (sampleName) {
             case Sample.KartMelli:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         kartMelliKey: Math.random(),
                     });
@@ -94,7 +93,7 @@ class SampleSection extends Component {
                 });
                 break;
             case Sample.Fish:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         fishKey: Math.random(),
                     });
@@ -104,7 +103,7 @@ class SampleSection extends Component {
                 });
                 break;
             case Sample.Charkhesh:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         charkheshKey: Math.random(),
                     });
@@ -114,7 +113,7 @@ class SampleSection extends Component {
                 });
                 break;
             case Sample.RoozNameh:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         roozNamehKey: Math.random(),
                     });
@@ -124,7 +123,7 @@ class SampleSection extends Component {
                 });
                 break;
             case Sample.Tahrir:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         tahrirKey: Math.random(),
                     });
@@ -134,7 +133,7 @@ class SampleSection extends Component {
                 });
                 break;
             case Sample.BiKeifyat:
-                if(isMobile) {
+                if (isMobile) {
                     this.setState({
                         bikeifyatKey: Math.random(),
                     });
@@ -144,144 +143,306 @@ class SampleSection extends Component {
                 });
                 break;
         }
-    }
+    };
     render() {
-
         const whichSample = () => {
             switch (this.state.chosenSample) {
                 case Sample.KartMelli:
-                    return <KartMelli/>;
+                    return <KartMelli />;
                 case Sample.Fish:
-                    return <FishHoghoghi/>;
+                    return <FishHoghoghi />;
                 case Sample.Charkhesh:
-                    return <Charkhesh/>;
+                    return <Charkhesh />;
                 case Sample.RoozNameh:
-                    return <RoozNameh/>;
+                    return <RoozNameh />;
                 case Sample.Tahrir:
-                    return <Tahrir/>;
+                    return <Tahrir />;
                 case Sample.BiKeifyat:
-                    return <BiKeifyat/>;
+                    return <BiKeifyat />;
             }
-        }
-
+        };
 
         return (
             <div className={'sample'}>
-                <p id={'sample-title'}>
-                    نمونه‌های الفبا
-                </p>
-                <div style={{height: '6.6vw'}}/>
+                <p id={'sample-title'}>به عمل کار برآید</p>
+                <div style={{ height: '6.6vw' }} />
                 <div id={'sample-section'}>
-                    <div className={'sample-container'}>
-                        {whichSample()}
-                    </div>
+                    <div className={'sample-container'}>{whichSample()}</div>
                     <div id={'buttons'}>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.KartMelli)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(
+                                this,
+                                Sample.KartMelli
+                            )}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.kartMelli}
-                                     key={this.state.kartMelliKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.kartMelli}
+                                    key={this.state.kartMelliKey}
                                 >
-                                    <KartMelli/>
+                                    <KartMelli />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.KartMelli ? 'active-orange-title' : ''}>
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample ===
+                                        Sample.KartMelli
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
                                     مدارک شناسایی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.KartMelli ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.KartMelli ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.KartMelli
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.KartMelli
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.Fish)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(this, Sample.Fish)}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.fish}
-                                     key={this.state.fishKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.fish}
+                                    key={this.state.fishKey}
                                 >
-                                    <FishHoghoghi/>
+                                    <FishHoghoghi />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.Fish ? 'active-orange-title' : ''}>
-                                    جدول های مالی
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample === Sample.Fish
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    جداول مالی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Fish ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Fish ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample === Sample.Fish
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample === Sample.Fish
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.Charkhesh)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(
+                                this,
+                                Sample.Charkhesh
+                            )}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.charkhesh}
-                                     key={this.state.charkheshKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.charkhesh}
+                                    key={this.state.charkheshKey}
                                 >
-                                    <Charkhesh/>
+                                    <Charkhesh />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.Charkhesh ? 'active-orange-title' : ''}>
-                                    اسناد چرخیده
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample ===
+                                        Sample.Charkhesh
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    اسناد دارای خمیدگی
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Charkhesh ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Charkhesh ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.Charkhesh
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.Charkhesh
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.RoozNameh)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(
+                                this,
+                                Sample.RoozNameh
+                            )}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.rooznameh }
-                                     key={this.state.rooznamehKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.rooznameh}
+                                    key={this.state.rooznamehKey}
                                 >
-                                    <RoozNameh/>
+                                    <RoozNameh />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.RoozNameh ? 'active-orange-title' : ''}>
-                                    روزنامه
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample ===
+                                        Sample.RoozNameh
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    روزنامه‌ها
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.RoozNameh ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.RoozNameh ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.RoozNameh
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.RoozNameh
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.Tahrir)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(
+                                this,
+                                Sample.Tahrir
+                            )}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.tahrir}
-                                     key={this.state.tahrirKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.tahrir}
+                                    key={this.state.tahrirKey}
                                 >
-                                    <Tahrir/>
+                                    <Tahrir />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.Tahrir ? 'active-orange-title' : ''}>
-                                    اسناد ماشین تحریر
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample ===
+                                        Sample.Tahrir
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    اسناد ماشین تحریری
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.Tahrir ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.Tahrir ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.Tahrir
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.Tahrir
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
-                        <div className={'button'}
-                             onClick={this.onSampleClick.bind(this,Sample.BiKeifyat)}>
+                        <div
+                            className={'button'}
+                            onClick={this.onSampleClick.bind(
+                                this,
+                                Sample.BiKeifyat
+                            )}
+                        >
                             <div className={'sample-row'}>
-                                <div className={'sample-container mobile-sample-container'}
-                                     ref={this.bikeifyat}
-                                     key={this.state.bikeifyatKey}
+                                <div
+                                    className={
+                                        'sample-container mobile-sample-container'
+                                    }
+                                    ref={this.bikeifyat}
+                                    key={this.state.bikeifyatKey}
                                 >
-                                    <BiKeifyat/>
+                                    <BiKeifyat />
                                 </div>
-                                <p className={'white-title-sample'}
-                                   id={this.state.chosenSample === Sample.BiKeifyat ? 'active-orange-title' : ''}>
-                                    اسناد بی کیفیت
+                                <p
+                                    className={'white-title-sample'}
+                                    id={
+                                        this.state.chosenSample ===
+                                        Sample.BiKeifyat
+                                            ? 'active-orange-title'
+                                            : ''
+                                    }
+                                >
+                                    اسناد بی‌کیفیت
                                 </p>
-                                <Dot className={this.state.chosenSample === Sample.BiKeifyat ? 'no-dot' : 'dot'}/>
-                                <Polygon className={this.state.chosenSample === Sample.BiKeifyat ? 'polygon' : 'no-dot'}/>
+                                <Dot
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.BiKeifyat
+                                            ? 'no-dot'
+                                            : 'dot'
+                                    }
+                                />
+                                <Polygon
+                                    className={
+                                        this.state.chosenSample ===
+                                        Sample.BiKeifyat
+                                            ? 'polygon'
+                                            : 'no-dot'
+                                    }
+                                />
                             </div>
                         </div>
                     </div>
                 </div>
             </div>
-        )
+        );
     }
 }
 

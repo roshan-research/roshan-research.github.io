@@ -70,10 +70,9 @@ function HarfWebText(props) {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'harf-title-text'}>تبدیل گفتار به متن</h1>
+                <h1 id={'harf-title-text'}>تبدیل صدا به متن</h1>
                 <h4 id={'harf-main-text'}>
-                    حرف با استفاده از هزاران ساعت گفتار با صدای افراد مختلف،
-                    زبان فارسی را یادگرفته است. و میتواند متن صحبت ها را بنویسد.
+                    صداهای حاوی گفتار فارسی (رسمی و محاوره‌ای) را به متن تبدیل می‌کند.
                 </h4>
             </motion.div>
             <svg
@@ -143,6 +142,7 @@ function HarfWebText(props) {
                     href={'https://www.roshan-ai.ir/harf/'}
                     target="_blank"
                     id={'link-harf'}
+                    title={'دربارهٔ حرف'}
                 >
                     <rect
                         id="Hidden Layer"

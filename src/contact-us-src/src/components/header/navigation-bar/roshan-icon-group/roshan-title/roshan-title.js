@@ -2,7 +2,7 @@ import './roshan-title.scss'
 
 function RoshanTitle() {
     return (
-        <div className='roshan-title' title={'خانه'}>
+        <div className='roshan-title' title={'صفحهٔ اصلی'}>
             <a to={'https://www.roshan-ai.ir/'}>
                 <svg
                     width={44}

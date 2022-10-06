@@ -4,9 +4,9 @@ import React from "react";
 
 function RoshanLogo() {
     return (
-        <div className='roshan-icon' title={'خانه'} style={{marginTop: '0.3vw'}}>
+        <div className='roshan-icon' title={'صفحهٔ اصلی'} style={{marginTop: '0.3vw'}}>
             <a href={'https://www.roshan-ai.ir/'}>
-                <img className={'icon'} src={Logo} alt={'روشن'}/>
+                <img className={'icon'} src={Logo} alt={'روشن | شرکت دانش‌بنیان راهکار پردازش ژرف '}/>
             </a>
         </div>
     )

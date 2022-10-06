@@ -66,12 +66,11 @@ const KashfWebText = (props) => {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'kashf-title-text'}>پردازش تصویر و کشف محتوا</h1>
+                <h1 id={'kashf-title-text'}>جستجوگر معنا</h1>
                 <h4 id={'kashf-main-text'}>
-                    کشف یاد میگیرد که مفاهیم مورد نظر انسان را
-                    <br />
-                    در میان داده ها پیدا کند. آنقدر آسان که همه میتوانند کشف را
-                    آموزش دهند.
+                    مفاهیم موردنظر را در انبوهٔ داده‌های متنی و تصویری و ویدیویی
+                    جستجو می‌کند؛ مثلاً دیدگاه‌های منفیِ حولِ یک محصول یا
+                    ویدیوهای مرتبط با فوتبال.
                 </h4>
             </motion.div>
             <svg
@@ -141,7 +140,7 @@ const KashfWebText = (props) => {
                     target="_blank"
                     href={'https://www.roshan-ai.ir/kashf/'}
                     id={'link-kashf'}
-                    title={'درباره کشف و یادگیری ماشین'}
+                    title={'دربارهٔ کشف'}
                 >
                     <motion.path
                         fill="#7000FF"

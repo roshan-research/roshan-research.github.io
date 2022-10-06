@@ -45,7 +45,12 @@ const MainSection = () => {
                 <div id={'mobile-links-wrapper'}>
                     <a href='https://www.roshan-ai.ir/'>
                         <p className={'mobile-menu-link'}>
-                            روشن
+                            صفحهٔ اصلی
+                        </p>
+                    </a>
+                    <a href='https://www.roshan-ai.ir/about-us/'>
+                        <p className={'mobile-menu-link'}>
+                            دربارهٔ روشن
                         </p>
                     </a>
                     <a href='https://www.roshan-ai.ir/contact-us/'>
@@ -58,11 +63,6 @@ const MainSection = () => {
                             همکاری با ما
                         </p>
                     </a>
-                    <a href='https://www.roshan-ai.ir/about-us/'>
-                        <p className={'mobile-menu-link'}>
-                            درباره ما
-                        </p>
-                    </a>
                 </div>
             </div>
             <div
@@ -70,10 +70,10 @@ const MainSection = () => {
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
                 <p id={'orange-text'}>
-                    حرف ، تبدیل گفتار به نوشتار
+                    حرف
                 </p>
                 <p id={'white-text'}>
-                    حرف با استفاده از هوش مصنوعی، گفتار را به نوشته قابل ویرایش تبدیل می کند.
+                    تبدیل صدا به متن
                 </p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''}/>
