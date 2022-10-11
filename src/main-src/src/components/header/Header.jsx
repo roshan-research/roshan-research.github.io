@@ -27,10 +27,10 @@ class Header extends Component {
             return (
                 <div id={'compact-menu'}>
                     <a href={'https://www.roshan-ai.ir/'} id={'mobile-menu-link'}>
-                        روشن
+                        صفحهٔ اصلی
                     </a>
                     <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
-                        درباره ما
+                        دربارهٔ روشن
                     </a>
                     <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
                         تماس با ما

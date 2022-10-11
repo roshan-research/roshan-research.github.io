@@ -44,7 +44,10 @@ const MainSection = () => {
             >
                 <div id={'mobile-links-wrapper'}>
                     <a href="https://www.roshan-ai.ir/">
-                        <p className={'mobile-menu-link'}>روشن</p>
+                        <p className={'mobile-menu-link'}>صفحهٔ اصلی</p>
+                    </a>
+                    <a href="https://www.roshan-ai.ir/about-us/">
+                        <p className={'mobile-menu-link'}>دربارهٔ روشن</p>
                     </a>
                     <a href="https://www.roshan-ai.ir/contact-us/">
                         <p className={'mobile-menu-link'}>تماس با ما</p>
@@ -52,20 +55,14 @@ const MainSection = () => {
                     <a href="https://www.roshan-ai.ir/join-us/">
                         <p className={'mobile-menu-link'}>همکاری با ما</p>
                     </a>
-                    <a href="https://www.roshan-ai.ir/about-us/">
-                        <p className={'mobile-menu-link'}>درباره ما</p>
-                    </a>
                 </div>
             </div>
             <div
                 id={'main-screen'}
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
-                <p id={'orange-text'}>حرف ، تبدیل گفتار به نوشتار</p>
-                <p id={'white-text'}>
-                    تایپ کردن متن با استفاده از دکمه‌های فراوان صفحه کلید، سخت
-                    است. در دنیای جدید با خواندن متن، آن را دیجیتال می‌کنیم.
-                </p>
+                <p id={'orange-text'}>حرف</p>
+                <p id={'white-text'}>تبدیل صدا به متن </p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>

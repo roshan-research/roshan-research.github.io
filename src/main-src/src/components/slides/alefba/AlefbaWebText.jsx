@@ -74,11 +74,10 @@ function AlefbaWebText(props) {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'kashf-title-text'}>تبدیل تصویر به نوشته (OCR)</h1>
+                <h1 id={'kashf-title-text'}>تبدیل عکس به متن (OCR فارسی)</h1>
                 <h4 id={'kashf-main-text'}>
-                    الفبا نوشته‌های فارسی، عربی و انگلیسی را در تصویر اسناد
-                    می‌خواند. الفبا ساختار اسناد را هم تحلیل می‌کند و با قلم‌های
-                    مختلف آشناست.
+                    تصاویر حاوی نوشته‌های فارسی و عربی و انگلیسی را
+                    به متن تبدیل می‌کند.
                 </h4>
             </motion.div>
             <svg
@@ -159,7 +158,7 @@ function AlefbaWebText(props) {
                     target="_blank"
                     href={'https://www.roshan-ai.ir/alefba/'}
                     id={'link-alefba'}
-                    title={'درباره الفبا و تدیل تصویر به نوشته ocr'}
+                    title={'دربارهٔ الفبا'}
                 >
                     <rect
                         id="Hidden Layer"

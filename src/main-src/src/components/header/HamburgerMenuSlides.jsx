@@ -43,7 +43,7 @@ function HamburgerMenuSlides(props) {
                        className={initialState? 'hamburger-menu-button roshan-in': 'hamburger-menu-button'}
                        style={{fontSize: '1.3vw',marginLeft: '25px'}}
                     >
-                        روشن
+                        صفحهٔ اصلی
                     </a>
                     <button onClick={goToClients}
                             className={initialState? 'hamburger-menu-button roshan-in': 'hamburger-menu-button'}
@@ -65,7 +65,7 @@ function HamburgerMenuSlides(props) {
                     <a href={'https://www.roshan-ai.ir/about-us'}
                        className={initialState? 'hamburger-menu-button about-in': 'hamburger-menu-button'}
                     >
-                        درباره با ما
+                        دربارهٔ روشن
                     </a>
                 </div>
                 <div id={'hamburger-footer'}>
@@ -74,7 +74,7 @@ function HamburgerMenuSlides(props) {
                         style={{fontSize: '0.8vw'}}
                         className={initialState? 'comp-temp visible-company' : 'comp-temp hidden-company'}
                     >
-                        شرکت دانش بنیان «راهکار پردازش ژرف»
+                        راهکار پردازش ژرف
                     </p>
                 </div>
             </div>

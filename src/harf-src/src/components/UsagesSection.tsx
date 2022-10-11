@@ -25,7 +25,7 @@ const UsagesSection = () => {
 
     return (
         <div>
-            <p id={'usages-title'}>کاربردهای حرف</p>
+            <p id={'usages-title'}>گوشه‌ای از کاربردهای حرف</p>
             <div id="usages-title-space" />
             <div id={'usages-section'}>
                 <div id={'space-1'} />
@@ -35,11 +35,11 @@ const UsagesSection = () => {
                     style={businessesInView ? afterFade : beforeFade}
                 >
                     <img src={BusinessImage} id={'business-image'} alt={''} />
-                    <p className={'orange-text-usages'}>تایپ گفتاری</p>
+                    <p className={'orange-text-usages'}>تایپ صوتی</p>
                     <p className={'white-text-usages'}>
-                        تایپ کردن متن با استفاده از دکمه‌های فراوان صفحه کلید،
-                        سخت است. در دنیای جدید با خواندن متن آن را دیجیتال
-                        می‌کنیم.
+                        تایپ‌کردن، کاری خسته‌کننده است. با تبدیل صدا به متن
+                        نوشته‌ها با همان سرعتی که بر زبان جاری می‌شوند نوشته
+                        می‌شوند.
                     </p>
                 </div>
                 <div>
@@ -54,11 +54,10 @@ const UsagesSection = () => {
                             id={'organization-image'}
                             alt={''}
                         />
-                        <p className={'orange-text-usages'}>تعامل گفتاری</p>
+                        <p className={'orange-text-usages'}>تعامل صوتی</p>
                         <p className={'white-text-usages'}>
-                            ابزارهای هوشمند در شکل‌ها و اندازه‌های مختلف وارد
-                            زندگی ما می‌شوند. ارتباط کلامی با این ابزارها،
-                            راحت‌ترین راه تعامل است.
+                            ابزارهای هوشمند جزو لاینفک زندگی امروز هستند؛ پس چه
+                            بهتر که با ابزار کلام با آن‌ها تعامل کنیم.
                         </p>
                     </div>
                 </div>
@@ -74,11 +73,10 @@ const UsagesSection = () => {
                             id={'library-image'}
                             alt={''}
                         />
-                        <p className={'orange-text-usages'}>پیاده‌سازی جلسات</p>
+                        <p className={'orange-text-usages'}>تهیهٔ متن جلسات</p>
                         <p className={'white-text-usages'}>
-                            صحبت‌هایی که در جلسه‌های حضوری یا مجازی، رد و بدل
-                            می‌شوند، مهم هستند و برای رجوع به آنها لازم است متن
-                            هر جلسه را داشته باشیم.
+                            با داشتن متن صحبت‌های جلسات، به‌راحتی می‌توان در
+                            آرشیو فایل‌های ضبط‌شدهٔ جلسات جستجو کرد.
                         </p>
                     </div>
                 </div>
@@ -91,9 +89,9 @@ const UsagesSection = () => {
                     <img src={Archive} id={'business-image'} alt={''} />
                     <p className={'orange-text-usages'}>جستجو در آرشیو</p>
                     <p className={'white-text-usages'}>
-                        داده‌های ویدئویی با سرعت بسیار بالا در حال زیاد شدن
-                        هستند. پیاده‌سازی متن ویدئوها می‌تواند پیدا کردن یک
-                        محتوای خاص را آسان کند.
+                        با استخراج متن فایل‌های صوتی و ویدیویی، به‌آسانی می‌توان
+                        به آن قسمت از صدا یا ویدیو که دربارهٔ موضوعی مشخص صحبت
+                        شده دست یافت.
                     </p>
                 </div>
             </div>

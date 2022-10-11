@@ -168,7 +168,7 @@ class SampleSection extends Component {
         return (
             <div className={'sample'}>
                 <p id={'sample-title'}>
-                    نمونه‌های الفبا
+                    به عمل کار برآید
                 </p>
                 <div style={{height: '6.6vw'}}/>
                 <div id={'sample-section'}>
@@ -204,7 +204,7 @@ class SampleSection extends Component {
                                 </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Fish ? 'active-orange-title' : ''}>
-                                    جدول های مالی
+                                    جداول مالی
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.Fish ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.Fish ? 'polygon' : 'no-dot'}/>
@@ -221,7 +221,7 @@ class SampleSection extends Component {
                                 </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Charkhesh ? 'active-orange-title' : ''}>
-                                    اسناد چرخیده
+                                    اسناد ناصاف
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.Charkhesh ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.Charkhesh ? 'polygon' : 'no-dot'}/>
@@ -238,7 +238,7 @@ class SampleSection extends Component {
                                 </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.RoozNameh ? 'active-orange-title' : ''}>
-                                    روزنامه
+                                    نشریات
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.RoozNameh ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.RoozNameh ? 'polygon' : 'no-dot'}/>
@@ -255,7 +255,7 @@ class SampleSection extends Component {
                                 </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.Tahrir ? 'active-orange-title' : ''}>
-                                    اسناد ماشین تحریر
+                                    اسناد ماشین تحریری
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.Tahrir ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.Tahrir ? 'polygon' : 'no-dot'}/>
@@ -272,7 +272,7 @@ class SampleSection extends Component {
                                 </div>
                                 <p className={'white-title-sample'}
                                    id={this.state.chosenSample === Sample.BiKeifyat ? 'active-orange-title' : ''}>
-                                    اسناد بی کیفیت
+                                    اسناد بی‌کیفیت
                                 </p>
                                 <Dot className={this.state.chosenSample === Sample.BiKeifyat ? 'no-dot' : 'dot'}/>
                                 <Polygon className={this.state.chosenSample === Sample.BiKeifyat ? 'polygon' : 'no-dot'}/>

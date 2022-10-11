@@ -73,13 +73,10 @@ function HazmWebText(props) {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'hazm-title-text'}>تحلیل متن های فارسی</h1>
+                <h1 id={'hazm-title-text'}>پردازش متن فارسی</h1>
                 <h4 id={'hazm-main-text'}>
-                    هضم متون فارسی را تمیز و مرتب می کند. همچنین توانایی تقطیع
-                    جمله‌‌ها و واژه‌ها،
-                    <br />
-                    ریشه‌یابی واژه‌ها، تحلیل صرفی و تجزیه نحوی جمله ها را نیز
-                    دارد.
+                    نوشته‌های فارسی را نرمال‌سازی می‌کند، به جملات و کلمات تقطیع
+                    می‌کند، ریشه‌یابی می‌کند، تحلیل صرفی و نحوی می‌کند و ... .
                 </h4>
             </motion.div>
             <svg
@@ -149,7 +146,7 @@ function HazmWebText(props) {
                     target="_blank"
                     href={'https://www.sobhe.ir/hazm'}
                     id={'link-hazm'}
-                    title={'درباره هضم و ریشه یابی واژه ها و تحلیل صرفی'}
+                    title={'دربارهٔ هضم'}
                 >
                     <rect
                         id="Hidden Layer"
