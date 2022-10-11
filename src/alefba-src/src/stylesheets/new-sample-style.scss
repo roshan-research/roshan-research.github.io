@@ -68,8 +68,8 @@
     animation: moveText var(--animation-duration) linear;
     -webkit-animation: moveText var(--animation-duration) linear;
     animation-delay: var(--animation-delay);
-    line-height: 1;
     animation-fill-mode: forwards;
+    line-height: 1;
 }
 
 #bg-orange {
@@ -140,14 +140,12 @@
     border: 6px dashed #fff;
 }
 
-@media screen and (max-width: 500px) {
-    #bg-orange,
-    .document.line-view .line ::before,
-    .document.paragraph-view p ::before,
-    .document.paragraph-view table ::before,
-    .document.line-view .line_bold ::before {
-        animation-play-state: inherit;
-    }
+#bg-orange,
+.document.line-view .line ::before,
+.document.paragraph-view p ::before,
+.document.paragraph-view table ::before,
+.document.line-view .line_bold ::before {
+    animation-play-state: inherit;
 }
 
 .rooznameh-paragraph-box {

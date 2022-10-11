@@ -75,7 +75,7 @@ const Charkhesh = () => {
                     src={charkhesh}
                     alt={''}
                 />
-                <page style={{ animationPlayState: 'inherit' }}>
+                <div style={{ animationPlayState: 'inherit' }}>
                     <div
                         className="document line-view"
                         style={{ animationPlayState: 'inherit' }}
@@ -169,7 +169,7 @@ const Charkhesh = () => {
                             linetype="line"
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

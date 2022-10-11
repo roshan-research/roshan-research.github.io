@@ -45,7 +45,7 @@ const KartMelli = () => {
                     src={kart}
                     alt={''}
                 />
-                <page
+                <div
                     ref={kartMelli}
                     style={
                         kartInview
@@ -196,7 +196,7 @@ const KartMelli = () => {
                             height={`${0.07102092580849714 * height}px`}
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

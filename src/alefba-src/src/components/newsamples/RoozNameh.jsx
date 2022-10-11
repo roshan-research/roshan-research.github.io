@@ -48,7 +48,7 @@ const RoozNameh = () => {
                     src={rooznameh}
                     alt={''}
                 />
-                <page
+                <div
                     ref={rooz}
                     style={
                         roozInview
@@ -80,85 +80,79 @@ const RoozNameh = () => {
                             linetype="line_bold"
                         />
                         {/*first paragraph*/}
-                        <div
-                            className={'rooznameh-paragraph-box'}
-                            style={{
-                                width: `${0.24618149146451032 * width}px`,
-                            }}
-                        >
-                            <TextGroup
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.0126 * width}px`}
-                                //isRooznameh={true}
-                                text="هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت"
-                                height={`${0.02700617283950617 * height}px`}
-                                width={`${0.24618149146451032 * width}px`}
-                                left={`${0.7322551662174304 * width}px`}
-                                top={`${0.18981481481481483 * height}px`}
-                                linetype="line"
-                            />
-                            <TextGroup
-                                //isRooznameh={true}
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.01243 * width}px`}
-                                text="خارجه و سازمان انرژی اتمی تشکیل می‌دهد"
-                                height={`${0.023148148148148147 * height}px`}
-                                width={`${0.17 * width}px`}
-                                left={`${0.8086253369272237 * width}px`}
-                                top={`${0.21604938271604937 * height}px`}
-                                linetype="line"
-                            />
-                            <TextGroup
-                                //isRooznameh={true}
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.0126 * width}px`}
-                                text="همزمان با مذاکرات مسکو، دور جدید گفت وگوهای هسته‌ای"
-                                height={`${0.023148148148148147 * height}px`}
-                                width={`${0.24258760107816713 * width}px`}
-                                left={`${0.7345013477088949 * width}px`}
-                                top={`${0.23919753086419754 * height}px`}
-                                linetype="line"
-                            />
-                            <TextGroup
-                                //isRooznameh={true}
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.0118 * width}px`}
-                                text="ایران و اروپا با حضور متکی و وعیدی در بروکسل آغاز می‌شود"
-                                height={`${0.023148148148148147 * height}px`}
-                                width={`${0.22461814914645103 * width}px`}
-                                left={`${0.7524707996406109 * width}px`}
-                                top={`${0.2623456790123457 * height}px`}
-                                linetype="line"
-                            />
-                            <TextGroup
-                                //isRooznameh={true}
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.0125 * width}px`}
-                                text="وعیدی: موقعیت مناسبی برای دو طرف (اروپا و ایران) در مسیر"
-                                height={`${0.023148148148148147 * height}px`}
-                                width={`${0.24483378256963162 * width}px`}
-                                left={`${0.7322551662174304 * width}px`}
-                                top={`${0.2854938271604938 * height}px`}
-                                linetype="line"
-                            />
-                            <TextGroup
-                                //isRooznameh={true}
-                                delay="100ms"
-                                duration="700ms"
-                                fontSize={`${0.0123 * width}px`}
-                                text="مذاکره و تفاهم فراهم شده است"
-                                height={`${0.023148148148148147 * height}px`}
-                                width={`${0.12578616352201258 * width}px`}
-                                left={`${0.8513027852650494 * width}px`}
-                                top={`${0.30864197530864196 * height}px`}
-                                linetype="line"
-                            />
-                        </div>
+
+                        <TextGroup
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.0126 * width}px`}
+                            //isRooznameh={true}
+                            text="هیأت ایرانی را نمایندگانی از شورای عالی امنیت ملی، وزارت"
+                            height={`${0.02700617283950617 * height}px`}
+                            width={`${0.24618149146451032 * width}px`}
+                            left={`${0.7322551662174304 * width}px`}
+                            top={`${0.18981481481481483 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            //isRooznameh={true}
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.01243 * width}px`}
+                            text="خارجه و سازمان انرژی اتمی تشکیل می‌دهد"
+                            height={`${0.023148148148148147 * height}px`}
+                            width={`${0.17 * width}px`}
+                            left={`${0.8086253369272237 * width}px`}
+                            top={`${0.21604938271604937 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            //isRooznameh={true}
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.0126 * width}px`}
+                            text="همزمان با مذاکرات مسکو، دور جدید گفت وگوهای هسته‌ای"
+                            height={`${0.023148148148148147 * height}px`}
+                            width={`${0.24258760107816713 * width}px`}
+                            left={`${0.7345013477088949 * width}px`}
+                            top={`${0.23919753086419754 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            //isRooznameh={true}
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.0118 * width}px`}
+                            text="ایران و اروپا با حضور متکی و وعیدی در بروکسل آغاز می‌شود"
+                            height={`${0.023148148148148147 * height}px`}
+                            width={`${0.22461814914645103 * width}px`}
+                            left={`${0.7524707996406109 * width}px`}
+                            top={`${0.2623456790123457 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            //isRooznameh={true}
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.0125 * width}px`}
+                            text="وعیدی: موقعیت مناسبی برای دو طرف (اروپا و ایران) در مسیر"
+                            height={`${0.023148148148148147 * height}px`}
+                            width={`${0.24483378256963162 * width}px`}
+                            left={`${0.7322551662174304 * width}px`}
+                            top={`${0.2854938271604938 * height}px`}
+                            linetype="line"
+                        />
+                        <TextGroup
+                            //isRooznameh={true}
+                            delay="100ms"
+                            duration="700ms"
+                            fontSize={`${0.0123 * width}px`}
+                            text="مذاکره و تفاهم فراهم شده است"
+                            height={`${0.023148148148148147 * height}px`}
+                            width={`${0.12578616352201258 * width}px`}
+                            left={`${0.8513027852650494 * width}px`}
+                            top={`${0.30864197530864196 * height}px`}
+                            linetype="line"
+                        />
                         {/*second paragraph*/}
                         <TextGroup
                             //isRooznameh={true}
@@ -836,7 +830,7 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

@@ -47,7 +47,7 @@ const FishHoghoghi = () => {
                     src={fish}
                     alt={''}
                 />
-                <page
+                <div
                     ref={fishHoghoghi}
                     style={
                         fishInview
@@ -388,7 +388,7 @@ const FishHoghoghi = () => {
                             height={`${0.05338078291814947 * height}px`}
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

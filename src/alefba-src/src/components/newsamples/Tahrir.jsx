@@ -45,7 +45,7 @@ const Tahrir = () => {
                     src={tahrir}
                     alt={''}
                 />
-                <page
+                <div
                     ref={tah}
                     style={
                         tahInview
@@ -156,7 +156,7 @@ const Tahrir = () => {
                             height={`${0.051 * height}px`}
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

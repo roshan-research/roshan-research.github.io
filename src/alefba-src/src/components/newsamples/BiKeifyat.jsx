@@ -45,7 +45,7 @@ const BiKeifyat = () => {
                     src={bikeifyat}
                     alt={''}
                 />
-                <page
+                <div
                     ref={bi}
                     style={
                         biInview
@@ -154,7 +154,7 @@ const BiKeifyat = () => {
                             linetype="line"
                         />
                     </div>
-                </page>
+                </div>
             </div>
         </div>
     );

@@ -29,7 +29,7 @@ const TextGroup = ({
                     lineHeight: lineHeight,
                     '--animation-delay': delay,
                     '--animation-duration': duration,
-                    animationPlayState: isRooznameh ? 'paused' : 'unset',
+                    animationPlayState: 'inherit',
                 }}
             ></span>
             <span
