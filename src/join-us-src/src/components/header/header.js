@@ -33,13 +33,13 @@ class Header extends Component {
                         href={'https://www.roshan-ai.ir/'}
                         id={'mobile-menu-link'}
                     >
-                        روشن
+                        صفحهٔ اصلی
                     </a>
                     <a
                         href={'https://www.roshan-ai.ir/about-us'}
                         id={'mobile-menu-link'}
                     >
-                        درباره ما
+                        دربارهٔ روشن
                     </a>
                     <a
                         href={'https://www.roshan-ai.ir/about-us'}

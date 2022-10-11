@@ -21,10 +21,10 @@ class SampleSection extends Component {
     voices = [rasmi, mohavereh, telephone, ghadimi, bamusic];
     titles = [
         'گفتار رسمی',
-        'گفتار محاوره',
-        'صحبت تلفنی',
-        'قدیمی',
-        'گفتار با موسیقی در حال پخش',
+        'گفتار محاوره‌ای',
+        'گفتگوی تلفنی',
+        'گفتار با لحن فارسی قدیم',
+        'گفتار با موسیقی زمینه',
     ];
 
     onSampleClick = (sampleName) => {
@@ -34,7 +34,7 @@ class SampleSection extends Component {
     render() {
         return (
             <div className={'sample'}>
-                <p id={'sample-title'}>نمونه‌های حرف</p>
+                <p id={'sample-title'}>به عمل کار برآید</p>
                 <div className="sample-title-space" />
                 <div id={'sample-section'}>
                     <Player
@@ -89,7 +89,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار محاوره
+                                    گفتار محاوره‌ای
                                 </p>
                                 <Dot
                                     className={
@@ -120,7 +120,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    صحبت تلفنی
+                                    گفتگوی تلفنی
                                 </p>
                                 <Dot
                                     className={
@@ -151,7 +151,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    قدیمی
+                                    گفتار با لحن فارسی قدیم
                                 </p>
                                 <Dot
                                     className={
@@ -182,7 +182,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار با موسیقی در حال پخش
+                                    گفتار با موسیقی زمینه
                                 </p>
                                 <Dot
                                     className={
