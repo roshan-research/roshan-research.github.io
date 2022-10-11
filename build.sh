@@ -21,9 +21,14 @@ build(){
     src=$root/src/$1-src/      
     cd $src
     npm install && npm run build
-    rm -r $root/$1/
-    mkdir $root/$1/
-    cp -r $src/build/* $root/$1/    
+    
+    if [ $1 = "main" ]; then              
+        cp -r $src/build/* $root/
+    else    
+        rm -r $root/$1/
+        mkdir $root/$1/  
+        cp -r $src/build/* $root/$1/    
+    fi
 }
 
 products=( "$@" )
