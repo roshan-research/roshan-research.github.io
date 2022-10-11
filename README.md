@@ -18,7 +18,7 @@
 [![wakatime](https://wakatime.com/badge/user/2fc4b18b-ec8f-46e8-be9b-2b05a111037b/project/f98bcec6-7138-4458-8066-e05d78369ca2.svg)](https://wakatime.com/badge/user/2fc4b18b-ec8f-46e8-be9b-2b05a111037b/project/f98bcec6-7138-4458-8066-e05d78369ca2) -->
 
 <div dir="rtl">
-برای بیلدگرفتن از یک پروژه؛ مثلاً **الفبا** به این صورت عمل کنید:
+برای بیلدگرفتن از یک پروژه؛ مثلاً الفبا به این صورت عمل کنید:
 
 `sh build.sh alefba`
 
