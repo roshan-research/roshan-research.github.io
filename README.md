@@ -26,9 +26,7 @@
 
 `sh build.sh main about-us harf`
 
-مقادیر مجاز برای این دستور:
-
-`main, about-us, contact-us, join-us, harf, alefba`
+مقادیر مجاز برای این دستور: `main, about-us, contact-us, join-us, harf, alefba`
 
 اگر هیچ مقداری وارد نکنید یعنی `sh build.sh` همهٔ پروژه‌ها بیلد گرفته می‌شود.
 
