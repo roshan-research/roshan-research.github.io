@@ -95,7 +95,7 @@
 
 @media screen and (max-width: 500px) {
     #sample-footer-space {
-        height: 140vh;
+        display: none;
     }
 
     #catalog-footer-space {
@@ -103,7 +103,7 @@
     }
 
     #utils-sample-space {
-        height: 42.6vw;
+        height: #{'clamp(165px, 38vw, 180px)'};
     }
 
     #usage-utils-space {

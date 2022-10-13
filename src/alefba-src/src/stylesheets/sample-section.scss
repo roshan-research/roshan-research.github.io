@@ -20,6 +20,10 @@ p {
     padding: 0 11.2vw;
 }
 
+.sample-title-space {
+    height: 6.6vw;
+}
+
 .sample-row {
     display: flex;
     justify-content: flex-end;
@@ -136,6 +140,10 @@ p {
         font-size: 5.3vw;
     }
 
+    .sample-title-space {
+        height: 59px;
+    }
+
     #active-orange-title {
         background-color: black;
         color: #ff6200;
@@ -160,15 +168,14 @@ p {
     }
 
     #sample-section {
-        margin-top: 50vh;
         flex-direction: column;
         justify-content: flex-end;
         align-items: flex-end;
-        height: 65.14084507042254vh;
         width: 80vw;
     }
 
     .white-title-sample {
+        // margin-top: 24px;
         color: #ff6200;
         font-size: 5.1vw;
         height: auto;
@@ -178,7 +185,6 @@ p {
 
     #buttons {
         justify-content: center;
-        height: 19vw;
     }
 
     .sample {
@@ -197,7 +203,6 @@ p {
 
     .button {
         width: 80vw;
-        margin-top: 25vh;
         pointer-events: none;
     }
 
@@ -235,7 +240,7 @@ p {
     .mobile-sample-container {
         display: flex;
         width: 85vw;
-        height: 75vw;
+        height: 61vw;
         border-radius: 15px;
     }
 
@@ -243,6 +248,7 @@ p {
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        gap: 1.5rem;
         width: 100%;
         height: 100%;
     }
@@ -250,21 +256,17 @@ p {
         justify-content: center;
         align-items: center;
         width: 80vw;
-        height: 40vh;
     }
 
     #buttons {
         justify-content: center;
         align-items: center;
+        gap: 4.875rem;
     }
 
     .white-title-sample,
     #active-orange-title {
         text-align: center;
         z-index: 10000;
-    }
-
-    #sample-section {
-        margin-top: 120vh;
     }
 }
