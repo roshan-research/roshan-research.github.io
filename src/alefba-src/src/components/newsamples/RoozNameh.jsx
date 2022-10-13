@@ -373,6 +373,18 @@ const RoozNameh = () => {
                             linetype="line"
                         />
                         {/*titles*/}
+                        {/*image*/}
+                        <TextGroup
+                            delay="100ms"
+                            duration="1.9s"
+                            fontSize={`${0 * width}px`}
+                            text=""
+                            height={`${0.555 * height}px`}
+                            width={`${0.555 * width}px`}
+                            left={`${0.4255 * width}px`}
+                            top={`${0.35 * height}px`}
+                            opacity="0.65"
+                        />
                         <TextGroup
                             delay="1900ms"
                             duration="1100ms"

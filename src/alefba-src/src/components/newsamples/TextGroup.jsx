@@ -12,7 +12,7 @@ const TextGroup = ({
     lineType = 'line_bold',
     delay = '0s',
     duration = '3000ms',
-    isRooznameh = false,
+    opacity = 1,
 }) => {
     return (
         <div style={{ animationPlayState: 'inherit' }}>
@@ -30,6 +30,7 @@ const TextGroup = ({
                     '--animation-delay': delay,
                     '--animation-duration': duration,
                     animationPlayState: 'inherit',
+                    opacity,
                 }}
             ></span>
             <span

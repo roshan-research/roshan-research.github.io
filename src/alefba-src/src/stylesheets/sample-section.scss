@@ -14,9 +14,10 @@ p {
 
 #sample-section {
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 11.2vw;
 }
 
 .sample-row {
