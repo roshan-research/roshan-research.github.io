@@ -78,12 +78,18 @@
         flex-direction: column-reverse;
         justify-content: space-around;
         gap: 2rem;
-        padding-block: 6vw;
-        padding-inline: 0.4vw;
+        padding-block: 2.25rem;
+        padding-inline: 2.5rem;
+        width: max-content;
+        max-width: 57%;
+
+        & > div:nth-of-type(2) {
+            width: 100%;
+        }
     }
 
     #catalog-cover {
-        width: 60vw;
+        width: 100%;
     }
 
     #catalog-description {
