@@ -61,12 +61,13 @@
 
 #orange-text {
     white-space: nowrap;
+    text-align: center;
     color: #ff6200;
     height: 5.555555555555555vh;
     width: 17.96875vw;
     margin-top: 23vw;
     margin-right: 10.9375vw;
-    margin-left: 71.875vw;
+    margin-left: 76.9vw;
     position: absolute;
     font-style: normal;
     font-weight: 700;
@@ -171,8 +172,9 @@
         height: 7.042253521126761vh;
         width: 50vw;
         font-size: 6vw;
-        margin-top: 36.971830985915496vh;
-        margin-left: 31.166666666666668vw;
+        margin-top: 28.971831vh;
+        margin-left: 26.166667vw;
+        text-align: center;
     }
 
     #white-text {
@@ -180,12 +182,13 @@
         font-size: 4.5vw;
         height: 6.161971830985916vh;
         width: 70.111111111111114vw;
-        margin-top: 45vh;
-        margin-left: 16.5vw;
+        margin-top: 37vh;
+        margin-left: 15.5vw;
+        text-align: center;
     }
 
     #papers {
-        margin-top: 55.45774647887324vh;
+        margin-top: 47.457746vh;
         margin-left: 16.666666666666664vw;
         height: 35.2112676056338vh;
         width: 66.66666666666666vw;

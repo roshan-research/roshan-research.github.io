@@ -100,7 +100,7 @@ const AbilitiesSection = () => {
                                         : 'black-text'
                                 }
                                 ref={left3Ref}
-                                data-title={'حذف اِعراب'}
+                                data-title={'حذف اِعرابِ حروف'}
                             >
                                 حذف اِعرابِ حروف
                             </p>
@@ -111,7 +111,7 @@ const AbilitiesSection = () => {
                                         : 'black-text-background'
                                 }
                                 ref={left3Ref}
-                                data-title={'حذف اِعراب'}
+                                data-title={'حذف اِعرابِ حروف'}
                             >
                                 حذف اِعرابِ حروف
                             </p>
