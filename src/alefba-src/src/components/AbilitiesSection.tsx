@@ -29,7 +29,7 @@ const AbilitiesSection = () => {
             </div>
             <div id={'abilities-wrapper'}>
                 <div id={'left'}>
-                    <div style={{ height: '8vw' }} />
+                    <div style={{ height: '4.4375rem' }} />
                     <div className={'ability-group'} id={'left-1'}>
                         <Left1 className={'ability-icon'} />
                         <div className={'title-stack'}>

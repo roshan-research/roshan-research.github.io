@@ -9,6 +9,7 @@
     font-weight: bold;
     font-size: 1.8vw;
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
     font-family: iran-yekan, serif;
@@ -45,7 +46,6 @@
 
 .ability-group {
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     height: 33vh;
@@ -149,6 +149,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
+    margin-top: 4.75rem;
     width: 55vw;
 }
 
@@ -178,6 +179,7 @@
         justify-content: center;
         align-items: center;
         flex-direction: column;
+        margin-top: 0;
         width: 55vw;
     }
 

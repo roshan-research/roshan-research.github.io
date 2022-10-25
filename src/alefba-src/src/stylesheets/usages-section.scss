@@ -4,6 +4,7 @@
     font-weight: bold;
     font-size: 1.8vw;
     display: flex;
+    margin: 0;
     justify-content: center;
     align-items: center;
     font-family: iran-yekan, serif;
@@ -32,7 +33,6 @@
     transition: 1s ease-in-out;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     height: 41.66666666666667vh;
@@ -50,7 +50,6 @@
     transition: 1s ease-in-out;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     height: 63.888888888888886vh;
@@ -68,7 +67,6 @@
     transition: 1s ease-in-out;
     position: absolute;
     display: flex;
-    justify-content: center;
     align-items: flex-end;
     flex-direction: column;
     height: 51.388888888888886vh;
@@ -83,7 +81,7 @@
 }
 
 #space-1 {
-    height: #{'min(6.5vw, 20px)'};
+    height: 5rem;
 }
 #space-2 {
     height: 10vw;
@@ -133,6 +131,7 @@
     }
 
     .orange-text-usages {
+        margin-top: 1.5rem;
         font-size: 3.8vw;
     }
 
@@ -148,6 +147,6 @@
     }
 
     #space-4 {
-        height: 10vh;
+        height: 3.75rem;
     }
 }

@@ -238,9 +238,21 @@
     }
 
     .util-group {
-        margin-top: 6.125rem;
         height: 26.408450704225352vh;
         width: 77.77777777777779vw;
+    }
+
+    .util-group:nth-child(1) {
+        margin-top: #{'min(33vw, 120px)'};
+    }
+    .util-group:nth-child(2) {
+        margin-top: 35vw;
+    }
+    .util-group:nth-child(3) {
+        margin-top: 37vw;
+    }
+    .util-group:nth-child(4) {
+        margin-top: 50vw;
     }
 
     .black-util-text,
