@@ -47,10 +47,15 @@
   display: flex;
   justify-content: center;
   align-items: center;
+  gap: 10px;
   height: 2.5vw;
   margin-top: 37vw;
   font-size: 1vw;
   background-color: #4286F5;
+}
+
+#navigation-button span:nth-child(1) {
+    margin-top: -3px;
 }
 
 #map-image {

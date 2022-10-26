@@ -1,89 +1,35 @@
 #footer {
-    height: 10vw;
-    margin-top: 15vw;
-    border-top: solid rgba(255, 255, 255, 0.6) 0.5px;
+    display: flex;
+    margin-top: 11.0625rem;
+    gap: #{'clamp(4.5rem , 11vw, 8.5rem)'};
+    padding-block: #{'clamp(1rem , 5vw, 2.75rem)'};
+    padding-inline: #{'clamp(2.5rem , 10vw, 6.25rem)'};
+    border-style: solid;
+    border-top-color: rgba(255, 255, 255, 0.25);
+    border-width: 0;
+    border-top-width: 0.5px;
+    white-space: nowrap;
 }
 
-#company {
+#contact-text, #join-text, #company, #email {
     margin: 0;
     color: white;
-    font-family: iranyekan, serif;
-    font-size: 0.9vw;
-    height: 2.7777777777777777vh;
-    width: 15.625vw;
-    direction: rtl;
-}
-
-#footer-title {
-    color: white;
-    font-family: iranyekan, serif;
-    font-size: 1vw;
-}
-
-#contact-text {
-    color: white;
-    font-family: iranyekan, serif;
-    height: 2.7777777777777777vh;
-    width: 4.5vw;
-    font-size: 1vw;
-}
-
-#join-text {
-    color: white;
-    font-family: iranyekan, serif;
-    font-size: 1vw;
-    height: 2.7777777777777777vh;
-    width: 5.078125vw;
-}
-
-#email {
-    margin-top: 6px;
-    color: white;
-    font-family: iranyekan, serif;
-    font-size: 1.1vw;
-    height: 2.7777777777777777vh;
-    width: 9.375vw;
-}
-
-#icon-title-footer {
-    position: absolute;
-    display: flex;
-    margin-top: 4.861111111111112vh;
-    margin-right: 7.8125vw;
-    margin-left: 87.109375vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    font-family: iran-yekan, serif;
+    font-size: 12px;
 }
 
 #icon-footer {
-    height: 3vw;
-    width: 4vw;
+    width: 3.3125rem;
+}
+
+#contact-footer, #email-footer {
+    display: flex;
+    flex-direction: column;
+    gap: #{'clamp(0.5rem , 11vw, 1rem)'};
 }
 
 #contact-footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: end;
-    flex-direction: column;
-    height: 8.333333333333332vh;
-    width: 4.5vw;
-    margin-top: 4.861111111111112vh;
-    margin-right: 58.59375vw;
-    margin-left: 39.0625vw;
-}
-
-#email-footer {
-    position: absolute;
-    display: flex;
-    margin-right: 74.21875vw;
-    height: 8.333333333333332vh;
-    margin-top: 4.861111111111112vh;
-    margin-left: 10.546875vw;
-    justify-content: space-between;
-    align-items: end;
-    flex-direction: column;
+    margin-right: auto;
 }
 
 a {
@@ -91,70 +37,32 @@ a {
 }
 
 #email:hover {
-    color: #4286f5;
+    color: #ff6200;
 }
 
 #contact-text:hover {
-    color: #4286f5;
+    color: #ff6200;
 }
 
 #join-text:hover {
-    color: #4286f5;
+    color: #ff6200;
 }
 
-@media screen and (max-width: 500px) {
-    #contact-footer {
-        display: none;
-        margin: 0;
-        height: 0;
-        width: 0;
+@media screen and (max-width: 600px) {
+    #footer {
+        flex-direction: column;
+        margin-top: 3.75rem;
+        border: none;
+        padding-block: 1.25rem;
+        padding-inline: 2.375rem;
+        gap: 1px;
     }
 
-    #footer {
-        border-style: none;
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: end;
-        height: 5vw;
+    #contact-footer {
+        display: none;
     }
 
     #email-footer {
-        position: absolute;
-        justify-content: space-between;
-        align-items: end;
-        margin-right: 5vw;
-        display: flex;
-        height: 0;
-    }
-
-    #icon-title-footer {
-        margin-bottom: 37vh;
-        position: relative;
-        display: flex;
-        flex-direction: row;
-    }
-
-    #footer-title {
-        font-size: 5vw;
-        padding-right: 1.4vw;
-        height: auto;
-        width: auto;
-    }
-
-    #icon-footer {
-        display: none;
-    }
-
-    #email {
-        font-size: 4vw;
-        height: 3.5211267605633805vh;
-        width: 35vw;
-    }
-
-    #company {
-        font-size: 3.5vw;
-        height: 2.7777777777777777vh;
-        width: 60vw;
+        gap: 4px;
     }
 }

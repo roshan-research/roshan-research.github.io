@@ -102,7 +102,13 @@ export default class Header extends Component {
                                 : 'https://goo.gl/maps/ms3rUPvSMtsscEXr9'
                         }
                     >
-                        مسیریابی &nbsp; &#10095;
+                        <span>مسیریابی</span>
+                        <span>
+                            &#10095;
+                            {/* <svg width="6" height="10" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M5 1 1 5l4 4" stroke="#fff" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> */}
+                        </span>
                     </a>
                     {this.reactToToggles()}
                 </div>
