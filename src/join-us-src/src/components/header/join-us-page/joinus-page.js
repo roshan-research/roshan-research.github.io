@@ -1,6 +1,7 @@
 import React from 'react';
 import { ReactComponent as JoinUsMobile } from '../../../assets/images/mobile-join-us.svg';
 import { ReactComponent as JoinUsText } from '../../../assets/images/join-us-text-group.svg';
+import {ReactComponent as Logo} from "../../../assets/images/roshan-logosvg.svg";
 
 import Jobinja from '../../../assets/images/jobinja.svg';
 import Linkedin from '../../../assets/images/linkedin.svg';
@@ -13,7 +14,16 @@ const returnBasedOneDevice = () => {
     if (isMobile || isTablet) {
         return (
             <div id={'mobile-j'}>
-                <JoinUsMobile id={'pic'} />
+                {/* <JoinUsMobile id={'pic'} /> */}
+                <div className='mobile-text-wrapper'>
+                    <p>اگر به هوش مصنوعی علاقمندید،</p>
+                    <div className='with-logo'>
+                        <p>برای حضور در کنار تیم جوان و خلاق</p>
+                        <Logo />
+                        <span>،</span>
+                    </div>
+                    <p>با ما در ارتباط باشید.</p>
+                </div>
                 <div className="mobile-social">
                     <a href="mailto:salam@roshan-ai.ir">
                         <img src={Mail} alt="" width="76" height="34" />

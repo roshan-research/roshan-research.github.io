@@ -1,15 +1,14 @@
 .roshan-icon .icon{
   box-sizing: border-box;
-  height: auto;
-  width:4vw;
-  margin-right: 7.75vw;
+  margin-right: 4.1875rem;
+  width: 63.87px;
+  height: 22.01px;
 }
 
 @media screen and (max-width: 500px){
   .roshan-icon .icon{
-    height: 4.48vh;
-    margin-right: 12vw;
-    width: 15vw;
-    margin-top: 0;
+    margin-right: 2.0625rem;
+    width: 53px;
+    height: 18.13px;
   }
 }
