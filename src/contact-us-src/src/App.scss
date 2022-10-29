@@ -12,7 +12,7 @@
 .menu {
     z-index: 5;
     display: flex;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
     background-color: #0A0A0A;
     position: absolute;
@@ -31,7 +31,7 @@
     transform: scale(1.2);
     margin-top: 1vw;
     transition: 0.2s;
-    margin-right: 80vw;
+    margin-right: 80.5vw;
     z-index: 1000;
 }
 
