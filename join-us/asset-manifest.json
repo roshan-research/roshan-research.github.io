@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/join-us/static/css/main.c5be4bf1.chunk.css",
+    "main.css": "/join-us/static/css/main.b1737264.chunk.css",
     "main.js": "/join-us/static/js/main.2662695b.chunk.js",
     "main.js.map": "/join-us/static/js/main.2662695b.chunk.js.map",
     "runtime-main.js": "/join-us/static/js/runtime-main.7bbe0d7c.js",
@@ -14,7 +14,7 @@
     "static/js/4.938e73b4.chunk.js.map": "/join-us/static/js/4.938e73b4.chunk.js.map",
     "index.html": "/join-us/index.html",
     "static/css/3.d590b854.chunk.css.map": "/join-us/static/css/3.d590b854.chunk.css.map",
-    "static/css/main.c5be4bf1.chunk.css.map": "/join-us/static/css/main.c5be4bf1.chunk.css.map",
+    "static/css/main.b1737264.chunk.css.map": "/join-us/static/css/main.b1737264.chunk.css.map",
     "static/js/2.e4ffb0f1.chunk.js.LICENSE.txt": "/join-us/static/js/2.e4ffb0f1.chunk.js.LICENSE.txt",
     "static/js/4.938e73b4.chunk.js.LICENSE.txt": "/join-us/static/js/4.938e73b4.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/join-us/static/media/IRANYekan.b916444e.ttf",
@@ -30,7 +30,7 @@
   "entrypoints": [
     "static/js/runtime-main.7bbe0d7c.js",
     "static/js/2.e4ffb0f1.chunk.js",
-    "static/css/main.c5be4bf1.chunk.css",
+    "static/css/main.b1737264.chunk.css",
     "static/js/main.2662695b.chunk.js"
   ]
 }

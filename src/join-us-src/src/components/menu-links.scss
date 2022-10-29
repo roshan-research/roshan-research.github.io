@@ -8,10 +8,12 @@
 }
 
 #menu-contents {
-    padding-right: 2vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
+  display: flex;
+  padding-right: 2vw;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
 }
 
 .menu-link {
@@ -26,7 +28,7 @@
 }
 
 #company-name {
-    margin-top: 50vh;
+    margin-top: auto;
     font-size: 0.8vw;
     color: white;
 }
