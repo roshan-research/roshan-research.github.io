@@ -13,4 +13,4 @@ root=`git rev-parse --show-toplevel`
 echo "Running $1 ............................"    
 src=$root/src/$1-src/      
 cd $src
-npm install && npm run start
+npm install --legacy-peer-deps && npm run start

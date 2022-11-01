@@ -76,8 +76,7 @@ function AlefbaWebText(props) {
             >
                 <h1 id={'kashf-title-text'}>تبدیل عکس به متن (OCR فارسی)</h1>
                 <h4 id={'kashf-main-text'}>
-                    تصاویر حاوی نوشته‌های فارسی و عربی و انگلیسی را
-                    به متن تبدیل می‌کند.
+                تصاویر دارای نوشته‌های فارسی، انگلیسی و عربی را با همان ساختاری که در تصویر قرار گرفته‌اند به متن تبدیل می‌کند. 
                 </h4>
             </motion.div>
             <svg
@@ -88,7 +87,7 @@ function AlefbaWebText(props) {
                 <motion.path
                     variants={
                         animationChooser(props.status)[
-                            'flowerAndFrameAnimation'
+                        'flowerAndFrameAnimation'
                         ]
                     }
                     initial={'hidden'}
@@ -99,7 +98,7 @@ function AlefbaWebText(props) {
                 <motion.path
                     variants={
                         animationChooser(props.status)[
-                            'flowerAndFrameAnimation'
+                        'flowerAndFrameAnimation'
                         ]
                     }
                     initial={'hidden'}
@@ -111,7 +110,7 @@ function AlefbaWebText(props) {
                 <motion.path
                     variants={
                         animationChooser(props.status)[
-                            'flowerAndFrameAnimation'
+                        'flowerAndFrameAnimation'
                         ]
                     }
                     initial={'hidden'}
@@ -172,7 +171,7 @@ function AlefbaWebText(props) {
                         fill="#FF6200"
                         variants={
                             animationChooser(props.status)[
-                                'backgroundAnimation'
+                            'backgroundAnimation'
                             ]
                         }
                         initial={'hidden'}

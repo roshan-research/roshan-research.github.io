@@ -78,6 +78,24 @@ const UsagesSection = () => {
                         </p>
                     </div>
                 </div>
+                <div>
+                    <div id={'space-4'} />
+                    <div
+                        id={'in-libraries'}
+                        ref={librariesRef}
+                        style={librariesInView ? afterFade : beforeFade}
+                    >
+                        <img
+                            src={LibrariesImage}
+                            id={'libraries-image'}
+                            alt={''}
+                        />
+                        <p className={'orange-text-usages'}>در فایل‌های پی‌دی‌اف</p>
+                        <p className={'white-text-usages'}>
+                            بسیاری از پی‌دی‌اف‌های فارسی، قابلیت جستجو ندارند. الفبا می‌تواند با فراهم‌کردن قابلیت جستجو در این فایل‌ها، استفاده از آن‌ها را تسهیل کند.
+                        </p>
+                    </div>
+                </div>
             </div>
         </div>
     );

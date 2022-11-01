@@ -164,7 +164,7 @@ class SampleSection extends Component {
 
         return (
             <div className={'sample'}>
-                <p id={'sample-title'}>به عمل کار برآید</p>
+                <p id={'sample-title'}>نمونه‌های واقعی الفبا</p>
                 <div className="sample-title-space" />
                 <div id={'sample-section'}>
                     <div className={'sample-container'}>{whichSample()}</div>
@@ -281,7 +281,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    اسناد ناصاف
+                                    اسناد دارای چرخش و زاویه
                                 </p>
                                 <Dot
                                     className={
@@ -327,7 +327,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    نشریات
+                                    مطبوعات
                                 </p>
                                 <Dot
                                     className={

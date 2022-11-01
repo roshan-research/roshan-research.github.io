@@ -87,8 +87,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            افزایش دقت تبدیل از طریق آموزش سیستم با انبوهِ
-                            داده‌های خام
+                            افزایش دقت تبدیل، با شناساندن صداهای مختلف به سیستم، به‌سفارش کاربر
                         </p>
                     </div>
                 </div>
@@ -120,7 +119,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            فهم گفتار محاوره‌ای و تبدیل آن به متن محاوره‌ای
+                            فهم گفتار محاوره‌ای و تبدیل آن به متن
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'right-2'}>
@@ -150,7 +149,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            تبدیل آنی صدای در حال پخش (استریم، پخش زنده) به متن
+                            تبدیل آنی گفتار در حال پخش به متن
                         </p>
                     </div>
                 </div>

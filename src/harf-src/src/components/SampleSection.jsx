@@ -34,7 +34,7 @@ class SampleSection extends Component {
     render() {
         return (
             <div className={'sample'}>
-                <p id={'sample-title'}>به عمل کار برآید</p>
+                <p id={'sample-title'}>نمونه‌های واقعی حرف</p>
                 <div className="sample-title-space" />
                 <div id={'sample-section'}>
                     <Player

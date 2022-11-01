@@ -6,7 +6,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
 const MainSection = () => {
-    const onHamburgerMenuToggle = () => {};
+    const onHamburgerMenuToggle = () => { };
 
     const [isOpen, setOpen] = useState(false);
 
@@ -61,8 +61,8 @@ const MainSection = () => {
                 id={'main-screen'}
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
-                <p id={'orange-text'}>الفبـا</p>
-                <p id={'white-text'}>(فارسی OCR) تبدیل عکس به متن</p>
+                <p id={'orange-text'}>الفبا، تبدیل عکس به متن</p>
+                <p id={'white-text'}>تصاویر حاوی نوشته‌های فارسی و انگلیسی و عربی را به متن تبدیل می‌کند.</p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>

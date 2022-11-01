@@ -10,10 +10,7 @@ const Catalog = () => {
 
     return (
         <div id={'catalog'}>
-            <div id={'catalog-right'}>
-                <p id={'catalog-description'}>
-                کاتالوگ حرف اطلاعات بیشتری در اختیار شما قرار می‌دهد.
-                </p>
+            <div id={'catalog-right'}>                
                 <a
                     href={'https://www.roshan-ai.ir/harf-catalog.pdf/'}
                     className={'catalog-link'}

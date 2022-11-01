@@ -61,8 +61,8 @@ const MainSection = () => {
                 id={'main-screen'}
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
-                <p id={'orange-text'}>حرف</p>
-                <p id={'white-text'}>تبدیل صدا به متن </p>
+                <p id={'orange-text'}>حرف، تبدیل گفتار به متن</p>
+                <p id={'white-text'}>گفتار را به نوشته‌های قابل ویرایش تبدیل می‌کند.</p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>
