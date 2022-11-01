@@ -62,7 +62,7 @@ const MainSection = () => {
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
                 <p id={'orange-text'}>الفبا، تبدیل عکس به متن</p>
-                <p id={'white-text'}>تصاویر حاوی نوشته‌های فارسی و انگلیسی و عربی را به متن تبدیل می‌کند.</p>
+                <p id={'white-text'}>تصاویر حاوی نوشته‌های فارسی، انگلیسی و عربی را به متن تبدیل می‌کند.</p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>

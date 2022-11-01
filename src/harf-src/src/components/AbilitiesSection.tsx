@@ -56,8 +56,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            درج خطاهای احتمالی در داخل کروشه برای بازبینی توسط
-                            انسان{' '}
+                            درج خطاهای احتمالی در داخل کروشه برای بازبینی انسانی
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'left-2'}>
@@ -149,7 +148,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            تبدیل آنی گفتار در حال پخش به متن
+                            تبدیل آنی گفتارِ در حال پخش به متن
                         </p>
                     </div>
                 </div>
