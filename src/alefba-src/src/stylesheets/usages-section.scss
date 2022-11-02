@@ -75,26 +75,42 @@
     margin-left: 50.78125vw;
 }
 
+#in-pdfs {
+    transition: 1s ease-in-out;
+    position: absolute;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 63.8888888889vh;
+    width: 22.265625vw;
+    margin-left: 18.75vw;
+    margin-right: 60.15625vw;
+}
+
 #library-image {
     height: auto;
     width: 80%;
 }
 
-#space-1 {
-    height: 5rem;
-}
-#space-2 {
-    height: 10vw;
-}
-#space-3 {
-    height: 30vw;
-}
-#space-4 {
-    height: 30vw;
+#pdf-image {
+    height: auto;
+    width: 90%;
 }
 
-#space-5 {
-    height: 22vw;
+.usage-title-space {
+    height: 5rem;
+}
+
+#space-1 {
+    height: 10vw;
+}
+
+#space-2 {
+    height: 27vw;
+}
+
+#space-3 {
+    height: 24vw;
 }
 
 @media screen and (max-width: 500px) {
@@ -117,11 +133,12 @@
 
     #in-libraries,
     #in-organizations,
-    #in-businesses {
+    #in-businesses,
+    #in-pdfs {
         transition: none;
         position: relative;
         height: 60vh;
-        width: 75vw;
+        width: 55.5555555556vw;
         margin-top: 0;
         margin-left: 0;
         direction: ltr;
@@ -132,7 +149,8 @@
 
     #library-image,
     #business-image,
-    #organization-image {
+    #organization-image,
+    #pdf-image {
         height: auto;
         width: 55.55555555555556vw;
     }
@@ -153,7 +171,7 @@
         height: 0;
     }
 
-    #space-4 {
+    .usage-title-space {
         height: 3.75rem;
     }
 }

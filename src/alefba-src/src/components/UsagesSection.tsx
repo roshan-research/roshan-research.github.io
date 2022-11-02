@@ -20,13 +20,13 @@ const UsagesSection = () => {
     const [businessesRef, businessesInView] = useInView(observerOptions);
     const [organizationsRef, organizationsInView] = useInView(observerOptions);
     const [librariesRef, librariesInView] = useInView(observerOptions);
+    const [pdfsRef, pdfsInView] = useInView(observerOptions);
 
     return (
         <div>
             <p id={'usages-title'}>گوشه‌ای از کاربردهای الفبا</p>
-            <div id={'space-4'} />
+            <div className='usage-title-space' />
             <div id={'usages-section'}>
-                <div id={'space-1'} />
                 <div
                     id={'in-businesses'}
                     ref={businessesRef}
@@ -40,7 +40,7 @@ const UsagesSection = () => {
                     </p>
                 </div>
                 <div>
-                    <div id={'space-2'} />
+                    <div id={'space-1'} />
                     <div
                         id={'in-organizations'}
                         ref={organizationsRef}
@@ -59,7 +59,7 @@ const UsagesSection = () => {
                     </div>
                 </div>
                 <div>
-                    <div id={'space-3'} />
+                    <div id={'space-2'} />
                     <div
                         id={'in-libraries'}
                         ref={librariesRef}
@@ -79,15 +79,15 @@ const UsagesSection = () => {
                     </div>
                 </div>
                 <div>
-                    <div id={'space-4'} />
+                    <div id={'space-3'} />
                     <div
-                        id={'in-libraries'}
-                        ref={librariesRef}
-                        style={librariesInView ? afterFade : beforeFade}
+                        id={'in-pdfs'}
+                        ref={pdfsRef}
+                        style={pdfsInView ? afterFade : beforeFade}
                     >
                         <img
                             src={LibrariesImage}
-                            id={'libraries-image'}
+                            id={'pdf-image'}
                             alt={''}
                         />
                         <p className={'orange-text-usages'}>در فایل‌های پی‌دی‌اف</p>
