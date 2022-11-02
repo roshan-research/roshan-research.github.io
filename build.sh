@@ -20,7 +20,7 @@ build(){
     echo "Building $1 ............................"    
     src=$root/src/$1-src/      
     cd $src
-    npm install && npm run build
+    npm install --legacy-peer-deps && npm run build
     
     if [ $1 = "main" ]; then              
         cp -r $src/build/* $root/

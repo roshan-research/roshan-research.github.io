@@ -70,9 +70,9 @@ function HarfWebText(props) {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'harf-title-text'}>تبدیل صدا به متن</h1>
+                <h1 id={'harf-title-text'}>تبدیل گفتار به متن</h1>
                 <h4 id={'harf-main-text'}>
-                صداهای حاوی گفتار فارسی (رسمی و محاوره‌ای) را به متن تبدیل می‌کند.
+                گفتار رسمی و محاوره‌ای را با همان سرعت طبیعی کلام، به متن تبدیل می‌کند. این ابزار، درلحظه نیز می‌تواند تبدیل کند.
                 </h4>
             </motion.div>
             <svg

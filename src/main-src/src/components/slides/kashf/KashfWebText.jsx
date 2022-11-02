@@ -66,11 +66,9 @@ const KashfWebText = (props) => {
                 initial={'hidden'}
                 animate={'visible'}
             >
-                <h1 id={'kashf-title-text'}>کاوشگر معنا</h1>
+                <h1 id={'kashf-title-text'}>کشف مفاهیم</h1>
                 <h4 id={'kashf-main-text'}>
-                    مفاهیم موردنظر را در انبوهٔ داده‌های متنی و تصویری جستجو
-                    می‌کند؛ مثلاً یافتن دیدگاه‌های منفی دربارهٔ یک محصول یا
-                    پیداکردن ویدیوهای مرتبط با فوتبال از بین تعداد زیادی ویدیو.
+                    مفاهیم مختلف را می‌آموزد و آن مفاهیم را با سرعت و دقتی فراتر از انسان در میانِ انبوه داده‌های متنی، تصویری، چهره‌ها و ویدیوها می‌یابد. 
                 </h4>
             </motion.div>
             <svg
@@ -81,7 +79,7 @@ const KashfWebText = (props) => {
                 <motion.path
                     variants={
                         animationChooser(props.status)[
-                            'flowerAndFrameAnimation'
+                        'flowerAndFrameAnimation'
                         ]
                     }
                     initial={'hidden'}
@@ -92,7 +90,7 @@ const KashfWebText = (props) => {
                 <motion.path
                     variants={
                         animationChooser(props.status)[
-                            'flowerAndFrameAnimation'
+                        'flowerAndFrameAnimation'
                         ]
                     }
                     initial={'hidden'}
@@ -148,7 +146,7 @@ const KashfWebText = (props) => {
                         opacity="0.3"
                         variants={
                             animationChooser(props.status)[
-                                'backgroundAnimation'
+                            'backgroundAnimation'
                             ]
                         }
                         initial={'hidden'}

@@ -56,8 +56,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            تشخیص متن‌های انگلیسی، فارسی و مشابه فارسی؛ مثل عربی
-                            و دری
+                            خواندن نوشته‌های فارسی، انگلیسی و عربی در کنار هم در یک تصویر، بدون نیاز به تنظیم نوع زبان
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'left-2'}>
@@ -70,9 +69,9 @@ const AbilitiesSection = () => {
                                         : 'black-text'
                                 }
                                 ref={left2Ref}
-                                data-title={'اصلاح تصویر'}
+                                data-title={'درک تصاویر دارای چرخش و انحراف'}
                             >
-                                اصلاح تصویر
+                                درک تصاویر دارای چرخش و انحراف
                             </p>
                             <p
                                 className={
@@ -80,14 +79,13 @@ const AbilitiesSection = () => {
                                         ? 'black-text-background in-view-bg'
                                         : 'black-text-background'
                                 }
-                                data-title={'اصلاح تصویر'}
+                                data-title={'درک تصاویر دارای چرخش و انحراف'}
                             >
-                                اصلاح تصویر
+                                درک تصاویر دارای چرخش و انحراف
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            اصلاح نویز، چرخش و سایهٔ تصاویر برای دقیق‌تر خواندن
-                            متن
+                            شناسایی متن در تصاویر دارای نویز و سایه و تصاویری که به‌شکل زاویه‌دار مثلاً برعکس اسکن شده‌اند
                         </p>
                     </div>
                     <div className={'ability-group'} id={'left-3'}>
@@ -117,8 +115,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            حذف اعراب در نوشته‌های فارسی و عربی؛ مثل فتحه، کسره،
-                            ضمه
+                            حذف اعراب در نوشته‌ها؛ مثل فتحه، کسره، ضمه، که می‌تواند تسهیلی برای پردازش‌های زبانی باشد
                         </p>
                     </div>
                 </div>
@@ -133,9 +130,9 @@ const AbilitiesSection = () => {
                                         : 'black-text'
                                 }
                                 ref={right1Ref}
-                                data-title={'تشخیص انواع فونت‌ها'}
+                                data-title={'خواندن فونت‌های مختلف'}
                             >
-                                تشخیص انواع فونت‌ها
+                                خواندن فونت‌های مختلف
                             </p>
                             <p
                                 className={
@@ -143,13 +140,13 @@ const AbilitiesSection = () => {
                                         ? 'black-text-background in-view-bg'
                                         : 'black-text-background'
                                 }
-                                data-title={'تشخیص انواع فونت‌ها'}
+                                data-title={'خواندن فونت‌های مختلف'}
                             >
-                                تشخیص انواع فونت‌ها
+                                خواندن فونت‌های مختلف
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            تشخیص متن با هر فونت و اندازه‌ای؛ مثل متنِ عناوین و
+                            خواندن متن در فونت‌ها و اندازه‌های مختلف و در بخش‌های مختلف متن مثلاً در عناوین و
                             پاورقی‌ها
                         </p>
                     </div>
@@ -163,9 +160,9 @@ const AbilitiesSection = () => {
                                         : 'black-text'
                                 }
                                 ref={right2Ref}
-                                data-title={'حفظ ساختار سند'}
+                                data-title={'توجه به ساختار سند'}
                             >
-                                حفظ ساختار سند
+                                توجه به ساختار سند
                             </p>
                             <p
                                 className={
@@ -173,44 +170,13 @@ const AbilitiesSection = () => {
                                         ? 'black-text-background in-view-bg'
                                         : 'black-text-background'
                                 }
-                                data-title={'حفظ ساختار سند'}
+                                data-title={'توجه به ساختار سند'}
                             >
-                                حفظ ساختار سند
+                                توجه به ساختار سند
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            حفظ طول جملات، پاراگراف‌ها، جداول، فواصل و موقعیت
-                            تصاویر
-                        </p>
-                    </div>
-                    <div className={'ability-group on-left'} id={'right-3'}>
-                        <Right3 className={'ability-icon'} />
-                        <div className={'title-stack'}>
-                            <p
-                                className={
-                                    right3InView
-                                        ? 'black-text in-view'
-                                        : 'black-text'
-                                }
-                                ref={right3Ref}
-                                data-title={'تعیین خطاهای احتمالی'}
-                            >
-                                تعیین خطاهای احتمالی
-                            </p>
-                            <p
-                                className={
-                                    right3InView
-                                        ? 'black-text-background in-view-bg'
-                                        : 'black-text-background'
-                                }
-                                data-title={'تعیین خطاهای احتمالی'}
-                            >
-                                تعیین خطاهای احتمالی
-                            </p>
-                        </div>
-                        <p className={'white-text'}>
-                            درج خطاهای احتمالی در داخل کروشه برای بازبینی توسط
-                            انسان
+                         تلاش برای مطابقت متن با ساختار سند؛ مثلاً جداول به همان شکل جدولی یا پاراگراف‌ها و تصاویر، با همان ترتیب و جایگاهی که در سند قرار گرفته‌اند در خروجی ارائه می‌شوند
                         </p>
                     </div>
                 </div>

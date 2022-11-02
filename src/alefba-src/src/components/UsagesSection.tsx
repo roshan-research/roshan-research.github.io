@@ -54,7 +54,7 @@ const UsagesSection = () => {
                         <p className={'orange-text-usages'}>در سازمان‌ها</p>
                         <p className={'white-text-usages'}>
                             تبدیل اسناد موجود در اتاق‌های بایگانی به نسخه‌های
-                            متنیِ دیجیتال، قدم مهمی در تحقق دنیای بدون کاغذ است.
+                            متنیِ دیجیتال، قدم بزرگی در تحقق دنیای بدون کاغذ است.
                         </p>
                     </div>
                 </div>
@@ -73,8 +73,26 @@ const UsagesSection = () => {
                         <p className={'orange-text-usages'}>در کتابخانه‌ها</p>
                         <p className={'white-text-usages'}>
                             تهیهٔ نسخهٔ متنی کتاب‌ها و امکان جستجو در آن‌ها،
-                            کمکی بزرگ برای تسریع پژوهش‌ها در دنیای پرشتابِ امروز
+                            کمک بزرگی برای تسریع کارهای پژوهشی در دنیای پرشتابِ امروز
                             است.
+                        </p>
+                    </div>
+                </div>
+                <div>
+                    <div id={'space-4'} />
+                    <div
+                        id={'in-libraries'}
+                        ref={librariesRef}
+                        style={librariesInView ? afterFade : beforeFade}
+                    >
+                        <img
+                            src={LibrariesImage}
+                            id={'libraries-image'}
+                            alt={''}
+                        />
+                        <p className={'orange-text-usages'}>در فایل‌های پی‌دی‌اف</p>
+                        <p className={'white-text-usages'}>
+                            بسیاری از فایل‌های پی‌دی‌اف‌های فارسی، قابلیت جستجو ندارند. الفبا می‌تواند با فراهم‌کردن امکان جستجو در این فایل‌ها، استفاده از آن‌ها را تسهیل کند.
                         </p>
                     </div>
                 </div>
