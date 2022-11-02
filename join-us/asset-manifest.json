@@ -1,29 +1,36 @@
 {
   "files": {
-    "main.css": "/join-us/static/css/main.db857c41.chunk.css",
-    "main.js": "/join-us/static/js/main.67db679e.chunk.js",
-    "runtime-main.js": "/join-us/static/js/runtime-main.1786d026.js",
+    "main.css": "/join-us/static/css/main.8e873508.chunk.css",
+    "main.js": "/join-us/static/js/main.2662695b.chunk.js",
+    "main.js.map": "/join-us/static/js/main.2662695b.chunk.js.map",
+    "runtime-main.js": "/join-us/static/js/runtime-main.7bbe0d7c.js",
+    "runtime-main.js.map": "/join-us/static/js/runtime-main.7bbe0d7c.js.map",
     "static/js/2.e4ffb0f1.chunk.js": "/join-us/static/js/2.e4ffb0f1.chunk.js",
-    "static/css/3.3aaef789.chunk.css": "/join-us/static/css/3.3aaef789.chunk.css",
-    "static/js/3.821aae87.chunk.js": "/join-us/static/js/3.821aae87.chunk.js",
+    "static/js/2.e4ffb0f1.chunk.js.map": "/join-us/static/js/2.e4ffb0f1.chunk.js.map",
+    "static/css/3.d590b854.chunk.css": "/join-us/static/css/3.d590b854.chunk.css",
+    "static/js/3.4e89b6d4.chunk.js": "/join-us/static/js/3.4e89b6d4.chunk.js",
+    "static/js/3.4e89b6d4.chunk.js.map": "/join-us/static/js/3.4e89b6d4.chunk.js.map",
     "static/js/4.938e73b4.chunk.js": "/join-us/static/js/4.938e73b4.chunk.js",
+    "static/js/4.938e73b4.chunk.js.map": "/join-us/static/js/4.938e73b4.chunk.js.map",
     "index.html": "/join-us/index.html",
+    "static/css/3.d590b854.chunk.css.map": "/join-us/static/css/3.d590b854.chunk.css.map",
+    "static/css/main.8e873508.chunk.css.map": "/join-us/static/css/main.8e873508.chunk.css.map",
     "static/js/2.e4ffb0f1.chunk.js.LICENSE.txt": "/join-us/static/js/2.e4ffb0f1.chunk.js.LICENSE.txt",
     "static/js/4.938e73b4.chunk.js.LICENSE.txt": "/join-us/static/js/4.938e73b4.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/join-us/static/media/IRANYekan.b916444e.ttf",
-    "static/media/close-icon.20012dc4.svg": "/join-us/static/media/close-icon.20012dc4.svg",
-    "static/media/home-mobile.500ec8d7.svg": "/join-us/static/media/home-mobile.500ec8d7.svg",
-    "static/media/joinus-page.scss": "/join-us/static/media/mail.5ce9f50e.svg",
-    "static/media/join-us-text-group.c0771317.svg": "/join-us/static/media/join-us-text-group.c0771317.svg",
-    "static/media/menu-icon.a0de4dbf.svg": "/join-us/static/media/menu-icon.a0de4dbf.svg",
-    "static/media/mobile-join-us.1cfcac81.svg": "/join-us/static/media/mobile-join-us.1cfcac81.svg",
-    "static/media/roshan-logosvg.svg": "/join-us/static/media/roshan-logosvg.23d13fdb.svg",
-    "static/media/header.scss": "/join-us/static/media/web-join-us.a0be97f6.png"
+    "static/media/close-icon.425a19c1.svg": "/join-us/static/media/close-icon.425a19c1.svg",
+    "static/media/home-mobile.bb0d7ea2.svg": "/join-us/static/media/home-mobile.bb0d7ea2.svg",
+    "static/media/joinus-page.scss": "/join-us/static/media/mail.74e08128.svg",
+    "static/media/join-us-text-group.359fab67.svg": "/join-us/static/media/join-us-text-group.359fab67.svg",
+    "static/media/header.scss": "/join-us/static/media/man-under-night-sky.a0be97f6.png",
+    "static/media/menu-icon.4edab8bf.svg": "/join-us/static/media/menu-icon.4edab8bf.svg",
+    "static/media/mobile-join-us.1928e922.svg": "/join-us/static/media/mobile-join-us.1928e922.svg",
+    "static/media/roshan-logosvg.svg": "/join-us/static/media/roshan-logosvg.d2f6ff23.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.1786d026.js",
+    "static/js/runtime-main.7bbe0d7c.js",
     "static/js/2.e4ffb0f1.chunk.js",
-    "static/css/main.db857c41.chunk.css",
-    "static/js/main.67db679e.chunk.js"
+    "static/css/main.8e873508.chunk.css",
+    "static/js/main.2662695b.chunk.js"
   ]
 }
