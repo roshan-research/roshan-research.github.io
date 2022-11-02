@@ -2,7 +2,7 @@
     display: flex;
     padding-block: #{'clamp(1rem , 5vw, 2.75rem)'};
     padding-inline: #{'clamp(2.5rem , 10vw, 6.25rem)'};
-    gap: #{'clamp(4.5rem , 11vw, 8.5rem)'};
+    gap: #{'clamp(4rem , 10.5vw, 8.5rem)'};
     border-style: solid;
     border-top-color: rgba(255, 255, 255, 0.25);
     border-width: 0.5px;
@@ -13,7 +13,7 @@
     margin: 0;
     color: white;
     font-family: iran-yekan, serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #icon-footer {

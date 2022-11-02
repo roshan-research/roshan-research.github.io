@@ -38,6 +38,7 @@ p {
 }
 
 .white-title-sample {
+    white-space: nowrap;
     color: white;
     margin-right: 2vw;
     transition: 1s ease-in-out;
@@ -238,11 +239,11 @@ p {
 
     .sample-container {
         display: flex;
-        width: 80vw;
+        width: 85vw;
         justify-content: space-around;
         align-items: center;
         height: fit-content;
-        margin: 0 10vw;
+        margin: 0 7.5vw;
         border-radius: 20px;
     }
 

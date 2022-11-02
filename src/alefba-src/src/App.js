@@ -42,9 +42,11 @@ function App() {
               <div id={'usage-utils-space'}/>
               <TechnicalUtils/>
               <div id={'utils-sample-space'}/>
-              <SampleSection/>
-              <div id={'sample-footer-space'}/>
-              <Catalog/>
+              <div className='max-width-wrapper'>
+                <SampleSection/>
+                <div id={'sample-footer-space'}/>
+                <Catalog/>
+              </div>
               <div id={'catalog-footer-space'}/>
               <Footer/>
           </div>

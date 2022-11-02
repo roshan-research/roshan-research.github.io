@@ -3,93 +3,41 @@
     src: url(../../assets/fonts/IRANYekan.ttf);
 }
 
-footer {
-    position: absolute;
-    background-color: #020202;
-    white-space: nowrap;
+.VerticalSlide:last-child {
+    height: unset !important;
 }
 
 #footer {
-    height: 12vw;
+    display: flex;
+    box-sizing: border-box;
+    padding-block: #{'clamp(1rem , 5vw, 2.75rem)'};
+    padding-inline: #{'clamp(2.5rem , 10vw, 6.25rem)'};
+    gap: #{'clamp(4rem , 10.5vw, 8.5rem)'};
     border-style: solid;
     border-top-color: rgba(255, 255, 255, 0.25);
     border-width: 0.5px;
+    white-space: nowrap;
 }
 
-#company {
+#contact-text, #join-text, #company, #email {
+    margin: 0;
     color: white;
     font-family: iran-yekan, serif;
-    font-size: 0.9vw;
-    height: 2.7777777777777777vh;
-    width: 15.625vw;
-    direction: rtl;
-}
-
-#footer-title {
-    color: white;
-    font-family: iran-yekan, serif;
-    font-size: 1vw;
-}
-
-#contact-text {
-    color: white;
-    font-family: iran-yekan, serif;
-    width: 4.5vw;
-    font-size: 1vw;
-}
-
-#join-text {
-    color: white;
-    font-family: iran-yekan, serif;
-    font-size: 1vw;
-    width: 5.078125vw;
-}
-
-#email {
-    color: white;
-    font-family: iran-yekan, serif;
-    font-size: 1.1vw;
-    margin-top: 1.6vw;
-    width: 9.375vw;
-}
-
-#icon-title-footer {
-    position: absolute;
-    display: flex;
-    margin-top: 3vh;
-    margin-right: 7.8125vw;
-    margin-left: 87.109375vw;
-    justify-content: center;
-    align-items: center;
-    flex-direction: row;
+    font-size: 14px;
 }
 
 #icon-footer {
-    margin-top: 0.35vw;
-    height: 3vw;
-    width: 3.7vw;
+    width: 3.3125rem;
+}
+
+#contact-footer, #email-footer {
+    display: flex;
+    flex-direction: column;
+    gap: #{'clamp(0.5rem , 11vw, 1rem)'};
 }
 
 #contact-footer {
-    position: absolute;
-    display: flex;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
-    margin-top: 3vh;
-    margin-right: 58.59375vw;
-    margin-left: 39.0625vw;
-}
-
-#email-footer {
-    position: absolute;
-    display: flex;
-    margin-right: 74.21875vw;
-    margin-top: 3.3vh;
-    margin-left: 10.546875vw;
-    justify-content: space-between;
-    align-items: flex-start;
-    flex-direction: column;
+    margin-right: auto;
 }
 
 a {
@@ -106,4 +54,20 @@ a {
 
 #join-text:hover {
     color: #7ab8ff;
+}
+
+@media screen and (max-width: 600px) {
+    #footer {
+        flex-direction: column;
+        border: none;
+        gap: 7px;
+    }
+
+    #contact-footer {
+        display: none;
+    }
+
+    #email-footer {
+        gap: 4px;
+    }
 }

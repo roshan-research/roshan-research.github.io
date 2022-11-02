@@ -1,7 +1,7 @@
 #footer {
     display: flex;
     margin-top: 11.0625rem;
-    gap: #{'clamp(4.5rem , 11vw, 8.5rem)'};
+    gap: #{'clamp(4rem , 10.5vw, 8.5rem)'};
     padding-block: #{'clamp(1rem , 5vw, 2.75rem)'};
     padding-inline: #{'clamp(2.5rem , 10vw, 6.25rem)'};
     border-style: solid;
@@ -15,7 +15,7 @@
     margin: 0;
     color: white;
     font-family: iranyekan, serif;
-    font-size: 12px;
+    font-size: 14px;
 }
 
 #icon-footer {
@@ -37,15 +37,15 @@ a {
 }
 
 #email:hover {
-    color: #ff6200;
+    color: #7ab8ff;
 }
 
 #contact-text:hover {
-    color: #ff6200;
+    color: #7ab8ff;
 }
 
 #join-text:hover {
-    color: #ff6200;
+    color: #7ab8ff;
 }
 
 @media screen and (max-width: 600px) {

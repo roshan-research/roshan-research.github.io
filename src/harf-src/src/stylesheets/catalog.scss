@@ -1,7 +1,8 @@
 #catalog {
+    width: 100%;
+    box-sizing: border-box;
     padding-block: 3.5vw;
     padding-inline: 5vw;
-    width: 70vw;
     justify-content: space-between;
     align-items: center;
     display: flex;
@@ -73,15 +74,15 @@
     z-index: 100;
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 500px) {
     #catalog {
         flex-direction: column-reverse;
         justify-content: space-around;
         gap: 1.75rem;
         padding-block: 2.25rem;
         padding-inline: 2.5rem;
-        width: max-content;
-        max-width: 57%;
+        width: 85vw;
+        margin: 0 7.5vw;
 
         & > div:nth-of-type(2) {
             width: 100%;

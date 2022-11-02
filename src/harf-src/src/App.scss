@@ -83,6 +83,10 @@
     transform: scale(0.5);
 }
 
+.max-width-wrapper {
+    padding-inline: #{'min(13.3vw, 170px)'};
+}
+
 @media screen and (max-width: 500px) {
     #catalog-footer-space {
         height: 8.875rem;
@@ -128,6 +132,9 @@
 
     .my-cross {
         display: none;
+    }
+    .max-width-wrapper {
+        padding-inline: 0;
     }
 }
 
