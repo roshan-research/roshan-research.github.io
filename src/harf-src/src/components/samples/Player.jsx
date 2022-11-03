@@ -87,9 +87,6 @@ const Player = ({music,segments,title}) => {
                 <div className={"timer"} id={"time-elapsed"}>
                     {new Date(progress * 1000).toISOString().slice(14, 19)}
                 </div>
-                <div className={"timer"} id={"time-left"}>
-                    {new Date((60 - progress) * 1000).toISOString().slice(14, 19)}
-                </div>
                 <div ref={waveformRef} id={"player-bar"}>
                 </div>
             </div>
