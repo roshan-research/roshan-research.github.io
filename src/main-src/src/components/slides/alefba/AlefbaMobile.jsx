@@ -86,7 +86,7 @@ function AlefbaMobile(props) {
                 fill="#fff"
             />
 
-            <motion.path
+<motion.path
                 variants={animationChooser(props.status)['flowerAndFrameAnimation']}
                 initial={"hidden"}
                 animate={"visible"}
@@ -133,6 +133,7 @@ function AlefbaMobile(props) {
     fill="#FF6200"
     d="M108.033 328.664a2.66 2.66 0 100-5.318 2.66 2.66 0 000 5.318z"
     />
+    <a className='alefba-link-mobile' href={'https://www.roshan-ai.ir/alefba/'}>
             <motion.path
                 variants={animationChooser(props.status)['boxAnimationMobile']}
                 initial={"hidden"}
@@ -140,7 +141,6 @@ function AlefbaMobile(props) {
                 d="M22.766 495.501H1V527.501H117.948H124.026H141V495.501H29.0237L69 462.5H95.5"
                 stroke="#FF6200"
             />
-            <a href={'https://www.roshan-ai.ir/alefba/'}>
                 <motion.path
                     variants={animationChooser(props.status)['backgroundAnimationMobile']}
                     initial={"hidden"}

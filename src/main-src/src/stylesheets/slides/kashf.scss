@@ -92,9 +92,23 @@
 #kashf-emerging-box {
     position: absolute;
     width: 3vw;
-    margin-right: 3.9vw;
+    margin-right: -0.1vw;
     margin-top: -0.85vw;
     height: 20vw;
+}
+
+/* svg positioning */
+
+#kashf svg {
+    overflow: visible;
+}
+
+.kashf-title-svg {
+    transform: translateX(50px);
+}
+
+#link-kashf {
+    transform: translateX(-10px);
 }
 
 @media screen and (max-width: 600px){

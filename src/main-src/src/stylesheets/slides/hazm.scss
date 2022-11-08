@@ -82,6 +82,20 @@
   height: 20vw;
 }
 
+/* svg positioning */
+
+#hazm svg {
+    overflow: visible;
+}
+
+#link-hazm {
+    transform: translate(-12px, -3px);
+}
+
+.hazm-link-mobile {
+    transform: translateX(-10px);
+}
+
 @media screen and (max-width: 600px){
   #hazm {
     height: 100vh;

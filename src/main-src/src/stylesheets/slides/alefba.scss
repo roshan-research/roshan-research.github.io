@@ -46,6 +46,28 @@
   width: 15.79vw;
 }
 
+#alefba-emerging-box {
+    position: absolute;
+    width: 3vw;
+    margin-right: 3.5vw;
+    margin-top: -0.85vw;
+    height: 20vw;
+}
+
+/* svg positioning */
+
+#alefba svg {
+    overflow: visible;
+}
+
+#link-alefba {
+    transform: translateX(105px);
+}
+
+.alefba-link-mobile {
+    transform: translateX(30px);
+}
+
 @media screen and (max-width: 600px){
   #alefba {
     height: 100vh;

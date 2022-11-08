@@ -92,6 +92,20 @@
   height: 20vw;
 }
 
+/* svg positioning */
+
+#harf svg {
+    overflow: visible;
+}
+
+#link-harf {
+    transform: translateX(22px);
+}
+
+.harf-link-mobile {
+    transform: translateX(34px);
+}
+
 @media screen and (max-width: 600px){
   #harf {
     height: 100vh;

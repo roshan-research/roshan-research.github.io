@@ -61,7 +61,7 @@ function AlefbaWebText(props) {
     return (
         <div>
             <motion.div
-                id={'kashf-emerging-box'}
+                id={'alefba-emerging-box'}
                 variants={animationChooser(props.status)['textAnimation']}
                 initial={'hidden'}
                 animate={'visible'}

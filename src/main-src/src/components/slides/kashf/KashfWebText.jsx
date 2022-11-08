@@ -76,64 +76,66 @@ const KashfWebText = (props) => {
                 fill="none"
                 viewBox="0 0 427 252"
             >
-                <motion.path
-                    variants={
-                        animationChooser(props.status)[
-                        'flowerAndFrameAnimation'
-                        ]
-                    }
-                    initial={'hidden'}
-                    animate={'visible'}
-                    stroke="#7000FF"
-                    d="M426 23.5V31h-6.5M402.5 31H396v-7.5M419.5 1h6.5v7.5M396 8.5V1h6.5"
-                />
-                <motion.path
-                    variants={
-                        animationChooser(props.status)[
-                        'flowerAndFrameAnimation'
-                        ]
-                    }
-                    initial={'hidden'}
-                    animate={'visible'}
-                    stroke="#7000FF"
-                    strokeLinecap="round"
-                    d="M411 26.93v-11M411 23.81s3.89 1.58 3.9-3.72a6.379 6.379 0 00-2.77.58M411 21.11s-3.89 1.58-3.9-3.73a6.291 6.291 0 012.77.59M411.5 6.94a3.18 3.18 0 013.82-.76v5.74a4.199 4.199 0 01-4.35 4 4.202 4.202 0 01-4.35-4V6.18s5.92 0 5.92 4.26"
-                />
-                <motion.path
-                    stroke="#7000FF"
-                    d="M250.303 59.5 L 276.86 37.882 L 426.12 37.882"
-                    variants={
-                        animationChooser(props.status)['mainLineAnimation']
-                    }
-                    initial={'hidden'}
-                    animate={'visible'}
-                />
-                <motion.path
-                    stroke="#7000FF"
-                    d="M330.85 40.529h-53.114l-9.327 7.592"
-                    variants={
-                        animationChooser(props.status)['subLineAnimation']
-                    }
-                    initial={'hidden'}
-                    animate={'visible'}
-                />
-                <motion.path
-                    stroke="#7000FF"
-                    d="M246.48 50.676h9.2l4.6 7.941-4.6 7.941h-9.2l-4.6-7.94 4.6-7.942z"
-                    clipRule="evenodd"
-                    variants={
-                        animationChooser(props.status)['polygonAnimation']
-                    }
-                    initial={'hidden'}
-                    animate={'visible'}
-                />
-                <motion.path
-                    fill="#7000FF"
-                    d="M251.14 62.088a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"
-                    variants={animationChooser(props.status)['dotAnimation']}
-                    initial={'hidden'}
-                    animate={'visible'}
-                />
+                <g class="kashf-title-svg">
+                    <motion.path
+                        variants={
+                            animationChooser(props.status)[
+                            'flowerAndFrameAnimation'
+                            ]
+                        }
+                        initial={'hidden'}
+                        animate={'visible'}
+                        stroke="#7000FF"
+                        d="M426 23.5V31h-6.5M402.5 31H396v-7.5M419.5 1h6.5v7.5M396 8.5V1h6.5"
+                    />
+                    <motion.path
+                        variants={
+                            animationChooser(props.status)[
+                            'flowerAndFrameAnimation'
+                            ]
+                        }
+                        initial={'hidden'}
+                        animate={'visible'}
+                        stroke="#7000FF"
+                        strokeLinecap="round"
+                        d="M411 26.93v-11M411 23.81s3.89 1.58 3.9-3.72a6.379 6.379 0 00-2.77.58M411 21.11s-3.89 1.58-3.9-3.73a6.291 6.291 0 012.77.59M411.5 6.94a3.18 3.18 0 013.82-.76v5.74a4.199 4.199 0 01-4.35 4 4.202 4.202 0 01-4.35-4V6.18s5.92 0 5.92 4.26"
+                    />
+                    <motion.path
+                        stroke="#7000FF"
+                        d="M250.303 59.5 L 276.86 37.882 L 426.12 37.882"
+                        variants={
+                            animationChooser(props.status)['mainLineAnimation']
+                        }
+                        initial={'hidden'}
+                        animate={'visible'}
+                    />
+                    <motion.path
+                        stroke="#7000FF"
+                        d="M330.85 40.529h-53.114l-9.327 7.592"
+                        variants={
+                            animationChooser(props.status)['subLineAnimation']
+                        }
+                        initial={'hidden'}
+                        animate={'visible'}
+                    />
+                    <motion.path
+                        stroke="#7000FF"
+                        d="M246.48 50.676h9.2l4.6 7.941-4.6 7.941h-9.2l-4.6-7.94 4.6-7.942z"
+                        clipRule="evenodd"
+                        variants={
+                            animationChooser(props.status)['polygonAnimation']
+                        }
+                        initial={'hidden'}
+                        animate={'visible'}
+                    />
+                    <motion.path
+                        fill="#7000FF"
+                        d="M251.14 62.088a3.5 3.5 0 100-7 3.5 3.5 0 000 7z"
+                        variants={animationChooser(props.status)['dotAnimation']}
+                        initial={'hidden'}
+                        animate={'visible'}
+                    />
+                </g>
                 <a
                     target="_blank"
                     href={'https://www.roshan-ai.ir/kashf/'}
