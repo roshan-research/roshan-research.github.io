@@ -1,61 +1,14 @@
-#web {
-}
-
-.join-us-page #mobile-j {
-    position: relative;
-    height: 100vh;
+.join-us-page #wrapper {
     width: 100vw;
-}
-
-.join-us-page #web {
-    display: flex;
-    height: 100vh;
-    width: 100vw;
-}
-
-#pic {
-    width: 100%;
-    height: 100%;
 }
 
 .join-us-page {
-    height: 100vh;
+    display: flex;
     width: 100vw;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: end;
+    height: 100%;
 }
 
-#text-group {
-    position: absolute;
-    margin-right: 8vw;
-}
-
-#inner {
-    height: 15vh;
-    width: 25vw;
-    margin-right: 1.5vw;
-}
-
-#button-row {
-    width: 23.5vw;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: row-reverse;
-    margin-top: 50px;
-}
-
-.join-us-link-button {
-    background-repeat: no-repeat;
-    background-size: 6.8vw 6.7vh;
-    width: 6.8vw;
-    height: 6.7vh;
-}
-
-
-.mobile-social {
+.social {
     display: flex;
     margin-top: 2.25rem;
     margin-inline: auto;
@@ -63,7 +16,17 @@
     gap: 1.25rem;
 }
 
-.mobile-text-wrapper {
+.social a {
+    line-height: 0;
+}
+
+@media (hover: hover) and (pointer: fine) {
+    .social a:hover {
+        background-color: #1e252f;
+    }
+}
+
+.text-wrapper {
     margin-top: 4.375rem;
     margin-inline: auto;
     width: max-content;
@@ -72,41 +35,33 @@
     color: white;
 }
 
-.mobile-text-wrapper p {
+.text-wrapper p {
     margin: 0;
 }
 
-.mobile-text-wrapper .with-logo {
+.text-wrapper .with-logo {
     display: flex;
     align-items: center;
 }
 
-.mobile-text-wrapper svg {
+.text-wrapper svg {
     margin-right: 7px;
     width: 46px;
     height: 16.05px;
 }
 
-#linkedin-button {
-    background-image: url('../../../../src/assets/images/linkedin.svg');
-}
+@media screen and (min-width: 600px) {
+    .join-us-page {
+        align-items: center;
+    }
+    
+    .text-wrapper {
+        margin-top: 0;
+    }
 
-#jobinja-button {
-    background-image: url('../../../../src/assets/images/jobinja.svg');
-}
-
-#mail-button {
-    background-image: url('../../../../src/assets/images/mail.svg');
-}
-
-.join-us-link-button:hover {
-    background-color: #1e252f;
-}
-
-#text-group {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 30vh;
+    .text-wrapper, 
+    .social {
+        margin-inline-start: 9rem;
+        font-size: 16px;
+    }
 }
