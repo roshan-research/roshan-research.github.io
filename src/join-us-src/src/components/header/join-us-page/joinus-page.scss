@@ -35,14 +35,13 @@
     color: white;
 }
 
-.text-wrapper p {
-    margin: 0;
+.text-wrapper {
+    p {
+        margin: 0;
+    }
 }
 
-.text-wrapper .with-logo {
-    display: flex;
-    align-items: center;
-}
+
 
 .text-wrapper svg {
     margin-right: 7px;
@@ -54,12 +53,12 @@
     .join-us-page {
         align-items: center;
     }
-    
+
     .text-wrapper {
         margin-top: 0;
     }
 
-    .text-wrapper, 
+    .text-wrapper,
     .social {
         margin-inline-start: 9rem;
         font-size: 16px;
