@@ -9,25 +9,30 @@ const Catalog = () => {
 
     return (
         <div id={'catalog'}>
-            <div id={'catalog-right'}>                
-                <a
-                    href={'https://www.roshan-ai.ir/catalog.pdf/'}
-                    className={'catalog-link'}
-                    target={'_blank'}
-                    rel="noreferrer"
-                >
-                    <div
-                        id={'catalog-button'}
-                        onMouseEnter={() => setIsHovered(true)}
-                        onMouseLeave={() => setIsHovered(false)}
+            <div id={'catalog-right'}>
+                <p id={'catalog-description'}>
+                    کاتالوگ الفبا، اطلاعات بیشتری در اختیار شما قرار می‌دهد
+                </p>
+                <div id={'catalog-right'}>
+                    <a
+                        href={'https://www.roshan-ai.ir/catalog.pdf/'}
+                        className={'catalog-link'}
+                        target={'_blank'}
+                        rel="noreferrer"
                     >
-                        <img
-                            src={isHovered ? blackDLicon : downloadIcon}
-                            alt={''}
-                        />
-                        <p>دانلود کاتالوگ الفبا</p>
-                    </div>
-                </a>
+                        <div
+                            id={'catalog-button'}
+                            onMouseEnter={() => setIsHovered(true)}
+                            onMouseLeave={() => setIsHovered(false)}
+                        >
+                            <img
+                                src={isHovered ? blackDLicon : downloadIcon}
+                                alt={''}
+                            />
+                            <p>دانلود کاتالوگ الفبا</p>
+                        </div>
+                    </a>
+                </div>
             </div>
             <div>
                 <img src={catalogCover} id={'catalog-cover'} alt={''} />
