@@ -2,10 +2,10 @@
   "files": {
     "main.css": "/join-us/static/css/main.648d66a2.chunk.css",
     "main.js": "/join-us/static/js/main.75b67f06.chunk.js",
-    "runtime-main.js": "/join-us/static/js/runtime-main.4d048673.js",
+    "runtime-main.js": "/join-us/static/js/runtime-main.b606cfbf.js",
     "static/js/2.e4ffb0f1.chunk.js": "/join-us/static/js/2.e4ffb0f1.chunk.js",
     "static/css/3.f108f1a9.chunk.css": "/join-us/static/css/3.f108f1a9.chunk.css",
-    "static/js/3.20c4d868.chunk.js": "/join-us/static/js/3.20c4d868.chunk.js",
+    "static/js/3.154d73de.chunk.js": "/join-us/static/js/3.154d73de.chunk.js",
     "index.html": "/join-us/index.html",
     "static/js/2.e4ffb0f1.chunk.js.LICENSE.txt": "/join-us/static/js/2.e4ffb0f1.chunk.js.LICENSE.txt",
     "static/media/App.scss": "/join-us/static/media/IRANYekan.b916444e.ttf",
@@ -19,7 +19,7 @@
     "static/media/roshan-logosvg.svg": "/join-us/static/media/roshan-logosvg.23d13fdb.svg"
   },
   "entrypoints": [
-    "static/js/runtime-main.4d048673.js",
+    "static/js/runtime-main.b606cfbf.js",
     "static/js/2.e4ffb0f1.chunk.js",
     "static/css/main.648d66a2.chunk.css",
     "static/js/main.75b67f06.chunk.js"
