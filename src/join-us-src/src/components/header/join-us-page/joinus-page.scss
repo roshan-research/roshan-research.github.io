@@ -29,7 +29,8 @@
 .text-wrapper {
     margin-top: 4.375rem;
     margin-inline: auto;
-    width: max-content;
+    width: fit-content;
+    padding-inline: 2.0625rem;
     font-family: 'iran-yekan';
     font-size: 15px;
     color: white;
@@ -55,6 +56,7 @@
     }
 
     .text-wrapper {
+        padding-inline: 0;
         margin-top: 0;
     }
 
