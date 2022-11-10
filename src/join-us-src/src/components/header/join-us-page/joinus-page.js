@@ -12,13 +12,11 @@ export default function JoinusPage() {
         <div className={'join-us-page'}>
             <div id={'wrapper'}>
                 <div className='text-wrapper'>
-                    <p>اگر به هوش مصنوعی علاقمندید،</p>
+                    <p>استعدادها در سراسر دنیا پراکنده‌اند!</p>
                     <div className='with-logo'>
-                        <p>برای حضور در کنار تیم جوان و خلاق</p>
-                        <Logo />
-                        <span>،</span>
-                    </div>
-                    <p>با ما در ارتباط باشید.</p>
+                        <p>ما نمی‌خواهیم فواصل جغرافیایی مانعی برای حضور شما در کنار ما باشد.</p>      
+                        <p>اگر به هوش مصنوعی علاقه‌مندید ما رو از وجود خود باخبر کنید.</p>                      
+                    </div>                   
                 </div>
                 <div className="social">
                     <a href="mailto:salam@roshan-ai.ir">
