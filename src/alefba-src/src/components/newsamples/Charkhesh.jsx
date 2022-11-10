@@ -58,10 +58,13 @@ const Charkhesh = () => {
         >
             <div
                 id="document"
+                className='charkhesh'
                 style={{
                     position: 'relative',
                     transition: '0s',
                     animationPlayState: 'inherit',
+                    width: width,
+                    height: height,
                 }}
             >
                 <img

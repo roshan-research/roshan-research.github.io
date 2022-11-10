@@ -148,5 +148,28 @@
     animation-play-state: inherit;
 }
 
-.rooznameh-paragraph-box {
+@keyframes fadeout {
+    to {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
+
+@keyframes fadein {
+    to {
+        opacity: 1;
+        visibility: visible;
+    }
+}
+
+@keyframes rotate {
+    to {
+        transform: rotateZ(0deg) scale(1);
+    }
+}
+
+#document.charkhesh {
+    transform: rotateZ(90deg) scale(0.9);
+    transform-origin: center;
+    animation: fadeout 0.3s linear 2.3s 1 running forwards, rotate 0s linear 2.6s 1 running forwards, fadein 0.3s linear 2.7s 1 running forwards;
 }
