@@ -3,6 +3,20 @@
     --animation-delay: 0s;
 }
 
+@keyframes show {
+    to {
+        transform: scaleX(1);
+    }
+}
+
+.show-text rect {
+    transform-origin: right;
+    animation: show var(--animation-duration) linear;
+    -webkit-animation: show var(--animation-duration) linear;
+    animation-fill-mode: forwards;
+    animation-delay: var(--animation-delay);
+}
+
 @keyframes moveText {
     0% {
         width: 0%;
@@ -13,16 +27,16 @@
         left: 0%;
     }
 }
-@keyframes moveBg {
-    0% {
-        background: #fead6c;
-        transform: scaleX(0);
-    }
-    100% {
-        background: #fead6c;
-        transform: scaleX(1);
-    }
-}
+// @keyframes moveBg {
+//     0% {
+//         background: #fead6c;
+//         transform: scaleX(0);
+//     }
+//     100% {
+//         background: #fead6c;
+//         transform: scaleX(1);
+//     }
+// }
 
 .container {
     width: 1170px;
@@ -70,7 +84,13 @@
     animation-delay: var(--animation-delay);
     animation-fill-mode: forwards;
     line-height: 1;
+    color: transparent;
 }
+
+// document.line-view .line_bold ::before::selection {
+//     background-color: blueviolet;
+//     color: black;
+// }
 
 #bg-orange {
     animation: moveBg var(--animation-duration) linear;
@@ -171,5 +191,7 @@
 #document.charkhesh {
     transform: rotateZ(90deg) scale(0.9);
     transform-origin: center;
-    animation: fadeout 0.3s linear 2.3s 1 running forwards, rotate 0s linear 2.6s 1 running forwards, fadein 0.3s linear 2.7s 1 running forwards;
+    animation: fadeout 0.3s linear 2.3s 1 running forwards,
+        rotate 0s linear 2.6s 1 running forwards,
+        fadein 0.3s linear 2.7s 1 running forwards;
 }
