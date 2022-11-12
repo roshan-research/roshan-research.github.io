@@ -1,5 +1,5 @@
 import React from 'react';
-import {ReactComponent as Logo} from "../../../assets/images/roshan-logosvg.svg";
+import { ReactComponent as Logo } from "../../../assets/images/roshan-logosvg.svg";
 
 import Jobinja from '../../../assets/images/jobinja.svg';
 import Linkedin from '../../../assets/images/linkedin.svg';
@@ -12,11 +12,10 @@ export default function JoinusPage() {
         <div className={'join-us-page'}>
             <div id={'wrapper'}>
                 <div className='text-wrapper'>
-                    <p>استعدادها در سراسر دنیا پراکنده‌اند!</p>
-                    <div className='with-logo'>
-                        <p>ما نمی‌خواهیم فواصل جغرافیایی مانعی برای حضور شما در کنار ما باشد.</p>      
-                        <p>اگر به هوش مصنوعی علاقه‌مندید ما رو از وجود خود باخبر کنید.</p>                      
-                    </div>                   
+                    <p>اگر به هوش مصنوعی و چالش‌های جذابِ آن علاقه دارید،</p>
+                    <p>و به حل مسائل، نه به‌چشم چالش‌های خسته‌کننده، که به‌چشم فرصت‌هایی برای رشد و تعالی نگاه می‌کنید،</p>
+                    <p>و دوست دارید توانمندی‌های خود را در یک محیط جوان، صمیمی، پویا و اهل عمل شکوفا کنید،</p>
+                    <p>جای درستی آمده‌اید.</p>
                 </div>
                 <div className="social">
                     <a href="mailto:salam@roshan-ai.ir">
