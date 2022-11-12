@@ -24,7 +24,7 @@ enum Sample {
 
 class SampleSection extends Component {
     state = {
-        chosenSample: Sample.KartMelli,
+        chosenSample: Sample.BiKeifyat,
         kartMelliKey: 'kartMelli',
         fishKey: 'fish',
         charkheshKey: 'charkhesh',

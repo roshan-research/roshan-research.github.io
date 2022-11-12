@@ -3,41 +3,6 @@
     --animation-delay: 0s;
 }
 
-@keyframes show {
-    to {
-        transform: scaleX(1);
-    }
-}
-
-.show-text rect {
-    transform-origin: right;
-    animation: show var(--animation-duration) linear;
-    -webkit-animation: show var(--animation-duration) linear;
-    animation-fill-mode: forwards;
-    animation-delay: var(--animation-delay);
-}
-
-@keyframes moveText {
-    0% {
-        width: 0%;
-        left: 100%;
-    }
-    100% {
-        width: 100%;
-        left: 0%;
-    }
-}
-// @keyframes moveBg {
-//     0% {
-//         background: #fead6c;
-//         transform: scaleX(0);
-//     }
-//     100% {
-//         background: #fead6c;
-//         transform: scaleX(1);
-//     }
-// }
-
 .container {
     width: 1170px;
 }
@@ -79,25 +44,10 @@
     height: 100%;
     direction: rtl;
     overflow: hidden;
-    animation: moveText var(--animation-duration) linear;
-    -webkit-animation: moveText var(--animation-duration) linear;
-    animation-delay: var(--animation-delay);
-    animation-fill-mode: forwards;
     line-height: 1;
     color: transparent;
 }
 
-// document.line-view .line_bold ::before::selection {
-//     background-color: blueviolet;
-//     color: black;
-// }
-
-#bg-orange {
-    animation: moveBg var(--animation-duration) linear;
-    -webkit-animation: moveBg var(--animation-duration) linear;
-    animation-fill-mode: forwards;
-    animation-delay: var(--animation-delay);
-}
 #text-black-sample {
     float: right;
 }
@@ -158,14 +108,6 @@
 .document.paragraph-view table th,
 .document.paragraph-view table td {
     border: 6px dashed #fff;
-}
-
-#bg-orange,
-.document.line-view .line ::before,
-.document.paragraph-view p ::before,
-.document.paragraph-view table ::before,
-.document.line-view .line_bold ::before {
-    animation-play-state: inherit;
 }
 
 @keyframes fadeout {
