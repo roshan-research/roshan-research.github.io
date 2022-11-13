@@ -1,5 +1,11 @@
 import TextGroup from './TextGroup';
-import { useEffect, useLayoutEffect, useRef, useState } from 'react';
+import {
+    useCallback,
+    useEffect,
+    useLayoutEffect,
+    useRef,
+    useState,
+} from 'react';
 import { isMobile } from 'react-device-detect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
@@ -7,22 +13,21 @@ import { gsap } from 'gsap';
 const BiKeifyat = () => {
     gsap.registerPlugin(ScrollTrigger);
 
-    const [width, setWidth] = useState();
-    const [height, setHeight] = useState();
-
     let scaleW = isMobile ? 0.85 : 0.4;
     let scaleH = isMobile ? 0.61 : 0.27;
 
-    const resizeHandler = () => {
+    const [width, setWidth] = useState(scaleW * window.innerWidth);
+    const [height, setHeight] = useState(scaleH * window.innerWidth);
+
+    const resizeHandler = useCallback(() => {
         setWidth(scaleW * window.innerWidth);
         setHeight(scaleH * window.innerWidth);
-    };
-
-    window.addEventListener('resize', resizeHandler);
+    }, [scaleW, scaleH]);
 
     useEffect(() => {
-        resizeHandler();
-    }, []);
+        window.addEventListener('resize', resizeHandler);
+        return () => window.removeEventListener('resize', resizeHandler);
+    }, [resizeHandler]);
 
     const comp = useRef();
 

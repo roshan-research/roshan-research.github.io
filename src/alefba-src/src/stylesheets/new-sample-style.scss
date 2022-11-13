@@ -6,17 +6,23 @@
 .container {
     width: 1170px;
 }
+
 #document {
     margin: 0 0;
     transform-origin: top left;
     -moz-transform-origin: top left;
 }
-#document img {
-    z-index: -1;
-    border: 2px solid #ddd;
-    margin-top: -2px;
-    margin-left: -2px;
+
+#document svg image {
+    clip-path: inset(0 0 0 0 round 40px);
 }
+
+@media screen and (max-width: 500px) {
+    #document svg image {
+        clip-path: inset(0 0 0 0 round 20px);
+    }
+}
+
 .document.line-view .line,
 .document.paragraph-view p,
 .document.paragraph-view table,
