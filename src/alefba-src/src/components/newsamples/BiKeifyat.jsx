@@ -28,12 +28,13 @@ const BiKeifyat = () => {
 
     useLayoutEffect(() => {
         let ctx = gsap.context(() => {
-            gsap.set('.bikeyfiat-rect', {
-                scaleX: 0,
-                transformOrigin: 'right',
+            gsap.set('.line', {
+                clipPath:
+                    'polygon(100% 0, 100% 100%, 100% 100%, 100% 100%, 100% 0%)',
             });
-            gsap.to('.bikeyfiat-rect', {
-                scaleX: 1,
+            gsap.to('.line', {
+                clipPath:
+                    'polygon(100% 0, 100% 100%, 100% 100%, 0% 100%, 0% 0%)',
                 duration: 3,
                 stagger: {
                     each: 0.2,
@@ -60,66 +61,6 @@ const BiKeifyat = () => {
                     viewBox="0 0 813 542"
                     xmlns="http://www.w3.org/2000/svg"
                 >
-                    <defs>
-                        <clipPath id="bikeyfiat">
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="541.481"
-                                height="37.232"
-                                x="222.882"
-                                y="106.935"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="708.697"
-                                height="37.232"
-                                x="55.665"
-                                y="148.167"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="657.874"
-                                height="37.232"
-                                x="106.488"
-                                y="193.399"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="649.351"
-                                height="37.232"
-                                x="115.011"
-                                y="236.935"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="348.951"
-                                height="37.232"
-                                x="415.411"
-                                y="280.935"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="707.991"
-                                height="37.232"
-                                x="56.371"
-                                y="326.935"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="289.284"
-                                height="37.232"
-                                x="475.078"
-                                y="368.935"
-                            />
-                            <rect
-                                class="bikeyfiat-rect"
-                                width="626.999"
-                                height="37.232"
-                                x="137.363"
-                                y="412.935"
-                            />
-                        </clipPath>
-                    </defs>
                     <g transform="translate(-280.015 -101.121)">
                         <image
                             width="813"
@@ -130,7 +71,7 @@ const BiKeifyat = () => {
                             y="101.121"
                         />
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -262,7 +203,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -402,7 +343,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -546,7 +487,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -686,7 +627,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -762,7 +703,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -902,7 +843,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
@@ -966,7 +907,7 @@ const BiKeifyat = () => {
                             />
                         </g>
                     </g>
-                    <g clip-path="url(#bikeyfiat)">
+                    <g className="line">
                         <rect
                             style={{
                                 fill: '#fead6c',
