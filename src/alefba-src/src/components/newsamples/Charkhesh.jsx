@@ -44,15 +44,24 @@ const Charkhesh = () => {
                 autoAlpha: 0,
                 delay: 4.6,
                 duration: 1,
+                scrollTrigger: {
+                    trigger: '#document',
+                },
             });
             gsap.set('.svg-wrapper', {
                 rotateZ: 0,
                 delay: 5.6,
+                scrollTrigger: {
+                    trigger: '#document',
+                },
             });
             gsap.to('.svg-wrapper', {
                 autoAlpha: 1,
                 delay: 5.6,
                 duration: 1,
+                scrollTrigger: {
+                    trigger: '#document',
+                },
             });
             gsap.set('.line', {
                 clipPath:
