@@ -13,13 +13,13 @@
     -moz-transform-origin: top left;
 }
 
-#document svg image {
-    clip-path: inset(0 0 0 0 round 40px);
+#document svg {
+    border-radius: 20px;
 }
 
 @media screen and (max-width: 500px) {
-    #document svg image {
-        clip-path: inset(0 0 0 0 round 20px);
+    #document svg {
+        border-radius: 10px;
     }
 }
 
@@ -114,32 +114,4 @@
 .document.paragraph-view table th,
 .document.paragraph-view table td {
     border: 6px dashed #fff;
-}
-
-@keyframes fadeout {
-    to {
-        opacity: 0;
-        visibility: hidden;
-    }
-}
-
-@keyframes fadein {
-    to {
-        opacity: 1;
-        visibility: visible;
-    }
-}
-
-@keyframes rotate {
-    to {
-        transform: rotateZ(0deg) scale(1);
-    }
-}
-
-#document.charkhesh {
-    transform: rotateZ(90deg) scale(0.9);
-    transform-origin: center;
-    animation: fadeout 0.3s linear 2.3s 1 running forwards,
-        rotate 0s linear 2.6s 1 running forwards,
-        fadein 0.3s linear 2.7s 1 running forwards;
 }
