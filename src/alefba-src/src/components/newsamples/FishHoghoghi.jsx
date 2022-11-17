@@ -1,5 +1,4 @@
 import '../../stylesheets/fish.scss';
-import TextGroup from './TextGroup';
 import {
     useCallback,
     useEffect,
@@ -11,6 +10,14 @@ import '../../stylesheets/new-sample-style.scss';
 import { isMobile } from 'react-device-detect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+
+const handleFocus = ({ currentTarget }) => {
+    currentTarget.classList.add('selected');
+};
+
+const handleBlur = ({ currentTarget }) => {
+    currentTarget.classList.remove('selected');
+};
 
 const FishHoghoghi = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -82,9 +89,9 @@ const FishHoghoghi = () => {
                             x="304.011"
                             y="136.764"
                         />
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
-                                style={{ fill: '#fead6c' }}
+                                
                                 width="117.945"
                                 height="27.9"
                                 x="413.926"
@@ -102,10 +109,10 @@ const FishHoghoghi = () => {
                                 <path d="M428.921 179.569q0 .344-.322.344h-.183q-.376 0-.827-.14-.44-.14-.999-.451 0 3.018-2.245 3.738-3.072-.86-3.115-4.984-.795 0-1.375.14t-.946.45q.269.731.398 2.117.14 1.386.161 3.437-.107.183-.3.44-.194.259-.484.57-.258.344-.462.548-.204.204-.333.28 0-.87-.043-1.827-.043-.945-.13-1.998-.139-1.944-.31-2.428.214-.698.494-1.514.29-.817.623-1.762 1.428-1.01 2.857-1.01 0-.838.312-1.686.945.73 1.912 1.321.966.58 1.976 1.042.87.397 1.515.59.655.183 1.085.183h.397q.344 0 .344.344zm-3.201-.602q-1.697-.676-3.33-1.74 0 2.396 1.901 3.277.194-.043.408-.194.226-.15.43-.365t.365-.473q.161-.257.226-.505z" />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.97604,
                                 }}
                                 width="78.101"
@@ -125,7 +132,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.984211,
                                 }}
                                 width="79.414"
@@ -144,10 +151,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.897862,
                                 }}
                                 width="66.091"
@@ -171,7 +178,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.91186,
                                 }}
                                 width="68.167"
@@ -194,9 +201,9 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
-                                style={{ fill: '#fead6c' }}
+                                
                                 width="118.87"
                                 height="26.157"
                                 x="854.606"
@@ -230,7 +237,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.06765,
                                 }}
                                 width="93.45"
@@ -246,7 +253,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.06179,
                                 }}
                                 width="92.425"
@@ -261,10 +268,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.64236,
                                 }}
                                 width="320.633"
@@ -335,7 +342,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0157 }}
+                                style={{  strokeWidth: 1.0157 }}
                                 width="84.576"
                                 height="21.489"
                                 x="521.33"
@@ -349,7 +356,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.00943,
                                 }}
                                 width="83.535"
@@ -364,10 +371,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.46199,
                                 }}
                                 width="254.073"
@@ -422,7 +429,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0157 }}
+                                style={{  strokeWidth: 1.0157 }}
                                 width="84.576"
                                 height="21.489"
                                 x="521.33"
@@ -436,7 +443,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.01115,
                                 }}
                                 width="83.82"
@@ -451,10 +458,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.58201,
                                 }}
                                 width="297.502"
@@ -478,7 +485,7 @@ const FishHoghoghi = () => {
                                 <path d="M698.504 424.397q0 .344-.322.344h-.193q-1.139 0-1.934-.698-1.15-1.02-1.15-3.33 0-7.004-1.009-8.369l2.03-2.159q.613 1.117.688 4.254v4.415q0 2.944 1.15 2.944h.397q.343 0 .343.343v2.256zM692.671 423.473q0 .473-.204 1.31-.204.85-.612 2.096-.59.558-1.397 1.01-.805.461-1.858.848-2.105.763-3.985.763-2.471 0-3.706-1.171-.989-.924-.989-2.439 0-.569.15-1.224.162-.666.495-1.472.687-1.622 1.74-2.986.376 0 .655.376-.365.612-.623 1.106-.247.484-.365.86-.236.709-.236 1.546 0 2.428 3.63 2.46.87 0 1.762-.14.892-.139 1.805-.45.817-.269 1.407-.58.591-.312.989-.645-.086-.408-.269-.913-.172-.505-.462-1.117-.3-.656-.612-1.117-.3-.473-.612-.785l1.106-3.083q.333.366.666.967.344.602.688 1.472.333.88.547 1.708.215.827.29 1.6zm-6.445-5.897-1.762-1.644 1.827-1.579 1.772 1.622z" />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0157 }}
+                                style={{  strokeWidth: 1.0157 }}
                                 width="84.576"
                                 height="21.489"
                                 x="521.33"
@@ -492,7 +499,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.00362,
                                 }}
                                 width="82.575"
@@ -507,10 +514,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.945198,
                                 }}
                                 width="106.198"
@@ -537,7 +544,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0157 }}
+                                style={{  strokeWidth: 1.0157 }}
                                 width="84.576"
                                 height="21.489"
                                 x="521.33"
@@ -550,7 +557,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0118 }}
+                                style={{  strokeWidth: 1.0118 }}
                                 width="83.927"
                                 height="21.489"
                                 x="387.387"
@@ -563,10 +570,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.14613,
                                 }}
                                 width="156.149"
@@ -618,7 +625,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.06494,
                                 }}
                                 width="92.975"
@@ -634,7 +641,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.997769,
                                 }}
                                 width="81.615"
@@ -649,9 +656,9 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.3737 }}
+                                style={{  strokeWidth: 1.3737 }}
                                 width="224.312"
                                 height="26.157"
                                 x="749.165"
@@ -700,7 +707,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0187 }}
+                                style={{  strokeWidth: 1.0187 }}
                                 width="85.077"
                                 height="21.489"
                                 x="520.829"
@@ -713,7 +720,7 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0165 }}
+                                style={{  strokeWidth: 1.0165 }}
                                 width="84.708"
                                 height="21.489"
                                 x="385.555"
@@ -726,10 +733,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.32538,
                                 }}
                                 width="208.81"
@@ -789,7 +796,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.916967,
                                 }}
                                 width="68.933"
@@ -805,7 +812,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.906917,
                                 }}
                                 width="67.429"
@@ -820,10 +827,10 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.15199,
                                 }}
                                 width="157.75"
@@ -866,8 +873,9 @@ const FishHoghoghi = () => {
                                 />
                             </g>
                             <path
+                            className="rect"
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.00568,
                                 }}
                                 d="M522.99 567.968h82.916v21.488H522.99z"
@@ -880,7 +888,7 @@ const FishHoghoghi = () => {
                             </g>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.998304,
                                 }}
                                 width="81.703"
@@ -897,335 +905,6 @@ const FishHoghoghi = () => {
                         </g>
                     </g>
                 </svg>
-                <div
-                    style={{
-                        height: height,
-                        width: width,
-                    }}
-                >
-                    <div className="document line-view">
-                        <TextGroup
-                            delay={'0s'}
-                            duration="500ms"
-                            fontSize={`${0.028 * width}px`}
-                            text="دستمزد مستقیم"
-                            height={`${0.05812574139976275 * height}px`}
-                            width={`${0.1463607594936709 * width}px`}
-                            left={`${0.15427215189873417 * width}px`}
-                            top={`${0.04744958481613286 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'300ms'}
-                            duration="500ms"
-                            fontSize={`${0.03 * width}px`}
-                            text="حقوق و دستمزد"
-                            height={`${0.05931198102016608 * height}px`}
-                            width={`${0.15427215189873417 * width}px`}
-                            left={`${0.7357594936708861 * width}px`}
-                            top={`${0.33807829181494664 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'400ms'}
-                            duration="800ms"
-                            fontSize={`${0.0287 * width}px`}
-                            text="اضافه کاري - نوبتکاري - شبکاري وحق کشیك"
-                            height={`${0.06287069988137604 * height}px`}
-                            width={`${0.4248417721518987 * width}px`}
-                            left={`${0.46581645569620256 * width}px`}
-                            top={`${0.4151838671411625 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'500ms'}
-                            duration="800ms"
-                            fontSize={`${0.0306 * width}px`}
-                            text="حق اولاد و سایر هزینه های کارکنان"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.34 * width}px`}
-                            left={`${0.5498417721518988 * width}px`}
-                            top={`${0.4804270462633452 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'600ms'}
-                            duration="800ms"
-                            fontSize={`${0.0293 * width}px`}
-                            text="بن - حق مسکن - خوارباروناهاری کارکنان"
-                            height={`${0.054567022538552785 * height}px`}
-                            width={`${0.3916139240506329 * width}px`}
-                            left={`${0.49841772151898733 * width}px`}
-                            top={`${0.5456702253855279 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'700ms'}
-                            duration="800ms"
-                            fontSize={`${0.0289 * width}px`}
-                            text="عیدي وپاداش"
-                            height={`${0.054567022538552785 * height}px`}
-                            width={`${0.1305379746835443 * width}px`}
-                            left={`${0.7555379746835443 * width}px`}
-                            top={`${0.6109134045077106 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'800ms'}
-                            duration="800ms"
-                            fontSize={`${0.0305 * width}px`}
-                            text="حق بیمه سهم کارفرما"
-                            height={`${0.060498220640569395 * height}px`}
-                            width={`${0.21360759493670886 * width}px`}
-                            left={`${0.6764240506329114 * width}px`}
-                            top={`${0.6761565836298933 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'900ms'}
-                            duration="800ms"
-                            fontSize={`${0.0295 * width}px`}
-                            text="باز خرید و ذخیره سنوات خدمت"
-                            height={`${0.05812574139976275 * height}px`}
-                            width={`${0.29557721518987344 * width}px`}
-                            left={`${0.5933544303797469 * width}px`}
-                            top={`${0.7390272835112692 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1s'}
-                            duration="800ms"
-                            fontSize={`${0.0294 * width}px`}
-                            text="بیمه حوادث - هزینه بهداشتی"
-                            height={`${0.05693950177935943 * height}px`}
-                            width={`${0.28085443037974683 * width}px`}
-                            left={`${0.6091772151898734 * width}px`}
-                            top={`${0.8066429418742586 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.1s'}
-                            duration="800ms"
-                            fontSize={`${0.0299 * width}px`}
-                            text="پس انداز سهم کارفرما"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.2175632911392405 * width}px`}
-                            left={`${0.6724683544303798 * width}px`}
-                            top={`${0.8718861209964412 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'100ms'}
-                            duration="400ms"
-                            fontSize={`${0.0368 * width}px`}
-                            text="سال ۱۳۹۰"
-                            height={`${0.05759454329774614 * height}px`}
-                            width={`${0.11867088607594936 * width}px`}
-                            left={`${0.2650316455696203 * width}px`}
-                            top={`${0.19572953736654805 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'200ms'}
-                            duration="400ms"
-                            fontSize={`${0.033 * width}px`}
-                            text="هزار ریال"
-                            height={`${0.05693950177935943 * height}px`}
-                            width={`${0.09889240506329114 * width}px`}
-                            left={`${0.27689873417721517 * width}px`}
-                            top={`${0.2609727164887307 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'800ms'}
-                            duration="300ms"
-                            fontSize={`${0.0345 * width}px`}
-                            text="۳۰,۶۷۲,۵۴۵"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.1403607594936709 * width}px`}
-                            left={`${0.2657025316455696 * width}px`}
-                            top={`${0.33214709371293 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.2s'}
-                            duration="300ms"
-                            fontSize={`${0.0365 * width}px`}
-                            text="۵,۸۲۲,۸۵۸"
-                            height={`${0.052008303677342826 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            left={`${0.2689873417721519 * width}px`}
-                            top={`${0.4092526690391459 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.3s'}
-                            duration="300ms"
-                            fontSize={`${0.0355 * width}px`}
-                            text="۳,۵۶۴,۳۳۸"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            left={`${0.2689873417721519 * width}px`}
-                            top={`${0.4804270462633452 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.4s'}
-                            duration="300ms"
-                            fontSize={`${0.0365 * width}px`}
-                            text="۲,۳۲۹,۶۲۹"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            left={`${0.2689873417721519 * width}px`}
-                            top={`${0.5456702253855279 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.5s'}
-                            duration="300ms"
-                            fontSize={`${0.0355 * width}px`}
-                            text="۷,۵۹۷,۴۸۷"
-                            height={`${0.05338078291814947 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            left={`${0.2689873417721519 * width}px`}
-                            top={`${0.6109134045077106 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.6s'}
-                            duration="300ms"
-                            fontSize={`${0.0357 * width}px`}
-                            text="۱۲,۳۰۵,۶۷۸"
-                            left={`${0.2650316455696203 * width}px`}
-                            top={`${0.6702253855278766 * height}px`}
-                            width={`${0.14240506329113925 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.7s'}
-                            duration="300ms"
-                            fontSize={`${0.0355 * width}px`}
-                            text="۵,۹۷۳,۷۷۸"
-                            left={`${0.27294303797468356 * width}px`}
-                            top={`${0.7354685646500593 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.05575326215895611 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.8s'}
-                            duration="300ms"
-                            fontSize={`${0.038 * width}px`}
-                            text="۲۴۷,۳۲۰"
-                            left={`${0.29667721518987344 * width}px`}
-                            top={`${0.8066429418742586 * height}px`}
-                            width={`${0.11075949367088607 * width}px`}
-                            height={`${0.05219454329774614 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.9s'}
-                            duration="300ms"
-                            fontSize={`${0.036 * width}px`}
-                            text="۱,۳۵۸,۷۷۷"
-                            left={`${0.27689873417721517 * width}px`}
-                            top={`${0.8718861209964412 * height}px`}
-                            width={`${0.1305379746835443 * width}px`}
-                            height={`${0.05338078291814947 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'500ms'}
-                            duration="400ms"
-                            fontSize={`${0.0355 * width}px`}
-                            text="سال ۱۳۸۹"
-                            left={`${0.07911392405063292 * width}px`}
-                            top={`${0.19572953736654805 * height}px`}
-                            width={`${0.11867088607594936 * width}px`}
-                            height={`${0.05538078291814947 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'600ms'}
-                            duration="400ms"
-                            fontSize={`${0.034 * width}px`}
-                            text="هزار ریال"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.2609727164887307 * height}px`}
-                            width={`${0.10000379746835443 * width}px`}
-                            height={`${0.05693950177935943 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.2s'}
-                            duration="300ms"
-                            fontSize={`${0.0328 * width}px`}
-                            text="۲۶,۳۲۵,۸۳۳"
-                            left={`${0.08681392405063292 * width}px`}
-                            top={`${0.33214709371293 * height}px`}
-                            width={`${0.1363607594936709 * width}px`}
-                            height={`${0.05338078291814947 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.5s'}
-                            duration="300ms"
-                            fontSize={`${0.0375 * width}px`}
-                            text="۴,۸۲۱,۸۹۶"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.4033214709371293 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.6s'}
-                            duration="300ms"
-                            fontSize={`${0.037 * width}px`}
-                            text="۳,۶۶۷,۴۳۱"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.4744958481613286 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.7s'}
-                            duration="300ms"
-                            fontSize={`${0.0385 * width}px`}
-                            text="۲,۰۳۷,۱۲۷"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.5397390272835113 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.8s'}
-                            duration="300ms"
-                            fontSize={`${0.037 * width}px`}
-                            text="۸,۲۰۴,۹۷۷"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.604982206405694 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.9s'}
-                            duration="300ms"
-                            fontSize={`${0.0379 * width}px`}
-                            text="۹,۳۷۰,۶۲۰"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.6702253855278766 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.054567022538552785 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'2s'}
-                            duration="300ms"
-                            fontSize={`${0.0355 * width}px`}
-                            text="۶,۳۴۹,۵۶۸"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.7354685646500593 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.051008303677342826 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'2.1s'}
-                            duration="300ms"
-                            fontSize={`${0.0397 * width}px`}
-                            text="۲۱۷,۱۵۳"
-                            left={`${0.11471518987341772 * width}px`}
-                            top={`${0.7947805456702254 * height}px`}
-                            width={`${0.11075949367088607 * width}px`}
-                            height={`${0.05338078291814947 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'2.2s'}
-                            duration="300ms"
-                            fontSize={`${0.0399 * width}px`}
-                            text="۱,۵۴۰,۲۹۱"
-                            left={`${0.09098101265822785 * width}px`}
-                            top={`${0.8600237247924081 * height}px`}
-                            width={`${0.13449367088607594 * width}px`}
-                            height={`${0.05338078291814947 * height}px`}
-                        />
-                    </div>
-                </div>
             </div>
         </div>
     );

@@ -1,4 +1,3 @@
-import TextGroup from './TextGroup';
 import {
     useCallback,
     useEffect,
@@ -9,6 +8,14 @@ import {
 import { isMobile } from 'react-device-detect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+
+const handleFocus = ({ currentTarget }) => {
+    currentTarget.classList.add('selected');
+};
+
+const handleBlur = ({ currentTarget }) => {
+    currentTarget.classList.remove('selected');
+};
 
 const Tahrir = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -80,10 +87,10 @@ const Tahrir = () => {
                             x="283.643"
                             y="100.034"
                         />
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.974179,
                                 }}
                                 width="22.245"
@@ -95,9 +102,9 @@ const Tahrir = () => {
                                 <path d="M694.344 196.459q.097-.22.29-.519.202-.308.44-.641.246-.334.518-.677.273-.343.528-.642.263-.307.474-.545.22-.246.352-.386-.317-.053-.615-.203-.3-.158-.554-.404-.255-.246-.448-.554-.185-.316-.29-.685.052-.22.149-.563.097-.351.22-.72.131-.37.272-.721.15-.352.281-.589.413-.677 1.002-.993.59-.317 1.301-.317.193 0 .448.027.255.026.501.079.255.053.475.123.228.07.36.15l.396 1.907q-.194-.106-.448-.202-.247-.097-.519-.176-.264-.08-.527-.123-.255-.044-.449-.044-.624 0-1.177.263-.554.255-.967.712.167.238.448.457.281.22.615.396.343.167.703.272.36.097.677.097.229 0 .501-.044.281-.053.65-.158.379-.114.862-.281.483-.176 1.116-.413l-1.204 2.381q-.844.273-1.696.862-.853.58-1.67 1.37-.818.783-1.582 1.715-.765.931-1.433 1.88v-2.091zM710.498 187.766q0 1.424-.457 2.33-.51.975-1.318.975-.958 0-1.142-1.389h-.018q-.114 1.52-1.187 1.52-.131 0-.272-.017-.132-.026-.281-.061.641 1.547.641 3.542 0 .843-.052 1.511-.053.66-.176 1.16l-1.16 1.213q.044-.334.061-.694.027-.36.027-.8 0-2.11-.598-3.823-.334-.923-.879-1.846-.536-.931-1.3-1.898l1.52-2.189q.351.545.624.915.281.36.474.553.211.194.44.29.237.088.474.088.29 0 .519-.132.237-.14.395-.386.159-.246.238-.58.088-.343.079-.748h.694q-.026 1.697.932 1.697.448 0 .668-.387.29-.395.413-1.468l.641.624z" />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
-                                style={{ fill: '#fead6c', strokeWidth: 1.0654 }}
+                                style={{  strokeWidth: 1.0654 }}
                                 width="595.937"
                                 height="26.057"
                                 x="396.656"
@@ -214,10 +221,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.20713,
                                 }}
                                 width="593.77"
@@ -260,10 +267,10 @@ const Tahrir = () => {
                                 <path d="M416.418 291.648q0 .328-.307.328h-.174q-1.549 0-2.267-2.502h-.04q-.031.297-.288 1.056-.143.359-.266.626-.113.256-.226.42-1.59.625-3.045.625-1.477 0-2.236-.728 0-.317.041-.779.052-.472.154-1.056.113-.533.185-.882.082-.348.143-.533.052 0 .103-.01t.072-.01q.235.03.307.102-.02.03-.02.102v.185q0 .215.04.318.329.297.79.43.462.134 1.046.134 1.846 0 2.882-.636-.36-1.476-.841-2.553-.482-1.077-1.077-1.795l1.559-2.153q.687.718 1.271 3.558.656 3.271 1.487 3.271h.38q.327 0 .327.328v2.154zM406.329 288.182q-.123.964-.329 1.743-.205.78-.502 1.466-.595.349-1.21.534-.605.184-1.23.184-.441 0-.913-.051-.461-.051-.902-.215-.462-.185-.76-.4-.286-.226-.491-.452.051-1.589.42-2.789.38-1.2 1.18-2.07l-.124-.021-.205-.041-.195-.041-.123-.02.8-2.616q2.482.687 3.476 1.713.492.492.759 1.261.267.769.349 1.815zm-1.108.892q-.154-2.03-2.686-2.656-.851.698-1.19 2.533.728.728 1.98.728 1.014 0 1.896-.605z" />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.00478,
                                 }}
                                 width="597.024"
@@ -414,10 +421,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.992897,
                                 }}
                                 width="421.631"
@@ -508,10 +515,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.03604,
                                 }}
                                 width="546.072"
@@ -626,10 +633,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.39337,
                                 }}
                                 width="590.482"
@@ -752,10 +759,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 1.22399,
                                 }}
                                 width="599.269"
@@ -886,10 +893,10 @@ const Tahrir = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
+                                    
                                     strokeWidth: 0.976992,
                                 }}
                                 width="176.607"
@@ -934,105 +941,6 @@ const Tahrir = () => {
                         </g>
                     </g>
                 </svg>
-                <div
-                    style={{
-                        height: height,
-                        width: width,
-                    }}
-                >
-                    <div className="document line-view">
-                        <TextGroup
-                            delay={'0s'}
-                            duration="200ms"
-                            fontSize={`${0.025 * width}px`}
-                            text="۶۳"
-                            left={`${0.48754636989931105 * width}px`}
-                            top={`${0.15055467511885895 * height}px`}
-                            width={`${0.026497085320614733 * width}px`}
-                            height={`${0.03565768621236133 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'0s'}
-                            duration="1.6s"
-                            fontSize={`${0.0271 * width}px`}
-                            text="اشباع‌مدت ۵ دقیقه جوشانده د رد اخل یک بوته چینی وزن شده صاف‌کنید و باقیمانده را"
-                            left={`${0.12983571807101218 * width}px`}
-                            top={`${0.22583201267828842 * height}px`}
-                            width={`${0.7154213036565977 * width}px`}
-                            height={`${0.04754358161648178 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'100ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0255 * width}px`}
-                            text="با ۱۰ میلی لیترآب‌گرپشوئید ومایع شستشو را به صاف شده اضافه کنید و به مایع صاف شده"
-                            left={`${0.13248542660307366 * width}px`}
-                            top={`${0.3090332805071315 * height}px`}
-                            width={`${0.7154213036565977 * width}px`}
-                            height={`${0.0491283676703645 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'200ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0254 * width}px`}
-                            text="و شستشویك میلی لیتر اسید سولفوریك R افزوده تاحد خشکی تبخیر و تا وزن ثابت تکلیس"
-                            left={`${0.13248542660307366 * width}px`}
-                            top={`${0.38827258320126784 * height}px`}
-                            width={`${0.7154213036565977 * width}px`}
-                            height={`${0.041996830427892234 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'300ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0266 * width}px`}
-                            text="کنید وزن باقیمانده نباید بیش‌از ۳۵ میلی‌گرم باشد (% ۳/۵ )"
-                            left={`${0.344 * width}px`}
-                            top={`${0.4659270998415214 * height}px`}
-                            width={`${0.5034446210916799 * width}px`}
-                            height={`${0.04833597464342314 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'400ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0257 * width}px`}
-                            text="مواد محلول دراتانل : ۲ گرم آنرا با ۴۰ میلی ‌لیتراتانل ۹۵% R زیریك کندانسور رفلو"
-                            left={`${0.13513513513513514 * width}px`}
-                            top={`${0.5467511885895404 * height}px`}
-                            width={`${0.6518282988871225 * width}px`}
-                            height={`${0.0491283676703645 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'500ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0262 * width}px`}
-                            text="مدت پنج دقیقه بجوشانید وصاف کنید، ۲۰ میلی لیتر ازصاف شده را روی حمام آبجوش"
-                            left={`${0.14043455219925807 * width}px`}
-                            top={`${0.6251980982567353 * height}px`}
-                            width={`${0.7048224695283519 * width}px`}
-                            height={`${0.048 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'600ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0256 * width}px`}
-                            text="تاحد خشکی تبخیر ود رحرارت ۱۰۰ درجه مدت یکساعت بخشکانید و وزن‌باقیماند، بیش‌از"
-                            left={`${0.12983571807101218 * width}px`}
-                            top={`${0.705229793977813 * height}px`}
-                            width={`${0.7154213036565977 * width}px`}
-                            height={`${0.046 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'700ms'}
-                            duration="1.6s"
-                            fontSize={`${0.0256 * width}px`}
-                            text="۲ میلی‌گرم نیست ( ۰/۲۶)."
-                            left={`${0.6253312135665077 * width}px`}
-                            top={`${0.786053882725832 * height}px`}
-                            width={`${0.2172760996290408 * width}px`}
-                            height={`${0.051 * height}px`}
-                        />
-                    </div>
-                </div>
             </div>
         </div>
     );

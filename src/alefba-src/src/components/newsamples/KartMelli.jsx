@@ -1,5 +1,4 @@
 import '../../stylesheets/fish.scss';
-import TextGroup from './TextGroup';
 import {
     useCallback,
     useEffect,
@@ -10,6 +9,14 @@ import {
 import { isMobile } from 'react-device-detect';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 import { gsap } from 'gsap';
+
+const handleFocus = ({ currentTarget }) => {
+    currentTarget.classList.add('selected');
+};
+
+const handleBlur = ({ currentTarget }) => {
+    currentTarget.classList.remove('selected');
+};
 
 const KartMelli = () => {
     gsap.registerPlugin(ScrollTrigger);
@@ -81,16 +88,17 @@ const KartMelli = () => {
                             x="126.779"
                             y="131.198"
                         />
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
-                                style={{ fill: '#fead6c', fillOpacity: 1 }}
+                                onFocus={() => console.log('hi')}
+                                style={{ fillOpacity: 1 }}
                                 width="126.077"
                                 height="31.002"
                                 x="772.992"
                                 y="211.896"
                             />
                             <rect
-                                style={{ fill: '#fead6c', fillOpacity: 1 }}
+                                style={{ fillOpacity: 1 }}
                                 width="206.821"
                                 height="64.551"
                                 x="420.249"
@@ -145,10 +153,9 @@ const KartMelli = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.67409,
                                 }}
@@ -180,10 +187,9 @@ const KartMelli = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.06955,
                                 }}
@@ -194,7 +200,6 @@ const KartMelli = () => {
                             />
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 0.777841,
                                 }}
@@ -236,10 +241,9 @@ const KartMelli = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.28504,
                                 }}
@@ -250,7 +254,6 @@ const KartMelli = () => {
                             />
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 0.848167,
                                 }}
@@ -285,10 +288,9 @@ const KartMelli = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.2524,
                                 }}
@@ -299,7 +301,6 @@ const KartMelli = () => {
                             />
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.18917,
                                 }}
@@ -337,17 +338,16 @@ const KartMelli = () => {
                                 />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <path
+                                className="rect"
                                 style={{
-                                    fill: '#fead6c',
                                     strokeWidth: 0.804537,
                                 }}
                                 d="M686.7 458.755h76.366v39.566H686.7z"
                             />
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.02105,
                                 }}
@@ -377,10 +377,9 @@ const KartMelli = () => {
                                 <path d="M708.249 485.041q0 .578-.542.578h-.307q-2.728 0-3.993-4.408h-.072q-.054.524-.506 1.86-.253.633-.47 1.103-.198.452-.397.74-2.8 1.103-5.366 1.103-2.601 0-3.938-1.283 0-.56.072-1.373.09-.831.27-1.861.2-.94.326-1.554.145-.614.253-.94.09 0 .18-.017.091-.018.127-.018.416.054.542.18-.036.055-.036.181v.325q0 .38.072.56.578.524 1.391.759.813.235 1.843.235 3.252 0 5.077-1.12-.632-2.602-1.482-4.499-.849-1.897-1.897-3.161l2.747-3.794q1.21 1.264 2.24 6.269 1.156 5.763 2.62 5.763h.668q.578 0 .578.578v3.794z" />
                             </g>
                         </g>
-                        <g className="line">
+                        <g className="line" tabIndex="1" onFocus={handleFocus} onBlur={handleBlur}>
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.24753,
                                 }}
@@ -391,7 +390,6 @@ const KartMelli = () => {
                             />
                             <rect
                                 style={{
-                                    fill: '#fead6c',
                                     fillOpacity: 1,
                                     strokeWidth: 1.2226,
                                 }}
@@ -435,145 +433,6 @@ const KartMelli = () => {
                         </g>
                     </g>
                 </svg>
-                <div
-                    style={{
-                        height: height,
-                        width: width,
-                    }}
-                >
-                    <div className="document line-view">
-                        <TextGroup
-                            delay={'0s'}
-                            duration="500ms"
-                            fontSize={`${0.0195 * width}px`}
-                            text="جمهوری اسلامی ایران"
-                            left={`${0.8104 * width}px`}
-                            top={`${0.15901712111604312 * height}px`}
-                            width={`${0.15 * width}px`}
-                            height={`${0.043899809765377296 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'500ms'}
-                            duration="500ms"
-                            fontSize={`${0.082 * width}px`}
-                            text="کارت ملی"
-                            left={`${0.368 * width}px`}
-                            top={`${0.04185161699429296 * height}px`}
-                            width={`${0.252 * width}px`}
-                            height={`${0.14204185161699429 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'100ms'}
-                            duration="1s"
-                            fontSize={`${0.05 * width}px`}
-                            text="شماره ملی: ۰۰۴۰۳۱۶۲۸۵"
-                            left={`${0.555 * width}px`}
-                            top={`${0.2593532022828155 * height}px`}
-                            width={`${0.41 * width}px`}
-                            height={`${0.08560558021559923 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'200ms'}
-                            duration="500ms"
-                            fontSize={`${0.03 * width}px`}
-                            text="نام :"
-                            left={`${0.81 * width}px`}
-                            top={`${0.37476220672162336 * height}px`}
-                            width={`${0.045 * width}px`}
-                            height={`${0.054533925174381735 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'700ms'}
-                            duration="500ms"
-                            fontSize={`${0.05 * width}px`}
-                            text="حمید رضا"
-                            left={`${0.6368 * width}px`}
-                            top={`${0.34876347495244137 * height}px`}
-                            width={`${0.15 * width}px`}
-                            height={`${0.08116677235256817 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'300ms'}
-                            duration="500ms"
-                            fontSize={`${0.0283 * width}px`}
-                            text="نام خانوادگی :"
-                            left={`${0.8016 * width}px`}
-                            top={`${0.47114774889029803 * height}px`}
-                            width={`${0.136 * width}px`}
-                            height={`${0.0653138871274572 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'800ms'}
-                            duration="500ms"
-                            fontSize={`${0.05 * width}px`}
-                            text="نکویی"
-                            left={`${0.6884 * width}px`}
-                            top={`${0.4438807863031072 * height}px`}
-                            width={`${0.1 * width}px`}
-                            height={`${0.08877615726062144 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'400ms'}
-                            duration="500ms"
-                            fontSize={`${0.028 * width}px`}
-                            text="تاریخ تولد :"
-                            left={`${0.8076 * width}px`}
-                            top={`${0.5713379835129994 * height}px`}
-                            width={`${0.1052 * width}px`}
-                            height={`${0.05960684844641725 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'900ms'}
-                            duration="500ms"
-                            fontSize={`${0.051 * width}px`}
-                            text="۱۳۶۷/۰۲/۲۶"
-                            left={`${0.56 * width}px`}
-                            top={`${0.5440710209258085 * height}px`}
-                            width={`${0.221 * width}px`}
-                            height={`${0.08370323398858592 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'500ms'}
-                            duration="500ms"
-                            fontSize={`${0.032 * width}px`}
-                            text="نام پدر :"
-                            left={`${0.8032 * width}px`}
-                            top={`${0.6702599873176919 * height}px`}
-                            width={`${0.0876 * width}px`}
-                            height={`${0.060240963855421686 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1s'}
-                            duration="500ms"
-                            fontSize={`${0.045 * width}px`}
-                            text="محمد"
-                            left={`${0.7 * width}px`}
-                            top={`${0.6525047558655676 * height}px`}
-                            width={`${0.084 * width}px`}
-                            height={`${0.07102092580849714 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'600ms'}
-                            duration="500ms"
-                            fontSize={`${0.028 * width}px`}
-                            text="پایان اعتبار :"
-                            left={`${0.806 * width}px`}
-                            top={`${0.7653772986683577 * height}px`}
-                            width={`${0.1164 * width}px`}
-                            height={`${0.060240963855421686 * height}px`}
-                        />
-                        <TextGroup
-                            delay={'1.1s'}
-                            duration="500ms"
-                            fontSize={`${0.0555 * width}px`}
-                            text="۱۴۰۳/۰۸/۱۲"
-                            left={`${0.56 * width}px`}
-                            top={`${0.7577679137603044 * height}px`}
-                            width={`${0.23 * width}px`}
-                            height={`${0.07102092580849714 * height}px`}
-                        />
-                    </div>
-                </div>
             </div>
         </div>
     );
