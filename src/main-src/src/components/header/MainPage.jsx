@@ -43,9 +43,7 @@ function MainPage(props) {
             transition={imageAnimationChooser(props).transition}
         >
             <p>
-                ما قدرت ماشین را
-                <br />
-                در خدمت هوش انسان قرار می‌دهیم
+                انسان به توان ماشین
             </p>
             <img src={EarthImage} className="web-background" alt={''} />
         </motion.div>
