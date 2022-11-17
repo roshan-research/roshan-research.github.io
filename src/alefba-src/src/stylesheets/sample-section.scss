@@ -119,6 +119,7 @@ p {
     align-items: start;
     flex-direction: row;
     overflow: hidden;
+    border-radius: 20px;
 }
 
 .mobile-sample-container {
@@ -241,6 +242,7 @@ p {
         display: flex;
         width: 85vw;
         height: 61vw;
+        border-radius: 15px;
     }
 
     .sample-row {

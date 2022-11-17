@@ -5,13 +5,19 @@ import { ReactComponent as Polygon } from '../assets/images/samples/polygon.svg'
 import '../stylesheets/sample-section.scss';
 
 import React, { Component } from 'react';
+import FishHoghoghiSafari from './newsamples/FishHoghoghiSafari';
 import FishHoghoghi from './newsamples/FishHoghoghi';
 import KartMelli from './newsamples/KartMelli';
 import RoozNameh from './newsamples/RoozNameh';
 import Charkhesh from './newsamples/Charkhesh';
 import Tahrir from './newsamples/Tahrir';
 import BiKeifyat from './newsamples/BiKeifyat';
-import { isMobile } from 'react-device-detect';
+import KartMelliSafari from './newsamples/KartMelliSafari';
+import RoozNamehSafari from './newsamples/RoozNamehSafari';
+import CharkheshSafari from './newsamples/CharkheshSafari';
+import TahrirSafari from './newsamples/TahrirSafari';
+import BiKeifyatSafari from './newsamples/BiKeifyatSafari';
+import { isMobile, isSafari } from 'react-device-detect';
 
 enum Sample {
     KartMelli,
@@ -148,17 +154,17 @@ class SampleSection extends Component {
         const whichSample = () => {
             switch (this.state.chosenSample) {
                 case Sample.KartMelli:
-                    return <KartMelli />;
+                    return isSafari ? <KartMelliSafari /> : <KartMelli />;
                 case Sample.Fish:
-                    return <FishHoghoghi />;
+                    return isSafari ? <FishHoghoghiSafari /> : <FishHoghoghi />;
                 case Sample.Charkhesh:
-                    return <Charkhesh />;
+                    return isSafari ? <CharkheshSafari /> : <Charkhesh />;
                 case Sample.RoozNameh:
-                    return <RoozNameh />;
+                    return isSafari ? <RoozNamehSafari /> : <RoozNameh />;
                 case Sample.Tahrir:
-                    return <Tahrir />;
+                    return isSafari ? <TahrirSafari /> : <Tahrir />;
                 case Sample.BiKeifyat:
-                    return <BiKeifyat />;
+                    return isSafari ? <BiKeifyatSafari /> : <BiKeifyat />;
             }
         };
 
@@ -184,7 +190,7 @@ class SampleSection extends Component {
                                     ref={this.kartMelli}
                                     key={this.state.kartMelliKey}
                                 >
-                                    <KartMelli />
+                                    {isSafari ? <KartMelliSafari /> : <KartMelli />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
@@ -227,7 +233,7 @@ class SampleSection extends Component {
                                     ref={this.fish}
                                     key={this.state.fishKey}
                                 >
-                                    <FishHoghoghi />
+                                    {isSafari ? <FishHoghoghiSafari /> : <FishHoghoghi />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
@@ -270,7 +276,7 @@ class SampleSection extends Component {
                                     ref={this.charkhesh}
                                     key={this.state.charkheshKey}
                                 >
-                                    <Charkhesh />
+                                    {isSafari ? <CharkheshSafari /> : <Charkhesh />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
@@ -316,7 +322,7 @@ class SampleSection extends Component {
                                     ref={this.rooznameh}
                                     key={this.state.rooznamehKey}
                                 >
-                                    <RoozNameh />
+                                    {isSafari ? <RoozNamehSafari /> : <RoozNameh />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
@@ -362,7 +368,7 @@ class SampleSection extends Component {
                                     ref={this.tahrir}
                                     key={this.state.tahrirKey}
                                 >
-                                    <Tahrir />
+                                    {isSafari ? <TahrirSafari /> : <Tahrir />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
@@ -408,7 +414,7 @@ class SampleSection extends Component {
                                     ref={this.bikeifyat}
                                     key={this.state.bikeifyatKey}
                                 >
-                                    <BiKeifyat />
+                                    {isSafari ? <BiKeifyatSafari /> : <BiKeifyat />}
                                 </div>
                                 <p
                                     className={'white-title-sample'}
