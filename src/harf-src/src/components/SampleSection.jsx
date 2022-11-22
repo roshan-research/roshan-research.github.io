@@ -3,11 +3,11 @@ import { ReactComponent as Dot } from '../assets/images/samples/dot.svg';
 import { ReactComponent as Polygon } from '../assets/images/samples/polygon.svg';
 import '../stylesheets/sample-section.scss';
 import { segments, segmentFixer } from './samples/segments.js';
-import rasmi from '../assets/voices/rasmi.mp3';
-import mohavereh from '../assets/voices/mohavereh.mp3';
-import telephone from '../assets/voices/telephone.mp3';
-import ghadimi from '../assets/voices/old.mp3';
-import bamusic from '../assets/voices/musicover.mp3';
+import akhbar from '../assets/voices/akhbar.mp3';
+import podcast from '../assets/voices/podcast.mp3';
+import reading from '../assets/voices/reading.mp3';
+import historical from '../assets/voices/historical.mp3';
+import majles from '../assets/voices/majles_-_2020-05-03.mp3';
 
 import { Component } from 'react';
 
@@ -18,13 +18,13 @@ class SampleSection extends Component {
         chosenSample: 0,
     };
 
-    voices = [rasmi, mohavereh, telephone, ghadimi, bamusic];
+    voices = [akhbar, podcast, reading, historical, majles];
     titles = [
-        'گفتار رسمی',
-        'گفتار محاوره‌ای',
-        'گفتگوی تلفنی',
-        'گفتار با لحن فارسی قدیم',
-        'گفتار با موسیقی زمینه',
+        'اخبار',
+        'پادکست',
+        'متن‌خوانی',
+        'فیلم تاریخی',
+        'صحن علنی مجلس',
     ];
 
     onSampleClick = (sampleName) => {
@@ -58,7 +58,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار رسمی
+                                    اخبار
                                 </p>
                                 <Dot
                                     className={
@@ -89,7 +89,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار محاوره‌ای
+                                    پادکست
                                 </p>
                                 <Dot
                                     className={
@@ -120,7 +120,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتگوی تلفنی
+                                    متن‌خوانی
                                 </p>
                                 <Dot
                                     className={
@@ -151,7 +151,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار با لحن فارسی قدیم
+                                    فیلم تاریخی
                                 </p>
                                 <Dot
                                     className={
@@ -182,7 +182,7 @@ class SampleSection extends Component {
                                             : ''
                                     }
                                 >
-                                    گفتار با موسیقی زمینه
+                                    صحن علنی مجلس
                                 </p>
                                 <Dot
                                     className={
