@@ -41,7 +41,8 @@
 
 @media screen and (max-width: 600px){
   .web-background {
-    transform: scale(2.5);
+    object-fit: cover;
+    object-position: 35% 50%;
     margin-top: -10vh;
     z-index: 10;
   }
