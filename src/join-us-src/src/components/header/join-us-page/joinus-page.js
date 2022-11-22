@@ -12,7 +12,7 @@ export default function JoinusPage() {
         <div className={'join-us-page'}>
             <div id={'wrapper'}>
                 <div className='text-wrapper'>
-                    <p>اگر به هوش مصنوعی و چالش‌های جذابِ آن</p>                    
+                    <p>ss</p>                    
                     <p>و کار در یک محیط جوان، صمیمی و پویا علاقه دارید،</p>
                     <p>جای درستی آمده‌اید.</p>
                 </div>
