@@ -24,13 +24,14 @@ jobs:
             build(){    
                 echo "Building $1 ............................"    
                 src=$root/src/$1-src/      
-                cd $src                
+                cd $src
+                rm -rf node_modules package-lock.json
                 npm install --legacy-peer-deps && npm run build
 
                 if [ $1 = "main" ]; then              
                     cp -r $src/build/* $root/
                 else    
-                    rm -r $root/$1/
+                    rm -rf $root/$1/
                     mkdir $root/$1/  
                     cp -r $src/build/* $root/$1/    
                 fi
