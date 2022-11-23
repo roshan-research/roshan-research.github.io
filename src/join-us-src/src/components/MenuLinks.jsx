@@ -11,7 +11,7 @@ const MenuLinks = () => {
                     href={'https://www.roshan-ai.ir/about-us'}
                     className={'menu-link'}
                 >
-                    دربارهٔ روشن
+                    درباره روشن
                 </a>
                 <a
                     href={'https://www.roshan-ai.ir/contact-us'}
