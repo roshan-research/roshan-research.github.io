@@ -19,11 +19,11 @@
 
 To run a project on your localhost, use the following commands:
 
-- `sh build.sh main`
-- `sh build.sh alefba`
-- `sh build.sh harf`
-- `sh build.sh about-us`
-- `sh build.sh join-us`
-- `sh build.sh contact-us`
+- `sh run.sh main`
+- `sh run.sh alefba`
+- `sh run.sh harf`
+- `sh run.sh about-us`
+- `sh run.sh join-us`
+- `sh run.sh contact-us`
 
 You are not need to execute `npm build` manually. You just push and let the Github workflow do the reset.
