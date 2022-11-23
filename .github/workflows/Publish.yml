@@ -21,8 +21,7 @@ jobs:
         run: |
             root=`git rev-parse --show-toplevel`
             
-            build(){    
-                echo "Building $1 ............................"    
+            build(){                   
                 src=$root/src/$1-src/      
                 cd $src
                 rm -rf node_modules package-lock.json
@@ -41,9 +40,7 @@ jobs:
 
             for product in ${products[@]}; do
                 build $product
-            done
-
-            echo "Finish Building ............................"
+            done            
         
       - name: Publish          
         uses: mikeal/publish-to-github-action@master
