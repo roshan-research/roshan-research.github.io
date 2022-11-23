@@ -17,7 +17,31 @@ jobs:
           fetch-depth: 0
       
       - name: Build
-        run: ./build.sh
+        run: |
+            root=`git rev-parse --show-toplevel`
+            
+            build(){    
+                echo "Building $1 ............................"    
+                src=$root/src/$1-src/      
+                cd $src
+                npm install --legacy-peer-deps && npm run build
+
+                if [ $1 = "main" ]; then              
+                    cp -r $src/build/* $root/
+                else    
+                    rm -r $root/$1/
+                    mkdir $root/$1/  
+                    cp -r $src/build/* $root/$1/    
+                fi
+            }
+
+            products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")
+
+            for product in ${products[@]}; do
+                build $product
+            done
+
+            echo "Finish Building ............................"
         
       - name: Publish          
         uses: mikeal/publish-to-github-action@master
