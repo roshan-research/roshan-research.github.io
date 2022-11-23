@@ -18,7 +18,7 @@ jobs:
           fetch-depth: 0
       
       - name: Build
-        run: ./build.sh main #alefba harf about-us contact-us join-us
+        run: ./build.sh
         
       - name: Publish          
         uses: mikeal/publish-to-github-action@master
