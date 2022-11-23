@@ -27,7 +27,7 @@ const FooterWeb = () => {
                 </p>
                 <a href={'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=salam@roshan-ai.ir'} target={"_blank"} rel="noreferrer">
                     <p id={'email'}>
-                        salam@roshan-ai.ir
+                        &gt; salam@roshan-ai.ir
                     </p>
                 </a>
             </div>
