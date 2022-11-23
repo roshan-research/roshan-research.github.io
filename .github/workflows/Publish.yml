@@ -25,7 +25,7 @@ jobs:
                 echo "Building $1 ............................"    
                 src=$root/src/$1-src/      
                 cd $src
-                rm -rf node_modules package-lock.json
+                rm -rf $src/node_modules $src/package-lock.json
                 npm install --legacy-peer-deps && npm run build
 
                 if [ $1 = "main" ]; then              
