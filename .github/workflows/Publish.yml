@@ -1,7 +1,6 @@
-name: push
+name: Publish
 
-on: 
-  workflow_dispatch
+on: [push, workflow_dispatch]
     
 jobs:
 
