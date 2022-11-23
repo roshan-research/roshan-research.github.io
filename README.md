@@ -17,25 +17,13 @@
 ### Join us
 [![wakatime](https://wakatime.com/badge/user/2fc4b18b-ec8f-46e8-be9b-2b05a111037b/project/f98bcec6-7138-4458-8066-e05d78369ca2.svg)](https://wakatime.com/badge/user/2fc4b18b-ec8f-46e8-be9b-2b05a111037b/project/f98bcec6-7138-4458-8066-e05d78369ca2) -->
 
-<div dir="rtl">
-برای بیلدگرفتن فقط از یک پروژه؛ مثلاً الفبا به این صورت عمل کنید:
+To run a project on your localhost, use the following commands:
 
-`sh build.sh alefba`
+- `sh build.sh main`
+- `sh build.sh alefba`
+- `sh build.sh harf`
+- `sh build.sh about-us`
+- `sh build.sh join-us`
+- `sh build.sh contact-us`
 
-برای بیلدگرفتن از چند پروژه مثلاً **صفحهٔ اصلی** و **دربارهٔ ما** و **حرف** به این صورت عمل کنید:
-
-`sh build.sh main about-us harf`
-
-مقادیر مجاز برای این دستور: `main, about-us, contact-us, join-us, harf, alefba`
-
-اگر هیچ مقداری وارد نکنید یعنی `sh build.sh` همهٔ پروژه‌ها بیلد گرفته می‌شود.
-
-برای دیپلوی‌کردن تغییرات مثل بالا عمل کنید ولی با دستور `sh deploy.sh`
-
-برای دیدن تغییرات روی مرورگر (در لوکال) از دستور `sh run.sh` استفاده کنید. البته اینجا فقط نام یک محصول را وارد کنید مثلاً برای اجرا حرف
-
-`sh run.sh harf`
-  
-  * در هیچ یک از دستورات بالا نیازی به npm build‌ نیست. به صورت خودکار انجام می‌شود.
-  * برای اجرای این دستورات در ویندوز از Bash استفاده کنید.
-</div>
+You are not need to execute `npm build` manually. A Github workflow is provided for that. All you need to do is push your changes.
