@@ -1,12 +1,12 @@
 import '../../../stylesheets/slides/footer-web.scss';
-import {ReactComponent as Icon} from "../../../assets/images/roshan-logo.svg";
+import { ReactComponent as Icon } from "../../../assets/images/roshan-logo.svg";
 
 const FooterWeb = () => {
-    return(
+    return (
         <div dir="rtl" id={'footer'}>
             <div id={'icon-title-footer'}>
                 <div>
-                    <Icon id={'icon-footer'}/>
+                    <Icon id={'icon-footer'} />
                 </div>
             </div>
             <div id={'contact-footer'}>
@@ -27,7 +27,7 @@ const FooterWeb = () => {
                 </p>
                 <a href={'https://mail.google.com/mail/u/0/?fs=1&tf=cm&source=mailto&to=salam@roshan-ai.ir'} target={"_blank"} rel="noreferrer">
                     <p id={'email'}>
-                        &gt; salam@roshan-ai.ir
+                        salam@roshan-ai.ir
                     </p>
                 </a>
             </div>
