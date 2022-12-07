@@ -1,5 +1,5 @@
 import React from 'react';
-import { ReactComponent as Logo } from "../../../assets/images/roshan-logosvg.svg";
+import { ReactComponent as Logo } from '../../../assets/images/roshan-logosvg.svg';
 
 import Jobinja from '../../../assets/images/jobinja.svg';
 import Linkedin from '../../../assets/images/linkedin.svg';
@@ -11,8 +11,8 @@ export default function JoinusPage() {
     return (
         <div className={'join-us-page'}>
             <div id={'wrapper'}>
-                <div className='text-wrapper'>
-                    <p>اگر به هوش مصنوعی و چالش‌های جذابِ آن</p>                    
+                <div className="text-wrapper">
+                    <p>اگر به هوش مصنوعی و چالش‌های جذابِ آن</p>
                     <p>و کار در یک محیط جوان، صمیمی و پویا علاقه دارید،</p>
                     <p>جای درستی آمده‌اید.</p>
                 </div>
@@ -20,10 +20,10 @@ export default function JoinusPage() {
                     <a href="mailto:salam@roshan-ai.ir">
                         <img src={Mail} alt="" width="76" height="34" />
                     </a>
-                    <a href="https://jobinja.ir/companies/roshan-ai/jobs">
+                    <a href="https://www.linkedin.com/company/roshan-ai/">
                         <img src={Linkedin} alt="" width="76" height="34" />
                     </a>
-                    <a href="https://www.linkedin.com/company/roshan-ai/">
+                    <a href="https://jobinja.ir/companies/roshan-ai/jobs">
                         <img src={Jobinja} alt="" width="76" height="34" />
                     </a>
                 </div>
