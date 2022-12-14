@@ -26,4 +26,4 @@ To run a project on your localhost, use the following commands:
 - `sh run.sh join-us`
 - `sh run.sh contact-us`
 
-You are not need to execute `npm build` manually. Just push and let the Github workflow do the reset.
+You don't need to execute `npm build` manually. Just push and let the Github workflow do the reset.
