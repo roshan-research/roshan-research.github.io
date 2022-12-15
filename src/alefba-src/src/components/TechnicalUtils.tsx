@@ -146,7 +146,7 @@ const TechnicalUtils = () => {
                         </div>
                         <img src={Left2} id={'left2-icon'} alt={''} />
                         <p className={'white-util-text'}>
-                            الفبا، در صورت برخورداری از GPU و اجرا روی سیستم‌های توزیع‌شده، سرعتی چند برابر اجرا روی پردازنده خواهد داشت.                             </p>
+                            الفبا، در صورت استفاده از GPU و اجرا روی سیستم‌های توزیع‌شده، سرعتی چند برابر اجرا روی پردازنده خواهد داشت.                             </p>
                     </div>
                     <div id={'right-space'} />
                     <div className={'util-group left-to-right'} id={'right-2'}>
