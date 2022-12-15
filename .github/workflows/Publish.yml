@@ -36,7 +36,7 @@ jobs:
                 fi
             }
 
-            products=("harf")            
+            products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")            
 
             for product in ${products[@]}; do
                 build $product
