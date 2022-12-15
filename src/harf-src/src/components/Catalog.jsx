@@ -12,7 +12,7 @@ const Catalog = () => {
         <div id={'catalog'}>
             <div id={'catalog-right'}>
                 <p id={'catalog-description'}>
-                    کاتالوگ حرف، اطلاعات بیشتری در اختیار شما قرار می‌دهد
+                    کاتالوگ حرف، اطلاعات بیشتری در اختیار شما قرار می‌دهد:
                 </p>
                 <a
                     href={'https://www.roshan-ai.ir/harf-catalog.pdf/'}

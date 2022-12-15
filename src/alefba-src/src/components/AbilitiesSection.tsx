@@ -56,7 +56,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن نوشته‌های فارسی، انگلیسی و عربی در کنار هم در یک تصویر، بدون نیاز به تنظیم نوع زبان
+                            خواندن نوشته‌های فارسی، انگلیسی و عربی، در یک تصویر واحد و بدون نیاز به تنظیم نوع زبان
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'left-2'}>
@@ -85,37 +85,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            شناسایی متن در تصاویر دارای نویز و سایه و تصاویری که به‌شکل زاویه‌دار مثلاً برعکس اسکن شده‌اند
-                        </p>
-                    </div>
-                    <div className={'ability-group'} id={'left-3'}>
-                        <Left3 className={'ability-icon'} />
-                        <div className={'title-stack'}>
-                            <p
-                                className={
-                                    left3InView
-                                        ? 'black-text in-view'
-                                        : 'black-text'
-                                }
-                                ref={left3Ref}
-                                data-title={'حذف اِعرابِ حروف'}
-                            >
-                                حذف اِعرابِ حروف
-                            </p>
-                            <p
-                                className={
-                                    left3InView
-                                        ? 'black-text-background in-view-bg'
-                                        : 'black-text-background'
-                                }
-                                ref={left3Ref}
-                                data-title={'حذف اِعرابِ حروف'}
-                            >
-                                حذف اِعرابِ حروف
-                            </p>
-                        </div>
-                        <p className={'white-text'}>
-                            حذف اعراب در نوشته‌ها؛ مثل فتحه، کسره، ضمه، که می‌تواند تسهیلی برای پردازش‌های زبانی باشد
+                            شناسایی متن در تصاویرِ دارای نویز، سایه و چرخش
                         </p>
                     </div>
                 </div>
@@ -146,7 +116,7 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            خواندن متن در فونت‌ها و اندازه‌های مختلف و در بخش‌های مختلف متن مثلاً در عناوین و
+                            خواندن متن در فونت‌ها و اندازه‌های مختلف و در بخش‌های مختلف متن؛ مثلاً در عناوین و
                             پاورقی‌ها
                         </p>
                     </div>
@@ -176,7 +146,36 @@ const AbilitiesSection = () => {
                             </p>
                         </div>
                         <p className={'white-text'}>
-                         تلاش برای مطابقت متن با ساختار سند؛ مثلاً جداول به همان شکل جدولی یا پاراگراف‌ها و تصاویر، با همان ترتیب و جایگاهی که در سند قرار گرفته‌اند در خروجی ارائه می‌شوند
+                            تبدیل جداول به شکل جدولی و حفظ طول سطرها و پاراگراف‌ها به همان شکل قرارگرفته در سند
+                        </p>
+                    </div>
+                    <div className={'ability-group'} id={'right-3'}>
+                        <Left3 className={'ability-icon'} />
+                        <div className={'title-stack'}>
+                            <p
+                                className={
+                                    right3InView
+                                        ? 'black-text in-view'
+                                        : 'black-text'
+                                }
+                                ref={right3Ref}
+                                data-title={'حذف اِعرابِ حروف'}
+                            >
+                                حذف اِعرابِ حروف
+                            </p>
+                            <p
+                                className={
+                                    right3InView
+                                        ? 'black-text-background in-view-bg'
+                                        : 'black-text-background'
+                                }                                
+                                data-title={'حَذفِ اِعرابِ حُروف'}
+                            >
+                                حذف اِعرابِ حروف
+                            </p>
+                        </div>
+                        <p className={'white-text'}>
+                            حذف اعراب نوشته‌ها برای ساده کردن پردازش‌های زبانی
                         </p>
                     </div>
                 </div>

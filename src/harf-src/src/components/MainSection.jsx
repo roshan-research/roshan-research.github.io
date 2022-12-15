@@ -6,7 +6,7 @@ import { Cross as Hamburger } from 'hamburger-react';
 import { useState } from 'react';
 
 const MainSection = () => {
-    const onHamburgerMenuToggle = () => {};
+    const onHamburgerMenuToggle = () => { };
 
     const [isOpen, setOpen] = useState(false);
 
@@ -62,7 +62,7 @@ const MainSection = () => {
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
                 <p id={'orange-text'}>حرف، تبدیل گفتار به متن</p>
-                <p id={'white-text'}>گفتار را به نوشته‌های قابل ویرایش تبدیل می‌کند.</p>
+                <p id={'white-text'}>این ابزار، گفتار رسمی و محاوره‌ای فارسی را با سرعت طبیعی کلام، به متن‌های قابل ویرایش تبدیل می‌کند.</p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>
