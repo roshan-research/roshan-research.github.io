@@ -5,7 +5,7 @@ on: [push, workflow_dispatch]
 jobs:
 
   publish:
-    runs-on: linux-latest
+    runs-on: ubuntu-latest
     
     env:        
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
