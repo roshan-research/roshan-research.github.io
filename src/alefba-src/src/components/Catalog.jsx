@@ -11,7 +11,7 @@ const Catalog = () => {
         <div id={'catalog'}>
             <div id={'catalog-right'}>
                 <p id={'catalog-description'}>
-                    کاتالوگ الفبا، اطلاعات بیشتری در اختیار شما قرار می‌دهد
+                    کاتالوگ الفبا، اطلاعات بیشتری در اختیار شما قرار می‌دهد:
                 </p>
                 <div id={'catalog-right'}>
                     <a
