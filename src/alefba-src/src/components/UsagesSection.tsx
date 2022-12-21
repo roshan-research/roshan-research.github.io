@@ -2,6 +2,7 @@ import '../stylesheets/usages-section.scss';
 import BusinessImage from '../assets/images/usages/businesses.png';
 import OrganizationsImage from '../assets/images/usages/organizations.png';
 import LibrariesImage from '../assets/images/usages/libraries.png';
+import PDFsImage from '../assets/images/usages/pdfs.png';
 import { useInView } from 'react-intersection-observer';
 import { isMobile } from 'react-device-detect';
 
@@ -86,7 +87,7 @@ const UsagesSection = () => {
                         style={pdfsInView ? afterFade : beforeFade}
                     >
                         <img
-                            src={LibrariesImage}
+                            src={PDFsImage}
                             id={'pdf-image'}
                             alt={''}
                         />
