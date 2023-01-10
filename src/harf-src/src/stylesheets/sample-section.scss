@@ -69,7 +69,6 @@ p {
 }
 
 .polygon {
-    margin-right: -0.35vw;
     width: 1.5vw;
 }
 
@@ -144,6 +143,14 @@ p {
 
 #active-orange-description {
     color: #26ff7b;
+}
+
+.sample-dot-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 20px;
+    height: 18px;
 }
 
 @media screen and (max-width: 500px) {
@@ -228,6 +235,10 @@ p {
     .text-left-title {
         text-align: left;
         margin-right: 35vw;
+    }
+
+    .sample-dot-wrapper {
+        display: none;
     }
 
     .polygon {

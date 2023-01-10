@@ -60,20 +60,22 @@ class SampleSection extends Component {
                                 >
                                     اخبار
                                 </p>
-                                <Dot
-                                    className={
-                                        this.state.chosenSample === 0
-                                            ? 'no-dot'
-                                            : 'dot'
-                                    }
-                                />
-                                <Polygon
-                                    className={
-                                        this.state.chosenSample === 0
-                                            ? 'polygon'
-                                            : 'no-dot'
-                                    }
-                                />
+                                <div className='sample-dot-wrapper'>
+                                    <Dot
+                                        className={
+                                            this.state.chosenSample === 0
+                                                ? 'no-dot'
+                                                : 'dot'
+                                        }
+                                    />
+                                    <Polygon
+                                        className={
+                                            this.state.chosenSample === 0
+                                                ? 'polygon'
+                                                : 'no-dot'
+                                        }
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div
@@ -91,20 +93,22 @@ class SampleSection extends Component {
                                 >
                                     پادکست
                                 </p>
-                                <Dot
-                                    className={
-                                        this.state.chosenSample === 1
-                                            ? 'no-dot'
-                                            : 'dot'
-                                    }
-                                />
-                                <Polygon
-                                    className={
-                                        this.state.chosenSample === 1
-                                            ? 'polygon'
-                                            : 'no-dot'
-                                    }
-                                />
+                                <div className='sample-dot-wrapper'>
+                                    <Dot
+                                        className={
+                                            this.state.chosenSample === 1
+                                                ? 'no-dot'
+                                                : 'dot'
+                                        }
+                                    />
+                                    <Polygon
+                                        className={
+                                            this.state.chosenSample === 1
+                                                ? 'polygon'
+                                                : 'no-dot'
+                                        }
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div
@@ -122,20 +126,22 @@ class SampleSection extends Component {
                                 >
                                     متن‌خوانی
                                 </p>
-                                <Dot
-                                    className={
-                                        this.state.chosenSample === 2
-                                            ? 'no-dot'
-                                            : 'dot'
-                                    }
-                                />
-                                <Polygon
-                                    className={
-                                        this.state.chosenSample === 2
-                                            ? 'polygon'
-                                            : 'no-dot'
-                                    }
-                                />
+                                <div className='sample-dot-wrapper'>
+                                    <Dot
+                                        className={
+                                            this.state.chosenSample === 2
+                                                ? 'no-dot'
+                                                : 'dot'
+                                        }
+                                    />
+                                    <Polygon
+                                        className={
+                                            this.state.chosenSample === 2
+                                                ? 'polygon'
+                                                : 'no-dot'
+                                        }
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div
@@ -153,20 +159,22 @@ class SampleSection extends Component {
                                 >
                                     فیلم تاریخی
                                 </p>
-                                <Dot
-                                    className={
-                                        this.state.chosenSample === 3
-                                            ? 'no-dot'
-                                            : 'dot'
-                                    }
-                                />
-                                <Polygon
-                                    className={
-                                        this.state.chosenSample === 3
-                                            ? 'polygon'
-                                            : 'no-dot'
-                                    }
-                                />
+                                <div className='sample-dot-wrapper'>
+                                    <Dot
+                                        className={
+                                            this.state.chosenSample === 3
+                                                ? 'no-dot'
+                                                : 'dot'
+                                        }
+                                    />
+                                    <Polygon
+                                        className={
+                                            this.state.chosenSample === 3
+                                                ? 'polygon'
+                                                : 'no-dot'
+                                        }
+                                    />
+                                </div>
                             </div>
                         </div>
                         <div
@@ -184,20 +192,22 @@ class SampleSection extends Component {
                                 >
                                     صحن علنی مجلس
                                 </p>
-                                <Dot
-                                    className={
-                                        this.state.chosenSample === 4
-                                            ? 'no-dot'
-                                            : 'dot'
-                                    }
-                                />
-                                <Polygon
-                                    className={
-                                        this.state.chosenSample === 4
-                                            ? 'polygon'
-                                            : 'no-dot'
-                                    }
-                                />
+                                <div className='sample-dot-wrapper'>
+                                    <Dot
+                                        className={
+                                            this.state.chosenSample === 4
+                                                ? 'no-dot'
+                                                : 'dot'
+                                        }
+                                    />
+                                    <Polygon
+                                        className={
+                                            this.state.chosenSample === 4
+                                                ? 'polygon'
+                                                : 'no-dot'
+                                        }
+                                    />
+                                </div>
                             </div>
                         </div>
                         {/*<div className={'button'} onClick={this.onSampleClick.bind(this,Sample.Lahje)}>*/}
