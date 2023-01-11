@@ -97,7 +97,7 @@ function App() {
                         id={'pics'}
                         autoPlay={true}
                         emulateTouch={true}
-                        infiniteLoop={false}
+                        infiniteLoop={true}
                         width={'100%'}
                         showArrows={true}
                         showIndicators={true}
