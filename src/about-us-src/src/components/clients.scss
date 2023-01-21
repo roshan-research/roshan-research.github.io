@@ -1,123 +1,193 @@
 #clients {
-  width: 85vw;
-  margin-top: 20vh;
-  margin-left: 7.5vw;
-  display: flex;
-  justify-content: space-around;
-  align-items: start;
+    width: 85vw;
+    margin-top: 20vh;
+    margin-left: 7.5vw;
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-start;
 }
 
 #clients-motto {
-  font-size: 2.8vw;
-  width: 15vw;
-  line-height: 3.5vw;
-  text-align: right;
-  font-weight: bolder;
+    font-size: 2.8vw;
+    width: 15vw;
+    line-height: 3.5vw;
+    text-align: right;
+    font-weight: bolder;
 }
 
 #clients-pics {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-direction: column;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    box-sizing: border-box;
+}
+
+#clients-pics * {
+    box-sizing: border-box;
 }
 
 .client-pic {
-  width: 11vw;
-  outline: 1px solid #4A4E57;
-  height: 11vw;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+    width: 11vw;
+    height: 11vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 1px solid #4a4e57;
 }
 
-#clients-row1, #clients-row2, #clients-row3 {
-  display: flex;
-  width: 55vw;
-  justify-content: center;
-  align-items: center;
+#aparat-div,
+#naft-div,
+#mokhaberat-div,
+#ketabkhone-div {
+    border-left: none;
 }
 
-#clients-row3 {
-  justify-content: end;
-}
-
-#filimo-div {
-  border-right: none;
-}
-
-#aparat-div, #naft-div, #mokhaberat-div, #varzesh3-div{
-  border-bottom: none;
-  border-right: none;
-}
-
-#tamasha-div, #farabi-div, #parsian-div {
-  border-right: none;
-}
-
+#tamasha-div,
+#varzesh3-div,
 #jahad-div {
-  border-bottom: none;
+    border-top: none;
+}
+
+#varzesh3-div,
+#jahad-div {
+    border-left: none;
+}
+
+#farabi-div,
+#parsian-div {
+    border-top: none;
+}
+
+#parsian-div,
+#astan-div {
+    border-left: none;
 }
 
 #astan-div {
+    border-top: none;
+    box-shadow: 0px -1px 0px 0px #4a4e57;
+    -webkit-box-shadow: 0px -1px 0px 0px #4a4e57;
+    -moz-box-shadow: 0px -1px 0px 0px #4a4e57;
 }
 
-@import "icons.scss";
+#tamasha-div,
+#farabi-div {
+    border-left: none;
+    box-shadow: -1px 0px 0px 0px #4a4e57;
+    -webkit-box-shadow: -1px 0px 0px 0px #4a4e57;
+    -moz-box-shadow: -1px 0px 0px 0px #4a4e57;
+}
 
-@media screen and (max-width: 600px){
-  #clients {
-    margin-left: 15.3vw;
-    flex-direction: column;
-    margin-top: 5vh;
-    justify-content: center;
-    align-items: center;
-  }
-
-  #clients-motto {
-    width: 40vw;
-    text-align: center;
-    font-size: 7vw;
-    line-height: 10vw;
-    margin-right: 12vw;
-  }
-
-  .client-pic {
-    width: 40vw;
-    height: 40vw;
-  }
-
-  #clients-pics {
-    justify-content: center;
-    align-items: start;
+#clients-row1,
+#clients-row2,
+#clients-row3 {
+    display: flex;
     width: 55vw;
-    flex-direction: row;
-  }
-
-  #clients-row1 {
-    display: flex;
     justify-content: center;
     align-items: center;
-    flex-direction: column;
-  }
+}
 
-  #clients-row2 {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-  }
+#clients-row3 {
+    justify-content: end;
+}
 
-  #clients-row3 {
-    display: flex;
-    justify-content: center;
-    align-items: start;
-    flex-direction: column;
-  }
+@import 'icons.scss';
 
-  #united-columns {
-    justify-content: center;
-    align-items: start;
-    display: flex;
-    flex-direction: column;
-  }
+@media screen and (max-width: 600px) {
+    #clients {
+        margin-left: 15.3vw;
+        flex-direction: column;
+        margin-top: 5vh;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #clients-motto {
+        width: 40vw;
+        text-align: center;
+        font-size: 7vw;
+        line-height: 10vw;
+        margin-right: 12vw;
+    }
+
+    .client-pic {
+        width: 40vw;
+        height: 40vw;
+    }
+
+    #clients-pics {
+        justify-content: center;
+        align-items: flex-start;
+        width: 55vw;
+        flex-direction: row;
+    }
+
+    #clients-row1 {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    #clients-row2 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #clients-row3 {
+        display: flex;
+        justify-content: center;
+        align-items: flex-start;
+        flex-direction: column;
+    }
+
+    #united-columns {
+        justify-content: center;
+        align-items: flex-start;
+        display: flex;
+        flex-direction: column;
+    }
+
+    #filimo-div {
+    }
+
+    #tamasha-div {
+        border-top: 1px solid #4a4e57;
+        border-left: none;
+    }
+
+    #aparat-div {
+        border-top: none;
+        border-left: 1px solid #4a4e57;
+    }
+
+    #naft-div {
+        border-top: none;
+        border-left: 1px solid #4a4e57;
+    }
+
+    #mokhaberat-div {
+        border-top: none;
+        border-left: 1px solid #4a4e57;
+    }
+
+    #ketabkhone-div {
+        border-top: none;
+        border-left: 1px solid #4a4e57;
+    }
+
+    #astan-div {
+        border-top: none;
+        border-left: none;
+        box-shadow: -1px 0px 0px 0px #4a4e57;
+        -webkit-box-shadow: -1px 0px 0px 0px #4a4e57;
+        -moz-box-shadow: -1px 0px 0px 0px #4a4e57;
+    }
+
+    #farabi-div {
+        border-left: none;
+    }
 }

@@ -1,7 +1,7 @@
 #menu-links {
   display: flex;
   justify-content: space-between;
-  align-items: end;
+  align-items: flex-end;
   flex-direction: column;
   height: 30vh;
   margin-top: 7vw; }

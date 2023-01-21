@@ -4,7 +4,7 @@
   margin-left: 7.5vw;
   display: flex;
   justify-content: space-around;
-  align-items: start; }
+  align-items: flex-start; }
 
 #clients-motto {
   font-size: 2.8vw;
@@ -136,7 +136,7 @@
 
   #clients-pics {
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     width: 55vw;
     flex-direction: row; }
 
@@ -149,18 +149,18 @@
   #clients-row2 {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column; }
 
   #clients-row3 {
     display: flex;
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     flex-direction: column; }
 
   #united-columns {
     justify-content: center;
-    align-items: start;
+    align-items: flex-start;
     display: flex;
     flex-direction: column; } }
 
