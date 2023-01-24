@@ -146,6 +146,7 @@ function HazmWebText(props) {
                     href={'https://www.sobhe.ir/hazm'}
                     id={'link-hazm'}
                     title={'دربارهٔ هضم'}
+                    onClick={() => window.amplitude.getInstance().logEvent('clicked-on-hazm')}
                 >
                     <rect
                         id="Hidden Layer"

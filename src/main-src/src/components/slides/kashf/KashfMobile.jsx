@@ -170,7 +170,10 @@ function KashfMobile(props) {
                 initial={"hidden"}
                 animate={"visible"}
             />
-            <a href={'https://www.roshan-ai.ir/kashf/'}>
+            <a
+                href={'https://www.roshan-ai.ir/kashf/'}
+                onClick={() => window.amplitude.getInstance().logEvent('clicked-on-kashf')}
+            >
                 {/*
                     background
                 */}

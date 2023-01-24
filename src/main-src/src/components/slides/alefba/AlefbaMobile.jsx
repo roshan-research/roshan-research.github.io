@@ -133,7 +133,11 @@ function AlefbaMobile(props) {
     fill="#FF6200"
     d="M108.033 328.664a2.66 2.66 0 100-5.318 2.66 2.66 0 000 5.318z"
     />
-    <a className='alefba-link-mobile' href={'https://www.roshan-ai.ir/alefba/'}>
+    <a
+        className='alefba-link-mobile'
+        href={'https://www.roshan-ai.ir/alefba/'}
+        onClick={() => window.amplitude.getInstance().logEvent('clicked-on-alefba')}
+    >
             <motion.path
                 variants={animationChooser(props.status)['boxAnimationMobile']}
                 initial={"hidden"}

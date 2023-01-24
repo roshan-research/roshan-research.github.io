@@ -66,6 +66,18 @@ class RoshanWebsite extends Component {
 
     onSlideChangeStart = (name, props, state, newState) => {
         const shouldAdd = newState.activeSlide === 5;
+        if (newState.activeSlide === 1) {
+            window.amplitude.getInstance().logEvent('scrolled-to-kashf')
+        }
+        if (newState.activeSlide === 2) {
+            window.amplitude.getInstance().logEvent('scrolled-to-alefba')
+        }
+        if (newState.activeSlide === 3) {
+            window.amplitude.getInstance().logEvent('scrolled-to-harf')
+        }
+        if (newState.activeSlide === 4) {
+            window.amplitude.getInstance().logEvent('scrolled-to-hazm')
+        }
         // if (shouldAdd) {
         //     document.addEventListener('keydown', this.toggleFooter);
         // } else {

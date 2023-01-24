@@ -141,6 +141,7 @@ const KashfWebText = (props) => {
                     href={'https://www.roshan-ai.ir/kashf/'}
                     id={'link-kashf'}
                     title={'دربارهٔ کشف'}
+                    onClick={() => window.amplitude.getInstance().logEvent('clicked-on-kashf')}
                 >
                     <motion.path
                         fill="#7000FF"

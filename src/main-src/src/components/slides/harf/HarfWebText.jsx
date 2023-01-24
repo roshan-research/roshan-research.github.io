@@ -143,6 +143,7 @@ function HarfWebText(props) {
                     target="_blank"
                     title={'دربارهٔ حرف'}
                     id={'link-harf'}
+                    onClick={() => window.amplitude.getInstance().logEvent('clicked-on-harf')}
                 >
                     <rect
                         id="Hidden Layer"

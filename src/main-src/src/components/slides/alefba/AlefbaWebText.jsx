@@ -158,6 +158,7 @@ function AlefbaWebText(props) {
                     href={'https://www.roshan-ai.ir/alefba/'}
                     id={'link-alefba'}
                     title={'دربارهٔ الفبا'}
+                    onClick={() => window.amplitude.getInstance().logEvent('clicked-on-alefba')}
                 >
                     <rect
                         id="Hidden Layer"
