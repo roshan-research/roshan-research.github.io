@@ -81,10 +81,11 @@
   }
 
   #navigation-button {
-    margin-top: 85vh;
+    position: fixed;
+    left: 36px;
+    bottom: 24px;
     width: 35vw;
     height: 10vw;
-    margin-right: 55vw;
     font-size: 4vw;
   }
 }
