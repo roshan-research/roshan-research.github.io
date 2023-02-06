@@ -1,5 +1,4 @@
 import './App.scss';
-import { Carousel } from 'react-responsive-carousel';
 import pic3 from './assets/images/pic1.jpg';
 import pic2 from './assets/images/pic2.jpg';
 import pic1 from './assets/images/pic3.jpg';
@@ -11,6 +10,12 @@ import burgerIcon from './assets/images/menu-icon.svg';
 import MenuLinks from './components/MenuLinks';
 import { useState } from 'react';
 import Clients from './components/Clients';
+import { Navigation, Pagination, Autoplay } from 'swiper';
+import { Swiper, SwiperSlide } from 'swiper/react';
+import 'swiper/css';
+import 'swiper/css/autoplay';
+import 'swiper/css/navigation';
+import 'swiper/css/pagination';
 
 function App() {
     const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
@@ -93,29 +98,31 @@ function App() {
                     <p id={'title'}>جمعی از استــــعدادهای جــوان و خــلاق</p>
                 </div>
                 <div style={{ marginTop: '5vw' }}>
-                    <Carousel
-                        id={'pics'}
-                        autoPlay={true}
-                        emulateTouch={true}
-                        infiniteLoop={true}
-                        width={'100%'}
-                        showArrows={true}
-                        showIndicators={true}
-                        showStatus={false}
-                        transitionTime={1000}
-                        useKeyboardArrows={true}
-                        showThumbs={false}
+                    <Swiper
+                        modules={[Navigation, Pagination, Autoplay]}
+                        navigation={true}
+                        pagination={{ clickable: true }}
+                        loop={true}
+                        autoplay={{
+                            delay: 2500,
+                            disableOnInteraction: false,
+                            pauseOnMouseEnter: true,
+                        }}
+                        spaceBetween={0}
+                        slidesPerView={1}
+                        onSlideChange={() => console.log('slide change')}
+                        onSwiper={(swiper) => console.log(swiper)}
                     >
-                        <div>
-                            <img src={pic3} alt={''} />
-                        </div>
-                        <div>
-                            <img src={pic2} alt={''} />
-                        </div>
-                        <div>
-                            <img src={pic1} alt={''} />
-                        </div>
-                    </Carousel>
+                        <SwiperSlide>
+                            <img className="swiper-img" src={pic3} alt={''} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="swiper-img" src={pic2} alt={''} />
+                        </SwiperSlide>
+                        <SwiperSlide>
+                            <img className="swiper-img" src={pic1} alt={''} />
+                        </SwiperSlide>
+                    </Swiper>
                     <Clients />
                     <Footer />
                 </div>
