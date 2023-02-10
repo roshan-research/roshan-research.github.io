@@ -47,7 +47,7 @@ const MainSection = () => {
                         <p className={'mobile-menu-link'}>صفحهٔ اصلی</p>
                     </a>
                     <a href="https://www.roshan-ai.ir/about-us/">
-                        <p className={'mobile-menu-link'}>دربارهٔ روشن</p>
+                        <p className={'mobile-menu-link'}>دربارهٔ ما</p>
                     </a>
                     <a href="https://www.roshan-ai.ir/contact-us/">
                         <p className={'mobile-menu-link'}>تماس با ما</p>
@@ -61,8 +61,8 @@ const MainSection = () => {
                 id={'main-screen'}
                 style={isOpen ? displayNoneStyle : displayBlockStyle}
             >
-                <p id={'orange-text'}>حرف، تبدیل گفتار به متن</p>
-                <p id={'white-text'}>این ابزار، گفتار رسمی و محاوره‌ای فارسی را با سرعت طبیعی کلام، به متن‌های قابل ویرایش تبدیل می‌کند.</p>
+                <p id={'orange-text'}>تبدیل گفتار به متن</p>
+                <p id={'white-text'}>ابزار حرف، گفتار رسمی و محاوره‌ای فارسی را با سرعت طبیعی کلام، به متن‌های قابل ویرایش تبدیل می‌کند.</p>
                 <div id={'papers'}>
                     <img src={Papers} id={'paper-image'} alt={''} />
                 </div>

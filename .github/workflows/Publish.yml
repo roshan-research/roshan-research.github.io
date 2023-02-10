@@ -24,8 +24,7 @@ jobs:
             build(){                   
                 src=$root/src/$1-src/      
                 cd $src
-                rm -rf node_modules package-lock.json
-                npm install --legacy-peer-deps && npm run build
+                rm -rf node_modules package-lock.json && npm install --force && npm run build
 
                 if [ $1 = "main" ]; then              
                     cp -r $src/build/* $root/

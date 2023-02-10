@@ -62,7 +62,7 @@ function App() {
                         href={'https://www.roshan-ai.ir/about-us'}
                         className={'menu-link'}
                     >
-                        دربارهٔ روشن
+                        دربارهٔ ما
                     </a>
                     <a
                         href={'https://www.roshan-ai.ir/contact-us'}

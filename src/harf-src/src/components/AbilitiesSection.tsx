@@ -101,9 +101,9 @@ const AbilitiesSection = () => {
                                         : 'black-text'
                                 }
                                 ref={right1Ref}
-                                data-title={'فهم گفتار محاوره‌ای'}
+                                data-title={'درک گفتار محاوره‌ای'}
                             >
-                                فهم گفتار محاوره‌ای
+                                درک گفتار محاوره‌ای
                             </p>
                             <p
                                 className={
@@ -112,13 +112,13 @@ const AbilitiesSection = () => {
                                         : 'black-text-background'
                                 }
                                 ref={right1Ref}
-                                data-title={'فهم گفتار محاوره‌ای'}
+                                data-title={'درک گفتار محاوره‌ای'}
                             >
-                                فهم گفتار محاوره‌ای
+                                درک گفتار محاوره‌ای
                             </p>
                         </div>
                         <p className={'white-text'}>
-                            فهم گفتار محاوره‌ای و تبدیل آن به متن
+                         تشخیص زبان گفتاری و تبدیل آن به متن 
                         </p>
                     </div>
                     <div className={'ability-group on-left'} id={'right-2'}>

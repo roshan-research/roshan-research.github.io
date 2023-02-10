@@ -30,7 +30,7 @@ class Header extends Component {
                         صفحهٔ اصلی
                     </a>
                     <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
-                        دربارهٔ روشن
+                        دربارهٔ ما
                     </a>
                     <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
                         تماس با ما

@@ -65,7 +65,7 @@ function HamburgerMenuSlides(props) {
                     <a href={'https://www.roshan-ai.ir/about-us'}
                        className={initialState? 'hamburger-menu-button about-in': 'hamburger-menu-button'}
                     >
-                        دربارهٔ روشن
+                        دربارهٔ ما
                     </a>
                 </div>
                 <div id={'hamburger-footer'}>

@@ -83,7 +83,7 @@ function HamburgerMenu(props) {
                                 : 'hamburger-menu-button'
                         }
                     >
-                        دربارهٔ روشن
+                        دربارهٔ ما
                     </a>
                 </div>
                 <div id={'hamburger-footer'}>
