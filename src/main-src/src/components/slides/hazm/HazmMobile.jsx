@@ -71,7 +71,7 @@ function HazmMobile(props) {
     />
             <a 
                 className='hazm-link-mobile' 
-                href={'https://www.sobhe.ir/hazm'}
+                href={'https://www.roshan-ai.ir/hazm'}
                 onClick={() => window.amplitude.getInstance().logEvent('clicked-on-hazm')}
             >
                 <motion.path

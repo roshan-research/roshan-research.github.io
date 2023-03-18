@@ -143,7 +143,7 @@ function HazmWebText(props) {
                 />
                 <a
                     target="_blank"
-                    href={'https://www.sobhe.ir/hazm'}
+                    href={'https://www.roshan-ai.ir/hazm'}
                     id={'link-hazm'}
                     title={'دربارهٔ هضم'}
                     onClick={() => window.amplitude.getInstance().logEvent('clicked-on-hazm')}
