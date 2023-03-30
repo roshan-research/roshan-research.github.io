@@ -1,21 +1,41 @@
 <!DOCTYPE html>
 <html lang="fa">
-<head>
-    <meta charset="utf-8" />
-    <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
-    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <head>
+        <!-- Google Tag Manager -->
+        <script>
+            (function (w, d, s, l, i) {
+                w[l] = w[l] || [];
+                w[l].push({
+                    'gtm.start': new Date().getTime(),
+                    event: 'gtm.js',
+                });
+                var f = d.getElementsByTagName(s)[0],
+                    j = d.createElement(s),
+                    dl = l != 'dataLayer' ? '&l=' + l : '';
+                j.async = true;
+                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+                f.parentNode.insertBefore(j, f);
+            })(window, document, 'script', 'dataLayer', 'GTM-M7JNSQQ');
+        </script>
+        <!-- End Google Tag Manager -->
+        <meta charset="utf-8" />
+        <link rel="icon" href="%PUBLIC_URL%/logo.ico" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
 
-    <meta name="theme-color" content="#000000" />
+        <meta name="theme-color" content="#000000" />
 
-    <meta name="description" content="نویسه‌خوان الفبا (OCR فارسی) محصولی دانش‌بنیان برای تبدیل تصاویر یا فایل‌های PDF به متن است." />
+        <meta
+            name="description"
+            content="نویسه‌خوان الفبا (OCR فارسی) محصولی دانش‌بنیان برای تبدیل تصاویر یا فایل‌های PDF به متن است."
+        />
 
-    <meta name="keywords" content="ocr,او سی آر فارسی,تبدیل تصویر به متن" />
-    <!--
+        <meta name="keywords" content="ocr,او سی آر فارسی,تبدیل تصویر به متن" />
+        <!--
       manifest.json provides metadata used when your web app is installed on a
       user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
     -->
-    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
-    <!--
+        <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+        <!--
       Notice the use of %PUBLIC_URL% in the tags above.
       It will be replaced with the URL of the `public` folder during the build.
       Only files inside the `public` folder can be referenced from tاe HTML.
@@ -24,63 +44,158 @@
       work correctly both with client-side routing and a non-root public URL.
       Learn how to configure a non-root public URL by running `npm run build`.
     -->
-    <title>الفبا (OCR فارسی)</title>
+        <title>الفبا (OCR فارسی)</title>
 
-    <style>
-        @keyframes in {
-            0% {
-                opacity: 0;
+        <style>
+            @keyframes in {
+                0% {
+                    opacity: 0;
+                }
+                100% {
+                    opacity: 1;
+                }
             }
-            100% {
-                opacity: 1;
+
+            #root {
+                animation-duration: 5s;
+                animation-name: in;
+                animation-fill-mode: forwards;
+                animation-iteration-count: 1;
+                animation-play-state: paused;
             }
+        </style>
+    </head>
+    <body style="background-color: black" onload="loader()">
+        <!-- Google Tag Manager (noscript) -->
+        <noscript
+            ><iframe
+                src="https://www.googletagmanager.com/ns.html?id=GTM-M7JNSQQ"
+                height="0"
+                width="0"
+                style="display: none; visibility: hidden"
+            ></iframe
+        ></noscript>
+        <!-- End Google Tag Manager (noscript) -->
+        <noscript>You need to enable JavaScript to run this app.</noscript>
+        <div id="root"></div>
+    </body>
+    <script type="text/javascript">
+        let rootTag = document.querySelector('#root');
+        function loader() {
+            rootTag.style.animationPlayState = 'running';
         }
+    </script>
+    <script type="text/javascript">
+        (function (e, t) {
+            var n = e.amplitude || { _q: [], _iq: {} };
+            var r = t.createElement('script');
+            r.type = 'text/javascript';
+            r.integrity =
+                'sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS';
+            r.crossOrigin = 'anonymous';
+            r.async = true;
+            r.src = 'https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js';
+            r.onload = function () {
+                if (!e.amplitude.runQueuedFunctions) {
+                    console.log('[Amplitude] Error: could not load SDK');
+                }
+            };
+            var i = t.getElementsByTagName('script')[0];
+            i.parentNode.insertBefore(r, i);
+            function s(e, t) {
+                e.prototype[t] = function () {
+                    this._q.push(
+                        [t].concat(Array.prototype.slice.call(arguments, 0))
+                    );
+                    return this;
+                };
+            }
+            var o = function () {
+                this._q = [];
+                return this;
+            };
+            var a = [
+                'add',
+                'append',
+                'clearAll',
+                'prepend',
+                'set',
+                'setOnce',
+                'unset',
+                'preInsert',
+                'postInsert',
+                'remove',
+            ];
+            for (var c = 0; c < a.length; c++) {
+                s(o, a[c]);
+            }
+            n.Identify = o;
+            var u = function () {
+                this._q = [];
+                return this;
+            };
+            var l = [
+                'setProductId',
+                'setQuantity',
+                'setPrice',
+                'setRevenueType',
+                'setEventProperties',
+            ];
+            for (var p = 0; p < l.length; p++) {
+                s(u, l[p]);
+            }
+            n.Revenue = u;
+            var d = [
+                'init',
+                'logEvent',
+                'logRevenue',
+                'setUserId',
+                'setUserProperties',
+                'setOptOut',
+                'setVersionName',
+                'setDomain',
+                'setDeviceId',
+                'enableTracking',
+                'setGlobalUserProperties',
+                'identify',
+                'clearUserProperties',
+                'setGroup',
+                'logRevenueV2',
+                'regenerateDeviceId',
+                'groupIdentify',
+                'onInit',
+                'logEventWithTimestamp',
+                'logEventWithGroups',
+                'setSessionId',
+                'resetSessionId',
+            ];
+            function v(e) {
+                function t(t) {
+                    e[t] = function () {
+                        e._q.push(
+                            [t].concat(Array.prototype.slice.call(arguments, 0))
+                        );
+                    };
+                }
+                for (var n = 0; n < d.length; n++) {
+                    t(d[n]);
+                }
+            }
+            v(n);
+            n.getInstance = function (e) {
+                e = (
+                    !e || e.length === 0 ? '$default_instance' : e
+                ).toLowerCase();
+                if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+                    n._iq[e] = { _q: [] };
+                    v(n._iq[e]);
+                }
+                return n._iq[e];
+            };
+            e.amplitude = n;
+        })(window, document);
 
-        #root {
-            animation-duration: 5s;
-            animation-name: in;
-            animation-fill-mode: forwards;
-            animation-iteration-count: 1;
-            animation-play-state: paused;
-        }
-    </style>
-</head>
-<body style="background-color:black" onload="loader()">
-    <noscript>You need to enable JavaScript to run this app.</noscript>
-    <div id="root"></div>
-</body>
-<script type="text/javascript">
-    let rootTag = document.querySelector("#root");
-    function loader() {
-        rootTag.style.animationPlayState = "running";
-    }
-</script>
-<script type="text/javascript">
-    (function(e,t){var n=e.amplitude||{_q:[],_iq:{}};var r=t.createElement("script")
-    ;r.type="text/javascript"
-    ;r.integrity="sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS"
-    ;r.crossOrigin="anonymous";r.async=true
-    ;r.src="https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js"
-    ;r.onload=function(){if(!e.amplitude.runQueuedFunctions){
-        console.log("[Amplitude] Error: could not load SDK")}}
-    ;var i=t.getElementsByTagName("script")[0];i.parentNode.insertBefore(r,i)
-    ;function s(e,t){e.prototype[t]=function(){
-        this._q.push([t].concat(Array.prototype.slice.call(arguments,0)));return this}}
-        var o=function(){this._q=[];return this}
-        ;var a=["add","append","clearAll","prepend","set","setOnce","unset","preInsert","postInsert","remove"]
-        ;for(var c=0;c<a.length;c++){s(o,a[c])}n.Identify=o;var u=function(){this._q=[]
-            ;return this}
-        ;var l=["setProductId","setQuantity","setPrice","setRevenueType","setEventProperties"]
-        ;for(var p=0;p<l.length;p++){s(u,l[p])}n.Revenue=u
-        ;var d=["init","logEvent","logRevenue","setUserId","setUserProperties","setOptOut","setVersionName","setDomain","setDeviceId","enableTracking","setGlobalUserProperties","identify","clearUserProperties","setGroup","logRevenueV2","regenerateDeviceId","groupIdentify","onInit","logEventWithTimestamp","logEventWithGroups","setSessionId","resetSessionId"]
-        ;function v(e){function t(t){e[t]=function(){
-            e._q.push([t].concat(Array.prototype.slice.call(arguments,0)))}}
-            for(var n=0;n<d.length;n++){t(d[n])}}v(n);n.getInstance=function(e){
-            e=(!e||e.length===0?"$default_instance":e).toLowerCase()
-            ;if(!Object.prototype.hasOwnProperty.call(n._iq,e)){n._iq[e]={_q:[]};v(n._iq[e])
-            }return n._iq[e]};e.amplitude=n})(window,document);
-
-    amplitude.getInstance().init("f0f30f297c9d6b363ee9285ba7b633f1");
-    amplitude.getInstance().logEvent('visited-alefba');
-</script>
+        amplitude.getInstance().init('f0f30f297c9d6b363ee9285ba7b633f1');
+        amplitude.getInstance().logEvent('visited-alefba');
+    </script>
 </html>
