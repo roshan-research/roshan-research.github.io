@@ -32,10 +32,10 @@ class Header extends Component {
                     <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
                         دربارهٔ ما
                     </a>
-                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                    <a href={'https://www.roshan-ai.ir/contact-us'} id={'mobile-menu-link'}>
                         تماس با ما
                     </a>
-                    <a href={'https://www.roshan-ai.ir/about-us'} id={'mobile-menu-link'}>
+                    <a href={'https://www.roshan-ai.ir/join-us'} id={'mobile-menu-link'}>
                         همکاری با ما
                     </a>
                 </div>
