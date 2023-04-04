@@ -36,10 +36,9 @@ jobs:
                 else
                     cp -r "$src/build/"* "$root/$1/"
                 fi
-            }
-            
-            products=("main" "alefba" "harf")
-            #products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")
+            }           
+           
+            products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")
 
             for product in "${products[@]}"; do
                 build "$product"
