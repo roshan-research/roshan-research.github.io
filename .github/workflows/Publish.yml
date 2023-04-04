@@ -16,6 +16,11 @@ jobs:
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
+          
+      - name: Setup node
+        uses: actions/setup-node@v3
+        with:
+            node-version: 16
       
       - name: Build
         run: |
@@ -24,14 +29,12 @@ jobs:
 
             build() {
                 src="$root/src/$1-src/"
-                cd "$src"
-                rm -rf node_modules package-lock.json
-                npm install --legacy-peer-deps && npm run build
+                cd "$src"                
+                npm run build
 
                 if [ "$1" = "main" ]; then
                     cp -r "$src/build/"* "$root/"
-                else
-                    rm -rf "$root/$1/"
+                else                    
                     mkdir "$root/$1/"
                     cp -r "$src/build/"* "$root/$1/"
                 fi
