@@ -6,8 +6,7 @@ build() {
     npm run build
     if [ "$1" = "main" ]; then
         cp -r "$src/build/"* "$root/"
-    else                    
-        mkdir "$root/$1/"
+    else             
         cp -r "$src/build/"* "$root/$1/"
     fi
 }
