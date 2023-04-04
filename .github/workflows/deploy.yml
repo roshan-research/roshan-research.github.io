@@ -1,4 +1,4 @@
-name: Deploy
+name: deploy
 
 on: [push, workflow_dispatch]
     
@@ -39,8 +39,9 @@ jobs:
                     cp -r "$src/build/"* "$root/$1/"
                 fi
             }
-
-            products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")
+            
+            products=("main")
+            #products=("main" "about-us" "join-us" "contact-us" "alefba" "harf")
 
             for product in "${products[@]}"; do
                 build "$product"
