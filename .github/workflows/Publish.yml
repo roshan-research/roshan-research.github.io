@@ -29,7 +29,8 @@ jobs:
 
             build() {
                 src="$root/src/$1-src/"
-                cd "$src"                
+                cd "$src"
+                npm install
                 npm run build
 
                 if [ "$1" = "main" ]; then
