@@ -1,203 +1,241 @@
+<!-- 
+██████╗  ██████╗ ███████╗██╗  ██╗ █████╗ ███╗   ██╗
+██╔══██╗██╔═══██╗██╔════╝██║  ██║██╔══██╗████╗  ██║
+██████╔╝██║   ██║███████╗███████║███████║██╔██╗ ██║
+██╔══██╗██║   ██║╚════██║██╔══██║██╔══██║██║╚██╗██║
+██║  ██║╚██████╔╝███████║██║  ██║██║  ██║██║ ╚████║
+╚═╝  ╚═╝ ╚═════╝ ╚══════╝╚═╝  ╚═╝╚═╝  ╚═╝╚═╝  ╚═══╝
+-->
 <!DOCTYPE html>
 <html lang="fa" dir="rtl">
-    <head>
-        <!-- Google Tag Manager -->
-        <script>
-            (function (w, d, s, l, i) {
-                w[l] = w[l] || [];
-                w[l].push({
-                    'gtm.start': new Date().getTime(),
-                    event: 'gtm.js',
-                });
-                var f = d.getElementsByTagName(s)[0],
-                    j = d.createElement(s),
-                    dl = l != 'dataLayer' ? '&l=' + l : '';
-                j.async = true;
-                j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
-                f.parentNode.insertBefore(j, f);
-            })(window, document, 'script', 'dataLayer', 'GTM-M7JNSQQ');
-        </script>
-        <!-- End Google Tag Manager -->
-        <meta charset="utf-8" />
-        <meta
-            name="google-site-verification"
-            content="5lP5AbmlkQNBWGZvF5LSTH5DyRTV7BtZMOoKzXhbWbc"
-        />
-        <link rel="icon" href="%PUBLIC_URL%/logo.png" />
-        <meta name="viewport" content="width=device-width,initial-scale=1.0" />
-        <meta
-            name="description"
-            content="شرکت دانش‌بنیان «راهکار پردازش ژرف» در سال ۱۳۹۵ با تمرکز بر موضوع هوش مصنوعی و با همت گروهی از پژوهشگران و متخصصان جوان، فعالیت خود را آغاز کرد. این شرکت در سال‌های بعد با نام تجاری «روشن» دایرهٔ فعالیت‌هایی خود را گسترش داد و توانست اعتماد بسیاری از کسب‌وکارها و سازمان‌ها را به دست آورد. باعث افتخار است که مجموعه‌هایی نام‌آور و خوش‌نام، محصولات این شرکت را انتخاب کرده‌اند و امید می‌رود که با روی آوردن هرچه بیشتر متخصصان و کسب‌وکارها به فناوری هوش مصنوعی، دامنهٔ خدمت‌رسانی «روشن» بیش از پیش گسترش یابد."
-        />
-        <meta name="theme-color" content="#000000" />
-        <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
-        <meta name="keywords" content="کشف, هضم, الفبا, حرف" />
+	<head>
+		<title>روشن</title>
+		<meta charset="utf-8" /> 
+		<meta name="viewport" content="width=device-width,initial-scale=1.0" />
+		<meta name="keywords" content="کشف, هضم, الفبا, حرف" />
+		<meta name="google-site-verification" content="5lP5AbmlkQNBWGZvF5LSTH5DyRTV7BtZMOoKzXhbWbc"/>
+		<base href="https://www.roshan-ai.ir/">
 
-        <link rel="canonical" href="https://www.roshan-ai.ir/kashf/" />
-        <link rel="canonical" href="https://www.roshan-ai.ir/hazm/" />
-        <link rel="canonical" href="https://www.roshan-ai.ir/alefba/" />
-        <title>روشن</title>
-        <style>
-            @keyframes in {
-                0% {
-                    opacity: 0;
-                }
-                100% {
-                    opacity: 1;
-                }
-            }
+		<!-- Google Tag Manager -->
+		<script>
+			(function (w, d, s, l, i) {
+				w[l] = w[l] || [];
+				w[l].push({
+					'gtm.start': new Date().getTime(),
+					event: 'gtm.js',
+				});
+				var f = d.getElementsByTagName(s)[0],
+					j = d.createElement(s),
+					dl = l != 'dataLayer' ? '&l=' + l : '';
+				j.async = true;
+				j.src = 'https://www.googletagmanager.com/gtm.js?id=' + i + dl;
+				f.parentNode.insertBefore(j, f);
+			})(window, document, 'script', 'dataLayer', 'GTM-M7JNSQQ');
+		</script>
+		<!-- End Google Tag Manager -->
+	
+	<!-- <meta http-equiv="Content-Security-Policy" content="default-src 'self'"> -->
+	<meta name="theme-color" content="#000000">
+	<meta name="mobile-web-app-capable" content="yes">
+	<meta name="description" content="شرکت راهکار پردازش ژرف (با نام تجاری روشن)، شرکتی دانش‌بنیان در حیطهٔ هوش مصنوعی است.">
+	<meta name="robots" content="index,follow">
+	<meta name="googlebot" content="index,follow">
+	<meta name="subject" content="شرکت روشن">
+	<meta name="rating" content="General">
+	<meta name="ICBM" content="35.71132056185585, 51.410531558563704">
+	<meta name="geo.position" content="35.71132056185585;51.410531558563704">
+	<meta name=“geo.region” content=“IR-07” />
+	<meta name="geo.placename" content="Tehran">
+	
+	<!-- <link rel="icon" sizes="192x192" href="icon.png"> -->
+	<!-- <link rel="author" href="humans.txt"> -->
+	<!-- <link rel="mask-icon" href="images/safari.svg" color="#f8bc45"> -->
+    <!--<link rel="apple-touch-startup-image" href="/path/to/launch.png">-->
+	<link rel="icon" type="image/png" href="%PUBLIC_URL%/logo.png" /> 
+	<link rel="me" href="mailto:salam@roshan-ai.ir">
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
 
-            #root {
-                animation-duration: 5s;
-                animation-name: in;
-                animation-fill-mode: forwards;
-                animation-iteration-count: 1;
-                animation-play-state: paused;
+	<!-- <link rel="dns-prefetch" href="https://www.roshan-ai.ir/">
+	<link rel="preconnect" href="https://www.roshan-ai.ir/">
+	<link rel="prefetch" href="https://www.roshan-ai.ir/">
+	<link rel="prerender" href="https://www.roshan-ai.ir/"> -->
+	<link rel="canonical" href="https://www.roshan-ai.ir/kashf/" />
+	<link rel="canonical" href="https://www.roshan-ai.ir/hazm/" />
+	<link rel="canonical" href="https://www.roshan-ai.ir/alefba/" />
+
+	<!-- Tweeter card -->
+	<meta name="twitter:title" content="روشن">
+	<meta name="twitter:description" content="شرکت راهکار پردازش ژرف (با نام تجاری روشن)، شرکتی دانش‌بنیان در حیطهٔ هوش مصنوعی است.">
+	<meta name="twitter:url" content="https://www.roshan-ai.ir/">
+	<!--<meta name="twitter:image" content="images/image.jpg">
+	<meta name="twitter:card" content="summary large image">
+	<meta name="twitter:site" content="@roshan-ai">
+	<meta name="twitter:creator" content="@roshan-ai">
+	<meta name="twitter:image:alt" content="A text description of the image. Maximum 420 characters.">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+	<meta name="apple-mobile-web-app-capable" content="yes">-->
+
+    <style>
+        @keyframes in {
+            0% {
+                opacity: 0;
             }
-        </style>
-    </head>
-    <body style="background-color: #020202; overflow: hidden" onload="loader()">
-        <!-- Google Tag Manager (noscript) -->
-        <noscript
-            ><iframe
-                src="https://www.googletagmanager.com/ns.html?id=GTM-M7JNSQQ"
-                height="0"
-                width="0"
-                style="display: none; visibility: hidden"
-            ></iframe
-        ></noscript>
-        <!-- End Google Tag Manager (noscript) -->
-        <noscript>You need to enable JavaScript to run this app.</noscript>
-        <div id="root"></div>
-        <!-- PWA Script -->
-        <script>
-            if ('serviceWorker' in navigator) {
-                window.addEventListener('load', () => {
-                    navigator.serviceWorker
-                        .register('./serviceWorker.js')
-                        .then((reg) => console.log('Success: ', reg.scope))
-                        .catch((err) => console.log('Failure: ', err));
-                });
+            100% {
+                opacity: 1;
             }
-        </script>
-    </body>
-    <script type="text/javascript">
-        let rootTag = document.querySelector('#root');
-        function loader() {
-            rootTag.style.animationPlayState = 'running';
         }
-    </script>
-    <script type="text/javascript">
-        (function (e, t) {
-            var n = e.amplitude || { _q: [], _iq: {} };
-            var r = t.createElement('script');
-            r.type = 'text/javascript';
-            r.integrity =
-                'sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS';
-            r.crossOrigin = 'anonymous';
-            r.async = true;
-            r.src = 'https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js';
-            r.onload = function () {
-                if (!e.amplitude.runQueuedFunctions) {
-                    console.log('[Amplitude] Error: could not load SDK');
-                }
-            };
-            var i = t.getElementsByTagName('script')[0];
-            i.parentNode.insertBefore(r, i);
-            function s(e, t) {
-                e.prototype[t] = function () {
-                    this._q.push(
-                        [t].concat(Array.prototype.slice.call(arguments, 0))
-                    );
-                    return this;
-                };
-            }
-            var o = function () {
-                this._q = [];
-                return this;
-            };
-            var a = [
-                'add',
-                'append',
-                'clearAll',
-                'prepend',
-                'set',
-                'setOnce',
-                'unset',
-                'preInsert',
-                'postInsert',
-                'remove',
-            ];
-            for (var c = 0; c < a.length; c++) {
-                s(o, a[c]);
-            }
-            n.Identify = o;
-            var u = function () {
-                this._q = [];
-                return this;
-            };
-            var l = [
-                'setProductId',
-                'setQuantity',
-                'setPrice',
-                'setRevenueType',
-                'setEventProperties',
-            ];
-            for (var p = 0; p < l.length; p++) {
-                s(u, l[p]);
-            }
-            n.Revenue = u;
-            var d = [
-                'init',
-                'logEvent',
-                'logRevenue',
-                'setUserId',
-                'setUserProperties',
-                'setOptOut',
-                'setVersionName',
-                'setDomain',
-                'setDeviceId',
-                'enableTracking',
-                'setGlobalUserProperties',
-                'identify',
-                'clearUserProperties',
-                'setGroup',
-                'logRevenueV2',
-                'regenerateDeviceId',
-                'groupIdentify',
-                'onInit',
-                'logEventWithTimestamp',
-                'logEventWithGroups',
-                'setSessionId',
-                'resetSessionId',
-            ];
-            function v(e) {
-                function t(t) {
-                    e[t] = function () {
-                        e._q.push(
-                            [t].concat(Array.prototype.slice.call(arguments, 0))
-                        );
-                    };
-                }
-                for (var n = 0; n < d.length; n++) {
-                    t(d[n]);
-                }
-            }
-            v(n);
-            n.getInstance = function (e) {
-                e = (
-                    !e || e.length === 0 ? '$default_instance' : e
-                ).toLowerCase();
-                if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
-                    n._iq[e] = { _q: [] };
-                    v(n._iq[e]);
-                }
-                return n._iq[e];
-            };
-            e.amplitude = n;
-        })(window, document);
 
-        amplitude.getInstance().init('f0f30f297c9d6b363ee9285ba7b633f1');
-        amplitude.getInstance().logEvent('visited');
-    </script>
+        #root {
+            animation-duration: 5s;
+            animation-name: in;
+            animation-fill-mode: forwards;
+            animation-iteration-count: 1;
+            animation-play-state: paused;
+        }
+    </style>
+	</head>
+	<body style="background-color: #020202; overflow: hidden" onload="loader()">
+		<!-- Google Tag Manager (noscript) -->
+		<noscript
+			><iframe
+				src="https://www.googletagmanager.com/ns.html?id=GTM-M7JNSQQ"
+				height="0"
+				width="0"
+				style="display: none; visibility: hidden"
+			></iframe
+		></noscript>
+		<!-- End Google Tag Manager (noscript) -->
+		<noscript>You need to enable JavaScript to run this app.</noscript>
+		<div id="root"></div>
+		<!-- PWA Script -->
+		<script>
+			if ('serviceWorker' in navigator) {
+				window.addEventListener('load', () => {
+					navigator.serviceWorker
+						.register('./serviceWorker.js')
+						.then((reg) => console.log('Success: ', reg.scope))
+						.catch((err) => console.log('Failure: ', err));
+				});
+			}
+		</script>
+	</body>
+	<script type="text/javascript">
+		let rootTag = document.querySelector('#root');
+		function loader() {
+			rootTag.style.animationPlayState = 'running';
+		}
+	</script>
+	<script type="text/javascript">
+		(function (e, t) {
+			var n = e.amplitude || { _q: [], _iq: {} };
+			var r = t.createElement('script');
+			r.type = 'text/javascript';
+			r.integrity =
+				'sha384-tzcaaCH5+KXD4sGaDozev6oElQhsVfbJvdi3//c2YvbY02LrNlbpGdt3Wq4rWonS';
+			r.crossOrigin = 'anonymous';
+			r.async = true;
+			r.src = 'https://cdn.amplitude.com/libs/amplitude-8.5.0-min.gz.js';
+			r.onload = function () {
+				if (!e.amplitude.runQueuedFunctions) {
+					console.log('[Amplitude] Error: could not load SDK');
+				}
+			};
+			var i = t.getElementsByTagName('script')[0];
+			i.parentNode.insertBefore(r, i);
+			function s(e, t) {
+				e.prototype[t] = function () {
+					this._q.push(
+						[t].concat(Array.prototype.slice.call(arguments, 0))
+					);
+					return this;
+				};
+			}
+			var o = function () {
+				this._q = [];
+				return this;
+			};
+			var a = [
+				'add',
+				'append',
+				'clearAll',
+				'prepend',
+				'set',
+				'setOnce',
+				'unset',
+				'preInsert',
+				'postInsert',
+				'remove',
+			];
+			for (var c = 0; c < a.length; c++) {
+				s(o, a[c]);
+			}
+			n.Identify = o;
+			var u = function () {
+				this._q = [];
+				return this;
+			};
+			var l = [
+				'setProductId',
+				'setQuantity',
+				'setPrice',
+				'setRevenueType',
+				'setEventProperties',
+			];
+			for (var p = 0; p < l.length; p++) {
+				s(u, l[p]);
+			}
+			n.Revenue = u;
+			var d = [
+				'init',
+				'logEvent',
+				'logRevenue',
+				'setUserId',
+				'setUserProperties',
+				'setOptOut',
+				'setVersionName',
+				'setDomain',
+				'setDeviceId',
+				'enableTracking',
+				'setGlobalUserProperties',
+				'identify',
+				'clearUserProperties',
+				'setGroup',
+				'logRevenueV2',
+				'regenerateDeviceId',
+				'groupIdentify',
+				'onInit',
+				'logEventWithTimestamp',
+				'logEventWithGroups',
+				'setSessionId',
+				'resetSessionId',
+			];
+			function v(e) {
+				function t(t) {
+					e[t] = function () {
+						e._q.push(
+							[t].concat(Array.prototype.slice.call(arguments, 0))
+						);
+					};
+				}
+				for (var n = 0; n < d.length; n++) {
+					t(d[n]);
+				}
+			}
+			v(n);
+			n.getInstance = function (e) {
+				e = (
+					!e || e.length === 0 ? '$default_instance' : e
+				).toLowerCase();
+				if (!Object.prototype.hasOwnProperty.call(n._iq, e)) {
+					n._iq[e] = { _q: [] };
+					v(n._iq[e]);
+				}
+				return n._iq[e];
+			};
+			e.amplitude = n;
+		})(window, document);
+
+		amplitude.getInstance().init('f0f30f297c9d6b363ee9285ba7b633f1');
+		amplitude.getInstance().logEvent('visited');
+	</script>
 </html>
