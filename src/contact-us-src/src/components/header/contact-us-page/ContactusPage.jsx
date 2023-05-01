@@ -42,8 +42,8 @@ export default function ContactusPage(props) {
                     <div id={'phone-row'}>
                         <img id={'phone-icon'} src={phoneSource} alt={''}/>
                         <p id={'phone-text'} className={'link-content'}>                            
-                            <a href={'tel:+98 21 88943638'}>
-                                88943638 21 98+
+                            <a href={'tel:+98 21 88908710'}>
+                                88908710 21 98+
                             </a>
                         </p>
                     </div>
