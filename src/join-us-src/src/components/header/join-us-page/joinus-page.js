@@ -17,7 +17,7 @@ export default function JoinusPage() {
                     <p>جای درستی آمده‌اید.</p>
                 </div>
                 <div className="social">
-                    <a href="mailto:salam@roshan-ai.ir">
+                    <a href="mailto:hamkari@roshan-ai.ir">
                         <img src={Mail} alt="" width="76" height="34" />
                     </a>
                     <a href="https://www.linkedin.com/company/roshan-ai/">
