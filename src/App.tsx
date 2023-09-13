@@ -2,6 +2,7 @@ import Logo from '@/assets/images/logo.png';
 import Menu from '@/assets/images/menu.png';
 import ArticleMain from '@/components/article-main/ArticleMain';
 import ArticleFeatures from './components/article-features/ArticleFeatures';
+import KashUsage from './components/kashf-usage/KashUsage';
 
 function App() {
   return (
@@ -15,6 +16,7 @@ function App() {
       </header>
       <ArticleMain />
       <ArticleFeatures />
+      <KashUsage />
     </div>
   );
 }
