@@ -1,11 +1,7 @@
 import { FC } from "react";
+import { IconProps } from "../chart-icon";
 
-type ButterflyProps = {
-  width: number;
-  height: number;
-};
-
-const Butterfly: FC<ButterflyProps> = ({ width, height }) => {
+const Butterfly: FC<IconProps> = ({ width, height }) => {
   return (
     <svg
       width={width}
@@ -13,14 +9,16 @@ const Butterfly: FC<ButterflyProps> = ({ width, height }) => {
       viewBox='0 0 592 888'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      xmlnsXlink='http://www.w3.org/1999/xlink'>
+      xmlnsXlink='http://www.w3.org/1999/xlink'
+    >
       <rect width='592' height='888' fill='url(#pattern0)' />
       <defs>
         <pattern
           id='pattern0'
           patternContentUnits='objectBoundingBox'
           width='1'
-          height='1'>
+          height='1'
+        >
           <use
             xlinkHref='#image0_1856_57'
             transform='scale(0.0021097 0.00140647)'

@@ -15,21 +15,21 @@ const Facilities = () => {
       <div className='flex items-start gap-[200px]'>
         <div className='flex flex-col items-start gap-[238px]'>
           <Facility
-            Image={ProcessIcon}
+            Icon={ProcessIcon}
             width={241}
             height={260}
             title='پردازش زبان طبیعی'
             text='کشف جمله های زبان فارسی را می شناسد. یعنی حجم بسیار زیادی از متون را قبلا دیده است تا بتواند ارتباط معنایی بین واژه ها را بهتر کشف کند.'
           />
           <Facility
-            Image={VectorIcon}
+            Icon={VectorIcon}
             width={243}
             height={243}
             title='دقیق و سریع'
             text='کشف به صورت مداوم دقت را اندازه می گیرد و به کاربر نمایش می دهد تا جمع آوری داده های مهم تسریع شود. کشف میتواند در هر ثانیه 10 هزار واژه را با سخت افزار مناسب (کارت گرافیک) تحلیل کند.'
           />
           <Facility
-            Image={DevelopmentIcon}
+            Icon={DevelopmentIcon}
             width={257}
             height={257}
             title='واسط برنامه نویس کامل'
@@ -38,7 +38,7 @@ const Facilities = () => {
         </div>
         <div className='-mt-[80px] flex flex-col items-start gap-[304px]'>
           <Facility
-            Image={BrainIcon}
+            Icon={BrainIcon}
             width={239}
             height={239}
             left
@@ -46,7 +46,7 @@ const Facilities = () => {
             text='زیربنای کشف، استفاده از فناوری یادگیری عمیق برای تحلیل نوشته و تصویر است. استفاده از یادگیری عمیق است که باعث میشود کشف، بتواند تشابه معنایی را در تصویر و نوشته ها پیدا کند'
           />
           <Facility
-            Image={CpuIcon}
+            Icon={CpuIcon}
             width={221}
             height={221}
             left
@@ -54,7 +54,7 @@ const Facilities = () => {
             text='فناوری یادگیری عمیق، حجم پردازش قابل توجهی نیاز دارد. پردازنده گرافیکی که برای موازی سازی محاسبات طراحی شده است، به کشف امکان میدهد تا تصاویر را چند برابر سریع تر ازحالتی که تنها به پردازنده معمولی دسترسی دارد، تخلیل کند.'
           />
           <Facility
-            Image={connectionIcon}
+            Icon={connectionIcon}
             width={303}
             height={325}
             left

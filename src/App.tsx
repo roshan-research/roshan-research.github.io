@@ -4,6 +4,7 @@ import ArticleMain from "@/components/article-main/ArticleMain";
 import ArticleFeatures from "./components/article-features/ArticleFeatures";
 import KashfUsage from "./components/kashf-usage/KashfUsage";
 import Facilities from "./components/facilities/Facilities";
+import Conclusion from "./components/conclusion/Conclusion";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       <ArticleFeatures />
       <KashfUsage />
       <Facilities />
+      <Conclusion />
     </div>
   );
 }

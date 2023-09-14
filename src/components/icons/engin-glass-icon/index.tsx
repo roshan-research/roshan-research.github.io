@@ -1,9 +1,5 @@
 import { FC } from "react";
-
-export type IconProps = {
-  width: number;
-  height: number;
-};
+import { IconProps } from "../question-icon";
 
 const EnginGlassIcon: FC<IconProps> = ({ width, height }) => {
   return (
@@ -12,7 +8,8 @@ const EnginGlassIcon: FC<IconProps> = ({ width, height }) => {
       height={height}
       viewBox='0 0 85 85'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g opacity='0.25'>
         <path
           d='M82.5139 70.4995L62.4804 50.4661C59.4666 55.3524 55.3524 59.4666 50.4661 62.4804L70.4995 82.5139C72.0934 84.1058 74.254 84.9999 76.5067 84.9999C78.7594 84.9999 80.92 84.1058 82.5139 82.5139C84.1058 80.92 84.9999 78.7594 84.9999 76.5067C84.9999 74.254 84.1058 72.0934 82.5139 70.4995Z'

@@ -1,9 +1,9 @@
-import { IconProps } from "@/components/icons/chart-icon";
+import { IconProps } from "@/shared/types";
 import clsx from "clsx";
 import { FC } from "react";
 
 type FacilityProps = {
-  Image: FC<IconProps>;
+  Icon: FC<IconProps>;
   width: number;
   height: number;
   title: string;
@@ -12,7 +12,7 @@ type FacilityProps = {
 };
 
 const Facility: FC<FacilityProps> = ({
-  Image,
+  Icon,
   width,
   height,
   title,
@@ -22,13 +22,14 @@ const Facility: FC<FacilityProps> = ({
   return (
     <div className='relative'>
       <div className={clsx("absolute top-0", left ? "left-0" : "right-0")}>
-        <Image width={width} height={height} />
+        <Icon width={width} height={height} />
       </div>
       <div
         className={clsx(
           "flex flex-col gap-[10px]",
           left ? "ml-[145px] mt-[120px]" : "mr-[205px] mt-[190px]"
-        )}>
+        )}
+      >
         <span className='text-[24px] font-normal text-[#A76CF3]'>{title}</span>
         <span className='max-w-[390px] text-[18px] font-light text-[#FAFAFA]'>
           {text}

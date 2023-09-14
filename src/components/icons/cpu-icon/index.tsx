@@ -1,9 +1,5 @@
+import { IconProps } from "@/shared/types";
 import { FC } from "react";
-
-export type IconProps = {
-  width: number;
-  height: number;
-};
 
 const CpuIcon: FC<IconProps> = ({ width, height }) => {
   return (
@@ -12,7 +8,8 @@ const CpuIcon: FC<IconProps> = ({ width, height }) => {
       height={height}
       viewBox='0 0 221 221'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g opacity='0.1'>
         <path
           d='M187.801 177.499C187.801 183.022 183.324 187.499 177.801 187.499H43.8008C38.2779 187.499 33.8008 183.022 33.8008 177.499V43.499C33.8008 37.9762 38.2779 33.499 43.8008 33.499H177.801C183.324 33.499 187.801 37.9762 187.801 43.499V177.499ZM44.8008 166.499C44.8008 172.022 49.2779 176.499 54.8008 176.499H166.801C172.324 176.499 176.801 172.022 176.801 166.499V54.499C176.801 48.9762 172.324 44.499 166.801 44.499H54.8008C49.2779 44.499 44.8008 48.9762 44.8008 54.499V166.499Z'

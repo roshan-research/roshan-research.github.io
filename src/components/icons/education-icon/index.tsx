@@ -1,9 +1,5 @@
 import { FC } from "react";
-
-export type IconProps = {
-  width: number;
-  height: number;
-};
+import { IconProps } from "../engin-glass-icon";
 
 const EducationIcon: FC<IconProps> = ({ width, height }) => {
   return (
@@ -12,7 +8,8 @@ const EducationIcon: FC<IconProps> = ({ width, height }) => {
       height={height}
       viewBox='0 0 110 110'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g opacity='0.25'>
         <path
           d='M56.1496 86.9404C36.5322 86.9404 20.6274 77.1063 20.6274 61.369V35.7976H91.6735V61.369C91.6735 74.5925 75.7671 86.9404 56.1496 86.9404Z'

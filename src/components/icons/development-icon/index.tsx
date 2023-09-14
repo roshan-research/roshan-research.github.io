@@ -1,9 +1,5 @@
+import { IconProps } from "@/shared/types";
 import { FC } from "react";
-
-export type IconProps = {
-  width: number;
-  height: number;
-};
 
 const DevelopmentIcon: FC<IconProps> = ({ width, height }) => {
   return (
@@ -12,7 +8,8 @@ const DevelopmentIcon: FC<IconProps> = ({ width, height }) => {
       height={height}
       viewBox='0 0 257 257'
       fill='none'
-      xmlns='http://www.w3.org/2000/svg'>
+      xmlns='http://www.w3.org/2000/svg'
+    >
       <g opacity='0.1'>
         <path
           d='M45.9259 95.457H35.4292C34.4555 95.457 33.5217 95.8438 32.8331 96.5324C32.1446 97.2209 31.7578 98.1547 31.7578 99.1285C31.7578 100.102 32.1446 101.036 32.8331 101.725C33.5217 102.413 34.4555 102.8 35.4292 102.8H45.9222C46.8959 102.8 47.8298 102.413 48.5183 101.725C49.2068 101.036 49.5936 100.102 49.5936 99.1285C49.5936 98.1547 49.2068 97.2209 48.5183 96.5324C47.8298 95.8438 46.8959 95.457 45.9222 95.457H45.9259ZM71.1008 99.1285C71.1008 100.102 71.4877 101.036 72.1762 101.725C72.8647 102.413 73.7985 102.8 74.7723 102.8H85.2652C86.2389 102.8 87.1728 102.413 87.8613 101.725C88.5498 101.036 88.9366 100.102 88.9366 99.1285C88.9366 98.1547 88.5498 97.2209 87.8613 96.5324C87.1728 95.8438 86.2389 95.457 85.2652 95.457H74.7723C73.7985 95.457 72.8647 95.8438 72.1762 96.5324C71.4877 97.2209 71.1008 98.1547 71.1008 99.1285Z'
@@ -25,30 +22,30 @@ const DevelopmentIcon: FC<IconProps> = ({ width, height }) => {
         <path
           d='M46 185.584H75.5833'
           stroke='#A76CF3'
-          stroke-width='6'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='6'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M93.3335 203.333V156H111.083C114.222 156 117.232 157.247 119.451 159.466C121.67 161.685 122.917 164.695 122.917 167.833V173.75C122.917 176.888 121.67 179.898 119.451 182.117C117.232 184.337 114.222 185.583 111.083 185.583H93.3335'
           stroke='#A76CF3'
-          stroke-width='6'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='6'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M140.667 156V203.333'
           stroke='#A76CF3'
-          stroke-width='6'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='6'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
         <path
           d='M75.5833 203.333V170.792C75.5833 166.869 74.0249 163.106 71.251 160.332C68.477 157.558 64.7147 156 60.7917 156C56.8687 156 53.1064 157.558 50.3324 160.332C47.5584 163.106 46 166.869 46 170.792V203.333'
           stroke='#A76CF3'
-          stroke-width='6'
-          stroke-linecap='round'
-          stroke-linejoin='round'
+          strokeWidth='6'
+          strokeLinecap='round'
+          strokeLinejoin='round'
         />
       </g>
     </svg>

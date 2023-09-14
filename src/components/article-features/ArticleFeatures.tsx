@@ -11,7 +11,7 @@ const ArticleFeatures = () => {
       <div className='flex items-start gap-[109px]'>
         <div className='flex flex-col items-start gap-[292px]'>
           <Features
-            Image={EducationIcon}
+            Icon={EducationIcon}
             width={110}
             height={110}
             title={"یادگیری آسان"}
@@ -20,7 +20,7 @@ const ArticleFeatures = () => {
             }
           />
           <Features
-            Image={ChartIcon}
+            Icon={ChartIcon}
             width={97}
             height={110}
             title={"تحلیل داده‌های عظیم"}
@@ -31,7 +31,7 @@ const ArticleFeatures = () => {
         </div>
         <div className='flex flex-col items-start gap-[292px] pt-[315px]'>
           <Features
-            Image={QuestionIcon}
+            Icon={QuestionIcon}
             width={62}
             height={97}
             title={"پرسیدن موارد دشوار"}
@@ -40,7 +40,7 @@ const ArticleFeatures = () => {
             }
           />
           <Features
-            Image={EnginGlassIcon}
+            Icon={EnginGlassIcon}
             width={85}
             height={85}
             title={"ارزیابی دقیق"}

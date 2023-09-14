@@ -1,3 +1,8 @@
+import Line from "@/assets/images/article-usage/line.png";
+import Pic_1 from "@/assets/images/article-usage/pic-1.png";
+import Pic_2 from "@/assets/images/article-usage/pic-2.png";
+import Pic_3 from "@/assets/images/article-usage/pic-3.png";
+import Pic_4 from "@/assets/images/article-usage/pic-4.png";
 import Usage from "./ui/Usage";
 
 const KashfUsage = () => {
@@ -9,10 +14,10 @@ const KashfUsage = () => {
       <div className='mt-[43px] flex items-start gap-[247px]'>
         <div className='flex flex-col items-start gap-[219px]'>
           <Usage
-            line={LeftLine}
-            image={Pic1}
-            size={265}
-            lineSize={60}
+            line={Line}
+            image={Pic_1}
+            width={265}
+            lineWidth={60}
             left={true}
             title={"تحلیل نظرات"}
             text={
@@ -20,10 +25,10 @@ const KashfUsage = () => {
             }
           />
           <Usage
-            line={LeftLine}
-            image={Pic3}
-            size={306}
-            lineSize={65}
+            line={Line}
+            image={Pic_2}
+            width={306}
+            lineWidth={65}
             left={true}
             title={"نمایه سازی محتوا"}
             text={
@@ -33,10 +38,10 @@ const KashfUsage = () => {
         </div>
         <div className='mt-[290px] flex flex-col items-start gap-[219px]'>
           <Usage
-            line={LeftLine}
-            image={Pic2}
-            size={361}
-            lineSize={70}
+            line={Line}
+            image={Pic_3}
+            width={360}
+            lineWidth={70}
             left={false}
             title={"تحلیل شبکه های اجتماعی"}
             text={
@@ -44,10 +49,10 @@ const KashfUsage = () => {
             }
           />
           <Usage
-            line={LeftLine}
-            image={Pic4}
-            size={222}
-            lineSize={65}
+            line={Line}
+            image={Pic_4}
+            width={222}
+            lineWidth={60}
             left={false}
             title={"دسته بندی اسناد"}
             text={
