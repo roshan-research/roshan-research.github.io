@@ -1,22 +1,24 @@
-import Logo from '@/assets/images/logo.png';
-import Menu from '@/assets/images/menu.png';
-import ArticleMain from '@/components/article-main/ArticleMain';
-import ArticleFeatures from './components/article-features/ArticleFeatures';
-import KashUsage from './components/kashf-usage/KashUsage';
+import Logo from "@/assets/images/logo.png";
+import Menu from "@/assets/images/menu.png";
+import ArticleMain from "@/components/article-main/ArticleMain";
+import ArticleFeatures from "./components/article-features/ArticleFeatures";
+import KashfUsage from "./components/kashf-usage/KashfUsage";
+import Facilities from "./components/facilities/Facilities";
 
 function App() {
   return (
-    <div className="font-iranyekan px-[128px]">
-      <header className="mt-[153px] flex items-center justify-between">
-        <div className="flex gap-[14px] items-center">
-          <img src={Logo} alt="" className="w-[43px]" />
-          <span className="text-[#FAFAFA] text-xl font-normal">کشف</span>
+    <div className='px-[128px] font-iranyekan'>
+      <header className='mt-[153px] flex items-center justify-between'>
+        <div className='flex items-center gap-[14px]'>
+          <img src={Logo} alt='' className='w-[43px]' />
+          <span className='text-xl font-normal text-[#FAFAFA]'>کشف</span>
         </div>
-        <img src={Menu} alt="" className="w-[40px] cursor-pointer" />
+        <img src={Menu} alt='' className='w-[40px] cursor-pointer' />
       </header>
       <ArticleMain />
       <ArticleFeatures />
-      <KashUsage />
+      <KashfUsage />
+      <Facilities />
     </div>
   );
 }

@@ -1,0 +1,28 @@
+import { IconProps } from "@/components/icons/chart-icon";
+import { FC } from "react";
+
+type FeaturesProps = {
+  Image: FC<IconProps>;
+  width: number;
+  height: number;
+  title: string;
+  text: string;
+};
+
+export const Features: FC<FeaturesProps> = ({
+  Image,
+  width,
+  height,
+  title,
+  text,
+}) => {
+  return (
+    <div>
+      <Image width={width} height={height} />
+      <div className='-mt-10 flex flex-col items-start gap-[5px] pr-[58px]'>
+        <span className='text-[28px] font-[700]'>{title}</span>
+        <span className='max-w-[450px] text-[20px] font-light'>{text}</span>
+      </div>
+    </div>
+  );
+};
