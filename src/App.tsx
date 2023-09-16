@@ -5,6 +5,7 @@ import ArticleFeatures from "./components/article-features/ArticleFeatures";
 import KashfUsage from "./components/kashf-usage/KashfUsage";
 import Facilities from "./components/facilities/Facilities";
 import Conclusion from "./components/conclusion/Conclusion";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
@@ -16,11 +17,16 @@ function App() {
         </div>
         <img src={Menu} alt='' className='w-[40px] cursor-pointer' />
       </header>
-      <ArticleMain />
-      <ArticleFeatures />
-      <KashfUsage />
-      <Facilities />
-      <Conclusion />
+      <main>
+        <ArticleMain />
+        <ArticleFeatures />
+        <KashfUsage />
+        <Facilities />
+        <Conclusion />
+      </main>
+      <footer className='pb-[330px]'>
+        <Footer />
+      </footer>
     </div>
   );
 }
