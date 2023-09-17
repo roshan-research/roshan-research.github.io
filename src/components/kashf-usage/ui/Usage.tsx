@@ -1,5 +1,8 @@
 import { FC } from "react";
 import clsx from "clsx";
+import { motion } from "framer-motion";
+import { usage_animation } from "@/components/animations/main";
+
 type UsageProps = {
   line: string;
   image: string;
@@ -20,7 +23,13 @@ const Usage: FC<UsageProps> = ({
   text,
 }) => {
   return (
-    <div className='flex flex-col items-start gap-5'>
+    <motion.div
+      variants={usage_animation}
+      initial='hidden'
+      whileInView='visible'
+      viewport={{ once: true, amount: 0.5 }}
+      className='flex flex-col items-start gap-5'
+    >
       <div className='relative'>
         <img
           width={lineWidth}
@@ -40,7 +49,7 @@ const Usage: FC<UsageProps> = ({
       </div>
       <span className='text-[24px] font-normal text-[#A76CF3]'>{title}</span>
       <span className='max-w-[480px] text-[18px] font-light'>{text}</span>
-    </div>
+    </motion.div>
   );
 };
 

@@ -19,15 +19,17 @@ const Conclusion = () => {
             className={clsx(
               "flex cursor-pointer items-center",
               activeTab === 1 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
-            )}>
+            )}
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={1} />
             <span
               className={clsx(
-                "py-1 transition-all duration-1000 ease-in-out",
+                "select-none py-1 transition-all duration-1000 ease-in-out",
                 activeTab === 1
                   ? "bg-[#A76CF3] text-[#000]"
                   : "bg-[#000] text-[#FAFAFA]"
-              )}>
+              )}
+            >
               تشخیص مفهوم متن
             </span>
           </div>
@@ -36,15 +38,17 @@ const Conclusion = () => {
             className={clsx(
               "flex cursor-pointer items-center",
               activeTab === 2 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
-            )}>
+            )}
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={2} />
             <span
               className={clsx(
-                "py-1 transition-all duration-1000 ease-in-out",
+                "select-none py-1 transition-all duration-1000 ease-in-out",
                 activeTab === 2
                   ? "bg-[#A76CF3] text-[#000]"
                   : "bg-[#000] text-[#FAFAFA]"
-              )}>
+              )}
+            >
               تشخیص چهره
             </span>
           </div>
@@ -53,15 +57,17 @@ const Conclusion = () => {
             className={clsx(
               "flex cursor-pointer items-center",
               activeTab === 3 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
-            )}>
+            )}
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={3} />
             <span
               className={clsx(
-                "py-1 transition-all duration-1000 ease-in-out",
+                "select-none py-1 transition-all duration-1000 ease-in-out",
                 activeTab === 3
                   ? "bg-[#A76CF3] text-[#000]"
                   : "bg-[#000] text-[#FAFAFA]"
-              )}>
+              )}
+            >
               شناسایی تصاویر
             </span>
           </div>

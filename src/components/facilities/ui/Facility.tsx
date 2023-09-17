@@ -1,6 +1,11 @@
-import { IconProps } from "@/shared/types";
-import clsx from "clsx";
 import { FC } from "react";
+import clsx from "clsx";
+import { motion } from "framer-motion";
+import { IconProps } from "@/shared/types";
+import {
+  text_animation,
+  text_bg_animation,
+} from "@/components/animations/main";
 
 type FacilityProps = {
   Icon: FC<IconProps>;
@@ -30,7 +35,26 @@ const Facility: FC<FacilityProps> = ({
           left ? "ml-[145px] mt-[120px]" : "mr-[205px] mt-[190px]"
         )}
       >
-        <span className='text-[24px] font-normal text-[#A76CF3]'>{title}</span>
+        <motion.div
+          variants={text_bg_animation}
+          initial='hidden'
+          whileInView='visible'
+          className='relative w-fit overflow-visible bg-[#A76CF3]'
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <span className='w-fit whitespace-nowrap text-[24px] font-normal text-[#A76CF3]'>
+            {title}
+          </span>
+          <motion.span
+            variants={text_animation}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            className='absolute right-0 top-0 w-fit overflow-hidden whitespace-nowrap text-[24px] font-normal text-[#000]'
+          >
+            {title}
+          </motion.span>
+        </motion.div>
         <span className='max-w-[390px] text-[18px] font-light text-[#FAFAFA]'>
           {text}
         </span>
