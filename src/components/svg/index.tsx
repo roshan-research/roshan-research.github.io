@@ -1,11 +1,66 @@
 import { FC } from "react";
 import { Variants, motion } from "framer-motion";
+import {
+  main_svg_path_1,
+  main_svg_path_2,
+  main_svg_path_3,
+  main_svg_path_4,
+  main_svg_path_5,
+  recognize_face_svg_part_1_path_1,
+  recognize_face_svg_part_1_path_2,
+  recognize_face_svg_part_1_path_3,
+  recognize_face_svg_part_1_path_4,
+  recognize_face_svg_part_1_path_5,
+  recognize_face_svg_part_1_path_6,
+  recognize_face_svg_part_2_path_1,
+  recognize_face_svg_part_2_path_2,
+  recognize_face_svg_part_2_path_3,
+  recognize_face_svg_part_2_path_4,
+  recognize_face_svg_part_2_path_5,
+  recognize_face_svg_part_2_path_6,
+  recognize_image_svg_part_1_path_1,
+  recognize_image_svg_part_1_path_2,
+  recognize_image_svg_part_1_path_3,
+  recognize_image_svg_part_1_path_4,
+  recognize_image_svg_part_1_path_5,
+  recognize_image_svg_part_1_path_6,
+  recognize_image_svg_part_2_path_1,
+  recognize_image_svg_part_2_path_2,
+  recognize_image_svg_part_2_path_3,
+  recognize_image_svg_part_2_path_4,
+  recognize_image_svg_part_2_path_5,
+  recognize_image_svg_part_2_path_6,
+  recognize_image_svg_part_3_path_1,
+  recognize_image_svg_part_3_path_2,
+  recognize_image_svg_part_3_path_3,
+  recognize_image_svg_part_3_path_4,
+  recognize_image_svg_part_3_path_5,
+  recognize_image_svg_part_3_path_6,
+  recognize_text_svg_part_1_path_1,
+  recognize_text_svg_part_1_path_2,
+  recognize_text_svg_part_1_path_3,
+  recognize_text_svg_part_1_path_4,
+  recognize_text_svg_part_1_path_5,
+  recognize_text_svg_part_1_path_7,
+  recognize_text_svg_part_2_path_1,
+  recognize_text_svg_part_2_path_2,
+  recognize_text_svg_part_2_path_3,
+  recognize_text_svg_part_2_path_4,
+  recognize_text_svg_part_2_path_5,
+  recognize_text_svg_part_2_path_8,
+  recognize_text_svg_part_3_path_1,
+  recognize_text_svg_part_3_path_2,
+  recognize_text_svg_part_3_path_3,
+  recognize_text_svg_part_3_path_4,
+  recognize_text_svg_part_3_path_5,
+  recognize_text_svg_part_3_path_9,
+} from "../animations/main";
 
 type SvgProps = {
   width: number;
   height: number;
   animation?: Variants;
-  inview: boolean;
+  inview?: boolean;
 };
 
 export const EnvelopSvg: FC<SvgProps> = ({ width, height }) => {
@@ -179,6 +234,889 @@ export const BorderSvg3: FC<SvgProps> = ({
         d='M0.5 0.5H375.5V277.5H0.5V0.5Z'
         fill='transparent'
         stroke='#A76CF3'
+      />
+    </svg>
+  );
+};
+
+export const ButterflyAnimateSvg: FC<SvgProps> = ({ width, height }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 144 83'
+      fill='none'
+      className='absolute left-[290px] top-[315px]'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <motion.circle
+        variants={main_svg_path_1}
+        initial='hidden'
+        animate='visible'
+        cx='10.1492'
+        cy='73.1498'
+        r='4.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={main_svg_path_2}
+        initial='hidden'
+        animate='visible'
+        cx='10'
+        cy='73.0002'
+        r='9.5'
+        stroke='#A76CF3'
+      />
+      <mask id='path-3-inside-1_1856_66' fill='white'>
+        <path d='M74.999 -0.000305176L143.999 -0.000305176V35.9997H74.999V-0.000305176Z' />
+      </mask>
+      <rect
+        x='73.999'
+        y='-0.000305176'
+        width='0'
+        height='36'
+        fill='#a86cf333'
+        mask='url(#path-3-inside-1_1856_66)'
+        className='text-[#000]'
+      >
+        <animate
+          attributeName='width'
+          from='0'
+          to='100'
+          dur='0.6s'
+          fill='freeze'
+          begin='3.6s'
+        />
+      </rect>
+      <motion.path
+        variants={main_svg_path_5}
+        initial='hidden'
+        animate='visible'
+        d='M75.999 35.9997V-0.000305176L73.999 -0.000305176V35.9997H75.999Z'
+        fill='#A76CF3'
+        mask='url(#path-3-inside-1_1856_66)'
+      ></motion.path>
+      <motion.line
+        variants={main_svg_path_3}
+        initial='hidden'
+        animate='visible'
+        x1='9.58528'
+        y1='72.7209'
+        x2='42.5853'
+        y2='23.7209'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={main_svg_path_4}
+        initial='hidden'
+        animate='visible'
+        x1='42'
+        y1='23.5002'
+        x2='75'
+        y2='23.5002'
+        stroke='#A76CF3'
+      />
+    </svg>
+  );
+};
+
+export const ButterflySvg: FC<SvgProps> = ({ width, height }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 592 888'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      xmlnsXlink='http://www.w3.org/1999/xlink'
+    >
+      <rect width='592' height='888' fill='url(#pattern0)' />
+      <defs>
+        <pattern
+          id='pattern0'
+          patternContentUnits='objectBoundingBox'
+          width='1'
+          height='1'
+        >
+          <use
+            xlinkHref='#image0_1856_57'
+            transform='scale(0.0021097 0.00140647)'
+          />
+        </pattern>
+        <image
+          id='image0_1856_57'
+          width='474'
+          height='711'
+          xlinkHref='data:image/jpeg;base64,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'
+        />
+      </defs>
+    </svg>
+  );
+};
+
+export const RecognizeTextSvgAnimatePart1: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 186 94'
+      fill='none'
+      className='absolute -top-[65px] left-3'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <motion.circle
+        variants={recognize_text_svg_part_1_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='7.55104'
+        cy='86.8504'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_text_svg_part_1_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='7.35036'
+        cy='86.3504'
+        r='6.85036'
+        stroke='white'
+      />
+      <mask id='path-3-inside-1_1648_3354' fill='white'>
+        <path d='M93 1L186 1V37H93V1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_text_svg_part_1_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M94 37V1H92V37H94Z'
+        fill='#A76CF3'
+        mask='url(#path-3-inside-1_1648_3354)'
+      />
+      <motion.path
+        variants={recognize_text_svg_part_1_path_7}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M145.75 43.156L147.394 47.044C147.57 47.452 147.766 47.74 147.982 47.908C148.198 48.076 148.482 48.16 148.834 48.16H148.978L149.014 48.58L148.978 49H148.834C148.354 49 147.942 48.876 147.598 48.628C147.262 48.372 146.974 47.968 146.734 47.416L145.066 43.504L145.75 43.156ZM142.81 47.608C143.082 47.784 143.37 47.932 143.674 48.052C143.978 48.164 144.35 48.22 144.79 48.22C145.278 48.22 145.694 48.144 146.038 47.992C146.382 47.832 146.722 47.632 147.058 47.392L147.442 47.944C147.17 48.168 146.934 48.348 146.734 48.484C146.542 48.612 146.282 48.736 145.954 48.856C145.626 48.976 145.254 49.036 144.838 49.036C144.286 49.036 143.822 48.96 143.446 48.808C143.07 48.648 142.734 48.456 142.438 48.232L142.81 47.608ZM148.85 48.16H149.03C149.454 48.16 149.798 48.072 150.062 47.896C150.334 47.712 150.55 47.424 150.71 47.032C150.87 46.64 150.998 46.116 151.094 45.46L151.778 45.604C151.73 45.9 151.706 46.172 151.706 46.42C151.706 47.14 151.902 47.652 152.294 47.956C152.686 48.26 153.278 48.412 154.07 48.412C154.83 48.412 155.506 48.32 156.098 48.136C156.698 47.952 157.162 47.708 157.49 47.404C157.826 47.092 157.994 46.756 157.994 46.396C157.994 46.076 157.866 45.812 157.61 45.604C157.362 45.388 157.026 45.28 156.602 45.28C155.946 45.28 155.278 45.576 154.598 46.168C153.918 46.76 153.286 47.584 152.702 48.64L152.102 48.268C152.726 47.084 153.434 46.156 154.226 45.484C155.018 44.812 155.798 44.476 156.566 44.476C156.966 44.476 157.33 44.56 157.658 44.728C157.986 44.888 158.242 45.116 158.426 45.412C158.61 45.7 158.702 46.024 158.702 46.384C158.702 46.944 158.506 47.444 158.114 47.884C157.73 48.316 157.198 48.652 156.518 48.892C155.838 49.132 155.066 49.252 154.202 49.252C153.25 49.252 152.542 49.1 152.078 48.796C151.622 48.484 151.346 48.076 151.25 47.572C151.042 48.02 150.77 48.372 150.434 48.628C150.106 48.876 149.634 49 149.018 49H148.85V48.16ZM158.426 51.676C158.938 51.516 159.402 51.288 159.818 50.992C160.242 50.704 160.574 50.388 160.814 50.044C161.054 49.7 161.174 49.372 161.174 49.06C161.174 48.628 160.97 47.612 160.562 46.012L161.294 45.748C161.462 46.324 161.606 46.928 161.726 47.56C161.846 48.184 161.906 48.684 161.906 49.06C161.906 49.516 161.766 49.964 161.486 50.404C161.206 50.852 160.822 51.252 160.334 51.604C159.854 51.956 159.318 52.228 158.726 52.42L158.426 51.676ZM163.119 47.608C163.423 47.792 163.723 47.94 164.019 48.052C164.323 48.164 164.727 48.22 165.231 48.22C165.695 48.22 166.075 48.156 166.371 48.028C166.675 47.9 166.871 47.748 166.959 47.572C167.007 47.46 167.031 47.344 167.031 47.224C167.031 46.824 166.819 46.336 166.395 45.76C165.979 45.184 165.355 44.58 164.523 43.948L164.955 43.216C165.835 43.888 166.519 44.576 167.007 45.28C167.495 45.976 167.739 46.62 167.739 47.212C167.739 47.492 167.687 47.74 167.583 47.956C167.431 48.3 167.147 48.568 166.731 48.76C166.323 48.944 165.843 49.036 165.291 49.036C164.675 49.036 164.155 48.956 163.731 48.796C163.315 48.628 162.987 48.44 162.747 48.232L163.119 47.608ZM176.87 49.288C176.67 48.832 176.498 48.124 176.354 47.164C176.218 46.196 176.126 45.224 176.078 44.248C176.054 43.656 175.95 43.104 175.766 42.592C175.59 42.072 175.31 41.812 174.926 41.812C174.662 41.812 174.426 41.956 174.218 42.244C174.018 42.524 173.918 42.844 173.918 43.204C173.918 43.46 174.01 43.664 174.194 43.816C174.386 43.968 174.662 44.044 175.022 44.044C175.302 44.044 175.538 44.012 175.73 43.948C175.93 43.884 176.07 43.828 176.15 43.78C176.23 43.724 176.334 43.644 176.462 43.54L176.906 44.824C176.682 44.984 176.406 45.12 176.078 45.232C175.75 45.336 175.382 45.388 174.974 45.388C174.334 45.388 173.822 45.204 173.438 44.836C173.054 44.46 172.862 43.936 172.862 43.264C172.862 42.848 172.954 42.432 173.138 42.016C173.322 41.592 173.57 41.244 173.882 40.972C174.202 40.692 174.558 40.552 174.95 40.552C175.518 40.552 175.954 40.76 176.258 41.176C176.57 41.592 176.778 42.032 176.882 42.496C176.986 42.96 177.074 43.512 177.146 44.152C177.394 46.384 177.674 47.872 177.986 48.616L176.87 49.288ZM185.675 41.308C185.371 41.788 185.015 42.476 184.607 43.372C184.199 44.268 183.823 45.224 183.479 46.24C183.143 47.256 182.919 48.176 182.807 49H181.715C181.627 48.184 181.415 47.268 181.079 46.252C180.743 45.236 180.363 44.28 179.939 43.384C179.523 42.488 179.159 41.796 178.847 41.308L179.903 40.54C180.223 41.052 180.579 41.776 180.971 42.712C181.363 43.64 181.727 44.652 182.063 45.748C182.399 46.836 182.643 47.864 182.795 48.832H181.727C181.895 47.856 182.147 46.824 182.483 45.736C182.819 44.64 183.179 43.628 183.563 42.7C183.947 41.772 184.299 41.052 184.619 40.54L185.675 41.308Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_1_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='6.6107'
+        y1='85.6862'
+        x2='60.6107'
+        y2='18.6862'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_1_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='60'
+        y1='19.5'
+        x2='93'
+        y2='19.5'
+        stroke='#A76CF3'
+      />
+    </svg>
+  );
+};
+
+export const RecognizeTextSvgAnimatePart2: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 211 127'
+      fill='none'
+      className='absolute -top-[85px] left-1'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <mask id='path-1-inside-1_1648_3300' fill='white'>
+        <path d='M1 1L105 1V37H1V1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_text_svg_part_2_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M104 1V37H106V1H104Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_3300)'
+      />
+      <motion.path
+        variants={recognize_text_svg_part_2_path_8}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M4.58216 43.156L6.22616 47.044C6.40216 47.452 6.59816 47.74 6.81416 47.908C7.03016 48.076 7.31416 48.16 7.66616 48.16H7.81016L7.84616 48.58L7.81016 49H7.66616C7.18616 49 6.77416 48.876 6.43016 48.628C6.09416 48.372 5.80616 47.968 5.56616 47.416L3.89816 43.504L4.58216 43.156ZM1.64216 47.608C1.91416 47.784 2.20216 47.932 2.50616 48.052C2.81016 48.164 3.18216 48.22 3.62216 48.22C4.11016 48.22 4.52616 48.144 4.87016 47.992C5.21416 47.832 5.55416 47.632 5.89016 47.392L6.27416 47.944C6.00216 48.168 5.76616 48.348 5.56616 48.484C5.37416 48.612 5.11416 48.736 4.78616 48.856C4.45816 48.976 4.08616 49.036 3.67016 49.036C3.11816 49.036 2.65416 48.96 2.27816 48.808C1.90216 48.648 1.56616 48.456 1.27016 48.232L1.64216 47.608ZM7.68191 48.16H7.86191C8.28591 48.16 8.62991 48.072 8.89391 47.896C9.16591 47.712 9.38191 47.424 9.54191 47.032C9.70191 46.64 9.82991 46.116 9.92591 45.46L10.6099 45.604C10.5619 45.9 10.5379 46.172 10.5379 46.42C10.5379 47.14 10.7339 47.652 11.1259 47.956C11.5179 48.26 12.1099 48.412 12.9019 48.412C13.6619 48.412 14.3379 48.32 14.9299 48.136C15.5299 47.952 15.9939 47.708 16.3219 47.404C16.6579 47.092 16.8259 46.756 16.8259 46.396C16.8259 46.076 16.6979 45.812 16.4419 45.604C16.1939 45.388 15.8579 45.28 15.4339 45.28C14.7779 45.28 14.1099 45.576 13.4299 46.168C12.7499 46.76 12.1179 47.584 11.5339 48.64L10.9339 48.268C11.5579 47.084 12.2659 46.156 13.0579 45.484C13.8499 44.812 14.6299 44.476 15.3979 44.476C15.7979 44.476 16.1619 44.56 16.4899 44.728C16.8179 44.888 17.0739 45.116 17.2579 45.412C17.4419 45.7 17.5339 46.024 17.5339 46.384C17.5339 46.944 17.3379 47.444 16.9459 47.884C16.5619 48.316 16.0299 48.652 15.3499 48.892C14.6699 49.132 13.8979 49.252 13.0339 49.252C12.0819 49.252 11.3739 49.1 10.9099 48.796C10.4539 48.484 10.1779 48.076 10.0819 47.572C9.87391 48.02 9.60191 48.372 9.26591 48.628C8.93791 48.876 8.46591 49 7.84991 49H7.68191V48.16ZM17.2578 51.676C17.7698 51.516 18.2338 51.288 18.6498 50.992C19.0738 50.704 19.4058 50.388 19.6458 50.044C19.8858 49.7 20.0058 49.372 20.0058 49.06C20.0058 48.628 19.8018 47.612 19.3938 46.012L20.1258 45.748C20.2938 46.324 20.4378 46.928 20.5578 47.56C20.6778 48.184 20.7378 48.684 20.7378 49.06C20.7378 49.516 20.5978 49.964 20.3178 50.404C20.0378 50.852 19.6538 51.252 19.1658 51.604C18.6858 51.956 18.1498 52.228 17.5578 52.42L17.2578 51.676ZM21.9508 47.608C22.2548 47.792 22.5548 47.94 22.8508 48.052C23.1548 48.164 23.5588 48.22 24.0628 48.22C24.5268 48.22 24.9068 48.156 25.2028 48.028C25.5068 47.9 25.7028 47.748 25.7908 47.572C25.8388 47.46 25.8628 47.344 25.8628 47.224C25.8628 46.824 25.6508 46.336 25.2268 45.76C24.8108 45.184 24.1868 44.58 23.3548 43.948L23.7868 43.216C24.6668 43.888 25.3508 44.576 25.8388 45.28C26.3268 45.976 26.5708 46.62 26.5708 47.212C26.5708 47.492 26.5188 47.74 26.4148 47.956C26.2628 48.3 25.9788 48.568 25.5628 48.76C25.1548 48.944 24.6748 49.036 24.1228 49.036C23.5068 49.036 22.9868 48.956 22.5628 48.796C22.1468 48.628 21.8188 48.44 21.5788 48.232L21.9508 47.608ZM31.5857 48.4C31.8897 47.92 32.2457 47.232 32.6537 46.336C33.0617 45.44 33.4337 44.484 33.7697 43.468C34.1137 42.452 34.3417 41.532 34.4537 40.708H35.5457C35.6337 41.524 35.8457 42.44 36.1817 43.456C36.5177 44.472 36.8937 45.428 37.3097 46.324C37.7337 47.22 38.1017 47.912 38.4137 48.4L37.3577 49.168C37.0377 48.656 36.6817 47.936 36.2897 47.008C35.8977 46.072 35.5337 45.06 35.1977 43.972C34.8617 42.876 34.6177 41.844 34.4657 40.876H35.5337C35.3657 41.852 35.1137 42.888 34.7777 43.984C34.4417 45.072 34.0817 46.08 33.6977 47.008C33.3137 47.936 32.9617 48.656 32.6417 49.168L31.5857 48.4ZM44.1743 41.02C44.2383 41.716 44.3343 42.216 44.4623 42.52C44.5903 42.824 44.7863 42.976 45.0503 42.976C45.2183 42.976 45.3463 42.88 45.4343 42.688C45.5303 42.496 45.5783 42.236 45.5783 41.908C45.5783 41.548 45.5343 41.176 45.4463 40.792L46.4543 40.528C46.5823 41.064 46.6463 41.548 46.6463 41.98C46.6463 42.668 46.5063 43.228 46.2263 43.66C45.9543 44.084 45.5623 44.296 45.0503 44.296C44.5143 44.296 44.0903 44.016 43.7783 43.456C43.4663 42.888 43.2743 42.132 43.2023 41.188L44.1743 41.02ZM40.8743 41.416C41.0743 41.992 41.2743 42.412 41.4743 42.676C41.6823 42.94 41.9503 43.072 42.2783 43.072C42.5663 43.072 42.7943 42.944 42.9623 42.688C43.1383 42.424 43.2263 42.056 43.2263 41.584C43.2263 41.512 43.2183 41.38 43.2023 41.188L44.1503 41.068C44.1583 41.156 44.1623 41.288 44.1623 41.464C44.1623 42.016 44.0863 42.52 43.9343 42.976C43.7903 43.424 43.5823 43.78 43.3103 44.044C43.0383 44.3 42.7223 44.428 42.3623 44.428C41.8103 44.428 41.3583 44.232 41.0063 43.84C40.6543 43.44 40.3263 42.84 40.0223 42.04L40.8743 41.416ZM40.5143 48.244C40.5143 46.876 40.4463 45.66 40.3103 44.596C40.1343 43.3 39.8343 42.168 39.4103 41.2L40.5383 40.54C40.9783 41.468 41.2943 42.764 41.4863 44.428C41.5903 45.364 41.6423 46.604 41.6423 48.148V49H40.5023L40.5143 48.244Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_2_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='203.398'
+        y1='119.697'
+        x2='126.398'
+        y2='18.6969'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_2_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='126'
+        y1='19.5'
+        x2='105'
+        y2='19.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_text_svg_part_2_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='203.551'
+        cy='119.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_text_svg_part_2_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='203.35'
+        cy='119.35'
+        r='6.85036'
+        stroke='white'
+      />
+    </svg>
+  );
+};
+
+export const RecognizeTextSvgAnimatePart3: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 285 115'
+      fill='none'
+      className='absolute -top-[70px] left-[50px]'
+      xmlns='http://www.w3.org/2000/svg'
+    >
+      <mask id='path-1-inside-1_1648_3396' fill='white'>
+        <path d='M155 1L285 1V37H155V1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_text_svg_part_3_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M156 37V1H154V37H156Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_3396)'
+      />
+      <motion.path
+        variants={recognize_text_svg_part_3_path_9}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        d='M246.133 43.156L247.777 47.044C247.953 47.452 248.149 47.74 248.365 47.908C248.581 48.076 248.865 48.16 249.217 48.16H249.361L249.397 48.58L249.361 49H249.217C248.737 49 248.325 48.876 247.981 48.628C247.645 48.372 247.357 47.968 247.117 47.416L245.449 43.504L246.133 43.156ZM243.193 47.608C243.465 47.784 243.753 47.932 244.057 48.052C244.361 48.164 244.733 48.22 245.173 48.22C245.661 48.22 246.077 48.144 246.421 47.992C246.765 47.832 247.105 47.632 247.441 47.392L247.825 47.944C247.553 48.168 247.317 48.348 247.117 48.484C246.925 48.612 246.665 48.736 246.337 48.856C246.009 48.976 245.637 49.036 245.221 49.036C244.669 49.036 244.205 48.96 243.829 48.808C243.453 48.648 243.117 48.456 242.821 48.232L243.193 47.608ZM249.233 48.16H249.413C249.837 48.16 250.181 48.072 250.445 47.896C250.717 47.712 250.933 47.424 251.093 47.032C251.253 46.64 251.381 46.116 251.477 45.46L252.161 45.604C252.113 45.9 252.089 46.172 252.089 46.42C252.089 47.14 252.285 47.652 252.677 47.956C253.069 48.26 253.661 48.412 254.453 48.412C255.213 48.412 255.889 48.32 256.481 48.136C257.081 47.952 257.545 47.708 257.873 47.404C258.209 47.092 258.377 46.756 258.377 46.396C258.377 46.076 258.249 45.812 257.993 45.604C257.745 45.388 257.409 45.28 256.985 45.28C256.329 45.28 255.661 45.576 254.981 46.168C254.301 46.76 253.669 47.584 253.085 48.64L252.485 48.268C253.109 47.084 253.817 46.156 254.609 45.484C255.401 44.812 256.181 44.476 256.949 44.476C257.349 44.476 257.713 44.56 258.041 44.728C258.369 44.888 258.625 45.116 258.809 45.412C258.993 45.7 259.085 46.024 259.085 46.384C259.085 46.944 258.889 47.444 258.497 47.884C258.113 48.316 257.581 48.652 256.901 48.892C256.221 49.132 255.449 49.252 254.585 49.252C253.633 49.252 252.925 49.1 252.461 48.796C252.005 48.484 251.729 48.076 251.633 47.572C251.425 48.02 251.153 48.372 250.817 48.628C250.489 48.876 250.017 49 249.401 49H249.233V48.16ZM258.809 51.676C259.321 51.516 259.785 51.288 260.201 50.992C260.625 50.704 260.957 50.388 261.197 50.044C261.437 49.7 261.557 49.372 261.557 49.06C261.557 48.628 261.353 47.612 260.945 46.012L261.677 45.748C261.845 46.324 261.989 46.928 262.109 47.56C262.229 48.184 262.289 48.684 262.289 49.06C262.289 49.516 262.149 49.964 261.869 50.404C261.589 50.852 261.205 51.252 260.717 51.604C260.237 51.956 259.701 52.228 259.109 52.42L258.809 51.676ZM263.502 47.608C263.806 47.792 264.106 47.94 264.402 48.052C264.706 48.164 265.11 48.22 265.614 48.22C266.078 48.22 266.458 48.156 266.754 48.028C267.058 47.9 267.254 47.748 267.342 47.572C267.39 47.46 267.414 47.344 267.414 47.224C267.414 46.824 267.202 46.336 266.778 45.76C266.362 45.184 265.738 44.58 264.906 43.948L265.338 43.216C266.218 43.888 266.902 44.576 267.39 45.28C267.878 45.976 268.122 46.62 268.122 47.212C268.122 47.492 268.07 47.74 267.966 47.956C267.814 48.3 267.53 48.568 267.114 48.76C266.706 48.944 266.226 49.036 265.674 49.036C265.058 49.036 264.538 48.956 264.114 48.796C263.698 48.628 263.37 48.44 263.13 48.232L263.502 47.608ZM277.253 49.288C277.053 48.832 276.881 48.124 276.737 47.164C276.601 46.196 276.509 45.224 276.461 44.248C276.437 43.656 276.333 43.104 276.149 42.592C275.973 42.072 275.693 41.812 275.309 41.812C275.045 41.812 274.809 41.956 274.601 42.244C274.401 42.524 274.301 42.844 274.301 43.204C274.301 43.46 274.393 43.664 274.576 43.816C274.769 43.968 275.045 44.044 275.405 44.044C275.685 44.044 275.921 44.012 276.113 43.948C276.313 43.884 276.453 43.828 276.533 43.78C276.613 43.724 276.717 43.644 276.845 43.54L277.289 44.824C277.065 44.984 276.789 45.12 276.461 45.232C276.133 45.336 275.765 45.388 275.357 45.388C274.717 45.388 274.205 45.204 273.821 44.836C273.437 44.46 273.245 43.936 273.245 43.264C273.245 42.848 273.337 42.432 273.521 42.016C273.705 41.592 273.953 41.244 274.265 40.972C274.585 40.692 274.941 40.552 275.333 40.552C275.901 40.552 276.337 40.76 276.641 41.176C276.953 41.592 277.161 42.032 277.265 42.496C277.369 42.96 277.457 43.512 277.529 44.152C277.777 46.384 278.057 47.872 278.369 48.616L277.253 49.288ZM283.346 49.288C283.146 48.832 282.974 48.124 282.83 47.164C282.694 46.196 282.602 45.224 282.554 44.248C282.53 43.656 282.426 43.104 282.242 42.592C282.066 42.072 281.786 41.812 281.402 41.812C281.138 41.812 280.902 41.956 280.694 42.244C280.494 42.524 280.394 42.844 280.394 43.204C280.394 43.46 280.486 43.664 280.67 43.816C280.862 43.968 281.138 44.044 281.498 44.044C281.778 44.044 282.014 44.012 282.206 43.948C282.406 43.884 282.546 43.828 282.626 43.78C282.706 43.724 282.81 43.644 282.938 43.54L283.382 44.824C283.158 44.984 282.882 45.12 282.554 45.232C282.226 45.336 281.858 45.388 281.45 45.388C280.81 45.388 280.298 45.204 279.914 44.836C279.53 44.46 279.338 43.936 279.338 43.264C279.338 42.848 279.43 42.432 279.614 42.016C279.798 41.592 280.046 41.244 280.358 40.972C280.678 40.692 281.034 40.552 281.426 40.552C281.994 40.552 282.43 40.76 282.734 41.176C283.046 41.592 283.254 42.032 283.358 42.496C283.462 42.96 283.55 43.512 283.622 44.152C283.87 46.384 284.15 47.872 284.462 48.616L283.346 49.288Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_3_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='8.34955'
+        y1='108.358'
+        x2='98.3496'
+        y2='20.3575'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_text_svg_part_3_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        x1='98'
+        y1='20.5'
+        x2='155'
+        y2='20.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_text_svg_part_3_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='7.55104'
+        cy='107.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_text_svg_part_3_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: true, amount: 0.5 }}
+        cx='7.35036'
+        cy='107.35'
+        r='6.85036'
+        stroke='white'
+      />
+    </svg>
+  );
+};
+
+export const BorderSvg4: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+  animation,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 206 247'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute left-[152px] top-[50px]'
+    >
+      <motion.rect
+        variants={animation}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x='0.5'
+        y='0.5'
+        width='205'
+        height='246'
+        fill='#7000FF'
+        stroke='#A76CF3'
+        strokeWidth={1}
+      />
+    </svg>
+  );
+};
+
+export const BorderSvg5: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+  animation,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 201 258'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute right-[135px] top-[100px]'
+    >
+      <motion.rect
+        variants={animation}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x='0.5'
+        y='0.5'
+        width='200'
+        height='257'
+        fill='#7000FF'
+        stroke='#A76CF3'
+        strokeWidth={1}
+      />
+    </svg>
+  );
+};
+
+export const RecognizeFaceSvgAnimatePart1: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 252 109'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute right-[70px] top-[14px]'
+    >
+      <motion.circle
+        variants={recognize_face_svg_part_1_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='7.55104'
+        cy='101.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_face_svg_part_1_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='7.35036'
+        cy='101.35'
+        r='6.85036'
+        stroke='white'
+      />
+      <mask id='path-3-inside-1_1648_769' fill='white'>
+        <path d='M116 1L252 1V37H116V1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_face_svg_part_1_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M117 37V1H115V37H117Z'
+        fill='#A76CF3'
+        mask='url(#path-3-inside-1_1648_769)'
+      />
+      <motion.path
+        variants={recognize_face_svg_part_1_path_6}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M211.75 47.156L213.394 51.044C213.57 51.452 213.766 51.74 213.982 51.908C214.198 52.076 214.482 52.16 214.834 52.16H214.978L215.014 52.58L214.978 53H214.834C214.354 53 213.942 52.876 213.598 52.628C213.262 52.372 212.974 51.968 212.734 51.416L211.066 47.504L211.75 47.156ZM208.81 51.608C209.082 51.784 209.37 51.932 209.674 52.052C209.978 52.164 210.35 52.22 210.79 52.22C211.278 52.22 211.694 52.144 212.038 51.992C212.382 51.832 212.722 51.632 213.058 51.392L213.442 51.944C213.17 52.168 212.934 52.348 212.734 52.484C212.542 52.612 212.282 52.736 211.954 52.856C211.626 52.976 211.254 53.036 210.838 53.036C210.286 53.036 209.822 52.96 209.446 52.808C209.07 52.648 208.734 52.456 208.438 52.232L208.81 51.608ZM214.85 52.16H215.03C215.454 52.16 215.798 52.072 216.062 51.896C216.334 51.712 216.55 51.424 216.71 51.032C216.87 50.64 216.998 50.116 217.094 49.46L217.778 49.604C217.73 49.9 217.706 50.172 217.706 50.42C217.706 51.14 217.902 51.652 218.294 51.956C218.686 52.26 219.278 52.412 220.07 52.412C220.83 52.412 221.506 52.32 222.098 52.136C222.698 51.952 223.162 51.708 223.49 51.404C223.826 51.092 223.994 50.756 223.994 50.396C223.994 50.076 223.866 49.812 223.61 49.604C223.362 49.388 223.026 49.28 222.602 49.28C221.946 49.28 221.278 49.576 220.598 50.168C219.918 50.76 219.286 51.584 218.702 52.64L218.102 52.268C218.726 51.084 219.434 50.156 220.226 49.484C221.018 48.812 221.798 48.476 222.566 48.476C222.966 48.476 223.33 48.56 223.658 48.728C223.986 48.888 224.242 49.116 224.426 49.412C224.61 49.7 224.702 50.024 224.702 50.384C224.702 50.944 224.506 51.444 224.114 51.884C223.73 52.316 223.198 52.652 222.518 52.892C221.838 53.132 221.066 53.252 220.202 53.252C219.25 53.252 218.542 53.1 218.078 52.796C217.622 52.484 217.346 52.076 217.25 51.572C217.042 52.02 216.77 52.372 216.434 52.628C216.106 52.876 215.634 53 215.018 53H214.85V52.16ZM224.426 55.676C224.938 55.516 225.402 55.288 225.818 54.992C226.242 54.704 226.574 54.388 226.814 54.044C227.054 53.7 227.174 53.372 227.174 53.06C227.174 52.628 226.97 51.612 226.562 50.012L227.294 49.748C227.462 50.324 227.606 50.928 227.726 51.56C227.846 52.184 227.906 52.684 227.906 53.06C227.906 53.516 227.766 53.964 227.486 54.404C227.206 54.852 226.822 55.252 226.334 55.604C225.854 55.956 225.318 56.228 224.726 56.42L224.426 55.676ZM229.119 51.608C229.423 51.792 229.723 51.94 230.019 52.052C230.323 52.164 230.727 52.22 231.231 52.22C231.695 52.22 232.075 52.156 232.371 52.028C232.675 51.9 232.871 51.748 232.959 51.572C233.007 51.46 233.031 51.344 233.031 51.224C233.031 50.824 232.819 50.336 232.395 49.76C231.979 49.184 231.355 48.58 230.523 47.948L230.955 47.216C231.835 47.888 232.519 48.576 233.007 49.28C233.495 49.976 233.739 50.62 233.739 51.212C233.739 51.492 233.687 51.74 233.583 51.956C233.431 52.3 233.147 52.568 232.731 52.76C232.323 52.944 231.843 53.036 231.291 53.036C230.675 53.036 230.155 52.956 229.731 52.796C229.315 52.628 228.987 52.44 228.747 52.232L229.119 51.608ZM238.754 52.4C239.058 51.92 239.414 51.232 239.822 50.336C240.23 49.44 240.602 48.484 240.938 47.468C241.282 46.452 241.51 45.532 241.622 44.708H242.714C242.802 45.524 243.014 46.44 243.35 47.456C243.686 48.472 244.062 49.428 244.478 50.324C244.902 51.22 245.27 51.912 245.582 52.4L244.526 53.168C244.206 52.656 243.85 51.936 243.458 51.008C243.066 50.072 242.702 49.06 242.366 47.972C242.03 46.876 241.786 45.844 241.634 44.876H242.702C242.534 45.852 242.282 46.888 241.946 47.984C241.61 49.072 241.25 50.08 240.866 51.008C240.482 51.936 240.13 52.656 239.81 53.168L238.754 52.4ZM250.346 53.288C250.146 52.832 249.974 52.124 249.83 51.164C249.694 50.196 249.602 49.224 249.554 48.248C249.53 47.656 249.426 47.104 249.242 46.592C249.066 46.072 248.786 45.812 248.402 45.812C248.138 45.812 247.902 45.956 247.694 46.244C247.494 46.524 247.394 46.844 247.394 47.204C247.394 47.46 247.486 47.664 247.67 47.816C247.862 47.968 248.138 48.044 248.498 48.044C248.778 48.044 249.014 48.012 249.206 47.948C249.406 47.884 249.546 47.828 249.626 47.78C249.706 47.724 249.81 47.644 249.938 47.54L250.382 48.824C250.158 48.984 249.882 49.12 249.554 49.232C249.226 49.336 248.858 49.388 248.45 49.388C247.81 49.388 247.298 49.204 246.914 48.836C246.53 48.46 246.338 47.936 246.338 47.264C246.338 46.848 246.43 46.432 246.614 46.016C246.798 45.592 247.046 45.244 247.358 44.972C247.678 44.692 248.034 44.552 248.426 44.552C248.994 44.552 249.43 44.76 249.734 45.176C250.046 45.592 250.254 46.032 250.358 46.496C250.462 46.96 250.55 47.512 250.622 48.152C250.87 50.384 251.15 51.872 251.462 52.616L250.346 53.288Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_face_svg_part_1_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='6.58855'
+        y1='101.716'
+        x2='64.5886'
+        y2='17.7159'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_face_svg_part_1_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='65'
+        y1='18.5'
+        x2='116'
+        y2='18.5'
+        stroke='#A76CF3'
+      />
+    </svg>
+  );
+};
+
+export const RecognizeFaceSvgAnimatePart2: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 247 126'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute -top-[36px] left-[81px]'
+    >
+      <mask id='path-1-inside-1_1648_752' fill='white'>
+        <path d='M0 2L101 2V38H0L0 2Z' />
+      </mask>
+      <motion.path
+        variants={recognize_face_svg_part_2_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M100 2V38H102V2H100Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_752)'
+      />
+      <motion.path
+        variants={recognize_face_svg_part_2_path_6}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M3.96497 44.156L5.60897 48.044C5.78497 48.452 5.98097 48.74 6.19697 48.908C6.41297 49.076 6.69697 49.16 7.04897 49.16H7.19297L7.22897 49.58L7.19297 50H7.04897C6.56897 50 6.15697 49.876 5.81297 49.628C5.47697 49.372 5.18897 48.968 4.94897 48.416L3.28097 44.504L3.96497 44.156ZM1.02497 48.608C1.29697 48.784 1.58497 48.932 1.88897 49.052C2.19297 49.164 2.56497 49.22 3.00497 49.22C3.49297 49.22 3.90897 49.144 4.25297 48.992C4.59697 48.832 4.93697 48.632 5.27297 48.392L5.65697 48.944C5.38497 49.168 5.14897 49.348 4.94897 49.484C4.75697 49.612 4.49697 49.736 4.16897 49.856C3.84097 49.976 3.46897 50.036 3.05297 50.036C2.50097 50.036 2.03697 49.96 1.66097 49.808C1.28497 49.648 0.948969 49.456 0.652969 49.232L1.02497 48.608ZM7.06472 49.16H7.24472C7.66872 49.16 8.01272 49.072 8.27672 48.896C8.54872 48.712 8.76472 48.424 8.92472 48.032C9.08472 47.64 9.21272 47.116 9.30872 46.46L9.99272 46.604C9.94472 46.9 9.92072 47.172 9.92072 47.42C9.92072 48.14 10.1167 48.652 10.5087 48.956C10.9007 49.26 11.4927 49.412 12.2847 49.412C13.0447 49.412 13.7207 49.32 14.3127 49.136C14.9127 48.952 15.3767 48.708 15.7047 48.404C16.0407 48.092 16.2087 47.756 16.2087 47.396C16.2087 47.076 16.0807 46.812 15.8247 46.604C15.5767 46.388 15.2407 46.28 14.8167 46.28C14.1607 46.28 13.4927 46.576 12.8127 47.168C12.1327 47.76 11.5007 48.584 10.9167 49.64L10.3167 49.268C10.9407 48.084 11.6487 47.156 12.4407 46.484C13.2327 45.812 14.0127 45.476 14.7807 45.476C15.1807 45.476 15.5447 45.56 15.8727 45.728C16.2007 45.888 16.4567 46.116 16.6407 46.412C16.8247 46.7 16.9167 47.024 16.9167 47.384C16.9167 47.944 16.7207 48.444 16.3287 48.884C15.9447 49.316 15.4127 49.652 14.7327 49.892C14.0527 50.132 13.2807 50.252 12.4167 50.252C11.4647 50.252 10.7567 50.1 10.2927 49.796C9.83672 49.484 9.56072 49.076 9.46472 48.572C9.25672 49.02 8.98472 49.372 8.64872 49.628C8.32072 49.876 7.84872 50 7.23272 50H7.06472V49.16ZM16.6406 52.676C17.1526 52.516 17.6166 52.288 18.0326 51.992C18.4566 51.704 18.7886 51.388 19.0286 51.044C19.2686 50.7 19.3886 50.372 19.3886 50.06C19.3886 49.628 19.1846 48.612 18.7766 47.012L19.5086 46.748C19.6766 47.324 19.8206 47.928 19.9406 48.56C20.0606 49.184 20.1206 49.684 20.1206 50.06C20.1206 50.516 19.9806 50.964 19.7006 51.404C19.4206 51.852 19.0366 52.252 18.5486 52.604C18.0686 52.956 17.5326 53.228 16.9406 53.42L16.6406 52.676ZM21.3336 48.608C21.6376 48.792 21.9376 48.94 22.2336 49.052C22.5376 49.164 22.9416 49.22 23.4456 49.22C23.9096 49.22 24.2896 49.156 24.5856 49.028C24.8896 48.9 25.0856 48.748 25.1736 48.572C25.2216 48.46 25.2456 48.344 25.2456 48.224C25.2456 47.824 25.0336 47.336 24.6096 46.76C24.1936 46.184 23.5696 45.58 22.7376 44.948L23.1696 44.216C24.0496 44.888 24.7336 45.576 25.2216 46.28C25.7096 46.976 25.9536 47.62 25.9536 48.212C25.9536 48.492 25.9016 48.74 25.7976 48.956C25.6456 49.3 25.3616 49.568 24.9456 49.76C24.5376 49.944 24.0576 50.036 23.5056 50.036C22.8896 50.036 22.3696 49.956 21.9456 49.796C21.5296 49.628 21.2016 49.44 20.9616 49.232L21.3336 48.608ZM35.0845 50.288C34.8845 49.832 34.7125 49.124 34.5685 48.164C34.4325 47.196 34.3405 46.224 34.2925 45.248C34.2685 44.656 34.1645 44.104 33.9805 43.592C33.8045 43.072 33.5245 42.812 33.1405 42.812C32.8765 42.812 32.6405 42.956 32.4325 43.244C32.2325 43.524 32.1325 43.844 32.1325 44.204C32.1325 44.46 32.2245 44.664 32.4085 44.816C32.6005 44.968 32.8765 45.044 33.2365 45.044C33.5165 45.044 33.7525 45.012 33.9445 44.948C34.1445 44.884 34.2845 44.828 34.3645 44.78C34.4445 44.724 34.5485 44.644 34.6765 44.54L35.1205 45.824C34.8965 45.984 34.6205 46.12 34.2925 46.232C33.9645 46.336 33.5965 46.388 33.1885 46.388C32.5485 46.388 32.0365 46.204 31.6525 45.836C31.2685 45.46 31.0765 44.936 31.0765 44.264C31.0765 43.848 31.1685 43.432 31.3525 43.016C31.5365 42.592 31.7845 42.244 32.0965 41.972C32.4165 41.692 32.7725 41.552 33.1645 41.552C33.7325 41.552 34.1685 41.76 34.4725 42.176C34.7845 42.592 34.9925 43.032 35.0965 43.496C35.2005 43.96 35.2885 44.512 35.3605 45.152C35.6085 47.384 35.8885 48.872 36.2005 49.616L35.0845 50.288ZM42.1743 42.02C42.2383 42.716 42.3343 43.216 42.4623 43.52C42.5903 43.824 42.7863 43.976 43.0503 43.976C43.2183 43.976 43.3463 43.88 43.4343 43.688C43.5303 43.496 43.5783 43.236 43.5783 42.908C43.5783 42.548 43.5343 42.176 43.4463 41.792L44.4543 41.528C44.5823 42.064 44.6463 42.548 44.6463 42.98C44.6463 43.668 44.5063 44.228 44.2263 44.66C43.9543 45.084 43.5623 45.296 43.0503 45.296C42.5143 45.296 42.0903 45.016 41.7783 44.456C41.4663 43.888 41.2743 43.132 41.2023 42.188L42.1743 42.02ZM38.8743 42.416C39.0743 42.992 39.2743 43.412 39.4743 43.676C39.6823 43.94 39.9503 44.072 40.2783 44.072C40.5663 44.072 40.7943 43.944 40.9623 43.688C41.1383 43.424 41.2263 43.056 41.2263 42.584C41.2263 42.512 41.2183 42.38 41.2023 42.188L42.1503 42.068C42.1583 42.156 42.1623 42.288 42.1623 42.464C42.1623 43.016 42.0863 43.52 41.9343 43.976C41.7903 44.424 41.5823 44.78 41.3103 45.044C41.0383 45.3 40.7223 45.428 40.3623 45.428C39.8103 45.428 39.3583 45.232 39.0063 44.84C38.6543 44.44 38.3263 43.84 38.0223 43.04L38.8743 42.416ZM38.5143 49.244C38.5143 47.876 38.4463 46.66 38.3103 45.596C38.1343 44.3 37.8343 43.168 37.4103 42.2L38.5383 41.54C38.9783 42.468 39.2943 43.764 39.4863 45.428C39.5903 46.364 39.6423 47.604 39.6423 49.148V50H38.5023L38.5143 49.244Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_face_svg_part_2_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='239.361'
+        y1='118.654'
+        x2='143.361'
+        y2='18.6537'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_face_svg_part_2_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='143'
+        y1='19.5'
+        x2='101'
+        y2='19.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_face_svg_part_2_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='239.551'
+        cy='118.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_face_svg_part_2_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='239.35'
+        cy='118.35'
+        r='6.85036'
+        stroke='white'
+      />
+    </svg>
+  );
+};
+
+export const BorderSvg6: FC<SvgProps> = ({
+  width,
+  height,
+  animation,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 290 290'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute'
+    >
+      <motion.rect
+        variants={animation}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x='1.01886'
+        y='1.35547'
+        width='288.087'
+        height='288.087'
+        fill='#7000FF'
+        stroke='#A76CF3'
+        strokeWidth={1}
+      />
+    </svg>
+  );
+};
+
+export const BorderSvg7: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+  animation,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 300 300'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute'
+    >
+      <motion.rect
+        variants={animation}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x='0.866425'
+        y='1.26465'
+        width='298.134'
+        height='298.134'
+        fill='#7000FF'
+        stroke='#A76CF3'
+        strokeWidth={1}
+      />
+    </svg>
+  );
+};
+
+export const RecognizeImageSvgAnimatePart1: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 267 161'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute -top-[10px]'
+    >
+      <mask id='path-1-inside-1_1648_819' fill='white'>
+        <path d='M0 1L112 1V37H0L0 1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_image_svg_part_1_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M111 1V37H113V1L111 1Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_819)'
+      />
+      <motion.path
+        variants={recognize_image_svg_part_1_path_6}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M3.75013 47.156L5.39413 51.044C5.57013 51.452 5.76613 51.74 5.98213 51.908C6.19813 52.076 6.48213 52.16 6.83413 52.16H6.97813L7.01413 52.58L6.97813 53H6.83413C6.35413 53 5.94213 52.876 5.59813 52.628C5.26213 52.372 4.97413 51.968 4.73413 51.416L3.06613 47.504L3.75013 47.156ZM0.810125 51.608C1.08213 51.784 1.37013 51.932 1.67413 52.052C1.97813 52.164 2.35013 52.22 2.79013 52.22C3.27813 52.22 3.69413 52.144 4.03813 51.992C4.38213 51.832 4.72213 51.632 5.05813 51.392L5.44213 51.944C5.17013 52.168 4.93413 52.348 4.73413 52.484C4.54213 52.612 4.28213 52.736 3.95413 52.856C3.62613 52.976 3.25413 53.036 2.83813 53.036C2.28613 53.036 1.82213 52.96 1.44613 52.808C1.07013 52.648 0.734125 52.456 0.438125 52.232L0.810125 51.608ZM6.84987 52.16H7.02988C7.45388 52.16 7.79788 52.072 8.06188 51.896C8.33388 51.712 8.54988 51.424 8.70988 51.032C8.86988 50.64 8.99788 50.116 9.09388 49.46L9.77788 49.604C9.72988 49.9 9.70588 50.172 9.70588 50.42C9.70588 51.14 9.90188 51.652 10.2939 51.956C10.6859 52.26 11.2779 52.412 12.0699 52.412C12.8299 52.412 13.5059 52.32 14.0979 52.136C14.6979 51.952 15.1619 51.708 15.4899 51.404C15.8259 51.092 15.9939 50.756 15.9939 50.396C15.9939 50.076 15.8659 49.812 15.6099 49.604C15.3619 49.388 15.0259 49.28 14.6019 49.28C13.9459 49.28 13.2779 49.576 12.5979 50.168C11.9179 50.76 11.2859 51.584 10.7019 52.64L10.1019 52.268C10.7259 51.084 11.4339 50.156 12.2259 49.484C13.0179 48.812 13.7979 48.476 14.5659 48.476C14.9659 48.476 15.3299 48.56 15.6579 48.728C15.9859 48.888 16.2419 49.116 16.4259 49.412C16.6099 49.7 16.7019 50.024 16.7019 50.384C16.7019 50.944 16.5059 51.444 16.1139 51.884C15.7299 52.316 15.1979 52.652 14.5179 52.892C13.8379 53.132 13.0659 53.252 12.2019 53.252C11.2499 53.252 10.5419 53.1 10.0779 52.796C9.62188 52.484 9.34588 52.076 9.24988 51.572C9.04188 52.02 8.76988 52.372 8.43388 52.628C8.10588 52.876 7.63388 53 7.01788 53H6.84987V52.16ZM16.4258 55.676C16.9378 55.516 17.4018 55.288 17.8178 54.992C18.2418 54.704 18.5738 54.388 18.8138 54.044C19.0538 53.7 19.1738 53.372 19.1738 53.06C19.1738 52.628 18.9698 51.612 18.5618 50.012L19.2938 49.748C19.4618 50.324 19.6058 50.928 19.7258 51.56C19.8458 52.184 19.9058 52.684 19.9058 53.06C19.9058 53.516 19.7658 53.964 19.4858 54.404C19.2058 54.852 18.8218 55.252 18.3338 55.604C17.8538 55.956 17.3178 56.228 16.7258 56.42L16.4258 55.676ZM21.1187 51.608C21.4227 51.792 21.7227 51.94 22.0187 52.052C22.3227 52.164 22.7267 52.22 23.2307 52.22C23.6947 52.22 24.0747 52.156 24.3707 52.028C24.6747 51.9 24.8707 51.748 24.9587 51.572C25.0067 51.46 25.0307 51.344 25.0307 51.224C25.0307 50.824 24.8187 50.336 24.3947 49.76C23.9787 49.184 23.3547 48.58 22.5227 47.948L22.9547 47.216C23.8347 47.888 24.5187 48.576 25.0067 49.28C25.4947 49.976 25.7387 50.62 25.7387 51.212C25.7387 51.492 25.6867 51.74 25.5827 51.956C25.4307 52.3 25.1467 52.568 24.7307 52.76C24.3227 52.944 23.8427 53.036 23.2907 53.036C22.6747 53.036 22.1547 52.956 21.7307 52.796C21.3147 52.628 20.9867 52.44 20.7467 52.232L21.1187 51.608ZM34.8697 53.288C34.6697 52.832 34.4977 52.124 34.3537 51.164C34.2177 50.196 34.1257 49.224 34.0777 48.248C34.0537 47.656 33.9497 47.104 33.7657 46.592C33.5897 46.072 33.3097 45.812 32.9257 45.812C32.6617 45.812 32.4257 45.956 32.2177 46.244C32.0177 46.524 31.9177 46.844 31.9177 47.204C31.9177 47.46 32.0097 47.664 32.1937 47.816C32.3857 47.968 32.6617 48.044 33.0217 48.044C33.3017 48.044 33.5377 48.012 33.7297 47.948C33.9297 47.884 34.0697 47.828 34.1497 47.78C34.2297 47.724 34.3337 47.644 34.4617 47.54L34.9057 48.824C34.6817 48.984 34.4057 49.12 34.0777 49.232C33.7497 49.336 33.3817 49.388 32.9737 49.388C32.3337 49.388 31.8217 49.204 31.4377 48.836C31.0537 48.46 30.8617 47.936 30.8617 47.264C30.8617 46.848 30.9537 46.432 31.1377 46.016C31.3217 45.592 31.5697 45.244 31.8817 44.972C32.2017 44.692 32.5577 44.552 32.9497 44.552C33.5177 44.552 33.9537 44.76 34.2577 45.176C34.5697 45.592 34.7777 46.032 34.8817 46.496C34.9857 46.96 35.0737 47.512 35.1457 48.152C35.3937 50.384 35.6737 51.872 35.9857 52.616L34.8697 53.288ZM43.6754 45.308C43.3714 45.788 43.0154 46.476 42.6074 47.372C42.1994 48.268 41.8234 49.224 41.4794 50.24C41.1434 51.256 40.9194 52.176 40.8074 53H39.7154C39.6274 52.184 39.4154 51.268 39.0794 50.252C38.7434 49.236 38.3634 48.28 37.9394 47.384C37.5234 46.488 37.1594 45.796 36.8474 45.308L37.9034 44.54C38.2234 45.052 38.5794 45.776 38.9714 46.712C39.3634 47.64 39.7274 48.652 40.0634 49.748C40.3994 50.836 40.6434 51.864 40.7954 52.832H39.7274C39.8954 51.856 40.1474 50.824 40.4834 49.736C40.8194 48.64 41.1794 47.628 41.5634 46.7C41.9474 45.772 42.2994 45.052 42.6194 44.54L43.6754 45.308Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_1_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='260.431'
+        y1='152.746'
+        x2='181.431'
+        y2='18.7461'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_1_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='181'
+        y1='19.5'
+        x2='112'
+        y2='19.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_1_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='259.551'
+        cy='153.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_1_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='259.35'
+        cy='153.35'
+        r='6.85036'
+        stroke='white'
+      />
+    </svg>
+  );
+};
+
+export const RecognizeImageSvgAnimatePart2: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 241 178'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute top-[70px]'
+    >
+      <mask id='path-1-inside-1_1648_849' fill='white'>
+        <path d='M129 1L241 1V37H129V1Z' />
+      </mask>
+      <motion.path
+        variants={recognize_image_svg_part_2_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M130 37V1H128V37H130Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_849)'
+      />
+      <motion.path
+        variants={recognize_image_svg_part_2_path_6}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M200.75 47.156L202.394 51.044C202.57 51.452 202.766 51.74 202.982 51.908C203.198 52.076 203.482 52.16 203.834 52.16H203.978L204.014 52.58L203.978 53H203.834C203.354 53 202.942 52.876 202.598 52.628C202.262 52.372 201.974 51.968 201.734 51.416L200.066 47.504L200.75 47.156ZM197.81 51.608C198.082 51.784 198.37 51.932 198.674 52.052C198.978 52.164 199.35 52.22 199.79 52.22C200.278 52.22 200.694 52.144 201.038 51.992C201.382 51.832 201.722 51.632 202.058 51.392L202.442 51.944C202.17 52.168 201.934 52.348 201.734 52.484C201.542 52.612 201.282 52.736 200.954 52.856C200.626 52.976 200.254 53.036 199.838 53.036C199.286 53.036 198.822 52.96 198.446 52.808C198.07 52.648 197.734 52.456 197.438 52.232L197.81 51.608ZM203.85 52.16H204.03C204.454 52.16 204.798 52.072 205.062 51.896C205.334 51.712 205.55 51.424 205.71 51.032C205.87 50.64 205.998 50.116 206.094 49.46L206.778 49.604C206.73 49.9 206.706 50.172 206.706 50.42C206.706 51.14 206.902 51.652 207.294 51.956C207.686 52.26 208.278 52.412 209.07 52.412C209.83 52.412 210.506 52.32 211.098 52.136C211.698 51.952 212.162 51.708 212.49 51.404C212.826 51.092 212.994 50.756 212.994 50.396C212.994 50.076 212.866 49.812 212.61 49.604C212.362 49.388 212.026 49.28 211.602 49.28C210.946 49.28 210.278 49.576 209.598 50.168C208.918 50.76 208.286 51.584 207.702 52.64L207.102 52.268C207.726 51.084 208.434 50.156 209.226 49.484C210.018 48.812 210.798 48.476 211.566 48.476C211.966 48.476 212.33 48.56 212.658 48.728C212.986 48.888 213.242 49.116 213.426 49.412C213.61 49.7 213.702 50.024 213.702 50.384C213.702 50.944 213.506 51.444 213.114 51.884C212.73 52.316 212.198 52.652 211.518 52.892C210.838 53.132 210.066 53.252 209.202 53.252C208.25 53.252 207.542 53.1 207.078 52.796C206.622 52.484 206.346 52.076 206.25 51.572C206.042 52.02 205.77 52.372 205.434 52.628C205.106 52.876 204.634 53 204.018 53H203.85V52.16ZM213.426 55.676C213.938 55.516 214.402 55.288 214.818 54.992C215.242 54.704 215.574 54.388 215.814 54.044C216.054 53.7 216.174 53.372 216.174 53.06C216.174 52.628 215.97 51.612 215.562 50.012L216.294 49.748C216.462 50.324 216.606 50.928 216.726 51.56C216.846 52.184 216.906 52.684 216.906 53.06C216.906 53.516 216.766 53.964 216.486 54.404C216.206 54.852 215.822 55.252 215.334 55.604C214.854 55.956 214.318 56.228 213.726 56.42L213.426 55.676ZM218.119 51.608C218.423 51.792 218.723 51.94 219.019 52.052C219.323 52.164 219.727 52.22 220.231 52.22C220.695 52.22 221.075 52.156 221.371 52.028C221.675 51.9 221.871 51.748 221.959 51.572C222.007 51.46 222.031 51.344 222.031 51.224C222.031 50.824 221.819 50.336 221.395 49.76C220.979 49.184 220.355 48.58 219.523 47.948L219.955 47.216C220.835 47.888 221.519 48.576 222.007 49.28C222.495 49.976 222.739 50.62 222.739 51.212C222.739 51.492 222.687 51.74 222.583 51.956C222.431 52.3 222.147 52.568 221.731 52.76C221.323 52.944 220.843 53.036 220.291 53.036C219.675 53.036 219.155 52.956 218.731 52.796C218.315 52.628 217.987 52.44 217.747 52.232L218.119 51.608ZM231.87 53.288C231.67 52.832 231.498 52.124 231.354 51.164C231.218 50.196 231.126 49.224 231.078 48.248C231.054 47.656 230.95 47.104 230.766 46.592C230.59 46.072 230.31 45.812 229.926 45.812C229.662 45.812 229.426 45.956 229.218 46.244C229.018 46.524 228.918 46.844 228.918 47.204C228.918 47.46 229.01 47.664 229.194 47.816C229.386 47.968 229.662 48.044 230.022 48.044C230.302 48.044 230.538 48.012 230.73 47.948C230.93 47.884 231.07 47.828 231.15 47.78C231.23 47.724 231.334 47.644 231.462 47.54L231.906 48.824C231.682 48.984 231.406 49.12 231.078 49.232C230.75 49.336 230.382 49.388 229.974 49.388C229.334 49.388 228.822 49.204 228.438 48.836C228.054 48.46 227.862 47.936 227.862 47.264C227.862 46.848 227.954 46.432 228.138 46.016C228.322 45.592 228.57 45.244 228.882 44.972C229.202 44.692 229.558 44.552 229.95 44.552C230.518 44.552 230.954 44.76 231.258 45.176C231.57 45.592 231.778 46.032 231.882 46.496C231.986 46.96 232.074 47.512 232.146 48.152C232.394 50.384 232.674 51.872 232.986 52.616L231.87 53.288ZM233.847 52.4C234.151 51.92 234.507 51.232 234.915 50.336C235.323 49.44 235.695 48.484 236.031 47.468C236.375 46.452 236.603 45.532 236.715 44.708H237.807C237.895 45.524 238.107 46.44 238.443 47.456C238.779 48.472 239.155 49.428 239.571 50.324C239.995 51.22 240.363 51.912 240.675 52.4L239.619 53.168C239.299 52.656 238.943 51.936 238.551 51.008C238.159 50.072 237.795 49.06 237.459 47.972C237.123 46.876 236.879 45.844 236.727 44.876H237.795C237.627 45.852 237.375 46.888 237.039 47.984C236.703 49.072 236.343 50.08 235.959 51.008C235.575 51.936 235.223 52.656 234.903 53.168L233.847 52.4Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_2_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='7.44061'
+        y1='170.236'
+        x2='88.4406'
+        y2='19.2364'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_2_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='88'
+        y1='19.5'
+        x2='129'
+        y2='19.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_2_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='7.55104'
+        cy='170.85'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_2_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='7.35036'
+        cy='170.35'
+        r='6.85036'
+        stroke='white'
+      />
+    </svg>
+  );
+};
+
+export const RecognizeImageSvgAnimatePart3: FC<SvgProps> = ({
+  width,
+  height,
+  inview,
+}) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox='0 0 230 159'
+      fill='none'
+      xmlns='http://www.w3.org/2000/svg'
+      className='absolute bottom-[75px] right-[34px]'
+    >
+      <mask id='path-1-inside-1_1648_878' fill='white'>
+        <path d='M0 105H77V141H0L0 105Z' />
+      </mask>
+      <motion.path
+        variants={recognize_image_svg_part_3_path_5}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M76 105V141H78V105H76Z'
+        fill='#A76CF3'
+        mask='url(#path-1-inside-1_1648_878)'
+      />
+      <motion.path
+        variants={recognize_image_svg_part_3_path_6}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        d='M4.13294 147.156L5.77694 151.044C5.95294 151.452 6.14894 151.74 6.36494 151.908C6.58094 152.076 6.86494 152.16 7.21694 152.16H7.36094L7.39694 152.58L7.36094 153H7.21694C6.73694 153 6.32494 152.876 5.98094 152.628C5.64494 152.372 5.35694 151.968 5.11694 151.416L3.44894 147.504L4.13294 147.156ZM1.19294 151.608C1.46494 151.784 1.75294 151.932 2.05694 152.052C2.36094 152.164 2.73294 152.22 3.17294 152.22C3.66094 152.22 4.07694 152.144 4.42094 151.992C4.76494 151.832 5.10494 151.632 5.44094 151.392L5.82494 151.944C5.55294 152.168 5.31694 152.348 5.11694 152.484C4.92494 152.612 4.66494 152.736 4.33694 152.856C4.00894 152.976 3.63694 153.036 3.22094 153.036C2.66894 153.036 2.20494 152.96 1.82894 152.808C1.45294 152.648 1.11694 152.456 0.820938 152.232L1.19294 151.608ZM7.23269 152.16H7.41269C7.83669 152.16 8.18069 152.072 8.44469 151.896C8.71669 151.712 8.93269 151.424 9.09269 151.032C9.25269 150.64 9.38069 150.116 9.47669 149.46L10.1607 149.604C10.1127 149.9 10.0887 150.172 10.0887 150.42C10.0887 151.14 10.2847 151.652 10.6767 151.956C11.0687 152.26 11.6607 152.412 12.4527 152.412C13.2127 152.412 13.8887 152.32 14.4807 152.136C15.0807 151.952 15.5447 151.708 15.8727 151.404C16.2087 151.092 16.3767 150.756 16.3767 150.396C16.3767 150.076 16.2487 149.812 15.9927 149.604C15.7447 149.388 15.4087 149.28 14.9847 149.28C14.3287 149.28 13.6607 149.576 12.9807 150.168C12.3007 150.76 11.6687 151.584 11.0847 152.64L10.4847 152.268C11.1087 151.084 11.8167 150.156 12.6087 149.484C13.4007 148.812 14.1807 148.476 14.9487 148.476C15.3487 148.476 15.7127 148.56 16.0407 148.728C16.3687 148.888 16.6247 149.116 16.8087 149.412C16.9927 149.7 17.0847 150.024 17.0847 150.384C17.0847 150.944 16.8887 151.444 16.4967 151.884C16.1127 152.316 15.5807 152.652 14.9007 152.892C14.2207 153.132 13.4487 153.252 12.5847 153.252C11.6327 153.252 10.9247 153.1 10.4607 152.796C10.0047 152.484 9.72869 152.076 9.63269 151.572C9.42469 152.02 9.15269 152.372 8.81669 152.628C8.48869 152.876 8.01669 153 7.40069 153H7.23269V152.16ZM16.8086 155.676C17.3206 155.516 17.7846 155.288 18.2006 154.992C18.6246 154.704 18.9566 154.388 19.1966 154.044C19.4366 153.7 19.5566 153.372 19.5566 153.06C19.5566 152.628 19.3526 151.612 18.9446 150.012L19.6766 149.748C19.8446 150.324 19.9886 150.928 20.1086 151.56C20.2286 152.184 20.2886 152.684 20.2886 153.06C20.2886 153.516 20.1486 153.964 19.8686 154.404C19.5886 154.852 19.2046 155.252 18.7166 155.604C18.2366 155.956 17.7006 156.228 17.1086 156.42L16.8086 155.676ZM21.5015 151.608C21.8055 151.792 22.1055 151.94 22.4015 152.052C22.7055 152.164 23.1095 152.22 23.6135 152.22C24.0775 152.22 24.4575 152.156 24.7535 152.028C25.0575 151.9 25.2535 151.748 25.3415 151.572C25.3895 151.46 25.4135 151.344 25.4135 151.224C25.4135 150.824 25.2015 150.336 24.7775 149.76C24.3615 149.184 23.7375 148.58 22.9055 147.948L23.3375 147.216C24.2175 147.888 24.9015 148.576 25.3895 149.28C25.8775 149.976 26.1215 150.62 26.1215 151.212C26.1215 151.492 26.0695 151.74 25.9655 151.956C25.8135 152.3 25.5295 152.568 25.1135 152.76C24.7055 152.944 24.2255 153.036 23.6735 153.036C23.0575 153.036 22.5375 152.956 22.1135 152.796C21.6975 152.628 21.3695 152.44 21.1295 152.232L21.5015 151.608ZM35.2525 153.288C35.0525 152.832 34.8805 152.124 34.7365 151.164C34.6005 150.196 34.5085 149.224 34.4605 148.248C34.4365 147.656 34.3325 147.104 34.1485 146.592C33.9725 146.072 33.6925 145.812 33.3085 145.812C33.0445 145.812 32.8085 145.956 32.6005 146.244C32.4005 146.524 32.3005 146.844 32.3005 147.204C32.3005 147.46 32.3925 147.664 32.5765 147.816C32.7685 147.968 33.0445 148.044 33.4045 148.044C33.6845 148.044 33.9205 148.012 34.1125 147.948C34.3125 147.884 34.4525 147.828 34.5325 147.78C34.6125 147.724 34.7165 147.644 34.8445 147.54L35.2885 148.824C35.0645 148.984 34.7885 149.12 34.4605 149.232C34.1325 149.336 33.7645 149.388 33.3565 149.388C32.7165 149.388 32.2045 149.204 31.8205 148.836C31.4365 148.46 31.2445 147.936 31.2445 147.264C31.2445 146.848 31.3365 146.432 31.5205 146.016C31.7045 145.592 31.9525 145.244 32.2645 144.972C32.5845 144.692 32.9405 144.552 33.3325 144.552C33.9005 144.552 34.3365 144.76 34.6405 145.176C34.9525 145.592 35.1605 146.032 35.2645 146.496C35.3685 146.96 35.4565 147.512 35.5285 148.152C35.7765 150.384 36.0565 151.872 36.3685 152.616L35.2525 153.288ZM41.3463 153.288C41.1463 152.832 40.9743 152.124 40.8303 151.164C40.6943 150.196 40.6023 149.224 40.5543 148.248C40.5303 147.656 40.4263 147.104 40.2423 146.592C40.0663 146.072 39.7863 145.812 39.4023 145.812C39.1383 145.812 38.9023 145.956 38.6943 146.244C38.4943 146.524 38.3943 146.844 38.3943 147.204C38.3943 147.46 38.4863 147.664 38.6702 147.816C38.8623 147.968 39.1383 148.044 39.4983 148.044C39.7783 148.044 40.0143 148.012 40.2063 147.948C40.4063 147.884 40.5463 147.828 40.6263 147.78C40.7063 147.724 40.8103 147.644 40.9383 147.54L41.3823 148.824C41.1583 148.984 40.8823 149.12 40.5543 149.232C40.2263 149.336 39.8583 149.388 39.4503 149.388C38.8103 149.388 38.2983 149.204 37.9143 148.836C37.5303 148.46 37.3383 147.936 37.3383 147.264C37.3383 146.848 37.4303 146.432 37.6143 146.016C37.7983 145.592 38.0463 145.244 38.3583 144.972C38.6783 144.692 39.0343 144.552 39.4263 144.552C39.9943 144.552 40.4303 144.76 40.7343 145.176C41.0463 145.592 41.2543 146.032 41.3583 146.496C41.4623 146.96 41.5503 147.512 41.6223 148.152C41.8703 150.384 42.1503 151.872 42.4623 152.616L41.3463 153.288Z'
+        fill='#FAFAFA'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_3_path_3}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='221.602'
+        y1='7.69719 '
+        x2='135.602'
+        y2='120.697'
+        stroke='#A76CF3'
+      />
+      <motion.line
+        variants={recognize_image_svg_part_3_path_4}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        x1='136'
+        y1='121.5'
+        x2='77'
+        y2='121.5'
+        stroke='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_3_path_1}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='222.551'
+        cy='7.85035'
+        r='5.85035'
+        fill='#A76CF3'
+      />
+      <motion.circle
+        variants={recognize_image_svg_part_3_path_2}
+        initial='hidden'
+        animate={inview ? "visible" : ""}
+        viewport={{ once: false, amount: 0.5 }}
+        cx='222.35'
+        cy='7.35036'
+        r='6.85036'
+        stroke='white'
       />
     </svg>
   );
