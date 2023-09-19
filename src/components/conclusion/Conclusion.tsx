@@ -8,12 +8,12 @@ import ImageRecognize from "./image-recognize/ImageRecognize";
 const Conclusion = () => {
   const [activeTab, setActiveTab] = useState(1);
   return (
-    <div className='mt-[320px] flex w-full flex-col items-center gap-[196px]'>
-      <span className='text-[42px] font-normal text-[#A76CF3]'>
+    <div className='mt-[320px] flex w-full flex-col items-center gap-[196px] sm:gap-[100px]'>
+      <span className='text-[42px] font-normal text-[#A76CF3] sm:text-[30px]'>
         به عمل کار برآید :){" "}
       </span>
-      <div className='flex w-full max-w-[1500px] items-center justify-between'>
-        <div className='flex flex-col items-start gap-[50px] text-[24px] font-normal'>
+      <div className='flex w-full max-w-[1500px] items-center justify-between gap-[30px]'>
+        <div className='flex flex-col items-start gap-[50px] whitespace-nowrap text-[24px] font-normal sm:text-base'>
           <div
             onClick={() => setActiveTab(1)}
             className={clsx(
@@ -72,10 +72,12 @@ const Conclusion = () => {
             </span>
           </div>
         </div>
-        <div>
-          <RecognizeText activeTab={activeTab} />
-          <FaceRecognize activeTab={activeTab} />
-          <ImageRecognize activeTab={activeTab} />
+        <div className='scrollbar-hide no-scrollbar flex max-w-[1080px] items-end justify-start'>
+          <div className='flex min-h-[800px] min-w-[1070px] items-center justify-center'>
+            <RecognizeText activeTab={activeTab} />
+            <FaceRecognize activeTab={activeTab} />
+            <ImageRecognize activeTab={activeTab} />
+          </div>
         </div>
       </div>
     </div>

@@ -30,7 +30,7 @@ const Usage: FC<UsageProps> = ({
       viewport={{ once: true, amount: 0.5 }}
       className='flex flex-col items-start gap-5'
     >
-      <div className='relative'>
+      <div className='am:w-fit relative sm:mx-auto'>
         <img
           width={lineWidth}
           src={line}
@@ -47,8 +47,12 @@ const Usage: FC<UsageProps> = ({
           draggable={false}
         />
       </div>
-      <span className='text-[24px] font-normal text-[#A76CF3]'>{title}</span>
-      <span className='max-w-[480px] text-[18px] font-light'>{text}</span>
+      <span className='text-[24px] font-normal text-[#A76CF3] sm:w-full sm:text-center'>
+        {title}
+      </span>
+      <span className='max-w-[480px] text-[18px] font-light sm:w-full sm:text-center'>
+        {text}
+      </span>
     </motion.div>
   );
 };

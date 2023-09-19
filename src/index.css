@@ -63,3 +63,12 @@
     background: #a76cf3;
   }
 }
+
+@layer utilities {
+  .font-size-clamp {
+    font-size: clamp(12px, 1.3vw, 50px);
+  }
+  .no-scrollbar::-webkit-scrollbar {
+    display: none;
+  }
+}

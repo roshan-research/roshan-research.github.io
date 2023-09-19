@@ -506,7 +506,7 @@ export const recognize_text_svg_part_3_path_6 = {
     width: "130px",
     transition: {
       duration: 0.4,
-      delay: 4.1,
+      delay: 4.4,
     },
   },
 };
@@ -519,7 +519,7 @@ export const recognize_text_svg_part_3_path_8 = {
     maxWidth: "130px",
     transition: {
       duration: 0.4,
-      delay: 4.2,
+      delay: 4.4,
     },
   },
 };

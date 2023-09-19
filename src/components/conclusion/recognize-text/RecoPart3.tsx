@@ -40,7 +40,7 @@ const RecoPart3 = () => {
         initial='hidden'
         whileInView='visible'
         viewport={{ once: false, amount: 0.5 }}
-        className='absolute -top-[69.5px] left-[205px] h-[36px] w-[93px] bg-[#a86cf333]'
+        className='absolute -top-[69px] left-[205px] h-[36px] w-[93px] bg-[#a86cf333]'
       ></motion.div>
       <div className='flex items-center gap-3'>
         <img src={Tablet} alt='' className='w-[29px]' draggable={false} />

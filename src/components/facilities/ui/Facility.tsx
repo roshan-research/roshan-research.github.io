@@ -32,7 +32,9 @@ const Facility: FC<FacilityProps> = ({
       <div
         className={clsx(
           "flex flex-col gap-[10px]",
-          left ? "ml-[145px] mt-[120px]" : "mr-[205px] mt-[190px]"
+          left
+            ? "ml-[145px] mt-[120px] sm:ml-[8vw]"
+            : "mr-[205px] mt-[190px] sm:mr-[8vw] sm:mt-[120px]"
         )}
       >
         <motion.div

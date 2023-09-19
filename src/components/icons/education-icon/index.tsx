@@ -1,5 +1,5 @@
 import { FC } from "react";
-import { IconProps } from "../engin-glass-icon";
+import { IconProps } from "@/shared/types";
 
 const EducationIcon: FC<IconProps> = ({ width, height }) => {
   return (

@@ -15,20 +15,22 @@ const Butterfly: FC<IconProps> = ({ width, height }) => {
         variants={window_animation}
         initial='hidden'
         animate='visible'
-        className='absolute left-[98px] top-[400px]'
+        className='absolute top-[75px] sm:top-[60px]'
       >
-        <img src={Window} alt='' width={405} height={257} />
+        <img src={Window} alt='' className='w-full' />
       </motion.div>
-      <ButterflyAnimateSvg width={144} height={83} />
-      <div className='absolute left-[375px] top-[317px] w-fit text-[20px] font-[500] text-[#FAFAFA]'>
-        <motion.span
-          variants={main_svg_path_6}
-          initial='hidden'
-          animate='visible'
-          className='flex justify-end overflow-hidden'
-        >
-          پروانه
-        </motion.span>
+      <div className='absolute left-0 h-fit w-fit sm:-left-[10vw] sm:-top-[20px]'>
+        <ButterflyAnimateSvg width={144} height={83} />
+        <div className='absolute left-[270px] top-[3px] w-fit text-[20px] font-[500] text-[#FAFAFA]'>
+          <motion.span
+            variants={main_svg_path_6}
+            initial='hidden'
+            animate='visible'
+            className='flex justify-end overflow-hidden'
+          >
+            پروانه
+          </motion.span>
+        </div>
       </div>
       <ButterflySvg width={width} height={height} />
     </div>

@@ -4,20 +4,25 @@ import Pic_2 from "@/assets/images/article-usage/pic-2.png";
 import Pic_3 from "@/assets/images/article-usage/pic-3.png";
 import Pic_4 from "@/assets/images/article-usage/pic-4.png";
 import Usage from "./ui/Usage";
+import { FC } from "react";
 
-const KashfUsage = () => {
+type KashfUsageProps = {
+  windowWidth: number | null;
+};
+
+const KashfUsage: FC<KashfUsageProps> = ({ windowWidth }) => {
   return (
     <div className='mt-[320px] flex flex-col items-center gap-[43px] text-[#FAFAFA]'>
-      <span className='text-[42px] font-[700] text-[#A76CF3]'>
+      <span className='text-[42px] font-[700] text-[#A76CF3] sm:text-[30px]'>
         کاربرد های کشف
       </span>
-      <div className='mt-[43px] flex items-start gap-[247px]'>
-        <div className='flex flex-col items-start gap-[219px]'>
+      <div className='mt-[43px] flex items-start gap-[247px] custombp2:flex-col custombp2:gap-[100px]'>
+        <div className='flex flex-col items-start gap-[219px] custombp2:gap-[100px]'>
           <Usage
             line={Line}
             image={Pic_1}
-            width={265}
-            lineWidth={60}
+            width={windowWidth! < 641 ? 306 : 265}
+            lineWidth={windowWidth! < 641 ? 65 : 60}
             left={true}
             title={"تحلیل نظرات"}
             text={
@@ -36,12 +41,12 @@ const KashfUsage = () => {
             }
           />
         </div>
-        <div className='mt-[290px] flex flex-col items-start gap-[219px]'>
+        <div className='mt-[290px] flex flex-col items-start gap-[219px] custombp2:mt-0 custombp2:gap-[100px]'>
           <Usage
             line={Line}
             image={Pic_3}
-            width={360}
-            lineWidth={70}
+            width={windowWidth! < 641 ? 306 : 360}
+            lineWidth={windowWidth! < 641 ? 65 : 70}
             left={false}
             title={"تحلیل شبکه های اجتماعی"}
             text={
@@ -51,8 +56,8 @@ const KashfUsage = () => {
           <Usage
             line={Line}
             image={Pic_4}
-            width={222}
-            lineWidth={60}
+            width={windowWidth! < 641 ? 306 : 222}
+            lineWidth={windowWidth! < 641 ? 65 : 60}
             left={false}
             title={"دسته بندی اسناد"}
             text={
