@@ -707,7 +707,6 @@ export const BorderSvg4: FC<SvgProps> = ({
       viewBox='0 0 206 247'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='absolute left-[152px] top-[50px]'
     >
       <motion.rect
         variants={animation}
@@ -739,7 +738,6 @@ export const BorderSvg5: FC<SvgProps> = ({
       viewBox='0 0 201 258'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='absolute right-[135px] top-[100px]'
     >
       <motion.rect
         variants={animation}
@@ -770,7 +768,7 @@ export const RecognizeFaceSvgAnimatePart1: FC<SvgProps> = ({
       viewBox='0 0 252 109'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='absolute right-[70px] top-[14px]'
+      className='absolute -right-[65px] -top-[85px] custombp5:-right-[40px] custombp5:-top-[30px]'
     >
       <motion.circle
         variants={recognize_face_svg_part_1_path_1}
@@ -850,7 +848,7 @@ export const RecognizeFaceSvgAnimatePart2: FC<SvgProps> = ({
       viewBox='0 0 247 126'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='absolute -top-[36px] left-[81px]'
+      className='absolute -top-[90px] right-[30px] custombp5:-top-[65px] custombp5:right-[10px]'
     >
       <mask id='path-1-inside-1_1648_752' fill='white'>
         <path d='M0 2L101 2V38H0L0 2Z' />
@@ -1152,7 +1150,7 @@ export const RecognizeImageSvgAnimatePart3: FC<SvgProps> = ({
       viewBox='0 0 230 159'
       fill='none'
       xmlns='http://www.w3.org/2000/svg'
-      className='absolute bottom-[75px] right-[34px]'
+      className='absolute bottom-[75px] right-[34px] custombp5:-bottom-[114px]'
     >
       <mask id='path-1-inside-1_1648_878' fill='white'>
         <path d='M0 105H77V141H0L0 105Z' />

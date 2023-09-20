@@ -10,16 +10,16 @@ const Footer = () => {
         <div className='flex items-start gap-[112px]'>
           <div className='flex flex-col items-start gap-[20px] whitespace-nowrap'>
             <Link to='https://www.roshan-ai.ir/contact-us'>
-              <span className='hover:text-[#ff6200]'>تماس با ما</span>
+              <span className='hover:text-[#A76CF3]'>تماس با ما</span>
             </Link>
             <Link to='https://www.roshan-ai.ir/join-us'>
-              <span className='hover:text-[#ff6200]'>همکاری با ما</span>
+              <span className='hover:text-[#A76CF3]'>همکاری با ما</span>
             </Link>
           </div>
           <div className='flex flex-col items-start gap-[20px]'>
             <span>شرکت دانش‌بنیان «راهکار پردازش ژرف»</span>
             <Link to='https://www.roshan-ai.ir'>
-              <span className='whitespace-nowrap hover:text-[#ff6200]'>
+              <span className='whitespace-nowrap hover:text-[#A76CF3]'>
                 salam@roshan-ai.ir
               </span>
             </Link>

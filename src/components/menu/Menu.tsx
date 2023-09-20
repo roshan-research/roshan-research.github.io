@@ -71,7 +71,7 @@ const Menu: FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen, menuOpenRef }) => {
             همکاری با ما
           </span>
         </Link>
-        <span className='absolute bottom-4 right-10 text-[0.8vw]'>
+        <span className='absolute bottom-4 right-10 text-[0.8vw] custombp5:text-[3.5vw]'>
           راهکار پردازش ژرف
         </span>
       </div>

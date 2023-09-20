@@ -12,31 +12,47 @@ type RecognizeTextProps = {
 
 const RecognizeText: FC<RecognizeTextProps> = ({ activeTab }) => {
   return (
-    <motion.div
-      variants={conlusion_animation}
-      initial='hidden'
-      whileInView='visible'
-      viewport={{ once: true, amount: 0.5 }}
-      className={clsx(
-        "items-center gap-[135px]",
-        activeTab === 1 ? "flex custombp5:flex-col" : "hidden"
-      )}
-    >
-      <span className='hidden text-xl text-[#FAFAFA] custombp5:block'>
-        تشخیص مفهوم متن
-      </span>
-      <div>
-        <RecoPart1 />
-      </div>
-      <div className='flex flex-col items-start gap-[145px]'>
-        <div className='mr-[70px] custombp5:mr-0'>
-          <RecoPart2 />
-        </div>
+    <>
+      <motion.div
+        variants={conlusion_animation}
+        initial='hidden'
+        whileInView='visible'
+        viewport={{ once: true, amount: 0.5 }}
+        className={clsx(
+          "items-center gap-[135px] custombp5:hidden",
+          activeTab === 1 ? "flex custombp5:flex-col" : "hidden"
+        )}
+      >
         <div>
-          <RecoPart3 />
+          <RecoPart1 />
         </div>
-      </div>
-    </motion.div>
+        <div className='flex flex-col items-start gap-[145px]'>
+          <div className='mr-[70px]'>
+            <RecoPart2 />
+          </div>
+          <div>
+            <RecoPart3 />
+          </div>
+        </div>
+      </motion.div>
+      {/* responsive */}
+      <motion.div className='hidden items-center gap-[135px] custombp5:flex custombp5:flex-col'>
+        <span className='hidden text-xl text-[#FAFAFA] custombp5:block'>
+          تشخیص مفهوم متن
+        </span>
+        <div>
+          <RecoPart1 />
+        </div>
+        <div className='flex flex-col items-start gap-[145px]'>
+          <div>
+            <RecoPart2 />
+          </div>
+          <div>
+            <RecoPart3 />
+          </div>
+        </div>
+      </motion.div>
+    </>
   );
 };
 

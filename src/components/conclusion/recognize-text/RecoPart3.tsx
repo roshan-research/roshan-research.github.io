@@ -14,7 +14,7 @@ const RecoPart3 = () => {
   return (
     <motion.div
       onViewportEnter={() => setInview(true)}
-      className='relative flex h-[277px] w-[376px] flex-col items-center bg-[#303030] px-[33px] py-6 text-[#FAFAFA] custombp5:h-auto custombp5:w-full custombp5:border-2 custombp5:border-[#A76CF3]'
+      className='relative flex h-[277px] w-[376px] flex-col items-center bg-[#303030] px-[33px] py-6 text-[#FAFAFA] custombp5:h-auto custombp5:w-[95%] custombp5:border-2 custombp5:border-[#A76CF3]'
     >
       <BorderSvg3
         width={376}
@@ -27,7 +27,7 @@ const RecoPart3 = () => {
         <motion.span
           variants={recognize_text_svg_part_3_path_8}
           initial='hidden'
-          whileInView='visible'
+          animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}
           className='flex justify-end overflow-hidden'
         >
@@ -37,7 +37,7 @@ const RecoPart3 = () => {
       <motion.div
         variants={recognize_text_svg_part_3_path_6}
         initial='hidden'
-        whileInView='visible'
+        animate={inview ? "visible" : ""}
         viewport={{ once: true, amount: 0.5 }}
         className='absolute -top-[69px] left-[205px] h-[36px] w-[93px] bg-[#a86cf333]'
       ></motion.div>

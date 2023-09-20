@@ -146,7 +146,7 @@ export const main_svg_path_6 = {
     maxWidth: "100px",
     transition: {
       duration: 0.8,
-      delay: 3.7,
+      delay: 3.6,
     },
   },
 };

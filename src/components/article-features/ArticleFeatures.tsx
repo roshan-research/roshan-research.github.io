@@ -11,7 +11,7 @@ type ArticleFeaturesProps = {
 
 const ArticleFeatures: FC<ArticleFeaturesProps> = ({ windowWidth }) => {
   return (
-    <div className='mt-[500px] flex flex-col items-center gap-[128px] text-[#FAFAFA] custombp2:gap-[80px]'>
+    <div className='mt-[500px] flex flex-col items-center gap-[128px] text-[#FAFAFA] sm:mt-[300px] custombp2:gap-[80px]'>
       <span className='text-[42px] font-[700] text-[#A76CF3]'>ویژگی ها</span>
       <div className='flex items-start gap-[109px] custombp2:flex-col custombp2:gap-[100px]'>
         <div className='flex flex-col items-start gap-[292px] custombp2:gap-[100px]'>

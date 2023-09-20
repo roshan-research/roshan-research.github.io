@@ -17,8 +17,8 @@ const Facilities: FC<FacilitiesProps> = ({ windowWidth }) => {
       <span className='text-[42px] font-[700] text-[#A76CF3] sm:text-[30px]'>
         امکانات فنی کشف
       </span>
-      <div className='flex items-start gap-[200px] lg:gap-[100px] custombp:flex-col custombp:gap-[200px]'>
-        <div className='flex flex-col items-start gap-[238px] custombp:gap-[100px]'>
+      <div className='flex items-start gap-[200px] lg:gap-[100px] custombp:flex-col custombp:gap-[100px]'>
+        <div className='flex flex-col items-start gap-[238px] custombp:gap-[10px]'>
           <Facility
             Icon={ProcessIcon}
             width={windowWidth! < 641 ? 150 : 241}
@@ -41,7 +41,7 @@ const Facilities: FC<FacilitiesProps> = ({ windowWidth }) => {
             text='سامانه کشف برای استفاده دیگر ابزار ها آماده است. یعنی فراهم می کند و JSON واسط مناسبی در قالب تقاضاهای می تواند به آسانی با سامانه دیگر هماهنگ شود'
           />
         </div>
-        <div className='-mt-[80px] flex flex-col items-start gap-[304px] custombp:gap-[100px]'>
+        <div className='-mt-[80px] flex flex-col items-start gap-[304px] custombp:gap-[10px]'>
           <Facility
             Icon={BrainIcon}
             width={windowWidth! < 641 ? 150 : 239}

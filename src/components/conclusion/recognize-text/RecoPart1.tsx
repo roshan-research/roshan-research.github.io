@@ -14,7 +14,7 @@ const RecoPart1 = () => {
   return (
     <motion.div
       onViewportEnter={() => setInview(true)}
-      className='relative flex h-[248px] w-[375px] flex-col items-center bg-[#303030] px-[30px] py-[22px] text-[#FAFAFA] custombp5:h-auto custombp5:w-full custombp5:border-2 custombp5:border-[#A76CF3]'
+      className='relative flex h-[248px] w-[375px] flex-col items-center bg-[#303030] px-[30px] py-[22px] text-[#FAFAFA] custombp5:h-auto custombp5:w-[95%] custombp5:border-2 custombp5:border-[#A76CF3]'
     >
       <BorderSvg1
         width={375}
@@ -27,7 +27,7 @@ const RecoPart1 = () => {
         <motion.span
           variants={recognize_text_svg_part_1_path_6}
           initial='hidden'
-          whileInView='visible'
+          animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}
           className='flex justify-end overflow-hidden'
         >
@@ -37,19 +37,21 @@ const RecoPart1 = () => {
       <motion.div
         variants={recognize_text_svg_part_1_path_8}
         initial='hidden'
-        whileInView='visible'
+        animate={inview ? "visible" : ""}
         viewport={{ once: true, amount: 0.5 }}
         className='absolute -top-[64px] left-[105px] h-[36px] w-[93px] bg-[#a86cf333]'
       ></motion.div>
-      <div className='flex items-center justify-start gap-[10px]'>
-        <img
-          src={User}
-          alt=''
-          className='h-[40px] w-[40px] rounded-full'
-          draggable={false}
-        />
-        <span className='text-base font-light'>رضا طنابی</span>
-        <span className='mr-[80px] font-iranyekannum text-sm font-light'>
+      <div className='flex items-center justify-start gap-[10px] custombp5:w-full custombp5:justify-between'>
+        <div className='flex items-center gap-2'>
+          <img
+            src={User}
+            alt=''
+            className='h-[40px] w-[40px] rounded-full'
+            draggable={false}
+          />
+          <span className='text-base font-light'>رضا طنابی</span>
+        </div>
+        <span className='mr-[80px] font-iranyekannum text-sm font-light custombp5:mr-0 '>
           14:25 1400/07/05
         </span>
       </div>
