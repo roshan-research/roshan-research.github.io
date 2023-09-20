@@ -63,7 +63,7 @@ function App() {
           <ArticleFeatures windowWidth={windowWidth} />
           <KashfUsage windowWidth={windowWidth} />
           <Facilities windowWidth={windowWidth} />
-          <Conclusion />
+          <Conclusion windowWidth={windowWidth} />
         </main>
       </div>
       <footer>

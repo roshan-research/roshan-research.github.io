@@ -37,6 +37,12 @@
     font-weight: 700;
   }
 
+  span,
+  p,
+  img {
+    user-select: none;
+  }
+
   #root {
     isolation: isolate;
   }
@@ -53,6 +59,7 @@
 
   ::-webkit-scrollbar {
     width: 6px;
+    height: 6px;
   }
 
   ::-webkit-scrollbar-track {

@@ -14,8 +14,7 @@ const RecoPart2 = () => {
   return (
     <motion.div
       onViewportEnter={() => setInview(true)}
-      onViewportLeave={() => setInview(false)}
-      className='relative flex h-[236px] w-[424px] flex-col items-center bg-[#303030] px-7 pb-3 pt-5 text-[#FAFAFA]'
+      className='relative flex h-[236px] w-[424px] flex-col items-center bg-[#303030] px-7 pb-3 pt-5 text-[#FAFAFA] custombp5:h-auto custombp5:w-full custombp5:border-2 custombp5:border-[#A76CF3]'
     >
       <BorderSvg2
         width={424}
@@ -23,37 +22,45 @@ const RecoPart2 = () => {
         animation={recognizeText_border_animation}
         inview={inview}
       />
-      <RecognizeTextSvgAnimatePart2 width={211} height={127} inview={inview} />
-      <div className='absolute -top-[82px] right-[323px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA]'>
-        <motion.span
-          variants={recognize_text_svg_part_2_path_7}
+      <div className='absolute -left-[10px] -top-[70px] h-fit w-fit'>
+        <RecognizeTextSvgAnimatePart2
+          width={211}
+          height={127}
+          inview={inview}
+        />
+        <div className='absolute right-[112px] top-[2px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA]'>
+          <motion.span
+            variants={recognize_text_svg_part_2_path_7}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            className='flex justify-start overflow-hidden'
+          >
+            توییت طنز
+          </motion.span>
+        </div>
+        <motion.div
+          variants={recognize_text_svg_part_2_path_6}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false, amount: 0.5 }}
-          className='flex justify-start overflow-hidden'
-        >
-          توییت طنز
-        </motion.span>
+          viewport={{ once: true, amount: 0.5 }}
+          className='absolute right-[105px] top-[1px] h-[36px] w-[104px] bg-[#a86cf333]'
+        ></motion.div>
       </div>
-      <motion.div
-        variants={recognize_text_svg_part_2_path_6}
-        initial='hidden'
-        whileInView='visible'
-        viewport={{ once: false, amount: 0.5 }}
-        className='absolute -top-[84px] right-[315px] h-[36px] w-[104px] bg-[#a86cf333]'
-      ></motion.div>
-      <div className='flex items-center gap-[10px]'>
-        <img
-          src={User}
-          alt=''
-          className='w-[46px] rounded-full'
-          draggable={false}
-        />
-        <div className='flex flex-col items-start gap-[1px]'>
-          <span className='text-base font-[500]'>سجاد ظاهری</span>
-          <span className='text-[13px] font-light opacity-60'>sajjzah@</span>
+      <div className='flex items-center gap-[10px] custombp5:w-full custombp5:justify-between'>
+        <div className='flex items-center gap-2'>
+          <img
+            src={User}
+            alt=''
+            className='w-[46px] rounded-full'
+            draggable={false}
+          />
+          <div className='flex flex-col items-start gap-[1px]'>
+            <span className='text-base font-[500]'>سجاد ظاهری</span>
+            <span className='text-[13px] font-light opacity-60'>sajjzah@</span>
+          </div>
         </div>
-        <img className='mr-[180px] w-[31px]' src={LogoTwitter} />
+        <img className='mr-[180px] w-[31px] custombp5:mr-0' src={LogoTwitter} />
       </div>
       <div className='mt-[6px] flex flex-col items-start gap-[11px]'>
         <span>

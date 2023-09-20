@@ -52,16 +52,24 @@ const Menu: FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen, menuOpenRef }) => {
       </motion.div>
       <div className='mt-[80px] flex flex-col items-start gap-[50px]'>
         <Link to='https://www.roshan-ai.ir'>
-          <span>صفحهٔ اصلی</span>
+          <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
+            صفحهٔ اصلی
+          </span>
         </Link>
         <Link to='https://www.roshan-ai.ir/about-us'>
-          <span>دربارهٔ ما</span>
+          <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
+            دربارهٔ ما
+          </span>
         </Link>
         <Link to='https://www.roshan-ai.ir/contact-us'>
-          <span>تماس با ما</span>
+          <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
+            تماس با ما
+          </span>
         </Link>
         <Link to='https://www.roshan-ai.ir/join-us'>
-          <span>همکاری با ما</span>
+          <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
+            همکاری با ما
+          </span>
         </Link>
         <span className='absolute bottom-4 right-10 text-[0.8vw]'>
           راهکار پردازش ژرف

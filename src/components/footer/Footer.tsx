@@ -5,10 +5,10 @@ const Footer = () => {
   return (
     <div className='relative mt-[200px] flex w-full items-center justify-center pb-[50px] text-sm text-[#FAFAFA]'>
       <div className='absolute top-0 h-[1px] w-full bg-[#FAFAFA] opacity-25'></div>
-      <div className='mt-[50px] flex w-full items-center justify-between px-[100px]'>
+      <div className='mt-[50px] flex w-full items-center justify-between px-[100px] md:flex-col md:gap-10'>
         <FooterSvg width={53} height={19} />
         <div className='flex items-start gap-[112px]'>
-          <div className='flex flex-col items-start gap-[20px]'>
+          <div className='flex flex-col items-start gap-[20px] whitespace-nowrap'>
             <Link to='https://www.roshan-ai.ir/contact-us'>
               <span className='hover:text-[#ff6200]'>تماس با ما</span>
             </Link>
@@ -19,7 +19,9 @@ const Footer = () => {
           <div className='flex flex-col items-start gap-[20px]'>
             <span>شرکت دانش‌بنیان «راهکار پردازش ژرف»</span>
             <Link to='https://www.roshan-ai.ir'>
-              <span className='hover:text-[#ff6200]'>salam@roshan-ai.ir</span>
+              <span className='whitespace-nowrap hover:text-[#ff6200]'>
+                salam@roshan-ai.ir
+              </span>
             </Link>
           </div>
         </div>

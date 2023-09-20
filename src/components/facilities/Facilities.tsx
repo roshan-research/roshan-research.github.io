@@ -13,7 +13,7 @@ type FacilitiesProps = {
 
 const Facilities: FC<FacilitiesProps> = ({ windowWidth }) => {
   return (
-    <div className='mt-[320px] flex flex-col items-center gap-[204px] sm:gap-[40px]'>
+    <div className='mt-[320px] flex flex-col items-center gap-[204px] sm:gap-[0px]'>
       <span className='text-[42px] font-[700] text-[#A76CF3] sm:text-[30px]'>
         امکانات فنی کشف
       </span>

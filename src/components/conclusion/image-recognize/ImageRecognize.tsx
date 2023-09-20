@@ -35,13 +35,12 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
       variants={conlusion_animation}
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       className={clsx(
         "relative items-start gap-10",
         activeTab === 3 ? "flex" : "hidden"
       )}
       onViewportEnter={() => setInview(true)}
-      onViewportLeave={() => setInview(false)}
     >
       <div className='flex items-center justify-center'>
         <BorderSvg7
@@ -61,7 +60,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
             variants={recognize_image_svg_part_3_path_7}
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className='flex justify-start overflow-hidden'
           >
             پای بچه
@@ -71,7 +70,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
           variants={recognize_image_svg_part_3_path_8}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className='absolute bottom-[92.5px] right-[188px] h-[36px] w-[77px] bg-[#a86cf333]'
         ></motion.div>
       </div>
@@ -94,7 +93,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
               variants={recognize_image_svg_part_2_path_7}
               initial='hidden'
               whileInView='visible'
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               className='flex justify-end overflow-hidden'
             >
               قاچ هندوانه
@@ -104,7 +103,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
             variants={recognize_image_svg_part_2_path_8}
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className='absolute left-[130px] top-[1px] h-[36px] w-[112px] bg-[#a86cf333]'
           ></motion.div>
         </div>
@@ -128,7 +127,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
               variants={recognize_image_svg_part_1_path_7}
               initial='hidden'
               whileInView='visible'
-              viewport={{ once: false, amount: 0.5 }}
+              viewport={{ once: true, amount: 0.5 }}
               className='flex justify-start overflow-hidden'
             >
               قایق کاغذی
@@ -138,7 +137,7 @@ const ImageRecognize: FC<ImageRecognizeProps> = ({ activeTab }) => {
             variants={recognize_image_svg_part_1_path_8}
             initial='hidden'
             whileInView='visible'
-            viewport={{ once: false, amount: 0.5 }}
+            viewport={{ once: true, amount: 0.5 }}
             className='absolute right-[155px] top-[1px] h-[36px] w-[112px] bg-[#a86cf333]'
           ></motion.div>
         </div>

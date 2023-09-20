@@ -248,7 +248,7 @@ export const BorderSvg1: FC<SvgProps> = ({
       height={height}
       viewBox='0 0 375 248'
       fill='none'
-      className='absolute top-0'
+      className='absolute top-0 custombp5:hidden'
       xmlns='http://www.w3.org/2000/svg'
     >
       <motion.path
@@ -276,7 +276,7 @@ export const BorderSvg2: FC<SvgProps> = ({
       height={height}
       viewBox='0 0 424 236'
       fill='none'
-      className='absolute top-0'
+      className='absolute top-0 custombp5:hidden'
       xmlns='http://www.w3.org/2000/svg'
     >
       <motion.path
@@ -304,7 +304,7 @@ export const BorderSvg3: FC<SvgProps> = ({
       height={height}
       viewBox='0 0 376 278'
       fill='none'
-      className='absolute top-0'
+      className='absolute top-0 custombp5:hidden'
       xmlns='http://www.w3.org/2000/svg'
     >
       <motion.path
@@ -546,7 +546,6 @@ export const RecognizeTextSvgAnimatePart2: FC<SvgProps> = ({
       height={height}
       viewBox='0 0 211 127'
       fill='none'
-      className='absolute -top-[85px] left-1'
       xmlns='http://www.w3.org/2000/svg'
     >
       <mask id='path-1-inside-1_1648_3300' fill='white'>

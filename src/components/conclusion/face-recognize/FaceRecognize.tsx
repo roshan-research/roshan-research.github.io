@@ -29,13 +29,12 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
       variants={conlusion_animation}
       initial='hidden'
       whileInView='visible'
-      viewport={{ once: false, amount: 0.5 }}
+      viewport={{ once: true, amount: 0.5 }}
       className={clsx(
         "relative h-[470px] w-[770px]",
         activeTab === 2 ? "block" : "hidden"
       )}
       onViewportEnter={() => setInview(true)}
-      onViewportLeave={() => setInview(false)}
     >
       <BorderSvg4
         width={206}
@@ -56,7 +55,7 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
           variants={recognize_face_svg_part_1_path_7}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className='flex justify-end overflow-hidden'
         >
           مهران غفوریان
@@ -66,7 +65,7 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
         variants={recognize_face_svg_part_1_path_8}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className='absolute left-[564px] top-[15px] h-[36px] w-[136px] bg-[#a86cf333]'
       ></motion.div>
       <div className='absolute -top-[33px] right-[596px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA]'>
@@ -74,7 +73,7 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
           variants={recognize_face_svg_part_2_path_7}
           initial='hidden'
           whileInView='visible'
-          viewport={{ once: false, amount: 0.5 }}
+          viewport={{ once: true, amount: 0.5 }}
           className='flex justify-start overflow-hidden'
         >
           رامبد جوان
@@ -84,7 +83,7 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
         variants={recognize_face_svg_part_2_path_8}
         initial='hidden'
         whileInView='visible'
-        viewport={{ once: false, amount: 0.5 }}
+        viewport={{ once: true, amount: 0.5 }}
         className='absolute -top-[34px] right-[590px] h-[36px] w-[104px] bg-[#a86cf333]'
       ></motion.div>
       <img src={Pic} alt='' className='h-full w-full' draggable={false} />
