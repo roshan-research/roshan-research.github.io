@@ -1,4 +1,4 @@
-import { Dispatch, FC, useState, useEffect, useRef, RefObject } from "react";
+import { Dispatch, FC, useEffect, useRef, RefObject } from "react";
 import { Link } from "react-router-dom";
 import { CloseSvg } from "../svg";
 import { motion } from "framer-motion";
@@ -11,7 +11,6 @@ type MenuProps = {
 };
 
 const Menu: FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen, menuOpenRef }) => {
-  const [isAnimated, setIsAnimated] = useState(false);
   const meneCloseRef = useRef<HTMLDivElement>(null);
 
   const closeMenuHandler = () => {
