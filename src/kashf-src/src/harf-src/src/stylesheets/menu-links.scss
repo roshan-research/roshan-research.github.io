@@ -1,0 +1,72 @@
+.bm-cross-button.my-cross {
+    top: 11px !important;
+    right: 1px !important;
+    margin-top: 1vw !important;
+    margin-right: 2vw !important;
+}
+
+#menu-links {
+    display: flex;
+    justify-content: space-between;
+    gap: clamp(24px, 12vw, 32px);
+    align-items: flex-end;
+    flex-direction: column;
+    margin-top: #{'max(7vw, 100px)'};
+}
+
+#menu-contents {
+    display: flex;
+    padding-right: 2vw;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 100%;
+}
+
+.menu-link {
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: clamp(12px, 1.3vw, 50px);
+    transition: 1s;
+}
+
+.menu-link:hover {
+    color: #26ff7b;
+}
+
+#company-name {
+    margin-top: auto;
+    margin-right: 0;
+    color: white;
+    font-family: iran-yekan, serif;
+    font-size: 0.8vw;
+    text-align: right;
+}
+
+@media screen and (max-width: 600px) {
+    #company-name {
+        display: none;
+    }
+
+    #menu-links {
+        padding: 16px;
+        justify-content: space-between;
+        align-items: flex-end;
+        flex-direction: column;
+    }
+
+    .bm-cross-button.my-cross {
+        margin-right: 16px !important;
+    }
+
+    #menu-contents {
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-link {
+        font-size: 3vw;
+    }
+}

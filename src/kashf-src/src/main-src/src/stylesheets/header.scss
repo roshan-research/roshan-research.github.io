@@ -1,0 +1,37 @@
+.header-wrapper{
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#mobile-menu-link {
+  font-family: iran-yekan, serif;
+  color: white;
+  text-decoration: none;
+  font-size: 6.2vw;
+  width: 40vw;
+  text-align: center;
+}
+
+#compact-menu{
+  margin-top: 20vh;
+  height: 45.66vh;
+  width: 28.61vw;
+  margin-right: 36.11vw;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+}
+
+#compact-menu #home{
+  height: 5.47vh;
+  width: 29vw;
+}
+
+#background {
+  width: 100vm;
+  height: 100vh;
+  position:absolute;
+}

@@ -1,0 +1,241 @@
+@keyframes fade-in-company {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+
+@keyframes fade-out-company {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+
+@keyframes roshan-animation {
+  0% {
+    transform: translateX(-15vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes client-animation {
+  0% {
+    transform: translateX(-20vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes contact-animation {
+  0% {
+    transform: translateX(-25vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes join-animation {
+  0% {
+    transform: translateX(-30vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+@keyframes about-animation {
+  0% {
+    transform: translateX(-35vw);
+  }
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#hamburger-menu {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0A0A0A;
+  z-index: 5;
+  float: left;
+  position: absolute;
+  transition: 0.5s linear;
+}
+
+#hamburger-button {
+  position: absolute;
+  margin-top: 2.1vw;
+  margin-right: 90vw;
+  z-index: 300;
+}
+
+.closed {
+  transform: skew(-20deg);
+  margin-right: 110vw;
+}
+
+.opened {
+  transform: skew(-10deg);
+  margin-right: 75vw;
+}
+
+.hamburger-menu-button{
+  text-decoration: none;
+  color: #FFFFFF;
+  font-family: iran-yekan, serif;
+  font-size: 1.2vw;
+  transform: skew(+10deg);
+  transition: 0.5s;
+}
+
+.hamburger-menu-button:hover{
+  color: #7AB8FF
+}
+
+#clients-button{
+  cursor: pointer;
+}
+
+
+#hamburger-links {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  width: 10vw;
+  height: 32vh;
+  margin-top: 22vh;
+}
+
+#hamburger-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: start;
+  flex-direction: column;
+  margin-right: 2vw;
+  margin-top: 38vh;
+  font-size: 1.1vw;
+}
+
+.comp-temp {
+  margin-top: 0;
+  transform: skew(+10deg);
+}
+
+#hamburger-menu-slides {
+  width: 30vw;
+  height: 100vh;
+  background-color: #0A0A0A;
+  z-index: 5;
+  float: left;
+  position: absolute;
+  transition: 0.7s linear;
+}
+
+.closed-slides {
+  transform: skew(-20deg);
+  margin-right: 150%;
+}
+
+.opened-slides {
+  transform: skew(-10deg);
+  margin-right: 85%;
+}
+
+#hamburger-button-slides {
+  position: absolute;
+  z-index: 300;
+  top: 5vh;
+  left: 7vw;
+}
+
+@media screen and (max-width: 600px){
+  #hamburger-menu {
+    display: none;
+  }
+
+  #hamburger-menu-slides {
+    display: none;
+  }
+
+  #hamburger-button{
+    display: none;
+  }
+
+  #hamburger-button-slides {
+    display: none;
+  }
+}
+
+
+.hidden-company {
+  animation-name: fade-out-company;
+  animation-duration: 3s;
+  animation-delay: 0s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.visible-company {
+  animation-name: fade-in-company;
+  animation-duration: 2s;
+  animation-timing-function: linear;
+  animation-iteration-count: 1;
+  animation-play-state: running;
+}
+
+.roshan-in {
+  animation-name: roshan-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.client-in {
+  animation-name: client-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.contact-in {
+  animation-name: contact-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.join-in {
+  animation-name: join-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+}
+
+.about-in {
+  animation-name: about-animation;
+  animation-duration: 1s;
+  animation-iteration-count: 1;
+  animation-timing-function: linear;
+  animation-play-state: running;
+  font-size: 1.3vw;
+  margin-right: 20px;
+}

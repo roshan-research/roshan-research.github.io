@@ -1,0 +1,151 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: black;
+}
+
+/*Handle*/
+::-webkit-scrollbar-thumb {
+    background: #ff6200;
+}
+
+/*Handle on hover*/
+::-webkit-scrollbar-thumb:hover {
+    background: #ffffff;
+}
+
+::-webkit-scrollbar-corner {
+    background: rgba(0, 0, 0, 0);
+}
+
+#sample-footer-space,
+#catalog-footer-space {
+    height: #{'min(20vw, 200px)'};
+}
+
+#utils-sample-space {
+    height: #{'min(20vw, 115px)'};
+}
+
+#usage-utils-space {
+    height: #{'max(40vw, 310px)'};
+}
+
+#abilities-usage-space {
+    height: 17vw;
+}
+
+#main-abilities-space {
+    height: 63vw;
+}
+
+.my-button {
+    position: absolute;
+    margin-top: 2.5vw;
+    z-index: 1000;
+    margin-left: 6vw;
+}
+
+.menu {
+    background-color: #0a0a0a;
+    z-index: 5;
+}
+
+.menu-items {
+    display: flex;
+    justify-content: start;
+    align-items: end;
+    flex-direction: column;
+}
+
+.my-cross {
+    transform: scale(1.2);
+    margin-top: 1vw;
+    transition: 0.1s;
+    margin-right: 1vw;
+}
+
+.my-cross:active {
+    transform: scale(1);
+}
+
+.my-button {
+    transition: 0.4s;
+    position: absolute;
+    margin-top: 1.5vw;
+    margin-left: 8vw;
+    width: 3vw;
+}
+
+.my-button:active {
+    transform: scale(0.5);
+}
+
+.max-width-wrapper {
+    padding-inline: #{'min(13.3vw, 170px)'};
+}
+
+@media screen and (max-width: 500px) {
+    #sample-footer-space {
+        display: none;
+    }
+
+    #catalog-footer-space {
+        height: 8.875rem;
+    }
+
+    #utils-sample-space {
+        height: #{'clamp(165px, 38vw, 180px)'};
+    }
+
+    #usage-utils-space {
+        height: 42.6vw;
+    }
+
+    #abilities-usage-space {
+        height: 42.6vw;
+    }
+
+    #main-abilities-space {
+        height: 17.5vw;
+    }
+
+    .my-button {
+        margin-top: 8vw;
+        width: 10vw;
+        margin-left: 9vw;
+        display: none;
+    }
+
+    .menu-items {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu {
+        display: none;
+    }
+
+    .my-cross {
+        display: none;
+    }
+    
+    .max-width-wrapper {
+        padding-inline: 0;
+    }
+}
+
+.alefba {
+    overflow-x: hidden;
+}

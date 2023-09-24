@@ -1,0 +1,12 @@
+#to-top {
+    position: fixed;
+    z-index: 10000;
+    top: 90vh;
+    right: 0;
+}
+
+@media screen and (max-width: 600px) {
+    #to-top {
+        display: none !important;
+    }
+}

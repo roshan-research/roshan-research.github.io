@@ -1,0 +1,196 @@
+@font-face {
+    font-family: iranYekan;
+    src: url(../../../assets/IRANYekan.ttf);
+}
+
+#address-text {
+    width: 20vw;
+}
+.contact-us-page {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100vw;
+    height: 92vh;
+}
+
+#group {
+    height: auto;
+    width: 85vw;
+    flex-direction: row;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#main-image {
+    height: 33vw;
+    width: 33vw;
+}
+
+#text-links {
+    height: 47.22222222222222vh;
+    width: 36.328125vw;
+}
+
+p {
+    color: white;
+    font-size: 1vw;
+    direction: rtl;
+    font-family: iranYekan, serif;
+}
+
+#body-text {
+    margin-top: 2vw;
+    height: auto;
+    width: 36.71875vw;
+}
+
+#in-the-name {
+    height: 3.4722222222222223vh;
+    width: 11.71875vw;
+}
+
+#email-row {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#email-icon {
+    width: 1.6vw;
+    height: auto;
+}
+
+#phone-icon {
+    width: 1.5vw;
+    height: auto;
+}
+
+#phone-row {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#address-row {
+    height: auto;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    flex-direction: row;
+}
+
+#location-icon {
+    width: 1.4vw;
+    height: auto;
+}
+
+.link-content {
+    margin-right: 20px;
+}
+
+@media screen and (max-width: 600px) {
+    #main-image {
+        width: 75vw;
+        height: 75vw;
+    }
+
+    .contact-us-page {
+        overflow: scroll;
+    }
+
+    p {
+        font-size: 4vw;
+    }
+
+    #body-text {
+        height: auto;
+        width: 77vw;
+    }
+
+    #in-the-name {
+        width: 75vw;
+    }
+
+    #email-row {
+        height: auto;
+    }
+
+    #email-icon {
+        width: 8vw;
+    }
+
+    #phone-icon {
+        width: 7.5vw;
+    }
+
+    #location-icon {
+        width: 10vw;
+    }
+
+    #group {
+        display: flex;
+        flex-direction: column;
+        height: fit-content;
+        overflow: hidden;
+        width: 100vw;
+        justify-content: center;
+        align-items: center;
+    }
+
+    #texts-links {
+        height: auto;
+        z-index: 1000;
+        width: 80vw;
+        margin-top: 5vh;
+    }
+
+    #address-text {
+        width: 70vw;
+    }
+}
+
+#address-text:hover {
+    color: #7ab8ff;
+}
+
+a {
+    text-decoration: none;
+}
+
+#email-text:hover {
+    color: #7ab8ff;
+}
+
+#main-image {
+    background-color: transparent;
+    border: none;
+}
+
+a {
+    text-decoration: none;
+    color: white;
+}
+
+a:hover {
+    color: #7ab8ff;
+}
+
+@media screen and (max-width: 600px) {
+    #image-wrapper {
+        width: 100vw;
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background-repeat: no-repeat;
+        background-position: 70% 40%;
+        background-image: url('../../../assets/images/map.svg');
+    }
+}

@@ -1,0 +1,26 @@
+.menu-buttons {
+  display: none;
+  order:1;
+}
+
+.menu-buttons button{
+  background-color: transparent;
+  border-color: transparent;
+}
+
+.menu-buttons #hidden{
+  display: none;
+}
+
+.menu-buttons .icon{
+  padding-left: 3.4375rem;
+}
+
+@media screen and (max-width: 500px){
+  .menu-buttons {
+    display: flex;
+  }
+  .menu-buttons .icon{
+    padding-left: 1.3125rem;
+  }
+}

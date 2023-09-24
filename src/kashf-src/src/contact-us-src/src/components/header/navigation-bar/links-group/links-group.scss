@@ -1,0 +1,15 @@
+.links-group {
+  display: none;
+  height: 3.5vh;
+  width: 14.45vw;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-left: 7.82vw;
+  order:1;
+}
+
+@media screen and (max-width: 500px){
+  .links-group{
+    display: none;
+  }
+}

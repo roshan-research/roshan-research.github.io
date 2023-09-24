@@ -1,0 +1,51 @@
+{
+  "homepage": "https://www.roshan-ai.ir/",
+  "name": "new-roshan-website",
+  "version": "0.1.0",
+  "private": true,
+  "dependencies": {
+    "amplitude-js": "^8.16.1",
+    "framer-motion": "^4.1.17",
+    "fullpage-react": "^3.1.0",
+    "hamburger-react": "^2.4.1",
+    "loadable-components": "^2.2.3",
+    "lottie-react": "^2.1.0",
+    "node-sass": "^7.0.1",
+    "react": "^17.0.2",
+    "react-burger-menu": "^3.0.6",
+    "react-device-detect": "^1.17.0",
+    "react-dom": "^17.0.2",
+    "react-scripts": "4.0.3",
+    "react-touch-events": "^2.1.0"
+  },
+  "scripts": {
+    "analyze": "source-map-explorer 'build/static/js/*.js'",
+    "start": "react-scripts start",
+    "build": "set \"GENERATE_SOURCEMAP=false\" && react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "source-map-explorer": "^2.5.2",
+    "terser-webpack-plugin": "^4.2.3",
+    "webpack-cli": "^4.9.0"
+  }
+}

@@ -1,0 +1,27 @@
+#document svg {
+    border-radius: 20px;
+}
+
+@media screen and (max-width: 500px) {
+    #document svg {
+        border-radius: 15px;
+    }
+}
+
+svg .line rect,
+.rect {
+    fill: #fead6c;
+}
+
+.line {
+    cursor: text;
+}
+
+.line:focus {
+    outline: none;
+} 
+
+.line.selected rect,
+.line.selected .rect {
+    fill: #ff6200;
+}

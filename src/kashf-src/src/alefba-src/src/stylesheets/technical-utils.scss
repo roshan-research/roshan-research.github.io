@@ -1,0 +1,330 @@
+#utils-title {
+    color: #ff6200;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.8vw;
+    display: flex;
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    font-family: iran-yekan, serif;
+}
+
+#side-utils {
+    margin-top: 50vh;
+    position: absolute;
+    height: 80.55555555555556vh;
+    width: 99.5vw;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: row;
+    align-items: flex-end;
+}
+
+#side-utils-main {
+    height: 80.55555555555556vh;
+    width: 20vw;
+}
+
+#tech-utils {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+#utils-wrapper {
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 70vw;
+    margin-top: #{'clamp(4.8rem, 10.5vw, 8.8rem)'};
+    margin-right: 5vw;
+}
+
+.util-icon {
+    height: 6vh;
+    width: 3vw;
+    margin-right: -5vw;
+}
+
+.black-util-text {
+    direction: rtl;
+    white-space: nowrap;
+    background-color: #ff6200;
+    color: transparent;
+    transition: box-shadow 1s linear;
+    left: 0;
+    font-family: iran-yekan, serif;
+    font-weight: bold;
+    z-index: 3;
+    width: fit-content;
+    overflow: hidden;
+    box-shadow: inset 0 0 0 0 #ff6200;
+    font-size: 1.1vw;
+    position: relative;
+    background-clip: text;
+}
+
+.black-util-text::before {
+    direction: rtl;
+    white-space: nowrap;
+    font-family: iran-yekan, serif;
+    font-weight: bold;
+    font-size: 1.1vw;
+    content: attr(data-title);
+    background: black;
+    position: absolute;
+    width: 0;
+    top: 0;
+    bottom: 0;
+    color: transparent;
+    background-clip: text;
+    left: 0;
+    right: 0;
+    transition: width 1.5s linear;
+}
+
+.util-in-view::before {
+    width: 100%;
+}
+
+.black-util-text-background {
+    direction: rtl;
+    color: transparent;
+    transition: 1s linear;
+    background-color: black;
+    transform-origin: right;
+    z-index: 1;
+    position: absolute;
+    top: 0;
+    font-family: iran-yekan, serif;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 1.1vw;
+}
+
+.black-util-text-background::before {
+    direction: rtl;
+    white-space: nowrap;
+    content: attr(data-title);
+    color: transparent;
+    transition: 1.5s linear;
+    background-color: #ff6200;
+    transform-origin: right;
+    position: absolute;
+    top: 0;
+    font-family: iran-yekan, serif;
+    font-style: normal;
+    font-weight: bold;
+    width: 0;
+    font-size: 1.1vw;
+}
+
+.util-in-view-bg::before {
+    width: 100%;
+}
+
+.title-stack-utils {
+    display: flex;
+    position: relative;
+    flex-direction: column;
+}
+
+.white-util-text {
+    color: white;
+    direction: rtl;
+    font-family: iran-yekan, serif;
+    font-style: normal;
+    font-weight: normal;
+    margin-top: -0.1vw;
+    font-size: 1vw;
+}
+
+.util-row {
+    width: 15vw;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    flex-direction: row;
+}
+
+.util-group {
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    height: 33vh;
+    width: 20vw;
+}
+
+#right-space {
+    height: 15vh;
+}
+
+#deep,
+#nlp,
+#accuracy,
+#parallel {
+    position: absolute;
+    display: none;
+}
+
+#right2-icon,
+#right1-icon,
+#left2-icon,
+#left1-icon {
+    position: absolute;
+}
+
+#right1-icon {
+    margin-top: -9.2vw;
+    margin-right: 9vw;
+    width: 15.6vw;
+}
+
+#right2-icon {
+    margin-top: -7.2vw;
+    margin-right: -12vw;
+    width: 13.2vw;
+}
+
+#left1-icon {
+    margin-top: -7.2vw;
+    margin-right: 10vw;
+    width: 15.6vw;
+}
+
+#left2-icon {
+    margin-top: -7.2vw;
+    margin-right: -13vw;
+    width: 15.6vw;
+}
+
+@media screen and (max-width: 500px) {
+    #right2-icon,
+    #right1-icon,
+    #left2-icon,
+    #left1-icon {
+        display: none;
+    }
+
+    #utils-title {
+        font-size: 5.1vw;
+    }
+
+    #side-utils {
+        display: none;
+        margin-top: -240vh;
+        height: 100vh;
+        width: 99.5vw;
+    }
+    #side-utils-main {
+        height: 100vh;
+        width: 70vw;
+    }
+
+    #utils-wrapper {
+        margin-top: 0;
+        align-items: center;
+        flex-direction: column;
+        width: 70vw;
+    }
+
+    .util-group {
+        height: 26.408450704225352vh;
+        width: 77.77777777777779vw;
+    }
+
+    .util-group:nth-child(1) {
+        margin-top: #{'min(33vw, 120px)'};
+    }
+    .util-group:nth-child(2) {
+        margin-top: 42vw;
+    }
+    .util-group:nth-child(3) {
+        margin-top: 37vw;
+    }
+    .util-group:nth-child(4) {
+        margin-top: 55vw;
+    }
+
+    .black-util-text,
+    .black-util-text-background,
+    .black-util-text::before,
+    .black-util-text-background::before {
+        font-size: 5vw;
+    }
+
+    .white-util-text {
+        font-size: 4vw;
+        margin-top: 3vw;
+    }
+
+    .util-row {
+        width: 50vw;
+    }
+
+    .util-icon {
+        display: none;
+    }
+
+    #right-space {
+        height: 0;
+    }
+
+    .left-to-right {
+        align-items: flex-start;
+        direction: ltr;
+        text-align: left;
+        float: left;
+    }
+
+    .left-to-right-row1 {
+        width: 40.2vw;
+    }
+
+    .left-to-right-row2 {
+        width: 32vw;
+    }
+
+    #deep {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 31.690140845070424vh;
+        width: 44.44444444444444vw;
+        margin-left: 47vw;
+        margin-top: -17vh;
+    }
+
+    #nlp {
+        display: block;
+        position: absolute;
+        right: 0;
+        height: 29vh;
+        width: 40vw;
+        margin-left: 50vw;
+        margin-top: -15vh;
+    }
+
+    #accuracy {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 29vh;
+        width: 40vw;
+        margin-right: 52vw;
+        margin-top: -13vh;
+    }
+
+    #parallel {
+        display: block;
+        position: absolute;
+        left: 0;
+        height: 29vh;
+        width: 40vw;
+        margin-right: 52vw;
+        margin-top: -13vh;
+    }
+}

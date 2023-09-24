@@ -1,0 +1,138 @@
+#catalog {
+    box-sizing: border-box;
+    padding-block: 3.5vw;
+    padding-inline: 5vw;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    display: flex;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #181818;
+    border-radius: 20px;
+    flex-direction: row-reverse;
+}
+
+#catalog-right {
+    display: flex;
+    gap: 1.25rem;
+    justify-content: center;
+    align-items: flex-end;
+    flex-direction: column;
+}
+
+#catalog-description {
+    margin: 0;
+    color: rgb(255, 255, 255);
+    letter-spacing: 0.02em;
+    text-align: right;
+    direction: rtl;
+    width: 15vw;
+    font-family: iran-yekan, serif;
+    font-size: 1.1vw;
+    font-weight: 400;
+}
+
+#catalog-cover {
+    width: 19vw;
+}
+
+#catalog-button {
+    transition: 1s;
+    p {
+        color: #ff6200;
+        font-size: 1vw;
+        line-height: 1.5vw;
+        letter-spacing: 0.03em;
+        font-family: iran-yekan, serif;
+    }
+
+    img {
+        width: 0.9vw;
+    }
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    width: 13vw;
+    border-radius: 0;
+    border-style: solid;
+    border-color: #ff6200;
+    border-width: 1px;
+}
+
+#catalog-button:hover {
+    background-color: #ff6200;
+
+    p {
+        color: black;
+    }
+}
+
+.catalog-link {
+    position: relative;
+    z-index: 100;
+}
+
+@media screen and (max-width: 500px) {
+    #catalog {
+        flex-direction: column-reverse;
+        justify-content: space-around;
+        gap: 1.75rem;
+        padding-block: 2.25rem;
+        padding-inline: 2.5rem;
+        width: 85vw;
+
+        & > div:nth-of-type(2) {
+            width: 100%;
+        }
+    }
+
+    #catalog-cover {
+        width: 100%;
+    }
+
+    #catalog-description {
+        font-size: 3.8vw;
+        text-align: center;
+        width: 60vw;
+    }
+
+    #catalog-button {
+        p {
+            font-size: 4vw;
+            line-height: 7vw;
+            letter-spacing: 0.03em;
+        }
+
+        img {
+            width: 3vw;
+        }
+
+        width: 50vw;
+    }
+
+    #catalog-right {
+        justify-content: space-between;
+        align-items: center;
+        gap: 1.26rem;
+    }
+
+    #catalog {
+        margin-top: 20vw;
+    }
+
+    #catalog-right {
+        padding-right: 0;
+    }
+
+    #catalog-cover {
+        padding-left: 0;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    #catalog {
+        margin-top: 10rem;
+    }
+}

@@ -1,0 +1,58 @@
+#menu-links {
+    display: flex;
+    justify-content: space-between;
+    align-items: start;
+    flex-direction: column;
+    gap: clamp(24px, 12vw, 32px);
+    margin-top: #{'max(7vw, 100px)'};
+}
+
+#menu-contents {
+  display: flex;
+  padding-right: 2vw;
+  justify-content: center;
+  align-items: flex-end;
+  flex-direction: column;
+  height: 100%;
+}
+
+.menu-link {
+    font-family: iran-yekan, serif;
+    font-size: 1.3vw;
+    text-decoration: none;
+    color: white;
+}
+
+.menu-link:hover {
+    color: #4286f5;
+}
+
+#company-name {
+    margin-top: auto;
+    font-size: 0.8vw;
+    color: white;
+}
+
+@media screen and (max-width: 600px) {
+    #company-name {
+        display: none;
+    }
+
+    #menu-links {
+        justify-content: space-between;
+        align-items: center;
+        flex-direction: column;
+        height: 40vh;
+    }
+
+    #menu-contents {
+        padding-right: 0;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+
+    .menu-link {
+        font-size: 6.5vw;
+    }
+}
