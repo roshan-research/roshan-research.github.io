@@ -76,7 +76,7 @@ const KashfWebText = (props) => {
                 fill="none"
                 viewBox="0 0 427 252"
             >
-                <g class="kashf-title-svg">
+                <g className="kashf-title-svg">
                     <motion.path
                         variants={
                             animationChooser(props.status)[
