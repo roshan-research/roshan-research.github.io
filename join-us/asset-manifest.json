@@ -1,33 +1,25 @@
 {
   "files": {
-    "main.css": "/join-us/static/css/main.b4cf7c84.chunk.css",
-    "main.js": "/join-us/static/js/main.a00d9198.chunk.js",
-    "main.js.map": "/join-us/static/js/main.a00d9198.chunk.js.map",
-    "runtime-main.js": "/join-us/static/js/runtime-main.c7c67391.js",
-    "runtime-main.js.map": "/join-us/static/js/runtime-main.c7c67391.js.map",
-    "static/js/2.e1c66cd1.chunk.js": "/join-us/static/js/2.e1c66cd1.chunk.js",
-    "static/js/2.e1c66cd1.chunk.js.map": "/join-us/static/js/2.e1c66cd1.chunk.js.map",
-    "static/css/3.a6396743.chunk.css": "/join-us/static/css/3.a6396743.chunk.css",
-    "static/js/3.79c3e143.chunk.js": "/join-us/static/js/3.79c3e143.chunk.js",
-    "static/js/3.79c3e143.chunk.js.map": "/join-us/static/js/3.79c3e143.chunk.js.map",
+    "main.css": "/join-us/static/css/main.9e8256d1.css",
+    "main.js": "/join-us/static/js/main.0727b950.js",
+    "static/css/241.36d65491.chunk.css": "/join-us/static/css/241.36d65491.chunk.css",
+    "static/js/241.7ff9e51a.chunk.js": "/join-us/static/js/241.7ff9e51a.chunk.js",
+    "static/media/join_us.jpg": "/join-us/static/media/join_us.77fa97a68641875f38ad.jpg",
+    "static/media/IRANYekan.ttf": "/join-us/static/media/IRANYekan.b916444ed97e6e3959f7.ttf",
+    "static/media/jobinja.svg": "/join-us/static/media/jobinja.189845a8af9bb81f8e4906fdda8eebe6.svg",
+    "static/media/linkedin.svg": "/join-us/static/media/linkedin.6d785b8e76a503a39a82e6dafda04f95.svg",
+    "static/media/roshan-logosvg.svg": "/join-us/static/media/roshan-logosvg.d2f6ff23a45d3b201f397f913a62766c.svg",
     "index.html": "/join-us/index.html",
-    "static/css/3.a6396743.chunk.css.map": "/join-us/static/css/3.a6396743.chunk.css.map",
-    "static/css/main.b4cf7c84.chunk.css.map": "/join-us/static/css/main.b4cf7c84.chunk.css.map",
-    "static/js/2.e1c66cd1.chunk.js.LICENSE.txt": "/join-us/static/js/2.e1c66cd1.chunk.js.LICENSE.txt",
-    "static/media/App.scss": "/join-us/static/media/IRANYekan.b916444e.ttf",
-    "static/media/close-icon.425a19c1.svg": "/join-us/static/media/close-icon.425a19c1.svg",
-    "static/media/home-mobile.bb0d7ea2.svg": "/join-us/static/media/home-mobile.bb0d7ea2.svg",
-    "static/media/jobinja.189845a8.svg": "/join-us/static/media/jobinja.189845a8.svg",
-    "static/media/header.scss": "/join-us/static/media/join_us.77fa97a6.jpg",
-    "static/media/linkedin.6d785b8e.svg": "/join-us/static/media/linkedin.6d785b8e.svg",
-    "static/media/mail.74e08128.svg": "/join-us/static/media/mail.74e08128.svg",
-    "static/media/menu-icon.4edab8bf.svg": "/join-us/static/media/menu-icon.4edab8bf.svg",
-    "static/media/roshan-logosvg.svg": "/join-us/static/media/roshan-logosvg.d2f6ff23.svg"
+    "static/media/mail.svg": "/join-us/static/media/mail.74e08128b53fa1592d74fda63472c6d9.svg",
+    "static/media/close-icon.svg": "/join-us/static/media/close-icon.425a19c175e94191250e1ab57cc0283f.svg",
+    "static/media/menu-icon.svg": "/join-us/static/media/menu-icon.4edab8bf77a1a07fa3ede4ad5b34d1fd.svg",
+    "main.9e8256d1.css.map": "/join-us/static/css/main.9e8256d1.css.map",
+    "main.0727b950.js.map": "/join-us/static/js/main.0727b950.js.map",
+    "241.36d65491.chunk.css.map": "/join-us/static/css/241.36d65491.chunk.css.map",
+    "241.7ff9e51a.chunk.js.map": "/join-us/static/js/241.7ff9e51a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/runtime-main.c7c67391.js",
-    "static/js/2.e1c66cd1.chunk.js",
-    "static/css/main.b4cf7c84.chunk.css",
-    "static/js/main.a00d9198.chunk.js"
+    "static/css/main.9e8256d1.css",
+    "static/js/main.0727b950.js"
   ]
 }
