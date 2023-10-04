@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/static/css/main.ca61dcd8.css",
-    "main.js": "/static/js/main.0f97fe90.js",
+    "main.js": "/static/js/main.b899e337.js",
     "static/css/719.e3335373.chunk.css": "/static/css/719.e3335373.chunk.css",
     "static/js/719.e2b5dc5f.chunk.js": "/static/js/719.e2b5dc5f.chunk.js",
     "static/css/730.b2fceaad.chunk.css": "/static/css/730.b2fceaad.chunk.css",
@@ -15,7 +15,7 @@
     "static/css/68.08574c93.chunk.css": "/static/css/68.08574c93.chunk.css",
     "static/js/68.e25d56c6.chunk.js": "/static/js/68.e25d56c6.chunk.js",
     "static/css/772.b397b0a3.chunk.css": "/static/css/772.b397b0a3.chunk.css",
-    "static/js/772.49a50a55.chunk.js": "/static/js/772.49a50a55.chunk.js",
+    "static/js/772.e745f1f9.chunk.js": "/static/js/772.e745f1f9.chunk.js",
     "static/js/810.de38e6a9.chunk.js": "/static/js/810.de38e6a9.chunk.js",
     "static/media/wallpaper.png": "/static/media/wallpaper.e4312dfe1d9f19418f65.png",
     "static/media/kashf-web-image.svg": "/static/media/kashf-web-image.6252eb4d32fd421f796e9a4179c76ff5.svg",
@@ -45,8 +45,8 @@
     "static/media/Barid.svg": "/static/media/Barid.f5191d2cf3a7dd052edd00f5036cd6dc.svg",
     "static/media/Varzesh.svg": "/static/media/Varzesh.374b1da34a15c06af67d46e80a59973f.svg",
     "static/media/Nazdika.svg": "/static/media/Nazdika.888ccacee5a018c8d8733aef2a798253.svg",
-    "static/media/Zarebin.svg": "/static/media/Zarebin.04cecb724161e9a2d388f574fef3907a.svg",
-    "static/media/Chargoon.svg": "/static/media/Chargoon.0f0e56723d37b86f3e90c44d23ec4221.svg",
+    "static/media/Zarebin.svg": "/static/media/Zarebin.0889e24bd9ccda30c6151d90ffaaac77.svg",
+    "static/media/Chargoon.svg": "/static/media/Chargoon.b919d8f03f7958c1ce59b0384345555f.svg",
     "static/media/Lifeweb.svg": "/static/media/Lifeweb.5aab1a39b23ca021ea3f726620600d33.svg",
     "static/media/Tamasha.svg": "/static/media/Tamasha.3d953841ff9993356ad5a8af4d1cc838.svg",
     "static/media/روشن.svg": "/static/media/روشن.8a28e7441ca466aafbf291ac6943f038.svg",
@@ -60,7 +60,7 @@
     "static/media/close-icon.svg": "/static/media/close-icon.425a19c175e94191250e1ab57cc0283f.svg",
     "static/media/menu-icon.svg": "/static/media/menu-icon.4edab8bf77a1a07fa3ede4ad5b34d1fd.svg",
     "main.ca61dcd8.css.map": "/static/css/main.ca61dcd8.css.map",
-    "main.0f97fe90.js.map": "/static/js/main.0f97fe90.js.map",
+    "main.b899e337.js.map": "/static/js/main.b899e337.js.map",
     "719.e3335373.chunk.css.map": "/static/css/719.e3335373.chunk.css.map",
     "719.e2b5dc5f.chunk.js.map": "/static/js/719.e2b5dc5f.chunk.js.map",
     "730.b2fceaad.chunk.css.map": "/static/css/730.b2fceaad.chunk.css.map",
@@ -74,11 +74,11 @@
     "68.08574c93.chunk.css.map": "/static/css/68.08574c93.chunk.css.map",
     "68.e25d56c6.chunk.js.map": "/static/js/68.e25d56c6.chunk.js.map",
     "772.b397b0a3.chunk.css.map": "/static/css/772.b397b0a3.chunk.css.map",
-    "772.49a50a55.chunk.js.map": "/static/js/772.49a50a55.chunk.js.map",
+    "772.e745f1f9.chunk.js.map": "/static/js/772.e745f1f9.chunk.js.map",
     "810.de38e6a9.chunk.js.map": "/static/js/810.de38e6a9.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.ca61dcd8.css",
-    "static/js/main.0f97fe90.js"
+    "static/js/main.b899e337.js"
   ]
 }
