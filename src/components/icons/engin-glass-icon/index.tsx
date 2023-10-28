@@ -1,5 +1,5 @@
+import { IconProps } from "@/shared/types";
 import { FC } from "react";
-import { IconProps } from "../question-icon";
 
 const EnginGlassIcon: FC<IconProps> = ({ width, height }) => {
   return (

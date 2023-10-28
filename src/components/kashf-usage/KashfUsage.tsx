@@ -1,8 +1,8 @@
 import Line from "@/assets/images/article-usage/line.png";
-import Pic_1 from "@/assets/images/article-usage/pic-1.png";
-import Pic_2 from "@/assets/images/article-usage/pic-2.png";
-import Pic_3 from "@/assets/images/article-usage/pic-3.png";
-import Pic_4 from "@/assets/images/article-usage/pic-4.png";
+import Pic_1 from "@/assets/images/article-usage/pic-1.webp";
+import Pic_2 from "@/assets/images/article-usage/pic-2.webp";
+import Pic_3 from "@/assets/images/article-usage/pic-3.webp";
+import Pic_4 from "@/assets/images/article-usage/pic-4.webp";
 import Usage from "./ui/Usage";
 import { FC } from "react";
 

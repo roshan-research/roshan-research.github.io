@@ -16,10 +16,10 @@ const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
       className='mx-auto mt-[25vh] flex max-w-[1200px] items-center justify-between custombp2:mt-[15vh] custombp2:flex-col-reverse'
     >
       <div className='flex flex-col items-start whitespace-nowrap'>
-        <span className='text-[64px] font-normal text-[#A76CF3] custombp2:text-[30px]'>
+        <span className='text-[2vw] font-normal text-[#A76CF3] custombp2:text-[30px]'>
           کشف
         </span>
-        <span className='text-[28px] font-normal text-[#FAFAFA] custombp2:text-[20px]'>
+        <span className='text-[1.4vw] font-light text-[#FAFAFA] custombp2:text-[20px]'>
           آموزش ماشین؛ به همین راحتی!
         </span>
       </div>

@@ -1,7 +1,7 @@
 import { FC, useState } from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import Pic from "@/assets/images/conclusion/pic.png";
+import Pic from "@/assets/images/conclusion/pic.webp";
 import {
   conlusion_animation,
   recognize_face_border_1_path,

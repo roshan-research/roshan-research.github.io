@@ -1,5 +1,4 @@
 import { Dispatch, FC, useEffect, useRef, RefObject } from "react";
-import { Link } from "react-router-dom";
 import { CloseSvg } from "../svg";
 import { motion } from "framer-motion";
 import clsx from "clsx";
@@ -50,26 +49,26 @@ const Menu: FC<MenuProps> = ({ isMenuOpen, setIsMenuOpen, menuOpenRef }) => {
         <CloseSvg width={40} height={40} />
       </motion.div>
       <div className='mt-[80px] flex flex-col items-start gap-[50px]'>
-        <Link to='https://www.roshan-ai.ir'>
+        <a href='https://www.roshan-ai.ir'>
           <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
             صفحهٔ اصلی
           </span>
-        </Link>
-        <Link to='https://www.roshan-ai.ir/about-us'>
+        </a>
+        <a href='https://www.roshan-ai.ir/about-us'>
           <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
             دربارهٔ ما
           </span>
-        </Link>
-        <Link to='https://www.roshan-ai.ir/contact-us'>
+        </a>
+        <a href='https://www.roshan-ai.ir/contact-us'>
           <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
             تماس با ما
           </span>
-        </Link>
-        <Link to='https://www.roshan-ai.ir/join-us'>
+        </a>
+        <a href='https://www.roshan-ai.ir/join-us'>
           <span className='transition-colors duration-700 hover:text-[#A76CF3]'>
             همکاری با ما
           </span>
-        </Link>
+        </a>
         <span className='absolute bottom-4 right-10 text-[0.8vw] custombp5:text-[3.5vw]'>
           راهکار پردازش ژرف
         </span>

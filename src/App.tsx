@@ -40,8 +40,8 @@ function App() {
           className='mt-[4vh] flex items-center justify-between'
         >
           <div className='flex items-center gap-[14px]'>
-            <Logo width={43} height={44} />{" "}
-            <span className='text-xl font-normal text-[#FAFAFA]'>کشف</span>
+            <Logo width={28} height={29} />{" "}
+            <span className='text-[1.3vw] font-light text-[#FAFAFA]'>کشف</span>
           </div>
           <motion.img
             whileTap={{ scale: 0.8 }}

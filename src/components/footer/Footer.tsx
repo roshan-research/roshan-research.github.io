@@ -1,4 +1,3 @@
-import { Link } from "react-router-dom";
 import { FooterSvg } from "../svg";
 
 const Footer = () => {
@@ -9,20 +8,20 @@ const Footer = () => {
         <FooterSvg width={53} height={19} />
         <div className='flex items-start gap-[112px]'>
           <div className='flex flex-col items-start gap-[20px] whitespace-nowrap'>
-            <Link to='https://www.roshan-ai.ir/contact-us'>
+            <a href='https://www.roshan-ai.ir/contact-us'>
               <span className='hover:text-[#A76CF3]'>تماس با ما</span>
-            </Link>
-            <Link to='https://www.roshan-ai.ir/join-us'>
+            </a>
+            <a href='https://www.roshan-ai.ir/join-us'>
               <span className='hover:text-[#A76CF3]'>همکاری با ما</span>
-            </Link>
+            </a>
           </div>
           <div className='flex flex-col items-start gap-[20px]'>
             <span>شرکت دانش‌بنیان «راهکار پردازش ژرف»</span>
-            <Link to='https://www.roshan-ai.ir'>
+            <a href='https://www.roshan-ai.ir'>
               <span className='whitespace-nowrap hover:text-[#A76CF3]'>
                 salam@roshan-ai.ir
               </span>
-            </Link>
+            </a>
           </div>
         </div>
       </div>

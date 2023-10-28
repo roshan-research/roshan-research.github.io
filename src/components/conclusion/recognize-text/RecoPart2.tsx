@@ -60,7 +60,11 @@ const RecoPart2 = () => {
             <span className='text-[13px] font-light opacity-60'>sajjzah@</span>
           </div>
         </div>
-        <img className='mr-[180px] w-[31px] custombp5:mr-0' src={LogoTwitter} />
+        <img
+          className='mr-[180px] w-[31px] custombp5:mr-0'
+          alt=''
+          src={LogoTwitter}
+        />
       </div>
       <div className='mt-[6px] flex flex-col items-start gap-[11px]'>
         <span>

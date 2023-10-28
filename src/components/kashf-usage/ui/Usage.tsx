@@ -39,12 +39,14 @@ const Usage: FC<UsageProps> = ({
             left ? "-left-4" : "-right-4 rotate-90"
           )}
           draggable={false}
+          alt=''
         />
         <img
           src={image}
           width={width}
           className='rounded-[60px]'
           draggable={false}
+          alt=''
         />
       </div>
       <span className='text-[24px] font-normal text-[#A76CF3] sm:w-full sm:text-center'>

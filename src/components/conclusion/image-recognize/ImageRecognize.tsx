@@ -1,9 +1,9 @@
 import { FC, useState } from "react";
 import clsx from "clsx";
 import { motion } from "framer-motion";
-import BabyFeet from "@/assets/images/conclusion/baby-feet.png";
-import Watermelon from "@/assets/images/conclusion/watermelon.png";
-import Boat from "@/assets/images/conclusion/boat.png";
+import BabyFeet from "@/assets/images/conclusion/baby-feet.webp";
+import Watermelon from "@/assets/images/conclusion/watermelon.webp";
+import Boat from "@/assets/images/conclusion/boat.webp";
 import {
   conlusion_animation,
   recognize_image_border_1_path,

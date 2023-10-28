@@ -1,5 +1,5 @@
+import { IconProps } from "@/shared/types";
 import { FC } from "react";
-import { IconProps } from "../chart-icon";
 
 const BrainIcon: FC<IconProps> = ({ width, height }) => {
   return (
