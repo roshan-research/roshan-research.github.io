@@ -773,32 +773,6 @@ export const recognize_face_svg_part_2_path_6 = {
   },
 };
 
-export const recognize_face_svg_part_2_path_7 = {
-  hidden: {
-    maxWidth: "0px",
-  },
-  visible: {
-    maxWidth: "136px",
-    transition: {
-      duration: 0.4,
-      delay: 2.7,
-    },
-  },
-};
-
-export const recognize_face_svg_part_2_path_8 = {
-  hidden: {
-    maxWidth: "0px",
-  },
-  visible: {
-    maxWidth: "136px",
-    transition: {
-      duration: 0.4,
-      delay: 2.6,
-    },
-  },
-};
-
 export const recognize_image_border_1_path = {
   hidden: {
     fillOpacity: 0,

@@ -32,25 +32,28 @@ function App() {
 
   return (
     <>
-      <div className='px-[128px] font-iranyekan lg:px-[40px]'>
+      <div className='px-[128px] font-iranyekan sm:px-0'>
         <motion.header
           variants={main_animation}
           initial='hidden'
           animate='visible'
-          className='mt-[4vh] flex items-center justify-between'
+          className='mt-[4vh] flex items-center justify-between sm:px-[40px]'
         >
           <div className='flex items-center gap-[14px]'>
-            <Logo width={28} height={29} />{" "}
-            <span className='text-[1.3vw] font-light text-[#FAFAFA]'>کشف</span>
+            <Logo width={28} height={29} className='h-[17px] sm:w-[16px]' />{" "}
+            <span className='text-[1.3vw] font-light text-[#FAFAFA] sm:text-base'>
+              کشف
+            </span>
           </div>
           <motion.img
             whileTap={{ scale: 0.8 }}
             transition={{ type: "spring", stiffness: 300, damping: 20 }}
             onClick={() => setIsMenuOpen(true)}
             src={MenuIcon}
-            alt=''
-            className='w-[40px] cursor-pointer'
+            alt='kashf menu'
+            className='w-[35px] cursor-pointer sm:w-[23px]'
             ref={menuOpenRef}
+            width={35}
           />
         </motion.header>
         <main>
@@ -59,7 +62,7 @@ function App() {
             isMenuOpen={isMenuOpen}
             menuOpenRef={menuOpenRef}
           />
-          <ArticleMain windowWidth={windowWidth} />
+          <ArticleMain />
           <ArticleFeatures windowWidth={windowWidth} />
           <KashfUsage windowWidth={windowWidth} />
           <Facilities windowWidth={windowWidth} />

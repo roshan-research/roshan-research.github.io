@@ -2,7 +2,7 @@ import { FooterSvg } from "../svg";
 
 const Footer = () => {
   return (
-    <div className='relative mt-[200px] flex w-full items-center justify-center pb-[50px] text-sm text-[#FAFAFA]'>
+    <div className='relative mt-[200px] flex w-full items-center justify-center pb-[50px] text-base font-light text-[#FAFAFA]'>
       <div className='absolute top-0 h-[1px] w-full bg-[#FAFAFA] opacity-25'></div>
       <div className='mt-[50px] flex w-full items-center justify-between px-[100px] md:flex-col md:gap-10'>
         <FooterSvg width={53} height={19} />

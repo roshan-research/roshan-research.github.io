@@ -14,7 +14,7 @@ const RecoPart1 = () => {
   return (
     <motion.div
       onViewportEnter={() => setInview(true)}
-      className='relative flex h-[248px] w-[375px] flex-col items-center bg-[#303030] px-[30px] py-[22px] text-[#FAFAFA] custombp5:h-auto custombp5:w-[95%] custombp5:border-2 custombp5:border-[#A76CF3]'
+      className='relative flex h-[248px] w-[375px] flex-col items-center bg-[#303030] px-[30px] py-[22px] text-[#FAFAFA] sm:h-auto sm:w-[68vw] sm:px-[22px] sm:py-[17px] custombp5:border-2 custombp5:border-[#A76CF3]'
     >
       <BorderSvg1
         width={375}
@@ -45,28 +45,35 @@ const RecoPart1 = () => {
         <div className='flex items-center gap-2'>
           <img
             src={User}
-            alt=''
-            className='h-[40px] w-[40px] rounded-full'
+            alt='user avatar'
+            className='h-[40px] w-[40px] rounded-full sm:h-[24px] sm:w-[24px]'
             draggable={false}
           />
-          <span className='text-base font-light'>رضا طنابی</span>
+          <span className='whitespace-nowrap text-base font-light sm:text-xs'>
+            رضا طنابی
+          </span>
         </div>
-        <span className='mr-[80px] font-iranyekannum text-sm font-light custombp5:mr-0 '>
+        <span className='mr-[80px] whitespace-nowrap font-iranyekannum text-sm font-light sm:text-[10px] custombp5:mr-0'>
           14:25 1400/07/05
         </span>
       </div>
-      <div className='mt-4 flex items-center gap-7'>
+      <div className='mt-4 flex items-center gap-7 sm:text-[10px]'>
         <p className='w-fit text-left font-light'>
           لپ تاپ 13 اینچی اپل مدل
           <br />
           <span className='font-sans'>MacBook Air MGN63 2020</span>
         </p>
-        <img src={Laptop} alt='' className='w-[63px]' draggable={false} />
+        <img
+          src={Laptop}
+          alt=''
+          className='w-[63px] sm:w-[44px]'
+          draggable={false}
+        />
       </div>
-      <span className='mt-3 text-base font-normal'>
+      <span className='mt-3 text-base font-normal sm:text-[10px]'>
         سلام در اینجا نوشتن بدون حافظه گرافیکی مجزا این یعنی چی میشه کمک کنید.
       </span>
-      <div className='mt-4 flex w-full items-center justify-between'>
+      <div className='mt-4 flex w-full items-center justify-between sm:mt-2'>
         <div className='flex items-center gap-1'>
           <span className='mt-[3px] opacity-60'>9</span>
           <svg

@@ -14,7 +14,7 @@ const RecoPart2 = () => {
   return (
     <motion.div
       onViewportEnter={() => setInview(true)}
-      className='relative flex h-[236px] w-[424px] flex-col items-center bg-[#303030] px-7 pb-3 pt-5 text-[#FAFAFA] custombp5:h-auto custombp5:w-[95%] custombp5:border-2 custombp5:border-[#A76CF3]'
+      className='relative flex h-[236px] w-[424px] flex-col items-center bg-[#303030] px-7 pb-3 pt-5 text-[#FAFAFA] sm:h-auto sm:w-[350px] custombp5:border-2 custombp5:border-[#A76CF3]'
     >
       <BorderSvg2
         width={424}
@@ -51,27 +51,31 @@ const RecoPart2 = () => {
         <div className='flex items-center gap-2'>
           <img
             src={User}
-            alt=''
-            className='w-[46px] rounded-full'
+            alt='user avatar'
+            className='w-[46px] rounded-full sm:w-[24px]'
             draggable={false}
           />
           <div className='flex flex-col items-start gap-[1px]'>
-            <span className='text-base font-[500]'>سجاد ظاهری</span>
-            <span className='text-[13px] font-light opacity-60'>sajjzah@</span>
+            <span className='text-base font-[500] sm:text-xs'>سجاد ظاهری</span>
+            <span className='text-[13px] font-light opacity-60 sm:text-[10px]'>
+              sajjzah@
+            </span>
           </div>
         </div>
         <img
-          className='mr-[180px] w-[31px] custombp5:mr-0'
+          className='mr-[180px] w-[31px] sm:w-[27px] custombp5:mr-0'
           alt=''
           src={LogoTwitter}
         />
       </div>
-      <div className='mt-[6px] flex flex-col items-start gap-[11px]'>
+      <div className='mt-[6px] flex flex-col items-start gap-[11px] sm:text-xs'>
         <span>
           یه سری تازه کار تو باشگاه هستن، میان یواشکی میگن: داداش داشتی اشتباه
           می زدی صدامون کن بهت بگیم!
         </span>
-        <span className='text-sm font-light opacity-40'>16:17 8 مهر 1401</span>
+        <span className='text-sm font-light opacity-40 sm:text-xs'>
+          16:17 8 مهر 1401
+        </span>
       </div>
       <div className='my-[18px] h-[0.5px] w-full bg-[#FAFAFA]'></div>
       <div className='flex w-fit items-center gap-[50px] font-sans'>

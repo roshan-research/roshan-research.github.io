@@ -28,31 +28,31 @@ const Usage: FC<UsageProps> = ({
       initial='hidden'
       whileInView='visible'
       viewport={{ once: true, amount: 0.5 }}
-      className='flex flex-col items-start gap-5'
+      className='flex flex-col items-start gap-5 sm:max-w-[192px] sm:gap-2'
     >
-      <div className='am:w-fit relative sm:mx-auto'>
+      <div className='am:w-fit relative'>
         <img
           width={lineWidth}
           src={line}
           className={clsx(
-            "absolute -top-5",
-            left ? "-left-4" : "-right-4 rotate-90"
+            "absolute -top-5 sm:-top-2",
+            left ? "-left-4 sm:-left-2" : "-right-4 rotate-90 sm:-right-2"
           )}
           draggable={false}
-          alt=''
+          alt='kashf usage'
         />
         <img
           src={image}
           width={width}
-          className='rounded-[60px]'
+          className='rounded-[20px]'
           draggable={false}
-          alt=''
+          alt='kashf usage'
         />
       </div>
-      <span className='text-[24px] font-normal text-[#A76CF3] sm:w-full sm:text-center'>
+      <span className='text-[1.1vw] font-normal text-[#A76CF3] sm:w-full sm:text-base'>
         {title}
       </span>
-      <span className='max-w-[480px] text-[18px] font-light sm:w-full sm:text-center'>
+      <span className='max-w-[480px] text-[1vw] font-light sm:w-full sm:text-xs'>
         {text}
       </span>
     </motion.div>

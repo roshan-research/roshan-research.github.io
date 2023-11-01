@@ -25,12 +25,14 @@ export const Features: FC<FeaturesProps> = ({
       whileInView='visible'
       viewport={{ once: true, amount: 0.5 }}
     >
-      <Icon width={width} height={height} />
-      <div className='-mt-10 flex flex-col items-start gap-[5px] pr-[58px]'>
-        <span className='text-[28px] font-[700] custombp:text-[20px]'>
+      <div className='h-fit w-fit sm:-mr-[30px]'>
+        <Icon width={width} height={height} />
+      </div>
+      <div className='-mt-10 flex flex-col items-start gap-[5px] pr-[58px] sm:-mt-5 sm:max-w-[250px] sm:pr-0'>
+        <span className='text-[1.1vw] font-normal sm:text-base custombp:text-[20px]'>
           {title}
         </span>
-        <span className='max-w-[450px] text-[20px] font-light custombp2:text-base'>
+        <span className='max-w-[450px] text-[1vw] font-light custombp2:text-xs'>
           {text}
         </span>
       </div>

@@ -19,14 +19,14 @@ const RecognizeText: FC<RecognizeTextProps> = ({ activeTab }) => {
         whileInView='visible'
         viewport={{ once: true, amount: 0.5 }}
         className={clsx(
-          "items-center gap-[135px] custombp5:hidden",
+          "items-center gap-[48px] custombp5:hidden",
           activeTab === 1 ? "flex custombp5:flex-col" : "hidden"
         )}
       >
         <div>
           <RecoPart1 />
         </div>
-        <div className='flex flex-col items-start gap-[145px]'>
+        <div className='flex flex-col items-start gap-[120px]'>
           <div className='mr-[70px]'>
             <RecoPart2 />
           </div>
@@ -36,22 +36,16 @@ const RecognizeText: FC<RecognizeTextProps> = ({ activeTab }) => {
         </div>
       </motion.div>
       {/* responsive */}
-      <motion.div className='hidden items-center gap-[135px] custombp5:flex custombp5:flex-col'>
-        <span className='hidden text-xl text-[#FAFAFA] custombp5:block'>
-          تشخیص مفهوم متن
-        </span>
-        <div>
+      <motion.div className='no-scrollbar hidden max-w-[414px] items-start gap-7 overflow-x-scroll custombp5:flex custombp5:flex-col'>
+        <div className='justify-cstart flex items-start gap-8 pt-[70px] sm:px-[40px]'>
           <RecoPart1 />
-        </div>
-        <div className='flex flex-col items-start gap-[145px]'>
-          <div>
-            <RecoPart2 />
-          </div>
-          <div>
-            <RecoPart3 />
-          </div>
+          <RecoPart2 />
+          <RecoPart3 />
         </div>
       </motion.div>
+      <span className='mt-10 hidden text-xl text-[#FAFAFA] sm:block sm:text-base'>
+        تشخیص مفهوم متن
+      </span>
     </>
   );
 };

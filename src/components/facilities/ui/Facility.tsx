@@ -26,7 +26,12 @@ const Facility: FC<FacilityProps> = ({
 }) => {
   return (
     <div className='relative'>
-      <div className={clsx("absolute top-0", left ? "left-0" : "right-0")}>
+      <div
+        className={clsx(
+          "absolute top-10 sm:top-7",
+          left ? "left-[60px] sm:left-0" : "right-[15px] sm:right-0"
+        )}
+      >
         <Icon width={width} height={height} />
       </div>
       <div
@@ -44,7 +49,7 @@ const Facility: FC<FacilityProps> = ({
           className='relative w-fit overflow-visible bg-[#A76CF3]'
           viewport={{ once: true, amount: 0.5 }}
         >
-          <span className='w-fit whitespace-nowrap text-[24px] font-normal text-[#A76CF3]'>
+          <span className='w-fit whitespace-nowrap text-[1.1vw] font-normal text-[#A76CF3] sm:text-base'>
             {title}
           </span>
           <motion.span
@@ -52,12 +57,12 @@ const Facility: FC<FacilityProps> = ({
             initial='hidden'
             whileInView='visible'
             viewport={{ once: true, amount: 0.5 }}
-            className='absolute right-0 top-0 w-fit overflow-hidden whitespace-nowrap text-[24px] font-normal text-[#000]'
+            className='absolute right-0 top-0 w-fit overflow-hidden whitespace-nowrap text-[1.1vw] font-normal text-[#000] sm:text-base'
           >
             {title}
           </motion.span>
         </motion.div>
-        <span className='max-w-[390px] text-[18px] font-light text-[#FAFAFA]'>
+        <span className='max-w-[390px] text-[1vw] font-light text-[#FAFAFA] sm:text-xs'>
           {text}
         </span>
       </div>
