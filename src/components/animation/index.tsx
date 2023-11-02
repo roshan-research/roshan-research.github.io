@@ -81,15 +81,14 @@ const Animation: React.FC<AnimationProps> = ({
   };
 
   return (
-    <div>
+    <div className='relative'>
       <svg
         width={width[0]}
         height={height[0]}
         viewBox={`0 0 ${width[0]} ${height[0]}`}
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        className={className?.[5] ?? ""}
-      >
+        className={className?.[5] ?? ""}>
         <motion.rect
           variants={animation2(duration[0], delay[0])}
           initial='hidden'
@@ -108,8 +107,7 @@ const Animation: React.FC<AnimationProps> = ({
         viewBox={`0 0 ${width[1]} ${height[1]}`}
         fill='none'
         xmlns='http://www.w3.org/2000/svg'
-        className={className?.[0] ?? ""}
-      >
+        className={className?.[0] ?? ""}>
         <motion.circle
           variants={animation(duration[1], delay[1])}
           initial='hidden'
@@ -173,8 +171,7 @@ const Animation: React.FC<AnimationProps> = ({
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}
-          className={className?.[2] ?? ""}
-        >
+          className={className?.[2] ?? ""}>
           {text}
         </motion.span>
       </div>
@@ -183,15 +180,13 @@ const Animation: React.FC<AnimationProps> = ({
         initial='hidden'
         animate={inview ? "visible" : ""}
         viewport={{ once: true, amount: 0.5 }}
-        className={className?.[3] ?? ""}
-      >
+        className={className?.[3] ?? ""}>
         <motion.span
           variants={animation(duration[8], delay[8])}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}
-          className={className?.[4] ?? ""}
-        >
+          className={className?.[4] ?? ""}>
           {percentage}
         </motion.span>
       </motion.div>

@@ -20,9 +20,8 @@ const RecognizeText: FC<RecognizeTextProps> = ({ activeTab }) => {
         viewport={{ once: true, amount: 0.5 }}
         className={clsx(
           "items-center gap-[48px] custombp5:hidden",
-          activeTab === 1 ? "flex custombp5:flex-col" : "hidden"
-        )}
-      >
+          activeTab === 1 ? "flex custombp5:flex-col" : "hidden",
+        )}>
         <div>
           <RecoPart1 />
         </div>
@@ -36,7 +35,7 @@ const RecognizeText: FC<RecognizeTextProps> = ({ activeTab }) => {
         </div>
       </motion.div>
       {/* responsive */}
-      <motion.div className='no-scrollbar hidden max-w-[414px] items-start gap-7 overflow-x-scroll custombp5:flex custombp5:flex-col'>
+      <motion.div className='no-scrollbar hidden max-w-[430px] items-start gap-7 overflow-x-scroll custombp5:flex custombp5:flex-col'>
         <div className='justify-cstart flex items-start gap-8 pt-[70px] sm:px-[40px]'>
           <RecoPart1 />
           <RecoPart2 />

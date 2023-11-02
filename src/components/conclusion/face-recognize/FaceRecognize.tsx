@@ -20,10 +20,9 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
         viewport={{ once: true, amount: 0.5 }}
         className={clsx(
           "relative h-[470px] w-[770px] custombp5:hidden custombp5:h-auto custombp5:w-[95%]",
-          activeTab === 2 ? "block" : "hidden"
+          activeTab === 2 ? "block" : "hidden",
         )}
-        onViewportEnter={() => setInview(true)}
-      >
+        onViewportEnter={() => setInview(true)}>
         <div className='absolute right-[295px] top-[95px] h-fit w-fit'>
           <Animation
             className={[
@@ -57,39 +56,39 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
       </motion.div>
       {/* responsive */}
       <motion.div
-        className='relative hidden h-[470px] w-[770px] sm:mt-[153px] custombp5:flex custombp5:h-auto custombp5:w-full custombp5:justify-center'
-        onViewportEnter={() => setInview(true)}
-      >
-        <div className='absolute right-[55px] top-[0px] h-fit w-fit'>
-          <Animation
-            className={[
-              "absolute -left-[155px] -top-[42px] overflow-visible",
-              "absolute -top-[172px] right-[10px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA]",
-              "flex justify-end overflow-hidden",
-              "absolute -top-[174px] right-[10px] h-[36px] w-[136px] bg-[#a86cf333]",
-              "absolute top-[40px] whitespace-nowrap text-sm text-white",
-              "absolute -left-[155px] top-[30px]",
-            ]}
-            width={[50, 270]}
-            height={[60, 80]}
-            duration={[0.6, 0.5, 0.5, 0.4, 0.4, 0.4, 0.4, 0.4, 1.5]}
-            delay={[1, 2, 2.3, 3.6, 2.8, 3.1, 3.65, 3.6, 4]}
-            maxwidth='136px'
-            inview={inview}
-            linepot={45}
-            text='حسن یزدانی'
-            percentage='۷۸ درصد'
-            diameter={4.5}
-            diameter2={2.5}
-            color='white'
+        className='hidden h-[470px] w-[770px] sm:mt-[153px] custombp5:flex custombp5:h-auto custombp5:w-full custombp5:items-center custombp5:justify-center'
+        onViewportEnter={() => setInview(true)}>
+        <div className='relative h-fit w-fit'>
+          <div className='absolute left-[45.5%] top-[16%] h-fit w-fit'>
+            <Animation
+              className={[
+                "absolute -top-[90px] left-[2px] overflow-visible",
+                "absolute -top-[80px] left-[95px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA]",
+                "flex justify-end overflow-hidden text-xs",
+                "absolute -top-[90px] left-[88px] h-[36px] w-[75px] bg-[#a86cf333]",
+                "absolute right-0 top-10 whitespace-nowrap text-xs text-white",
+              ]}
+              width={[50, 270]}
+              height={[60, 100]}
+              duration={[0.6, 0.5, 0.5, 0.4, 0.4, 0.4, 0.4, 0.4, 1.5]}
+              delay={[1, 2, 2.3, 3.6, 2.8, 3.1, 3.65, 3.6, 4]}
+              maxwidth='136px'
+              inview={inview}
+              linepot={45}
+              text='حسن یزدانی'
+              percentage='۷۸ درصد'
+              diameter={4.5}
+              diameter2={2.5}
+              color='white'
+            />
+          </div>
+          <img
+            src={Pic}
+            alt='picture'
+            className='h-full w-full custombp5:w-[75vw]'
+            draggable={false}
           />
         </div>
-        <img
-          src={Pic}
-          alt='picture'
-          className='h-full w-full custombp5:w-[75vw]'
-          draggable={false}
-        />
       </motion.div>
       <span className='mt-[30px] hidden w-full text-center text-xl text-[#FAFAFA] sm:text-base custombp5:block'>
         تشخیص چهره
