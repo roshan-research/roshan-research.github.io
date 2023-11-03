@@ -1,10 +1,22 @@
 import { motion } from "framer-motion";
 
+interface details {
+  bsqr: number;
+  crc: number;
+  crcb: number;
+  vrln: number;
+  anln: number;
+  hrln: number;
+  txt: number;
+  txtbg: number;
+  pct: number;
+}
+
 type AnimationProps = {
   width: number[];
   height: number[];
-  duration: number[];
-  delay: number[];
+  duration: details[];
+  delay: details[];
   linepot: number;
   inview: boolean;
   className?: string[];
@@ -90,7 +102,7 @@ const Animation: React.FC<AnimationProps> = ({
         xmlns='http://www.w3.org/2000/svg'
         className={className?.[5] ?? ""}>
         <motion.rect
-          variants={animation2(duration[0], delay[0])}
+          variants={animation2(duration[0].bsqr, delay[0].bsqr)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -109,7 +121,7 @@ const Animation: React.FC<AnimationProps> = ({
         xmlns='http://www.w3.org/2000/svg'
         className={className?.[0] ?? ""}>
         <motion.circle
-          variants={animation(duration[1], delay[1])}
+          variants={animation(duration[0].crc, delay[0].crc)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -119,7 +131,7 @@ const Animation: React.FC<AnimationProps> = ({
           fill='#A76CF3'
         />
         <motion.circle
-          variants={animation(duration[2], delay[2])}
+          variants={animation(duration[0].crcb, delay[0].crcb)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -132,7 +144,7 @@ const Animation: React.FC<AnimationProps> = ({
           <path d='M116 1L252 1V37H116V1Z' />
         </mask>
         <motion.line
-          variants={animation(duration[3], delay[3])}
+          variants={animation(duration[0].vrln, delay[0].vrln)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -143,7 +155,7 @@ const Animation: React.FC<AnimationProps> = ({
           y2='1'
         />
         <motion.line
-          variants={animation(duration[4], delay[4])}
+          variants={animation(duration[0].anln, delay[0].anln)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -154,7 +166,7 @@ const Animation: React.FC<AnimationProps> = ({
           stroke='#A76CF3'
         />
         <motion.line
-          variants={animation(duration[5], delay[5])}
+          variants={animation(duration[0].hrln, delay[0].hrln)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: false, amount: 0.5 }}
@@ -167,7 +179,7 @@ const Animation: React.FC<AnimationProps> = ({
       </svg>
       <div className={className?.[1] ?? ""}>
         <motion.span
-          variants={animation3(maxwidth, duration[6], delay[6])}
+          variants={animation3(maxwidth, duration[0].txt, delay[0].txt)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}
@@ -176,13 +188,13 @@ const Animation: React.FC<AnimationProps> = ({
         </motion.span>
       </div>
       <motion.div
-        variants={animation3(maxwidth, duration[7], delay[7])}
+        variants={animation3(maxwidth, duration[0].txtbg, delay[0].txtbg)}
         initial='hidden'
         animate={inview ? "visible" : ""}
         viewport={{ once: true, amount: 0.5 }}
         className={className?.[3] ?? ""}>
         <motion.span
-          variants={animation(duration[8], delay[8])}
+          variants={animation(duration[0].pct, delay[0].pct)}
           initial='hidden'
           animate={inview ? "visible" : ""}
           viewport={{ once: true, amount: 0.5 }}

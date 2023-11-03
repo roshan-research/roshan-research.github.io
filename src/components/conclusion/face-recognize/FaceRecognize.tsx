@@ -34,8 +34,32 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
             ]}
             width={[120, 270]}
             height={[150, 190]}
-            duration={[0.6, 0.5, 0.5, 0.4, 0.4, 0.4, 0.4, 0.4, 1.5]}
-            delay={[1, 2, 2.3, 3.6, 2.8, 3.1, 3.65, 3.6, 4]}
+            duration={[
+              {
+                bsqr: 0.6, //  big square
+                crc: 0.5, // circle
+                crcb: 0.5, // circle border
+                vrln: 0.4, // vetical line
+                anln: 0.4, // angle line
+                hrln: 0.4, // horizontal line
+                txt: 0.4, // text
+                txtbg: 0.4, // text background
+                pct: 1.5, // percentage
+              },
+            ]}
+            delay={[
+              {
+                bsqr: 1, //  big square
+                crc: 2, // circle
+                crcb: 2.3, // circle border
+                vrln: 3.6, // vetical line
+                anln: 2.8, // angle line
+                hrln: 3.1, // horizontal line
+                txt: 3.65, // text
+                txtbg: 3.6, // text background
+                pct: 4, // percentage
+              },
+            ]}
             maxwidth='136px'
             inview={inview}
             linepot={77}
@@ -45,6 +69,7 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
             color='white'
           />
         </div>
+
         <img
           src={Pic}
           alt='kashf'
@@ -70,8 +95,32 @@ const FaceRecognize: FC<FaceRecognizeProps> = ({ activeTab }) => {
               ]}
               width={[50, 270]}
               height={[60, 100]}
-              duration={[0.6, 0.5, 0.5, 0.4, 0.4, 0.4, 0.4, 0.4, 1.5]}
-              delay={[1, 2, 2.3, 3.6, 2.8, 3.1, 3.65, 3.6, 4]}
+              duration={[
+                {
+                  bsqr: 0.6, //  big square
+                  crc: 0.5, // circle
+                  crcb: 0.5, // circle border
+                  vrln: 0.4, // vetical line
+                  anln: 0.4, // angle line
+                  hrln: 0.4, // horizontal line
+                  txt: 0.4, // text
+                  txtbg: 0.4, // text background
+                  pct: 1.5, // percentage
+                },
+              ]}
+              delay={[
+                {
+                  bsqr: 1, //  big square
+                  crc: 2, // circle
+                  crcb: 2.3, // circle border
+                  vrln: 3.6, // vetical line
+                  anln: 2.8, // angle line
+                  hrln: 3.1, // horizontal line
+                  txt: 3.65, // text
+                  txtbg: 3.6, // text background
+                  pct: 4, // percentage
+                },
+              ]}
               maxwidth='136px'
               inview={inview}
               linepot={45}

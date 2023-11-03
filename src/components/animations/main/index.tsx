@@ -298,7 +298,7 @@ export const recognize_text_svg_part_1_path_8 = {
     width: "0px",
   },
   visible: {
-    width: "93px",
+    width: "63px",
     transition: {
       duration: 0.4,
       delay: 2.6,
@@ -386,7 +386,7 @@ export const recognize_text_svg_part_2_path_6 = {
     width: "0px",
   },
   visible: {
-    width: "104px",
+    width: "68px",
     pathLength: 1,
     transition: {
       duration: 0.4,

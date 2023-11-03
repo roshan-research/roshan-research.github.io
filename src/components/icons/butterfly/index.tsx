@@ -10,7 +10,7 @@ const Butterfly: FC<IconProps> = ({ width, height }) => {
         <Animation
           className={[
             "absolute -top-[20px] left-[128px] overflow-visible", // lines and circle
-            "absolute -top-[17px] left-[216px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA] sm:text-sm", // text container
+            "absolute -top-[17px] left-[216px] whitespace-nowrap text-[20px] font-[500] text-[#FAFAFA] sm:text-sm", // text span container
             "flex justify-end overflow-hidden sm:pt-[7px]", // text span
             "absolute -top-[19px] left-[208px] h-[36px] w-[136px] bg-[#a86cf333] sm:w-[50px]", // text background
             "absolute top-[40px] whitespace-nowrap text-sm text-white", // percentage text
@@ -18,8 +18,32 @@ const Butterfly: FC<IconProps> = ({ width, height }) => {
           ]}
           width={[120, 270]}
           height={[150, 80]}
-          duration={[0, 0.5, 0.5, 0.4, 0.4, 0.4, 0.4, 0.4, 1.5]} // big square - circle border - circle - angle line - horizontal line - vetical line - text - text background - percentage
-          delay={[0, 2, 2.3, 3.6, 2.8, 3.1, 3.65, 3.6, 4]} // big square - circle border - circle - angle line - horizontal line - vetical line - text - text background - percentage
+          duration={[
+            {
+              bsqr: 0, //  big square
+              crc: 0.5, // circle
+              crcb: 0.5, // circle border
+              vrln: 0.4, // vetical line
+              anln: 0.4, // angle line
+              hrln: 0.4, // horizontal line
+              txt: 0.4, // text
+              txtbg: 0.4, // text background
+              pct: 1.5, // percentage
+            },
+          ]}
+          delay={[
+            {
+              bsqr: 0, // big square
+              crc: 2, // circle
+              crcb: 2.3, // circle border
+              vrln: 3.6, // vetical line
+              anln: 2.8, // angle line
+              hrln: 3.1, // horizontal line
+              txt: 3.65, // text
+              txtbg: 3.6, // text background
+              pct: 4, // percentage
+            },
+          ]}
           maxwidth='65px'
           inview={true}
           linepot={40}
