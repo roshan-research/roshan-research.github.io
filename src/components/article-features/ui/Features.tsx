@@ -1,7 +1,10 @@
 import { FC } from "react";
 import { motion } from "framer-motion";
 import { IconProps } from "@/shared/types";
-import { features_animation } from "@/components/animations/main";
+import {
+  text_animation,
+  text_bg_animation,
+} from "@/components/animations/main";
 
 type FeaturesProps = {
   Icon: FC<IconProps>;
@@ -19,23 +22,35 @@ export const Features: FC<FeaturesProps> = ({
   text,
 }) => {
   return (
-    <motion.div
-      variants={features_animation}
-      initial='hidden'
-      whileInView='visible'
-      viewport={{ once: true, amount: 0.5 }}
-    >
-      <div className='h-fit w-fit sm:-mr-[30px]'>
+    <div className='flex flex-col gap-2'>
+      <div className='h-fit w-fit'>
         <Icon width={width} height={height} />
       </div>
-      <div className='-mt-10 flex flex-col items-start gap-[5px] pr-[58px] sm:-mt-5 sm:max-w-[250px] sm:pr-0'>
-        <span className='text-[1.1vw] font-normal sm:text-base custombp:text-[20px]'>
-          {title}
-        </span>
-        <span className='max-w-[450px] text-[1vw] font-light custombp2:text-xs'>
+      <div className='flex flex-col items-start gap-[5px] sm:max-w-[250px] sm:pr-0'>
+        <motion.div
+          variants={text_bg_animation}
+          initial='hidden'
+          whileInView='visible'
+          className='relative w-fit overflow-visible bg-[#A76CF3]'
+          viewport={{ once: true, amount: 0.5 }}
+        >
+          <span className='w-fit whitespace-nowrap text-[1.1vw] font-normal text-[#A76CF3] sm:text-base'>
+            {title}
+          </span>
+          <motion.span
+            variants={text_animation}
+            initial='hidden'
+            whileInView='visible'
+            viewport={{ once: true, amount: 0.5 }}
+            className='absolute right-0 top-0 w-fit overflow-hidden whitespace-nowrap text-[1.1vw] font-normal text-[#000] sm:text-base'
+          >
+            {title}
+          </motion.span>
+        </motion.div>
+        <span className='max-w-[450px] text-[1vw] font-light text-[#FAFAFA] sm:text-xs'>
           {text}
         </span>
       </div>
-    </motion.div>
+    </div>
   );
 };

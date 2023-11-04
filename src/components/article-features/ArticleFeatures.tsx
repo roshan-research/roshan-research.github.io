@@ -19,8 +19,8 @@ const ArticleFeatures: FC<ArticleFeaturesProps> = ({ windowWidth }) => {
         <div className='flex flex-col items-start gap-[292px] custombp2:gap-[36px]'>
           <Features
             Icon={EducationIcon}
-            width={windowWidth! < 641 ? 50 : 110}
-            height={windowWidth! < 641 ? 50 : 110}
+            width={windowWidth! < 641 ? 38 : 48}
+            height={windowWidth! < 641 ? 23 : 33}
             title={"یادگیری آسان"}
             text={
               "کشف با دیدن مثال‌هایی از یک مفهوم تازه در متن، تصویر و ویدئو، آن را می‌شناسد و می‌تواند نمونه‌های دیگر آن مفهوم را پیدا کند. بعد، کاربر درست یا غلط بودن این تشخیص‌ها را گزارش می‌کند تا کشف موضوع را بهتر یاد بگیرد"
@@ -28,8 +28,8 @@ const ArticleFeatures: FC<ArticleFeaturesProps> = ({ windowWidth }) => {
           />
           <Features
             Icon={ChartIcon}
-            width={windowWidth! < 641 ? 44 : 97}
-            height={windowWidth! < 641 ? 36 : 110}
+            width={windowWidth! < 641 ? 18 : 28}
+            height={windowWidth! < 641 ? 20 : 30}
             title={"تحلیل داده‌های عظیم"}
             text={
               "کشف با دیدن مثال‌هایی از یک مفهوم تازه در متن، تصویر و ویدئو، آن را می‌شناسد و می‌تواند نمونه‌های دیگر آن مفهوم را پیدا کند. بعد، کاربر درست یا غلط بودن این تشخیص‌ها را گزارش می‌کند تا کشف موضوع را بهتر یاد بگیرد"
@@ -39,8 +39,8 @@ const ArticleFeatures: FC<ArticleFeaturesProps> = ({ windowWidth }) => {
         <div className='flex flex-col items-start gap-[292px] pt-[315px] custombp2:gap-[36px] custombp2:pt-0'>
           <Features
             Icon={QuestionIcon}
-            width={windowWidth! < 641 ? 32 : 62}
-            height={windowWidth! < 641 ? 49 : 97}
+            width={windowWidth! < 641 ? 26 : 36}
+            height={windowWidth! < 641 ? 26 : 36}
             title={"پرسیدن موارد دشوار"}
             text={
               "کشف با دیدن مثال‌هایی از یک مفهوم تازه در متن، تصویر و ویدئو، آن را می‌شناسد و می‌تواند نمونه‌های دیگر آن مفهوم را پیدا کند. بعد، کاربر درست یا غلط بودن این تشخیص‌ها را گزارش می‌کند تا کشف موضوع را بهتر یاد بگیرد"
@@ -48,8 +48,8 @@ const ArticleFeatures: FC<ArticleFeaturesProps> = ({ windowWidth }) => {
           />
           <Features
             Icon={EnginGlassIcon}
-            width={windowWidth! < 641 ? 44 : 85}
-            height={windowWidth! < 641 ? 44 : 85}
+            width={windowWidth! < 641 ? 27 : 37}
+            height={windowWidth! < 641 ? 30 : 40}
             title={"ارزیابی دقیق"}
             text={
               "کشف با دیدن مثال‌هایی از یک مفهوم تازه در متن، تصویر و ویدئو، آن را می‌شناسد و می‌تواند نمونه‌های دیگر آن مفهوم را پیدا کند. بعد، کاربر درست یا غلط بودن این تشخیص‌ها را گزارش می‌کند تا کشف موضوع را بهتر یاد بگیرد"
