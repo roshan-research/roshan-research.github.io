@@ -26,7 +26,7 @@ export const Features: FC<FeaturesProps> = ({
       <div className='h-fit w-fit'>
         <Icon width={width} height={height} />
       </div>
-      <div className='flex flex-col items-start gap-[5px] sm:max-w-[250px] sm:pr-0'>
+      <div className='flex flex-col items-start gap-[5px] sm:max-w-[76vw] sm:pr-0'>
         <motion.div
           variants={text_bg_animation}
           initial='hidden'

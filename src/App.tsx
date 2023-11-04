@@ -37,9 +37,10 @@ function App() {
           variants={main_animation}
           initial='hidden'
           animate='visible'
-          className='mt-[4vh] flex items-center justify-between sm:px-[40px]'>
+          className='mt-[4vh] flex items-center justify-between sm:px-[40px]'
+        >
           <div className='flex items-center gap-[14px]'>
-            <Logo width={28} height={29} className='sm:h-[17px] sm:w-[16px]' />{" "}
+            <Logo width={28} height={29} className='sm:h-[25px] sm:w-[26px]' />{" "}
             <span className='text-[1.3vw] font-light text-[#FAFAFA] sm:text-base'>
               کشف
             </span>
