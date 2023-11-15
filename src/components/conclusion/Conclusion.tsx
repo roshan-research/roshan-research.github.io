@@ -38,18 +38,20 @@ const Conclusion: FC<ConclusionProps> = ({ windowWidth }) => {
             onClick={recognizeTextHandler}
             className={clsx(
               "flex cursor-pointer items-center",
-              activeTab === 1 ? "gap-[30px]" : "gap-[43px] pr-[14px]",
+              activeTab === 1 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
             )}
             data-tooltip-id='my-tooltip'
-            data-tooltip-content='تشخیص مفهم متن'>
+            data-tooltip-content='تشخیص مفهم متن'
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={1} />
             <span
               className={clsx(
                 "select-none py-1 transition-colors duration-300 ease-in-out custombp4:hidden",
                 activeTab === 1
                   ? "bg-[#A76CF3] font-normal text-[#000]"
-                  : "bg-[#000] text-[#FAFAFA]",
-              )}>
+                  : "bg-[#000] text-[#FAFAFA]"
+              )}
+            >
               تشخیص مفهوم متن
             </span>
             {windowWidth! < 821 && (
@@ -60,18 +62,20 @@ const Conclusion: FC<ConclusionProps> = ({ windowWidth }) => {
             onClick={recognizeFaceHandler}
             className={clsx(
               "flex cursor-pointer items-center",
-              activeTab === 2 ? "gap-[30px]" : "gap-[43px] pr-[14px]",
+              activeTab === 2 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
             )}
             data-tooltip-id='my-tooltip-2'
-            data-tooltip-content='تشخیص چهره'>
+            data-tooltip-content='تشخیص چهره'
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={2} />
             <span
               className={clsx(
                 "select-none py-1 transition-colors duration-300 ease-in-out custombp4:hidden",
                 activeTab === 2
                   ? "bg-[#A76CF3] font-normal text-[#000]"
-                  : "bg-[#000] text-[#FAFAFA]",
-              )}>
+                  : "bg-[#000] text-[#FAFAFA]"
+              )}
+            >
               تشخیص چهره
             </span>
             {windowWidth! < 821 && (
@@ -82,53 +86,57 @@ const Conclusion: FC<ConclusionProps> = ({ windowWidth }) => {
             onClick={recognizeImageHandler}
             className={clsx(
               "flex cursor-pointer items-center",
-              activeTab === 3 ? "gap-[30px]" : "gap-[43px] pr-[14px]",
+              activeTab === 3 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
             )}
             data-tooltip-id='my-tooltip-3'
-            data-tooltip-content='شناسایی تصاویر'>
+            data-tooltip-content='شناسایی تصاویر'
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={3} />
             <span
               className={clsx(
                 "select-none py-1 transition-colors duration-300 ease-in-out custombp4:hidden",
                 activeTab === 3
                   ? "bg-[#A76CF3] font-normal text-[#000]"
-                  : "bg-[#000] text-[#FAFAFA]",
-              )}>
+                  : "bg-[#000] text-[#FAFAFA]"
+              )}
+            >
               شناسایی تصاویر
             </span>
             {windowWidth! < 821 && (
               <Tooltip id='my-tooltip-3' className='z-40' place='left' />
             )}
           </div>
-          <div
+          {/* <div
             onClick={recognizeDocumentsHandler}
             className={clsx(
               "flex cursor-pointer items-center",
-              activeTab === 4 ? "gap-[30px]" : "gap-[43px] pr-[14px]",
+              activeTab === 4 ? "gap-[30px]" : "gap-[43px] pr-[14px]"
             )}
             data-tooltip-id='my-tooltip-3'
-            data-tooltip-content='شناسایی اسناد و مدارک'>
+            data-tooltip-content='شناسایی اسناد و مدارک'
+          >
             <ActiveTabIcon activeTab={activeTab} currentTab={4} />
             <span
               className={clsx(
                 "select-none py-1 transition-colors duration-300 ease-in-out custombp4:hidden",
                 activeTab === 4
                   ? "bg-[#A76CF3] font-normal text-[#000]"
-                  : "bg-[#000] text-[#FAFAFA]",
-              )}>
+                  : "bg-[#000] text-[#FAFAFA]"
+              )}
+            >
               شناسایی اسناد و مدارک
             </span>
             {windowWidth! < 821 && (
               <Tooltip id='my-tooltip-3' className='z-40' place='left' />
             )}
-          </div>
+          </div> */}
         </div>
         <div className='flex max-w-[1080px] items-start justify-start sm:w-full 2xl:overflow-scroll 2xl:overflow-y-hidden'>
           <div className='flex min-h-[840px] min-w-[1070px] items-center justify-center sm:w-full sm:overflow-hidden custombp5:min-h-0 custombp5:min-w-0 custombp5:flex-col'>
             <RecognizeText activeTab={activeTab} />
             <FaceRecognize activeTab={activeTab} />
             <ImageRecognize activeTab={activeTab} />
-            <Documents activeTab={activeTab} />
+            {/* <Documents activeTab={activeTab} /> */}
           </div>
         </div>
       </div>

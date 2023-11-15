@@ -18,7 +18,7 @@ const ArticleMain = () => {
           آموزش ماشین؛ به همین راحتی!
         </span>
       </div>
-      <Butterfly width={290} height={289} />
+      <Butterfly width={551} height={551} />
     </motion.div>
   );
 };
