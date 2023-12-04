@@ -131,8 +131,8 @@ const Conclusion: FC<ConclusionProps> = ({ windowWidth }) => {
             )}
           </div> */}
         </div>
-        <div className='flex max-w-[1080px] items-start justify-start sm:w-full 2xl:overflow-scroll 2xl:overflow-y-hidden'>
-          <div className='flex min-h-[840px] min-w-[1070px] items-center justify-center sm:w-full sm:overflow-hidden custombp5:min-h-0 custombp5:min-w-0 custombp5:flex-col'>
+        <div className='flex max-w-[1080px] items-start justify-start sm:w-full'>
+          <div className='flex min-h-[840px] min-w-[1070px] items-center justify-center sm:w-full custombp5:min-h-0 custombp5:min-w-0 custombp5:flex-col'>
             <RecognizeText activeTab={activeTab} />
             <FaceRecognize activeTab={activeTab} />
             <ImageRecognize activeTab={activeTab} />
