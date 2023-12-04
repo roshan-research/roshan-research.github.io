@@ -1,6 +1,6 @@
 import { IconProps } from "@/shared/types";
 import { FC } from "react";
-import CoffeenutsImg from "@/assets/images/article-main/coffeenuts.png";
+import CoffeenutsImg from "@/assets/images/article-main/coffeenuts.webp";
 import Animation from "@/components/animation";
 
 const Butterfly: FC<IconProps> = ({ width, height }) => {
