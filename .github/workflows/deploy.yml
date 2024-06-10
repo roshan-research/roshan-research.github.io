@@ -33,6 +33,7 @@ jobs:
 
                 if [ "$1" = "main" ]; then
                     cp -r "$src/next/"* "$root/"
+                fi
             }           
            
             products=("main")
