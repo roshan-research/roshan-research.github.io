@@ -1,0 +1,58 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  @font-face {
+    font-family: "YekanBakh";
+    src:
+      url("/fonts/YekanBakh-Light.woff") format("woff"),
+      url("/fonts/YekanBakh-Light.woff2") format("woff2");
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    src:
+      url("/fonts/YekanBakh-Regular.woff") format("woff"),
+      url("/fonts/YekanBakh-Regular.woff2") format("woff2");
+    font-weight: 400;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    src:
+      url("/fonts/YekanBakh-Medium.woff") format("woff"),
+      url("/fonts/YekanBakh-Medium.woff2") format("woff2");
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    src:
+      url("/fonts/YekanBakh-Bold.woff") format("woff"),
+      url("/fonts/YekanBakh-Bold.woff2") format("woff2");
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "YekanBakh";
+    src:
+      url("/fonts/YekanBakh-Heavy.woff") format("woff"),
+      url("/fonts/YekanBakh-Heavy.woff2") format("woff2");
+    font-weight: 900;
+  }
+
+  body {
+    font-family: "YekanBakh";
+  }
+
+  ::-webkit-scrollbar {
+    display: none;
+  }
+}
+
+@layer utilities {
+  svg path {
+    transition: all 0.2s ease-in-out;
+  }
+  svg stop {
+    transition: all 0.2s ease-in-out;
+  }
+}

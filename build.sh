@@ -5,7 +5,7 @@ build() {
     npm install
     npm run build
     if [ "$1" = "main" ]; then
-        cp -r "$src/build/"* "$root/"
+        cp -r "$src/next/"* "$root/"
     else             
         cp -r "$src/build/"* "$root/$1/"
     fi
