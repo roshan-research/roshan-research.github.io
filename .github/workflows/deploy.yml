@@ -1,51 +1,47 @@
 name: deploy
 
 on: [push, workflow_dispatch]
-    
-jobs:
 
+jobs:
   publish:
     runs-on: ubuntu-latest
-    
-    env:        
+
+    env:
       GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
       CI: ""
-      
+
     steps:
       - name: Checkout
         uses: actions/checkout@v3
         with:
           fetch-depth: 0
-          
+
       - name: Setup node
-        uses: actions/setup-node@v3        
-      
+        uses: actions/setup-node@v3
+
       - name: Build
         run: |
-        
-            root=$(git rev-parse --show-toplevel)
 
-            build() {
-                src="$root/src/$1-src/"
-                cd "$src"
-                npm install
-                npm run build
+          root=$(git rev-parse --show-toplevel)
 
-                if [ "$1" = "main" ]; then
-                    cp -r "$src/build/"* "$root/"
-                else
-                    cp -r "$src/build/"* "$root/$1/"
-                fi
-            }           
-           
-            products=("main" "about-us" "join-us" "contact-us" "alefba" "harf" "kashf")
+          build() {
+              src="$root/src/$1-src/"
+              cd "$src"
+              npm install
+              npm run build
 
-            for product in "${products[@]}"; do
-                build "$product"
-            done
-        
-      - name: Publish          
+              if [ "$1" = "main" ]; then
+                  cp -r "$src/next/"* "$root/"
+          }           
+
+          products=("main")
+
+          for product in "${products[@]}"; do
+              build "$product"
+          done
+
+      - name: Publish
         uses: mikeal/publish-to-github-action@master
         env:
           GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-          BRANCH_NAME: 'main'
+          BRANCH_NAME: "main"
