@@ -56,7 +56,7 @@ const AboutUs = () => {
         >
           <SwiperSlide className="px-[10px]">
             <Image
-              src='static/media/roshan-office.png'
+              src='static/media/roshan-office.webp'
               // src={roshanOffice}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
@@ -65,7 +65,7 @@ const AboutUs = () => {
           </SwiperSlide>
           <SwiperSlide className="px-[10px]">
             <Image
-              src='static/media/roshan-office-2.png'
+              src='static/media/roshan-office-2.webp'
               // src={roshanOffice2}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
@@ -74,7 +74,7 @@ const AboutUs = () => {
           </SwiperSlide>
           <SwiperSlide className="px-[10px]">
             <Image
-              src='static/media/roshan-office-3.png'
+              src='static/media/roshan-office-3.webp'
               // src={roshanOffice3}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
