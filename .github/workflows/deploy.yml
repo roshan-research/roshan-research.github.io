@@ -48,7 +48,7 @@ jobs:
               fi
           }           
           
-          products=("main" "alefba" "harf" "kashf" "replai")
+          products=("main")
 
           for product in "${products[@]}"; do
               build "$product"
