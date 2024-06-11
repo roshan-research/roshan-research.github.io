@@ -12,9 +12,11 @@
     "@lottiefiles/lottie-player": "^2.0.4",
     "clsx": "^2.1.1",
     "framer-motion": "^11.2.5",
+    "lenis": "^1.1.2",
     "next": "14.2.3",
     "react": "^18",
     "react-dom": "^18",
+    "react-icons": "^5.2.1",
     "react-scroll": "^1.9.0",
     "sharp": "^0.33.4",
     "swiper": "^11.1.4"

@@ -3,12 +3,12 @@
 import Image from "next/image";
 import { motion } from "framer-motion";
 
-import map from "@/assets/images/map.png";
+import { variants } from "@/animations/variant";
 import EnvelopIcon from "@/components/icons/EnvelopIcon";
 import PhoneIcon from "@/components/icons/PhoneIcon";
 import LocationIcon from "@/components/icons/LocationIcon";
 import Direction from "./ui/Direction";
-import { variants } from "@/animations/variant";
+// import map from '@/assets/images/map.png'
 
 const ContactUs = ({}) => {
   return (
@@ -19,7 +19,7 @@ const ContactUs = ({}) => {
       className='w-full relative h-[100vh] flex items-center justify-center overflow-hidden'
     >
       <Image
-        src={map}
+        src='static/media/map.png'
         alt='شرکت روشن'
         className='h-full max-w-[864px] w-full absolute left-0 bp960:opacity-50 bp480:w-[180%] bp480:-translate-x-[220px]'
       />

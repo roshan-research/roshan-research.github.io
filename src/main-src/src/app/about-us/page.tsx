@@ -1,59 +1,92 @@
 "use client";
 
-import Image from "next/image";
+import { useRef, useState } from "react";
 import { variants } from "@/animations/variant";
 import { motion } from "framer-motion";
 import { animateScroll as scroll } from "react-scroll";
+import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
+import { IconContext } from 'react-icons'
+import { FaAngleRight } from "react-icons/fa6";
+import { FaAngleLeft } from "react-icons/fa6";
+import Image from "next/image";
+import clsx from "clsx";
+import "swiper/css";
 
 import MainContent from "./ui/MainContent";
-import roshanOffice from "@/assets/images/roshan-office.png";
+// import roshanOffice from "@/assets/images/roshan-office.png";
+// import roshanOffice2 from "@/assets/images/roshan-office-2.png";
+// import roshanOffice3 from "@/assets/images/roshan-office-3.png";
 import Customers from "@/components/customers";
 import Footer from "@/components/layout/Footer";
-import { useEffect } from "react";
+import useScreenWidth from "@/hooks/useScreenWidth";
 
 const AboutUs = () => {
+  const swiperRef = useRef<SwiperRef>(null);
+  const [currentSlide, setCurrentSlide] = useState<number>(0);
+  const screenSize = useScreenWidth();
+
   const toTopHandler = () => {
     scroll.scrollToTop({ duration: 5000, smooth: true });
   };
 
-  useEffect(() => {
-    const body = document.body;
-    const scrollWrap = document.getElementsByClassName(
-      "smooth-scroll-wraper-3"
-    )[0] as HTMLDivElement;
-    const height = scrollWrap.getBoundingClientRect().height - 1;
-    const speed = 0.04;
+  const rightSlideHandler = () => {
+    swiperRef.current?.swiper.slideNext();
+  }
 
-    var offset = 0;
-
-    body.style.height = Math.floor(height) + "px";
-
-    function smoothScroll() {
-      offset += (window.scrollY - offset) * speed;
-
-      var scroll = "translateY(-" + offset + "px) translateZ(0)";
-      scrollWrap.style.transform = scroll;
-
-      requestAnimationFrame(smoothScroll);
-    }
-
-    smoothScroll();
-  }, []);
+  const leftSlideHandler = () => {
+    swiperRef.current?.swiper.slidePrev();
+  }
 
   return (
     <motion.div
       variants={variants}
       initial='hidden'
       animate='visible'
-      className='smooth-scroll-wraper-3 fixed top-0 left-0 flex flex-col w-full justify-center items-center'
+      className='flex flex-col w-full justify-center items-center'
     >
       <MainContent />
-      <div className='w-full relative px-[80px] bp768:px-[30px] flex items-center justify-center bp360:mt-10'>
-        <Image
-          src={roshanOffice}
-          alt='شرکت روشن'
-          className='max-w-[1520px] w-full rounded-[40px] bp480:rounded-[20px]'
-        />
+      <div className='relative w-full px-[80px] bp768:px-[30px] flex items-center justify-center bp360:mt-10 select-none'>
+        <Swiper
+          direction={"horizontal"}
+          navigation
+          className='w-full h-full'
+          ref={swiperRef}
+          speed={1000}
+          onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
+        >
+          <SwiperSlide className="px-[10px]">
+            <Image
+              src='static/media/roshan-office.png'
+              alt='شرکت روشن'
+              className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
+              draggable={false}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="px-[10px]">
+            <Image
+              src='static/media/roshan-office-2.png'
+              alt='شرکت روشن'
+              className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
+              draggable={false}
+            />
+          </SwiperSlide>
+          <SwiperSlide className="px-[10px]">
+            <Image
+              src='static/media/roshan-office-3.png'
+              alt='شرکت روشن'
+              className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
+              draggable={false}
+            />
+          </SwiperSlide>
+        </Swiper>
+        <div className="absolute w-full max-w-[1520px] mx-auto text-white z-50 flex items-center justify-between px-4 bp768:px-10">
+          <IconContext.Provider value={{color: "white", size: screenSize.width < 481 ? '36px' : '56px'}}>
+            <FaAngleLeft className={clsx('cursor-pointer',currentSlide === 0 && 'opacity-50')} onClick={leftSlideHandler}/>
+          </IconContext.Provider>
+          <IconContext.Provider value={{color: "white", size: screenSize.width < 481 ? '36px' : '56px'}}>
+            <FaAngleRight className={clsx('cursor-pointer',currentSlide === 2 && 'opacity-50')} onClick={rightSlideHandler} />
+          </IconContext.Provider>
+        </div>
       </div>
       <span className='text-[60px] text-white font-bold mt-[400px] mb-[90px] bp1280:mt-[200px] bp768:mt-[100px] bp700:text-[40px] bp480:text-[30px]'>
         کسب اعتماد بهتــرین‌ها

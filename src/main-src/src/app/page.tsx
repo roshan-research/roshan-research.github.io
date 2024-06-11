@@ -1,7 +1,8 @@
 "use client";
 
-import { useEffect, useRef, useState } from "react";
+import { useRef, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
+import { ReactLenis } from 'lenis/react'
 
 import HomePart1 from "@/components/home-parts/HomePart1";
 import HomePart2 from "@/components/home-parts/HomePart2";
@@ -21,33 +22,8 @@ export default function Home() {
     scroll.scrollToTop({ duration: 5000, smooth: true });
   };
 
-  useEffect(() => {
-    const body = document.body;
-    const scrollWrap = document.getElementsByClassName(
-      "smooth-scroll-wraper"
-    )[0] as HTMLDivElement;
-    const height = scrollWrap.getBoundingClientRect().height - 1;
-    const speed = 0.04;
-
-    var offset = 0;
-
-    body.style.height = Math.floor(height) + "px";
-
-    function smoothScroll() {
-      offset += (window.scrollY - offset) * speed;
-
-      var scroll = "translateY(-" + offset + "px) translateZ(0)";
-      scrollWrap.style.transform = scroll;
-
-      requestAnimationFrame(smoothScroll);
-    }
-
-    smoothScroll();
-  }, []);
-
   return (
-    <>
-      <div className='smooth-scroll-wraper fixed top-0 left-0 w-full z-0'>
+    <ReactLenis root>
         <div className='relative' id='scroll-container' ref={container}>
           <HomePart1 setActiveIndex={setActiveIndex} />
           <HomePart2 setActiveIndex={setActiveIndex} />
@@ -57,9 +33,8 @@ export default function Home() {
           <HomePart6 setActiveIndex={setActiveIndex} />
           <HomePart7 setActiveIndex={setActiveIndex} />
           <Footer toTopHandler={toTopHandler} />
+          <Pagination activeIndex={activeIndex} />
         </div>
-      </div>
-      <Pagination activeIndex={activeIndex} />
-    </>
+    </ReactLenis>
   );
 }

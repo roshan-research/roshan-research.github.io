@@ -2,9 +2,9 @@
 
 import { Dispatch, useRef, useState } from "react";
 import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
+import { Navigation } from "swiper/modules";
 import Link from "next/link";
 import clsx from "clsx";
-import { Navigation } from "swiper/modules";
 import "swiper/css";
 
 import CloseIcon from "../icons/CloseIcon";
