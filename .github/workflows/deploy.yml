@@ -1,49 +1,37 @@
-name: deploy
+name: Deploy Next.js to GitHub Pages
 
-on: [push, workflow_dispatch]
-    
+on:
+  push:
+    branches:
+      - main  # Change this to your default branch if different
+
 jobs:
-
-  publish:
+  build-and-deploy:
     runs-on: ubuntu-latest
-    
-    env:        
-      GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-      CI: ""
-      
+
     steps:
-      - name: Checkout
-        uses: actions/checkout@v3
-        with:
-          fetch-depth: 0
-          
-      - name: Setup node
-        uses: actions/setup-node@v3        
-      
-      - name: Build
-        run: |
-        
-            root=$(git rev-parse --show-toplevel)
+    - name: Checkout repository
+      uses: actions/checkout@v2
 
-            build() {
-                src="$root/src/$1-src/"
-                cd "$src"
-                npm install
-                npm run build
+    - name: Set up Node.js
+      uses: actions/setup-node@v2
+      with:
+        node-version: '16'  # Use the version of Node.js that you need
 
-                if [ "$1" = "main" ]; then
-                    cp -r "$src/next/"* "$root/"
-                fi
-            }           
-           
-            products=("main")
+    - name: Install dependencies
+      run: npm ci
+      working-directory: src/main-src
 
-            for product in "${products[@]}"; do
-                build "$product"
-            done
-        
-      - name: Publish          
-        uses: mikeal/publish-to-github-action@master
-        env:
-          GITHUB_TOKEN: ${{ env.GITHUB_TOKEN }}
-          BRANCH_NAME: 'main'
+    - name: Build Next.js project
+      run: npm run build
+      working-directory: src/main-src
+
+    - name: Export Next.js project
+      run: npm run export
+      working-directory: src/main-src
+
+    - name: Deploy to GitHub Pages
+      uses: peaceiris/actions-gh-pages@v3
+      with:
+        github_token: ${{ secrets.GITHUB_TOKEN }}
+        publish_dir: src/main-src/out  # The directory where the static files are exported
