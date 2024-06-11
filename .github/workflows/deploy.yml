@@ -38,7 +38,7 @@ jobs:
           build() {
               src="$root/src/$1-src/"
               cd "$src"
-              npm ci
+              npm i
               npm run build
 
               if [ "$1" = "main" ]; then
