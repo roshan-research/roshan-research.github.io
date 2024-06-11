@@ -30,19 +30,35 @@ jobs:
       with:
           cache: ${{ steps.detect-package-manager.outputs.manager }}
           node-version: '20'  # Use the version of Node.js that you need
+    - name: Build
+      run: |
+      
+          root=$(git rev-parse --show-toplevel)
 
-    - name: Install dependencies 🥑
-      run: npm ci
-      working-directory: src/main-src
+          build() {
+              src="$root/src/$1-src/"
+              cd "$src"
+              npm ci
+              npm run build
 
-    - name: Build and Export with Next.js 🍄
-      run: npm run build
-      working-directory: src/main-src
+              if [ "$1" = "main" ]; then
+                  cp -r "$src/out/"* "$root/"
+              else
+                  cp -r "$src/build/"* "$root/$1/"
+              fi
+          }           
+          
+          products=("main" "about-us" "join-us" "contact-us" "alefba" "harf" "kashf")
+
+          for product in "${products[@]}"; do
+              build "$product"
+          done
+
       
     - name: Upload artifact ⛱️
       uses: actions/upload-pages-artifact@v3
       with:
-        path: ./src/main-src/out
+        path: .
         
 
   # Deployment job
