@@ -38,6 +38,12 @@ jobs:
     - name: Build and Export with Next.js 🍄
       run: npm run build
       working-directory: src/main-src
+      
+    - name: Upload artifact ⛱️
+      uses: actions/upload-pages-artifact@v3
+      with:
+        path: ./src/main-src/out
+        
 
   # Deployment job
   deploy:
