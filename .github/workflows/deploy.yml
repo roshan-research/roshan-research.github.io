@@ -22,12 +22,8 @@ jobs:
       run: npm ci
       working-directory: src/main-src
 
-    - name: Build Next.js project
+    - name: Build and Export Next.js project
       run: npm run build
-      working-directory: src/main-src
-
-    - name: Export Next.js project
-      run: npm run export
       working-directory: src/main-src
 
     - name: Deploy to GitHub Pages
