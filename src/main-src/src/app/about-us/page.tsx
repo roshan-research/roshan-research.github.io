@@ -8,6 +8,7 @@ import { Swiper, SwiperSlide, SwiperRef } from "swiper/react";
 import { IconContext } from 'react-icons'
 import { FaAngleRight } from "react-icons/fa6";
 import { FaAngleLeft } from "react-icons/fa6";
+import { useWindowSize } from 'react-use';
 import Image from "next/image";
 import clsx from "clsx";
 import "swiper/css";
@@ -18,12 +19,11 @@ import MainContent from "./ui/MainContent";
 // import roshanOffice3 from "@/assets/images/roshan-office-3.png";
 import Customers from "@/components/customers";
 import Footer from "@/components/layout/Footer";
-import useScreenWidth from "@/hooks/useScreenWidth";
 
 const AboutUs = () => {
   const swiperRef = useRef<SwiperRef>(null);
   const [currentSlide, setCurrentSlide] = useState<number>(0);
-  const screenSize = useScreenWidth();
+  const { width } = useWindowSize();
 
   const toTopHandler = () => {
     scroll.scrollToTop({ duration: 5000, smooth: true });
@@ -57,6 +57,7 @@ const AboutUs = () => {
           <SwiperSlide className="px-[10px]">
             <Image
               src='static/media/roshan-office.png'
+              // src={roshanOffice}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
               draggable={false}
@@ -65,6 +66,7 @@ const AboutUs = () => {
           <SwiperSlide className="px-[10px]">
             <Image
               src='static/media/roshan-office-2.png'
+              // src={roshanOffice2}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
               draggable={false}
@@ -73,6 +75,7 @@ const AboutUs = () => {
           <SwiperSlide className="px-[10px]">
             <Image
               src='static/media/roshan-office-3.png'
+              // src={roshanOffice3}
               alt='شرکت روشن'
               className='max-w-[1520px] w-full rounded-[40px] mx-auto bp480:rounded-[20px]'
               draggable={false}
@@ -80,10 +83,10 @@ const AboutUs = () => {
           </SwiperSlide>
         </Swiper>
         <div className="absolute w-full max-w-[1520px] mx-auto text-white z-50 flex items-center justify-between px-4 bp768:px-10">
-          <IconContext.Provider value={{color: "white", size: screenSize.width < 481 ? '36px' : '56px'}}>
+          <IconContext.Provider value={{color: "white", size: width < 481 ? '36px' : '56px'}}>
             <FaAngleLeft className={clsx('cursor-pointer',currentSlide === 0 && 'opacity-50')} onClick={leftSlideHandler}/>
           </IconContext.Provider>
-          <IconContext.Provider value={{color: "white", size: screenSize.width < 481 ? '36px' : '56px'}}>
+          <IconContext.Provider value={{color: "white", size: width < 481 ? '36px' : '56px'}}>
             <FaAngleRight className={clsx('cursor-pointer',currentSlide === 2 && 'opacity-50')} onClick={rightSlideHandler} />
           </IconContext.Provider>
         </div>
