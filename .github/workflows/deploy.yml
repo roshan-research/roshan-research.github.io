@@ -32,11 +32,11 @@ jobs:
           node-version: '20'  # Use the version of Node.js that you need
 
     - name: Install dependencies 🥑
-      run: ${{ steps.detect-package-manager.outputs.manager }} ${{ steps.detect-package-manager.outputs.command }}
+      run: npm ci
       working-directory: src/main-src
 
     - name: Build and Export with Next.js 🍄
-      run: ${{ steps.detect-package-manager.outputs.runner }} next build
+      run: npm run build
       working-directory: src/main-src
 
   # Deployment job
