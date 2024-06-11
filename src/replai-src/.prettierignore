@@ -1,0 +1,15 @@
+# Ignore all files and directories inside 'dist' directory
+dist/*
+
+# Ignore all files and directories inside 'build' directory
+build/*
+
+# Ignore all files and directories inside 'out' directory
+out/*
+
+# Ignore all files and directories inside 'node_modules' directory
+node_modules/
+
+# Ignore specific files
+*.log
+*.temp
