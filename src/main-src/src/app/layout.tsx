@@ -1,4 +1,5 @@
 import { Metadata } from "next";
+import localFont from "next/font/local";
 
 export const metadata: Metadata = {
   title: {
@@ -22,6 +23,8 @@ export const metadata: Metadata = {
 import "./styles/globals.css";
 import Header from "@/components/layout/Header";
 
+const myFont = localFont({ src: "../../public/fonts/YekanBakh-VF.ttf" });
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -29,7 +32,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang='fa'>
-      <body className='font-yekanbakh bg-black'>
+      <body className={myFont.className} style={{ backgroundColor: "#000" }}>
         <Header />
         {children}
       </body>

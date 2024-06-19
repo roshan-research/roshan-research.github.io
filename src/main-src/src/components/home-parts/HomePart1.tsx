@@ -5,7 +5,7 @@ import { Dispatch, useEffect, useRef } from "react";
 import Image from "next/image";
 
 import { variants } from "@/animations/variant";
-// import earhWallpaper from "../../assets/images/wallpaper.e4312dfe1d9f19418f65.png";
+import earhWallpaper from "../../assets/images/wallpaper.e4312dfe1d9f19418f65.png";
 
 type HomePart1Props = {
   setActiveIndex: Dispatch<number>;
@@ -29,8 +29,8 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
       className='relative w-full h-[100vh] flex items-center justify-center bg-gradient-to-t from-[#000000] to-[#202020]'
     >
       <Image
-        src='static/media/wallpaper.e4312dfe1d9f19418f65.png'
-        // src={earhWallpaper}
+        // src='static/media/wallpaper.e4312dfe1d9f19418f65.png'
+        src={earhWallpaper}
         alt='سایت روشن - هوش مصنوعی'
         className='w-full h-full'
         priority={true}
