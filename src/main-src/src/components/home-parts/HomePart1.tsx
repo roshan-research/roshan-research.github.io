@@ -5,7 +5,6 @@ import Image from "next/image";
 
 import { variants } from "@/animations/variant";
 import { Dispatch, useEffect, useRef } from "react";
-import Earth from "static/media/wallpaper.e4312dfe1d9f19418f65.png";
 
 type HomePart1Props = {
   setActiveIndex: Dispatch<number>;
@@ -32,7 +31,7 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
           <EarthIcon />
         </div> */}
       <Image
-        src={Earth}
+        src='static/media/wallpaper.e4312dfe1d9f19418f65.png'
         alt='سایت روشن - هوش مصنوعی'
         className='w-full h-full'
       />
