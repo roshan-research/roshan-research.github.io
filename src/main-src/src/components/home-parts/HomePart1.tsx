@@ -1,10 +1,11 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
+import { Dispatch, useEffect, useRef, useState } from "react";
 import Image from "next/image";
 
 import { variants } from "@/animations/variant";
-import { Dispatch, useEffect, useRef } from "react";
+// import earhWallpaper from "../../assets/images/wallpaper.e4312dfe1d9f19418f65.png";
 
 type HomePart1Props = {
   setActiveIndex: Dispatch<number>;
@@ -13,6 +14,7 @@ type HomePart1Props = {
 const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
+  const [loadImage, setLoadImage] = useState<boolean>(false);
 
   useEffect(() => {
     if (inView) {
@@ -27,13 +29,12 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
       animate='visible'
       className='relative w-full h-[100vh] flex items-center justify-center bg-gradient-to-t from-[#000000] to-[#202020]'
     >
-      {/* <div className='w-[660px] h-[660px] bp960:w-[560px] bp960:mt-[100px] bp800:w-[400px] bp800:mt-[260px] bp480:w-[80vw] bp480:mt-0 bp480:h-fit'>
-          <EarthIcon />
-        </div> */}
       <Image
         src='static/media/wallpaper.e4312dfe1d9f19418f65.png'
+        // src={earhWallpaper}
         alt='سایت روشن - هوش مصنوعی'
         className='w-full h-full'
+        onLoad={() => setLoadImage(true)}
       />
       <span
         className='absolute text-[1.9vw] -translate-y-[80px] text-[#E5E5E5] whitespace-nowrap font-normal bp960:text-[80px] bp800:text-[60px] bp480:text-[10vw]'
@@ -41,6 +42,9 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
       >
         انسان به توان ماشیـن
       </span>
+      {!loadImage && (
+        <div className='fixed w-full h-full bg-black top-0 left-0 z-[99999]'></div>
+      )}
     </motion.div>
   );
 };
