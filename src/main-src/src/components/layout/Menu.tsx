@@ -9,8 +9,9 @@ import "swiper/css";
 
 import CloseIcon from "../icons/CloseIcon";
 import BottomArrow from "../icons/BottomArrow";
-import { menuLogos } from "@/data/dummy-data";
 import MenuLogoButton from "../buttons/MenuLogoButton";
+import LogoIcon from "../icons/LogoIcon";
+import { menuLogos } from "@/data/dummy-data";
 
 type MenuProps = {
   openMenu: boolean;
@@ -48,6 +49,9 @@ const Menu: React.FC<MenuProps> = ({ openMenu, setOpenMenu }) => {
         className='cursor-pointer absolute top-10 z-50 left-[80px] bp768:left-[30px]'
         onClick={() => setOpenMenu(false)}
       />
+      <Link href='/' className='absolute top-[60px] z-10 right-[80px]'>
+        <LogoIcon width={88} height={31} />
+      </Link>
       <Swiper
         direction={"vertical"}
         modules={[Navigation]}
