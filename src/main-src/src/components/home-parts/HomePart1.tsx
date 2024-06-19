@@ -1,7 +1,7 @@
 "use client";
 
 import { motion, useInView } from "framer-motion";
-import { Dispatch, useEffect, useRef, useState } from "react";
+import { Dispatch, useEffect, useRef } from "react";
 import Image from "next/image";
 
 import { variants } from "@/animations/variant";
@@ -14,7 +14,6 @@ type HomePart1Props = {
 const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
-  const [loadImage, setLoadImage] = useState<boolean>(false);
 
   useEffect(() => {
     if (inView) {
@@ -34,7 +33,7 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
         // src={earhWallpaper}
         alt='سایت روشن - هوش مصنوعی'
         className='w-full h-full'
-        onLoad={() => setLoadImage(true)}
+        priority={true}
       />
       <span
         className='absolute text-[1.9vw] -translate-y-[80px] text-[#E5E5E5] whitespace-nowrap font-normal bp960:text-[80px] bp800:text-[60px] bp480:text-[10vw]'
@@ -42,9 +41,6 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
       >
         انسان به توان ماشیـن
       </span>
-      {!loadImage && (
-        <div className='fixed w-full h-full bg-black top-0 left-0 z-[99999]'></div>
-      )}
     </motion.div>
   );
 };
