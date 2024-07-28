@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import YellowCircleIcon from "../icons/YellowCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
+import HazmSquircle from "../icons/squircles/HazmSquircle";
 
 type HomePart6Props = {
   setActiveIndex: Dispatch<number>;
@@ -40,13 +41,14 @@ const HomePart6: React.FC<HomePart6Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <YellowCircleIcon />
         </div>
+        <HazmSquircle width={300} height={300} className='absolute' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/8f204512-c84f-4d40-99ee-af0da6e650ee/r3gPs9hFSd.json'
+              src='https://lottie.host/c588a09c-28e8-4667-89da-f4a5ffb11bf1/69v8yq8fx2.json'
             ></lottie-player>
           </div>
         )}

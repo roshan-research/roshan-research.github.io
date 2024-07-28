@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import BlueCircleIcon from "../icons/BlueCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
+import ReplaiSquircle from "../icons/squircles/ReplaiSquircle";
 
 type HomePart2Props = {
   setActiveIndex: Dispatch<number>;
@@ -40,17 +41,18 @@ const HomePart2: React.FC<HomePart2Props> = ({ setActiveIndex }) => {
       animate={isInView ? "visible" : "hidden"}
       className='flex flex-col w-fit mx-auto mt-[300px] items-center justify-center pin1 bp480:mt-[100px]'
     >
-      <div className='flex items-center justify-center w-fit h-fit'>
+      <div className='flex items-center justify-center'>
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <BlueCircleIcon />
         </div>
+        <ReplaiSquircle width={301} height={300} className='absolute' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/835275a6-f390-413e-b396-dd0ff3f21222/UQGJHntwED.json'
+              src='https://lottie.host/12c52fca-064d-43ad-9e4c-3895f3f6dacb/2ygxaERbLU.json'
             ></lottie-player>
           </div>
         )}

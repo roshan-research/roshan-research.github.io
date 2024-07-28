@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import OrangeCircleIcon from "../icons/OrangeCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
+import AlefbaSquircle from "../icons/squircles/AlefbaSquircle";
 
 type HomePart3Props = {
   setActiveIndex: Dispatch<number>;
@@ -40,13 +41,14 @@ const HomePart3: React.FC<HomePart3Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <OrangeCircleIcon />
         </div>
+        <AlefbaSquircle width={300} height={300} className='absolute' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/9c8f014a-1d08-40da-a825-f9f85a2453d8/w0Rvm4Gnti.json'
+              src='https://lottie.host/574e54e1-5261-4eab-9e85-6cc75c71e7a9/tOvIC3Hufw.json'
             ></lottie-player>
           </div>
         )}

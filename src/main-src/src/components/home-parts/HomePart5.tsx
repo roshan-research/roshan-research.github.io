@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import PurpleCircleIcon from "../icons/PurpleCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
+import KashfSquircle from "../icons/squircles/KashfSquircle";
 
 type HomePart5Props = {
   setActiveIndex: Dispatch<number>;
@@ -40,13 +41,14 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <PurpleCircleIcon />
         </div>
+        <KashfSquircle width={300} height={300} className='absolute' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/13ad097e-7f60-4614-9911-ec18b8d6451b/9C4hBcKF2H.json'
+              src='https://lottie.host/6ddc7746-04b4-4b63-8e86-502d7b56813e/UgvGamcpAx.json'
             ></lottie-player>
           </div>
         )}

@@ -6,6 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import GreenCircleIcon from "../icons/GreenCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
+import HarfSquircle from "../icons/squircles/HarfSquircle";
 
 type HomePart4Props = {
   setActiveIndex: Dispatch<number>;
@@ -40,13 +41,14 @@ const HomePart4: React.FC<HomePart4Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <GreenCircleIcon />
         </div>
+        <HarfSquircle width={300} height={300} className='absolute' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/d82a840b-071f-44b6-b1bc-fb2152897fd8/NG5yFwFvgG.json'
+              src='https://lottie.host/1695068e-25f8-4e57-bb40-d11e6cf8cd69/eWbA2QK6vy.json'
             ></lottie-player>
           </div>
         )}
