@@ -2,6 +2,7 @@
 
 import { Dispatch, useEffect, useRef, useState } from "react";
 import { motion, useInView } from "framer-motion";
+import { useWindowSize } from "react-use";
 
 import { variants } from "@/animations/variant";
 import YellowCircleIcon from "../icons/YellowCircleIcon";
@@ -18,6 +19,7 @@ const HomePart6: React.FC<HomePart6Props> = ({ setActiveIndex }) => {
   const inView = useInView(inViewRef);
   const [isInView, setIsInView] = useState(false);
   const [hasAnimated, setHasAnimated] = useState(false);
+  const { width } = useWindowSize();
 
   useEffect(() => {
     if (inView && !hasAnimated) {
@@ -42,14 +44,9 @@ const HomePart6: React.FC<HomePart6Props> = ({ setActiveIndex }) => {
           <YellowCircleIcon />
         </div>
         <HazmSquircle
-          width={251}
-          height={250}
-          className='absolute hidden bp480:block'
-        />
-        <HazmSquircle
-          width={300}
-          height={300}
-          className='absolute bp480:hidden'
+          width={width < 481 ? 251 : 300}
+          height={width < 481 ? 250 : 300}
+          className='absolute'
         />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>

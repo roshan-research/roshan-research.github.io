@@ -2,11 +2,9 @@ import React from "react";
 
 import { IconProps } from "@/shared/types";
 
-const ReplaiSquircle: React.FC<IconProps> = ({ width, height, ...props }) => {
+const ReplaiSquircle: React.FC<IconProps> = ({ ...props }) => {
   return (
     <svg
-      width={width}
-      height={height}
       {...props}
       viewBox='0 0 301 300'
       fill='none'

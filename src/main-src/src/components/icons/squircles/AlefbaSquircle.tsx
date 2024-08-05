@@ -1,10 +1,8 @@
 import { IconProps } from "@/shared/types";
 
-const AlefbaSquircle: React.FC<IconProps> = ({ width, height, ...props }) => {
+const AlefbaSquircle: React.FC<IconProps> = ({ ...props }) => {
   return (
     <svg
-      width={width}
-      height={height}
       {...props}
       viewBox='0 0 301 300'
       fill='none'

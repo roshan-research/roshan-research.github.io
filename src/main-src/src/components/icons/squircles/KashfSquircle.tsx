@@ -1,10 +1,8 @@
 import { IconProps } from "@/shared/types";
 
-const KashfSquircle: React.FC<IconProps> = ({ width, height, ...props }) => {
+const KashfSquircle: React.FC<IconProps> = ({ ...props }) => {
   return (
     <svg
-      width={width}
-      height={height}
       {...props}
       viewBox='0 0 300 300'
       fill='none'

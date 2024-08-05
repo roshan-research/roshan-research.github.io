@@ -41,16 +41,7 @@ const HomePart4: React.FC<HomePart4Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <GreenCircleIcon />
         </div>
-        <HarfSquircle
-          width={251}
-          height={250}
-          className='absolute hidden bp480:block'
-        />
-        <HarfSquircle
-          width={300}
-          height={300}
-          className='absolute bp480:hidden'
-        />
+        <HarfSquircle className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player

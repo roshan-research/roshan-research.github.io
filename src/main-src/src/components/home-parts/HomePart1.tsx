@@ -56,6 +56,7 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
           alt='سایت روشن - هوش مصنوعی'
           className='w-full h-full'
           priority={true}
+          draggable={false}
         />
         <span
           className='absolute text-[1.9vw] -translate-y-[80px] text-[#E5E5E5] whitespace-nowrap font-normal bp960:text-[80px] bp800:text-[60px] bp480:text-[8vw]'
