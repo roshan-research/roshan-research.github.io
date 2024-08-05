@@ -45,7 +45,16 @@ const HomePart2: React.FC<HomePart2Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <BlueCircleIcon />
         </div>
-        <ReplaiSquircle width={301} height={300} className='absolute' />
+        <ReplaiSquircle
+          width={251}
+          height={250}
+          className='absolute hidden bp480:block'
+        />
+        <ReplaiSquircle
+          width={301}
+          height={300}
+          className='absolute bp480:hidden'
+        />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
@@ -58,12 +67,12 @@ const HomePart2: React.FC<HomePart2Props> = ({ setActiveIndex }) => {
         )}
       </div>
       <span
-        className='text-[70px] font-bold text-[#4E69FE] -mt-[200px] bp480:mt-0'
+        className='text-[70px] font-bold text-[#4E69FE] -mt-[200px] bp480:mt-0 bp480:text-[40px]'
         ref={inViewRef}
       >
         ریپلای
       </span>
-      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3'>
+      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
         ریپلای، با هوش مصنوعی به سوالات کاربران پاسخ می‌دهد
       </span>
       <RedirectButton color='#4E69FE' link='https://www.roshan-ai.ir/replai/' />

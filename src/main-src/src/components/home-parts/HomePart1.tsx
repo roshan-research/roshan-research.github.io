@@ -16,7 +16,7 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
   const ref = useRef(null);
   const lottieRef = useRef(null);
   const inView = useInView(ref);
-  const [showAnimation, setShowAnimation] = useState<boolean>(true);
+  const [showAnimation, setShowAnimation] = useState<boolean>(false);
 
   useEffect(() => {
     if (inView) {
@@ -24,24 +24,24 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
     }
   }, [inView]);
 
-  useEffect(() => {
-    const timeOut = setTimeout(() => {
-      setShowAnimation(false);
-    }, 5800);
+  // useEffect(() => {
+  //   const timeOut = setTimeout(() => {
+  //     setShowAnimation(false);
+  //   }, 5800);
 
-    return () => clearTimeout(timeOut);
-  }, []);
+  //   return () => clearTimeout(timeOut);
+  // }, []);
 
   return (
     <div className='w-full h-[100vh] flex items-center justify-center bg-gradient-to-t from-[#000000] to-[#202020]'>
       {showAnimation && (
         <div className='absolute'>
-          <lottie-player
+          {/* <lottie-player
             id='firstLottie'
             ref={lottieRef}
             autoPlay
             src='https://lottie.host/20c9fc73-c936-4bf5-85ee-7e02118911d0/Zpg2yYw1cD.json'
-          ></lottie-player>
+          ></lottie-player> */}
         </div>
       )}
       <div
@@ -58,7 +58,7 @@ const HomePart1: React.FC<HomePart1Props> = ({ setActiveIndex }) => {
           priority={true}
         />
         <span
-          className='absolute text-[1.9vw] -translate-y-[80px] text-[#E5E5E5] whitespace-nowrap font-normal bp960:text-[80px] bp800:text-[60px] bp480:text-[10vw]'
+          className='absolute text-[1.9vw] -translate-y-[80px] text-[#E5E5E5] whitespace-nowrap font-normal bp960:text-[80px] bp800:text-[60px] bp480:text-[8vw]'
           ref={ref}
         >
           انسان به توان ماشیـن

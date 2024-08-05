@@ -41,7 +41,16 @@ const HomePart4: React.FC<HomePart4Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <GreenCircleIcon />
         </div>
-        <HarfSquircle width={300} height={300} className='absolute' />
+        <HarfSquircle
+          width={251}
+          height={250}
+          className='absolute hidden bp480:block'
+        />
+        <HarfSquircle
+          width={300}
+          height={300}
+          className='absolute bp480:hidden'
+        />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
@@ -54,12 +63,12 @@ const HomePart4: React.FC<HomePart4Props> = ({ setActiveIndex }) => {
         )}
       </div>
       <span
-        className='text-[70px] font-bold text-[#26FF7B] -mt-[200px] bp480:mt-0'
+        className='text-[70px] font-bold text-[#26FF7B] -mt-[200px] bp480:mt-0 bp480:text-[40px]'
         ref={inViewRef}
       >
         حرف
       </span>
-      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3'>
+      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
         حرف، گفتار را به متن قابل جستجو و ویرایش تبدیل می‌کند
       </span>
       <RedirectButton color='#26FF7B' link='https://www.roshan-ai.ir/harf/' />

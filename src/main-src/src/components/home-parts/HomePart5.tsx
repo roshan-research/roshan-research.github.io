@@ -41,7 +41,16 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <PurpleCircleIcon />
         </div>
-        <KashfSquircle width={300} height={300} className='absolute' />
+        <KashfSquircle
+          width={251}
+          height={250}
+          className='absolute hidden bp480:block'
+        />
+        <KashfSquircle
+          width={300}
+          height={300}
+          className='absolute bp480:hidden'
+        />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
@@ -54,12 +63,12 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
         )}
       </div>
       <span
-        className='text-[70px] font-bold text-[#6658CA] -mt-[200px] bp480:mt-0'
+        className='text-[70px] font-bold text-[#6658CA] -mt-[200px] bp480:mt-0 bp480:text-[40px]'
         ref={inViewRef}
       >
         کشــف
       </span>
-      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3'>
+      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
         کشف، مفاهیم را در میان تصاویر و متن‌ها پیدا می‌کند
       </span>
       <RedirectButton color='#6658CA' link='https://www.roshan-ai.ir/kashf/' />
