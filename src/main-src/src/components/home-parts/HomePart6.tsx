@@ -54,7 +54,7 @@ const HomePart6: React.FC<HomePart6Props> = ({ setActiveIndex }) => {
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='https://lottie.host/c588a09c-28e8-4667-89da-f4a5ffb11bf1/69v8yq8fx2.json'
+              src='/images/lottie/hazm-lottie.json'
             ></lottie-player>
           </div>
         )}
