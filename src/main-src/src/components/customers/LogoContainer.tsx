@@ -18,7 +18,7 @@ const LogoContainer: React.FC<LogoContainerProps> = ({ cu }) => {
 
   return (
     <div
-      className='w-[240px] h-[240px] border-[1px] border-[#303030] flex items-center justify-center bp700:w-[140px] bp700:h-[140px]'
+      className='w-[220px] h-[220px] border-[1px] border-[#303030] flex items-center justify-center bp700:w-[140px] bp700:h-[140px]'
       onMouseOver={() => setHovered(true)}
       onMouseOut={() => setHovered(false)}
     >

@@ -62,27 +62,27 @@ const Menu: React.FC<MenuProps> = ({ openMenu, setOpenMenu }) => {
         onSlideChange={(swiper) => setCurrentSlide(swiper.activeIndex)}
       >
         <SwiperSlide>
-          <div className='w-full h-full flex flex-col items-center justify-center gap-8 text-white text-[80px] font-normal bp480:text-[40px]'>
+          <div className='w-full h-full flex flex-col items-center justify-center gap-8 text-white text-[80px] font-[725] bp480:text-[40px]'>
             <Link
               href='/about-us'
               onClick={() => setOpenMenu(false)}
               className='hover:text-[#F8BC45] transition-colors duration-200'
             >
-              دربـــــــاره
+              دربــــــــــــاره ما
             </Link>
             <Link
               href='/contact-us'
               onClick={() => setOpenMenu(false)}
               className='hover:text-[#F8BC45] transition-colors duration-200'
             >
-              تمــــــاس
+              تمــــــاس با ما
             </Link>
             <Link
               href='/join-us'
               onClick={() => setOpenMenu(false)}
               className='hover:text-[#F8BC45] transition-colors duration-200'
             >
-              همکاری
+              همکاری با ما
             </Link>
           </div>
         </SwiperSlide>

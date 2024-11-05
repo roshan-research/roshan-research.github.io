@@ -6,9 +6,10 @@ import Customers from "../customers";
 
 type HomePart7Props = {
   setActiveIndex: Dispatch<number>;
+  children: React.ReactNode;
 };
 
-const HomePart7: React.FC<HomePart7Props> = ({ setActiveIndex }) => {
+const HomePart7: React.FC<HomePart7Props> = ({ setActiveIndex, children }) => {
   const ref = useRef(null);
   const inView = useInView(ref);
 
@@ -19,14 +20,14 @@ const HomePart7: React.FC<HomePart7Props> = ({ setActiveIndex }) => {
   }, [inView]);
 
   return (
-    <motion.div className='w-fit mx-auto h-auto mt-[200px] bg-black text-white flex items-center justify-start flex-col gap-[89px]'>
+    <motion.div className='w-fit mx-auto h-auto mt-[200px] bg-black text-white flex items-center justify-start flex-col gap-[60px]'>
       <span
         className='text-[60px] font-bold mt-[60px] bp700:text-[30px]'
         ref={ref}
       >
         کسب اعتماد بهتــرین‌ها
       </span>
-      <Customers />
+      {children}
     </motion.div>
   );
 };

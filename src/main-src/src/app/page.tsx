@@ -2,7 +2,7 @@
 
 import { useRef, useState } from "react";
 import { animateScroll as scroll } from "react-scroll";
-import { ReactLenis } from 'lenis/react'
+import { ReactLenis } from "lenis/react";
 
 import HomePart1 from "@/components/home-parts/HomePart1";
 import HomePart2 from "@/components/home-parts/HomePart2";
@@ -13,6 +13,7 @@ import HomePart6 from "@/components/home-parts/HomePart6";
 import HomePart7 from "@/components/home-parts/HomePart7";
 import Pagination from "@/components/pagination";
 import Footer from "@/components/layout/Footer";
+import Customers from "@/components/customers";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -24,17 +25,19 @@ export default function Home() {
 
   return (
     <ReactLenis root>
-        <div className='relative' id='scroll-container' ref={container}>
-          <HomePart1 setActiveIndex={setActiveIndex} />
-          <HomePart2 setActiveIndex={setActiveIndex} />
-          <HomePart3 setActiveIndex={setActiveIndex} />
-          <HomePart4 setActiveIndex={setActiveIndex} />
-          <HomePart5 setActiveIndex={setActiveIndex} />
-          <HomePart6 setActiveIndex={setActiveIndex} />
-          <HomePart7 setActiveIndex={setActiveIndex} />
-          <Footer toTopHandler={toTopHandler} />
-          <Pagination activeIndex={activeIndex} />
-        </div>
+      <div className='relative' id='scroll-container' ref={container}>
+        <HomePart1 setActiveIndex={setActiveIndex} />
+        <HomePart3 setActiveIndex={setActiveIndex} /> {/* alefba */}
+        <HomePart4 setActiveIndex={setActiveIndex} /> {/* harf */}
+        <HomePart2 setActiveIndex={setActiveIndex} /> {/* replai */}
+        <HomePart5 setActiveIndex={setActiveIndex} /> {/* kashf */}
+        <HomePart6 setActiveIndex={setActiveIndex} /> {/* hazm */}
+        <HomePart7 setActiveIndex={setActiveIndex}>
+          <Customers />
+        </HomePart7>
+        <Footer toTopHandler={toTopHandler} />
+        <Pagination activeIndex={activeIndex} />
+      </div>
     </ReactLenis>
   );
 }

@@ -22,13 +22,13 @@ const Pagination: React.FC<PaginationProps> = ({ activeIndex }) => {
           "flex items-center justify-center p-1 rounded-full border-[1px] border-transparent transition-all duration-200 cursor-pointer my-1",
           activeIndex !== 1 && "hover:border-white"
         )}
-        to='pin1'
+        to='pin2'
         smooth={true}
       >
         <div
           className={clsx(
             "w-[6px] rounded-full transiton-all duration-200",
-            activeIndex === 1 ? "h-[24px] bg-[#4E69FE]" : "h-[6px] bg-white"
+            activeIndex === 1 ? "h-[24px] bg-[#FF6200]" : "h-[6px] bg-white"
           )}
         />
       </Link>
@@ -37,13 +37,13 @@ const Pagination: React.FC<PaginationProps> = ({ activeIndex }) => {
           "flex items-center justify-center p-1 rounded-full border-[1px] border-transparent transition-all duration-200 cursor-pointer my-1",
           activeIndex !== 2 && "hover:border-white"
         )}
-        to='pin2'
+        to='pin3'
         smooth={true}
       >
         <div
           className={clsx(
             "w-[6px] rounded-full transiton-all duration-200",
-            activeIndex === 2 ? "h-[24px] bg-[#FF6200]" : "h-[6px] bg-white"
+            activeIndex === 2 ? "h-[24px] bg-[#26FF7B]" : "h-[6px] bg-white"
           )}
         />
       </Link>
@@ -52,13 +52,13 @@ const Pagination: React.FC<PaginationProps> = ({ activeIndex }) => {
           "flex items-center justify-center p-1 rounded-full border-[1px] border-transparent transition-all duration-200 cursor-pointer my-1",
           activeIndex !== 3 && "hover:border-white"
         )}
-        to='pin3'
+        to='pin1'
         smooth={true}
       >
         <div
           className={clsx(
             "w-[6px] rounded-full transiton-all duration-200",
-            activeIndex === 3 ? "h-[24px] bg-[#26FF7B]" : "h-[6px] bg-white"
+            activeIndex === 3 ? "h-[24px] bg-[#4E69FE]" : "h-[6px] bg-white"
           )}
         />
       </Link>

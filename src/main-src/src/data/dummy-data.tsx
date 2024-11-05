@@ -32,6 +32,75 @@ import HazmIcon from "@/components/icons/menu/HazmIcon";
 import KashfIcon from "@/components/icons/menu/KashfIcon";
 import ReplaiIcon from "@/components/icons/menu/ReplaiIcon";
 
+export const customersRow1 = [
+  {
+    icon: <HamrahAvalLogo width={72} height={82} />,
+    color: "",
+    colors: ["#FCA61D", "#52C5CC"],
+  },
+  {
+    icon: <VarzeshLogo width={65} height={94} />,
+    color: "",
+    colors: ["#016CBA", "#01AB55", "#2D3E50", "#7D7E80", "#EF0D19", "#FEF302"],
+  },
+  {
+    icon: <KetabkhanehLogo width={92} height={91} />,
+    color: "#9B7B3A",
+    colors: [],
+  },
+  {
+    icon: <FilimoLogo width={140} height={44} />,
+    color: "",
+    colors: ["#F5853F", "#F47633", "#F99F3F", "#F78E34", "#FEC23B", "#FBAD30"],
+  },
+  {
+    icon: <AparatLogo width={141} height={50} />,
+    color: "#EC145A",
+    colors: [],
+  },
+];
+
+export const customersRow2 = [
+  {
+    icon: <AstanLogo width={83} height={91} />,
+    color: "#058105",
+    colors: [],
+  },
+  {
+    icon: <ZarebinLogo width={144} height={33} />,
+    color: "",
+    colors: ["#651FFF", "#FF9100"],
+  },
+  {
+    icon: <MokhaberatLogo width={90} height={91} />,
+    color: "#2C73DF",
+    colors: [],
+  },
+  {
+    icon: <BasalamLogo width={98} height={42} />,
+    color: "",
+    colors: ["#FC5B38", "#FC5B38", "#F75937"],
+  },
+];
+
+export const customersRow3 = [
+  {
+    icon: <CivilicaLogo width={70} height={78} />,
+    color: "#1E5AA0",
+    colors: [],
+  },
+  {
+    icon: <KharejehLogo width={90} height={94} />,
+    color: "#B38630",
+    colors: [],
+  },
+  {
+    icon: <BimehParsianLogo width={77} height={106} />,
+    color: "",
+    colors: ["#F4B11C", "#1A57A7"],
+  },
+];
+
 export const customers = [
   /// Row 1
   {
@@ -40,13 +109,18 @@ export const customers = [
     colors: ["#FCA61D", "#52C5CC"],
   },
   {
-    icon: <BasalamLogo width={98} height={42} />,
+    icon: <VarzeshLogo width={65} height={94} />,
     color: "",
-    colors: ["#FC5B38", "#FC5B38", "#F75937"],
+    colors: ["#016CBA", "#01AB55", "#2D3E50", "#7D7E80", "#EF0D19", "#FEF302"],
   },
+  // {
+  //   icon: <DivarLogo width={82} height={50} />,
+  //   color: "#A62626",
+  //   colors: [],
+  // },
   {
-    icon: <DivarLogo width={82} height={50} />,
-    color: "#A62626",
+    icon: <KetabkhanehLogo width={92} height={91} />,
+    color: "#9B7B3A",
     colors: [],
   },
   {
@@ -60,122 +134,72 @@ export const customers = [
     colors: [],
   },
   /// Row 2
-  {
-    icon: <TaghcheLogo width={58} height={94} />,
-    color: "#239A96",
-    colors: [],
-  },
-  {
-    icon: <VarzeshLogo width={65} height={94} />,
-    color: "",
-    colors: ["#016CBA", "#01AB55", "#2D3E50", "#7D7E80", "#EF0D19", "#FEF302"],
-  },
-  {
-    icon: <NaftLogo width={123} height={96} />,
-    color: "",
-    colors: ["#4B57CC", "#4B57CC", "#4B57CC", "#E21E25"],
-  },
-  {
-    icon: <MokhaberatLogo width={90} height={91} />,
-    color: "#2C73DF",
-    colors: [],
-  },
-  {
-    icon: <KetabkhanehLogo width={92} height={91} />,
-    color: "#9B7B3A",
-    colors: [],
-  },
-  /// Row 3
-  {
-    icon: <ChargoonLogo width={133} height={38} />,
-    color: "#B61918",
-    colors: [],
-  },
-  {
-    icon: <ParsianLogo width={106} height={83} />,
-    color: "",
-    colors: ["#213F76", "#EB7329"],
-  },
-  {
-    icon: <ZarebinLogo width={144} height={33} />,
-    color: "",
-    colors: ["#651FFF", "#FF9100"],
-  },
-  {
-    icon: <LifewebLogo width={145} height={34} />,
-    color: "",
-    colors: [
-      "#00B2B9",
-      "#07B3B2",
-      "#1AB59D",
-      "#39B87C",
-      "#65BC4F",
-      "#92C01F",
-      "#00B2B9",
-      "#60B787",
-      "#86BD4A",
-      "#75B969",
-      "#92C01F",
-    ],
-  },
-  {
-    icon: <IranRayanehLogo width={130} height={39} />,
-    color: "#017DC5",
-    colors: [],
-  },
-  /// Row 4
-  {
-    icon: <TamashaLogo width={75} height={93} />,
-    color: "#F41710",
-    colors: [],
-  },
-  {
-    icon: <BimehParsianLogo width={77} height={106} />,
-    color: "",
-    colors: ["#F4B11C", "#1A57A7"],
-  },
-  {
-    icon: <NazdikaLogo width={57} height={92} />,
-    color: "#3ECE71",
-    colors: [],
-  },
-  {
-    icon: <AminLogo width={76} height={92} />,
-    color: "",
-    colors: [
-      "#6899D3",
-      "#6899D3",
-      "#FEB82D",
-      "#95989A",
-      "#A9ACAE",
-      "#BFC1C3",
-      "#FEB82D",
-    ],
-  },
-  {
-    icon: <CivilicaLogo width={70} height={78} />,
-    color: "#1E5AA0",
-    colors: [],
-  },
-  {
-    icon: <BaridLogo width={106} height={86} />,
-    color: "#364C9E",
-    colors: [],
-  },
-  /// Row 5
+  // {
+  //   icon: <TaghcheLogo width={58} height={94} />,
+  //   color: "#239A96",
+  //   colors: [],
+  // },
   {
     icon: <AstanLogo width={83} height={91} />,
     color: "#058105",
     colors: [],
   },
   {
-    icon: <IrandocLogo width={127} height={114} />,
-    color: "#006BB8",
+    icon: <ZarebinLogo width={144} height={33} />,
+    color: "",
+    colors: ["#651FFF", "#FF9100"],
+  },
+  // {
+  //   icon: <NaftLogo width={123} height={96} />,
+  //   color: "",
+  //   colors: ["#4B57CC", "#4B57CC", "#4B57CC", "#E21E25"],
+  // },
+  {
+    icon: <MokhaberatLogo width={90} height={91} />,
+    color: "#2C73DF",
     colors: [],
   },
   {
-    icon: <MajlesLogo width={115} height={116} />,
-    color: "#1F4520",
+    icon: <BasalamLogo width={98} height={42} />,
+    color: "",
+    colors: ["#FC5B38", "#FC5B38", "#F75937"],
+  },
+  /// Row 3
+  // {
+  //   icon: <ChargoonLogo width={133} height={38} />,
+  //   color: "#B61918",
+  //   colors: [],
+  // },
+  // {
+  //   icon: <ParsianLogo width={106} height={83} />,
+  //   color: "",
+  //   colors: ["#213F76", "#EB7329"],
+  // },
+  // {
+  //   icon: <LifewebLogo width={145} height={34} />,
+  //   color: "",
+  //   colors: [
+  //     "#00B2B9",
+  //     "#07B3B2",
+  //     "#1AB59D",
+  //     "#39B87C",
+  //     "#65BC4F",
+  //     "#92C01F",
+  //     "#00B2B9",
+  //     "#60B787",
+  //     "#86BD4A",
+  //     "#75B969",
+  //     "#92C01F",
+  //   ],
+  // },
+  // {
+  //   icon: <IranRayanehLogo width={130} height={39} />,
+  //   color: "#017DC5",
+  //   colors: [],
+  // },
+  {
+    icon: <CivilicaLogo width={70} height={78} />,
+    color: "#1E5AA0",
     colors: [],
   },
   {
@@ -183,6 +207,51 @@ export const customers = [
     color: "#B38630",
     colors: [],
   },
+  {
+    icon: <BimehParsianLogo width={77} height={106} />,
+    color: "",
+    colors: ["#F4B11C", "#1A57A7"],
+  },
+  /// Row 4
+  // {
+  //   icon: <TamashaLogo width={75} height={93} />,
+  //   color: "#F41710",
+  //   colors: [],
+  // },
+  // {
+  //   icon: <NazdikaLogo width={57} height={92} />,
+  //   color: "#3ECE71",
+  //   colors: [],
+  // },
+  // {
+  //   icon: <AminLogo width={76} height={92} />,
+  //   color: "",
+  //   colors: [
+  //     "#6899D3",
+  //     "#6899D3",
+  //     "#FEB82D",
+  //     "#95989A",
+  //     "#A9ACAE",
+  //     "#BFC1C3",
+  //     "#FEB82D",
+  //   ],
+  // },
+  // {
+  //   icon: <BaridLogo width={106} height={86} />,
+  //   color: "#364C9E",
+  //   colors: [],
+  // },
+  /// Row 5
+  // {
+  //   icon: <IrandocLogo width={127} height={114} />,
+  //   color: "#006BB8",
+  //   colors: [],
+  // },
+  // {
+  //   icon: <MajlesLogo width={115} height={116} />,
+  //   color: "#1F4520",
+  //   colors: [],
+  // },
 ];
 
 export const JoinUsLogos = [
