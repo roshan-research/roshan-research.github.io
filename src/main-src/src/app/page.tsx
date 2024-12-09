@@ -20,7 +20,7 @@ export default function Home() {
   const [activeIndex, setActiveIndex] = useState<number>(0);
 
   const toTopHandler = () => {
-    scroll.scrollToTop({ duration: 5000, smooth: true });
+    scroll.scrollToTop({ duration: 2000, smooth: true });
   };
 
   return (
