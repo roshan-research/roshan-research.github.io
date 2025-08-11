@@ -14,6 +14,7 @@ import HomePart7 from "@/components/home-parts/HomePart7";
 import Pagination from "@/components/pagination";
 import Footer from "@/components/layout/Footer";
 import Customers from "@/components/customers";
+import HomePart8 from "@/components/home-parts/HomePart8";
 
 export default function Home() {
   const container = useRef<HTMLDivElement>(null);
@@ -27,10 +28,11 @@ export default function Home() {
     <ReactLenis root>
       <div className='relative' id='scroll-container' ref={container}>
         <HomePart1 setActiveIndex={setActiveIndex} />
+        <HomePart8 setActiveIndex={setActiveIndex} /> {/* fahm */}
         <HomePart3 setActiveIndex={setActiveIndex} /> {/* alefba */}
         <HomePart4 setActiveIndex={setActiveIndex} /> {/* harf */}
-        <HomePart2 setActiveIndex={setActiveIndex} /> {/* replai */}
-        <HomePart5 setActiveIndex={setActiveIndex} /> {/* kashf */}
+        {/* <HomePart2 setActiveIndex={setActiveIndex} /> replai */}
+        {/* <HomePart5 setActiveIndex={setActiveIndex} /> kashf */}
         <HomePart6 setActiveIndex={setActiveIndex} /> {/* hazm */}
         <HomePart7 setActiveIndex={setActiveIndex}>
           <Customers />
