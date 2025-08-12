@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 import { main_animation } from "./components/animations/main";
 // import { Logo } from "./components/svg";
 import Menu from "./components/menu/Menu";
-import HeaderLogo from "../../../fahm/favicon.svg"
+import HeaderLogo from "./assets/images/favicon.png"
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);

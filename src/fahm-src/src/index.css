@@ -5,34 +5,34 @@
 @layer base {
   @font-face {
     font-family: "IranYekanNum";
-    src: url("./assets/fonts/IranYekanFa/iranyekanregular.woff") format("woff");
+    src: url("src/fahm-src/src/assets/fonts/IranYekanFa/iranyekanregular.woff") format("woff");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: "IranYekan";
-    src: url("./assets/fonts/IranYekanFa/iranyekanweblight.woff")
+    src: url("src/fahm-src/src/assets/fonts/IranYekanFa/iranyekanweblight.woff")
       format("truetype");
     font-weight: 300;
     font-style: normal;
   }
   @font-face {
     font-family: "IranYekan";
-    src: url("./assets/fonts/IranYekanFa/iranyekanregular.woff")
+    src: url("src/fahm-src/src/assets/fonts/IranYekanFa/iranyekanregular.woff")
       format("truetype");
     font-weight: 400;
     font-style: normal;
   }
   @font-face {
     font-family: "IranYekan";
-    src: url("./assets/fonts/IranYekanFa/iranyekanregular.woff")
+    src: url("src/fahm-src/src/assets/fonts/IranYekanFa/iranyekanregular.woff")
       format("truetype");
     font-weight: 500;
     font-style: normal;
   }
   @font-face {
     font-family: "IranYekan";
-    src: url("./assets/fonts/IranYekanFa/iranyekanwebbold.woff")
+    src: url("src/fahm-src/src/assets/fonts/IranYekanFa/iranyekanwebbold.woff")
       format("truetype");
     font-weight: 700;
   }
