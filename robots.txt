@@ -2,7 +2,7 @@
 User-agent: *
 Allow: /alefba
 Allow: /contact-us 
-Allow: /kashf
+Allow: /fahm
 Allow: /join-us
 Allow: /baaz
 

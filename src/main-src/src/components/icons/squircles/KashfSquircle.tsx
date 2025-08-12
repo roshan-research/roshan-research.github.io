@@ -1,6 +1,6 @@
 import { IconProps } from "@/shared/types";
 
-const KashfSquircle: React.FC<IconProps> = ({ ...props }) => {
+const fahmSquircle: React.FC<IconProps> = ({ ...props }) => {
   return (
     <svg
       {...props}
@@ -43,4 +43,4 @@ const KashfSquircle: React.FC<IconProps> = ({ ...props }) => {
   );
 };
 
-export default KashfSquircle;
+export default fahmSquircle;

@@ -1,6 +1,6 @@
 import { IconProps } from "@/shared/types";
 
-const KashfIcon: React.FC<IconProps> = ({ width, height, colors }) => {
+const fahmIcon: React.FC<IconProps> = ({ width, height, colors }) => {
   return (
     <svg
       width='200'
@@ -46,4 +46,4 @@ const KashfIcon: React.FC<IconProps> = ({ width, height, colors }) => {
   );
 };
 
-export default KashfIcon;
+export default fahmIcon;
