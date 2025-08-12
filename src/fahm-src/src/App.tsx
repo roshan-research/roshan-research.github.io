@@ -9,7 +9,7 @@ import Footer from "./components/footer/Footer";
 import { main_animation } from "./components/animations/main";
 // import { Logo } from "./components/svg";
 import Menu from "./components/menu/Menu";
-import HeaderLogo from "../favicon.svg"
+import HeaderLogo from "../src/components/icons/HeaderLogo"
 
 function App() {
   const [isMenuOpen, setIsMenuOpen] = useState<boolean>(false);
@@ -40,7 +40,7 @@ function App() {
           className='mt-[4vh] flex items-center justify-between'
         >
           <div className='flex sm:-mr-8 items-center gap-[14px]'>
-            <img src={HeaderLogo} width={30} height={30} />{" "}
+            <HeaderLogo width={30} height={30} />
             <span className=' font-bold text-2xl text-[#FAFAFA]'>فهم</span>
           </div>
           <motion.img

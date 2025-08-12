@@ -1,9 +1,9 @@
 import { motion } from "framer-motion";
-import documentHead from '../../assets/images/article-main/document-head.png';
 // eslint-disable-next-line @typescript-eslint/no-unused-vars
 
 import { main_animation } from "@/components/animations/main";
 import { FC } from "react";
+import HeaderLogo from "../icons/DocHead";
 
 type ArticleMainProps = {
   windowWidth: number | null;
@@ -25,9 +25,7 @@ const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
           فهم، یک سامانه هوشمند برای ارتقای مدیریت <br />اطلاعات، تحلیل سریع تر، دسترسی هدفمند و <br />آینده نگری سازمانی محسوب می‌شود
         </span>
       </div>
-      <img
-        className="sm:mr-2"
-        src={documentHead}
+      <HeaderLogo
         width={windowWidth! < 641 ? "100%" : 386}
         height={windowWidth! < 641 ? "100%" : 385}
       />
