@@ -78,4 +78,8 @@
   .no-scrollbar::-webkit-scrollbar {
     display: none;
   }
+  .font-iranyekan-bold {
+    font-family: "IranYekan";
+    font-weight: 700;
+  }
 }

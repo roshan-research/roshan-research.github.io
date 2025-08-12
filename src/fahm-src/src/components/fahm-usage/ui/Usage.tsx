@@ -38,7 +38,7 @@ const Usage: FC<UsageProps> = ({
         />
       </div>
       <div className="flex flex-col px-16">
-        <span className='text-[40px] max-w-[290px] font-normal sm:-mt-32 text-[#88C4FF] sm:w-full sm:text-right pb-5 custombp:text-[20px]'>
+        <span className='text-[40px] max-w-[290px] font-normal sm:-mt-32 text-[#88C4FF] sm:w-full sm:text-right pb-5 custombp:text-[20px] font-iranyekan-bold'>
           {title}
         </span>
         <span className='text-[18px] font-normal custombp2:text-base max-w-[290px] sm:w-full sm:text-right text-justify custombp:text-[14px]'>
