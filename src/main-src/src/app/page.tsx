@@ -8,7 +8,6 @@ import HomePart1 from "@/components/home-parts/HomePart1";
 import HomePart2 from "@/components/home-parts/HomePart2";
 import HomePart3 from "@/components/home-parts/HomePart3";
 import HomePart4 from "@/components/home-parts/HomePart4";
-import HomePart5 from "@/components/home-parts/HomePart5";
 import HomePart6 from "@/components/home-parts/HomePart6";
 import HomePart7 from "@/components/home-parts/HomePart7";
 import Pagination from "@/components/pagination";
@@ -31,8 +30,6 @@ export default function Home() {
         <HomePart8 setActiveIndex={setActiveIndex} /> {/* fahm */}
         <HomePart3 setActiveIndex={setActiveIndex} /> {/* alefba */}
         <HomePart4 setActiveIndex={setActiveIndex} /> {/* harf */}
-        {/* <HomePart2 setActiveIndex={setActiveIndex} /> replai */}
-        {/* <HomePart5 setActiveIndex={setActiveIndex} /> fahm */}
         <HomePart6 setActiveIndex={setActiveIndex} /> {/* hazm */}
         <HomePart7 setActiveIndex={setActiveIndex}>
           <Customers />
