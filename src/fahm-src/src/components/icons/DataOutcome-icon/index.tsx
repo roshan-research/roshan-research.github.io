@@ -1,0 +1,37 @@
+import { FC } from "react";
+import { IconProps } from "@/shared/types";
+
+const DataOutcome: FC<IconProps> = ({ width, height }) => {
+  return (
+    <svg
+      width={width}
+      height={height}
+      viewBox="0 0 100 100"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path
+        d="M98.2683 76.8182V76.8182C98.2683 88.6661 88.6637 98.2707 76.8158 98.2707H38.075C25.3538 98.2707 18.9931 98.2707 14.1342 95.795C9.86024 93.6173 6.38537 90.1424 4.20766 85.8684C1.73193 81.0096 1.73193 74.6489 1.73193 61.9276L1.73193 38.0775C1.73193 25.3562 1.73193 18.9956 4.20766 14.1367C6.38537 9.86268 9.86024 6.38781 14.1342 4.2101C18.9931 1.73437 25.3538 1.73437 38.075 1.73437L76.8158 1.73437C88.6637 1.73437 98.2683 11.339 98.2683 23.1869V23.1869"
+        stroke="white"
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M92.5901 49.3952H64.1971M92.5901 49.3952L75.5543 32.3594M92.5901 49.3952L75.5543 66.431M64.1971 49.3952L48.8245 34.0226C47.7595 32.9577 46.3152 32.3594 44.8091 32.3594H27.2861M64.1971 49.3952L48.8245 64.7678C47.7595 65.8328 46.3152 66.431 44.8091 66.431H27.2861"
+        stroke="#88C4FF"
+        strokeWidth={3}
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+      <path
+        d="M44.3214 49.3945L21.6069 49.3945"
+        stroke="#88C4FF"
+        strokeWidth={3}
+        strokeLinecap="round"
+      />
+    </svg>
+  );
+};
+
+export default DataOutcome;

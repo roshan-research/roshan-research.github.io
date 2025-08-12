@@ -26,7 +26,7 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
     }
 
     if (inView) {
-      setActiveIndex(4);
+      setActiveIndex(5);
     }
   }, [inView, hasAnimated]);
 
