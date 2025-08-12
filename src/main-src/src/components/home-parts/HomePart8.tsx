@@ -63,8 +63,8 @@ const HomePart8: React.FC<HomePart8Props> = ({ setActiveIndex }) => {
       >
         فهم
       </span>
-      <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
-        فهم، با بهره‌گیری از مدل‌های زبانی اسناد را پردازش و با آنها گفتگو میکند
+      <span className='text-[#DDDDDD] text-[24px] font-light w-[400px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
+        فهم، با بهره‌گیری از مدل‌های زبانی اسناد را پردازش و با آنها گفتگو می‌کند
       </span>
       <RedirectButton color='#88C4FF' link='https://www.roshan-ai.ir/fahm/' />
     </motion.div>
