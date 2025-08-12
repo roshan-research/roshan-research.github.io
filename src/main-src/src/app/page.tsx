@@ -32,7 +32,7 @@ export default function Home() {
         <HomePart3 setActiveIndex={setActiveIndex} /> {/* alefba */}
         <HomePart4 setActiveIndex={setActiveIndex} /> {/* harf */}
         {/* <HomePart2 setActiveIndex={setActiveIndex} /> replai */}
-        {/* <HomePart5 setActiveIndex={setActiveIndex} /> kashf */}
+        {/* <HomePart5 setActiveIndex={setActiveIndex} /> fahm */}
         <HomePart6 setActiveIndex={setActiveIndex} /> {/* hazm */}
         <HomePart7 setActiveIndex={setActiveIndex}>
           <Customers />

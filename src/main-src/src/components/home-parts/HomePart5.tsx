@@ -6,7 +6,7 @@ import { motion, useInView } from "framer-motion";
 import { variants } from "@/animations/variant";
 import PurpleCircleIcon from "../icons/PurpleCircleIcon";
 import RedirectButton from "../buttons/RedirectButton";
-import KashfSquircle from "../icons/squircles/KashfSquircle";
+import fahmSquircle from "../icons/squircles/fahmSquircle";
 
 type HomePart5Props = {
   setActiveIndex: Dispatch<number>;
@@ -41,14 +41,14 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
         <div className='w-[799px] h-[799px] bp800:w-[100vw] bp480:h-fit'>
           <PurpleCircleIcon />
         </div>
-        <KashfSquircle className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]' />
+        <fahmSquircle className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]' />
         {isInView && (
           <div className='absolute w-[300px] h-[300px] bp480:w-[250px] bp480:h-[250px]'>
             <lottie-player
               id='firstLottie'
               ref={lottieRef}
               autoPlay
-              src='/images/lottie/kashf-lottie.json'
+              src='/images/lottie/fahm-lottie.json'
             ></lottie-player>
           </div>
         )}
@@ -62,7 +62,7 @@ const HomePart5: React.FC<HomePart5Props> = ({ setActiveIndex }) => {
       <span className='text-[#DDDDDD] text-[24px] font-light w-[350px] text-center mt-3 bp480:text-base bp480:w-[70%]'>
         کشف، مفاهیم را در میان تصاویر و متن‌ها پیدا می‌کند
       </span>
-      <RedirectButton color='#6658CA' link='https://www.roshan-ai.ir/kashf/' />
+      <RedirectButton color='#6658CA' link='https://www.roshan-ai.ir/fahm/' />
     </motion.div>
   );
 };

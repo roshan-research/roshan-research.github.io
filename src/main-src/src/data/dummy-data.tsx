@@ -31,7 +31,7 @@ import LinkedinLogo from "@/components/icons/join-us-logos/LinkedinLogo";
 import AlefbaIcon from "@/components/icons/menu/AlefbaIcon";
 import HarfIcon from "@/components/icons/menu/HarfIcon";
 import HazmIcon from "@/components/icons/menu/HazmIcon";
-import KashfIcon from "@/components/icons/menu/KashfIcon";
+import fahmIcon from "@/components/icons/menu/fahmIcon";
 import ReplaiIcon from "@/components/icons/menu/ReplaiIcon";
 
 export const customersRow1 = [
@@ -378,11 +378,11 @@ export const menuLogos = [
     href: "https://www.roshan-ai.ir/harf/",
   },
   {
-    icon: <KashfIcon width={200} height={200} />,
+    icon: <fahmIcon width={200} height={200} />,
     color: "",
     colors: ["#7D72DA", "#6356C6"],
     text: "کشف",
-    href: "https://www.roshan-ai.ir/kashf/",
+    href: "https://www.roshan-ai.ir/fahm/",
   },
   {
     icon: <HazmIcon width={200} height={200} />,
