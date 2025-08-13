@@ -26,8 +26,8 @@ const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
         </span>
       </div>
       <HeaderLogo
-        width={windowWidth! < 641 ? "60%" : 386}
-        height={windowWidth! < 641 ? "60%" : 385}
+        width={windowWidth! < 641 ? "40%" : 386}
+        height={windowWidth! < 641 ? "40%" : 385}
       />
     </motion.div>
   );
