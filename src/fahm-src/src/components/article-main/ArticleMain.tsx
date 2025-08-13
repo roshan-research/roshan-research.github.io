@@ -25,10 +25,9 @@ const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
           فهم، یک سامانه هوشمند برای ارتقای مدیریت <br />اطلاعات، تحلیل سریع تر، دسترسی هدفمند و <br />آینده نگری سازمانی محسوب می‌شود
         </span>
       </div>
-      <HeaderLogo
-        width={windowWidth! < 641 ? 152 : 386}
-        height={windowWidth! < 641 ? 152 : 385}
-      />
+      {windowWidth! >= 641 && (
+        <HeaderLogo width={386} height={385} />
+      )}
     </motion.div>
   );
 };
