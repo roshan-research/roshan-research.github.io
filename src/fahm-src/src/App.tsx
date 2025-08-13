@@ -59,7 +59,7 @@ function App() {
             isMenuOpen={isMenuOpen}
             menuOpenRef={menuOpenRef}
           />
-          <ArticleMain windowWidth={windowWidth} />
+          <ArticleMain />
           <ArticleFeatures windowWidth={windowWidth} />
           <FahmUsage windowWidth={windowWidth} />
           <Facilities windowWidth={windowWidth} />

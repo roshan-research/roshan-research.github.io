@@ -5,11 +5,11 @@ import { main_animation } from "@/components/animations/main";
 import { FC } from "react";
 import HeaderLogo from "../icons/DocHead";
 
-type ArticleMainProps = {
-  windowWidth: number | null;
-};
+// type ArticleMainProps = {
+//   windowWidth: number | null;
+// };
 
-const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
+const ArticleMain: FC = () => {
   return (
     <motion.div
       variants={main_animation}
@@ -25,9 +25,7 @@ const ArticleMain: FC<ArticleMainProps> = ({ windowWidth }) => {
           فهم، یک سامانه هوشمند برای ارتقای مدیریت <br />اطلاعات، تحلیل سریع تر، دسترسی هدفمند و <br />آینده نگری سازمانی محسوب می‌شود
         </span>
       </div>
-      {windowWidth! >= 641 && (
-        <HeaderLogo width={386} height={385} />
-      )}
+      <HeaderLogo width={386} height={385} />
     </motion.div>
   );
 };
