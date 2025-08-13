@@ -1,6 +1,6 @@
-import Pic_1 from "@/assets/images/article-usage/pic-1.svg";
-import Pic_2 from "@/assets/images/article-usage/pic-2.svg";
-import Pic_3 from "@/assets/images/article-usage/pic-3.svg";
+import Pic_1 from "/images/article-usage/pic-1.svg";
+import Pic_2 from "/images/article-usage/pic-2.svg";
+import Pic_3 from "/images/article-usage/pic-3.svg";
 import Usage from "./ui/Usage";
 import { FC } from "react";
 
