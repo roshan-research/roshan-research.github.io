@@ -1,6 +1,6 @@
 import { useState, useRef, useEffect } from "react";
 import { motion } from "framer-motion";
-import MenuIcon from "@/assets/images/menu.png";
+import MenuIcon from "./menu.png";
 import ArticleMain from "@/components/article-main/ArticleMain";
 import ArticleFeatures from "./components/article-features/ArticleFeatures";
 import FahmUsage from "./components/fahm-usage/fahmUsage";
