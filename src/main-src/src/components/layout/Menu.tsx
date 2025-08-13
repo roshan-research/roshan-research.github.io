@@ -97,7 +97,7 @@ const Menu: React.FC<MenuProps> = ({ openMenu, setOpenMenu }) => {
           </div>
         </SwiperSlide>
       </Swiper>
-      <div
+      {/* <div
         className='select-none flex items-center z-50 justify-center text-white text-base font-normal gap-[10px] absolute bottom-[56px] left-[56px] cursor-pointer'
         onClick={changeSlideHandler}
       >
@@ -110,7 +110,7 @@ const Menu: React.FC<MenuProps> = ({ openMenu, setOpenMenu }) => {
           )}
         />
         <span>{currentSlide === 0 ? "محصولات" : "بازگشت"}</span>
-      </div>
+      </div> */}
     </div>
   );
 };
